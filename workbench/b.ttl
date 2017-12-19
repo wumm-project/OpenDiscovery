@@ -1,0 +1,308 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix od: <http://opendiscovery.org/rdf/Model#> .
+@prefix odtype: <http://opendiscovery.org/rdf/DiscoveryType/> .
+@prefix odrec: <http://opendiscovery.org/rdf/Recommendation/> .
+@prefix odrule: <http://opendiscovery.org/rdf/Rule/> .
+@prefix odc: <http://opendiscovery.org/rdf/Context/> .
+@prefix odd: <http://opendiscovery.org/rdf/Discovery/> .
+
+<http://opendiscovery.org/Source/Altschuller-Absract/>
+    a owl:Ontology ;
+    rdfs:comment "Erste Variante einer RDF-Datenbasis zu TRIZ" ;
+    rdfs:label "TRIZ-Datenbasis" .
+
+odc:C1
+    a od:Context ;
+    rdfs:label "the law/regularity is to be established for the first time"@en .
+
+odc:C2
+    a od:Context ;
+    rdfs:label "the law/regularity is to be established by overcoming the difficulties that the previous theory came across"@en .
+
+odd:E1
+    od:hasType odtype:DT2 ;
+    a od:Discovery ;
+    rdfs:label "The discovery of X-Rays by Röntgen"@en .
+
+odd:E2
+    od:hasType odtype:DT3 ;
+    a od:DiscoveryClass ;
+    rdfs:label "Discovery of new plants or animals"@en .
+
+odd:E3
+    od:hasType odtype:DT3 ;
+    a od:DiscoveryClass ;
+    rdfs:label "discovery of new deposits in geology"@en .
+
+odd:E4
+    od:hasType odtype:DT3 ;
+    a od:DiscoveryClass ;
+    rdfs:label "new observation in astronomy"@en .
+
+odtype:DT1
+    a od:DiscoveryType ;
+    rdfs:label "Detecting new phenomena"@en .
+
+odtype:DT2
+    od:hasPurpose "Help to discover new phenomena"@en ;
+    od:subTypeOf odtype:DT1 ;
+    a od:DiscoverySubType ;
+    rdfs:label "Discoveries that require an explanation"@en .
+
+odtype:DT3
+    od:subTypeOf odtype:DT1 ;
+    a od:DiscoverySubType ;
+    rdfs:label "Discoveries that don’t require an explanation"@en .
+
+odtype:DT4
+    od:hasPurpose "Help to discover new regularities"@en ;
+    a od:DiscoveryType ;
+    rdfs:label "Establishing regularities by explaining phenomena that are already known"@en .
+
+odrec:R1
+    a od:Recommendation ;
+    rdfs:label "Pay attention to phenomena that are already known but different in a strange way"@en .
+
+odrec:R10
+    a od:Recommendation ;
+    rdfs:label "Find phenomena that contradict each other"@en .
+
+odrec:R11
+    a od:Recommendation ;
+    rdfs:label "Increase the number of known facts until the law manifests itself"@en .
+
+odrec:R12
+    a od:Recommendation ;
+    rdfs:label "Introduce hypothetical phenomena that remove difficulties"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R12.1>
+    a od:Recommendation ;
+    rdfs:label "What unknown phenomena or facts must be taken as reliable to remove the difficulties of the theory?"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R12.2>
+    a od:Recommendation ;
+    rdfs:label "Often the most difficult is to recognise the leakiness of the old theory and the need for new assumptions"@en .
+
+odrec:R13
+    a od:Recommendation ;
+    rdfs:label "Don’t concentrate only on a theories application to new domains, but also on the study of its weak spots"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R13.1>
+    a od:Recommendation ;
+    rdfs:label "Develop the theory not where it is strong, but where its weakness is felt"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R13.2>
+    a od:Recommendation ;
+    rdfs:label "Look for cases in which the theory is inapplicable"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R13.3>
+    a od:Recommendation ;
+    rdfs:label "Look for cracks in the theory"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R13.4>
+    a od:Recommendation ;
+    rdfs:label "Study not laws, study exceptions"@en .
+
+odrec:R14
+    a od:Recommendation ;
+    rdfs:label "Transfer of methods and apparatus from one region to another"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R14.1>
+    a od:Recommendation ;
+    rdfs:label "Dissemination of methods and apparatus to a wider area"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R14.1.1>
+    a od:Recommendation ;
+    rdfs:label "a well-known phenomenon that was considered limited is now seen as a universal law"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R14.1.2>
+    a od:Recommendation ;
+    rdfs:label "a new regularity is established by limiting the principle that was previously considered to be universal"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R14.2>
+    a od:Recommendation ;
+    rdfs:label "Return to old theories on a new basis"@en .
+
+odrec:R2
+    a od:Recommendation ;
+    rdfs:label "Pay attention to blind spots within already known phenomena"@en .
+
+odrec:R3
+    a od:Recommendation ;
+    rdfs:label "Pay attention to blind spots outside the known phenomena"@en .
+
+odrec:R4
+    a od:Recommendation ;
+    rdfs:label "Evaluate known phenomena from a new point of view"@en .
+
+odrec:R5
+    a od:Recommendation ;
+    rdfs:label "Discovery of new phenomena by combining the old"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R5.1>
+    a od:Recommendation ;
+    rdfs:label "A is known, B is known, C is detected as the relationship between A and B"@en .
+
+<http://opendiscovery.org/rdf/Recommendation/R5.2>
+    a od:Recommendation ;
+    rdfs:label "A + B -> C, and C + D -> E"@en .
+
+odrec:R6
+    a od:Recommendation ;
+    rdfs:label "The inverse: A ist studied with the assumption that it results from a combination of two previously unknown phenomena B + C"@en .
+
+odrec:R7
+    a od:Recommendation ;
+    rdfs:label "Analogies: Two groups of phenomena A and B are similar. Phenomenon a1 from group A might correspond to the still unknown phenomenon b1 in group B"@en .
+
+odrec:R8
+    a od:Recommendation ;
+    rdfs:label "Call self-evident and universally recognised phenomena into question"@en .
+
+odrec:R9
+    a od:Recommendation ;
+    rdfs:label "Elimination of a non-universal phenomenon"@en .
+
+<http://opendiscovery.org/rdf/Relation/T12.1>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R12.1> ;
+    od:superRule odrec:R12 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T12.2>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R12.2> ;
+    od:superRule odrec:R12 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T13.1>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R13.1> ;
+    od:superRule odrec:R13 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T13.2>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R13.2> ;
+    od:superRule odrec:R13 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T13.3>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R13.3> ;
+    od:superRule odrec:R13 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T13.4>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R13.4> ;
+    od:superRule odrec:R13 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T14.1>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R14.1> ;
+    od:superRule odrec:R14 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T14.2>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R14.2> ;
+    od:superRule odrec:R14 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T14.3>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R14.1.1> ;
+    od:superRule <http://opendiscovery.org/rdf/Recommendation/R14.1> ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T14.4>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R14.1.2> ;
+    od:superRule <http://opendiscovery.org/rdf/Recommendation/R14.1> ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T14.5>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Reverse> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R14.1.2> ;
+    od:superRule <http://opendiscovery.org/rdf/Recommendation/R14.1.1> ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T5.1>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/SimpleVersion> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R5.1> ;
+    od:superRule odrec:R5 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/Relation/T5.2>
+    od:hasRelationType <http://opendiscovery.org/rdf/RelationType/MoreComplexVersion> ;
+    od:subRule <http://opendiscovery.org/rdf/Recommendation/R5.2> ;
+    od:superRule odrec:R5 ;
+    a od:Relation .
+
+<http://opendiscovery.org/rdf/RelationType/Explanation>
+    a od:RelationType ;
+    rdfs:label "Explanation"@en .
+
+<http://opendiscovery.org/rdf/RelationType/MoreComplexVersion>
+    a od:RelationType ;
+    rdfs:label "A more complex version"@en .
+
+<http://opendiscovery.org/rdf/RelationType/Reverse>
+    a od:RelationType ;
+    rdfs:label "Reverse"@en .
+
+<http://opendiscovery.org/rdf/RelationType/SimpleVersion>
+    a od:RelationType ;
+    rdfs:label "A simple version"@en .
+
+odrule:S1
+    od:hasContext odtype:DT2 ;
+    od:hasRecommendation odrec:R1 ;
+    a od:Rule .
+
+odrule:S11
+    od:hasContext odc:C1, odtype:DT4 ;
+    od:hasRecommendation odrec:R11 ;
+    a od:Rule .
+
+odrule:S12
+    od:hasContext odc:C2, odtype:DT4 ;
+    od:hasRecommendation odrec:R12 ;
+    a od:Rule .
+
+odrule:S13
+    od:hasContext odc:C2, odtype:DT4 ;
+    od:hasRecommendation odrec:R13 ;
+    a od:Rule .
+
+odrule:S14
+    od:hasContext odc:C2, odtype:DT4 ;
+    od:hasRecommendation odrec:R14 ;
+    a od:Rule .
+
+odrule:S2
+    od:hasContext odtype:DT2 ;
+    od:hasRecommendation odrec:R2 ;
+    a od:Rule .
+
+odrule:S3
+    od:hasContext odtype:DT2 ;
+    od:hasRecommendation odrec:R3 ;
+    a od:Rule .
+
+odrule:S4
+    od:hasContext odtype:DT2 ;
+    od:hasRecommendation odrec:R4 ;
+    a od:Rule .
+
+odrule:S5
+    od:hasContext odtype:DT2 ;
+    od:hasRecommendation odrec:R5 ;
+    a od:Rule .
+

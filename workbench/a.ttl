@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix od: <http://opendiscovery.org/rdf/Model#> .
+@prefix odtype: <http://opendiscovery.org/rdf/DiscoveryType/> .
+@prefix odrec: <http://opendiscovery.org/rdf/Recommendation/> .
+@prefix odrule: <http://opendiscovery.org/rdf/Rule/> .
+@prefix odc: <http://opendiscovery.org/rdf/Context/> .
+@prefix odd: <http://opendiscovery.org/rdf/Discovery/> .
+@prefix ode: <http://opendiscovery.org/rdf/Example/> .
+
+<http://opendiscovery.org/Source/Altschuller/>
+    a owl:Ontology ;
+    rdfs:comment "Extract aus Paper Altschuller 1960" ;
+    rdfs:label "TRIZ-Datenbasis" .
+
+odtype:DT1
+    a od:DiscoveryType ;
+    rdfs:label "Detecting new phenomena"@en, "открытия, состоящие в установлении нового явления"@ru ;
+    od:description "Я бы назвал эту группу открытий ОБНАРУЖЕНИЕМ, ибо сущность нового явления отнюдь не открывается; новое явление просто впервые обнаруживается."@ru, "открытие явления есть установление нового КАЧЕСТВА материи"@ru, "результат творчества - новая информация"@ru .
+
+odtype:DT4
+    a od:DiscoveryType ;
+    rdfs:label "открытия, состоящие в установлении закономерностей"@ru ;
+    od:description "В этом случае новые явления не открываются, открытие проявляется в объяснении уже известных явлений, сущность которых ранее была непонятна или не укладывалась в имеющиеся объяснения."@ru, "открытие закономерности есть установление КОЛИЧЕСТВЕННЫХ СООТНОШЕНИЙ"@ru, "результат творчества - новая формула"@ru .
+
+odtype:DT5
+    a od:DiscoveryType ;
+    rdfs:label "экспериментальное открытие"@ru .
+
+odtype:DT6
+    a od:DiscoveryType ;
+    rdfs:label "теоретическое открытие"@ru .
+
+odtype:DT101
+    a od:DiscoverySubType ;
+    od:subTypeOf odtype:DT1 ; 
+    rdfs:label "подгруппа открытий, состоящих в установлении конкретного факта"@ru ;
+    od:description "Таковы географические открытия. Сюда же относится большинство открытий наблюдательной астрономии, открытия геологические (новых месторождений), обнаружение новых видов растений и животных. Для этой подгруппы характерно, что ее открытия (в отличие от открытия явлений) не требует объяснений. Интересно отметить, что это нашло стихийное отражение в терминологии: открытия явлений иногда называют невольно подчеркивая их отличие от простого установления конкретного факта."@ru .
+
+ode:E101
+    a od:Example ;
+    od:demonstrates odtype:DT101 ;
+    rdfs:label "открытие икс-лучей Рентгеном"@ru .  
+
+ode:E102
+    a od:Example ;
+    od:demonstrates odtype:DT101 ;
+    rdfs:label "открытие сверхпроводимости Кеммерлинг-Оннесом"@ru .  
+
+ode:E103
+    a od:Example ;
+    od:demonstrates odtype:DT4 ;
+    rdfs:label "объяснение фотоэффекта Эйнштейном"@ru .  
+
+ode:E104
+    a od:Example ;
+    od:demonstrates odtype:DT4 ;
+    rdfs:label "объяснение эволюции растений и животных в борьбе за существование"@ru .  
+
+ode:E105
+    a od:Example ;
+    od:demonstrates odtype:DT1, odtype:DT5 ;
+    rdfs:label "экспериментальное открытие радиоактивности"@ru .  
+
+ode:E106
+    a od:Example ;
+    od:demonstrates odtype:DT1, odtype:DT6 ;
+    rdfs:label "теоретическое открытие электромагнитных колебаний Максвеллом"@ru .  
+
+ode:E107
+    a od:Example ;
+    od:demonstrates odtype:DT4, odtype:DT5 ;
+    rdfs:label "экспериментальное открытие закона Кулона"@ru .  
+
+ode:E108
+    a od:Example ;
+    od:demonstrates odtype:DT4, odtype:DT6 ;
+    rdfs:label "теоретическое открытие взаимосвязи между массой и инерцией"@ru .  
