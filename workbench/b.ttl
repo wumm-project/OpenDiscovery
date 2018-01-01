@@ -3,10 +3,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix od: <http://opendiscovery.org/rdf/Model#> .
-@prefix odtype: <http://opendiscovery.org/rdf/DiscoveryType/> .
+@prefix odt: <http://opendiscovery.org/rdf/DiscoveryType/> .
 @prefix odrec: <http://opendiscovery.org/rdf/Recommendation/> .
-@prefix odrule: <http://opendiscovery.org/rdf/Rule/> .
+@prefix odr: <http://opendiscovery.org/rdf/Rule/> .
 @prefix odc: <http://opendiscovery.org/rdf/Context/> .
 @prefix odd: <http://opendiscovery.org/rdf/Discovery/> .
 
@@ -24,41 +25,41 @@ odc:C2
     rdfs:label "the law/regularity is to be established by overcoming the difficulties that the previous theory came across"@en .
 
 odd:E1
-    od:hasType odtype:DT2 ;
+    od:hasType odt:DT2 ;
     a od:Discovery ;
     rdfs:label "The discovery of X-Rays by Röntgen"@en .
 
 odd:E2
-    od:hasType odtype:DT3 ;
+    od:hasType odt:DT3 ;
     a od:DiscoveryClass ;
     rdfs:label "Discovery of new plants or animals"@en .
 
 odd:E3
-    od:hasType odtype:DT3 ;
+    od:hasType odt:DT3 ;
     a od:DiscoveryClass ;
     rdfs:label "discovery of new deposits in geology"@en .
 
 odd:E4
-    od:hasType odtype:DT3 ;
+    od:hasType odt:DT3 ;
     a od:DiscoveryClass ;
     rdfs:label "new observation in astronomy"@en .
 
-odtype:DT1
+odt:DT1
     a od:DiscoveryType ;
     rdfs:label "Detecting new phenomena"@en .
 
-odtype:DT2
+odt:DT2
     od:hasPurpose "Help to discover new phenomena"@en ;
-    od:subTypeOf odtype:DT1 ;
-    a od:DiscoverySubType ;
+    skos:broader odt:DT1 ;
+    a od:DiscoveryType ;
     rdfs:label "Discoveries that require an explanation"@en .
 
-odtype:DT3
-    od:subTypeOf odtype:DT1 ;
-    a od:DiscoverySubType ;
+odt:DT3
+    skos:broader odt:DT1 ;
+    a od:DiscoveryType ;
     rdfs:label "Discoveries that don’t require an explanation"@en .
 
-odtype:DT4
+odt:DT4
     od:hasPurpose "Help to discover new regularities"@en ;
     a od:DiscoveryType ;
     rdfs:label "Establishing regularities by explaining phenomena that are already known"@en .
@@ -261,48 +262,48 @@ odrec:R9
     a od:RelationType ;
     rdfs:label "A simple version"@en .
 
-odrule:S1
-    od:hasContext odtype:DT2 ;
+odr:S1
+    od:hasContext odt:DT2 ;
     od:hasRecommendation odrec:R1 ;
     a od:Rule .
 
-odrule:S11
-    od:hasContext odc:C1, odtype:DT4 ;
+odr:S11
+    od:hasContext odc:C1, odt:DT4 ;
     od:hasRecommendation odrec:R11 ;
     a od:Rule .
 
-odrule:S12
-    od:hasContext odc:C2, odtype:DT4 ;
+odr:S12
+    od:hasContext odc:C2, odt:DT4 ;
     od:hasRecommendation odrec:R12 ;
     a od:Rule .
 
-odrule:S13
-    od:hasContext odc:C2, odtype:DT4 ;
+odr:S13
+    od:hasContext odc:C2, odt:DT4 ;
     od:hasRecommendation odrec:R13 ;
     a od:Rule .
 
-odrule:S14
-    od:hasContext odc:C2, odtype:DT4 ;
+odr:S14
+    od:hasContext odc:C2, odt:DT4 ;
     od:hasRecommendation odrec:R14 ;
     a od:Rule .
 
-odrule:S2
-    od:hasContext odtype:DT2 ;
+odr:S2
+    od:hasContext odt:DT2 ;
     od:hasRecommendation odrec:R2 ;
     a od:Rule .
 
-odrule:S3
-    od:hasContext odtype:DT2 ;
+odr:S3
+    od:hasContext odt:DT2 ;
     od:hasRecommendation odrec:R3 ;
     a od:Rule .
 
-odrule:S4
-    od:hasContext odtype:DT2 ;
+odr:S4
+    od:hasContext odt:DT2 ;
     od:hasRecommendation odrec:R4 ;
     a od:Rule .
 
-odrule:S5
-    od:hasContext odtype:DT2 ;
+odr:S5
+    od:hasContext odt:DT2 ;
     od:hasRecommendation odrec:R5 ;
     a od:Rule .
 
