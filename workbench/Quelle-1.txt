@@ -2,15 +2,20 @@ Text: Towards a methodology of discovery
 Text: In his article from 1960, Altshuller distinguishes two essentially different types of discovery:
 
 DiscoveryType: (DT1) Detecting new phenomena
+DiscoveryType: (DT2) Establishing regularities by explaining phenomena that are already known
 
-DiscoverySubType: (DT1.1) Discoveries that require an explanation
+Text: More explanation on the two different types
+
+DiscoveryType: (DT1.1) Discoveries that require an explanation
+SubTypeOf: (DT.1)
 Purpose: Help to discover new phenomena
-Example: The discovery of X-Rays by Röntgen
+Discovery: The discovery of X-Rays by Röntgen
 
-DiscoverySubType: (DT1.2) Discoveries that don’t require an explanation (establishment of new facts)
-Example: Discovery of new plants or animals
-Example: discovery of new deposits in geology
-Example: new observations in astronomy etc. etc.
+DiscoveryType: (DT1.2) Discoveries that don’t require an explanation (establishment of new facts)
+SubTypeOf: (DT.1)
+Discovery: Discovery of new plants or animals
+Discovery: discovery of new deposits in geology
+Discovery: new observations in astronomy etc. etc.
 
 DiscoveryType: (DT2) Establishing regularities by explaining phenomena that are already known
 Purpose: Help to discover new regularities
@@ -22,8 +27,8 @@ Recommendation: Pay attention to blind spots within already known phenomena
 Recommendation: Pay attention to blind spots outside the known phenomena
 Recommendation: Evaluate known phenomena from a new point of view
 Recommendation: Discovery of new phenomena by combining the old
-SubRecommendation: (The simplest version) A is known, B is known, C is detected as the relationship between A and B
-SubRecommendation: (More complex version) A + B -> C, and C + D -> E 
+[SubRecommendation: (The simplest version) A is known, B is known, C is detected as the relationship between A and B
+SubRecommendation: (More complex version) A + B -> C, and C + D -> E ]
 Recommendation: (The inverse) A ist studied with the assumption that it results from a combination of two previously unknown phenomena B + C
 Recommendation: (Analogies) Two groups of phenomena A and B are similar. Phenomenon a1 from group A might correspond to the still unknown phenomenon b1 in group B.
 Recommendation: Call self-evident and universally recognised phenomena into question
@@ -37,27 +42,15 @@ If [Rule: (the law/regularity is to be established for the first time)] then
 
 If [Rule: (the law/regularity is to be established by overcoming the difficulties that the previous theory came across)] then
 [Recommendation: Introduce hypothetical phenomena that remove difficulties.
-SubRecommendation: What unknown phenomena or facts must be taken as reliable to remove the difficulties of the theory?
-SubRecommendation: Often the most difficult is to recognise the leakiness of the old theory and the need for new assumptions
+[SubRecommendation: What unknown phenomena or facts must be taken as reliable to remove the difficulties of the theory?
+SubRecommendation: Often the most difficult is to recognise the leakiness of the old theory and the need for new assumptions]
 Recommendation: Don’t concentrate only on a theories application to new domains, but also on the study of its weak spots
-SubRecommendation: Develop the theory not where it is strong, but where its weakness is felt
+[SubRecommendation: Develop the theory not where it is strong, but where its weakness is felt
 SubRecommendation: Look for cases in which the theory is inapplicable
 SubRecommendation: Look for cracks in the theory
-SubRecommendation: Study not laws, study exceptions
+SubRecommendation: Study not laws, study exceptions]
 Recommendation: Transfer of methods and apparatus from one region to another
-SubRecommendation: (Special case) Dissemination of methods and apparatus to a wider area
-SubSubRecommendation: (Special case) a well-known phenomenon that was considered limited is now seen as a universal law
-SubSubRecommendation: (The reverse) a new regularity is established by limiting the principle that was previously considered to be universal
+[SubRecommendation: (Special case) Dissemination of methods and apparatus to a wider area
+[SubSubRecommendation: (Special case) a well-known phenomenon that was considered limited is now seen as a universal law
+SubSubRecommendation: (The reverse) a new regularity is established by limiting the principle that was previously considered to be universal]]
 Recommendation: Return to old theories on a new basis] endif.
-
-
-
- 
-
-
-
-
-
-
-
-
