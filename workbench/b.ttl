@@ -66,107 +66,107 @@ odt:DT4
 
 odrec:R1
     a od:Recommendation ;
-    rdfs:label "Pay attention to phenomena that are already known but different in a strange way"@en .
+    od:description "Pay attention to phenomena that are already known but different in a strange way"@en .
 
 odrec:R10
     a od:Recommendation ;
-    rdfs:label "Find phenomena that contradict each other"@en .
+    od:description "Find phenomena that contradict each other"@en .
 
 odrec:R11
     a od:Recommendation ;
-    rdfs:label "Increase the number of known facts until the law manifests itself"@en .
+    od:description "Increase the number of known facts until the law manifests itself"@en .
 
 odrec:R12
     a od:Recommendation ;
-    rdfs:label "Introduce hypothetical phenomena that remove difficulties"@en .
+    od:description "Introduce hypothetical phenomena that remove difficulties"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R12.1>
     a od:Recommendation ;
-    rdfs:label "What unknown phenomena or facts must be taken as reliable to remove the difficulties of the theory?"@en .
+    od:description "What unknown phenomena or facts must be taken as reliable to remove the difficulties of the theory?"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R12.2>
     a od:Recommendation ;
-    rdfs:label "Often the most difficult is to recognise the leakiness of the old theory and the need for new assumptions"@en .
+    od:description "Often the most difficult is to recognise the leakiness of the old theory and the need for new assumptions"@en .
 
 odrec:R13
     a od:Recommendation ;
-    rdfs:label "Don’t concentrate only on a theories application to new domains, but also on the study of its weak spots"@en .
+    od:description "Don’t concentrate only on a theories application to new domains, but also on the study of its weak spots"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R13.1>
     a od:Recommendation ;
-    rdfs:label "Develop the theory not where it is strong, but where its weakness is felt"@en .
+    od:description "Develop the theory not where it is strong, but where its weakness is felt"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R13.2>
     a od:Recommendation ;
-    rdfs:label "Look for cases in which the theory is inapplicable"@en .
+    od:description "Look for cases in which the theory is inapplicable"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R13.3>
     a od:Recommendation ;
-    rdfs:label "Look for cracks in the theory"@en .
+    od:description "Look for cracks in the theory"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R13.4>
     a od:Recommendation ;
-    rdfs:label "Study not laws, study exceptions"@en .
+    od:description "Study not laws, study exceptions"@en .
 
 odrec:R14
     a od:Recommendation ;
-    rdfs:label "Transfer of methods and apparatus from one region to another"@en .
+    od:description "Transfer of methods and apparatus from one region to another"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R14.1>
     a od:Recommendation ;
-    rdfs:label "Dissemination of methods and apparatus to a wider area"@en .
+    od:description "Dissemination of methods and apparatus to a wider area"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R14.1.1>
     a od:Recommendation ;
-    rdfs:label "a well-known phenomenon that was considered limited is now seen as a universal law"@en .
+    od:description "a well-known phenomenon that was considered limited is now seen as a universal law"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R14.1.2>
     a od:Recommendation ;
-    rdfs:label "a new regularity is established by limiting the principle that was previously considered to be universal"@en .
+    od:description "a new regularity is established by limiting the principle that was previously considered to be universal"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R14.2>
     a od:Recommendation ;
-    rdfs:label "Return to old theories on a new basis"@en .
+    od:description "Return to old theories on a new basis"@en .
 
 odrec:R2
     a od:Recommendation ;
-    rdfs:label "Pay attention to blind spots within already known phenomena"@en .
+    od:description "Pay attention to blind spots within already known phenomena"@en .
 
 odrec:R3
     a od:Recommendation ;
-    rdfs:label "Pay attention to blind spots outside the known phenomena"@en .
+    od:description "Pay attention to blind spots outside the known phenomena"@en .
 
 odrec:R4
     a od:Recommendation ;
-    rdfs:label "Evaluate known phenomena from a new point of view"@en .
+    od:description "Evaluate known phenomena from a new point of view"@en .
 
 odrec:R5
     a od:Recommendation ;
-    rdfs:label "Discovery of new phenomena by combining the old"@en .
+    od:description "Discovery of new phenomena by combining the old"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R5.1>
     a od:Recommendation ;
-    rdfs:label "A is known, B is known, C is detected as the relationship between A and B"@en .
+    od:description "A is known, B is known, C is detected as the relationship between A and B"@en .
 
 <http://opendiscovery.org/rdf/Recommendation/R5.2>
     a od:Recommendation ;
-    rdfs:label "A + B -> C, and C + D -> E"@en .
+    od:description "A + B -> C, and C + D -> E"@en .
 
 odrec:R6
     a od:Recommendation ;
-    rdfs:label "The inverse: A ist studied with the assumption that it results from a combination of two previously unknown phenomena B + C"@en .
+    od:description "The inverse: A ist studied with the assumption that it results from a combination of two previously unknown phenomena B + C"@en .
 
 odrec:R7
     a od:Recommendation ;
-    rdfs:label "Analogies: Two groups of phenomena A and B are similar. Phenomenon a1 from group A might correspond to the still unknown phenomenon b1 in group B"@en .
+    od:description "Analogies: Two groups of phenomena A and B are similar. Phenomenon a1 from group A might correspond to the still unknown phenomenon b1 in group B"@en .
 
 odrec:R8
     a od:Recommendation ;
-    rdfs:label "Call self-evident and universally recognised phenomena into question"@en .
+    od:description "Call self-evident and universally recognised phenomena into question"@en .
 
 odrec:R9
     a od:Recommendation ;
-    rdfs:label "Elimination of a non-universal phenomenon"@en .
+    od:description "Elimination of a non-universal phenomenon"@en .
 
 <http://opendiscovery.org/rdf/Relation/T12.1>
     od:hasRelationType <http://opendiscovery.org/rdf/RelationType/Explanation> ;

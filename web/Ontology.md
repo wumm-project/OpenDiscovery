@@ -47,7 +47,7 @@ od:DiscoveryType
 od:Recommendation
   - A recommendation is an advice what to do or a question to explore in a special context. Recommendations are bound to relations that describe the applicability of the recommendation. 
   - namespace prefix http://opendiscovery.org/rdf/Recommendation/
-  - rdfs:label Literal = label 
+  - od:description Literal = label 
 
 od:Relation
   - A relation is a named and classified relation between two rules (the subrule and the superrule)
