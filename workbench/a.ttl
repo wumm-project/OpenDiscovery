@@ -4,6 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix od: <http://opendiscovery.org/rdf/Model#> .
 @prefix odt: <http://opendiscovery.org/rdf/DiscoveryType/> .
 @prefix odrec: <http://opendiscovery.org/rdf/Recommendation/> .
@@ -11,10 +12,14 @@
 @prefix odc: <http://opendiscovery.org/rdf/Context/> .
 @prefix odd: <http://opendiscovery.org/rdf/Discovery/> .
 
-<http://opendiscovery.org/Source/Altschuller/>
+<http://opendiscovery.org/rdf/Altschuller/>
     a owl:Ontology ;
-    rdfs:comment "Extract aus Paper Altschuller 1960" ;
-    rdfs:label "TRIZ-Datenbasis" .
+    cc:attributionName "The Open Discovery Project" ;
+    cc:attributionURL <http://opendiscovery.org> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:source <http://www.altshuller.ru/triz/investigations1.asp> ; 
+    rdfs:comment "Extract from the Paper (Altschuller 1960) (in russian). Transformation by HGG" ;
+    rdfs:label "TRIZ Database - (Altschuller 1960)" .
 
 odt:DT1
     a od:DiscoveryType ;
