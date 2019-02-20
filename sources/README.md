@@ -4,7 +4,7 @@ different authors under the terms of CC-BY
 
 Thiel-16a.tex
 Rainer Thiel
-{Hegel, Altschuller, TRIZ. Zehn Anmerkungen
+Hegel, Altschuller, TRIZ. Zehn Anmerkungen
 Veröffentlicht am 25.09.2016 in LIFIS-Online.
 DOI: 10.14625/thiel_20160925
 
