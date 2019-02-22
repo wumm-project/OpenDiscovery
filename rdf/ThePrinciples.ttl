@@ -11,7 +11,7 @@
     cc:attributionName "The Open Discovery Project" ;
     cc:attributionURL <http://opendiscovery.org> ;
     cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:source <http://triz-online.de/index.php?id=5593> ;
+    dct:source <http://triz-online.de/index.php?id=5593> ;
     rdfs:comment "Extracted and transformed by HGG, 2018-01-10" ;
     rdfs:label "TRIZ Database - The 40 Principles" .
 
