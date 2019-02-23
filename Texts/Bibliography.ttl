@@ -1,0 +1,44 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix od: <http://opendiscovery.org/rdf/Model#> .
+@prefix odb: <http://opendiscovery.org/Data/BIB/> .
+@prefix odp: <http://opendiscovery.org/Data/Person/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<http://opendiscovery.org/Data/Bibliography/> a owl:Ontology ;
+   rdfs:label "Open Discovery Bibliographical Data" ;
+   rdfs:comment "Bibliography of the Open Discovery Project" .
+
+od:Reference a owl:Class ;
+   rdfs:label "DCMI Metarecord of a Publication" .
+
+<http://opendiscovery.org/Data/BIB/10.14625/thiel_20160925> a od:Reference;
+  dc:identifier <urn:doi:10.14625/thiel_20160925> ;
+  dc:creator odp:Thiel_Rainer ;
+  dc:title "Hegel, Altschuller, TRIZ. Zehn Anmerkungen"@de ;
+  dcterms:source <http://dx.doi.org/10.14625/thiel_20160925> ;
+  dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "de"^^dcterms:RFC4646 ; 
+  dcterms:issued "2016"^^dcterms:W3CDTF .
+
+<http://opendiscovery.org/Data/BIB/10.14625/thiel_20160703> a od:Reference;
+  dc:identifier <urn:doi:10.14625/thiel_20160703> ;
+  dc:creator odp:Thiel_Rainer ;
+  dc:title "Erfinderschulen – Problemlöse-Workshops. Projekt und Praxis"@de ;
+  dcterms:source <http://dx.doi.org/10.14625/thiel_20160703> ;
+  dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "de"^^dcterms:RFC4646 ; 
+  dcterms:issued "2016"^^dcterms:W3CDTF .
+
+<http://opendiscovery.org/Data/BIB/Altschuller-HowInvent-1960> a od:Reference;
+  dc:creator odp:Altshuller_GS ;
+  dc:title "КАК ДЕЛАЮТСЯ ОТКРЫТИЯ (мысли о методике научной работы)"@ru ;
+  dcterms:source <https://www.altshuller.ru/triz/investigations1.asp> ;
+  dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
+  dcterms:issued "1960"^^dcterms:W3CDTF .
