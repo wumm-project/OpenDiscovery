@@ -24,6 +24,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/razvitie_tvorcheskogo_voobrazheniya> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-5785-4> a od:Reference;
@@ -33,6 +34,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/talantlivoe_myshlenie> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4496-0678-5> a od:Reference;
@@ -42,6 +44,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/dumai_inache/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-2772-7> a od:Reference;
@@ -51,6 +54,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/metody_aktivizacii_tvorcheskogo_processa/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-5127-2> a od:Reference;
@@ -60,6 +64,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/poisk_idei_eto_prosto/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-6332-9> a od:Reference;
@@ -69,6 +74,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/reshenie_nestandartnykh_zadach/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4490-9985-3> a od:Reference;
@@ -78,16 +84,8 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/zakony_razvitiya_sistem/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
-  dcterms:issued "2018"^^dcterms:W3CDTF .
-
-<http://opendiscovery.org/Data/BIB/978-5-4490-9985-3> a od:Reference;
-  dc:identifier <urn:isbn:978-5-4490-9985-3> ;
-  dc:creator odp:Petrov_Vladimir ;
-  dc:title "Законы развития систем: ТРИЗ"@ru ;
-  dcterms:source <https://ridero.ru/books/zakony_razvitiya_sistem/> ;
-  dc:publisher "Издательские решения"@ru ;
-  dc:type "Text"^^dcterms:DCMIType ;
-  dcterms:issued "2018"^^dcterms:W3CDTF .
+  dc:language  "ru"^^dcterms:RFC4646 ; 
+  dcterms:issued "2018"^^dcterms:W3CDTF, "2019"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-3726-9> a od:Reference;
   dc:identifier <urn:isbn:978-5-4493-3726-9> ;
@@ -96,6 +94,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/osnovy_triz/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-9970-0> a od:Reference;
@@ -105,6 +104,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/strukturnyi_analiz_sistem/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-0037-0> a od:Reference;
@@ -114,6 +114,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/standarty_izobretatelstva/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4496-00191-9> a od:Reference;
@@ -123,15 +124,17 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/ariz-_85_-v_1/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4496-00190-2> a od:Reference;
   dc:identifier <urn:isbn:978-5-4496-00190-2> ;
   dc:creator odp:Petrov_Vladimir ;
-  dc:title "Задачник п АРИЗ-85-В: Алгоритм решения изобретательских задач"@ru ;
+  dc:title "Задачник по АРИЗ-85-В: Алгоритм решения изобретательских задач"@ru ;
   dcterms:source <https://ridero.ru/books/ariz-_85_-v/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-1445-1> a od:Reference;
@@ -141,6 +144,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/universalnye_priemy_razresheniya_protivorechii/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-0972-3> a od:Reference;
@@ -150,6 +154,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/sistemnyi_analiz_prodvizheniya_produkta_na_rynok/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-3018-5> a od:Reference;
@@ -159,6 +164,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/biologiya_i_zakony_razvitiya_tekhniki/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-3084-0> a od:Reference;
@@ -168,6 +174,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/gravipoli/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-5372-6> a od:Reference;
@@ -177,6 +184,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/istoriya_triz/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-5369-6> a od:Reference;
@@ -186,6 +194,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/fotoalbom_triz/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-0036-2> a od:Reference;
@@ -195,6 +204,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/istoriya_razvitiya_ariz/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-0036-2> a od:Reference;
@@ -204,6 +214,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/istoriya_razvitiya_priemov/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-0863-4> a od:Reference;
@@ -213,6 +224,7 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/istoriya_razvitiya_standartov/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
 <http://opendiscovery.org/Data/BIB/978-5-4493-6079-3> a od:Reference;
@@ -222,5 +234,6 @@ od:Reference a owl:Class ;
   dcterms:source <https://ridero.ru/books/istoriya_razvitiya_zakonov/> ;
   dc:publisher "Издательские решения"@ru ;
   dc:type "Text"^^dcterms:DCMIType ;
+  dc:language  "ru"^^dcterms:RFC4646 ; 
   dcterms:issued "2018"^^dcterms:W3CDTF .
 
