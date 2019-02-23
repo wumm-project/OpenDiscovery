@@ -37,7 +37,7 @@ Talk at the 21. Leibniz Conference „Systematisches Erfinden“,
 in progress
 
 Altschuller-HowInvent-1960.odt
-Gennadi Saulowich Altshuller
+Genrich Saulowitch Altshuller
 КАК ДЕЛАЮТСЯ ОТКРЫТИЯ (мысли о методике научной работы)
   How to invent. 1960
 Source: https://www.altshuller.ru/triz/investigations1.asp 
