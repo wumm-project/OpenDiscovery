@@ -3,3 +3,5 @@ _site
 *.aux
 *.log
 *.dvi
+*.toc
+*.bbl
