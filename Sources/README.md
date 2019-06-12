@@ -43,7 +43,6 @@ Rainer Thiel
 Altschuller, TRIZ und ProHEAL. 
 Talk at the 21. Leibniz Conference „Systematisches Erfinden“,
   24.--25. November 2016 in Lichtenwalde.
-in progress
 
 Thiel-16c.tex
 Rainer Thiel
