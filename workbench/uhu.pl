@@ -13,6 +13,12 @@ print $out;
 sub trans {
   local $_=shift;
   my @u=split /,\s*/;
-  my @v=map("odp:P$_",@u);
+  my @v=map(theMap($_),@u);
   return join(", ",@v)."\n";
+}
+
+sub theMap {
+  local $_=shift;
+  $_="0$_" if $_<10;
+  return "odp:$_";
 }
