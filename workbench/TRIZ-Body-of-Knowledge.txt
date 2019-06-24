@@ -1,0 +1,329 @@
+Basic TRIZ Concepts, Components, and Tools
+1. Foundational concepts
+1.1. Dialectics as a philosophical foundation of TRIZ [1]
+1.2. Directional evolution of technological systems [2]
+1.3. Technological system [3].
+1.4. Functions [4].
+1.5. Ideal technological system [5].
+1.6. Substance, field, sufield [6]. Substance-field resources [7].
+1.7. Reflectivity principle [8].
+1.8. Ideal substance [9].
+1.9. Ideal final result (IFR) [10]
+1.10. Inventive situation. Inventive problem [11].
+1.11. Levels of inventions [5].
+1.12. Contradictions: administrative, engineering, and physical [12].
+1.13. System operator. Multi-screen scheme of talented thinking [13].
+2. Trends (laws) and sub-trends (lines) of technological system evolution [14]
+2.1. Trend of increasing degree of ideality [14]
+2.1.1. Mechanisms of increasing the ideality of technological systems [15]
+2.2. Trend of non-uniform evolution of sub-systems [14].
+2.3. Trend of completeness of system parts [14].
+2.3.1. Sub-trend of elimination of human involvement [16].
+2.4. Trend of “energy conductivity” of systems [13].
+2.5. Trend of harmonization of rhythms [13].
+2.5.1. Sub-trends of chronokinematics [17]
+2.6. Trend of transition to super-systems [14]
+2.6.1. Sub-trend of transition from mono- to bi- and poly-systems [18]
+2.6.2. Sub-trend of increasing structurization of voids [19].
+2.6.3. Mechanisms of convolution (trimming) of technological systems. Coefficient of convolution [20]
+2.6.4. Sub-trend of deployment — convolution [21]
+2.6.5. Trimming of technological systems [22].
+2.6.6. Integration of alternative systems [22].
+2.7. Trend of increasing dynamism [23]
+2.7.1. Lines of increasing dynamism [24]
+2.8. Trend of increasing substance-field interactions [25].
+2.8.1. Lines of evolution of sufields [26]
+2.9. Trend of transition from macro-micro-levels [27].
+2.10. Trend of matching — mismatching (coordination - noncoordination) [21].
+2.11. The general pattern of engineering systems evolution [28].
+3. Algorithm for Inventive Problems Solving (ARIZ)
+3.1. ARIZ — a program for inventive problem solving by identifying and resolving contradictions [29].
+3.2. Main line for solving ARIZ problems and ARIZ logic [30].
+3.3. Structure and basic notions of ARIZ-85C [31]
+3.3.1. Problems-analogs [32]
+4. Substance-Field Analysis
+4.1. Basic concepts and rules [6].
+4.2. Standards for inventive problem solving [32]
+4.3. Structure of the system of standards. System of 76 standards [33].
+4.3.1. Standards for system modification [33]
+4.3.2. Standards for system measuring and detection [33]
+4.3.3. Standards for application of the standards [33]
+5. Techniques for resolving contradictions
+5.1. Techniques for resolving engineering contradictions (inventive principles)
+5.1.1. 40 main inventive principles [34].
+5.1.2. 10 additional inventive principles [35].
+5.1.3. Duality “principle-anti-principle” [36].
+5.1.4. The Contradiction Matrix [37].
+5.1.5. Typical diagrams of engineering contradictions [38].
+5.2. Techniques for resolving physical contradictions
+5.2.1. Separation principles [39].
+5.2.2. Using the separation principles at macro- and micro-levels [40].
+6. Scientific effects
+6.1. The concept of database of effects [41].
+6.2. Physical effects [42].
+6.3. Chemical effects [43].
+6.4. Geometrical effects [44].
+7. System analysis methods
+7.1. Methods to search and formulate inventive problems [45].
+7.2. Flow analysis [45].
+7.3. Trimming (Ideal Functional Modeling) [45].
+7.4. Cause-effect Analysis. Formulation of key problems [45].
+7.5. Component-and-structural analysis [45].
+7.6. Diagnostic analysis [45].
+7.7. Evolutionary analysis [45]
+7.8. Function analysis [45].
+7.9. Integration of alternative systems [45].
+7.10. Failure-anticipation analysis [46].
+7.11. Super-effect identification (system improvement without solving problems [47].
+
+1. Altshuller, G.S. The Dialectics of Inventive Activity. - Altshuller G.S. The Invention Algorithm, 2nd edition. - M: Moskovsky Rabotchy, 1973.
+Zhuckov, R.F., Petrov, V.M. Modern Methods of Scientific and Engineering Creativity. Guidebook. – L.: IPK SP, 1980. (http://www.trizminsk.org/e/247009.htm)
+Lymarenko, A.A. TRIZ as Applied Dialectics. -TRIZ Journal, 1993.
+2. Altshuller, G.S., Shapiro, R.B. On Psychology of Inventive Creativity. – Problems of Psychology, Vol. 6., pp. 37-49, 1956.
+Altshuller, G.S., Shapiro, R.B. On Psychology of Inventive Creativity. – Izobretenia, The Altshuller Institute for TRIZ Studies, 2000.
+3. Salamatov, Y.P., A System of Laws of Technology Evolution . – A Chance for Adventure/ Compiled by Selyutsky, A.B. - Petrozavodsk: Karelia, 1991.
+Fey, V., Rivin, E. Innovation on Demand: New Product Development Using TRIZ. – Cambridge University Press, 2005.
+4. Gerasimov, V.M., Kalish, V.S., Karpunin, M.G., Kuzmin, A.M., Litvin, S.S. Basics of the Methodology for Conducting VEA: Methodological Recommendations. M.: Inform-VEA, 1991.
+Arel, A.T., Verbitsky, M., Devoino, I., Ikovenko, S. TechOptimizer Fundamentals. – Invention Machine Educational Services, 2002
+Fey, V., Rivin, E. Innovation on Demand: New Product Development Using TRIZ. – Cambridge University Press, 2005.
+5. Altshuller, G.S. The Invention Algorithm, 2nd edition. - M: Moskovsky Rabotchy, 1973.
+Altshuller, G.S. The Innovation Algorithm. Technical Innovation Center, Inc. Worcester, MA, 1999.
+6. Altshuller, G., Gadjiev, Ch., Flickshtein, I. Introduction to Substance-Field Analysis. - Baku, OLMI, 1973.
+Altshuller, G. Sufield Analysis.: Methodological Guidelines. - Baku, OLMI, 1973.
+Altshuller, G., Flickshtein, I. Problem Solving Using Sufield Analysis. – Baku: OLMI, 1973.
+Altshuller, G.S. Principles of Sufield Analysis. – Altshuller, G.S. Creativity as an Exact Science.
+Theory of Inventive Problem Solving . - M.: Sovietskoje radio, 1979.
+Altshuller, G.S. Principles of Sufield Analysis. – Altshuller G.S., Creativity as an Exact Science,
+Gordon and Breach, NY, NY, 1988.
+Altshuller G.S., Selyutsky, A.B. Wings for Icarus: How to solve inventive problems. – Petrozavodsk:
+Karelia, 1980. – 224 p. (p. 58-72).
+Altshuller G.S. To Find an Idea: Introduction to the Theory of Inventive Problem Solving. Novosibirsk.: Nauka, 1986.
+Altshuller G.S. The Concept of Sufield. - Altshuller G.S. Daring Formulae of Creativity.- Daring
+Formulae of Creativity/ (Compiled by Selyutsky, A.B.). – Petrozavodsk: Karelia, 1987. – 269 p. –
+(Engineering - Young people - Creativity), p. 67-74.
+Petrov, V. Structural Sufield Analysis... http://www.trizland.ru/trizba.php?id=111.
+Altshuller G., Zlotin, B., Zusman A., Filatov V. Tools of Classical TRIZ. Ideation International Inc.
+1999.
+Fey, V., Rivin, E. Innovation on Demand: New Product Development Using TRIZ, Cambridge
+University Press, 2005.
+7. Altshuller, G.S. Algorithm for Inventive Problem Solving (ARIZ-85C). Methodological meterials for
+trainees of the seminar "Methods for solving scientific and engineering problems" - L.: Leningrad Metal
+Works - 1985. - 123 p. http://www.altshuller.ru/triz/ariz85v.asp.
+Altshuller, G.S. ARIZ Means Victory: Algorithm for Inventive Problem Solving ARIZ-85C. - Rules for a
+Game Without Rules / Compiled by Selyutsky, A.B. - Petrozavodsk: Karelia, 1989.
+Zlotin, B.L., Vishnepolskaya, S.V. Use of Resources in Search for New Engineering Solutions. –
+Kishinev, 1985.
+Petrov, V.М. Principles of the Theory of Resource Utilization. – L.: 1985.
+Royzen, Z. Specific Features of Resources Utilization for Problem Solving and Improving Obtained
+Solutions. – Kishinev, 1986.
+Petrov, V.М. A Technology of Resource Utilization. – Theory and practice of teaching engineering
+creativity. Abstracts of scientific papers. Chelyabinsk: UDNTP, 1988.– p. 55-56.
+8. Khotimliansky, Y. The Reflectivity Principle and its Application for Inventive Problem Solving. Baku: The
+Public Laboratory for the Innovation Methodology, 1974.
+9. Kagan, E.L. The Concept of Building a Model of the Ideal Substance. – Abstracts for the All-Union
+Scientific Conference "Problems of development of scientific and engineering creativity" (Tbilisi,
+September 30 - October 2, 1987). V.1 - Moscow: VSNTO, 1987. – p. 96-98.
+Fey, V.R. In Search for the Ideal Substance. – TRIZ Journal, V.1, No.1/90, p.36-41, V.1, No.2/90,
+p.31-40. 1990. Also, In Search for the Ideal Substance. – A Chance for Adventure, Compiled by
+Selyutsky, A.B. - Petrozavodsk: Karelia, 1991, p. 174-220.
+Salamatov, Y.P. Evolution of Substances in Technological Systems. – Abstracts for the conference
+“Methods of Scientific and Engineering Creativity,” June 30-July 2, 1984 - Novosibirsk, p. 64-66, 1984.
+10. Altshuller, G.S. Creativity as an Exact Science. Theory of Inventive Problem Solving . - M.:
+Sovietskoje radio, 1979.
+Altshuller G.S., Creativity as an Exact Science, Gordon and Breach, NY, NY, 1988.
+11. Altshuller, G.S. The Process of Inventive Problem Solving: Main Stages and Mechanisms. 06.04.75
+(http://www.altshuller.ru/triz1.asp)
+Altshuller, G.S., Selyutsky, A.B. Wings for Icarus: How to Solve Inventive Problems. –
+Petrozavodsk: Karelia, 1980.
+Altshuller, G.S. The Daring Formulae of Creativity. In The Daring Formulae of Creativity/ (Compiled
+by A.B.Selyutsky). – Petrozavodsk: Karelia, 1987.
+Zhuckov, R.F., Petrov, V.M. Modern Methods of Scientific and Engineering Creativity. Guidebook.
+– L.: IPK SP, 1980. (http://www.trizminsk.org/e/247009.htm)
+Altshuller, G.S. Administrative, Engineering, and Physical Contradictions. - Altshuller G.S. Creativity
+as an Exact Science: Theory of Inventive Problem Solving. - M., Sovietskoje Radio, 1979.
+Altshuller, G.S. The Structure of Talented Thinking. - Altshuller, G.S. Creativity as an Exact
+Science. - M.: Sovietskoje radio, 1979.
+Mann, D. Hands-On Systematic Innovation, CREAX Press, Ieper, Belgium, 2002.
+Rantanen, K., Domb, E. Simplified TRIZ, CRC Press, Boca Raton, Florida, 2002.
+Altshuller, G.S. Laws of Engineering Systems Evolution. – Baku, 20.01.1977.
+Altshuller, G.S. Laws of Systems Evolution. - Altshuller G.S. Creativity as an Exact Science.
+Theory of Inventive Problem Solving. - M.: Sovietskoje Radio, 1979
+(http://www.altshuller.ru/triz/zrts1.asp)
+Altshuller, G.S. Laws of Technological Systems Evolution. – Altshuller, G.S. The Daring Formulae
+of Creativity.- The Daring Formulae of Creativity. Compiled by Selyutsky, A.B. – Petrozavodsk:
+Karelia, 1987.
+Gerasimov, V., Litvin, S. Mechanisms for Enhancing the Ideality of Technological Systems in VEA. – L.
+1985.
+Petrov, V.М. Idealization of Technological Systems. - District Scientific-and-Practical Conference
+"Problems of Development of Scientific and Engineering Creativity of Engineers". Abstracts of reports.
+Gorky, 1983, p. 60-62. http://www.trizland.ru/trizba/pdf-books/zrts-08-ideal.pdf
+Salamatov, Y.P., Kondrakov, I.M. Specific Features of Ideal Technological Systems. – Abstracts for the
+conference “Methods of Scientific and Engineering Creativity,” June 30-July 2, 1984 - Novosibirsk, p. 6466, 1984.
+Altshuller, G.S., Zlotin, B.L., Zusman, A.V., Filatov. V.I. Search for New Ideas: From Insight to
+Technology - Kishinev, Cartia Moldoveniaske, 1989.
+Altshuller, G.S., Zlotin, B.L., Zusman, A.V., Filatov, V.I. Tools of Classical TRIZ. – Ideation
+International, Southifeld, MI, 1999.
+Fey, V.R. Chronokinematics of Technological Systems. – Baku, 1988.
+Fey, V., Rivin, E. Innovation on Demand: New Product Development Using TRIZ. – Cambridge
+University Press, 2005.
+Altshuller, G.S. To Find an Idea: Introduction to the Theory of Inventive Problem Solving. Novosibirsk: Nauka, 1986.
+Altshuller, G.S. Small Boundless Worlds: The Standards for Inventive Problem Solving. - A Thread
+in the Labyrinth/Compiled by Selyutsky, A.B.. - Petrozavodsk: Karelia, 1988.
+Petrov V. The Trend of Transition to Supersystems, http://www.trizland.ru/trizba/pdf-books/zrts-17nadsyst.pdf.
+Altshuller, G.S., Vertkin, I.M. Lines of Increasing Structurization of Voids.
+Baku, 1987
+http://www.altshuller.ru/triz/zrts5.asp.
+Vertkin, I.M. Mechanisms of Convolution of Technological Systems. – Baku, 1984
+Altshuller, G.S., Zlotin, B.L., Zusman, A.V., Filatov, V.I. Search for New Ideas: From Insight to
+Technology (The Theory and Practice of Inventive Problem Solving) - Kishinev, Kartia
+Moldoveniaske, 1989.
+Altshuller, G.S., Zlotin, B.L., Zusman, A.V., Filatov, V.I. Tools of Classical TRIZ. – Ideation
+International, Southifeld, MI, 1999.
+Gerasimov, V.M., Litvin, S.S. Using the Trends of Technology Evolution in VEA of Manufacturing
+Processes. - Practices of Conducting VEA in the Electrical Product Industry. Ed. by M.G.Karpunin.
+M., Energoatomizdat, 1987.
+Gerasimov, V.M., Kalish, V.S., Karpunin, M.G., Kuzmin, A.M., Litvin, S.S. Basics of the
+Methodology for Conducting VEA: Methodological Recommendations. M.: Inform-VEA, 1991.
+Gerasimov, V.M., Litvin, S.S. A Unified System of TRIZ-VEA. – TRIZ Journal, No. 3.2.92 , p.7-45.
+Gerasimov, V.M., Litvin, S.S. Why Does Engineering Need Pluralism? TRIZ Journal, No.1.90.
+Altshuller, G.S. To Find an Idea: Introduction to the Theory of Inventive Problem Solving. Novosibirsk: Nauka, 1986.
+Altshuller, G.S., Zlotin, B.L., Zusman, A.V., Filatov, V.I. A Search for New Ideas: From Insight to
+Technology (The Theory and Practice of Inventive Problem Solving) - Kishinev, Kartia
+Moldoveniaske, 1989.
+Altshuller, G.S., Zlotin, B.L., Zusman, A.V., Filatov, V.I. Tools of Classical TRIZ. – Ideation
+International, Southifeld, MI, 1999.
+Fey, V., Rivin, E. Innovation on Demand: New Product Development Using TRIZ. – Cambridge
+University Press, 2005.
+Altshuller, G.S., Vertkin, I.M. Lines of Fragmentation. Baku, 1987 http://www.altshuller.ru/triz/zrts5.asp.
+Salamatov, Y.P., A System of Laws of Technology Evolution . – A Chance for Adventure/ Compiled
+by Selyutsky, A.B. - Petrozavodsk: Karelia, 1991.
+Altshuller, G.S., Zlotin, B.L., Zusman, A.V., Filatov, V.I. Tools of Classical TRIZ. – Ideation
+International, Southifeld, MI, 1999.
+Fey, V., Rivin, E. Innovation on Demand: New Product Development Using TRIZ. – Cambridge
+University Press, 2005.
+Altshuller, G.S. To Find an Idea: Introduction to the Theory of Inventive Problem Solving. Novosibirsk: Nauka, 1986.
+Salamatov, Y.P., A System of Laws of Technology Evolution . – A Chance for Adventure/ Compiled
+by Selyutsky, A.B. - Petrozavodsk: Karelia, 1991.
+Altshuller, G.S., Zlotin, B.L., Zusman, A.V., Filatov, V.I. Tools of Classical TRIZ. – Ideation
+International, Southifeld, MI, 1999.
+Fey, V., Rivin, E. Innovation on Demand: New Product Development Using TRIZ. – Cambridge
+University Press, 2005.
+Vertkin, I.M. The General Pattern of Sufield Evolution. – Presentation at the conference “Methods of
+Scientific and Engineering Creativity,” Novosibirsk, June 30-July 2, 1984.
+Vertkin, I.M, Fey, V.R. A Study of Sufields with Thermal and Magnetic Fields in Technological Systems.
+– Abstracts for the conference “Methods of Scientific and Engineering Creativity,” June 30-July 2, 1984 Novosibirsk, p. 79-81, 1984.
+Altshuller, G.S. To Find an Idea: Introduction to the Theory of Inventive Problem Solving. Novosibirsk: Nauka, 1986.
+Fey, V.R. In Search for the Ideal Substance. – TRIZ Journal, V.1, No.1/90, p.36-41, V.1, No.2/90,
+p.31-40, 1990. Also, In Search for the Ideal Substance. – A Chance for Adventure. Compiled by
+Selyutsky, A.B. - Petrozavodsk: Karelia, p. 174-220, 1991.
+Altshuller, G.S. Creativity as an Exact Science. - M.: Sovietskoje Radio, 1979
+Altshuller, G.S. To Find an Idea: Introduction to the Theory of Inventive Problem Solving. Novosibirsk: Nauka, 1986.
+Petrov, V. Trend of System Transition from Macro- to Microlevels. http://www.trizland.ru/trizba/pdfbooks/zrts-12-microlevel.pdf.
+Altshuller, G.S. To Find an Idea: Introduction to the Theory of Inventive Problem Solving. Novosibirsk: Nauka, 1986.
+Petrov, V.М. A System of Laws of Technological System Evolution. - Lecture at the seminar for TRIZ
+instructors and researchers (Petrozavodsk-82). – L.: 1982. http://www.trizland.ru/trizba.php?id=108.
+Salamatov Y.P., A System of Laws of Technology Evolution . – A Chance for Adventure. Compiled
+by Selyutsky, A.B.. - Petrozavodsk: Karelia, 1991.
+Salamatov, Y.P., Kondrakov, I.M. Idealization of Technological Systems. A Study and Development
+of a Spatial-Temporal Model of Technological System Evolution (“a wave of idealization") based on the
+study of evolution of a technological system "heat pipe.”
+Krasnoyarsk, 1984.
+http://rus.trizguide.com/publicat/allbooks/ideal_tech_systems.html.
+Altshuller, G.S. The History of ARIZ Evolution, 1987 http://www.altshuller.ru/triz/ariz-about1.asp.
+Zhuckov, R.F., Petrov. V.M. Modern Methods of Scientific and Engineering Creativity – L.: IPK SP,
+1980. http://www.trizland.ru/trizba.php?id=105.
+Altshuller, G.S. Algorithm for Inventive Problem Solving ARIZ-85C. Methodological materials for trainees
+of the seminar "Methods of solving scientific and engineering problems" - L.: Leningrad Metal Works
+,1985 http://www.altshuller.ru/triz/ariz85v.asp.
+Altshuller, G.S. Comments on ARIZ-85А. – In Altshuller, G.S. Algorithm of Inventive Problem Solving
+ARIZ-85А. – Baku, 1983.
+Petrov, V.М. Use of Problems-Analogs in Inventive Activity. – Methodological problems of engineering
+activities. Part II Engineering heuristics and technology forecasting. – Riga, Znanije, 1983.
+Litvin, S.S. They are Unlike, but They are Similar (Problems-analogs in TRIZ). – TRIZ Journal, 95.1
+(No.10). – p. 47-50.
+Altshuller, G.S. Creativity as an Exact Science: Theory of Inventive Problem Solving . - M.:
+Sovietskoje radio, 1979.
+Altshuller, G.S. Principles of Sufield Analysis. – Altshuller G.S., Creativity as an Exact Science,
+Gordon and Breach, NY, NY, 1988.
+Altshuller,
+G.S.
+Theory
+of
+Inventive
+Problem
+Solving.
+Angarsk,
+1988.
+http://www.altshuller.ru/engineering16.asp.
+Altshuller, G.S. To Find an Idea: Introduction to the Theory of Inventive Problem Solving. Novosibirsk.: Nauka, 1986,
+Altshuller, G., Zlotin, B., Zusman, A., Filatov, V. Tools of Classical TRIZ. Ideation International Inc.
+1999.
+Altshuller G.S. Small Huge Worlds: Standards for Inventive Problem Solving - A Thread in the
+Labyrinth/Compiled
+by
+Selyutsky,
+A.B.
+Petrozavodsk:
+Karelia,
+1988.
+http://www.altshuller.ru/triz/standards.asp.
+Fey, V., Rivin, E. Innovation on Demand: New Product Development Using TRIZ. – Cambridge
+University Press, 2005.
+Terninko, J., Domb, E., Miller, J. The Seventy Six Standard Solutions, with Examples. - http://www.trizjournal.com/archives/2000/02/g/index.htm, http://www.triz-journal.com/archives/2000/03/d/index.htm,
+http://www.triz-journal.com/archives/2000/05/b/index.htm, http://www.trizjournal.com/archives/2000/06/e/index.htm, http://www.triz-journal.com/archives/2000/07/b/index.htm.
+Altshuller, G.S. Main Techniques for Elimination of Engineering Contradictions in Inventive Problem
+Solving. - Baku: Giandjlick, 1971.
+Altshuller, G.S. The Invention Algorithm, 2nd edition. - M: Moskovsky Rabotchy, 1973.
+Altshuller, G.S. The Innovation Algorithm. Technical Innovation Center, Inc. Worcester, MA, 1999.
+Altshuller, G.S. Creativity as an Exact Science. Theory of Inventive Problem Solving . - M.:
+Sovietskoje radio, 1979.
+Altshuller G.S., Creativity as an Exact Science, Gordon and Breach, NY, NY, 1988.
+Altshuller, G.S. Classification of the Inventive Principles: Petrozavodsk, 1985.
+Altshuller, G.S. An Additional List of Inventive Principles. - Baku, 1971.
+http://www.altshuller.ru/triz/technique1a.asp.
+Altshuller, G.S., Brenner, M.A. Examples for the Inventive Principles. – Baku, 1984.
+Flickstein, I.M. A Study of Main Techniques for Eliminating Engineering Contradictions for Inventive
+Problems Solving. - Baku, 1973.
+Petrov, V.М. Paired Inventive Principles. – Leningrad, 1974. http://www.trizminsk.org/e/212002.htm.
+Altshuller, G.S. The Invention Algorithm, 2nd edition. - M: Moskovsky Rabotchy, 1973.
+Altshuller, G.S. The Innovation Algorithm. Technical Innovation Center, Inc. Worcester, MA, 1999.
+Mann, D. Hands-On Systematic Innovation, CREAX Press, Ieper, Belgium, 2002.
+Rantanen, K., Domb, E. Simplified TRIZ, CRC Press, Boca Raton, Florida, 2002.
+Altshuller, G.S. ARIZ-85C, Table 1. - Baku, 1985.
+Altshuller, G.S. ARIZ-85C, Table 2. - Baku, 1985.
+Litvin S.S. Techniques for resolving physical contradictions. – Leningrad, 1981.
+Altshuller G.S. Creativity as an Exact Science: The Theory of Inventive Problem Solving. – M.:
+Sovietskoje radio, 1979.
+Altshuller G.S. Creativity as an Exact Science: The Theory of Inventive Problem Solving. – M.:
+Sovietskoje radio, 1979.
+Gorin, Yu. Index of Physical Effects and Phenomena for Inventors. - Baku, 1973.-300 p.
+http://www.triz-summit.ru/ru/section.php?docId=3672
+Gorin Y. Application of Physical Effects and Phenomena when Solving Inventive Problems. –
+Baku: OLMI.
+Denisov, S., Yefimov, V., Zubarev, V., Kustov, V. Index of Physical Effects and Phenomena for
+Innvators /.- Obninsk, 1977. http://lib.web-malina.com/getbook.php?bid=1693
+Borodastov, G.V., Denisov, S., Yefimov, V., Zubarev, V., Kustov, V., Goncharov, A.N. Index of
+Physical Phenomena and Effects for Solving Inventive Problems: Training Material /. – M.: The
+Central Scientific Research Institute "Atominform", 1979.
+Magic Crystal of Physics. – The Daring Formulae of Creativity/Compiled by Selyutsky, A. B.). –
+Petrozavodsk: Karelia, 1987.
+Salamatov, Y.P. Heroic Deeds at Molecular Level: Chemistry Helps Solve Difficult Inventive
+Problems. - A Thread in the Labyrinth / Compiled by Selyutsky, A.B. - Petrozavodsk: Karelia, 1988.
+http://rus.triz-guide.com/publicat/allbooks/feates_on_molecular_level.html.
+Vikentiev, I.L., Yefremov, V.I. The Curve That Will Always Help You Out: Geometry for Inventors. A Thread in the Labyrinth, Compiled by Selyutsky, A. B. - Petrozavodsk: Karelia, 1988 http://www.trizchance.ru/geometrical_effect.html.
+45. Gerasimov, V.M., Doubrov, V.Y., Karpounin, M.G., Kuzmin, A.M., Litvin, S.S. Application of
+Methods of Engineering Creativity when Conducting Value Engineering Analysis: Methodological
+Recommendations. M.: "Informelectro", 1990.
+Gerasimov, V.M., Litvin, S.S. Using the Trends of Technology Evolution in VEA of Manufacturing
+Processes. - Practices of Conducting VEA in the Electrical Product Industry. Ed. by M.G.Karpunin. M.,
+Energoatomizdat, 1987.
+Gerasimov, V.M., Kalish, V.S., Karpounin, M.G., Kuzmin, A.M., Litvin, S. S. Basics of the
+Methodology for Conducting Value Engineering Analysis: Methodological Recommendations. M.:
+Inform-VEA, 1991.
+Gerasimov, V.M., Litvin, S.S. A Unified System of TRIZ-VEA. TRIZ Journal, No. 3.2.92, p.7-45.
+Gerasimov, V.M., Litvin, S.S. Why Does Engineering Need Pluralism? TRIZ Journal, No.1.90 , p.11-26.
+46. Zlotin, B.L., Zusman, A.V. A Methodology for Forecasting Extraordinary Situations, Harmful and
+Undesirable Phenomena. Kishinev. – 1991.
+Kaplan, S., Visnepolski S., Zlotin, B., Zusman, A. New Tools for Failure and Risk Analysis. Ideation
+International Inc. 1999.
+47. Gerasimov, V.M., Litvin, S.S. Construction of Functionally Ideal Models when Conducting VEA, 1989.
