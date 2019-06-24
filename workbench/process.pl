@@ -1,8 +1,30 @@
 my @l=split(/\n+/,getData());
 my $out;
-map $out.=process($_), @l;
+#map $out.=process($_), @l;
 
-print $out; 
+for (my $i=1; $i <= 39; $i++) {
+  for (my $j=1; $j <= 39; $j++) {
+    $out.=createEntry($i,$j);
+  }
+}
+
+print $out;
+
+## end main
+
+sub createEntry {
+  my ($i,$j)=@_;
+  return <<EOT;
+<http://opendiscovery.org/rdf/Matrix/E.$i.$j>
+  a od:MatrixEntry ;
+  od:badParameter odm:P$i ;
+  od:goodParameter odm:P$j ;
+  od:recommendedPrinciple odp:P1 .
+
+EOT
+  
+}
+
 
 sub process {
   local $_=shift;

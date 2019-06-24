@@ -220,8 +220,6 @@
 
 39
 
-24 Informationsverluste
-
 28, 27,
 35, 26
 
@@ -284,11 +282,7 @@
 15, 35,
 36, 37
 
-25 Zeitverluste
-
 15, 2, 29
-
-26 Materialmenge
 
 35, 6, 18,
 31
@@ -299,8 +293,6 @@
 29, 14,
 35, 18
 
-27 Zuverlässigkeit
-
 3, 8, 10,
 40
 
@@ -308,15 +300,11 @@
 28
 4
 
-28 Messgenauigkeit
-
 32, 35,
 26, 28
 
 28, 35,
 25, 26
-
-29 Fertigungsgenauigkeit
 
 28, 32,
 13, 18
@@ -400,8 +388,6 @@
 35, 10
 
 39
-
-Produktivität
 
 35, 26,
 24, 37
@@ -510,8 +496,6 @@ Produktivität
 35, 10, 2,
 18
 
-Kontakt und weitere Infos zu TRIZ: www.triz-online.de / www.triz-online-magazin.de
-
 20, 10,
 16, 38
 
@@ -527,20 +511,12 @@ Kontakt und weitere Infos zu TRIZ: www.triz-online.de / www.triz-online-magazin.
 10, 14,
 35, 37
 
-11
-
-Prinzip des „vorher untergelegten Kissens“ (Prävention)
-
 16, 29, 1,
 15, 13, 39 15, 1, 32
 28
 
 17, 26,
 34, 10
-
-12
-
-Prinzip des Äquipotenzials
 
 2, 35, 22,
 26
@@ -779,10 +755,6 @@ Prinzip des Ersatzes mechanischer Wirkprinzipien
 10, 18,
 32, 39
 
-29
-
-Prinzip der Anwendung von Pneumo und Hydrokonstruktionen
-
 22, 19,
 29, 40
 
@@ -794,10 +766,6 @@ Prinzip der Anwendung von Pneumo und Hydrokonstruktionen
 22, 35,
 13, 24
 
-30
-
-Prinzip der Anwendung biegsamer Hüllen und dünner Folien
-
 19, 1, 31
 
 2, 21, 27,
@@ -808,18 +776,10 @@ Prinzip der Anwendung biegsamer Hüllen und dünner Folien
 22, 35,
 18, 39
 
-31
-
-Prinzip der Verwendung poröser Werkstoffe
-
 8, 28, 1
 
 35, 1, 10,
 28
-
-32
-
-Prinzip der Farbveränderung
 
 32, 26,
 12, 17
@@ -828,10 +788,6 @@ Prinzip der Farbveränderung
 15, 1, 28
 3
 
-33
-
-Prinzip der Gleichartigkeit bzw. Homogenität
-
 35, 1, 13,
 11
 
@@ -839,43 +795,15 @@ Prinzip der Gleichartigkeit bzw. Homogenität
 1, 32, 10
 13
 
-34
-
-Prinzip der Beseitigung und Regenerierung von Teilen
-
 35, 28, 6,
 37
 
-35
-
-Prinzip der Veränderung des Aggregatzustandes eines Objektes
-
 15, 1, 24 12, 17, 28
-
-36
-
-Prinzip der Anwendung von Phasenübergängen
 
 35, 18
 
-37
-
-Prinzip der Anwendung von Wärme(aus)dehnung
-
 5, 12, 35,
 26
-
-38
-
-Prinzip der Anwendung starker Oxidationsmittel
-
-39
-
-Prinzip der Verwendung eines trägen Mediums
-
-40
-
-Prinzip der Anwendung zusammengesetzter Stoffe
 
 15, 29,
 37, 28
@@ -884,8 +812,6 @@ Prinzip der Anwendung zusammengesetzter Stoffe
 29
 
 35, 38
-
-Prinzip des Durcheilens
 
 26, 2, 18
 
@@ -897,15 +823,11 @@ Prinzip des Durcheilens
 
 19, 35, 16 28, 2, 17 28, 35, 34
 
-Prinzip der billigen Kurzlebigkeit anstelle teurer Langlebigkeit
-
 22, 19,
 29, 28
 
 28, 10,
 35, 23
-
-Prinzip der Kontinuität (Permanenz) der Wirkprozesse
 
 27
 
@@ -929,16 +851,12 @@ Prinzip der Kontinuität (Permanenz) der Wirkprozesse
 
 1, 6
 
-Prinzip des Kopierens
-
 27, 26, 1, 27, 9, 26,
 13
 24
 
 28, 26,
 10, 34
-
-Prinzip der periodischen Wirkung
 
 26
 
@@ -979,11 +897,7 @@ Prinzip der periodischen Wirkung
 24, 28,
 35, 30
 
-Prinzip der Ausnutzung mechanischer Schwingungen
-
 2, 26, 10 2, 25, 16
-
-Prinzip der Selbstbedienung
 
 6, 29
 
@@ -1001,8 +915,6 @@ Prinzip der Selbstbedienung
 35, 10,
 18, 5
 
-Prinzip des Übergangs zu höheren Dimensionen
-
 6, 29
 
 35, 28
@@ -1019,15 +931,11 @@ Prinzip des Übergangs zu höheren Dimensionen
 31
 16
 
-Prinzip des „Vermittlers“
-
 35, 13, 8, 35, 5, 1,
 24
 10
 
 28, 2, 27
-
-Prinzip der partiellen oder überschüssigen Wirkung
 
 24
 
@@ -1092,8 +1000,6 @@ Prinzip der partiellen oder überschüssigen Wirkung
 35, 33,
 27, 22
 
-Prinzip der Dynamisierung
-
 35, 33
 
 27, 24, 2,
@@ -1116,8 +1022,6 @@ Prinzip der Dynamisierung
 
 35, 17,
 14, 19
-
-Prinzip der Rückkopplung
 
 4, 17, 34,
 26
@@ -2243,9 +2147,6 @@ Prinzip der Zerlegung bzw. Segmentierung
 10, 35, 14 2, 36, 25
 
 28, 32, 4
-
-c4pi - Center for
-Product-Innovation
 
 26, 30,
 36, 34
