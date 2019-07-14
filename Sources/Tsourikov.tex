@@ -1,0 +1,352 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{od}
+\usepackage[utf8]{inputenc}
+
+\title{30 Jahre Projekt „Invention Machine“}
+
+\author{V. Tsourikov, Minsk}
+\date{TRIZ Summit 2019 in Minsk}
+
+\begin{document}
+\maketitle
+\begin{quote}
+  Original: \foreignlanguage{russian}{30 лет проекту «Изобретающая
+    машина»}\footnote{\url{http://triz-summit.ru/file.php/id/f304802-file-original.pdf}.}.
+  Proceedings of the TRIZ Developers Summit, June 13--15, 2019, Minsk,
+  Belarus.  Übersetzt von Hans-Gert Gräbe, Leipzig. 
+\end{quote}
+
+\begin{abstract}  
+  Der Bericht diskutiert die Entwicklung des Invention Machine Projekts von der
+  Idee des „Computers als intelligenter Assistent des Erfinders“ zum Konzept des
+  „Computers als realer Erfinder, als ebenbürtiger kreativer Partner des
+  Menschen“. Anstelle von Hilfestellungen in Form von Effekten oder Zugängen
+  erzeugt das intellektuelle System Erfindungen auf dem Bildschirm.
+\end{abstract}
+
+\emph{Schlüsselwörter:} Generative Inventions, automatisch generierte
+Erfindungen, True Machina\footnote{ Invention Machine ist eine Marke der
+  Invention Machine Corp.  True Machina ist eine Marke von Prediso.  }
+
+\section{Lem, Turing und ein Programm für Minsk-22}
+
+Unmittelbar nach dem Eintritt in das Fachgebiet Computertechnik des Minsker
+radiotechnischen Instituts hatte ich das Glück, Lems „summa technologiae“ zu
+lesen und das Konzept der universellen Turingmaschine kennenzulernen.  Die
+grenzenlosen Möglichkeiten der kybernetischen Welt Lems und die unglaubliche
+Schönheit von Turings abstrakter Mathematik bildeten zusammen eine explosive
+Mischung, die mich stark bewegten. Ein Computer kann alles! Es blieb, ein
+würdiges Thema für meine eigenen Forschungen in der künstlichen Intelligenz zu
+finden. Den Computer in einen Erfinder verwandeln -- klang verrückt, aber
+spannend.
+
+\subsection{Der kombinatorische Synthetisator}
+
+Als Diplomprojekt sollte ein Digital-Analog-Wandler entworfen und gebaut
+werden.  Die Arbeit verzögerte sich aufgrund der großen Streuung der Parameter
+der einzubauenden Widerstände. Es entstand die Idee, ein Programm zu
+schreiben, das eine Vielzahl von Verbindungsvarianten von Widerständen
+generieren und aus diesen die passendste Konfiguration auswählen kann.  Das
+wurde auf einer Minsk-22, in der Sprache Autocode ENGINEER umgesetzt, der
+Algorithmus auf einem Lochstreifen „gespeichert“.
+
+Das Programm funktionierte, es war ein Qualitätskonverter für schlechte
+Widerstände entstanden. An die emotionale Wirkung des Wunders erinnere ich
+mich bis heute. In diesem Algorithmus aus dem Jahr 1973 sind beide Teile des
+kreativen Prozesses enthalten: die Ideengenerierung und die parametrisierte
+Qualitätsbewertung der Ideen.
+
+Das Programm wurde von einem Menschen geschrieben, aber den gesamte kreative
+Zyklus der Suche nach der besten Lösung führte der Computer aus. Der Computer
+kann erschaffen, und zwar auf seine eigene Weise -- das war eine wichtige
+Schlussfolgerung.
+
+\subsection{Das intelligente System \emph{Pulsar}}
+
+Der nächste Schritt war das intelligente System \emph{Pulsar} für die
+automatische Synthese neuer Methoden zur Auswertung kosmischer Signale im
+SETI-Projekt.  Neun Jahre der Arbeit, zweihundert Softwaremodule -- das
+Ergebnis: die automatische Synthese von zwanzigtausend neuen
+Signalverarbeitungsalgorithmen [1]. Dieses System verfügte bereits über eine
+Wissensbasis aud mathematischen Theoreme (als \emph{mathematische Effekte}
+bezeichnet), aus denen automatisch Signaldetektorstrukturen erzeugt und deren
+Qualität durch eine Monte-Carlo-Methode bewertet wurde.
+
+Im Wesentlichen arbeitete der 1983er Pulsar wie Edison bei der Materialauswahl
+für einen Faden seiner Glühbirne. Dies war zugleich die erste wirkliche
+Erfinder-Maschine, allerdings in einem sehr engen Bereich. Das System
+\emph{Pulsar} schlug dem Benutzer keine Tricks oder Effekte vor, sondern
+synthetisierte neue Erfindungen und bewertete deren Qualität.
+
+\subsection{Die Schule des jungen Erfinders}
+
+Das Pulsar-Projekt wurde von niemandem finanziert, obwohl es das vage Gefühl
+gab, dass dies in Zukunft passieren könnte, und dann würden begeisterte
+Entwickler benötigt. Ich verteilte an die Gruppen-Ältesten mehrere Dutzend
+Kopien des Programms eines Kurses (künstliche Intelligenz, Psychologie der
+Kreativität, Algorithmus der Erfindung) und bestellte einen Hörsaal.  So wurde
+im Herbst 1976 die \emph{Schule des jungen Erfinders} geboren, die eine
+außerordentlich wichtige Rolle im IM-Projekt spielte. Der Kurs erforderte
+ernsthaftes Arbeiten über zwei Semester, mit Hausaufgaben und
+Abschlussprojekten.  Jedes Jahr kamen bis zu 80 Personen in die ersten
+Veranstaltungen, den Abschluss erreichten nicht mehr als 12. Aber was für
+Absolventen!  Jeder ein geborener Leiter, mit innerem kreativem Feuer.  Die
+Absolventen der Schule träumten nicht nur von Kreativität, sie waren ernsthaft
+bereit und innerlich überzeugt, sich in das Projekt hineinzuknien.
+
+Es ist bezeichnend, dass später, als sich in Minsk Software-Unternehmen
+ausbreiteten und mit hohen Gehälter winkten, nur wenige der Jungs aus der
+ersten Gruppe des IM-Projekts sich im langweiligen Outsourcing versuchten.
+
+\section{Die Erfinde-Maschine (IM)}
+\subsection{NILIM -- das wissenschaftliche Forschungslabor für
+  Erfindemaschinen.  TRIZ als Basis für die IM}
+
+1987 gelang es dem MRTI\footnote{Minsker Radiotechnisches Institut}, ein Labor
+für intelligente Systeme zu eröffnen, in dessen Bestand die Absolventen der
+Schule aufgenommen wurden. Die Begeisterung war sehr groß, aber auch die
+Bürokratie war nicht schwach und fraß die meiste Zeit des Laborleiters.
+
+Wir beschlossen, eine Genossenschaft zu gründen. Die Firma
+\emph{Wissenschaftliches Forschungslabor für Erfinde-Maschinen} wurde am
+12. April 1989 registriert. Das Motto der Firma war „Hohe Qualität und neueste
+Technologie“. Es wurde eine Lizenz für die Sprache PROLOG vom britischen
+Unternehmen LPA erworben, gegen die künftigen Lieferung von Software erhielten
+wir importierte Personalcomputer vom Minsker Zahnradwerk. Wir mieteten ein
+Büro in einer großartigen Lage, neben einem Café, in dem Sie einen starken
+Kaffee brühten. Ab da verlief die Entwicklung in hohem Tempo.
+
+Die Atmosphäre in der Firma war freundlich und unglaublich kreativ. Zweimal im
+Jahr veranstalteten wir Ausstellungen und Seminare für Anwender, die Vorträge
+wurden veröffentlicht. Jedem Mitarbeiter waren vier Firmen zugeordnet, die ein
+IM-System gekauft hatten, der regelmäßig die Anwender anrief und so wertvolles
+Feedback aus erster Hand erhielt. Übrigens waren die Erfahrungen der Firma
+NILIM nützlich bei der Gründung der TRIZ-Vereinigung in Petrosawodsk.
+
+Die auf TRIZ-Methoden basierende Invention Machine [2] war kein automatischer
+Ideen-Synthetisator, sondern unterstützte die Erfinder intellektuell und war
+aus der Perspektive der künstliche Intelligenz ein Schritt zurück im Vergleich
+zum Pulsar-System, dafür aber war sie für eine viel größere Anzahl von
+Anwendern interessant, insbesondere beim Erlernen der TRIZ-Methoden und der
+Logik der Funktions-Wert-Analyse.
+
+\subsection{Die Praxis der Verwendung von IM}
+
+Die Gründung der Firma \emph{Invention Machine Corporation} in Boston am
+7. April 1992 erlaubt die Beschaffung von Kapital von Motorola, Intel, von
+Risikokapitalfonds und die Bereitstellung von Schulungen und Beratung für
+große technische Firmen (Motorola, Kodak, Xerox, Intel, Procter und Gamble,
+General Electric, NASA, BMW, Ferrari, Mitsubishi, Honda, Unilever usw.).  Der
+\emph{TechOptimizer} war gut für den Unterricht einzusetzen, aber die Anzahl
+der aktiven Benutzer wuchs langsam.
+
+Bei der Lösung realer Probleme bemerkten die Ingenieure schnell die
+Einschränkungen der TRIZ-Wissensbasis und verloren einfach das Interesse.
+Mehr noch, selbst richtig gute Empfehlungen des Systems wurden von den
+Ingenieuren oft abgelehnt, ohne auch nur zu versuchen, die empfohlenen Zugänge
+oder Wirkung anzuwenden wegen der Barriere zwischen zu abstrakten
+Systemempfehlungen und dem konkreten Problemmodell im Kopf des Anwenders.
+
+Um die Möglichkeiten des Systems zu erweitern, wurden zwei Projekte gestartet:
+ein Ursache-Wirkungs-Synthetisator und ein semantischer Prozessor für die
+Suche nach notwendigem Wissen im Internet. Beide Projekte erforderten viel
+Kapital und Aufwand.
+
+\subsection{Synthetisator für Effektketten}
+
+Direkte logische Schlussketten (von Fakten zu einem Ziel) und inverse (von
+einem Ziel zu Fakten) bilden den Kern kreativen Denkens. Warum nicht beide
+Arten von Schlussketten zur wissenschaftlichen Datenbasis hinzufügen, damit
+die Ingenieure das neue System aktiver anwenden können? Das war ein Schritt in
+Richtung der Erweiterung des Raums möglicher Lösungen, und wir rechneten mit
+einer starken Zunahme der Zahl aktiver Nutzer. Die Realitäten waren etwas
+anders.  Das System erzeugte interessante Wirkungsketten, aber die Barriere
+der Missverständnisse blieb bestehen und, mehr noch, verstärkte sich, da
+anstelle eines Effekts nun gleich mehrere zu analysieren waren. 
+
+Ich habe persönlich Fälle beobachtet, in denen die Invention Machine sehr
+vielversprechende zusammengesetzte Konzepte ausgab, aber der Anwender nicht
+einmal versucht hat, diese zu studieren. Drei unbekannte Effekte zu gleicher
+Zeit -- die Ingenieure weigerten sich, solche Konzepte zu analysieren.  Dieses
+Problem brachte uns auf die Idee, dass, wie schwierig dies auch sein mag, die
+Ideen nicht in Form von Effekten oder Wirkungen zu präsentieren, sondern in
+Form grafischer Darstellungen technischer Systeme. Das heißt, es war ein
+echter KI-Erfinder zu programmieren, der nicht nur Vorschläge macht, sondern
+selbst erfindet und die Erfindung auf dem Bildschirm darstellt. Diese Idee
+wurde später zur Grundlage des Projekts \emph{True Machina}.
+
+\subsection{Der semantische Prozessor}
+
+Der Einsatz des IM-Systems zur Lösung praktischer Probleme in führenden
+technischen Unternehmen der USA, in Westeuropa und Asien führte zum
+Verständnis, dass die korrekte Formulierung der Erfinderaufgabe in Form einer
+technischen Funktion von der sofortigen Bereitstellung der erforderlichen
+Wissensquellen nicht nur aus der Datenbasis, sondern aus dem ganzen Internet
+begleitet werden muss, in denen die Implementierung dieser und ähnlicher
+Funktion zu sehen ist.
+
+Angenommen, Im Prozess der Analyse einer Aufgabe wurde als wichtige technische
+Funktion identifiziert \emph{Erhöhen Sie die Stärke der Turbinenschaufeln}. Es
+wäre dannnicht schlecht, Zugang zu den neuesten Forschungsergebnissen in
+diesem Bereich zu haben, und zwar nicht in Form einer endlosen Liste von
+Webadressen, sondern in Form von kurzen kausalen Beziehungen der Art
+\emph{Eine chaotische Struktur erhöht die Stärke der Schaufeln}. Wir haben es
+geschafft, einen leistungsstarken und genauen \emph{Miner of Knowledge}
+basierend auf einer tiefer Semantik zu bauen [3].
+
+Wie es manchmal in der Softwareentwicklung vorkommt, wurde das semantische
+Modul von einem Hilfsprodukt später zum Hauptprodukt der Firma \emph{IM Corp}.
+Das semantische Netzwerk reflektiert nicht einfach die Struktur des Wissens,
+sondern enthält auch argumentative Elemente und logische Schlussfolgerungen
+aus dem Wissen.
+
+Der semantische Prozessor ist bei Kunden der IM Corp. sehr beliebt; wir haben
+auch versucht, Investitionen für den Start einer semantischen Suchmaschine
+einzuwerben, aber in der Wirtschaft begann eine Rezession und die Investoren
+wollten nicht mehr ernsthaft investieren. Außerdem mussten wir mit dem
+Zusammenbruch der Aktien an den Börsen den geplanten Einstieg des Unternehmens
+an der NASDAQ abblasen.
+
+\subsection{Die wichtigsten Schlussfolgerungen aus den Erfahrungen mit der
+  Implementierung des IM-Systems}
+
+Intelligente Unterstützungssysteme zur Lösung erfinderischer Probleme auf der
+Basis von FSA und TRIZ sind sehr nützlich, um gleichzeitig TRIZ und FSA zu
+lernen, allerdings werden zur Lösung praktischer Probleme die Systeme nur von
+einem kleinen Kreis von Enthusiasten verwendet. Zum Teil wegen der Komplexität
+der Theorie und der fehlenden Ergebnisgarantie.
+
+Das semantische Modul hat die Anzahl der Anwender erhöht, allerdings hatte das
+nur indirekt Auswirkungen auf die Ideen-Generierung; die schöpferische Arbeit
+verlagerte sich in Richtung der Textanalyse von Artikeln und Patenten. Eine
+deutliche Erhöhung der Anzahl aktiver Anwender ist unter zwei Bedingungen
+möglich: der deutlichen Vereinfachung der Komplexität der Logik und der
+Wissensbasis, der maximalen Reduktion der Barriere vom Hinweis bis zur
+kompletten Lösungsidee sowie der ständigen Aktualisierung der Wissensbasis
+über Probleme, wissenschaftliche Effekte, neue Materialien und technische
+Prozesse.
+
+\section{True Machina als wahre KI-Erfinderin}
+
+Das Konzept des True Machina Projekts unterscheidet sich stark von der
+IM-Philosophie auf der Grundlage der TRIZ.  Das IM-System basierte auf der
+Logik der FSA und der TRIZ-Wissensbasis, die für Menschen erstellt wurde, so
+dass neue Ideen im Kopf des menschlichen Benutzers entstehen.
+
+Das Hauptkonzept des neuen Projekts besteht darin, anstatt Hinweise zu
+generieren, die dem Menschen beim Problemlösen helfen, den Computer selbst
+neue Lösungen in Form von Erfindungen mit Abbildungen, Beschreibung, Titel und
+Nummer der Erfindung erzeugen zu lassen. Der Unterschied ist grundlegend: Wenn
+bisher die Idee der Erfindung im Kopf des Benutzers des Programms entstand, so
+wird nun die Idee im Speicher des Computers generiert, der Benutzer sieht auf
+dem Bildschirm keinen Hinweis, sondern eine Reihe neuer technischer Lösungen.
+
+Das intellektuelle System erfindet selbst und unterstützt nicht nur den
+Menschen beim Erfinden.  Künstliche Intelligenz beginnt die Rolle des Partners
+zu spielen: Der Mensch generiert Ideen und die \emph{True Machina} generiert
+ebenfalls Ideen. Beide am kreativen Prozess Beteiligten entwickeln
+Erfindungs-Ideen, aber sie tun es auf unterschiedliche Weise. Dies ist die
+Stärke der Partnerschaft zwischen Mensch und \emph{True Machina}.
+
+Die Funktionalität des Systems True Machina [4]:
+\begin{itemize}
+\item Synthese von Erfindungen in Form von Grafiken und Texten -- Quelle des
+  Wissens sind die neuesten wissenschaftlichen Veröffentlichungen;
+\item Modus \emph{Generative Inventions}: Neue Erfindungen werden sofort nach
+  dem Auftreten eines neuen Effekts, Materials oder Problems in der
+  Wissensbasis generiert;
+\item Vergleich der erzeugten Erfindungen nach einem quantitativen
+  Hauptparameter und nach eine Gruppe von Qualitätsindikatoren;
+\item Kontinuierliche Auffüllung der Wissensbasis;
+\item Anpassung an die Probleme großer Anwenderunternehmen.
+\end{itemize}
+
+\subsection{Der kreative Mensch-Maschine-Dialog. Wo ist die KI stark?}
+
+Der Computer ist in der Lage, Informationen in gigantischem Umfang zu
+speichern, diese schnell und einfach zu verarbeiten und in visueller Form
+auszugeben. Heute ist er auch lernfähig und kann argumentieren, aus Wissen
+Schlüsse ziehen, was für die Kreativität von grundlegender Bedeutung ist.
+
+In Anbetracht der Möglichkeiten heutiger Computer und KI-Systeme stellen wir
+uns folgende Aufgabe: Programmiere einen Systemkern, der ständig eine Basis
+wissenschaftlicher Erkenntnisse und experimenteller Forschungsergebnisse
+aktualisiert und mit einer hierarchischen Liste technischer Probleme oder
+Funktionen semantisch abgleicht.
+
+Es gibt also \emph{zwei} sich ständig aktualisierende Wissensdatenbanken.
+Wenn als Eingabe im System als kurzer Eintrag eine Beschreibung eines neuen
+Forschungsergebnisses auftaucht, dann durchsucht das System sofort alle
+technische Probleme und versucht, die Probleme zu entdecken, die mit der neuen
+Erkenntnis (besser) gelöst werden können. Wenn das TM-System solche Probleme
+gefunden hat, so erzeugt es neue Erfindungen in Form eines synthetisierten
+Musters, einer kurzen Beschreibung und Titel, das heißt, eine Beschreibung
+einer neuen Erfindung wird erzeugt. Praktisch werden so wissenschaftliche
+Erkenntnisse automatisch in technologische Innovationen übersetzt.
+
+Wir haben diesen Prozess als \emph{Generative Inventions} bezeichnet. Es gibt
+noch keinen russischen Begriff dafür. Die Essenz dieses Ansatzes sieht vor,
+dass die konzeptionelle Lösung eines technischen Problems nicht generiert
+wird, wenn der Ingenieur danach fragt, sondern in dem Moment, wenn
+wissenschaftliche Erkenntnisse für dessen Lösung in das System eingespeit
+werden. Dies verkürzt die Zeit von der wissenschaftlichen Entdeckung bis zur
+technischen Erfindung erheblich.
+
+Die im Projekt verwendete Technologie nennen wir \emph{kombinatorische
+  Semantik}.  Kombinatorik erlaubt es, alle möglichen Erfindungen aus einem
+neuen Effekt oder Material für den aktuellen Baum der technischen Funktionen
+zu entwickeln.  Die Semantik ist verantwortlich für kausale logische
+Schlussfolgerungen, das heißt nmittelbar für den kreativen Prozess. Faktisch
+kehren wir zur Architektur des Pulsar-Systems zurück, aber ergänzt um
+Semantik, welche die Mächtigkeit des Systems stark erhöht.
+
+\begin{quote}
+  Abb. 1. True Machina generiert automatisch neue Erfindungen aus der
+  Wissenschaft und experimentelles Wissen -- hier weggelassen.
+\end{quote}
+
+\subsection{Milliarden Erfindungen}
+
+Wir bauen den Kern des True Machina Systems so, dass es möglich ist, mehr als
+einer Milliarde Erfindungen automatisch zu erzeugen, was die Anzahl der auf
+der Welt geschaffenen Patente um fast zwei Größenordnungen übertrifft. Ein
+solches Ziel kann mit entsprechenden finanziellen und strategischen Partnern
+in wenigen Jahren erreicht werden.
+
+Die Entstehung einer solchen Datenbank mit einer Milliarde Erfindungen im
+Internet wird zweifellos eine große Wirkung bei Ingenieuren, Beratern und
+Patentanwälten haben. Die Basis wird kontinuierlich aktualisiert durch die
+automatische Erzeugung neuer Erfindungen unmittelbar nach der Veröffentlichung
+der Ergebnisse fortgeschrittener wissenschaftlicher Forschung. So wird True
+Machina wissenschaftliche Ergebnisse sofort in technische Innovationen
+umsetzen.  Es besteht die Möglichkeit, dass True Machina der dominierende
+Erfinder wird.
+
+\section{Fazit}
+
+Die intelligenten Systeme des Projekts Invention Machine helfen bei der Lösung
+erfinderische Aufgaben auf der ganzen Welt. Die Mitarbeiter der Firma NILIM
+(Minsk, St. Peterburg), die IM Corp., NILITIS, Method NauchSoft haben
+tatsächlich eine neue Klasse von Softwarelösungen erstellt -- intelligente
+technische Unterstützungssysteme für Innovationen.
+
+Das nächste Ziel ist der Aufbau eines Systems künstlicher Intelligenz, das
+laufend neue Erfindungen und deren textuell-grafische Beschreibungen erzeugen
+kann als gleichwertiger kreativer Partner eines Ingenieurs, Forschers oder
+Erfinders.
+
+\section{Referenzliste}
+\raggedright
+\begin{itemize}
+\item [1.] Tsourikov V. \foreignlanguage{russian}{Разработка быстрых ранговых
+  обнаружителей сигналов в сложных условиях связи}. Dissertation. Minsk, 1983.
+\item [2.] Altshuller G. \foreignlanguage{russian}{Творчество как точная
+  наука. Советское радио}, 1979.
+\item [3.] Tsourikov V., Batchilo L., Sovpel I. Document semantic
+  analysis/selection with knowledge creativity capability utilizing
+  subject-action-object (SAO) structures. United States Patent 6\,167\,370
+  vom 26. Dezember 2000.
+\item [4.] Tsourikov V. Generative inventions. TRIZfest, Conference
+  Proceedings. September 14-16, 2017, Kraków, Poland, 178--184.
+\end{itemize}
+\end{document}
