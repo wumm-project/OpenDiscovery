@@ -5,7 +5,6 @@ processes provided by different authors under the terms of CC-BY.
 To compile them with LaTeX both the German and the Russian language packs are
 required.
 
-
 Altshuller
 * HowInvent-1960-ru.odt (in Russian)
   * au = G.S. Altshuller
@@ -20,6 +19,7 @@ GDR-InventorSchools
   * title = Zu Herbert Hörz „Dialektik als Heuristik“. Kritik dem Freund und
     Gleichgesinnten
   * lang = de
+  * license = CC-0
   * Version of 19.12.2005, with comments by Hans-Gert Gräbe, 24.12.2018
     Unpublished Manuscript
 
@@ -29,6 +29,7 @@ GDR-InventorSchools
     Erfindens“ über die KDT-Erfinderschulen hin zur Deutschen
     Erfinder-Akademie
   * lang = de
+  * license = unknown
   * Talk at the 21. Leibniz Conference „Systematisches Erfinden“,
     24.--25. November 2016 in Lichtenwalde.  Yet in progress
 
@@ -36,6 +37,7 @@ GDR-InventorSchools
   * au = Rainer Thiel
   * title = Erfinderschulen – Problemlöse-Workshops. Projekt und Praxis
   * lang = de
+  * license = CC-0
   * Published on 03.07.2016 in LIFIS-Online.
   * DOI: 10.14625/thiel_20160703
 
@@ -43,6 +45,7 @@ GDR-InventorSchools
   * au = Rainer Thiel
   * title = Hegel, Altschuller, TRIZ. Zehn Anmerkungen
   * lang = de
+  * license = CC-0
   * Published on 25.09.2016 in LIFIS-Online.
   * DOI: 10.14625/thiel_20160925
 
@@ -50,6 +53,7 @@ GDR-InventorSchools
   * au = Rainer Thiel
   * title = Altschuller, TRIZ und ProHEAL. 
   * lang = de
+  * license = CC-0
   * Talk at the 21. Leibniz Conference „Systematisches Erfinden“,
     24.--25. November 2016 in Lichtenwalde.
 
@@ -57,6 +61,7 @@ GDR-InventorSchools
   * au = Rainer Thiel
   * title = Dialektik, TRIZ und ProHEAL. 
   * lang = de  
+  * license = CC-0
   * Material provided by the author in the version as of 11.02.2019, work in
     progress
 
@@ -65,6 +70,7 @@ HansGertGraebe
   * au = Hans-Gert Gräbe
   * title = A TRIZ Newbee's Report
   * lang = en
-  * To be published in the TRIZ Journal
+  * license = CC-0
+  * Published in the TRIZ Journal
   * Newbee-de.txt is a German preversion in markdown syntax
 
