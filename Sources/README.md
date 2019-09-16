@@ -5,6 +5,10 @@ processes provided by different authors under the terms of CC-BY.
 To compile them with LaTeX both the German and the Russian language packs are
 required.
 
+od.sty contains main definitions. Note that the babel language definition is
+per project due to different main languages.  We recommend to include this
+directory in your TEXINPUTS path.
+
 Altshuller
 * HowInvent-1960-ru.odt (in Russian)
   * au = G.S. Altshuller
