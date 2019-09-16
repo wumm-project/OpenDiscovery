@@ -1,0 +1,142 @@
+# A TRIZ Newbee's Report
+
+## Background
+
+Vor drei Jahren hat LIFIS begonnen, sich dem neuen Schwerpunkt "Systematische
+Innovationen" zuzuwenden. LIFIS - das Leibniz-Institut für Interdisziplinäre
+Studien - ist ein an Forschungsaktivitäten interessierter eingetragener Verein
+von Technikwissenschaftlern vorwiegend aus der ehemaligen DDR.
+
+Unmittelbarer Anlass für die Eröffnung dieses Schwerpunkts war der Wunsch, das
+TRIZ-Erbe der Erfinderschulen der DDR genauer zu studieren und aufzuarbeiten.
+Dies geschieht in enger Zusammenarbeit mit unseren Vereinsmitgliedern Rainer
+Thiel und Dietmar Zobel. Rainer Thiel, eine der zentralen Figuren der
+DDR-Erfinderschulszene, wird im kommenden Jahr seinen 90. Geburtstag feiern.
+
+Alexander Schinnikow betont als Vertreter der Saratower TRIZ-Schule in seinen
+Interviews mit Valeri Souchkov [S1], TRIZ bestehe aus verschiedenen Schulen,
+die enge Mitarbeiter von G.S. Altshuller an verschiedenen Orten gegründet
+haben.  Auf den Seiten von MA TRIZ [M1] wird auch das wechselvolle
+Spannungsverhältnis von TRIZ und WOIR (der Allunions- (heute Allrussischen)
+Organisation der Erfinder und Rationalisatoren) beschrieben. Die
+DDR-Erfinderschulen haben leicht andere Wurzeln - hier war es vor allem ein
+erster Kontakt mit WOIR in den 1960er Jahren [H-1], welcher die "Verdienten
+Erfinder der DDR" auf Altshullers Ansätze aufmerksam werden ließ, und die
+nachfolgenden Bemühungen von Gerd Willimczik sowie Katja unf Rainer Thiel,
+drei wichtige Arbeiten Altshullers [A1], [A2], [A3] in deutscher Übersetzung
+verfügbar zu machen.  Wesentliche theoretische Beiträge zur Weiterentwicklung
+von TRIZ in Richtung "TRIZ und Business" wie PROHeal (Hans-Jochen Rindfleisch
+und Rainer Thiel) sowie WOIS (Hansjürgen Linde) - siehe hierzu [G1] -
+entstanden bereits in den 1980er Jahren aus den Nöten und Notwendigkeiten
+einer immer komplizierteren wirtschaftlichen Lage heraus. Entsprechende
+Materialien (in Deutsch), die retrospektiv Anfang der 1990er jahre noch
+zusammengetragen wurden, hat LIFIS in den letzten Jahren wieder zugänglich
+gemacht bzw. befinden sich im Rahmen unseres WUMM-Projekts in Vorbereitung.
+
+## Das WUMM-Projekt
+
+25 Jahre später spielen diese Erfahrungen und theoretischen Ansätze im
+inzwischen rudimentären deutschen TRIZ-Alltag, der sich wesentlich auf
+Consulting beschränkt, kaum noch eine Rolle. Mit einer Leibnizkonferenz im
+November 2016 versuchte LIFIS auf wesentliche Initiative des Autors dieser
+Zeilen hin einen ersten Brückenschlag zwischen diesen beiden deutschen
+TRIZ-Communities. Ein besonderes Markenzeichen dieser Revitalisierungsversuche
+ist die enge Anbindung an moderne Entwicklungen in der Philosophie, die gerade
+das Hegelsche Dialektik-Erbe neu für sich entdeckt. Diese Forschungen werden
+vor allem von Justus Schollmeyer, einem jungen Philosophen, vorangetrieben in
+engem Kontakt mit Rainer Thiel - ebenfalls Philosoph von Hause aus und beide
+LIFIS-Vereinsmitglieder.
+
+Eine stärkere Einbindung derartiger Ansätze in die akademische Lehre verfolgen
+wir mit dem WUMM-Projekt seit Anfang 2019 an der Leipziger Universität, in
+welchem wir die Aktivitäten von Sabine Lautenschläger (Institut für
+Ressourcenmanagement), Thomas Neumuth (Medizintechnik), Ken Kleemann
+(Philosophie) und des Autors (Informatik) mit weiteren regionalen Akteuren vor
+allem aus dem Consultingbereich koordinieren.
+
+Ein wesentliches Moment dieser Bemühungen ist der Aufbau einer Sichtbarkeits-
+und Beteiligungs-Infrastruktur. Im Sinne des Open Culture Wahlspruchs "Tue für
+dich Nützliches und sprich darüber" haben wir dazu in bewährter Weise eine
+github-Infrastruktur aufgebaut, bestehend aus
+* einem Organisationsaccount "wumm-project",
+* verschiedenen github-Repositories zur Begleitung der einzelnen
+  Teilaktivitäten,
+* Informationsseiten [W1] auf der Basis von github pages sowie
+* einer Reihe von dynamisch generierten Webinhalten, die unter
+  http://wumm.uni-leipzig.de ausgerollt sind.
+
+## A TRIZ Newbee's Experience Report
+
+Das mag als Begründung genügen, warum sich ein gestandener Professor für
+Informatik mit 40 Jahren akademisc her Erfahrung als "TRIZ newbee" outet und
+als solcher auch bereits ein halbes Jahr in die größere TRIZ-Erfahrungswelt
+der heutigen Zeit eingetaucht ist. Mit im Gepäck sind erste Berichte über die
+Aufarbeitung von Erfahrungen der DDR-Erfinderschulen, die ich für zwei
+Konferenzbeiträge auf dem TRIZ-Summit 2019 in Minsk [G2] sowie dem TRIZ-Fest
+2019 in Heilbronn [G1] aufbereitet habe, die aber, wenigstens auf dem TRIZ
+Summit in Minsk, kaum interessiert haben.
+
+Bereits vorher war klar, dass die heute weltweit verbreitete TRIZ-Gemeinde
+ihren wesentlichen Ursprung in der Diaspora russischsprachiger Kenner seit dem
+Fall des Eisernen Vorhangs zu Beginn der 1990er Jahre hat. Sichtbar geworden
+waren auch
+
+1. die konzertierten Bemühungen im ostasiatischen Raum, besonders in China
+mit dem Aufbau des MEOMTI-Programms, das kulturelle TRIZ-Erbe zu erschließen
+und für die eigene wirtschaftliche Entwicklung nutzbar zu machen, sowie
+
+2. die besonders im deutschsprachigen Raum existierenden Bemühungen, eine
+Brücke zwischen TRIZ und Design Thinking zu schlagen, was mit Blick auf die
+zentrale Rolle des HPI Potsdam in der Weiterentwicklung und Propagierung des
+Design Thinking durchaus verständlich ist.
+
+Weniger klar war für mich von vornherein die nach wie vor große Bedeutung der
+russischen Sprache auch als internationale Verkehrssprache in der
+TRIZ-Community.  Auch wenn die wichtigsten Exponenten der TRIZ-Szene mit
+Russisch als Muttersprache Englisch fließend in Wort und Schrift beherrschen
+und auf Englisch publizieren, so ist es etwa auf Valeri Souchkovs
+Facebook-Kanal [S2] keineswegs selbstverständlich, sich an der zentral in
+Russisch geführten Kommunikation mit einer Wortmeldung in Englisch zu
+beteiligen.
+
+Nun ist das in Zeiten von Google Translate und der automatischen
+Übersetzungsfunktion bei Facebook kein prinzipielles Problem - jenseits
+aufnerksamkeits-ökonomischer Effekte -, insbesondere, wenn wir Beteiligten
+selbst hinreichend gut Russisch lesen, wie dies für viele unserer älteren
+LIFIS-Mitglieder gilt. Andererseits war auf dem TRIZ Summit in Minsk deutlich
+zu spüren, dass Russisch die erste Kommunikationssprache in der Szene ist,
+auch wenn dort vorbildlich eine Zweisprachigkeit (Russisch und Englisch)
+zelebriert und die Kosten einer über Kopfhörer angebotenen Simultanübersetzung
+nicht gescheut wurden. 
+
+## The WUMM Project once more
+
+Im Rahmen des WUMM-Projekts habe ich deshalb in meinem HGG-Blog [W2] begonnen,
+mich besonderes interessierende Debatten aus den sehr flüchtigen und schwer
+referenzierbaren sozialen Medien, in denen sie geführt werden, zu extrahieren
+und mit englischen Übersetzungen sowie weiteren Kommentaren anzureichern.
+
+Insgesamt möchten wir das WUMM-Projekt zu einem offenen Community-Projekt
+weiterentwickeln, in dem relevante Materialien und Metadaten quelloffen und
+unter offenen Lizenzen (vor allem der Apache 2.0 Lizenz) zusammengetragen
+werden.  Hierbei sind weitere Mitstreiter willkommen. Der aktuelle Stand des
+Aufbaus eines solchen "TRIZ Social Network" (TSN) ist in unserm Wiki [W1]
+dokumentiert.
+
+Weiter sind wir bemüht, Mittel aus europäischen Förderprogrammen sowohl für
+die Koordinierung akademischer Lehraktivitäten (ERASMUS+) als auch für
+hochkarätige Forschungsaktivitäten (HORIZON2020 und Nachfolgeprogramme) zu
+akquirieren. Auch hierzu sind in unserem Wiki [W1] weitere Informationen zu
+finden.
+
+## Referenzen
+
+[A1], [A2], [A3]
+[G1] Mein Beitrag zum TRIZ-Fest
+[G2] Mein Beitrag zum TRIZ Summit
+[H1] Herrlichs Kontakt mit WOIR
+[M1] MA TRIZ zu WOIR
+[S1] Interviews mit Valeri Souchkov 
+[S2] Valeri Souchkovs Facebook-Kanal
+[W1] github pages des wumm project
+[W2] der HGG-Blog
