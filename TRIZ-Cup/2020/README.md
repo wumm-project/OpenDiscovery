@@ -18,8 +18,8 @@ distributed by email in Russian.
 We started within our WUMM project a translation project of the TRIZ Summit
 materials.
 
-**Note that all derived materials provided in this directory are (so far) not
-authorized by the organisators of the competition. **
+**Note that all derived materials provided in this directory are (so far) not**
+**authorized by the organisators of the competition. **
 
 * The original announcement and translations to English and German in a single
   document.
@@ -47,12 +47,13 @@ authorized by the organisators of the competition. **
   - Exercises-de.tex
 
 Note that the LaTeX versions require the od.sty LateX style located at
-Sources/od.sty to be compiled. 
+Sources/od.sty in this repo to be compiled. 
 
-## Some points and observations collected in the translation process of the
-   exercises
+## Some points and observations collected in the translation process of the exercises
 
-1) The authors of the exercises provide in several places a quite elaborated
+1)
+
+The authors of the exercises provide in several places a quite elaborated
 special understanding of TRIZ. A good German reference to TRIZ standards is
 the book "Koltze/Souchkov: Systematische Innovation". I added such a remark in
 the preface of the exercises.
@@ -66,13 +67,17 @@ English TRIZ online literature I found these links:
 Is this the correct interpretation of "Fantasy Techniques" by the authors of
 the exercises?
 
-2) с помощью «этажной схемы» Г. С. Альтшуллера. I added footnote 9 in my
+2)
+
+с помощью «этажной схемы» Г. С. Альтшуллера. I added footnote 9 in my
 translation explaining shortly the 4 floors along the explanations in
 http://www.trizminsk.org/e/246006.htm#0101 (in Russian) but found no English
 sources on that topic.
 
-3) Качества Творческой Личности. Although this is a hot topic in the late work
-of Altshuller I found (a) only sources in Russian and (b) very heterogeneous
+3)
+
+Качества Творческой Личности. Although this is a hot topic in the late work of
+Altshuller I found (a) only sources in Russian and (b) very heterogeneous
 understanding of the topic.
 
 In particular in OTSM the discussion goes (very convincing for me) in a *very*
@@ -82,10 +87,12 @@ Pointing to special qualities of a creative personality implicitly supposes a
 more creative and others less. I strongly disagree with such a position since I
 do not suppose that creativity could be measured on a one-dimensional scale.
 
-4) Developmental laws of technical systems: Also there a quite special wording
-is used. I matched my translation with the German wording in (Koltze/Souchkov)
-so the translation is only approximative.  One law is not contained in the
-list of (Koltze/Souchkov), the
+4)
+
+Developmental laws of technical systems: Also there a quite special wording is
+used. I matched my translation with the German wording in (Koltze/Souchkov) so
+the translation is only approximative.  One law is not contained in the list
+of (Koltze/Souchkov), the
 
 Law of Replacement of man
 
@@ -105,7 +112,7 @@ Considering Replacement of man as a law of technical development roots in a
 very strange understanding of the terminus "Technics" that forgets about the
 obvious - there are no "technical systems" but only "techno-social systems".
 
-Concluding: I have no idea if the competition is really minded also for a
+**Concluding:** I have no idea if the competition is really minded also for a
 non-Russian audience, even if I very liked that.  I hope, the German version
 (Open Sourced here) is a good starting point to compile also other language
 versions (in particular an English one) since I transformed all to the very
