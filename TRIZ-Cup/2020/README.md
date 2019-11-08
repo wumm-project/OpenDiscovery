@@ -119,6 +119,6 @@ here) is a good starting point to compile also other language versions (in
 particular an English one) since I transformed all to the very easily to
 handle LaTeX format and substituted repeating in different age categories
 exercises with LaTeX macros to avoid repeated editing of the same text (with
-more consequence in the German version compared to the Russian one).
+more consequence in the German LaTeX version compared to the Russian one).
 
 Hans-Gert Gräbe, 08.11.2019
