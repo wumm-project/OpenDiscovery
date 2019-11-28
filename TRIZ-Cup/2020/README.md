@@ -13,7 +13,14 @@ exercises of the competition.
 On 22 October 2019 the announcement and exercises of the new competition were
 distributed by email in Russian.
 
-Hans-Gert Gräbe, 08.11.2019
+I translated this material into German and moved it also from Word to LaTeX
+due to a better maintenance of text under git control.
+
+On 06 and 08 November 2019 I informed the organizers of the contest about
+these efforts and got a long answer on 10 November including an authorized
+English version of the exercises.
+
+Hans-Gert Gräbe, 28.11.2019
 
 ## What do you find here
 
@@ -38,20 +45,23 @@ materials.
   - ContestantsQuestionnaire-2020.docx
   - ContestantsQuestionnaire-2020.pdf
 
-* The original exercises in Russian
+* The original exercises in Russian and English
   - Exercises-2020-ru.docx
+  - Exercises-2020-en.docx
 
-* LaTeX versions of the exercises in Russian and a translations to German in
-  separate documents.
+* LaTeX versions of the exercises in Russian and English and a translations to
+  German in separate documents.
   - Exercises-ru.pdf
   - Exercises-ru.tex
+  - Exercises-en.pdf
+  - Exercises-en.tex
   - Exercises-de.pdf
   - Exercises-de.tex
 
 Note that the LaTeX versions require the od.sty LateX style located at
 Sources/od.sty in this repo to be compiled. 
 
-## Some points and observations collected in the translation process of the exercises
+## Some points and observations within the translation process 
 
 The authors of the exercises provide in several places a quite elaborated
 special understanding of TRIZ. A good German reference to TRIZ standards is
@@ -89,8 +99,22 @@ do not suppose that creativity could be measured on a one-dimensional scale.
 
 ### Developmental laws of technical systems
 
-Also there a quite special wording is used. I matched my translation with the
-German wording in (Koltze/Souchkov) so the translation is only approximative.
+Even the authorized English version (sent to me on 10 November 2019) displays
+the scheme with Russian wordings in that place. Moreover, the scheme is
+different to the scheme in the Russian version, probably a reaction on my
+objections to the quite special wording used in the first version.
+
+The scheme is only available as image so far (a tikz version is in
+preparation).  For the moment I reproduced in the LaTeX versions the scheme as
+image (in Russian) and added translations of the different developmental laws
+(or tendencies in several places of the improved version). 
+
+I matched my German translation with the German wording in (Koltze/Souchkov)
+so the translation is only approximative. The English LaTeX version contains
+also such an (not authorized) addition, obtained from the German version by
+bare translation, incorporating the changes of nomination in the improved
+Russian version.
+
 One law is not contained in the list of (Koltze/Souchkov), the
 
 Law of Replacement of man
@@ -114,11 +138,14 @@ obvious - there are no "technical systems" but only "techno-social systems".
 ## Concluding:
 
 I have no idea if the competition is really minded also for a non-Russian
-audience, even if I very liked that.  I hope, the German version (Open Sourced
-here) is a good starting point to compile also other language versions (in
-particular an English one) since I transformed all to the very easily to
-handle LaTeX format and substituted repeating in different age categories
-exercises with LaTeX macros to avoid repeated editing of the same text (with
-more consequence in the German LaTeX version compared to the Russian one).
+audience, even if I very liked that.  I hope, the German and English versions
+(Open Sourced here) are a good starting point to compile also other language
+versions since I transformed all to the very easily to handle LaTeX format and
+substituted repeating in different age categories exercises with LaTeX macros
+to avoid repeated editing of the same text - with more consequence in the
+German LaTeX version compared to the Russian one.
 
-Hans-Gert Gräbe, 08.11.2019
+The English version is compiled from the structure of the German version,
+substituting the German texts by those from the authorized English version.
+
+Hans-Gert Gräbe, 28.11.2019
