@@ -1,0 +1,22 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{od,amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes.geometric}
+
+\begin{document}
+\begin{tikzpicture}[thick]
+\tikzset{ op/.style={ rectangle, fill=gray!10, draw=black } }
+\node[op] at (3,6)
+  (A1) {\parbox{5cm}{\small\centering Gesetz der Erhöhung der Idealität}};
+\node[op] at (0,3)
+  (A2) {\parbox{5cm}{\small\centering Gesetz der Erhöhung der Vollständigkeit
+    des Systems}}; 
+\node[op] at (5,2)
+(A3) {\parbox{5cm}{\small\centering Gesetz der Erhöhung der Koordination}};
+\path[->] (A1) edge (A2);
+\path[->] (A1) edge (A3);
+\end{tikzpicture}
+
+\end{document}
