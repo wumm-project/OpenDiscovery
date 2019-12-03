@@ -3,58 +3,57 @@
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{tikz}
-%\usetikzlibrary{positioning}
-%\usetikzlibrary{shapes.geometric}
 \usetikzlibrary{shapes.misc}
+\usetikzlibrary{arrows.meta}
 
 \newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
 
 \begin{document}
-\tikz{
+\tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
   
-\node[draw] at (6,10) [rounded rectangle]
-(A1) {\law{2}{Gesetz der Erhöhung der Idealität}};
+\node[draw] at (5,10) [rounded rectangle]
+(A1) {\law{4}{Gesetz der Erhöhung der Idealität}};
 
-\node[draw] at (1,4) [rounded rectangle]
-(A2) {\law{2}{Gesetz der Erhöhung der Vollständigkeit des Systems}}; 
+\node[draw] at (0,3.5) [rounded rectangle]
+(A2) {\law{5}{Gesetz der Erhöhung der Vollständigkeit des Systems}}; 
 
-\node[draw] at (0,7) [rounded rectangle]
-(A3) {\law{2}{Gesetz der Erhöhung der Koordination}};
+\node[draw] at (0,8.5) [rounded rectangle]
+(A3) {\law{4}{Gesetz der Erhöhung der Koordination}};
 
-\node[draw] at (4,7) [rounded rectangle]
-(A4) {\law{2}{Das Gesetz der Erhöhung des Energieleitvermögens}};
+\node[draw] at (2,7) [rounded rectangle]
+(A4) {\law{4}{Gesetz der Erhöhung des Energieleitvermögens}};
 
-\node[draw] at (5,4) [rounded rectangle]
-(A5) {\law{2}{Das Gesetz der ungleichen Entwicklung von Systemteilen}};
+\node[draw] at (5,4.8) [rounded rectangle]
+(A5) {\law{5}{Gesetz der ungleichen Entwicklung von Systemteilen}};
 
-\node[draw] at (5,1) [rounded rectangle]
-(A6) {\law{2}{Die Entwicklung technischer Systeme längs einer S-Kurve}};
+\node[draw] at (5,2.2) [rounded rectangle]
+(A6) {\law{5}{Entwicklung technischer Systeme längs einer S-Kurve}};
 
-\node[draw] at (2,1) [rounded rectangle]
-(A7) {\law{2}{Das Gesetz der Verdrängung des Menschen}};
+\node[draw] at (0,1) [rounded rectangle]
+(A7) {\law{4}{Gesetz der Verdrängung des Menschen}};
 
 \node[draw] at (8,7) [rounded rectangle]
-(A8) {\law{2}{Das Gesetz der zunehmenden Steuerbarkeit}};
+(A8) {\law{4}{Gesetz der zunehmenden Steuerbarkeit}};
 
-\node[draw] at (12,7) [rounded rectangle]
-(A9) {\law{2}{Das Gesetz der Dynamisierung}};
+\node[draw] at (10,8.5) [rounded rectangle]
+(A9) {\law{4}{Gesetz der Dynamisierung}};
 
-\node[draw] at (9,4) [rounded rectangle]
-(A10) {\law{2}{Das Gesetz des Übergangs zum Obersystem}};
+\node[draw] at (10,3.5) [rounded rectangle]
+(A10) {\law{4}{Gesetz des Übergangs zum Obersystem}};
 
-\node[draw] at (9,1) [rounded rectangle]
-(A11) {\law{2}{Das Gesetz des Zusammenfallens}};
+\node[draw] at (10,1) [rounded rectangle]
+(A11) {\law{4}{Gesetz des Zusammenfallens}};
 
-\draw[->] (A1) |- (A2);
-\draw[->] (A1) -- (A3);
-\draw[->] (A1) -| (A4);
-\draw[->] (A1) to (A5);
-\draw[->] (A1) to (A8);
-\draw[->] (A1) to (A9);
-\draw[->] (A1) to (A10);
-\draw[->] (A2) to (A7);
-\draw[->] (A5) to (A6);
-\draw[->] (A10) to (A11);
+\draw[->] (A1) -| (A3);
+\draw[->] (A1) -- (A4);
+\draw[->] (A1) -- (A8);
+\draw[->] (A1) -| (A9);
+\draw[->] (A1) -- (5,6) -| (A2);
+\draw[->] (5,6) -- (A5);
+\draw[->] (5,6) -| (A10);
+\draw[->] (A2) -- (A7);
+\draw[->] (A5) -- (A6);
+\draw[->] (A10) -- (A11);
 
 }
 
