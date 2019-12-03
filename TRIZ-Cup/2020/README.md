@@ -11,7 +11,15 @@ Later on it turned out to be difficult to get access to the announcement and
 exercises of the competition.
 
 On 22 October 2019 the announcement and exercises of the new competition were
-distributed by email in Russian.
+distributed by email in Russian. An English version and some additional
+material
+* for the topic “Theory of creative personality development (TCPD).
+* inventive techniques in silent films
+* the meaning of freeze frame 
+
+compiled by A.P. Dyachenko is meanwhile available from the
+[English website](https://triz-summit.ru/en/300139/contest-2019-2020/) of the
+TRIZ Summit.
 
 I translated this material into German and moved it also from Word to LaTeX
 due to a better maintenance of text under git control.
@@ -46,8 +54,8 @@ materials.
   - ContestantsQuestionnaire-2020.pdf
 
 * The original exercises in Russian and English
-  - Exercises-2020-ru.docx
-  - Exercises-2020-en.docx
+  - in Russian: Exercises-2020-ru.docx
+  - in English: https://triz-summit.ru/en/300139/contest-2019-2020/305709/
 
 * LaTeX versions of the exercises in Russian and English and a translations to
   German in separate documents.

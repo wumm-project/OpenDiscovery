@@ -3,6 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{tikz}
+\usetikzlibrary{shapes.misc}
+\usetikzlibrary{arrows.meta}
 
 \pagestyle{headings}
 \title{Cup des TRIZ-Summits – 2019/2020}
@@ -465,28 +467,58 @@ der Handlung unter Verwendung von Fantasietechniken.
 
 \subsection*{Nomination „TRIZ Tools“}
 
-Die Entwicklungsgesetze technischer Systeme (EGTS) sind eine der Grundlagen
-von TRIZ. Es gibt mehrere mögliche Klassifikationen dieser Gesetze. Wir bieten
+Die Entwicklungsgesetze technischer Systeme sind eine der Grundlagen von
+TRIZ. Es gibt mehrere mögliche Klassifikationen dieser Gesetze. Wir bieten
 Ihnen einen davon an.
 \begin{center}
-  \includegraphics[width=.9\textwidth]{oE4yUs.png}
+\newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
+\tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
+  
+\node[draw] at (5,10) [rounded rectangle]
+(A1) {\law{4}{Gesetz der Erhöhung der Idealität}};
+
+\node[draw] at (0,3.5) [rounded rectangle]
+(A2) {\law{5}{Gesetz der Erhöhung der Vollständigkeit des Systems}}; 
+
+\node[draw] at (0,8.5) [rounded rectangle]
+(A3) {\law{4}{Gesetz der Erhöhung der Koordination}};
+
+\node[draw] at (2,7) [rounded rectangle]
+(A4) {\law{4}{Gesetz der Erhöhung des Energieleitvermögens}};
+
+\node[draw] at (5,4.8) [rounded rectangle]
+(A5) {\law{5}{Gesetz der ungleichen Entwicklung von Systemteilen}};
+
+\node[draw] at (5,2.2) [rounded rectangle]
+(A6) {\law{5}{Entwicklung technischer Systeme längs einer S-Kurve}};
+
+\node[draw] at (0,1) [rounded rectangle]
+(A7) {\law{4}{Gesetz der Verdrängung des Menschen}};
+
+\node[draw] at (8,7) [rounded rectangle]
+(A8) {\law{4}{Gesetz der zunehmenden Steuerbarkeit}};
+
+\node[draw] at (10,8.5) [rounded rectangle]
+(A9) {\law{4}{Gesetz der Dynamisierung}};
+
+\node[draw] at (10,3.5) [rounded rectangle]
+(A10) {\law{4}{Gesetz des Übergangs zum Obersystem}};
+
+\node[draw] at (10,1) [rounded rectangle]
+(A11) {\law{4}{Gesetz des Zusammenfallens}};
+
+\draw[->] (A1) -| (A3);
+\draw[->] (A1) -- (A4);
+\draw[->] (A1) -- (A8);
+\draw[->] (A1) -| (A9);
+\draw[->] (A1) -- (5,6) -| (A2);
+\draw[->] (5,6) -- (A5);
+\draw[->] (5,6) -| (A10);
+\draw[->] (A2) -- (A7);
+\draw[->] (A5) -- (A6);
+\draw[->] (A10) -- (A11);
+}
 \end{center}
-\begin{quote}
-  Dies sind von oben nach unten und von links nach rechts
-  \begin{itemize}
-  \item Das Gesetz der Erhöhung der Idealität.
-  \item Das Gesetz der Erhöhung der Vollständigkeit des Systems.
-  \item Das Gesetz der Erhöhung der Koordination.
-  \item Das Gesetz der Erhöhung des Energieleitvermögens.
-  \item Das Gesetz der ungleichen Entwicklung von Systemteilen.
-  \item Die Entwicklung technischer Systeme längs einer S-Kurve.
-  \item Das Gesetz der Verdrängung des Menschen.
-  \item Das Gesetz der zunehmenden Steuerbarkeit.
-  \item Das Gesetz der Dynamisierung.
-  \item Das Gesetz des Übergangs zum Obersystem.
-  \item Das Gesetz des Zusammenfallens.
-  \end{itemize}
-\end{quote}
 Analysieren Sie die Entwicklungsstadien des Kinos mithilfe dieser
 Entwicklungsgesetze technischer Systeme. Was lässt sich unter Berücksichtigung
 der von Ihnen identifizierten Trends für die weitere Entwicklung des Kinos
