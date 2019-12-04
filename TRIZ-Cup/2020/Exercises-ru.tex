@@ -412,57 +412,59 @@ OpenDiscovery\footnote{\url{https://github.com/wumm-project/OpenDiscovery/tree/m
 Законы развития технических систем – основа ТРИЗ. Существуют несколько
 возможных классификаций этих законов. Предлагаем вам одну из них.
 \begin{center}
-  \includegraphics[width=.9\textwidth]{oE4yUs.png}
-\end{center}
-
-\begin{center}
 \newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
 \tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
   
-\node[draw] at (5,10) [rounded rectangle]
-(A1) {\law{4}{Trend of increasing ideality}};
+\node[draw] at (5,7) [rectangle]
+(A1) {\law{3}{Закон повышения идеальности}};
 
-\node[draw] at (0,3.5) [rounded rectangle]
-(A2) {\law{5}{Trend of increasing completeness (Trend of completeness of
-    performing operation)}}; 
+\node[draw] at (0,6) [rectangle]
+(A2) {\law{4}{Закон повышения полноты частей системы (Закон полноты выполнения принципа действия)}};
 
-\node[draw] at (0,8.5) [rounded rectangle]
-(A3) {\law{4}{Trend of increasing coordination of system parts}};
+\node[draw] at (0,2) [rectangle]
+(A3) {\law{4}{Закон повышения согласованности частей системы}};
 
-\node[draw] at (2,7) [rounded rectangle]
-(A4) {\law{4}{Trend of conductivity (of energy, flows, etc.)}};
+\node[draw] at (0,4) [rectangle]
+(A4) {\law{4}{Закон проводимости: энергии, потоков и др.)}};
 
-\node[draw] at (5,4.8) [rounded rectangle]
-(A5) {\law{5}{Trend of irregular evolution of system parts}};
+\node[draw] at (5,5) [rectangle]
+(A5) {\law{3}{Закон неравномерного развития частей системы}};
 
-\node[draw] at (5,2.2) [rounded rectangle]
-(A6) {\law{5}{Tendency of system S-curve evolution}};
+\node[draw] at (10,0) [rectangle]
+(A6) {\law{4}{Тенденция развития ТС по S-образной кривой}};
 
-\node[draw] at (0,1) [rounded rectangle]
-(A7) {\law{4}{Tendency of elemination of human involvement}};
+\node[draw] at (0,0) [rectangle]
+(A7) {\law{4}{Тенденция вытеснения человека из ТС}};
 
-\node[draw] at (8,7) [rounded rectangle]
-(A8) {\law{4}{Trend of increasing controllability/Su-Field degree}};
+\node[draw] at (10,4) [rectangle]
+(A8) {\law{4}{Закон повышения управляемости / вепольности}};
 
-\node[draw] at (10,8.5) [rounded rectangle]
-(A9) {\law{4}{Trend of increasing dynamicity}};
+\node[draw] at (5,1) [rectangle]
+(A9) {\law{3}{Закон повышения динамичности}};
 
-\node[draw] at (10,3.5) [rounded rectangle]
-(A10) {\law{4}{Trend of transition to the super-system}};
+\node[draw] at (5,3) [rectangle]
+(A10) {\law{3}{Закон перехода в надсистему}};
 
-\node[draw] at (10,1) [rounded rectangle]
-(A11) {\law{4}{Gesetz des Zusammenfallens}};
+\node[draw] at (10,6) [rectangle]
+(A11) {\law{4}{Закон перехода с макроуровня на микроуровень}};
 
-\draw[->] (A1) -| (A3);
-\draw[->] (A1) -- (A4);
-\draw[->] (A1) -- (A8);
-\draw[->] (A1) -| (A9);
-\draw[->] (A1) -- (5,6) -| (A2);
-\draw[->] (5,6) -- (A5);
-\draw[->] (5,6) -| (A10);
-\draw[->] (A2) -- (A7);
-\draw[->] (A5) -- (A6);
-\draw[->] (A10) -- (A11);
+\node[draw] at (10,2) [rectangle]
+(A12) {\law{4}{Тенденция развития за счет свертывания или развертывания ТС}};
+
+\draw[->] (A1) -- (2.8,7) |- (A2) ;
+\draw[->] (2.8,7) |- (A3);
+\draw[->] (2.8,7) |- (A4);
+\draw[->] (2.8,7) |- (A7);
+\draw[->] (2.8,7) |- (A9);
+\draw[->] (2.8,7) |- (A10);
+\draw[->] (A2) -- (-2.7,6) |- (A7);
+\draw[->] (A5) -- (7.2,5) |- (A9);
+\draw[->] (7.2,5) |- (A10);
+\draw[->] (7.2,5) |- (A6);
+\draw[->] (A1) -- (7.5,7) |- (A8) ;
+\draw[->] (7.5,7) |- (A11) ;
+\draw[->] (7.5,7) |- (A12) ;
+\draw[->] (A8) -- (12.5,4) |- (A12) ;
 }
 \end{center}
 Проанализируйте этапы развития кинематографа, используя систему Законов

@@ -5,10 +5,14 @@
 I have large background in the organisation of mathematical olympiads and so
 it was no surprise for me to see the very enthusiastic faces of both the
 children and the supervisors of the final round of the TRIZ Summit Cup at the
-TRIZ Summit in June 2018 in Minsk.
+TRIZ Developer Summit in June 2018 in Minsk.
 
-Later on it turned out to be difficult to get access to the announcement and
-exercises of the competition.
+The TRIZ Summit Cup competition was established in 2014 and has been offered
+annually since then. The materials and further notes on implementation and
+results are available in Russian on the
+[website of the competition](https://triz-summit.ru/contest/).
+
+## The 2019/20 competition
 
 On 22 October 2019 the announcement and exercises of the new competition were
 distributed by email in Russian. An English version and some additional
@@ -33,7 +37,10 @@ Hans-Gert Gräbe, 28.11.2019
 ## What do you find here
 
 We started within our WUMM project a translation project of the TRIZ Summit
-materials.
+materials. The original materials are available from the web site of the
+organizers in
+[Russian](https://triz-summit.ru/contest/cup-tds-2019-2020/) and
+[English](https://triz-summit.ru/en/300139/contest-2019-2020/305709/)
 
 **Note that all derived materials provided in this directory are (so far) not**
 **authorized by the organisators of the competition. **
@@ -53,11 +60,7 @@ materials.
   - ContestantsQuestionnaire-2020.docx
   - ContestantsQuestionnaire-2020.pdf
 
-* The original exercises in Russian and English
-  - in Russian: Exercises-2020-ru.docx
-  - in English: https://triz-summit.ru/en/300139/contest-2019-2020/305709/
-
-* LaTeX versions of the exercises in Russian and English and a translations to
+* LaTeX versions of the exercises in Russian and English and a translation to
   German in separate documents.
   - Exercises-ru.pdf
   - Exercises-ru.tex
@@ -67,7 +70,7 @@ materials.
   - Exercises-de.tex
 
 Note that the LaTeX versions require the od.sty LateX style located at
-Sources/od.sty in this repo to be compiled. 
+Sources/od.sty in this repo and the tikz graphics package to be compiled. 
 
 ## Some points and observations within the translation process 
 
