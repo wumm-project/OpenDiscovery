@@ -2,6 +2,9 @@
 \usepackage{od}
 \usepackage[utf8]{inputenc}
 \usepackage[russian,ngerman]{babel}
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc}
+\usetikzlibrary{arrows.meta}
 
 \title{Zum Zusammenhang im Komplex der\\ Gesetze der Entwicklung von Systemen
   mit ZRTS}
@@ -77,13 +80,64 @@ Ausgehend von diesem System von Gesetzen wurde die ARIZ-Methodik als TRIZ
 bekannt -- Theorie des Lösens erfinderischer Probleme.
 
 A. Lyubomirsky und S. Litvin schlugen eine eigene Hierarchie der
-Entwicklungsgesetze technischer Systeme vor. Ihre wichtigste Besonderheit
-besteht darin, dass sie für die Durchführung von Analysen technischer Systeme
-entsprechend den Gesetzen der Entwicklung bequemer ist, hat aber ihre
-Nachteile, die unten beschrieben sind.
-\begin{quote}
-  HGG: An dieser Stelle ist noch ein Diagramm einzubauen.
-\end{quote}
+Entwicklungsgesetze technischer Systeme vor (Abb. 1). Ihre wichtigste
+Besonderheit besteht darin, dass sie für die Durchführung von Analysen
+technischer Systeme entsprechend den Gesetzen der Entwicklung bequemer ist,
+hat aber ihre Nachteile, die unten beschrieben sind.
+
+\begin{figure}[ht]
+\newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
+\tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
+  
+\node[draw] at (5,10) [rectangle]
+(A0) {\law{4}{Trend der Evolution nach S-Kurven}};
+
+\node[draw] at (5,8) [rectangle]
+(A1) {\law{4}{Gesetz der Erhöhung der Idealität}};
+
+\node[draw] at (10,4) [rectangle]
+(A2) {\law{4}{Gesetz der Erhöhung der Vollständigkeit TS}};
+
+\node[draw] at (0,4) [rectangle]
+(A3) {\law{4}{Gesetz der Erhöhung der Abstimmung}};
+
+\node[draw] at (10,6) [rectangle]
+(A4) {\law{4}{Gesetz der Erhöhung der Effektivität der Ausnutzung von
+    Flüssen}}; 
+
+\node[draw] at (5,4) [rectangle]
+(A5) {\law{4}{Gesetz der ungleich- mäßigen Entwicklung der Teile des Systems}}; 
+
+\node[draw] at (10,2) [rectangle]
+(A7) {\law{4}{Gesetz der Verdrängung des Menschen aus TS}};
+
+\node[draw] at (0,2) [rectangle]
+(A8) {\law{4}{Gesetz der Erhöhung der Steuerbarkeit}};
+
+\node[draw] at (0,0) [rectangle]
+(A9) {\law{4}{Gesetz der Erhöhung der Dynamisierung}};
+
+\node[draw] at (0,6) [rectangle]
+(A10) {\law{4}{Gesetz des Übergangs ins Obersystem}};
+
+\node[draw] at (5,6) [rectangle]
+(A12) {\law{4}{Gesetz der Erhöhung der Multifunktionalität}};
+
+\draw[->] (A0) -- (A1) ;
+\draw[->] (A1) -- (-2.5,8) |- (A3) ;
+\draw[->] (1,8) -| (A10) ;
+\draw[->] (A1) -- (7.5,8) |- (A4) ;
+\draw[->] (7.5,8) |- (A2);
+\draw[->] (7.5,8) |- (A4);
+\draw[->] (7.5,8) |- (A5);
+\draw[->] (A1) -- (A12);
+\draw[->] (A2) -- (A7);
+\draw[->] (A5) -- (A3);
+\draw[->] (A3) -- (A8) ;
+\draw[->] (A8) -- (A9) ;
+}
+\caption{Gesetze technischer Systeme nach A. Lyubomirsky und S. Litvin }
+\end{figure}
 Bevor wir die Mängel beschreiben, geben wir zwei Definitionen aus
 enzyklopädischen Wörter\-büchern.
 
@@ -103,8 +157,8 @@ einer S-Kurve, gab ihm aber nicht den Status eines Gesetzes. Der „Trend der
 Evolution längs einer S-Kurve“ ist also kein Gesetz, sondern eine
 Entwicklungstendenz.
 
-Trimmen ist auch kein Gesetz, sondern nur eine der Richtungen zur Erhöhung der
-Idealität.
+Die Erhöhung der Multifunktionalität ist auch kein Gesetz, sondern nur eine
+der Richtungen zur Erhöhung der Idealität.
 
 Es ist notwendig, auch das Gesetz der Vollständigkeit der Teile eines Systems
 zu präzisieren -- es kann nicht reduziert werden nur auf den notwendigen Satz
@@ -113,16 +167,76 @@ nur für Maschinen und nicht für alle technischen Systeme. In allgemeinerer
 Betrachtung muss es in diesem Gesetz um die Umsetzung des Wirkprinzips gehen.
 
 Unter Berücksichtigung der Beseitigung dieser und anderer Mängel des
-betrachteten ZRTS-Komplexes erhalten wir die folgende Version der
-ZRTS-Hierarchie, die als Arbeitsvariante zur Analyse der Entwicklung
-technischer Systeme im Rahmen von ZRTS vorgeschlagen wird.
+betrachteten ZRTS-Komplexes erhalten wir die Version der ZRTS-Hierarchie in
+Abb. 2, die als Arbeitsvariante zur Analyse der Entwicklung technischer
+Systeme im Rahmen von ZRTS vorgeschlagen wird.
+
+\begin{figure}[ht]
+\newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
+\tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
+  
+\node[draw] at (5,7) [rectangle]
+(A1) {\law{3}{Gesetz der Erhöhung der Idealität}};
+
+\node[draw] at (0,6) [rectangle]
+(A2) {\law{4}{Gesetz der Erhöhung der Vollständigkeit der Teile des Systems
+    (Gesetz der Vollständigkeit der Umsetzung des Wirkprinzips)}};
+
+\node[draw] at (0,2) [rectangle]
+(A3) {\law{4}{Gesetz der Erhöhung der Abstimmung zwischen den Teilen des
+    Systems}}; 
+
+\node[draw] at (0,3.7) [rectangle]
+(A4) {\law{4}{Gesetz der Leitfähigkeit: von Energie, Flüssen usw.}};
+
+\node[draw] at (5,5) [rectangle]
+(A5) {\law{3}{Gesetz der ungleichmäßigen Entwicklung der Teile des Systems}};
+
+\node[draw] at (10,0) [rectangle]
+(A6) {\law{4}{Tendenz der Entwicklung auf einer S-Kurve}};
+
+\node[draw] at (0,0) [rectangle]
+(A7) {\law{4}{Tendenz der Verdrängung des Menschen aus dem TS}};
+
+\node[draw] at (10,4) [rectangle]
+(A8) {\law{4}{Gesetz der Erhöhung der Steuerbarkeit und der
+    Stoff-Feld-Interaktionen}};
+
+\node[draw] at (5,1) [rectangle]
+(A9) {\law{3}{Gesetz der Erhöhung der Dynamisierung}};
+
+\node[draw] at (5,3) [rectangle]
+(A10) {\law{3}{Gesetz des Übergangs zum Obersystem}};
+
+\node[draw] at (10,6) [rectangle]
+(A11) {\law{4}{Gesetz des Übergangs von der Makro- zur Mikroebene}};
+
+\node[draw] at (10,2) [rectangle]
+(A12) {\law{4}{Tendenz der Entwicklung hin zum Zusammenlegen oder Teilen von
+    Funktionen}};
+
+\draw[->] (A1) -- (2.8,7) |- (A2) ;
+\draw[->] (2.8,7) |- (A3);
+\draw[->] (2.8,7) |- (A4);
+\draw[->] (2.8,7) |- (A5);
+\draw[->] (2.8,7) |- (A7);
+\draw[->] (2.8,7) |- (A9);
+\draw[->] (2.8,7) |- (A10);
+\draw[->] (A2) -- (-2.7,6) |- (A7);
+\draw[->] (A5) -- (7.2,5) |- (A9);
+\draw[->] (7.2,5) |- (A10);
+\draw[->] (7.2,5) |- (A6);
+\draw[->] (A1) -- (7.5,7) |- (A8) ;
+\draw[->] (7.5,7) |- (A11) ;
+\draw[->] (7.5,7) |- (A12) ;
+\draw[->] (A8) -- (12.5,4) |- (A12) ;
+}
+\caption{Der Komplex der ZRTS unter Berücksichtigung der bestehenden
+  Unterscheidung zwischen Gesetzen und Trends}
+\end{figure}
 
 \begin{quote}
-  Abb. 1. Der Komplex der ZRTS unter Berücksichtigung der bestehenden
-  Unterscheidung zwischen Gesetzen und Trends. HGG: zu ergänzen
-\end{quote}
-\begin{quote}
-  Abb. 2. Das Verhältnis der grundlegenden Werkzeuge zur Analyse technischer
+  Abb. 3. Das Verhältnis der grundlegenden Werkzeuge zur Analyse technischer
   Systeme und Lösungen erfinderischer Aufgaben mit dem Komplex ZRTS
   (Fragment). HGG: zu ergänzen
 \end{quote}
@@ -131,11 +245,11 @@ technischer Systeme im Rahmen von ZRTS vorgeschlagen wird.
 In der evolutionären Systemwissenschaft (Evolutionswissenschaft) steht die
 Aufgabe der Ausweitung der TRIZ-Ansätze auf Entwicklungsprozesse und die
 Lösung erfinderischer Probleme in beliebigen Systemen. Dazu wurde ein Komplex
-universeller Gesetze der Systementwicklung (ZRS) formuliert. In Abb. 3 ist ein
+universeller Gesetze der Systementwicklung (ZRS) formuliert. In Abb. 4 ist ein
 Komplex von Gesetzen der Entwicklung von Systemen gezeigt, der aus 4 Blöcken
 und 12 Gesetzen.
 \begin{quote}
-  Abb. 3. Komplex von Gesetzen der Entwicklung von Systemen. HGG: zu ergänzen.
+  Abb. 4. Komplex von Gesetzen der Entwicklung von Systemen. HGG: zu ergänzen.
 \end{quote}
 Als die zwei grundlegenden werden das \emph{Gesetz der Inbesitznahme von
   Ressourcen} und das \emph{Gesetz der Trägheit des Systems} vorgeschlagen.
@@ -187,13 +301,13 @@ welche die Wechselwirkung des Systems mit der äußeren Umgebung beschreiben.
 
 Da ZRS allgemeiner als ZRTS sind, kann gezeigt werden, aus welchen Gesetzen
 einer ZRS Gesetze einer ZRTS folgen. Ein Fragment derartiger Verbindungen ist
-in Abb. 4 dargestellt. In Wirklichkeit gibt es natürlich mehr solche
+in Abb. 5 dargestellt. In Wirklichkeit gibt es natürlich mehr solche
 Verknüpfungen und sie sind allgemeiner.
 \begin{quote}
-  Abb. 4. Der Zusammenhang zwischen den Gesetze der Systementwicklung (ZRS)
+  Abb. 5. Der Zusammenhang zwischen den Gesetze der Systementwicklung (ZRS)
   und der ZRTS (Fragment). HGG: zu ergänzen.
 \end{quote}
-Aus Abb. 4 ist ersichtlich, dass es Gesetze zur Entwicklung technischer
+Aus Abb. 5 ist ersichtlich, dass es Gesetze zur Entwicklung technischer
 Systeme gibt (zum Beispiel das Gesetz des Aufgebens terrestrischer
 Bedingungen), die aus dem ZRS hervorgehen, aber derzeit im ZRTS nicht
 verfügbar sind. Ein weiteres Merkmal dieses Schemas: Im ZRTS gibt es keinen
