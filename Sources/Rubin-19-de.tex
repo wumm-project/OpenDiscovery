@@ -5,6 +5,7 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes.misc}
 \usetikzlibrary{arrows.meta}
+\newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
 
 \title{Zum Zusammenhang im Komplex der\\ Gesetze der Entwicklung von Systemen
   mit ZRTS}
@@ -86,7 +87,6 @@ technischer Systeme entsprechend den Gesetzen der Entwicklung bequemer ist,
 hat aber ihre Nachteile, die unten beschrieben sind.
 
 \begin{figure}[ht]
-\newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
 \tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
   
 \node[draw] at (5,10) [rectangle]
@@ -168,11 +168,10 @@ Betrachtung muss es in diesem Gesetz um die Umsetzung des Wirkprinzips gehen.
 
 Unter Berücksichtigung der Beseitigung dieser und anderer Mängel des
 betrachteten ZRTS-Komplexes erhalten wir die Version der ZRTS-Hierarchie in
-Abb. 2, die als Arbeitsvariante zur Analyse der Entwicklung technischer
-Systeme im Rahmen von ZRTS vorgeschlagen wird.
+den Abbildungen 2 und 3, die als Arbeitsvariante zur Analyse der Entwicklung
+technischer Systeme im Rahmen von ZRTS vorgeschlagen wird.
 
 \begin{figure}[ht]
-\newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
 \tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
   
 \node[draw] at (5,7) [rectangle]
@@ -235,11 +234,78 @@ Systeme im Rahmen von ZRTS vorgeschlagen wird.
   Unterscheidung zwischen Gesetzen und Trends}
 \end{figure}
 
-\begin{quote}
-  Abb. 3. Das Verhältnis der grundlegenden Werkzeuge zur Analyse technischer
+\begin{figure}[ht]
+\begin{center}
+\tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
+
+\node[draw] at (0,0) [rectangle]
+(A1) {\law{5}{Gesetz der ungleichmäßigen Entwicklung der Systemteile}};
+\node[draw] at (6,0) [rectangle]
+(B1) {\law{5}{Modelle und Schablonen von Widersprüchen (technische,
+    physikalische) }};
+
+\node[draw] at (0,1.2) [rectangle]
+(A2) {\law{5}{Gesetz der Erhöhung der Idealität}};
+\node[draw] at (6,1.4) [rectangle]
+(B2) {\law{5}{Ideales Endresultat (IER)}};
+
+\node[draw] at (0,2.4) [rectangle]
+(A3) {\law{5}{Gesetz der Leitfähigkeit: Energie, Flüsse usw.}};
+\node[draw] at (6,2.4) [rectangle]
+(B3) {\law{5}{Flussmodelle, Flussanalysis}};
+
+\node[draw] at (0,3.8) [rectangle]
+(A4) {\law{5}{Gesetz der Erhöhung der Steuerbarkeit und von
+    Stoff-Feld-Interaktionen}};
+\node[draw] at (6,3.8) [rectangle]
+(B4) {\law{5}{Stoff-Feld-Interaktionen, Standardlösungen für
+    Erfindungsaufgaben}}; 
+
+\node[draw] at (0,5.6) [rectangle]
+(A5) {\law{5}{Tendenz der Entwicklung durch Verschmelzen oder Trennen von
+    Funktionen}};
+\node[draw] at (6,5.6) [rectangle]
+(B5) {\law{5}{Funktionsmodelle, Funktionsanalyse}}; 
+\node[draw] at (6,7) [rectangle]
+(B5a) {\law{5}{Linie der Mono-Bi-Poly-Verschmelzungen}}; 
+
+\node[draw] at (0,8) [rectangle]
+(A6) {\law{5}{Gesetz des Übergangs zum Obersystem}};
+\node[draw] at (6,8.5) [rectangle]
+(B6) {\law{5}{Systemoperator}}; 
+
+\node[draw] at (0,10) [rectangle]
+(A7) {\law{5}{Tendenz der Entwicklung längs einer S-Kurve}};
+\node[draw] at (6,10) [rectangle]
+(B7) {\law{5}{Etappen der Entwicklung technischer Systeme entsprehend einer
+    S-Kurve der Systementwicklung}};
+
+\node[draw] at (11,3.8) [rectangle]
+(C) {\law{3}{Algorithmus zum Lösen von Erfindungsaufgaben (ARIS)}};
+
+\draw[->] (A1) -- (B1) ;
+\draw[->] (A2) -- (3,1.2) |- (B2) ;
+\draw[->] (A3) -- (B3) ;
+\draw[->] (A4) -- (B4) ;
+\draw[->] (A4) |- (3,4.7) -| (B5) ;
+\draw[->] (A5) -- (B5) ;
+\draw[->] (B5a) -- (2,7) -| (A5) ;
+\draw[->] (B5a) -- (B5) ;
+\draw[->] (A6) -- (3,8) |- (B6) ;
+\draw[->] (A6) -- (6,8) -- (B5a) ;
+\draw[->] (A7) -- (B7) ;
+\draw[->] (B1) -| (C) ;
+\draw[->] (B2) -| (C) ;
+\draw[->] (B3) -| (C) ;
+\draw[->] (B4) -- (C) ;
+\draw[->] (B5) -| (C) ;
+\draw[->] (B6) -| (C) ;
+  }
+\end{center}
+  \caption{Das Verhältnis der grundlegenden Werkzeuge zur Analyse technischer
   Systeme und Lösungen erfinderischer Aufgaben mit dem Komplex ZRTS
-  (Fragment). HGG: zu ergänzen
-\end{quote}
+  (Fragment).}
+\end{figure}
 
 \section*{2. Über die Gesetze der Systementwicklung (ZRS)}
 In der evolutionären Systemwissenschaft (Evolutionswissenschaft) steht die
