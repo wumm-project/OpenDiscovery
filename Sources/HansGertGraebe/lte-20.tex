@@ -1,0 +1,576 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{a4wide,url}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[main=ngerman,russian]{babel}
+
+\parindent0cm
+\parskip3pt
+
+\title{Der Mensch und seine Technischen Systeme} 
+\author{Hans-Gert Gräbe, Leipzig}
+\date{Version vom 9. April 2020}
+\begin{document}
+\maketitle
+
+\begin{flushright}
+  Die Philosophen haben die Welt\\ nur verschieden interpretiert;\\ es kömmt
+  darauf an sie zu verändern.\\ Karl Marx. 11. Feuerbachthese
+\end{flushright}
+\section{Vorbemerkungen}
+
+Ausgangspunkt dieser Überlegungen war eine Kontroverse mit den Organisatoren
+des TRIZ-Cups 2019/20 über die Rolle eines „Gesetzes der Verdrängung des
+Menschen aus technischen Systemen“, das in einer späteren Fassung der
+Ausschreibung als „Trend“ bezeichnet wurde. Unter den acht Gesetzen der
+Entwicklung technischer Systeme, die Altshuller selbst aufstellte
+\cite[S. 122--127]{Altshuller1979}, kommt ein solcher Ansatz nicht vor, auch
+nicht in der Auf"|listung von fünf Gesetzen und zehn Tendenzen in
+\cite[S. 148\,ff.]{KoltzeSouchkov2017}.  Er ist aber in der Literatur zur
+Evolution technischer (bzw. in neuerer Formulierung
+\emph{ingenieur-technischer} \cite{TESE2018}) Systeme weit verbreitet, siehe
+etwa \cite[2.24]{Goldovsky1983}, \cite[4.8]{TESE2018} (dort schon genauer
+„trend of decreasing human involvement) oder die Literaturangaben ebenda.
+
+Derartigen technikoptimistischen Sichten steht die Position aus dem
+Kybernetikdiskurs der 1960er bis 1980er Jahre entgegen \cite[S. 10]{KFK2000}
+\begin{quote}
+  Welche Stellung hat der Mensch im hochkomplexen informations-technologischen
+  System? Unsere Antwort auf die Frage war immer: Der Mensch ist die einzig
+  kreative Produktivkraft, er muss Subjekt der Entwicklung sein und bleiben.
+  Daher ist das Konzept der Vollautomatisierung, nach dem der Mensch
+  schrittweise aus dem Prozess eliminiert werden soll, verfehlt!
+\end{quote}
+Aus einer solchen Perspektive wird die Verdrängungsthese als direkte Gefährung
+wahrgenommen, was hier als \emph{Gegenthese} explizit formuliert werden soll:
+\begin{quote}
+  Die (scheinbare) Verdrängung des Menschen aus technischen Systemen weist auf
+  eine existenziell gefährliche, unterkomplexe Fehlwahrnahme dieser
+  technischen Systeme hin.
+\end{quote}
+Harrisburg, Tschernobyl, Fukushima, das Bienensterben \cite{Jacobasch2019}
+oder der Klimawandel sind genü"|gend Fingerzeige, um sich mit diesen
+Positionen genauer zu befassen.
+
+\section{Technik und Welt verändernde menschliche Praxen}
+
+Betrieb und Nutzung technischer Systeme ist heute sicher ein zentrales Element
+Welt ver"|ändernder menschlicher Praxen. Dafür ist planmäßiges und abgestimmtes
+arbeitsteiliges Handeln erforderlich, denn das Nutzen eines Systems setzt
+dessen Betrieb voraus.  Umgekehrt ist es wenig sinnvoll ein System zu
+betreiben, das nicht genutzt wird. In der Informatik ist dieser Zusammenhang
+zwischen Definition und Aufruf einer Funktion gut bekannt -- der Aufruf einer
+Funktion, die noch nicht definiert wurde, führt zu einem Laufzeitfehler; die
+Definition einer Funktion, die nie aufgerufen wird, weist auf einen
+Designfehler hin.
+
+Eng verbunden mit der informatischen Unterscheidung von Definition und Aufruf
+einer Funktion ist die Unterscheidung von Designzeit und Laufzeit.  Eine
+solche Unterscheidung hat im realweltlichen arbeitsteiligen Einsatz
+technischer Systeme noch größere Bedeutung -- während der Designzeit wird das
+prinzipielle kooperative Zusammenwirken \emph{geplant}, während der Laufzeit
+\emph{der Plan ausgeführt}. Für technische Systeme sind also zusätzlich deren
+interpersonal als \emph{begründete Erwartungen} kommunizierten
+\emph{Beschreibungsformen} und die in \emph{erfahrenen Ergebnissen}
+resultierenden \emph{Vollzugsformen} zu unterscheiden.
+
+Marx \cite[S. 193]{MEW23} merkt dazu an:
+\begin{quote}
+  Eine Spinne verrichtet Operationen, die denen des Webers ähneln, und eine
+  Biene beschämt durch den Bau ihrer Wachszellen manchen menschlichen
+  Baumeister. Was aber von vornherein den schlechtesten Baumeister vor der
+  besten Biene auszeichnet, ist, daß er die Zelle in seinem Kopf gebaut hat,
+  bevor er sie in Wachs baut. Am Ende des Arbeitsprozesses kommt ein Resultat
+  heraus, das beim Beginn desselben schon in der Vorstellung des Arbeiters,
+  also schon ideell vorhanden war.
+\end{quote}
+So einfach ist es allerdings nicht, wie das folgende Beispiel einer
+Konzertauf"|führung zeigt. Dieser die Zuhörer erfreuenden Vollzugsform geht
+die Erarbeitung der Beschreibungsform, die Verständigung über die genaue
+Interpretation des aufzuführenden Werks, voraus. Diese Verständigung auf einen
+\emph{gemeinsamen Plan} ist selbst ein voraussetzungsreicher praktischer
+Prozess.  Die Voraussetzungen resultieren aus vorgängigen Praxen -- etwa dem
+\emph{privaten Verfahrenskönnen} der einzelnen Musiker in der Beherrschung
+ihrer Instrumente sowie dem Vorliegen der Partitur als etablierte
+Beschreibungsform des aufzuführenden Konzertstücks.  Wenn Alexander Shelley am
+14. Oktober 2018 im Leipziger Gewandhaus ohne diese Partitur von Mozarts
+Klavierkonzert KV 491 ans Dirigentenpult tritt, so wird deutlich, dass jene
+Beschreibungsform allenfalls das Rohmaterial liefert, auf dessen Basis sich
+Dirigent und Orchester in den vorausgegangenen Proben auf eine situativ
+konkrete Beschreibungsform als Basis der nun zur Auf"|führung gelangenden
+Vollzugsform geeinigt haben. Mehr noch weisen die opulenten Gesten des
+Dirigenten darauf hin, dass in diesem Proben auch \emph{Sprache} generiert
+wurde, um die Ergebnisse längerer Verständigungsprozesse in eine kompakte Form
+zu fassen, die den zeitkritischen Tempi der Vollzugsform gewachsen ist.  Den
+Rahmen einfacher ingenieur-technischer „Baumeisterarbeit“ sprengt Gabriela
+Montero, die Solistin dieses Abends, mit ihrer Zugabe: Das Publikum wird
+aufgefordert, eine Melodie vorzugeben, woraus die Virtuosin eine Improvisation
+als Vollzugsform entwickelt, zu der es keine interpersonal kommunizierbare
+Beschreibungsform gibt, wenn man einmal von den Tonaufzeichungen jenes
+Gewandhausabends und den Berichten der begeisterten Hörerschaft absieht.
+
+Das Verhältnis der Menschen zu ihren technischen Systemen ist also komplex und
+nur in einer dialektischen Perspektive der Weiterentwicklung bereits
+vorgefundener technischer Systeme zu fassen, wenn man sich nicht unentrinnbar
+in unfruchtbare Henne-Ei-Debatten verstricken will.  Das relativiert aber auch
+die Marxsche Forderung an die Philosophen, denn deren Interpretationen sind
+die Differenzen zwischen den begründeten Erwartungen und den erfahrenen
+Ergebnissen früherer Praxen vorgängig. Ob es ausreicht, diese Differenzen auf
+der Ebene der Techniker, der Ingenieure oder der Fachwissenschaftler zu
+besprechen oder eine Intervention der „interpretierenden Philosophen“ als
+eigenständige Reflexionsdimension von Bedeutung ist, mag an dieser Stelle
+offen bleiben. 
+
+\section{Bisheriger Text}
+
+Damit steht natürlich die Frage nach den kontextuellen Annahmen, die zu diesen
+verschiedenen Positionen führen. In der marxistischen Literatur wird ein
+solcher Herauslösungsprozess ebenfalls betrachtet.  Im „Maschinenfragment“
+\cite[S. 570 ff.]{MEW42} -- einem frühen Rohentwurf der eigenen ökonomischen
+Theorie -- entwickelt Marx die Vision einer Gesellschaft, in welcher der
+„gesellschaftliche Stoffwechsel“ \cite[S. 37]{MEW23} auf eine Weise
+organisiert ist, dass
+\begin{quote}
+  es nicht mehr der Arbeiter [ist], der modifizierten Naturgegenstand als
+  Mittelglied zwischen das Objekt und sich einschiebt; sondern den
+  Naturprozess, den er in einen industriellen umwandelt, er als Mittel
+  zwischen sich und die unorganische Natur [schiebt], deren er sich
+  bemeistert.  \cite[S. 572]{MEW42}
+\end{quote}
+Weiter stellt Marx dar, dass die Entwicklung der Produktivkräfte
+\emph{notwendig} auf eine solche Weise der Organisation des gesellschaftlichen
+Stoffwechsels zusteuert.
+\begin{quote}
+  In den Produktionsprozess des Kapitals aufgenommen, durchläuft das
+  Arbeitsmittel aber verschiedene Metamorphosen, deren letzte die
+  \emph{Maschine} ist oder vielmehr ein \emph{automatisches System der
+    Maschinerie} (System der Maschinerie; das \emph{automatische} ist nur die
+  vollendetste adäquateste Form derselben und verwandelt die Maschinerie erst
+  in ein System), in Bewegung gesetzt durch einen Automaten, bewegende Kraft,
+  die sich selbst bewegt; dieser Automat bestehend aus zahlreichen mechanischen
+  und intellektuellen Organen, sodass die Arbeiter selbst nur als bewusste
+  Glieder desselben bestimmt sind. \cite[S. 584]{MEW42}
+\end{quote}
+Dieser Gedanke ist weitgehend singulär und im übrigen Marxschen Werk nirgends
+ausgearbeitet. So wenigstens \cite{Goldberg2016}.
+
+Die Probleme solcher „in Bewegung gesetzten Automaten“ werden mittlerweile in
+einer ökolo\-gischen Krise planetaren Ausmaßes sichtbar, so dass die Frage
+steht, ob ein behaupteter „Trend der Verdrängung des Menschen aus technischen
+Systemen“ nicht eine grundsätzliche theoretische Fehlkonstruktion markiert,
+die im aktuell verwendeten Komplex dieser Gesetze und Trends der Entwicklung
+technischer Systeme enthalten ist. 
+
+Der Ansatz einer solchen Verdrängungstendenz widerspricht auch grundlegenden
+Setzungen in der deutschen kybernetischen Schule, was ich in einer Note vom
+8.11.2019 an die Autoren der Aufgaben des TRIZ-Cups festgehalten habe:
+\begin{quote}
+  Das „Gesetz der Ersetzung des Menschen“ ist nicht in der Liste im deutschen
+  TRIZ-Standardwerk \cite{KoltzeSouchkov2017} zu finden und ich bin absolut
+  anderer Meinung, dass dies ein Entwicklungsgesetz für technische Systeme
+  sei.  Zumindest in der deutschen Literatur gibt es bereits seit den 1980er
+  Jahren eine lange Diskussion über dieses Thema. Zum Beispiel unterstreicht
+  Klaus Fuchs-Kittowski in der Zusammenfassung \cite{KFK2000} seiner Arbeiten
+  \begin{quote}
+    „Unsere Antwort auf die Frage war immer: Der Mensch ist die einzig kreative
+    Produktivkraft, er muss Subjekt der Entwicklung sein und bleiben.  Daher
+    ist das Konzept der Vollautomatisierung, nach dem der Mensch schrittweise
+    aus dem Prozess eliminiert werden soll, verfehlt!“ \cite[S. 10]{KFK2000}
+  \end{quote}
+  Die Ersetzung des Menschen als Gesetz der technischen Entwicklung wurzelt in
+  einem sehr merkwürdigen Verständnis des Begriffs \emph{Technik}, welches das
+  Offensichtliche vergisst -- es gibt keine \emph{technischen Systeme},
+  sondern nur \emph{technosoziale Systeme}.
+\end{quote}
+
+Michail S. Rubin präzisierte in einer PM vom 10.11.2019 seine Position wie
+folgt:
+\begin{quote}
+  Dies erfordert eine gesonderte Diskussion. Wir verweisen auf die Arbeit von
+  Lubomirsky und Litvin, die sich auf die Verdrängung des Menschen aus
+  technischen System bezieht.  Wir sind uns einig, dass dieses Phänomen kein
+  Gesetz ist, sondern ein Trend, der einem anderen Gesetz folgt: dem Gesetz
+  der Erhöhung der Autonomie von Systemen.  Wir haben die Liste von Gesetzen
+  und Trends in der Ausschreibung entsprechend modifiziert. Sie haben absolut
+  Recht, dass technische Systeme nicht unabhängig sind in ihrer Entwicklung
+  und allgemeiner sozio-technische Systeme betrachtet werden müssen. Gesetze
+  der Entwicklung sozio-technischer Systeme unterscheiden sich aber von den
+  Gesetzen der Entwicklung technischer Systeme. Für rein technische Systeme
+  kann wirklich der Trend der schrittweisen Herauslösung menschlicher
+  Beteiligung beobachtet werden. Statt eines Ruderbootes erscheint ein Boot
+  mit einem Motor. Die ganze industrielle Revolution des 17. Jahrhunderts ist
+  auf der Verdrängung des Menschen durch Motoren und Maschinen aufgebaut. Die
+  nächste technologische Revolution ist mit der Verdrängung des Menschen aus
+  dem Bereich der Kontrolle durch Automatisierung und Computer verbunden. Das
+  heißt aber nicht, dass aus technologischer Sicht der Mensch aus dem
+  sozio-technischen System verdrängt wird. Im Gegenteil, der Mensch bleibt die
+  Hauptanforderungsquelle für technische Systeme. Aber diese Anforderungen
+  werden zunehmend ohne menschliches Eingreifen erfüllt. Dieser Trend ist auch
+  charakteristisch für das Kino als technisches System\footnote{Das Thema der
+    Aufgaben des TRIZ-Cups.}. Es ist klar, dass der Mensch weder aus dem
+  Prozess der Schaffung von Filmwerken, noch von Kunstwerken, noch aus dem
+  Prozess des Konsums von Kinoprodukten herausgedrängt wird, er bleibt das
+  Zentrum all dieser Prozesse.
+\end{quote}
+
+In diesem Zusammenhang ergeben sich für mich eine Reihe von Fragen, die auch
+in einer ersten Diskussion auf
+Facebook\footnote{\url{https://www.facebook.com/groups/111602085556371}} nicht
+ausgeräumt werden konnten.
+\begin{enumerate}
+\item Was ist ein \emph{technisches System} im Gegensatz zu einem
+  \emph{sozio-technischen System}?
+\item Wie ist der Ansatz \emph{Entwicklung technischer Systeme} zu verstehen?
+  Gibt es eine Entwicklung einzelner technischer Systeme oder kann deren
+  Entwicklung nur in der Gesamtheit technischer Systeme oder nur in noch
+  umfassenderen gesellschaftlichen Strukturen sinnvoll besprochen werden?
+\item In welchem Verhältnis steht \emph{der Mensch} zu einzelnen technischen
+  Systemen und zur Gesamtheit seiner technischen Schöpfungen? In welchem
+  Umfang ist bei dieser Frage zwischen dem \emph{Menschen als Gattungssubjekt}
+  (dem verfügbaren Verfahrenswissen), einzelnen Menschen als handelnden
+  \emph{Akteuren in Mittel-Zweck-Verhältnissen} (dem privaten
+  Verfahrenskönnen) und kooperativen Akteuren als \emph{Betreiber der
+    einzelnen technischen Systeme} (den institutionalisierten
+  Verfahrensweisen) zu differenzieren?
+\end{enumerate}
+
+Derartige Fragen ergeben sich insbesondere beim Studium von sozio-ökologischen
+Systemen, in welche die Wirkungen technischer Systeme ja offensichtlich
+eingebettet sind.  Siehe hierzu etwa die Ansätze von Elinor Ostrom in
+\cite{Anderies2004} sowie \cite{Ostrom2007}, die in unserem Leipziger
+Seminar\footnote{\url{https://github.com/wumm-project/Leipzig-Seminar}.}
+gerade besprochen werden.
+
+\section{Was sind technische Systeme?}
+
+\subsection{Einige vorbereitende Überlegungen}
+
+Die große Mehrzahl der von Menschen erschaffenen technischen Systeme sind
+Unikate. Der Wirtschaftszweig, der mit der Herstellung solcher Unikate befasst
+ist, heißt \emph{Industrieanlagenbau}. Auch die Mehrzahl der Informatiker ist
+mit der Erstellung solcher Unikate befasst, denn die IT-Systeme, die derartige
+Anlagen steuern, sind ebenfalls Unikate.  Dasselbe gilt auch für die Ämter,
+Behörden und öffentlichen Einrichtungen. So ist zum Beispiel die Leipziger
+Stadtverwaltung aktuell damit befasst, ihre Verwaltungsprozesse zu
+„digitalisieren“, was unter Führung des Dezernats Allgemeine Verwaltung und
+zusammen mit dem städtischen IT-Dienstleister Lecos erfolgt.
+
+Natürlich wird dabei das Fahrrad nicht dauernd neu erfunden --
+Komponententechnologien bilden die Grundlage jeder ingenieur-technischen
+Arbeit und auch die Informatik hat nach einer mehr als 25 Jahre dauernden
+Softwarekrise \cite{Hamilton2008} zu komponentenbasierten
+Entwicklungsmethodiken gefunden \cite{Szyperski2002}.  In diesem Kontext haben
+sich allerdings auch die Berufsbilder der Informatiker differenziert in
+Komponentenentwickler („design for component“) und Komponentenmonteure
+(„design from component“).  Erstere entwickeln Komponenten für einen größeren
+Markt, zweitere entwickeln daraus weiterhin die großen Unikate („Systeme“ auch
+in der informatischen Fachsprache).
+
+Wir bewegen uns dabei klar im Bereich der Standard-TRIZ-Terminologie eines
+\emph{Systems von Systemen} -- ein technisches System besteht aus Komponenten,
+die ihrerseits technische Systeme sind, deren \emph{Funktionieren} (sowohl im
+funktionalen als auch im operativen Sinn) für die aktuell betrachtete
+Systemebene vorausgesetzt wird. Der Begriff eines technischen Systems hat
+damit eine klar epistemische Funktion der „Reduktion auf das Wesentliche“.
+Einstein wird der Ausspruch zugeschrieben „make it as simple as possible but
+not simpler“. Das \emph{Gesetz der Vollständigkeit eines Systems} bringt genau
+diesen Gedanken zum Ausdruck, allerdings tritt er hier nicht als
+\emph{Gesetz}, sondern als \emph{Modellierungsdirektive} in Erscheinung.
+
+Der Begriff \emph{technisches System} ist in einem solchen
+planerisch-realweltlichen Kontext vierfach überladen
+\begin{itemize}
+\item [1.] als realweltliches Unikat,
+\item [2.] als Beschreibung dieses realweltlichen Unikats
+\end{itemize}
+und für in größerer Stückzahl hergestellte Komponenten auch noch
+\begin{itemize}
+\item [3.] als Beschreibung des Designs des System-Templates sowie
+\item [4.] als Beschreibung und Betrieb der Auslieferungs- und
+  Betriebsstrukturen der nach diesem Template gefertigten realweltlichen
+  Unikate.
+\end{itemize}
+
+Insbesondere der letzte Punkt, der Zusammenhang zwischen einer Komponenten als
+Konzept und den realweltlich verbauten Komponenteninstanzen, ist komplex, da
+die produktiven Strukturen der Herstellung und des Einsatzes dieser
+Komponenteninstanzen gewöhnlich auseinanderfallen, die Komponenteninstanzen
+nach der Herstellung also verschickt und an ihrem Einsatzort für den konkreten
+Gebrauch vorbereitet und verbaut werden müssen. In der Theorie einer
+\emph{Software aus Komponenten} werden dabei die drei Phasen \emph{deploy,
+  install, configure} deutlich unterschieden. 
+
+\subsection{Kommentar von Nikolay Shpakovski, 8.12.2019}
+
+Gesetze und Entwicklungslinien werden aktiv bei der Lösung von situativen und
+prognostischen Aufgaben eingesetzt. Es geht um das System, aber sehr wenig,
+und das habe ich schon lange verstanden.
+
+In letzter Zeit denke ich oft an das Konzept des „technischen Systems“. Dieses
+Konzept ist ein wichtiger Teil des Prozesses zur Lösung von Problemen nach
+unserem Ansatz. Ich finde nichts Falsches am Ansatz des VDI\footnote{Auf
+  Facebook schrieb ich dazu: Als zentrale Frage steht für mich, was überhaupt
+  ein „Technisches System“ ist. Ist dieser Begriff in der Mehrzahl, wie im
+  TRIZ-Kontext wie selbstverständlich gebraucht, überhaupt sinnvoll
+  verwendbar? Der VDI -- Verein Deutscher Ingenieure -- als
+  Standesorganisation, der in der VDI-Richtlinie 3780 den Technikbegriff
+  normiert, ist in dieser Frage uneins, indem er von einer „Menge von
+  Systemen“ spricht und Technik in folgenden drei Dimensionen betrachtet: 
+  \begin{itemize}
+  \item Menge der nutzenorientierten, künstlichen, gegenständlichen Gebilde
+    (Artefakte oder Sachsysteme);
+  \item Menge menschlicher Handlungen und Einrichtungen, in denen Sachsysteme
+    entstehen und
+  \item Menge menschlicher Handlungen, in denen Sachsysteme verwendet werden.
+  \end{itemize}}, alles stimmt, alles auf der Welt kann als System betrachtet
+werden.  Jedes System kann als „System von Systemen“ dargestellt werden, wir
+wählen einfach irgendeine Ebene aus und sagen -- das ist ein System.  Dann
+ergibt sich sofort die Möglichkeit zu sagen, dass es Obersysteme und
+Subsysteme gibt.
+
+Du hast eine konkrete Frage gestellt - was ist der Unterschied zwischen den
+Konzepten „System -- Subsysteme“ und „System -- Komponenten“. Es ist einfach
+-- die Komponente ist ein noch nicht systematisierter Teil des Systems, ein
+potenzielles Teilsystem.
+\begin{quote}
+  Anmerkung HGG: Das widerspricht aber dem Verständnis der
+  Komponententechnologie, nach dem die Komponenten zur Bauzeit des Systems,
+  also \emph{vor} dessen Betrieb vorhanden sein müssen.
+\end{quote}
+
+Das Konzept des „technischen Systems“ ist in der TRIZ schrecklich verstrickt.
+Als technisches System wird eine Reihe von Mechanismen betrachtet, die eine
+neue Qualität ergeben, zum Beispiel ein Auto, ein Stift, eine Uhr. Als
+technisches System wird ein System zur Durchführung einiger Funktionen
+bezeichnet, beispielsweise zum Transport von Gütern, wozu außer dem Auto noch
+viel mehr gehört. Das ist nicht schlimm, das Problem ist, dass diese
+Definitionen kühn vermischt werden, was zu schrecklicher Verwirrung führt.
+Den Fahrer in das System Auto einbeziehen oder nicht? Was ist mit Benzin? Ist
+Luft ein Teil des Autos oder nicht? Menschen lenben mit diesen Verwirrungen
+gut, bauen ganze Theorien und führen Seminare durch, was diese Verwirrungen
+nur noch verstärkt.
+
+Für mich unterscheide ich
+\begin{enumerate}
+\item ein technisches System (systematisiertes technisches Objekt, eine
+  Maschine auf dem Lager),
+\item ein funktionierendes System (was im Patent als „Maschine in Arbeit“
+  bezeichnet wird),
+\item ein nützliches technisches System (das, was ein nützliches Produkt
+  herstellt).
+\end{enumerate}
+
+Natürlich verwirrt das Wort „technisch“ hier viel, aber in dieser Situation
+ist das so zu verstehen, dass ein technisches System ein System ist, das Bezug
+zur Technik (Ingenieurwesen) hat oder zur Technik des Durchführens irgendeiner
+nützlichen Handlung. Wirf besser dieses Wort komplett weg. Das Wichtigste, das
+Nützlichste zur Lösung des Problems ist ein nützliches System. Auf dieser
+Ebene verliert das Wort „technisch“ seine Bedeutung, weil es ein Elektriker
+sein kann, der eine Glühbirne einsetzt oder ein Raumschiff geht in die
+Umlaufbahn oder ein Anwalt oder ein Computerprogramm. Das Hauptkriterium ist,
+ob dies ein nützliches Ergebnis ergibt oder es sich um „Mozhaiskis
+nicht-fliegendes Flugzeug“ handelt\footnote{Ein im russischen Kontext
+  berühmtes Beispiel ähnlich dem „Schneider von Ulm“ im Deutschen, siehe
+  \url{https://de.wikipedia.org/wiki/Geschichte_der_Luftfahrt}.}?
+
+\subsection{Kommentar von Michail S. Rubin, 31.12.2019}
+
+\paragraph{1.}
+Was ist ein technisches System im Gegensatz zu einem sozio-technischen?
+
+Die Antwort ist ganz einfach: Bei der Betrachtung eines technischen Systems
+berücksichtigen wir keine anderen bestehenden Beziehungen (soziale,
+wirtschaftliche, politische, wirtschaftliche, Marketing usw.) im System, mit
+Ausnahme von Objekten und Beziehungen technischer Natur. Diese externen
+(menschlichen, kulturellen) Beziehungen können durch zusätzliche Anforderungen
+oder Einschränkungen an technische Objekte ersetzt werden.
+
+Bei der Betrachtung von Systemen als sozio-technisch werden eine Reihe
+technischer Objekte und Zusammenhänge berücksichtigt, beispielsweise wenn die
+TRIZ-Analyse von Produktionsunternehmen nicht nur als technisches System
+(Maschinen, Geräte), sondern die Fabrik als sozio-technisches Objekt
+betrachtet wird: Bestellsystem und Marketing, Personalpolitik, Finanzen und
+die wirtschaftliche Lage des Unternehmens, Systeme der Entscheidungsfindung
+usw. Offensichtlich verändert dies den Gegenstand der Überlegungen und die
+Forschungsinstrumente grundlegend.
+
+Ich verweise dazu zum Beispiel auf meine Aufsätze \cite{Rubin2007} und
+\cite{Rubin2010}.
+
+\paragraph{2.}
+Ist es möglich, die Entwicklung technischer Systeme isoliert von sozialen
+Strukturen zu betrachten?
+
+Unter dem Gesichtspunkt der Entwicklung der Materie in der Natur sollten
+technische Systeme als soziokulturelle Systeme auf der Ebene wirtschaftlicher,
+finanzieller, politischer und anderer Systeme klassifiziert werden, die als
+Teil der menschlichen Kultur in einem zivilisierten Umfeld entstanden sind
+und nur dort existieren können.
+
+Gleichzeitig werden Geschäftssysteme, politische Systeme, ethische Systeme
+usw. als eigen\-ständige Objekte betrachtet. Trotz der direkten Verbindung
+dieser Systeme mit der Zivilisation, mit soziokulturellen Systemen, haben sie
+ihre eigenen Gesetze und gelten als eigenständige Forschungsobjekte. Es ist
+nicht überraschend, dass technische Systeme unabhängig voneinander betrachtet
+werden können, aber auch als sozial und technisch betrachtet werden können
+(d.h. das soziale Umfeld einschließen).
+
+\paragraph{3.}
+Zwischen Menschen und technischen Systemen gibt es viele sehr unterschiedliche
+Zusammenhänge. Welche Aspekte dieser Verbindungen interessiert Sie?  Erzeugung
+und Entwicklung, Betrieb, ästhetische Bindungen, ethische, wirtschaftliche,
+politische, künstlerische, biologische -- es gibt eine Vielzahl von Schichten
+des Verhältnisses von technischen Systemen und Menschen.
+
+\subsection{Kommentar von Hans-Gert Gräbe, 18.01.2020}
+
+Mir ist bewusst, dass ich mit meinen Fragen einen großen diskursiven Korpus
+berühre, so dass sich kurzschlüssige Antworten oder gar Urteile verbieten.
+
+Das wird in \cite{Rubin2010} besonders deutlich, mit dem Sie die von mir
+aufgeworfenen Fragen in einen sehr weiten Kontext stellen. Dies ist zweifellos
+möglich und wahrscheinlich auch sinnvoll. Sie beziehen sich dabei besonders
+auf die Ergebnisse der sowjetischen Ethnografie, die im Westen wenig bekannt
+sind.  Ich selbst bin mit wesentlichen Ansätzen von L.N.Gumilev wie
+Passionarität und seinem Ansatz einer etwa 1500-jährigen „S-Kurven“-artigen
+Entwicklung von Zivilisationen aus dem Sammelband \cite{Gumilev1994} etwas
+vertraut.  Ins Deutsche übersetzt wurde bisher nur sein Text
+\cite{Gumilev2017}q, in dem er seinen Passionaritätsansatz auf den Übergang
+von der Kiewer zur Moskauer Rus als zivilisatorischen „S-Kurven-Wechsel“
+entwickelt.  Andere Autoren wie \cite{Adji2011} weisen darauf hin, dass die
+Kiewer Rus zu einer Zeit entstanden ist, wo das Gebiet faktisch eine
+normannische Kolonie war und das Establishment von Warägern gebildet wurde.
+Nach diesem Ansatz ist die Quelle der Entwicklung dort dem Aufeinandertreffen
+der Kulturen der Eroberer und der Eroberten geschuldet.  Die Migrationsströme
+auf der Karte \cite[Karte 5]{Rubin2010} müssen in dem Kontext seit wenigstens
+10\,000 Jahren auch als Ströme kultureller und technologischer
+Entwicklungspotenziale und Vermischungen gesehen werden. So lange währt in
+diesem Verständnis bereits die „Globalisierung“.
+
+Über diese Zusammenhänge gibt es wichtige Arbeiten von V.I. Vernadsky,
+insbesondere dessen Noosphärenansatz \cite{Vernadsky1997}. Welche Rolle
+spielen in Ihrem Systemansatz diese Überlegungen?
+
+Auch scheint nach \cite{KlixLanius1999} klar zu sein, dass diese
+Migrationsbewegungen oft durch lokalen Klimastress in Folge globaler
+Klimaveränderungen ausgelöst wurden, ja dieser Klimastress viel ursächlicher
+für technologische Weiterentwicklungen war als Migration und
+kulturell-technische Vermischung, die ja nur das global bereits Verfügbare
+fusioniert, nicht aber zu neuen Ufern aufbricht.
+
+Trotz Sesshaftigkeit seit der Neolithischen Revolution spielen derartige
+Migrationsbewegungen noch bis in die Neuzeit eine wichtige Rolle.  Wir haben
+uns in letzter Zeit -- durch die recht ungenauen Angaben in \cite{Adji2011}
+angeregt -- etwas genauer für die Migrationsbewegungen in Europa im Zeitraum
+1000 v.Chr. bis 400 n.Chr. interessiert und dabei für die von Gumilev in
+diesem Territorium beschriebenen Entwicklungen, die in (Rubin 2010:Karte 17)
+referenziert werden, aber ja weitgehend spekulativen Charakter haben, wenig
+Bestätigung gefunden.
+
+Ich komme zu meiner Ausgangsfrage über das Verhältnis technischer und
+sozio-kultureller Systeme zurück. Meine Studentengruppe löst gerade die
+Aufgabe „Schiffsmast“\footnote{Siehe
+  \url{https://triztrainer.ru/tasks/section-1/ship-mast/}.} aus dem Minsker
+TRIZ-Trainer.  Betrachtet man das Boot als Teil eines Wassertransportsystems,
+dann ist die Lösung einfach: Gib in dein Navi ein, dass die Brückendurchfahrt
+gesperrt ist, und lasse dieses einen anderfen Weg suchen. Im Kontext eines
+autonom fahrenden Boots (der Mensch ist -- in Ihrem Verständnis -- vollkommen
+aus dem System „Boot“ verdrängt) gibt es wohl auch keine andere Lösung
+(\textbf{These:} Wo kein Mensch, da auch kein TRIZ).
+
+Natürlich ist das keine „ordentliche“ Lösung, man soll das System „Boot“
+analysieren.  Für dessen Hauptfunktion (Wassertransport) ist der Mast komplett
+entbehrlich, dessen beide Funktionen (Träger von Antenne und Oberlicht)
+gehören zur Komponente „Steuerung“ des Systems „Boot“. Also muss man diese
+Komponente als Teilsystem weiter analysieren -- wozu Antenne und wozu
+Oberlicht?
+
+Oberlicht: Im Ober-Ober-System „Wassertransport“ gibt es die Vorschrift
+(technisch? sozio-kulturell?), einen hohen Mast zu beleuchten.  Diese vom
+Menschen (in einem komplizierten sozio-kulturellen Prozess der
+Institutionalisierung) vereinbarte Vorschrift entfaltet also ihre konkrete
+Wirkung als technische Vorgabe (so jedenfalls ist das nach der von Ihnen
+angegebenen Vorgehensweise in die Anforderungen an das System „Radio“ zu
+importieren, dessen Komponente die Antenne ist, das wiederum ein Teil des
+Systems „Steuerung“ ist). Dieses Problem kann also nach Studium der Regeln aus
+dem Ober-Ober-System einfach gelöst werden -- kein Mast, auch kein Oberlicht
+erforderlich.
+
+Antenne: Gehört offensichtlich zur Komponente Funkverbindung als Teil des
+Systems „Steuerung“. Auch wenn der Mensch in einem komplett autonom fahrenden
+Boot eliminiert wäre -- auch jenes autonom fahrende Boot benötigte die von
+Menschen betreute und betriebene Navigationsinfrastruktur, auf die der
+Bootsführer im gegebenen Kontext über die Funkverbindung zugreift.
+
+Zusammenfassend: Ihre Argumentation greift nach meinem Verständnis zu kurz. 
+
+\begin{thebibliography}{xxx}
+\bibitem{Altshuller1979} G.S. Altshuller. \foreignlanguage{russian}{Творчество
+  как точная наука. — М.: «Советское радио»}, 1979. — С. 122 – 127.
+\bibitem{Adji2011} Murad Adji (2011). \foreignlanguage{russian}{Азиатская
+  Европа}. (Das asiatische Europa).  Astrel, Moskau. ISBN 978-5-271-36400-6.
+\bibitem{Anderies2004} J.M. Anderies, M.A. Janssen, E. Ostrom (2004).
+  Framework to Analyze the Robustness of Social-ecological Systems from an
+  Institutional Perspective.\\ In: Ecology and Society 9 (1), 18.
+\bibitem{Goldovsky1983} B.I. Goldovsky (1983).
+  \foreignlanguage{russian}{Система закономерностей построения и развития
+    технических систем}.
+  \url{https://triz-summit.ru/triz/metod/gold/regular/}.
+\bibitem{KFK2000} Klaus Fuchs-Kittowski (2000).
+  Wissens-Ko-ProduktionVerarbeitung, Verteilung und Entstehung von
+  Informationen in kreativ-lernenden Organisationen.\\ In: Fuchs-Kittowski
+  u.a. (Hrsg.). Organisationsinformatik und Digitale Bibliothek in der
+  Wissenschaft. Wissenschaftsforschung, Jahrbuch 2000. Gesellschaft für
+  Wissenschaftsforschung, Berlin.
+  \url{http://www.wissenschaftsforschung.de/JB00_9-88.pdf}
+\bibitem{Goldberg2016} Jörg Goldberg, André Leisewitz (2016). Umbruch der
+  globalen Konzernstrukturen.\\ Z 108, S. 8--19.
+\bibitem{Graebe2020} Hans-Gert Gräbe (2020). Reader zum 16. Interdisziplinären
+  Gespräch \emph{Das Konzept Resilienz als emergente Eigenschaft in offenen
+    Systemen} am 7.2.2020 in
+  Leipzig. \url{http://mint-leipzig.de/2020-02-07/Reader.pdf}.
+\bibitem{Gumilev1994} Lev N. Gumilev (1994). \foreignlanguage{russian}{Конец и
+  вновь начало}.  (Ende und wieder Anfang).  Aufsätze, zusammengestellt von
+  N.V.Gumilev. Tanais Verlag, Moskau.
+\bibitem{Gumilev2017} Lev N. Gumilev (2017). Von der Rus zu Russland.
+  Monsenstein und Vannerdat, Münster.
+\bibitem{Hamilton2008} Patrick Hamilton (2008). Wege aus der Softwarekrise:
+  Verbesserungen bei der Softwareentwicklung. ISBN 978-3-540-72869-6.
+\bibitem{Jacobasch2019} Gisela Jacobasch (2019). Bienensterben -- Ursachen und
+  Folgen.  Leibniz Online 37 (2019).
+  \url{https://leibnizsozietaet.de/bienensterben-ursachen-und-folgen/}
+\bibitem{KlixLanius1999} Friedhart Klix, Karl Lanius (1999). Wege und Irrwege
+  der Menschenartigen.  Kohlhammer, Stuttgart.
+\bibitem{KoltzeSouchkov2017} Karl Koltze, Valeri Souchkov (2017).
+  Systematische Innovation.\\ Hanser Verlag, München. Zweite Auf"|lage. ISBN
+  978-3-446-45127-8.
+\bibitem{TESE2018} Alexander Lyubomirskiy, Simon Litvin, Sergey Ikovenko,
+  Christian M. Thurnes, Robert Adunka (2018). Trends of Engineering System
+  Evolution. Eigenverlag, Sulzbach-Rosenberg.  ISBN 978-3-00-059846-3.
+\bibitem{MEW23} Karl Marx (MEW 23). Das Kapital, Band 1. Dietz Verlag, Berlin.
+\bibitem{MEW42} Karl Marx (MEW 42). Grundrisse der Kritik der politischen
+  Ökonomie.  Dietz Verlag, Berlin.
+\bibitem{Ostrom2007} Elinor Ostrom (2007). A diagnostic approach for going
+  beyond panaceas.  Proceedings of the national Academy of sciences, 104(39),
+  15181--15187.
+\bibitem{Rubin2007} Michail S. Rubin (2007). \foreignlanguage{russian}{О
+  выборе задач в социально-технических системах}. (Über die Wahl von Aufgaben
+  in sozial-technischen Systemen). In: \foreignlanguage{russian}{ТРИЗ Анализ.
+    Методы исследования проблемных ситуаций и выявления инновационных
+    задач}. (TRIZ-Analyse. Methoden zur Untersuchung von Problemsituationen
+  und zur Identifizierung innovativer Aufgaben). Hrsg. von S.S. Litvin,
+  V.M. Petrov, M.S. Rubin. \foreignlanguage{russian}{Библиотека Саммита
+    Разработчиков ТРИЗ}, Moskau. S. 35--46.
+  \url{https://www.trizland.ru/trizba/pdf-books/TRIZ-summit2007.pdf}.
+\bibitem{Rubin2010} Michail S. Rubin
+  (2010). \foreignlanguage{russian}{Филогенез социокультурных систем. Секреты
+  развития цивилизаций}.  (Phylogenese soziokultureller Systeme. Geheimnisse
+  der Zivilisationsentwicklung).
+  \url{http://www.temm.ru/en/section.php?docId=4472}.
+\bibitem{Szyperski2002} Clemens Szyperski (2002). Component Software: Beyond
+  Object-Oriented Programming. ISBN: 978-0-321-75302-1.
+\bibitem{Vernadsky1997} V.I. Vernadsky (1997, Original 1936--38). Scientific
+  Thought as a Planetary
+  Phenomenon. \url{https://wumm-project.github.io/Texts.html}
+\end{thebibliography}
+\end{document}

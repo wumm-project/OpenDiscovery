@@ -9,9 +9,9 @@ od.sty contains main definitions. Note that the babel language definition is
 per project due to different main languages.  We recommend to include this
 directory in your TEXINPUTS path.
 
-Altshuller
+Altshuller, G.S.
 * HowInvent-1960-ru.odt (in Russian)
-  * au = G.S. Altshuller
+  * au = G.S. Altshuller, 
   * title = КАК ДЕЛАЮТСЯ ОТКРЫТИЯ (мысли о методике научной работы)
   * lang = ru
   * How to invent. 1960
@@ -26,6 +26,18 @@ GDR-InventorSchools
   * license = CC-0
   * Version of 19.12.2005, with comments by Hans-Gert Gräbe, 24.12.2018
     Unpublished Manuscript
+
+Goldovsky, B.I.
+* Goldovski-1983.pdf
+  * au = B.I. Goldovsky, Голдовский Б.И.
+  * title = Система закономерностей построения и развития технических систем
+  * lang = ru
+  * Source: https://triz-summit.ru/triz/metod/gold/regular/
+* Goldovski-1983-de.tex
+  * au = B.I. Goldovsky
+  * title = System der Gesetzmäßigkeiten des Aufbaus und der Entwicklung technischer Systeme 
+  * lang = ru
+  * Source: https://triz-summit.ru/triz/metod/gold/regular/
 
 * Herrlich-16.tex
   * au = Michael Herrlich, Justus Schollmeyer
