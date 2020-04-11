@@ -9,7 +9,7 @@
 
 \title{Der Mensch und seine Technischen Systeme} 
 \author{Hans-Gert Gräbe, Leipzig}
-\date{Version vom 9. April 2020}
+\date{Version vom 10. April 2020}
 \begin{document}
 \maketitle
 
@@ -19,21 +19,57 @@
 \end{flushright}
 \section{Vorbemerkungen}
 
-Ausgangspunkt dieser Überlegungen war eine Kontroverse mit den Organisatoren
-des TRIZ-Cups 2019/20 über die Rolle eines „Gesetzes der Verdrängung des
+Ausgangspunkt dieser Überlegungen war eine Debatte mit den Organisatoren des
+TRIZ-Cups 2019/20 über die Gültigkeit eines „Gesetzes der Verdrängung des
 Menschen aus technischen Systemen“, das in einer späteren Fassung der
 Ausschreibung als „Trend“ bezeichnet wurde. Unter den acht Gesetzen der
-Entwicklung technischer Systeme, die Altshuller selbst aufstellte
+Entwicklung technischer Systeme, die Altshuller 1979 selbst formulierte
 \cite[S. 122--127]{Altshuller1979}, kommt ein solcher Ansatz nicht vor, auch
 nicht in der Auf"|listung von fünf Gesetzen und zehn Tendenzen in
 \cite[S. 148\,ff.]{KoltzeSouchkov2017}.  Er ist aber in der Literatur zur
 Evolution technischer (bzw. in neuerer Formulierung
 \emph{ingenieur-technischer} \cite{TESE2018}) Systeme weit verbreitet, siehe
-etwa \cite[2.24]{Goldovsky1983}, \cite[4.8]{TESE2018} (dort schon genauer
-„trend of decreasing human involvement) oder die Literaturangaben ebenda.
+etwa \cite[2.24]{Goldovsky1983}, \cite{TESE2018} oder die Literaturangaben
+ebenda.  Insbesondere \cite{TESE2018} spielt als Referenz eine zentrale Rolle,
+da hier von einflussreichen TRIZ-Theoretikern mit der Autorität der MATRIZ im
+Rücken ein Zusammenschnitt der Debatten um „Trends of Engineering Systems
+Evolution“ gegeben wird und insgesamt 10 grundlegende „Trends“ formuliert
+werden, von denen einer der „Trend of Decreasing Human Involvement“
+\cite[4.8]{TESE2018} ist.
+
+Auch in der marxistischen Literatur wird ein solcher Herauslösungsprozess des
+Menschen aus produktiven Prozessen thematisiert und an vielen Stellen als
+unausweichlich charakterisiert.  So entwickelt Marx selbst im
+„Maschinenfragment“ \cite[S. 570 ff.]{MEW42} -- einem frühen Rohentwurf der
+eigenen ökonomischen Theorie -- die Vision einer Gesellschaft, in welcher der
+„gesellschaftliche Stoffwechsel“ \cite[S. 37]{MEW23} auf eine Weise
+organisiert ist, dass
+\begin{quote}
+  es nicht mehr der Arbeiter [ist], der modifizierten Naturgegenstand als
+  Mittelglied zwischen das Objekt und sich einschiebt; sondern den
+  Naturprozess, den er in einen industriellen umwandelt, er als Mittel
+  zwischen sich und die unorganische Natur [schiebt], deren er sich
+  bemeistert \cite[S. 572]{MEW42},
+\end{quote}
+und stellt weiter dar, dass die Entwicklung der Produktivkräfte
+\emph{notwendig} auf eine solche Weise der Organisation des gesellschaftlichen
+Stoffwechsels zusteuert.
+\begin{quote}
+  In den Produktionsprozess des Kapitals aufgenommen, durchläuft das
+  Arbeitsmittel aber verschiedene Metamorphosen, deren letzte die
+  \emph{Maschine} ist oder vielmehr ein \emph{automatisches System der
+    Maschinerie} (System der Maschinerie; das \emph{automatische} ist nur die
+  vollendetste adäquateste Form derselben und verwandelt die Maschinerie erst
+  in ein System), in Bewegung gesetzt durch einen Automaten, bewegende Kraft,
+  die sich selbst bewegt; dieser Automat bestehend aus zahlreichen mechanischen
+  und intellektuellen Organen, sodass die Arbeiter selbst nur als bewusste
+  Glieder desselben bestimmt sind. \cite[S. 584]{MEW42}
+\end{quote}
+Dieser Gedanke ist allerdings weitgehend singulär und im übrigen Marxschen
+Werk nirgends ausgearbeitet. So wenigstens \cite{Goldberg2016}.
 
 Derartigen technikoptimistischen Sichten steht die Position aus dem
-Kybernetikdiskurs der 1960er bis 1980er Jahre entgegen \cite[S. 10]{KFK2000}
+Kybernetikdiskurs der 1960er bis 1980er Jahre entgegen \cite[S. 10]{KFK2000}:
 \begin{quote}
   Welche Stellung hat der Mensch im hochkomplexen informations-technologischen
   System? Unsere Antwort auf die Frage war immer: Der Mensch ist die einzig
@@ -41,18 +77,45 @@ Kybernetikdiskurs der 1960er bis 1980er Jahre entgegen \cite[S. 10]{KFK2000}
   Daher ist das Konzept der Vollautomatisierung, nach dem der Mensch
   schrittweise aus dem Prozess eliminiert werden soll, verfehlt!
 \end{quote}
-Aus einer solchen Perspektive wird die Verdrängungsthese als direkte Gefährung
-wahrgenommen, was hier als \emph{Gegenthese} explizit formuliert werden soll:
+Die Probleme eines solchen „Konzepts der Vollautomatisierung“, einer Welt der
+„in Bewegung gesetzten Automaten“ werden mittlerweile in einer ökologischen
+Krise planetaren Ausmaßes sichtbar. Die Verdrängungsthese selbst wird dabei
+als direkte Gefährung wahrgenommen, was hier als \emph{Gegenthese} explizit
+formuliert werden soll:
 \begin{quote}
   Die (scheinbare) Verdrängung des Menschen aus technischen Systemen weist auf
   eine existenziell gefährliche, unterkomplexe Fehlwahrnahme dieser
   technischen Systeme hin.
 \end{quote}
-Harrisburg, Tschernobyl, Fukushima, das Bienensterben \cite{Jacobasch2019}
-oder der Klimawandel sind genü"|gend Fingerzeige, um sich mit diesen
-Positionen genauer zu befassen.
+Das Altschullersche „Prinzip 11 der Prävention“ (verschämt auch als „Prinzip
+des untergelegten Kissens“ bezeichnet) weist auf Handlungsbedarf in dieser
+Richtung hin, der Anwendungskontext dieses Prinzips wird in \cite{TT} wie
+folgt umrissen: „Der Einsatz des Prinzips ist besonders in solchen Fällen
+wichtig, in denen das System nicht über ein ausreichendes Maß an
+Zuverlässigkeit verfügt“, um dann festzustellen, dass dem eigentlich
+strukturell abgeholfen werden könne -- „Notfallsituationen können vermieden
+werden, indem der Prozess zuverlässig gemacht wird.“ Dem stehen allerdings
+gewichtige Gründe entgegen -- „was die technischen Systeme, die ihn
+durchführen, erheblich verkompliziert oder verteuert. Dies ist kostspielig und
+oft prinzipiell unmöglich. Mit anderen Worten: Notfälle sind unvermeidlich“.
+Der Optimismus der Autoren, dass „zusätzliche Rettungs- und Notfallsysteme
+[\ldots] in das Hauptsystem“ eingebaut werden, die allerdings „nicht am
+Hauptsystem teilnehmen, sondern erst in einer Gefahrensituation zu arbeiten
+beginnen“, erscheint mit Blick auf Kosten reduzierende Designpraxen und die
+allgemeine Ausrichtung der anderen TRIZ-Prinzipien auf Effizienzgewinne als
+Widerspruch in der TRIZ-Methodik selbst. Die Aussage, „das Prinzip kann dort
+angewendet werden, wo die Zuverlässigkeit des Systems offensichtlich
+unzureichend ist und ein Weg zur Erhöhung der Zuverlässigkeit auf das
+notwendige Niveau nicht möglich ist“ (ebenda) zeigt, dass der Einbau solcher
+Defizite in technische Systeme -- in Kenntnis derselben -- auf breiter Front
+billigend in Kauf genommen wird.
 
-\section{Technik und Welt verändernde menschliche Praxen}
+Dies ist allerdings in keiner Weise mehr ein technisches Problem.  Harrisburg,
+Tschernobyl, Fukushima, das Bienensterben \cite{Jacobasch2019} oder der
+Klimawandel sind genü"|gend Fingerzeige, um sich mit diesen Positionen genauer
+zu befassen.
+
+\section{Technik und Welt verändernde Praxen}
 
 Betrieb und Nutzung technischer Systeme ist heute sicher ein zentrales Element
 Welt ver"|ändernder menschlicher Praxen. Dafür ist planmäßiges und abgestimmtes
@@ -99,15 +162,17 @@ Beschreibungsform allenfalls das Rohmaterial liefert, auf dessen Basis sich
 Dirigent und Orchester in den vorausgegangenen Proben auf eine situativ
 konkrete Beschreibungsform als Basis der nun zur Auf"|führung gelangenden
 Vollzugsform geeinigt haben. Mehr noch weisen die opulenten Gesten des
-Dirigenten darauf hin, dass in diesem Proben auch \emph{Sprache} generiert
-wurde, um die Ergebnisse längerer Verständigungsprozesse in eine kompakte Form
-zu fassen, die den zeitkritischen Tempi der Vollzugsform gewachsen ist.  Den
-Rahmen einfacher ingenieur-technischer „Baumeisterarbeit“ sprengt Gabriela
-Montero, die Solistin dieses Abends, mit ihrer Zugabe: Das Publikum wird
-aufgefordert, eine Melodie vorzugeben, woraus die Virtuosin eine Improvisation
-als Vollzugsform entwickelt, zu der es keine interpersonal kommunizierbare
-Beschreibungsform gibt, wenn man einmal von den Tonaufzeichungen jenes
-Gewandhausabends und den Berichten der begeisterten Hörerschaft absieht.
+Dirigenten in Richtung Orchester darauf hin, dass in diesen Proben auch
+\emph{Sprache} generiert wurde, um die Ergebnisse längerer
+Verständigungsprozesse in eine kompakte Form zu fassen, die den zeitkritischen
+Tempi der Vollzugsform gewachsen ist.  Den Rahmen einfacher
+ingenieur-technischer „Baumeisterarbeit“ sprengt Gabriela Montero, die
+Solistin dieses Abends, mit ihrer Zugabe: Das Publikum wird aufgefordert, eine
+Melodie vorzugeben, woraus die Virtuosin eine Improvisation als Vollzugsform
+entwickelt, zu der es keine interpersonal kommunizierbare Beschreibungsform
+gibt, wenn man einmal von den Tonaufzeichungen jenes Gewandhausabends und den
+Berichten der begeisterten Hörerschaft absieht.  Dass auch hierfür technische
+Meisterschaft erforderlich war, steht außer Frage.
 
 Das Verhältnis der Menschen zu ihren technischen Systemen ist also komplex und
 nur in einer dialektischen Perspektive der Weiterentwicklung bereits
@@ -121,67 +186,232 @@ besprechen oder eine Intervention der „interpretierenden Philosophen“ als
 eigenständige Reflexionsdimension von Bedeutung ist, mag an dieser Stelle
 offen bleiben. 
 
+\section{Systeme und Komponenten}
+
+Neben der Beschreibungs- und Vollzugsdimension spielt für technische Systeme
+auch der \emph{Aspekt der Wiederverwendung} eine große Rolle.  Dies gilt,
+zumindest auf der artefaktischen Ebene, allerdings \emph{nicht} für die
+meisten technischen Großsysteme -- diese sind \emph{Unikate}, auch wenn bei
+deren Montage standardisierte Komponenten verbaut werden. Auch die Mehrzahl
+der Informatiker ist mit der Erstellung solcher Unikate befasst, denn die
+IT-Systeme, die derartige Anlagen steuern, sind ebenfalls Unikate.  Dasselbe
+gilt auch für die Ämter, Behörden und öffentlichen Einrichtungen. So ist zum
+Beispiel die Leipziger Stadtverwaltung aktuell damit befasst, ihre
+Verwaltungsprozesse zu „digitalisieren“, was unter Führung des Dezernats
+Allgemeine Verwaltung und zusammen mit dem städtischen IT-Dienstleister Lecos
+erfolgt. Im Industriesektor wird deshalb deutlich zwischen
+Werkzeugmaschinenbau und Industrieanlagenbau als Ausrüster sowie Planern und
+„Baumeistern“ entsprechender Unikate unterschieden, auch wenn diese in
+einschlägigen Statistiken \cite{VDMA2019} zum \emph{Maschinen- und Anlagenbau}
+zusammengefasst werden.
+
+Die Besonderheiten eines technischen Systems liegen damit vor allem im Bereich
+des \emph{Zusammenspiels der Komponenten}. So unterscheiden sich
+beispielsweise die Produktionsleitsysteme verschiedener BMW-Werke deutlich
+voneinander \cite{Kropik2009}. Die Werke wurden zu verschiedenen Zeiten nach
+dem jeweiligen Stand der Technik und dem sich ebenfalls verändernden
+Geschäftsmodell des Unternehmens konzipiert. Einmal in die Welt gesetzt, sind
+derartige technischen Großsysteme nur noch bedingt modifizierbar und werden
+deshalb nach Ablauf entsprechender Amortisationsfristen auch konsequent außer
+Betrieb gestellt. Gleichwohl spielt der Aspekt der Wiederverwendung auch bei
+solch unterschiedlichen technischen Systemen eine Rolle, verschiebt sich aber
+von der unmittelbaren Ebene der technischen Artefakte auf höhere Ebenen der
+Abstraktion in der Beschreibungsdimension.
+
+Damit sind wesentliche Elemente zusammengetragen, die eine erste Annäherung an
+den \emph{Begriff eines technischen Systems} erlauben.  Der Begriff ist in
+einem planerisch-realweltlichen Kontext vierfach überladen
+\begin{itemize}
+\item [1.] als realweltliches Unikat,
+\item [2.] als Beschreibung dieses realweltlichen Unikats
+\end{itemize}
+und für in größerer Stückzahl hergestellte Komponenten auch noch
+\begin{itemize}
+\item [3.] als Beschreibung des Designs des System-Templates sowie
+\item [4.] als Beschreibung und Betrieb der Auslieferungs- und
+  Betriebsstrukturen der nach diesem Template gefertigten realweltlichen
+  Unikate.
+\end{itemize}
+Als Grundlage für einen derart abgrenzenden Systembegriff soll im Weiteren der
+submersiv gefasste Begriff offener Systeme der Theorie dynamischer Systeme
+\cite{Bertalanffy1950} verwendet werden, der
+\begin{itemize}
+\item [1.] eine innere Abgrenzung gegen vorgefundene Systeme (Komponenten), 
+\item [2.] eine äußere Abgrenzung und funktional determinierte Einbettung in
+  eine Umwelt sowie
+\item [3.] einen externen Durchsatz postuliert, der zu innerer Strukturbildung
+  führt und damit die Leistungsfähigkeit des Systems bestimmt,  
+\end{itemize}
+und seine Fruchtbarkeit für eine Behandlung mit mathematischen Instrumenten
+seither vielfach unter Beweis gestellt hat.  
+
+\emph{Technische Systeme} sind in einem solchen Kontext Systeme, auf deren
+Gestaltung kooperativ und arbeitsteilig agierende Menschen Einfluss nehmen,
+wobei vorgefundene technische Systeme auf Beschreibungsebene durch eine klare
+\emph{Spezifikation} ihrer Schnittstellen und auf Vollzugsebene durch die
+\emph{Gewähr spezifikationskonformen Betriebs} normativ charakterisiert sind. 
+
+Wir bewegen uns dabei klar im Bereich der Standard-TRIZ-Terminologie eines
+\emph{Systems von Systemen} -- ein technisches System besteht aus Komponenten,
+die ihrerseits technische Systeme sind, deren \emph{Funktionieren} (sowohl im
+funktionalen als auch im operativen Sinn) für die aktuell betrachtete
+Systemebene vorausgesetzt wird. Der Begriff eines technischen Systems hat
+damit eine klar epistemische Funktion der „Reduktion auf das Wesentliche“.
+Einstein wird der Ausspruch zugeschrieben „make it as simple as possible but
+not simpler“. Das \emph{Gesetz der Vollständigkeit eines Systems} bringt genau
+diesen Gedanken zum Ausdruck, allerdings tritt dieser dabei nicht als
+\emph{Gesetz}, sondern als \emph{Modellierungsdirektive} in Erscheinung.  Die
+scheinbare „Naturgesetzlichkeit“ der beobachteten Dynamik ist also wesentlich
+an \emph{vernünftiges} (im Sinne von \cite{Vernadsky1997}) \emph{menschliches
+  Agieren} gebunden.
+
+Mit einem Ansatz der „Reduktion auf das Wesentliche“ sowie der „Gewähr
+spezifikationskonformen Betriebs“ sind in diese Begriffsbildung inhärent
+menschliche Praxen eingebaut, aus denen heraus die Begriffe „wesentlich“,
+„Gewähr“ und „Betrieb“ überhaupt erst sinnvoll gefüllt werden können.  Eine
+Unterscheidung zwischen technischen und sozio-technischen Systemen, die für
+M. Rubin „offensichtlich und wesentlich“ (Quelle?) ist, wird damit
+problematisch. Wesentliche Begriffe aus dem sozial determinierten
+Praxisverhältnis von Menschen wie Ziel, Nutzen, Gewährleistung und
+Verantwortung sind fest in die Begriffsgenerierungsprozesse der Beschreibung
+konkreter technischer Systeme eingebaut und finden in den konkreten
+gesellschaftlichen Setzungen eines primär rechtsförmig konstituierten
+bürgerlichen Systems ihre „natürliche“ Fortsetzung.
+
+In der TRIZ-Literatur spielen solche begriff"|lichen Fundierungen kaum eine
+Rolle.  Einschlägige Lehrbücher wie etwa \cite{KoltzeSouchkov2017} betrachten
+den Begriff des \emph{technischen Systems} als intuitiv gegeben, der sich aus
+einer „industriellen Praxis“ heraus \cite[S. 2]{KoltzeSouchkov2017} von selbst
+versteht, während andere Begriffe wie „Prozess“, „Produkt“, „Dienstleistung“,
+„Ressourcen“ und „Effekte“ \cite[S. 6--10]{KoltzeSouchkov2017} genauer
+eingeführt werden. Selbst die ausführliche Beschreibung der „Evolution
+technischer Systeme“ in 5 Gesetzen und 11 Trends
+\cite[Kap. 4.8]{KoltzeSouchkov2017} basiert allein auf der lapidaren
+Feststellung „Die Existenz technischer Evolution ist eine zentrale Erkenntnis
+der TRIZ“.  Auch \cite{TESE2018} bleibt in dieser Frage vage; im Vorwort von
+B. Zlotin heißt es allein zum \emph{Zweck} von Betrachtungen der Evolution
+ingenieur-technischer Systeme „humanity can achieve practically any realistic
+goal, but certain priorities must be set to ensure the greatest possible
+impact on the economy and human life. [\ldots] The powers of contemporary
+science and technology as well as financial investment should be applied to
+carefully selected and formulated objectives.“
+
+Es ist natürlich möglich, in einem diskursiven Rahmen die verbale Fassung
+eines Begriffs offen zu lassen und auf andere Weise -- etwa durch den Bezug
+auf gemeinsame Praxen oder durch den „gewöhnlichen Gebrauch“ -- die Konvergenz
+der Begriffsverwendung zu erreichen.  Ein solches Grundmuster wird im
+TRIZ-Kontext für den Begriff \emph{technisches System} besonders auch in
+\cite{TESE2018} angewendet, indem der Begriff durch eine Vielzahl von
+Beispielen in Kombination mit den Begriffen „Muster“ und „Evolution“
+illustriert, die genaue Fassung aber dem geneigten Leser überlassen wird.  Der
+dort mittlerweile erfolgte Rückzug auf Begriffe wie „Muster“ oder „Trend“
+gegenüber dem schärferen und wissenschaftspraktisch vorbelegten Begriff
+„Gesetz“ unterstützt das Anliegen der Autoren von \cite{TESE2018}, empirische
+Erfahrung zu systematisieren, verweist aber zugleich auf das schwache
+theoretische Fundament eines solchen Systematisierungsanliegens.  Das weite
+Spektrum praktisch kursierender Präzisierungen eines derart im Ungewissen
+gelassenen Begriffs wurde in einer Facebook-Diskussion \cite{Graebe2019} im
+August 2019 deutlich. Für ein genaueres Abwägen der Argumente zu oben
+formulierter These und Gegenthese ist ein solches Fundament allerdings nicht
+ausreichend.
+
+Wie kann der Begriff eines \emph{technischen Systems} also weiter geschärft
+werden?  In unserem Seminar \cite{Graebe2020} haben wir „den Systembegriff als
+Beschreibungsfokussierung identifiziert, mit der konkrete Phänomene durch
+\emph{Reduktion auf das Wesentliche} [\ldots] einer Beschreibung zugänglich
+werden.“  Die Reduktion richtet sich auf folgende drei Dimensionen
+\cite[S. 18]{Graebe2020} 
+\begin{itemize}
+\item [(1)] Abgrenzung des Systems nach außen gegen eine \emph{Umwelt},
+  Reduktion dieser Beziehungen auf Input/Output-Beziehungen und garantierten
+  Durchsatz.
+\item [(2)] Abgrenzung des Systems nach innen durch Zusammenfassen von
+  Teilbereichen als \emph{Komponenten}, deren Funktionieren auf eine
+  „Verhaltenssteuerung“ über Input/Output-Bezie"|hungen reduziert wird.
+\item [(3)] Reduktion der Beziehungen im System selbst auf „kausal
+  wesentliche“ Beziehungen.
+\end{itemize}
+Weiter wird ebenda festgestellt, dass -- ähnlich wie im Konzertbeispiel --
+einer solchen reduktiven Beschreibungsleistung vorgefundene (explizite oder
+implizite) Beschreibungsleistungen vorgängig sind:
+\begin{enumerate}
+\item[(1)] Eine wenigstens vage Vorstellung über die Input/Output-Leistungen
+  der Umgebung.
+\item[(2)] Eine deutliche Vorstellung über das innere Funktionieren der
+  Komponenten.
+\item[(3)] Eine wenigstens vage Vorstellung über Kausalitäten im System
+  selbst, also eine der detaillierten Modellierung vorgängige, bereits
+  vorgefundene Vorstellung von Kausalität im gegebenen Kontext.
+\end{enumerate}
+Die Punkte (1) und (2) können ihrerseits in systemtheoretischen Ansätzen für
+die Beschreibung der „Umwelt“ (hierfür ist allerdings die Abgrenzung eines
+oder mehrerer Obersysteme in einer noch umfassenderen „Umwelt“ erforderlich)
+sowie der Komponenten (als Untersysteme) entwickelt werden, womit die
+Beschreibung von \emph{Koevolutionsszenarien} wichtig wird, die ihrerseits für
+die Vertiefung des Verständnisses von Punkt (3) relevant sind.
+
+Dabei ist der Fokus zunächst auf ein genaueres Verständnis des Begriffs
+\emph{System} gerichtet, der als Reduktion von Komplexität in den drei oben
+angeführten Richtungen betrachtet wird. Da in diesem Verständnis Komponenten
+eines Systems selbst wieder Systeme sind, liegt auch im allgemeinen Fall die
+Betrachtung eines Systems als „System von Systemen“ nahe, wie es in
+\cite{Holling2000} thematisiert ist.  Wesentliches Reduktionskriterium für
+Beziehungen zwischen Komponenten sind in solchen Systemen spezifische
+Eigenzeiten und Eigenräume wie in den Abbildungen 1--3 in \cite{Holling2000}
+dargestellt ist.
+
+Die Beschreibung von Planung, Entwurf und Verbesserung \emph{technischer
+  Systeme} geht in einem solchen Ansatz von der Leistungsfähig"|keit bereits
+vorhandener technischer Systeme aus, die sowohl in (2) als Komponenten als
+auch -- aus der Sicht eines Systems im Obersystem -- in (3) als benachbarte
+Systeme zu berücksichtigen sind.
+
+Ingenieur-technische Praxen bewegen sich damit in einer \emph{Welt von
+  technischen Systemen}. Aus der konkreten Beschreibungsperspektive eines
+Systems sind andere Systeme als Komponenten oder Nachbarsysteme allein in
+ihrer \emph{Spezifikation} wichtig. Eine solche Reduktion auf das Wesentliche
+erscheint praktisch als verkürzte Sprechweise über eine gesellschaftliche
+Normalität, was ich kurz als \emph{Fiktion} bezeichne.  Diese Fiktion kann und
+wird im täglichen Sprachgebrauch so lange aufrecht erhalten, so lange die
+gesellschaftlichen Umstände die Aufrechterhaltung der daran gebundenen
+gesellschaftlichen Normalität garantieren können, so lange also der
+\emph{Betrieb der entsprechenden Infrastrukturen} gewährleistet ist.
+Technische Systeme sind damit wenigstens in ihrer Vollzugsdimension
+\emph{immer} sozio-technische Systeme.
+
+Das Ausblenden dieser sozialen Zusammenhänge wie von M. Rubin vorgeschlagen
+kann sich also allenfalls auch die \emph{Planung} derartiger Systeme sowie
+deren artefaktische Daseinsdimension beziehen, die den Betrieb der
+erforderlichen Infrastruktur ausblendet oder in ein Obersystem verschiebt.
+Letzteres ist aber unzweckmäßig, da das Beheben von Problemen im Betrieb eines
+Systems Kenntnisse über dessen Funktionieren nicht nur auf der Ebene der
+Spezifikation, sondern auch auf der Ebene der Implementierung erfordern.
+
+Mehr noch lehrt die Theorie Dynamischer Systeme, dass die Kopplung zwischen
+Systemen nicht so sehr allein von Durchsatzraten bestimmt wird, sondern in
+ihrer Wirkung stark von zeitlichen Regimes in Form von Resonanzen und
+Dissonanzen bestimmt sein können.  Damit kann das Zusammenspiel von System und
+Systemkomponenten stark von der Verschränkung von Mikro- und Makrodynamik auf
+kurzwelligen (Komponenten) und langwelligen (System) Skalen abhängen.  Ein
+wesentliches viertes Charakteristikum \emph{autonom funktionierender
+  technischer Systeme} ist eine Entkopplung dieser Systemdynamiken, im
+Kontrast etwa zum TRIZ-Prinzip 19 der periodischen Wirkung, das auf die
+Ausnutzung entsprechender Kopplungsphänomene gerichtet ist.
+
+
+
+
+
+\section{Component Software. Funktion und Verhalten}
+\section{Komponenten und Objekte. Zustände}
+\section{Betrieb technischer Systeme}
+\section{Evolution technischer Systeme}
 \section{Bisheriger Text}
 
-Damit steht natürlich die Frage nach den kontextuellen Annahmen, die zu diesen
-verschiedenen Positionen führen. In der marxistischen Literatur wird ein
-solcher Herauslösungsprozess ebenfalls betrachtet.  Im „Maschinenfragment“
-\cite[S. 570 ff.]{MEW42} -- einem frühen Rohentwurf der eigenen ökonomischen
-Theorie -- entwickelt Marx die Vision einer Gesellschaft, in welcher der
-„gesellschaftliche Stoffwechsel“ \cite[S. 37]{MEW23} auf eine Weise
-organisiert ist, dass
-\begin{quote}
-  es nicht mehr der Arbeiter [ist], der modifizierten Naturgegenstand als
-  Mittelglied zwischen das Objekt und sich einschiebt; sondern den
-  Naturprozess, den er in einen industriellen umwandelt, er als Mittel
-  zwischen sich und die unorganische Natur [schiebt], deren er sich
-  bemeistert.  \cite[S. 572]{MEW42}
-\end{quote}
-Weiter stellt Marx dar, dass die Entwicklung der Produktivkräfte
-\emph{notwendig} auf eine solche Weise der Organisation des gesellschaftlichen
-Stoffwechsels zusteuert.
-\begin{quote}
-  In den Produktionsprozess des Kapitals aufgenommen, durchläuft das
-  Arbeitsmittel aber verschiedene Metamorphosen, deren letzte die
-  \emph{Maschine} ist oder vielmehr ein \emph{automatisches System der
-    Maschinerie} (System der Maschinerie; das \emph{automatische} ist nur die
-  vollendetste adäquateste Form derselben und verwandelt die Maschinerie erst
-  in ein System), in Bewegung gesetzt durch einen Automaten, bewegende Kraft,
-  die sich selbst bewegt; dieser Automat bestehend aus zahlreichen mechanischen
-  und intellektuellen Organen, sodass die Arbeiter selbst nur als bewusste
-  Glieder desselben bestimmt sind. \cite[S. 584]{MEW42}
-\end{quote}
-Dieser Gedanke ist weitgehend singulär und im übrigen Marxschen Werk nirgends
-ausgearbeitet. So wenigstens \cite{Goldberg2016}.
-
-Die Probleme solcher „in Bewegung gesetzten Automaten“ werden mittlerweile in
-einer ökolo\-gischen Krise planetaren Ausmaßes sichtbar, so dass die Frage
-steht, ob ein behaupteter „Trend der Verdrängung des Menschen aus technischen
-Systemen“ nicht eine grundsätzliche theoretische Fehlkonstruktion markiert,
-die im aktuell verwendeten Komplex dieser Gesetze und Trends der Entwicklung
-technischer Systeme enthalten ist. 
-
-Der Ansatz einer solchen Verdrängungstendenz widerspricht auch grundlegenden
-Setzungen in der deutschen kybernetischen Schule, was ich in einer Note vom
-8.11.2019 an die Autoren der Aufgaben des TRIZ-Cups festgehalten habe:
-\begin{quote}
-  Das „Gesetz der Ersetzung des Menschen“ ist nicht in der Liste im deutschen
-  TRIZ-Standardwerk \cite{KoltzeSouchkov2017} zu finden und ich bin absolut
-  anderer Meinung, dass dies ein Entwicklungsgesetz für technische Systeme
-  sei.  Zumindest in der deutschen Literatur gibt es bereits seit den 1980er
-  Jahren eine lange Diskussion über dieses Thema. Zum Beispiel unterstreicht
-  Klaus Fuchs-Kittowski in der Zusammenfassung \cite{KFK2000} seiner Arbeiten
-  \begin{quote}
-    „Unsere Antwort auf die Frage war immer: Der Mensch ist die einzig kreative
-    Produktivkraft, er muss Subjekt der Entwicklung sein und bleiben.  Daher
-    ist das Konzept der Vollautomatisierung, nach dem der Mensch schrittweise
-    aus dem Prozess eliminiert werden soll, verfehlt!“ \cite[S. 10]{KFK2000}
-  \end{quote}
-  Die Ersetzung des Menschen als Gesetz der technischen Entwicklung wurzelt in
-  einem sehr merkwürdigen Verständnis des Begriffs \emph{Technik}, welches das
-  Offensichtliche vergisst -- es gibt keine \emph{technischen Systeme},
-  sondern nur \emph{technosoziale Systeme}.
-\end{quote}
+HGG: Die Ersetzung des Menschen als Gesetz der technischen Entwicklung wurzelt
+in einem sehr merkwürdigen Verständnis des Begriffs \emph{Technik}, welches
+das Offensichtliche vergisst -- es gibt keine \emph{technischen Systeme},
+sondern nur \emph{technosoziale Systeme}.
 
 Michail S. Rubin präzisierte in einer PM vom 10.11.2019 seine Position wie
 folgt:
@@ -245,52 +475,6 @@ gerade besprochen werden.
 
 \subsection{Einige vorbereitende Überlegungen}
 
-Die große Mehrzahl der von Menschen erschaffenen technischen Systeme sind
-Unikate. Der Wirtschaftszweig, der mit der Herstellung solcher Unikate befasst
-ist, heißt \emph{Industrieanlagenbau}. Auch die Mehrzahl der Informatiker ist
-mit der Erstellung solcher Unikate befasst, denn die IT-Systeme, die derartige
-Anlagen steuern, sind ebenfalls Unikate.  Dasselbe gilt auch für die Ämter,
-Behörden und öffentlichen Einrichtungen. So ist zum Beispiel die Leipziger
-Stadtverwaltung aktuell damit befasst, ihre Verwaltungsprozesse zu
-„digitalisieren“, was unter Führung des Dezernats Allgemeine Verwaltung und
-zusammen mit dem städtischen IT-Dienstleister Lecos erfolgt.
-
-Natürlich wird dabei das Fahrrad nicht dauernd neu erfunden --
-Komponententechnologien bilden die Grundlage jeder ingenieur-technischen
-Arbeit und auch die Informatik hat nach einer mehr als 25 Jahre dauernden
-Softwarekrise \cite{Hamilton2008} zu komponentenbasierten
-Entwicklungsmethodiken gefunden \cite{Szyperski2002}.  In diesem Kontext haben
-sich allerdings auch die Berufsbilder der Informatiker differenziert in
-Komponentenentwickler („design for component“) und Komponentenmonteure
-(„design from component“).  Erstere entwickeln Komponenten für einen größeren
-Markt, zweitere entwickeln daraus weiterhin die großen Unikate („Systeme“ auch
-in der informatischen Fachsprache).
-
-Wir bewegen uns dabei klar im Bereich der Standard-TRIZ-Terminologie eines
-\emph{Systems von Systemen} -- ein technisches System besteht aus Komponenten,
-die ihrerseits technische Systeme sind, deren \emph{Funktionieren} (sowohl im
-funktionalen als auch im operativen Sinn) für die aktuell betrachtete
-Systemebene vorausgesetzt wird. Der Begriff eines technischen Systems hat
-damit eine klar epistemische Funktion der „Reduktion auf das Wesentliche“.
-Einstein wird der Ausspruch zugeschrieben „make it as simple as possible but
-not simpler“. Das \emph{Gesetz der Vollständigkeit eines Systems} bringt genau
-diesen Gedanken zum Ausdruck, allerdings tritt er hier nicht als
-\emph{Gesetz}, sondern als \emph{Modellierungsdirektive} in Erscheinung.
-
-Der Begriff \emph{technisches System} ist in einem solchen
-planerisch-realweltlichen Kontext vierfach überladen
-\begin{itemize}
-\item [1.] als realweltliches Unikat,
-\item [2.] als Beschreibung dieses realweltlichen Unikats
-\end{itemize}
-und für in größerer Stückzahl hergestellte Komponenten auch noch
-\begin{itemize}
-\item [3.] als Beschreibung des Designs des System-Templates sowie
-\item [4.] als Beschreibung und Betrieb der Auslieferungs- und
-  Betriebsstrukturen der nach diesem Template gefertigten realweltlichen
-  Unikate.
-\end{itemize}
-
 Insbesondere der letzte Punkt, der Zusammenhang zwischen einer Komponenten als
 Konzept und den realweltlich verbauten Komponenteninstanzen, ist komplex, da
 die produktiven Strukturen der Herstellung und des Einsatzes dieser
@@ -346,7 +530,7 @@ bezeichnet, beispielsweise zum Transport von Gütern, wozu außer dem Auto noch
 viel mehr gehört. Das ist nicht schlimm, das Problem ist, dass diese
 Definitionen kühn vermischt werden, was zu schrecklicher Verwirrung führt.
 Den Fahrer in das System Auto einbeziehen oder nicht? Was ist mit Benzin? Ist
-Luft ein Teil des Autos oder nicht? Menschen lenben mit diesen Verwirrungen
+Luft ein Teil des Autos oder nicht? Menschen leben mit diesen Verwirrungen
 gut, bauen ganze Theorien und führen Seminare durch, was diese Verwirrungen
 nur noch verstärkt.
 
@@ -435,7 +619,7 @@ sind.  Ich selbst bin mit wesentlichen Ansätzen von L.N.Gumilev wie
 Passionarität und seinem Ansatz einer etwa 1500-jährigen „S-Kurven“-artigen
 Entwicklung von Zivilisationen aus dem Sammelband \cite{Gumilev1994} etwas
 vertraut.  Ins Deutsche übersetzt wurde bisher nur sein Text
-\cite{Gumilev2017}q, in dem er seinen Passionaritätsansatz auf den Übergang
+\cite{Gumilev2017}, in dem er seinen Passionaritätsansatz auf den Übergang
 von der Kiewer zur Moskauer Rus als zivilisatorischen „S-Kurven-Wechsel“
 entwickelt.  Andere Autoren wie \cite{Adji2011} weisen darauf hin, dass die
 Kiewer Rus zu einer Zeit entstanden ist, wo das Gebiet faktisch eine
@@ -473,7 +657,7 @@ Aufgabe „Schiffsmast“\footnote{Siehe
   \url{https://triztrainer.ru/tasks/section-1/ship-mast/}.} aus dem Minsker
 TRIZ-Trainer.  Betrachtet man das Boot als Teil eines Wassertransportsystems,
 dann ist die Lösung einfach: Gib in dein Navi ein, dass die Brückendurchfahrt
-gesperrt ist, und lasse dieses einen anderfen Weg suchen. Im Kontext eines
+gesperrt ist, und lasse dieses einen anderen Weg suchen. Im Kontext eines
 autonom fahrenden Boots (der Mensch ist -- in Ihrem Verständnis -- vollkommen
 aus dem System „Boot“ verdrängt) gibt es wohl auch keine andere Lösung
 (\textbf{These:} Wo kein Mensch, da auch kein TRIZ).
@@ -512,6 +696,9 @@ Zusammenfassend: Ihre Argumentation greift nach meinem Verständnis zu kurz.
 \bibitem{Anderies2004} J.M. Anderies, M.A. Janssen, E. Ostrom (2004).
   Framework to Analyze the Robustness of Social-ecological Systems from an
   Institutional Perspective.\\ In: Ecology and Society 9 (1), 18.
+\bibitem{Bertalanffy1950} Ludwig von Bertalanffy (1950). An outline of General
+  System Theory. The British Journal for the Philosophy of Science, vol. I.2,
+  134–165.
 \bibitem{Goldovsky1983} B.I. Goldovsky (1983).
   \foreignlanguage{russian}{Система закономерностей построения и развития
     технических систем}.
@@ -525,10 +712,13 @@ Zusammenfassend: Ihre Argumentation greift nach meinem Verständnis zu kurz.
   \url{http://www.wissenschaftsforschung.de/JB00_9-88.pdf}
 \bibitem{Goldberg2016} Jörg Goldberg, André Leisewitz (2016). Umbruch der
   globalen Konzernstrukturen.\\ Z 108, S. 8--19.
+\bibitem{Graebe2019} Hans-Gert Gräbe (2019).  A discussion about TRIZ
+    and system thinking reported in my Open Discovery Blog.
+    \url{https://wumm-project.github.io/2019-08-07}.
 \bibitem{Graebe2020} Hans-Gert Gräbe (2020). Reader zum 16. Interdisziplinären
   Gespräch \emph{Das Konzept Resilienz als emergente Eigenschaft in offenen
-    Systemen} am 7.2.2020 in
-  Leipzig. \url{http://mint-leipzig.de/2020-02-07/Reader.pdf}.
+    Systemen} am 7.2.2020 in Leipzig.
+  \url{http://mint-leipzig.de/2020-02-07/Reader.pdf}.
 \bibitem{Gumilev1994} Lev N. Gumilev (1994). \foreignlanguage{russian}{Конец и
   вновь начало}.  (Ende und wieder Anfang).  Aufsätze, zusammengestellt von
   N.V.Gumilev. Tanais Verlag, Moskau.
@@ -536,6 +726,8 @@ Zusammenfassend: Ihre Argumentation greift nach meinem Verständnis zu kurz.
   Monsenstein und Vannerdat, Münster.
 \bibitem{Hamilton2008} Patrick Hamilton (2008). Wege aus der Softwarekrise:
   Verbesserungen bei der Softwareentwicklung. ISBN 978-3-540-72869-6.
+\bibitem{Holling2000} C.S. Holling (2000). Understanding the Complexity of
+  Economic, Ecological, and Social Systems. In: Ecosystems (2001) 4, 390–405.
 \bibitem{Jacobasch2019} Gisela Jacobasch (2019). Bienensterben -- Ursachen und
   Folgen.  Leibniz Online 37 (2019).
   \url{https://leibnizsozietaet.de/bienensterben-ursachen-und-folgen/}
@@ -544,6 +736,8 @@ Zusammenfassend: Ihre Argumentation greift nach meinem Verständnis zu kurz.
 \bibitem{KoltzeSouchkov2017} Karl Koltze, Valeri Souchkov (2017).
   Systematische Innovation.\\ Hanser Verlag, München. Zweite Auf"|lage. ISBN
   978-3-446-45127-8.
+  \bibitem{Kropik2009} Markus Kropik (2009). Produktionsleitsysteme in der
+    Automobilfertigung.\\ ISBN 978-3-540-88991-5.
 \bibitem{TESE2018} Alexander Lyubomirskiy, Simon Litvin, Sergey Ikovenko,
   Christian M. Thurnes, Robert Adunka (2018). Trends of Engineering System
   Evolution. Eigenverlag, Sulzbach-Rosenberg.  ISBN 978-3-00-059846-3.
@@ -569,6 +763,9 @@ Zusammenfassend: Ihre Argumentation greift nach meinem Verständnis zu kurz.
   \url{http://www.temm.ru/en/section.php?docId=4472}.
 \bibitem{Szyperski2002} Clemens Szyperski (2002). Component Software: Beyond
   Object-Oriented Programming. ISBN: 978-0-321-75302-1.
+\bibitem{TT} Target Invention (2020). TRIZ Trainer.
+  \url{https://triztrainer.ru}.
+\bibitem{VDMA2019} VDMA. Maschinenbau in Zahl und Bild 2019. 
 \bibitem{Vernadsky1997} V.I. Vernadsky (1997, Original 1936--38). Scientific
   Thought as a Planetary
   Phenomenon. \url{https://wumm-project.github.io/Texts.html}
