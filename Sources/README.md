@@ -9,7 +9,16 @@ od.sty contains main definitions. Note that the babel language definition is
 per project due to different main languages.  We recommend to include this
 directory in your TEXINPUTS path.
 
-Altshuller, G.S.
+## Changes:
+
+* 2020-04-18 graebe: Subdirectories renamed according to the URIs in
+  RDFData/People.ttl
+
+## The Papers
+
+To be completed and to be transformed into RDF Metarecords.
+
+Altshuller_GS
 * HowInvent-1960-ru.odt (in Russian)
   * au = G.S. Altshuller, 
   * title = КАК ДЕЛАЮТСЯ ОТКРЫТИЯ (мысли о методике научной работы)
@@ -49,6 +58,16 @@ Goldovsky, B.I.
   * Talk at the 21. Leibniz Conference „Systematisches Erfinden“,
     24.--25. November 2016 in Lichtenwalde.  Yet in progress
 
+Thiel_R
+
+* Thiel-07.tex
+  * au = Rainer Thiel
+  * title = Zur Lehrbarkeit dialektischen Denkens – Chance der Philosophie,
+    Mathematik und Kybernetik helfen 
+  * lang = de
+  * license = CC-0
+  * Manuscript, December 2007
+
 * Thiel-16.tex
   * au = Rainer Thiel
   * title = Erfinderschulen – Problemlöse-Workshops. Projekt und Praxis
@@ -81,7 +100,7 @@ Goldovsky, B.I.
   * Material provided by the author in the version as of 11.02.2019, work in
     progress
 
-HansGertGraebe
+Graebe_HG
 * Newbee.doc
   * au = Hans-Gert Gräbe
   * title = A TRIZ Newbee's Report
