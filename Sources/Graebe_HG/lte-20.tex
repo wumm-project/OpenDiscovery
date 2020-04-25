@@ -888,30 +888,31 @@ are for Composition“.  Diese Definition folgt dem oben entwickelten
 Verständnis, dass Systeme aus \emph{bereits vorhandenen} Komponenten
 zusammengesetzt werden, wobei neben OTS-Komponenten (off the shelf) auch
 selbst entwickelte Komponenten eingesetzt werden können. Allerdings müssen vor
-der Integration zum (lauffähigen) Gesamtsystem diese Entwicklungen
+der Integration zum (lauf"|fähigen) Gesamtsystem diese Entwicklungen
 abgeschlossen sein. Im Wasserfallmodell der Softwareentwicklung wird diese
 sequenzielle Vorgehensweise expliziert, agile Vorgehensmodelle sind flexibler,
 erfordern zur frühzeitigen prototypischen Demonstration von
 Teilfunktionalitäten aber auch Platzhalterkomponenten -- Mock-Komponenten und
 provisorische Oberflächen.
 
-Mit diesem Verständnis zerfällt die Welt der technischen Systeme in zwei
-Telwelten -- „design to component“ und „design from component“. Ersteres ist
-das Gebiet der Komponentenentwickler mit dem Fokus, Komponenten mit einer
-speziellen Fachfunktion („core concern“ -- dies entspricht dem MPV in
-\cite{TESE2018}) zu entwickeln. Neben dieser Fachfunktion muss die Komponente
-aber noch eine größere Menge von Hilfsfunktionen (Logging, Datensicherheit,
-Zugangsmanagement, Druckeransteuerung usw. -- die „cross cutting concerns“)
-erfüllen, die auf etablierte Konzepte (Beschreibungsdimension) und andere zu
-integrierende Komponenten (Vollzugdimension) zurückgreifen.  All dies muss der
-Komponentenentwickler beherrschen, um nützliche Komponenten zu bauen.
+In \cite{Szyperski2002} zerfällt mit diesem Verständnis die Welt der
+Produktion technischer Systeme in zwei Teilwelten -- „design to component“ und
+„design from component“. Ersteres ist das Gebiet der Komponentenentwickler mit
+dem Fokus, Komponenten mit einer speziellen Fachfunktion („core concern“ --
+dies entspricht dem MPV in \cite{TESE2018}) zu entwickeln. Neben dieser
+Fachfunktion muss die Komponente aber noch eine größere Menge von
+Hilfsfunktionen (Logging, Datensicherheit, Zugangsmanagement,
+Druckeransteuerung usw. -- die „cross cutting concerns“) erfüllen, die auf
+etablierte Konzepte (Beschreibungsdimension) und andere zu integrierende
+Komponenten (Vollzugdimension) zurückgreifen.  All diese Beschreibungsformen
+muss der Komponentenentwickler beherrschen, um nützliche Komponenten zu bauen.
 Zweiteres ist das Gebiet der Komponentenassembler. Diese bauen (vorher zu
 entwerfende) Systeme aus verfügbaren Komponenten zusammen, entwickeln oder
 modifizieren weitere Hilfsfunktionalitäten (den „glue code“), integrieren und
 testen das Gesamtsystem, bevor es beim Kunden zum Einsatz kommt.
 
 Die Schnittstelle zwischen beiden Professionen bildet das verwendete
-\emph{Komponentenframework} wie etwa Spring Boot, das nicht nur durch
+\emph{Komponenten-Framework} wie etwa Spring Boot, das nicht nur durch
 Normungen und Standardisierungen das prinzipielle Zusammenwirken der
 Komponenten auf einer höheren Ebene der Abstraktion beschreibt
 (Beschreibungsdimension), sondern auch von verschiedenen Anbietern als
@@ -941,17 +942,20 @@ beeinflusst, so dass eine sinnvolle Trennung von technischer und
 sozio-technischer Ebene \emph{praktisch} unzweckmäßig ist und so auch nicht
 erfolgt.
 
-Dieses Vorgehen in der Softwarebranche ist auch in vielen ingenieur-technische
-Anwendungen präsent. „Baukastensysteme“ sind weit verbreitet und erlauben es,
-realweltliche technische Unikat-Systeme auf dieselbe Weise zu entwerfen wie im
-Konzertbeispiel erläutert. Während dort aber auf das \emph{private
-  Verfahrenskönnen} der Musiker als Voraussetzung abgestellt wurde, werden
-hier die \emph{Logik der Fachanwendung} als „core concerns“ der Komponenten
-mit der \emph{Logik der Vernetzung} der Infrastruktur als „cross cutting
-concerns“ zusammengeführt. Beide Logiken sind orthogonal zueinander, was die
-Trends 4.2 „of increasing system completeness“ und 4.4 „of transition to the
-supersystem“ in ihrer separaten Betrachtung in \cite{TESE2018} entwertet und
-zu folgender weiteren \emph{Gegenthese} Anlass gibt:
+\section{Normierung und Standardisierung}
+
+Dieses Vorgehen in der Softwarebranche ist auch in vielen
+ingenieur-technischen Anwendungen präsent. „Baukastensysteme“ sind weit
+verbreitet und erlauben es, realweltliche technische Unikat-Systeme auf
+dieselbe Weise zu entwerfen wie im Konzertbeispiel erläutert. Während dort
+aber auf das \emph{private Verfahrenskönnen} der Musiker als Voraussetzung
+abgestellt wurde, werden hier die \emph{Logik der Fachanwendung} als „core
+concerns“ der Komponenten mit der \emph{Logik der Vernetzung} der
+Infrastruktur als „cross cutting concerns“ zusammengeführt. Beide Logiken sind
+orthogonal zueinander, was die Trends 4.2 „of increasing system completeness“
+und 4.4 „of transition to the supersystem“ in ihrer separaten Betrachtung in
+\cite{TESE2018} entwertet und zu folgender weiteren \emph{Gegenthese} Anlass
+gibt:
 \begin{quote}\it 
   \textbf{Gegenthese 2:} Ein besseres beschreibungstechnisches Verständnis der
   Infrastrukturanforderungen mitenander agierender Komponenten (Übergang zum
@@ -962,7 +966,7 @@ Insbesondere die zur Begründung von Trend 4.2 in \cite{TESE2018} angeführte
 Hierachisierung in „operating agent“ (als Kernfunktion), „transmission“
 (Unterstützung durch ein Arbeitsmittel), „energy source“ (Einsatz von
 Naturkräften) und „control system“ (Einsatz von Steuerung als prozesshaftem
-technischem Teilsystem und Quelle des „Trends der Dynamisierung“) sind von
+technischen Teilsystem und Quelle des „Trends der Dynamisierung“) sind von
 diesen Entwicklungen affektiert, wie ein Besuch im Baumarkt unmittelbar zeigt
 -- die Maschinensysteme namhafter Hersteller konzentrieren sich auf die
 Bereitstellung der Energie, über entsprechende APIs (etwa Klett-, Schraub-
@@ -970,13 +974,13 @@ oder Klickverschlüsse auf mechanischer Ebene) können passende Werkzeuge mit
 der Energiemaschine gekoppelt werden, wobei je nach Geschäftsstrategie der
 namhaften Hersteller der jeweilige Technologie-Teilmarkt „passender
 Gerätschaften“ monopolisiert oder auch für weniger namhafte Hersteller von
-passenden Arbeitsmitteln geöffnet hat. In beiden Fällen spielen Normierung und
-Standardisierung in dieser „Welt der technischen Systeme“, also inhärent
-sozio-technische Prozesse, eine deutlich größere Rolle als die
-Weiterentwicklungen der rein technischen Artefakte. Gleiches gilt auf der
-Ebene der Kontrollsysteme, wo programmierbare Universalsteuerungen wie etwa
-die UVR 1611 der Firma Technische Alternative das „Herz“ vieler technischer
-Regelungen etwa im Smart-Home-Bereich bilden.  
+passenden Arbeitsmitteln geöffnet ist. In beiden Fällen spielen
+\emph{Normierung und Standardisierung} in dieser „Welt der technischen
+Systeme“, also inhärent sozio-technische Prozesse, eine deutlich größere Rolle
+als die Weiterentwicklungen der rein technischen Artefakte. Gleiches gilt auf
+der Ebene der Kontrollsysteme, wo programmierbare Universalsteuerungen wie die
+UVR 1611 der Firma Technische Alternative das „Herz“ vieler technischer
+Regelungen im Smart-Home-Bereich bilden.
 
 Ein solcher Normierungsprozess öffnet zugleich ökonomische Skaleneffekte für
 Standardkomponenten, d.h. sich in Richtung „idealer Endresultate“ etablierende
@@ -988,28 +992,55 @@ und Standardisierung) in eine Phase der \emph{Ubiquität} über, in der die
 \emph{immer geringeren} ökonomischen Aufwendungen für die Verfügbarkeit dieses
 „Stands der Technik“ die Leitfunktion der weiteren Entwicklung übernehmen.
 
-Dies korrespondiert zum TRIZ-Prinzip 17 des \emph{Übergangs zu anderen
-  Dimensionen}, im Gegensatz zur Lesart in der Komponente TRIZ-Theoriekörper.
-In jener Komponente sind die TRIZ-Prinzipien \emph{abstrakte Designmuster},
-hier dagegen erscheint dieser Dimensionswechsel als \emph{abstraktes
-  Evolutionsmuster}, also nicht als Mittel der aktiven Beeinflussung eines
-Problemlöseprozesses, sondern als passiv-beobachtendes Beschreibungsmuster
-realweltlicher Entwicklungen.  In diesem Sinne kann aber auch \emph{jedes
-  andere} der TRIZ-Prinzipien sowie auch jeder der TRIZ-Standards als
-abstraktes Evolutionsmuster formuliert werden. Umgekehrt erscheinen die
-Evolutionstrends in der Komponente TRIZ-Theoriekörper als weitere abstrakte
-Designmuster, die neben die „Prinzipien“ und die „Standards“ treten.  Die
-Hierarchie der Evolutionsmuster steht damit neben einer „Hierarchie der
-Lösungsprinzipien“ \cite[Kap. 3]{Zobel2016}, die Dietmar Zobel bereits vor
-über 10 Jahren vorgeschlagen hat, siehe auch \cite{Zobel2020}.
-
-Damit schlägt der Trend 4.1 „of increasing (technical) value“ in einen Trend
+Der Trend 4.1 „of increasing (technical) value“ schlägt dabei in einen Trend
 „of decreasing economic value“ um, oder -- um es mit ökonomischen Termini
 auszudrücken -- der vorher durch die Nachfrage getriebene Markt geht in einen
 vom Angebot getriebenen Markt über: Derselbe Gebrauchswert hat einen immer
 geringeren Tauschwert.  Damit geht der Wert der „Idealität“
 \cite[Kap. 4.1.1]{KS2017} in der Tat durch die Decke, aber als Folge eines
-\emph{ökonomischen} Gesetzes.
+\emph{ökonomischen} Gesetzes.  Dies korrespondiert zum TRIZ-Prinzip 17 des
+\emph{Übergangs zu anderen Dimensionen} und soll hier als weitere Gegenthese
+festgehalten werden:
+\begin{quote}\it
+  \textbf{Gegenthese 3:} Der (technische) Trend 4.1 „of increasing (technical)
+  value“ schlägt im Stage 3 der S-Kurven-Entwicklung um in einen
+  (ökonomischen) „Trend of decreasing (economic) value“.
+\end{quote}
+Damit wechselt im Stage 3 in der Produktion gängiger Werkzeuge und
+Standardkomponenten die Leitfunktion (MPV) der weiteren Entwicklung von den
+technischen Triebkräften zu den ökonomischen. Diesen Prozess der
+„Commodification“ hat F. Naetar in \cite{Naetar2005} hinreichend beschrieben;
+das Thema muss hier also nicht vertieft werden. Diese Entwicklung ist
+allerdings selbst widersprüchlich, wie in der marxistischen Literatur am
+Phänomen der \emph{tendenziell fallenden Profitrate} diskutiert wird:
+Geringere Produktionskosten durch technischen Fortschritt eines Produzenten
+erhöhen dessen Profitrate im Vergleich zu den Konkurrenten. Der Marktpreis
+(„decreasing economic value“) wirkt allerdings regulierend und senkt
+perspektivisch die Profitrate der Wettbewerber, die diesen technischen
+Fortschritt nicht implementieren.
+
+Das TRIZ-Prinzip 17 des \emph{Übergangs zu anderen Dimensionen}, auf das oben
+Bezug genommen wurde, erscheint hier allerdings -- im Gegensatz zur Lesart in
+der Komponente TRIZ-Theoriekörper -- nicht als \emph{abstraktes Designmuster},
+sondern als \emph{abstraktes Evolutionsmuster}, also nicht als Mittel der
+aktiven Beeinflussung eines Problemlöseprozesses, sondern als
+passiv-beobachtendes Beschreibungsmuster realweltlicher Entwicklungen.  In
+diesem Sinne kann aber auch \emph{jedes andere} der TRIZ-Prinzipien sowie auch
+jeder der TRIZ-Standards als abstraktes Evolutionsmuster formuliert
+werden. Umgekehrt erscheinen die Evolutionstrends in der Komponente
+TRIZ-Theoriekörper als weitere abstrakte Designmuster, die neben die
+„Prinzipien“ und die „Standards“ treten.
+\begin{quote}\it
+  \textbf{Gegenthese 4:} Jedes der TRIZ-Prinzipien und jeder der
+  TRIZ-Standards kann auch überzeugend als „Trend der Evolution technischer
+  Systeme“ formuliert werden. 
+\end{quote}
+Die Hierarchie der Evolutionsmuster gibt damit insbesondere Anlass zu einer
+„Hierarchie der Lösungsprinzipien“ \cite[Kap. 3]{Zobel2016}, wie Dietmar Zobel
+bereits vor über 10 Jahren vorgeschlagen hat, siehe auch \cite{Zobel2020}.
+Damit wird zugleich die Bedeutung der „Matrix“ entwertet. Leonid Shub
+\cite{Shub2006} weist darauf hin, dass dies auch Altshuller bereits 1985
+engeren Vertrauten gegenüber so geäußert habe.
 
 
 \subsection{Rest}
@@ -1129,6 +1160,8 @@ nicht-fliegendes Flugzeug“ handelt\footnote{Ein im russischen Kontext
 \bibitem{Bertalanffy1950} Ludwig von Bertalanffy (1950). An outline of General
   System Theory. The British Journal for the Philosophy of Science, vol. I.2,
   134–165.
+\bibitem{MEW15} Friedrich Engels (MEW 15). Die Geschichte des gezogenen
+  Gewehrs.  MEW 15, S. 195--226. Dietz Verlag, Berlin.
 \bibitem{Friedli2013} Thomas Friedli, Stefan Thomas, Andreas Mundt (2013).
   Management globaler Produktionsnetzwerke. Strategie – Konfiguration –
   Koordination. Hanser, München. ISBN: 978-3-446-43449-3
@@ -1174,12 +1207,12 @@ nicht-fliegendes Flugzeug“ handelt\footnote{Ein im russischen Kontext
   Evolution. Eigenverlag, Sulzbach-Rosenberg.  ISBN 978-3-00-059846-3.
 \bibitem{MEW3} Karl Marx (MEW 3).  Thesen über Feuerbach. MEW 3, S. 533--535.
   Dietz Verlag, Berlin.
-\bibitem{MEW15} Friedrich Engels (MEW 15). Die Geschichte des gezogenen
-  Gewehrs.  MEW 15, S. 195--226. Dietz Verlag, Berlin.
 \bibitem{MEW23} Karl Marx (MEW 23). Das Kapital, Band 1. MEW 23. Dietz Verlag,
   Berlin.
 \bibitem{MEW42} Karl Marx (MEW 42). Grundrisse der Kritik der politischen
   Ökonomie.  MEW 42. Dietz Verlag, Berlin.
+\bibitem{Naetar2005} Franz Naetar (2005). „Commodification“, Wertgesetz und
+  immaterielle Arbeit. Grundrisse 14, S. 6--19.
 \bibitem{Pohl2005} Klaus Pohl, Günter Böckle, Frank J. van der Linden (2005).
   Software Product Line Engineering. Foundations, Principles and Techniques.
   Springer. ISBN 978-3-540-28901-2
@@ -1202,6 +1235,9 @@ nicht-fliegendes Flugzeug“ handelt\footnote{Ein im russischen Kontext
   \url{http://www.temm.ru/en/section.php?docId=4472}.
 \bibitem{Shpakovsky2010} Nikolay Shpakovsky (2010).  Tree of Technology
   Еvolution. Forum, Moscow.
+\bibitem{Shub2006} Leonid Shub (2006). \foreignlanguage{russian}{Осторожно!
+  Таблица технических противоречий}. (Vorsicht! Die Widerspruchstabelle).
+  \url{http://metodolog.ru/conference.html}
 \bibitem{Szyperski2002} Clemens Szyperski (2002). Component Software: Beyond
   Object-Oriented Programming. ISBN: 978-0-321-75302-1.
 \bibitem{TT} Target Invention (2020). TRIZ Trainer.
