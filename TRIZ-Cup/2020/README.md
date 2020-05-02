@@ -69,6 +69,14 @@ organizers in
   - Exercises-de.pdf
   - Exercises-de.tex
 
+* Information letter about the results of the contest and translations to
+  English and German in a single document.  
+  - Results.docx
+  - Results.pdf
+  - Results.md
+    - The list of the award winners as plain txt, one team per line, in
+      markdown notation
+
 Note that the LaTeX versions require the od.sty LateX style located at
 Sources/od.sty in this repo and the tikz graphics package to be compiled. 
 
@@ -108,7 +116,7 @@ Pointing to special qualities of a creative personality implicitly supposes a
 more creative and others less. I strongly disagree with such a position since I
 do not suppose that creativity could be measured on a one-dimensional scale.
 
-### Developmental laws of technical systems
+### Laws of development of technical systems
 
 Even the authorized English version (sent to me on 10 November 2019) displays
 the scheme with Russian wordings in that place. Moreover, the scheme is
@@ -118,33 +126,13 @@ objections to the quite special wording used in the first version.
 The scheme is only available as image so far (a tikz version is in
 preparation).  For the moment I reproduced in the LaTeX versions the scheme as
 image (in Russian) and added translations of the different developmental laws
-(or tendencies in several places of the improved version). 
+(or tendencies in several places of the improved version).
 
 I matched my German translation with the German wording in (Koltze/Souchkov)
 so the translation is only approximative. The English LaTeX version contains
 also such an (not authorized) addition, obtained from the German version by
 bare translation, incorporating the changes of nomination in the improved
 Russian version.
-
-One law is not contained in the list of (Koltze/Souchkov), the
-
-Law of Replacement of man
-
-and I strongly disagree that this is a developmental law of technical systems.
-There is a very long discussion about that topic at least in the German
-literature starting already in the 1980s.  For example Klaus Fuchs-Kittowski
-underlines in a summary paper on his work
-
-"Our answer to the question has always been: man is the only creative
-productive force, he must be and remain the subject of development. Therefore,
-the concept of full automation, according to which humans should be gradually
-eliminated from the process, misses the point."
-
-http://www.informatik.uni-leipzig.de/~graebe/Texte/Fuchs-02.pdf (in German)
-
-Considering Replacement of man as a law of technical development roots in a
-very strange understanding of the terminus "Technics" that forgets about the
-obvious - there are no "technical systems" but only "techno-social systems".
 
 ## Concluding:
 
