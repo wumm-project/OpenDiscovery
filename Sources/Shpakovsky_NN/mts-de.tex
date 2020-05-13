@@ -6,7 +6,7 @@
 \usetikzlibrary{shapes.misc, arrows.meta}
 \usetikzlibrary{arrows, decorations.markings}
 
-\newcommand{\law}[2]{\parbox{#1cm}{\small\centering #2}}
+\newcommand{\bbox}[2]{\parbox{#1cm}{\small\centering #2}}
 
 \tikzstyle{vecArrow} = [thick,
   decoration={markings,mark=at position 1 with {
@@ -127,12 +127,12 @@ Steuerungssystem.
   \draw[fill=yellow] (1.2,1.5) -- (8.8,1.5) -- (8.8,4.5) -- (1.2,4.5) --
   (1.2,1.5) ;
 
-  \node[draw] at (5,3.5) [rectangle] (A0) {\law{2}{Steuerungs- system}};
-  \node[draw] at (2.5,2) [rectangle] (A1) {\law{2}{Antrieb}};
-  \node[draw] at (5,2) [rectangle] (A2) {\law{2}{Transmission}};
-  \node[draw] at (7.5,2) [rectangle] (A3) {\law{2}{Arbeitsorgan}};
-  \node[draw] at (12,2) [rectangle] {\law{2}{Bearbeitetes Objekt}}; 
-  \draw (0,2.5) node {\law{2}{Energie- ressourcen}}; 
+  \node[draw] at (5,3.5) [rectangle] (A0) {\bbox{2}{Steuerungs- system}};
+  \node[draw] at (2.5,2) [rectangle] (A1) {\bbox{2}{Antrieb}};
+  \node[draw] at (5,2) [rectangle] (A2) {\bbox{2}{Transmission}};
+  \node[draw] at (7.5,2) [rectangle] (A3) {\bbox{2}{Arbeitsorgan}};
+  \node[draw] at (12,2) [rectangle] {\bbox{2}{Bearbeitetes Objekt}}; 
+  \draw (0,2.5) node {\bbox{2}{Energie- ressourcen}}; 
   \draw (9.7,2.3) node {{\small Aktion}}; 
   \draw[->] (A0) -| (A1) ;
   \draw[->] (A0) -- (A2) ;
@@ -588,23 +588,23 @@ Vollständige Zusammensetzung eines Technischen Systems:
   \draw[dashed,rounded corners=20pt,fill=yellow!30] (2,5.25) -- (2,7.5) --
   (17,7.5) -- (17,5.25) ; 
 
-  \node[draw=green] at (5.5,6.5) [rectangle] (A0) {\law{6}{Information über
+  \node[draw=green] at (5.5,6.5) [rectangle] (A0) {\bbox{6}{Information über
       die Realisierung des technischen Prozesses}};
-  \node[draw=green] at (13.5,6.5) [rectangle] (A1) {\law{6}{Wissen, wie mit
+  \node[draw=green] at (13.5,6.5) [rectangle] (A1) {\bbox{6}{Wissen, wie mit
       dem System technischer Objekte zu arbeiten ist}};
-  \node[draw=red] at (5,4) [rectangle] (A2) {\law{5}{Systeme, Objekte, Stoffe
+  \node[draw=red] at (5,4) [rectangle] (A2) {\bbox{5}{Systeme, Objekte, Stoffe
       und Felder für die Aktionen des Operators}};
-  \node[draw=red] at (5,2) [rectangle] (A3) {\law{5}{Systeme, Objekte, Stoffe
+  \node[draw=red] at (5,2) [rectangle] (A3) {\bbox{5}{Systeme, Objekte, Stoffe
       und Felder für die Aktionen des Systems technischer Objekte}};
-  \node[draw=blue] at (14,4) [rectangle] (A4) {\law{3}{Verarbeitungs-
+  \node[draw=blue] at (14,4) [rectangle] (A4) {\bbox{3}{Verarbeitungs-
       produkte}}; 
-  \node[draw=blue] at (14,2) [rectangle] (A5) {\law{3}{Verarbeitungs-
+  \node[draw=blue] at (14,2) [rectangle] (A5) {\bbox{3}{Verarbeitungs-
       produkte}}; 
   \node[draw=blue, line width=2pt] at (10,4) [rectangle] (A6)
-       {\law{2}{Operator}}; 
-  \node[draw=blue, line width=2pt] at (10,2) [rectangle] (A7) {\law{2}{System
+       {\bbox{2}{Operator}}; 
+  \node[draw=blue, line width=2pt] at (10,2) [rectangle] (A7) {\bbox{2}{System
       technischer Objekte}}; 
-  \node[draw,fill=blue!30] at (10,0) [rectangle] (A8) {\law{4}{Bearbeitetes
+  \node[draw,fill=blue!30] at (10,0) [rectangle] (A8) {\bbox{4}{Bearbeitetes
       Objekt}};
   
   \draw[color=red] (15,5.6) node {\small Informationsebene};
