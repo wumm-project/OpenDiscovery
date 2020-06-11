@@ -3,10 +3,7 @@
 It is planned to collect in this directory use cases that are available under
 a creative commons license for further use, reuse and modification.
 
-
-## Use Cases
-
-Door-and-Baby - supplied by the author
+##Door-and-Baby - supplied by the author
   - creator: Nikolay Shpakovsky, Minsk
   - createdAt: 2020-01-20
   - title:
@@ -17,7 +14,7 @@ Door-and-Baby - supplied by the author
     door, you can hit the child hard.  How to increase the safety of the
     child?
 
-EvenSheetGlass - supplied by the author
+##EvenSheetGlass - supplied by the author
   - creator: Nikolay Shpakovsky, Minsk
   - createdAt: unknkwn
   - title: Production of even sheet glass
