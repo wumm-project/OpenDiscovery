@@ -13,6 +13,7 @@ a creative commons license for further use, reuse and modification.
   - problem: A child plays in front of a closed door. If you suddenly open the
     door, you can hit the child hard.  How to increase the safety of the
     child?
+  - solution: Door-and-Baby.docx, Door-and-Baby.pdf
 
 ## EvenSheetGlass - supplied by the author
   - creator: Nikolay Shpakovsky, Minsk
@@ -27,4 +28,5 @@ a creative commons license for further use, reuse and modification.
     and hardens forming a glass strip.  The experiments showed the quality of
     the glass to be satisfactory according to all the parameters except the
     one - the glass surface appeared not to be even enough.
+  - solution: EvenSheetGlass_en.pdf, EvenSheetGlass_ru.pdf
 
