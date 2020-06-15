@@ -1,10 +1,22 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage{a4wide,url,graphicx,wrapfig}
+\usepackage{od,wrapfig}
 \usepackage[utf8]{inputenc}
 \usepackage[main=ngerman,russian]{babel}
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc, arrows.meta}
+\usetikzlibrary{arrows, decorations.markings}
 
-\parindent0pt
-\parskip3pt
+\newcommand{\bbox}[2]{\parbox{#1cm}{\small\centering #2}}
+
+\tikzstyle{vecArrow} = [thick,
+  decoration={markings,mark=at position 1 with {
+      \arrow[semithick]{open triangle 60}
+    }
+  },
+  double distance=1.4pt, shorten >= 5.5pt,
+  preaction = {decorate},
+  postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}
+]
 
 \title{Der Mensch und das technische System} 
 
@@ -67,7 +79,7 @@ Definition eingeführt, als Ableitung des Begriffs „System“. Aber bei näher
 Betrachtung wird klar, dass dieser Begriff -- „Technisches System“ -- eine
 weitere Konkretisierung erfordert. Zu Gunsten einer solchen Behauptung spricht
 zum Beispiel der semantische Aspekt. Der Begriff „technisches System“ wird auf
-zwei Arten vom Russischen ins Englische übersetzt: „Tecnical System“ und
+zwei Arten vom Russischen ins Englische übersetzt: „Technical System“ und
 „Engineering System“.  Mit einer beliebigen Suchmaschine im Internet kann man
 sich leicht überzeugen, dass diese beiden Konzepte von Fachleuten, die in der
 TRIZ aktiv sind, fast gleichwertig verstanden werden. Oder nehmen Sie zum
@@ -108,8 +120,28 @@ Nach dem Gesetz der Vollständigkeit der Teile des Systems umfasst jedes TS
 mindestens vier Teile: Antrieb, Transmission, Arbeitskörper und
 Steuerungssystem.
 \begin{center}
- \includegraphics[width=.6\textwidth]{mts-1.png}\\ Minimale Struktur eines
- funktionsfähigen technischen Systems nach G. Altschuller.
+\begin{tikzpicture}[
+    >={Triangle[length=3pt 9, width=3pt 3]},
+    rounded corners=2pt]
+
+  \draw[fill=yellow] (1.2,1.5) -- (8.8,1.5) -- (8.8,4.5) -- (1.2,4.5) --
+  (1.2,1.5) ;
+
+  \node[draw] at (5,3.5) [rectangle] (A0) {\bbox{2}{Steuerungs- system}};
+  \node[draw] at (2.5,2) [rectangle] (A1) {\bbox{2}{Antrieb}};
+  \node[draw] at (5,2) [rectangle] (A2) {\bbox{2}{Transmission}};
+  \node[draw] at (7.5,2) [rectangle] (A3) {\bbox{2}{Arbeitsorgan}};
+  \node[draw] at (12,2) [rectangle] {\bbox{2}{Bearbeitetes Objekt}}; 
+  \draw (0,2.5) node {\bbox{2}{Energie- ressourcen}}; 
+  \draw (9.7,2.3) node {{\small Aktion}}; 
+  \draw[->] (A0) -| (A1) ;
+  \draw[->] (A0) -- (A2) ;
+  \draw[->] (A0) -| (A3) ;
+  \draw[vecArrow] (-1,2) -- (1,2) ; 
+  \draw[vecArrow] (8.9,2) -- (10.7,2) ; 
+\end{tikzpicture}\\
+Minimale Struktur eines funktionsfähigen technischen Systems nach
+G. Altschuller.
 \end{center}
 Das heißt, es gibt ein System, eine Maschine, die aus technischen Objekten,
 Untersystemen besteht, das die geforderte Funktion erfüllen kann. Es umfasst
@@ -546,10 +578,47 @@ berücksichtigen:
   erforderlich sind, und deren Arbeitsprodukte.
 \item[6.] Das bearbeitete Objekt (in einzelnen Fällen).
 \end{itemize}
-Vollständige Zusammensetzung eines Technischen Systems:\footnote{Die Abbildung
-  muss noch ins Deutsche übertragen werden -- HGG.}
+Vollständige Zusammensetzung eines Technischen Systems:
 \begin{center}
- \includegraphics[width=.8\textwidth]{mts-3.png}
+\begin{tikzpicture}[rounded corners=2pt] 
+  \draw[dashed,rounded corners=6pt,fill=gray!10] (7,1) -- (7,-1) -- (13,-1) --
+  (13,1) ; 
+  \draw[dashed,rounded corners=20pt,fill=gray!20] (2,5.25) -- (2,1) --
+  (17,1) -- (17,5.25) ; 
+  \draw[dashed,rounded corners=20pt,fill=yellow!30] (2,5.25) -- (2,7.5) --
+  (17,7.5) -- (17,5.25) ; 
+
+  \node[draw=green] at (5.5,6.5) [rectangle] (A0) {\bbox{6}{Information über
+      die Realisierung des technischen Prozesses}};
+  \node[draw=green] at (13.5,6.5) [rectangle] (A1) {\bbox{6}{Wissen, wie mit
+      dem System technischer Objekte zu arbeiten ist}};
+  \node[draw=red] at (5,4) [rectangle] (A2) {\bbox{5}{Systeme, Objekte, Stoffe
+      und Felder für die Aktionen des Operators}};
+  \node[draw=red] at (5,2) [rectangle] (A3) {\bbox{5}{Systeme, Objekte, Stoffe
+      und Felder für die Aktionen des Systems technischer Objekte}};
+  \node[draw=blue] at (14,4) [rectangle] (A4) {\bbox{3}{Verarbeitungs-
+      produkte}}; 
+  \node[draw=blue] at (14,2) [rectangle] (A5) {\bbox{3}{Verarbeitungs-
+      produkte}}; 
+  \node[draw=blue, line width=2pt] at (10,4) [rectangle] (A6)
+       {\bbox{2}{Operator}}; 
+  \node[draw=blue, line width=2pt] at (10,2) [rectangle] (A7) {\bbox{2}{System
+      technischer Objekte}}; 
+  \node[draw,fill=blue!30] at (10,0) [rectangle] (A8) {\bbox{4}{Bearbeitetes
+      Objekt}};
+  
+  \draw[color=red] (15,5.6) node {\small Informationsebene};
+  \draw[color=red] (15,4.9) node {\small Objektebene};
+  
+  \draw[->] (A0) -- (A6) ;
+  \draw[->] (A1) -- (A6) ;
+  \draw[->] (A2) -- (A6) ;
+  \draw[->] (A6) -- (A4) ;
+  \draw[->] (A3) -- (A7) ;
+  \draw[->] (A7) -- (A5) ;
+  \draw[vecArrow] (A6) -- (A7) ; 
+  \draw[vecArrow] (A7) -- (A8) ;
+\end{tikzpicture}
 \end{center}
 Erst in dieser Struktur erhält das TS die Möglichkeit, überall und an jedem
 Ort völlig autonom zu arbeiten. Auch in der Schwerelosigkeit und im luftleeren

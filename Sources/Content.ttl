@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix od: <http://opendiscovery.org/rdf/Model#> .
+@prefix odp: <http://opendiscovery.org/rdf/Person/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<http://opendiscovery.org/Data/Sources/Contents/>
+    cc:attributionName "The Open Discovery Project" ;
+    cc:attributionURL <http://opendiscovery.org> ;
+    cc:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+    a owl:Ontology ;
+    rdfs:comment """Uses the terminological conventions as explained 
+      in <http://eprints.rclis.org/22454/1/LODE-BD-2.pdf>""" ;
+    rdfs:label "Contents of OpenDiscovery/Sources"  .
+
+<http://opendiscovery.org/rdf/BIB/Goldovsky_1983>
+  a od:Publication; 
+  dcterms:creator odp:Goldovsky_BI ;
+  dc:language "ru";
+  dc:format "pdf" ; 
+  dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
+  dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
+  dcterms:issued "1983"  . 
+
+<http://opendiscovery.org/rdf/BIB/Goldovsky_1983_de>
+  a od:Publication; 
+  dcterms:creator odp:Goldovsky_BI ;
+  dc:language "ru";
+  bibo:
+  dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
+  dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
+  dcterms:issued "1983"  . 
+
+<http://opendiscovery.org/rdf/BIB/Goldovsky_1983>
+  a od:Publication; 
+  dcterms:creator odp:Goldovsky_BI ;
+  dc:language "ru"; 
+  dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
+  dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
+  dcterms:issued "1983"  . 

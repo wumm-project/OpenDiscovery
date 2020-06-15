@@ -1,7 +1,9 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper]{report}
 \usepackage{od}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+
+\newcommand{\HGG}[1]{\begin{quote} \textbf{To be added:} #1 \end{quote}}
 
 \title{Features of TRIZ applications for solving organizational and management
   problems: schematization of an inventive situation and working with models
@@ -11,18 +13,30 @@
 \date{Chelyabinsk, 2019} 
 
 \begin{document}
-\maketitle
+\begin{titlepage}\Large\centering
+\vspace*{5em} {\huge\bf Features of TRIZ applications\\[4pt] for  solving
+  organizational\\[4pt] and management problems:\\[4pt] schematization of an
+  inventive\\[4pt] situation and working with\\[4pt] models of
+  contradictions\par}\vskip3em
 
-\begin{quote}
-Supplied to the Thesis Council of the International TRIZ Association (MA TRIZ)
-as thesis for the title \emph{TRIZ Master}.
+  Anton Kozhemyako\vfill
+  
+  \begin{quote}
+    Supplied to the Thesis Council of the International TRIZ\\ Association (MA
+    TRIZ) as thesis for the title \emph{TRIZ Master}.\vskip1em
 
-Scientific adviser: TRIZ Master Valery Soushkov
-\end{quote}
-\newpage
+    Scientific adviser: TRIZ Master Valery Soushkov
+  \end{quote}\vskip1em
+    Chelyabinsk, 2019
+\end{titlepage}
 \tableofcontents
 \newpage
 \input{ch1.tex}
+\newpage
+\part{Research Results}
+\input{ch2.tex}
+
+\newpage
 \input{referee-report-ilyin.tex}
 \input{referee-report-rubin.tex}
 \end{document}

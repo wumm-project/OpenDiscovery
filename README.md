@@ -20,4 +20,7 @@ section at our [Github Pages](https://wumm-project.github.io/) and also at the
 * Sources - Sources (mainly LaTeX) of texts of several authors and themes that
   can be reused under the terms of CC-BY. See the README.md over there for
   conditions of reuse of the different texts.
+* TRIZ-Cup - material of the annually provided TRIZ-Cup mainly to host alsoa
+  German translation of the exercises and the information letters.
+* UseCases - an (upcoming) collection of use cases
 * workbench - my workbench, to be moved into a feature branch later on.  
