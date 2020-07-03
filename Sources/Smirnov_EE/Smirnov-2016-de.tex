@@ -1,0 +1,495 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{od}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,main=ngerman]{babel}
+
+\title{Element-funktionale Konfliktmodellierung: EFM.K.}
+
+\author{Evgeni E. Smirnov, St. Petersburg}
+\date{1983}
+
+\begin{document}
+\maketitle
+\begin{quote}
+  Original: \foreignlanguage{russian}{Элементно-функциональное моделирование
+    конфликтов: ЭФМ.К}.
+
+  Quelle: \url{https://cloud.mail.ru/public/4a7c/WX37Yg1JB}
+  
+  Übersetzt von Hans-Gert Gräbe, Leipzig.
+\end{quote}
+\begin{quote}
+  In diesem Artikel geht es darum, eine der am meisten unterschätzten Methoden
+  der Konfliktmodellierung zu verbessern: Die SF-Modellierung.  Es werden Fragen
+  der Erhöhung der Instrumentalität von Methoden der Konfliktmodellierung
+  betrachtet.
+
+  Es werden Empfehlungen zur Steigerung der Wirksamkeit von Techniken gegeben
+  und ihr Platz bei der Lösung erfinderischer Probleme aufgezeigt.
+
+  Schlüsselwörter: TRIZ, Methodologie, SF-Modelle, SF-Analyse,
+  Funktionalanalyse, Funktionale Systeme, EF-Modellierung von Konflikte,
+  EFM.K, Techniken, Widersprüchliche Anforderungen.
+\end{quote}
+
+\section*{Einführung}
+
+Ein kurzer Überblick über die Grundprinzipien des Elementaren funktionale
+Modellierung, die nicht nur ersetzt Feldanalyse, wird aber auch eine
+verbindliche Methode für andere Instrumente im Rahmen der TRIZ.
+
+Ziel dieser Arbeit ist es, den aktuellen Stand der Dinge in hervorzuheben
+Verbesserung der Vepol-Analyse, Vorschläge für seine Radikalität ändern, sowie
+die Effizienz der Anwendung und andere zu verbessern TRIZ-Tools am Beispiel
+von Konfliktlösungstechniken.
+
+\section*{Hintergrund}
+
+Heutzutage wird am häufigsten die Vepol-Analyse verwendet beschränkt auf
+Schulungen. Seine praktische Anwendung beschränkt auf eine Reihe von
+wesentlichen Nachteilen. Ich denke, das macht hier keinen Sinn Sprechen Sie
+ausführlich darüber, was diese Art der Analyse ist. Hier nur einige
+Definitionen.
+
+Eine der ersten Definitionen von Vepol wurde in [1] gegeben: „Vepol ist ein
+minimal vollständiges Modell eines idealen technischen Systems.“ Hier besucht:
+Feld (P), Substanz (B) und Medium (C). Als eine Option - ein Wildschwein mit
+einem Feld (P) und zwei Substanzen (2B), jeweils von Welches ist das Medium in
+Bezug auf ein anderes. Diese letzte Option, wo jetzt zwei Substanzen -
+"Werkzeug" und "Produkt" - verwendet werden. Jedoch, nach modernen Konzepten
+als Teil eines funktionalen Systems (FS) Das Produkt ist nicht im Lieferumfang
+enthalten. Aber die Definitionen haben sich unwesentlich geändert, Zum
+Beispiel: „Vepol ist das Mindestmodell eines technischen Systems: es fünf
+umfasst Produkt, Werkzeug und Energie (Feld). notwendig für die Exposition
+Werkzeug pro Produkt“ [2, S. 91].
+
+Für die Durchführung einer Vepol-Analyse wird sie nun als konstruiert genannt
+das Dreieck "2B + 1P", das sogar von Lösern verwendet wird wenn Aufgaben nicht
+zu diesem Modell passen.
+
+Hier ist ein Beispiel für eine andere Definition, die erstens nicht klar ist
+Die Grundlage dieser Regel deutet auf das Vorhandensein eines Widerspruchs
+hin.  zweitens „schaltet“ es die mentale Trägheit des Denkens ein und stimmt
+klar ab für die Konstruktion eines Dreiecks nach der Formel „2B + 1P“: „
+Vepol-Analyse im Betriebsbereich der Aufgabe ausgeführt werden, d.h. wo
+identifiziert physischer Widerspruch. Es müssen zwei an diesem Ort sein
+Substanzen B1 und B2, die vorteilhaft oder schädlich miteinander interagieren,
+und das Feld P, das diese beiden Substanzen bindet “[3, S. 89].
+
+Schließen Sie die Lösungssuche durch Formulierung und Auflösung physikalische
+Widersprüche in [4] vorgeschlagen. Und der Hauptnachteil Hier ist die
+Formulierung des inhärenten Subsystems (physisch) Widersprüche auf
+Systemebene, unmittelbar bei der Analyse einer Problemsituation.  Der
+Ausschluss eines solchen Übergangs zwischen Systemebenen beraubt die Methode
+zusätzliche heuristische Kraft.
+
+Es wird auch versucht, Vepol zu verbessern Analyse, aber diese neuen Versionen
+haben keine Massenverteilung.
+
+\section*{Ein kurzer Überblick über Arbeiten zur Verbesserung der
+  Vepol-Analyse}
+
+In letzter Zeit wurden nicht viele Arbeiten der Feldanalyse gewidmet und
+System von Standards. Und die meisten von ihnen wurden auf dem Gipfel
+vorgestellt.  2013 Entwickler im Thema "Weiterentwicklung der Vepol-Analyse".
+
+Alle Artikel werden als allgemeine Schwachstellen dieses Tools aufgeführt.
+sowie Nachteile, die die Lösung sehr spezifischer Probleme behindern. Also
+rein Arbeiten [5, 6] präsentieren Optionen für die Modifikation des
+klassischen Vepol Analyse für Informationssysteme:
+
+Die „Substanz“ wird durch das „Element“ ersetzt und die Konzepte werden
+verwendet "Elepole", und es wurde auch versucht, mit Funktionsanalyse zu
+kombinieren: „ Die Gemeinsamkeit von elepole mit einem Funktionsmodell
+ermöglicht es Ihnen, Werkzeuge zu übertragen Funktionsanalyse in der
+Elepolanalyse. Wir werden diese Art nennen Analyse der Funktionsfeldanalyse
+von Systemen "; und mit funktionalen Suchorientierte Suche (FOP). Im Vergleich
+zu " Durch die Pluralität" wird die folgende Aussage gemacht: "sowohl in der
+Pluralität als auch im Elepol Funktionen können sein oder nicht “[5];
+
+Das Wildschwein wurde in El-Action umbenannt (genau so - auf Englisch):
+element- Aktion und führte auch eine andere Komponente ein - Wissen (Wissen):
+„ Das Modell, einschließlich des Elements, der Aktion und des Wissens, wird
+EAK genannt.  Die EAK-Analyse- und Transformationsmethode wird als EAK-Analyse
+bezeichnet. “ Ebenfalls Merkmale der Anwendung der EAK-Analyse für
+Verarbeitungssysteme werden berücksichtigt Information: „In diesen Systemen
+wird ein Element als Daten dargestellt (Daten - D), Handlung ist eine Funktion
+(Funktion - F) und Wissen (Wissen - K). Modell, einschließlich Daten,
+Funktion, Wissen werden wir DFK nennen. Methodik Die DFK-Analyse und
+-Transformation wird als DFK-Analyse bezeichnet “[6].
+
+In [7] wurde eine Variante der Modellierung von Interaktionen in biologische
+(lebende) Systeme, aber ohne über das Klassische hinauszugehen Ideen zur
+Vepol-Analyse.
+
+In der Rezension des Buches [8] sprechen wir über die Anpassung der
+Vepol-Analyse und des Vepol-Systems Standards für die schnelle Ausbildung von
+Ingenieuren - hier der Einfachheit halber Transformationen der
+Standard-Vepol-Formel werden nur mit durchgeführt 5 Regeln aus 76 Standards
+ausgewählt, wahrscheinlich basierend auf dem Prinzip ihrer Häufigkeit
+verwenden. Darüber hinaus erwog der Autor von [8] die Option Darstellungen des
+Systems als eine Reihe von Feldern und Substanzen, die vollständig ist ein
+Analogon der strukturellen Energiesynthese von Systemen aus früheren Arbeiten
+[9, S. 73].
+
+Ein Artikel über Eber [10] schlägt die Anwendung eines Prozessansatzes mit vor
+Ersetzen von "Substanzen" und "Feldern" durch "Ressource". Und am Ende glaubt
+der Autor das ähnliche Prozessdiagramme: „1. In allen betrachteten Fällen
+überhaupt nicht weniger heuristisch als klassische Vepol-Designs. 2. Lass los
+aus der Vielzahl von protovolepny Schemata des Problems, das heißt aus
+Subjektivität. 3. Kombinieren Sie die klassische VA logisch funktional
+perfekte Modellierung und Prozessansatz als solche. 4. Angenommen Ersetzen des
+Begriffs "Vepol-Analyse" durch etwas wie "System-Prozess" Modellierung "(SPM)
+. " Eine solche Darstellung der Modellierungsmethode ist jedoch Konflikte
+haben keine Fortsetzung.
+
+In anderen Werken beschränken sich die Autoren hauptsächlich auf die
+Auflistung die Mängel der klassischen Materialfeldanalyse und des Individuums
+Empfehlungen für seine Verbesserung. Insbesondere werden Wünsche in
+ausgedrückt Verbesserung der Visualisierung des strukturellen und dynamischen
+Beschreibungsprozesses (technische) Systeme, die in erster Linie mit
+Unvollkommenheit verbunden sind grafische Mittel der Vepol-Analyse. Zu diesem
+Zweck wird vorgeschlagen, eine Ausarbeitung vorzunehmen Leistungsbeschreibung
+für Forschungsarbeiten [11].
+
+Es wird empfohlen, Vepol-Analyse und FSA [11, 12] zu kombinieren und zu
+kombinieren Stärken sowie die Axiomatik dieses Werkzeugs ausrichten Axiomatik
+der Systemanalyse und der TRIZ insgesamt [13]. Diese jedoch Empfehlungen haben
+keine wirkliche Umsetzung.
+
+Darüber hinaus wird vorgeschlagen, das Studium der Vepol-Analyse im
+Allgemeinen zu reduzieren.  TRIZ-Kurs [11] oder sogar die Entwicklung der
+Vepol-Analyse aufgeben und Standardsysteme als eigenständiges Instrument [12].
+
+\section*{Liste der Hauptnachteile verschiedener Versionen der Analoga der
+  Vepol-Analyse:}
+\begin{itemize}
+\item Es gibt immer noch eine Verwechslung der Konzepte "System" und
+  "Konflikt" mit Optionen Modellierung basierend auf Vepol-Analyse;
+\item
+  die Nutzung von Existenzbedingungen ist nicht vollständig realisiert und
+  Gesundheit der Systeme, sowie fast keine funktionale ein Ansatz;
+\item
+  die Begriffe „Substanz“ und „Feld“, wenn durch andere ersetzt, dann oder zu
+  allgemein [10] oder umgekehrt - hochspezialisiert [6];
+\item
+  Optionen zum Abrufen von Lösungsbildern aus konstruierten Modellen oder
+  fehlt oder reduziert auf die Verwendung eines Standardsystems: ein wenig
+  modifiziert [5, 9] oder signifikant reduziert [8], dh sie basieren nach dem
+  gleichen Prinzip wie die klassische Vepol-Analyse;
+\item
+  Keine der vorgeschlagenen Modellierungsoptionen schlägt vor Visualisierung
+  von Widersprüchen.
+\end{itemize}
+
+\section*{Wichtige Punkte}
+
+Bei der Lösung von Problemen durch klassische Vepol-Analyse ist dies nicht
+immer der Fall Es ist möglich, den gewünschten Standard zu verwenden oder den
+meisten zu wählen geeignet. Vor allem, wenn es keine grafische Interpretation
+hat.  Zum Beispiel ist die bekannte Aufgabe, eine Nadel im Heuhaufen zu
+finden, allen gemeinsam. Öfters Insgesamt wird es nach der Vepol-Syntheseregel
+(Standard 1.1.1 [14]) gelöst, wenn es zwei gibt Substanzen: Nadel und Heu, und
+es gibt kein Feld [3, S. 90]. Es scheint, dass solche Die Konstruktion des
+Modells ist offensichtlich und bedarf keiner Erklärung. Aber in Wirklichkeit
+Es gibt eine Ersetzung der Aufgabe: statt suchen (erkennen) ausführen Trennung
+von Heu und Nadeln. Ebenso können Sie das Problem des Findens von Fischen
+lösen Ozean - werden Sie entscheiden, indem Sie den Fisch vom Wasser trennen
+und einen anwenden oder Felder?
+
+Eine der Hauptursachen für solche Modellierungsfehler ist Mangel an
+funktioneller Komponente in der Vepol-Analyse. Findet nicht Dies spiegelt sich
+in den in der Rezension vorgestellten Arbeiten wider. Der zweite Grund -
+schlechte Anwendung eines systematischen Ansatzes, der höchstwahrscheinlich
+damit verbunden ist dass Modellierungssysteme (funktionale Systeme oder in den
+Klassikern - technische Systeme) ist nur beschreibend.
+
+Ein Versuch, einen systematischen Ansatz anzuwenden, wurde von den Autoren von
+[9, S. 82] mit unternommen die Entwicklung der strukturellen Energiesynthese
+von Systemen. Aber wie „Energieketten“, die aus elementaren Struktureinheiten
+aufgebaut sind sind ein wichtiger Schritt zur Verbesserung der Effizienz des
+Wildschweins Analyse, enthalten auch erhebliche Mängel, die weit stören
+Verteilung dieser Methode, nämlich:
+\begin{itemize}
+\item Dieselben Komponenten werden als Elementarkomponenten verwendet.
+"Substanzen" und "Felder" und damit die Prinzipien der Interaktion
+aus der Vepol-Analyse entlehnt;
+\item Manager Kraftfluss begrenzt auf physikalische Effekte: " Ähnliche"
+Substanz-Feld "-Paare bieten Kontrollierbarkeit Systeme, in der Natur ist
+ziemlich viel bekannt. Insbesondere können sie ferromagnetische Substanzen
+oder Ferropartikel mit magnetische oder elektromagnetische Felder. Und auch
+elektrisches Feld und elektrorheologische Flüssigkeiten (d.h.  Gemische, die
+ihre Viskosität unter elektrischem Einfluss ändern Felder) ”;
+\item Das Prinzip der Vollständigkeit des Systems, einschließlich 4 Arten von
+  Elementar Struktureinheiten, und in der Beschreibung der Methode
+  dargestellt, nicht voll in der Konstruktion von Modellen verwendet, was dazu
+  führt Weglassen einer Reihe möglicher Richtungen zum Konvertieren dieser
+  Modelle;
+\item "Produkt" wird als Feldempfänger betrachtet - in "Ändern" Systeme oder
+  als Konverter - in "Messen", aber Nirgendwo erreicht es laut ein
+  vollständiges Funktionssystem Analogien zum "Werkzeug", das den Bereich
+  erheblich einschränkt Anwendung solcher Modelle und schränkt das Suchfeld
+  möglich ein Entscheidungen - in diesem Fall - aufgrund nicht genutzter
+  Ressourcen "Produkte";
+\item Fehlende Funktionalität: elementare Interaktionen
+  Links werden nicht angegeben, auch wenn einer von ihnen ein "Produkt" ist.
+\end{itemize}
+Was getan werden muss? Für den Anfang die meisten beseitigen oben erwähnte
+Nachteile. Insbesondere um stereotype loszuwerden Beschreibung des Modells in
+Form eines Dreiecks "2B + 1P" eindeutig bestimmen Das Gebiet der Modellierung
+ist eine Konfliktsituation und vielleicht die wichtigste - Anwendung der im
+Rahmen des Bewährten verwendeten Konzepte und Modelle Ansätze: systemisch und
+funktional.
+
+In der Praxis ist der systematische Ansatz daher mit dem funktionalen
+verbunden dass Objekte (Geräte, Prozesse) der realen Welt vom Menschen benutzt
+werden, Jedes hat seinen eigenen Zweck, ausgedrückt durch den Funktionsbegriff
+.  Somit werden Objekte als funktionale Systeme (FS) modelliert .  In TRIZ
+besteht ein Funktionssystem aus mehreren Teilen. Zum Beispiel in einem Buch
+[15, S. 94-97] Der Autor bestimmt das obligatorische Vorhandensein eines
+technischen Systems (TS) aus vier Teilen: Motor (D), Getriebe (T), Steuerung
+(OU) und der Arbeitskörper (RO). Die Energiequelle (IE) stimmt hier entweder
+überein Der Motor oder aus dem System genommen, wenn die Energie von außen
+kommt, auch von einer Person.
+
+Und nun, aus der beschreibenden Natur der Modellierung von Objekten in Form
+von FS, es ist notwendig, zu seiner Instrumentalversion zu gehen. Aber dafür
+folgt es Es ist besser zu verstehen, was die ausgewählten Teile sind (IE, D,
+T, RO, OS) und welche Rolle spielen sie für die Funktionsweise der Systeme.
+
+Hier ist, was K. Marx zu diesem Thema schreibt [16]: „ Jeder entwickelt Ein
+Maschinengerät besteht aus drei wesentlich unterschiedlichen Teilen:
+Maschinenmotor, Getriebe, schließlich Maschinengewehre oder
+Arbeitsmaschine. Der Maschinenmotor ist die treibende Kraft von allem
+Mechanismus. Sie selbst erzeugt ihre Motorleistung wie Dampf Maschine,
+Kalorienmaschine, elektromagnetische Maschine usw. oder empfängt einen Impuls
+von außen, von jeder vorgefertigten Naturgewalt wie Wasser ein Rad aus
+fallendem Wasser, ein Flügel einer Windkraftanlage vor dem Wind usw.  ein
+Mechanismus bestehend aus Schwungrädern, beweglichen Wellen, Zahnrädern,
+Exzenter, Stangen, Transferbänder, Riemen, Zwischenprodukte Geräte und Zubehör
+verschiedener Art, regelt Bewegung, ändert bei Bedarf seine Form, zum Beispiel
+dreht sich von senkrecht zu kreisförmig, verteilt es und überträgt es an die
+Arbeiter Autos. Diese beiden Teile des Mechanismus existieren nur zu Sagen Sie
+die Bewegung des Maschinengewehrs, damit es erfasst das Thema Arbeit und
+ändert es zweckmäßigerweise . “
+
+Bei der Analyse vorhandener Tools und ihrer Anwendungen auf die Lösung
+Aufgaben - es wurde offensichtlich, dass Teile des Systems Energiewandler sind
+(genauer gesagt - seine Eigenschaften), die für die Umsetzung durch den
+Arbeitskörper erforderlich sind Zweck des Systems (Funktion):
+\begin{itemize}
+\item Konverter der ersten Art - ändern Sie die Energiequalität, dh ihren Typ;
+\item Konverter der 2. Art - ändern Sie die Menge und räumliche vorübergehende
+  Organisation (Intensität, Richtung, Anwendungsort) Energiefluss.
+\end{itemize}
+Im Allgemeinen zu verstehen, was jeder von Teile des Systems (Konverter) ist
+es bequemer, ein solches Konzept wie zu verwenden ein Element , das
+ausgedrückt werden kann durch:
+\begin{itemize}
+\item[1.] Die Substanz
+\item[2.] Energie
+\item[3.] Informationen.
+\end{itemize}
+Daher ist es offensichtlich, dass das funktionale System durch das
+Vorhandensein von bestimmt wird Satz von Basiselementen (mit seiner Struktur
+und Funktionalität) und eine externe Funktion , d. h. die Fähigkeit zu
+produzieren eine Änderung eines Merkmals der Elemente anderer Systeme:
+Zustände, Eigenschaften, Parameter.
+
+Um den Zustand des Systems zu gewährleisten, ist dies erforderlich Sie hatte
+ein exekutives Element sowie die Fähigkeit, dies zu empfangen ein
+Energieelement, in ausreichendem Volumen und in der für die Umsetzung
+erforderlichen Form gegebene Funktion.
+
+In den meisten Fällen muss das System mindestens zwei Elemente enthalten:
+Arbeitskörper und Energiequelle. Bei Bedarf werden sie eingeführt zusätzliche
+Energiewandler sowie ein Minimalsystem Steuerung, dh Bereitstellung der
+Möglichkeit zum Ein- und Ausschalten Energieversorgung der RO.
+
+Und natürlich kann die Konstruktion nicht ohne das Vorhandensein eines
+„Produkts“ auskommen.  das erstreckt sich auch auf volle FS, ähnlich - durch
+Hinzufügen Energiequelle zu seinem Aktuator.  Wenn es unbefriedigende
+Funktionen gibt, Konflikt, was bedeutet, dass es ein Konfliktmodell gibt und
+ein solches Modell sein kann Es genannte Element funktionelle oder EFM.K .
+
+\begin{center}
+  Bild einfügen\\ EPM-Präsentationsoption
+\end{center}
+Somit sind 2 Grundsteine davon jedes funktionale System: 1) Ein
+Elementkonverter von Energie und 2) Funktion.
+
+Wenn die elementar-funktionale Modellierung groß genug ist Systeme, genauer
+gesagt Systeme mit einer großen Anzahl von Elementen, werden zum einen
+berücksichtigt nur diejenigen Elemente, die an den betrachteten Interaktionen
+beteiligt sind, und zweitens werden die Grenzen der Elemente sowie die Grenzen
+der Systeme basierend auf festgelegt Aufgabenbedingungen und gesunder
+Menschenverstand. Das heißt, wenn wir uns verbessern Komponenten, zum Beispiel
+eines elektrischen Generators, können wir alle als betrachten einzelne
+Elemente mit dem erforderlichen Detaillierungsgrad. Aber wenn der Generator
+ist eine elektrische Energiequelle des Systems, dann kann es als einzelnes
+IE-Element vorhanden.
+
+Das heißt, das Prinzip der Fraktalität gilt hier, wenn jedes Element, bis zu
+einer gewissen Grenze kann in seine Bestandteile zerlegt werden, Beziehungen
+davon sind auch funktionale Systeme.
+
+Darüber hinaus können wir über verschiedene Arten solcher Modelle und ihre
+Varianten sprechen Transformationen, die auf die Regeln hinauslaufen. Das
+heißt: zuerst brauchen Sie die Situation zu analysieren und ein
+elementar-funktionales Modell aufzubauen Konflikt Danach wird das Modell
+analysiert und durch Anwendung der Regeln Es gibt eine Synthese neuer Modelle:
+Modelle von Richtungen, um Lösungen zu finden.
+\begin{center}
+  EFM.K $\to$ EFM.NPR
+\end{center}
+Dann kommt die Synthese von Lösungen. Dafür ist es aber schon nötig Verwenden
+Sie heuristische Methoden, Analogien und figuratives Denken (Phantasie),
+beitragen Überwindung der endgültige eine Barriere Entscheidungsmodelle von
+ihren realen Inkarnationen trennen.
+
+Die beliebteste heuristische Methode ist die Verwendung Empfänge. Aber wie
+kann man diese Techniken am effektivsten einsetzen?
+
+\section*{Empfänge}
+
+Die Aufgabe, eine Nadel im Heu zu finden, ist recht einfach. Aber es gibt noch
+mehr komplexe Aufgaben, die hier nicht berücksichtigt werden. Die Frage ist
+also ungefähr Der Einsatz von Techniken gliedert sich in zwei Teile:
+\begin{itemize}
+\item[1.] Bei einfachen Problemen wird die Lösung auf der Ebene der Regeln
+  erhalten und steht auf die Frage "Warum brauchen wir Empfänge?".
+\item[2.] Bei komplexen Aufgaben stellt sich eine etwas andere Frage: „Wie
+  Empfänge benutzen? "oder" Wie man sie erreicht? "
+\end{itemize}
+In der klassischen TRIZ gibt es 2 analoge Werkzeuge, bei denen Tricks:
+\begin{itemize}
+\item[1.] Um physische Inkonsistenzen im Rahmen von ARIZ zu beheben .
+\item[2.] Als Ergebnis der Arbeit mit der Altshuller-Matrix, die den Zugriff
+  auf beinhaltet Techniken durch die Formulierung sogenannter technischer
+  Widersprüche.
+\end{itemize}
+Gibt es eine Möglichkeit, diese Optionen für zu verwenden
+EFM.K-Transformationen?
+
+Zunächst definieren wir im Rahmen des Modells die Essenz des Problems und
+Anweisungen für seine Beseitigung. Die Spitze des Eisbergs ist seitdem eine
+Funktion es spielt die Rolle eines Indikators für die Aktivität von
+Elementen. Und der Konflikt ist vorhanden, wenn die Funktion dort
+unbefriedigend, schädlich oder nicht vorhanden ist, wo soll sie sein.
+
+Dies deutet darauf hin, dass es in unbefriedigende Eigenschaften gibt
+Elemente, die an der Implementierung dieser Funktionen beteiligt sind und für
+verantwortlich sind seine Implementierung sowohl von der Seite des „Werkzeugs“
+als auch von der Seite des „Produkts“.
+
+Trotz der qualitativen Unerschöpflichkeit der Materie, da "jeder ein Ding hat
+unzählige verschiedene Qualitäten. Erkunden Bei einer endlichen Anzahl von
+Eigenschaften einer Sache können wir nicht sagen, dass diese Sache von uns
+stammt bereits vollständig studiert “[17, S. 70], - es ist möglich, sich auf
+das Finale zu beschränken die Anzahl der Merkmale, die für die Bedingungen
+einer bestimmten Aufgabe von Bedeutung sind, und in am meisten bestimmen die
+implementierten Funktionen. Also ändern Diese Eigenschaften können geändert
+werden und funktionieren in die gewünschte Richtung (normalisieren). Und für
+einen solchen formalen Ansatz kann es sein Angewandte Techniken zur
+Transformation von Elementen und ihren Beziehungen.
+
+Die Anwendung von Techniken im Anfangsstadium kann zu zwei führen
+Hauptergebnisse:
+\begin{itemize}
+\item[1.] Der Konflikt ist gelöst, es gibt keine unerwünschten Folgen - das
+  Problem ist gelöst;
+\item[2.] Der Empfang beseitigt den anfänglichen Konflikt, wird jedoch
+  angezeigt unerwünschte Änderung der normalen Funktion der Elemente - Eine
+  unbefriedigende Funktion kann auftreten korrigiert (normalisiert). In diesem
+  Fall können wir darüber sprechen das Auftreten eines Widerspruchs der
+  Bedingungen ( PU ) - hier sind die Bedingungen verbunden.  Anwendung /
+  Nichtbenutzung der Rezeption.
+\end{itemize}
+Wenn die Tricks nicht sofort funktionierten und der Konflikt nicht ohne gelöst
+werden konnte Konsequenzen, dann ist das Problem auf Systemebene nicht gelöst
+und es ist notwendig entweder das Supersystem kontaktieren; entweder auf die
+Mikroebene gehen - zu Subsystemen, wo PU als Widerspruch der Anforderungen (
+PT ) umformuliert wird , um zu beseitigen Das ist auch möglich, auf Tricks
+zurückzugreifen.
+
+Erklärung. PU und PT\footnote{Die Begriffe PU und PT wurden 2013 vom Autor
+  eingeführt und in praktischen Übungen in erfolgreich getestet SPb MOU TRIZ.}
+werden als allgemeinere Begriffe für verwendet Widersprüche anstelle von TP
+und FP in der klassischen TRIZ übernommen. Eine solche Bezeichnungen sind auch
+universeller und daher anwendbar in verschiedene Tätigkeitsbereiche (und nicht
+nur in der Technologie), sondern auch reflektieren das Wesen der Widersprüche
+dieser Art: einschließlich Konflikte zwischen, Dementsprechend Bedingungen.
+
+\section*{Vorteile und Super-Effekte}
+Eingereicht Möglichkeit Modellieren Konflikte besitzt Die folgenden
+Hauptvorteile:
+\begin{itemize}
+\item Die Ressourcen des Systems und funktionale Ansätze werden verwendet:
+implementierte ihre Synthese und Instrumentalisierung.
+\item Überwindung psychologischer Barrieren bei der Beschreibung der Regeln
+  Gebäudemodelle.
+\item Einzigartigkeit und Universalität der Begriffe sowie Klarheit Verwalten
+  der Regeln zum Erstellen und Transformieren von Modellen - fertig Auf diese
+  Weise können Sie komplexe Konflikte simulieren, die in auftreten jedes
+  Tätigkeitsfeld.
+\item Der Ort der Empfänge wurde festgelegt und ihre Möglichkeiten erweitert
+  Design (siehe Präsentation).
+\item Es wurde ein bedeutender Schritt in Richtung eines neuen Verständnisses
+  der Essenz unternommen.  erfinderische Werkzeuge und ihre integrierte
+  Verwendung.
+\end{itemize}
+
+\section*{Literatur}
+\begin{itemize}
+\item[1.] G. Altschuller, Ch. Gadzhiev,
+  I. Flikstein. \foreignlanguage{russian}{Введение в вепольный анализ}. –
+  Baku, OLMI, 1973.
+\item[2.] G.S. Altschuller, B.L. Zlotin, A.V. Zusman, V.I. Filatov.
+  \foreignlanguage{russian}{Поиск новых идей: от озарения к технологии (Теория
+    и практика решения изобретательских задач). Кишинев: Картя Молдовеняскэ,
+    1989}.
+\item[3.] G.I. Ivanonv. \foreignlanguage{russian}{Формулы творчества, или Как
+  научиться изобретать: Кн.  для учащихся ст. классов. – М.: Просвещение},
+  1994.
+\item[4.] V.N. Glasunov. \foreignlanguage{russian}{Параметрический метод
+  разрешения противоречий в технике (методы анализа проблем и поиска решений в
+  технике) – М.: «Речной транспорт», 1990}.
+\item[5.] M.S. Rubin. \foreignlanguage{russian}{Элепольный анализ как развитие
+  вепольного и функционального анализа в ТРИЗ}. URL:
+  \url{http://triz-summit.ru/file.php/id/f5776/name/Элепольный-Рубин-5.pdf}
+\item[6.] V. Petrov, G. Voronov. \foreignlanguage{russian}{Новый подход к
+  вепольному (структурному) анализу}. URL:
+  \url{http://triz-summit.ru/file.php/id/f5677/name/Petrov%20V.%20Voronov%20G.%20A%20new%20approach%20to%20Su-Field%20_structu.pdf} 
+\item[7.] Sara Greenberg. Introducing substance-field, as a method for
+  studying living systems. URL:
+  \url{http://triz-summit.ru/file.php/id/f5669/name/Introducing%20substance-field%20as%20a%20method%20for%20studying%20liv.pdf}
+\item[8.] Yu. Belski. \foreignlanguage{russian}{Инструменты ТРИЗ для ХХI века:
+  современный вещественно-полевой анализ}. URL:
+  \url{http://triz-summit.ru/file.php/id/f4543/name/SuFieldBelskiPart1-1-RUSS-BK-1.doc}
+\item[9.] B.I. Goldovski, M.I. Wainerman.
+  \foreignlanguage{russian}{Рациональное творчество. О направленном поиске
+    новых технических решений. – М.: «Речной транспорт», 1990. (Методы анализа
+    проблем и поиска решений в технике).}
+\item[10.] V.A. Koroliov.  \foreignlanguage{russian}{Веполи: 20 лет спустя
+  (2)}.  URL: \url{http://coroliov.trizinfor.org/works/ws6.html}
+\item[11.] N.B. Feygenson.  \foreignlanguage{russian}{Вепольной анализ и его
+  аналоги – прагматические аспекты}. URL:
+  \url{http://triz-summit.ru/file.php/id/f5678/name/TDS-2013_Feygenson_Su_Field_notes.pdf}
+\item[12.] S.A. Logvinov. \foreignlanguage{russian}{Проблемы обновления
+  системы стандартов и вепольного анализа}. URL:
+  \url{http://triz-summit.ru/file.php/id/f5679/name/Логвинов%20-%20статья%20ТРИЗ-Саммит%202013.pdf}
+\item[13.] V.A. Koroliov. \foreignlanguage{russian}{Веполи: 20 лет спустя}.
+  URL: \url{http://coroliov.trizinfor.org/data/c82.htm}
+\item[14.] G.S. Altschuller. \foreignlanguage{russian}{Маленькие необъятные
+  миры: стандарты на решение изобретательских задач // В сб. "Нить в
+  лабиринте". – Петрозаводск: Карелия, 1988}. – pp 165-230. URL:
+  \url{http://www.altshuller.ru/triz/standards.asp}
+\item[15.] Yu.P. Salamatov. \foreignlanguage{russian}{Как стать изобретателем:
+  пособие для учителя. – 2-е изд., дораб. – М.: Просвещение}, 2006.
+\item[16.] K. Marx. Kapital, Band 1, Kap. 13. Maschinerie und große Industrie.
+  Entwicklung der Maschinerie.
+\item[17.] A.I. Uiomov. \foreignlanguage{russian}{Вещи, свойства и
+  отношения. – М.: Изд-во Академии наук,} 1963.
+\end{itemize}
+
+\end{document}
