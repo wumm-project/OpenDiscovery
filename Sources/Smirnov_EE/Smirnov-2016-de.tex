@@ -1,18 +1,22 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{od}
 \usepackage[utf8]{inputenc}
-\usepackage[russian,main=ngerman]{babel}
+\usepackage[main=ngerman,russian]{babel}
 
 \title{Element-Funktions-Modelle\\ in der Konfliktmodellierung: EFM.K.}
 
 \author{Evgeni E. Smirnov, St. Petersburg}
-\date{1983}
+\date{2016}
 
 \begin{document}
 \maketitle
 \begin{quote}
   Original: \foreignlanguage{russian}{Элементно-функциональное моделирование
-    конфликтов: ЭФМ.К}.
+    конфликтов: ЭФМ.К}. In: \foreignlanguage{russian}{Три поколения ТРИЗ.
+    Материалы ежегодной научно-практической конференции, посвященной 90-летию
+    Г.С. Альтшуллера} (Drei Generationen der TRIZ. Materialien der jährlichen
+  wissenschaftlich-praktischen Konferenz, dem 90. Geburtstag von
+  G.S. Altschuller gewidmet), St. Petersburg 2016.
 
   Quelle: \url{https://cloud.mail.ru/public/4a7c/WX37Yg1JB}
   
@@ -21,29 +25,30 @@
 \begin{abstract}
   In diesem Artikel geht es um die Verbesserung einer der am meisten
   unterschätzten Methoden der Konfliktmodellierung: Die SuField-Modellierung.
-  Es werden Fragen der Erhöhung der Instrumentalität von Methoden der
-  Konfliktmodellierung betrachtet.
+  Es werden Fragen der Erhöhung der Instrumentalität von
+  Konfliktmodellierungsmethoden betrachtet.
 
-  Es werden Empfehlungen zur Steigerung der Wirksamkeit von Techniken gegeben
-  und ihr Platz bei der Lösung erfinderischer Probleme aufgezeigt.
+  Es werden Empfehlungen zur Steigerung der Effektivität von Prinzipien
+  gegeben und ihr Platz bei der Lösung erfinderischer Probleme aufgezeigt.
 
-  Schlüsselwörter: TRIZ, Methodologie, SF-Modelle, SF-Analyse,
+  \emph{Schlüsselwörter:} TRIZ, Methodologie, SF-Modelle, SF-Analyse,
   Funktionalanalyse, Funktionale Systeme, EF-Modellierung von Konflikten,
-  EFM.K, Techniken, Widersprüch"|liche Anforderungen.
+  EFM.K, Prinzipien, widersprüch"|liche Bedingungen (WB), widersprüchliche
+  Anforderungen (WA).
 \end{abstract}
 
 \section*{Einführung}
 
 Es wird ein kurzer Überblick über die Grundprinzipien der EF-Modellierung
-gegeben, die nicht nur die SF-Analyse ablöst, sondern eine verbindende
-Methode für andere Instrumente ist, die im Rahmen der TRIZ angewendet werden. 
+gegeben, die nicht nur die SF-Analyse ablöst, sondern auch eine verbindende
+Methode für andere Werkzeuge ist, die im Rahmen der TRIZ angewendet werden. 
 
-Ziel dieser Arbeit ist es, den aktuellen Stand der Dinge in der Verbesserung
-der SF-Analyse zu beleuchten, Vorschläge für deren radikale Veränderung sowie
-auch zur Erhöhung der Effizienz der Anwendung anderer TRIZ-Tools am Beispiel
-von Konfliktlösungstechniken zu unterbreiten.
+Ziel dieser Arbeit ist es, die aktuelle Lage im Bereich der Verbesserung der
+SF-Analyse zu beleuchten und Vorschläge für deren radikale Veränderung sowie
+auch zur Erhöhung der Effektivität der Anwendung anderer TRIZ-Werkzeuge am
+Beispiel von Konfliktlösungsprinzipien zu unterbreiten.
 
-\section*{Hintergrund}
+\section*{Voraussetzungen}
 
 Heutzutage beschränkt sich die SF-Analyse meist auf den Einsatz in Schulungen.
 Ihre praktische Anwendung wird durch eine Reihe von wesentlichen Nachteilen
@@ -53,27 +58,27 @@ was sich hinter diese Art der Analyse verbirgt. Hier nur einige Definitionen.
 Eine der ersten Definitionen eines SF-Modells wurde in [1] gegeben: \emph{„Ein
   SF-Modell ist ein minimal vollständiges Modell eines idealen technischen
   Systems.“} Hier kommen die folgenden Begriffe vor: Feld (F), Substanz (S)
-und Medium (M). Als Variante wurde ein SF-Modell mit einem Feld (F) und zwei
-Substanzen (2S) betrachtet, von denen die eine jeweils das Medium in Bezug auf
-die andere ist. Diese letzte Variante, mit den zwei Substanzen "Werkzeug" und
-"Produkt", wird auch heute noch verwendet. Jedoch ist das Produkt nach
-modernen Vorstellungen kein Teil eines funktionalen Systems (FS). Allerdings
+und Mittel (M). Als Variante wurde ein SF-Modell mit einem Feld (F) und zwei
+Substanzen (2S) betrachtet, von denen die eine jeweils Mittel in Bezug auf die
+andere ist. Diese letzte Variante, mit den zwei Substanzen \emph{Werkzeug} und
+\emph{Produkt}, wird auch heute noch verwendet. Jedoch geht das Produkt nach
+modernen Vorstellungen nicht in ein funktionales System (FS) ein. Allerdings
 haben sich die Definitionen dabei nur unwesentlich geändert, zum Beispiel:
 \emph{„Ein SF-Modell ist ein minimales Modell eines technischen Systems: es
-  umfasst das Produkt, das Werkzeug und die Energie (Feld), die notwendig ist
+  umfasst das Produkt sowie Werkzeug und Energie (Feld), die notwendig sind
   für die Einwirkung des Werkzeugs auf das Produkt“} [2, S. 91].
 
-Damit wird für eine SF-Analyse auch heute noch das Dreieck „2S+1F“
-konstruiert, das von Lösern sogar dann verwendet wird, wenn Aufgaben nicht zu
-diesem Modell passen.
+Damit wird für eine SF-Analyse auch heute noch das sogenannte Dreieck „2S+1F“
+konstruiert, das von Bearbeitern sogar dann verwendet wird, wenn Aufgaben
+nicht zu diesem Modell passen.
 
-Hier ist ein Beispiel für eine weitere Definition, wo erstens nicht klar ist,
-auf der Grundlage welcher Regel das Vorhandensein des herausgearbeiteten
+Hier ein Beispiel für eine weitere Definition, wo erstens nicht klar ist, auf
+der Grundlage welcher Regel das Vorhandensein des herausgearbeiteten
 Widerspruchs vorgeschlagen wird, und zweitens die mentale Trägheit des Denkens
-„eingeschaltet“ wird und klar für die Konstruktion eines Dreiecks nach der
-Formel „2S+1F“ plädiert wird: \emph{„Die SF-Analyse wird in der operativen
-  Zone des Auftretens der Aufgabe durchgeführt, d.h. dort, wo der physische
-  Widerspruchaufgedeckt wurde. Es müssen an jenem Ort unbedingt zwei
+„eingeschaltet“ und klar für die Konstruktion eines Dreiecks nach der Formel
+„2S+1F“ plädiert wird: \emph{„Die SF-Analyse wird in der operativen Zone des
+  Auftretens der Problemstellung durchgeführt, d.h. dort, wo der physische
+  Widerspruch aufgedeckt wurde. Es müssen an jenem Ort unbedingt zwei
   Substanzen S1 und S2 vorhanden sein, die nützlich oder schädlich miteinander
   interagieren, und das Feld F, das diese beiden Substanzen verbindet“} [3,
   S. 89].
@@ -90,58 +95,60 @@ neuen Versionen haben keine massenhafte Verbreitung erfahren.
 
 \section*{Ein kurzer Überblick über Arbeiten zur Verbesserung der SF-Analyse} 
 
-In letzter Zeit wurden nicht viele Arbeiten zur SF-Analyse und zum System der
+In letzter Zeit wurden nur wenige Arbeiten zur SF-Analyse und zum System der
 Standards veröffentlicht. Der größte Teil von ihnen wurden auf dem
-Entwicklergifel 2013 im Thema "Weiterentwicklung der SF-Analyse" vorgestellt.
+Entwicklergipfel 2013 unter dem Thema „Weiterentwicklung der SF-Analyse“
+vorgestellt.
 
-Alle Artikel enthalten Auflistungen sowohl allgemeiner Schwachstellen dieses
-Instruments als auch Nachteile, welche die Lösung spezifischer Probleme
+Alle Aufsätze enthalten Auflistungen sowohl allgemeiner Schwachstellen dieses
+Werkzeugs als auch Nachteile, welche die Lösung sehr konkreter Probleme
 behindern.  So werden in den Arbeiten [5, 6] Varianten der Modifikation der
-klassischen SF-Analyse für Informationssysteme vorgestellt:
+klassischen SF-Analyse in der Anwendung auf Informationssysteme vorgestellt:
 \begin{itemize}
 \item Der Begriff „Substanz“ wird durch „Element“ ersetzt und der Begriff
   „EleFeld“ verwendet, und es wurde auch versucht, dies mit der
-  Funktionsanalyse zu kombinieren: \emph{„Die Gemeinsamkeit eines EleFelds mit
-    einem Funktionsmodell ermöglicht es, Werkzeuge der Funktionsanalyse in die
-    EleFeld-Analyse zu übertragen. Wir nennen diese Art der Analyse der
-    Funktionsfeldanalyse von Systemen“}; und mit funktional-orientierter Suche
-  (FOS).  Allerdings wird dann im Vergleich zu „Mengen“ die folgende Aussage
-  getroffen: \emph{„sowohl in der Menge als auch im EleFeld können Funktionen
-    vorhanden sein oder auch nicht“} [5];
+  Funktionsanalyse -- \emph{„Die Gemeinsamkeit eines EleFelds mit einem
+    Funktionsmodell ermöglicht es, Werkzeuge der Funktionsanalyse in die
+    EleFeld-Analyse zu übertragen. Wir nennen diese Art der Analyse
+    Funktionsfeldanalyse von Systemen“} -- und mit funktional-orientierter
+  Suche (FOS) zu kombinieren.  Allerdings wird dann im Vergleich zu „Mengen“
+  die folgende Aussage getroffen: \emph{„sowohl in der Menge als auch im
+    EleFeld können Funktionen vorhanden sein oder auch nicht“} [5].
 \item Das SF-Modell wurde in EL-Action umbenannt (genau so -- auf Englisch):
-  Element-Wirkung und es wird eine weitere Komponente eingeführt -- Knowledge
+  Element-Aktion, und es wird eine weitere Komponente eingeführt -- Knowledge
   (Wissen): \emph{„Ein Modell, das Elemente, Aktionen und Wissen umfasst, wird
-    EAK genannt.  Die Methodik der Analyse und Transformation von EAK wird als
-    EAK-Analyse bezeichnet.“} Ebenfalls werden Besonderheiten der Anwendung
-  der EAK-Analyse für Infomationsverarbeitungssysteme berücksichtigt:
-  \emph{„In diesen Systemen wird ein Element als Daten dargestellt (Data --
-    D), eine Aktion ist eine Funktion (Function -- F) und Wissen (Knowledge --
-    K). Das Modell, das Data, Function, Knowledge umfasst, nennen wir DFK.
-    Die Methodik der Analyse und Transformation von DFK-Modellen wird als
-    DFK-Analyse bezeichnet“} [6].
+    EAK-Modell genannt.  Die Methodik der Analyse und Transformation von
+    EAK-Modellen wird als EAK-Analyse bezeichnet.“} Ebenfalls werden
+  Besonderheiten der Anwendung der EAK-Analyse für
+  Infomationsverarbeitungssysteme berücksichtigt: \emph{„In diesen Systemen
+    werden Elemente als Daten dargestellt (Data -- D), eine Aktion ist eine
+    Funktion (Function -- F) und Wissen (Knowledge -- K). Das Modell, das
+    Data, Function, Knowledge umfasst, nennen wir DFK-Modell.  Die Methodik
+    der Analyse und Transformation von DFK-Modellen wird als DFK-Analyse
+    bezeichnet“} [6].
 \end{itemize}
 In [7] wurde eine Variante der Modellierung von Interaktionen in biologischen
-(lebende) Systeme betrachtet, ohne über die klassischen Vorstellungen einer
-SF-Analyse hinauszugehen.
+(lebenden) Systemen betrachtet, allerdings ohne über die Rahmen klassischer
+Vorstellungen einer SF-Analyse hinauszugehen.
 
-In der Rezension [8] des Buches wird über die Anpassung der SF-Analyse und des
-Systems der Standards für die schnelle Ausbildung von Ingenieuren geschrieben
--- hier werden der Einfachheit halber Transformationen der standardmäßigen
-SF-Formel nur mit 5 Regeln ausgeführt, die aus den 76 Standards ausgewählt
-wurden, wahrscheinlich basierend auf der Häufigkeit ihrer Verwendung. Darüber
-hinaus untersucht der Autor von [8] die Variante, ein System als eine
-Ansammlung von Feldern und Substanzen zu fassen, was vollständig analog zur
-strukturell-energetischen Synthese von Systemen aus einer früheren Arbeit ist
-[9, S. 73].
+In der Übersicht des Buches [8] ist die Rede von einer Anpassung der
+SF-Analyse und des Systems der Standards für die schnelle Ausbildung von
+Ingenieuren -- hier werden der Einfachheit halber Transformationen der
+Standard-SF-Formel nur mit 5 Regeln ausgeführt, die aus den 76 Standards
+ausgewählt wurden, wahrscheinlich basierend auf der Häufigkeit ihrer
+Verwendung. Darüber hinaus untersucht der Autor von [8] die Variante, ein
+System als eine Ansammlung von Feldern und Substanzen zu fassen, was
+vollständig analog zur strukturell-energetischen Synthese von Systemen aus
+einer früheren Arbeit ist [9, S. 73].
 
 Im Aufsatz [10] über SF-Modelle wird die Anwendung eines Prozessansatzes
-vorgeschlagen, in dem die Begriffe "Substanzen" und "Feldern" durch
-"Ressource" ersetzt werden. Und am Ende schlägt der Autor ähnliche
+vorgeschlagen, in dem die Begriffe „Substanzen“ und „Feldern“ durch
+„Ressource“ ersetzt werden. Am Ende schlägt der Autor ähnliche
 Prozessdiagramme vor: \emph{„1. In allen betrachteten Fällen ist dies in
-  keiner Weise weniger heuristisch als das klassische SF-Design. 2.  Eine
-  Vielzahl von Proto-SF-Schemata der Aufgabe und damit Subjektivität lassen
-  sich so vermeiden. 3.  Es werden die klassische SF-Modellierung, die
-  funktional-ideale Modellierung und ein Prozessansatz als solcher logisch
+  keiner Weise weniger heuristisch als das klassische SF-Schema. 2.  Es laasen
+  sich so eine Vielzahl von Proto-SF-Schemata der Aufgabe und damit
+  Subjektivität vermeiden. 3.  Es werden die klassische SF-Modellierung, die
+  funktional-ideale Modellierung und der Prozessansatz als solcher logisch
   vereinigt. 4. Es wird vorgeschlagen, den Begriff „SF-Analyse“ durch etwas
   wie „System-Prozess-Modellierung“ (SPM) zu ersetzen.“} Allerdings hat auch
 eine solche Darstellung der Methode der Konfliktmodellierung keine Fortsetzung
@@ -151,7 +158,7 @@ In anderen Arbeiten beschränken sich die Autoren hauptsächlich auf die
 Auflistung von Mängeln der klassischen SF-Analyse und auf einzelne
 Verbesserungsvorschläge. Insbesondere werden Wünsche zur Verbesserung der
 Visualisierung des Prozesses der strukturellen und dynamischen Beschreibung
-(technische) Systeme geäußert, was in erster Linie mit der Unvollkommenheit
+(technischer) Systeme geäußert, was in erster Linie mit der Unvollkommenheit
 der grafischen Mittel der SF-Analyse verbunden ist. Zu diesem Zweck wird
 vorgeschlagen, eine Leistungsbeschreibung für entsprechende Forschungsarbeiten
 zusammenzustellen [11].
@@ -160,14 +167,14 @@ Es wird empfohlen, die SF-Analyse und die funktionale Wertanalyse (FWA) [11,
   12] zu vereinigen, indem ihre starken Seiten kombiniert und auch die
 Axiomatik dieses Werkzeugs mit der Axiomatik der Systemanalyse und der TRIZ
 insgesamt abgeglichen werden [13]. Aber auch diese Empfehlungen haben keine
-wirkliche Umsetzung gefunden.
+wirkliche Umsetzung erfahren.
 
 Darüber hinaus wird vorgeschlagen, das Studium der SF-Analyse im allgemeinen
 TRIZ-Kurs zu reduzieren [11] oder sogar auf die Entwicklung der SF-Analyse und
 des Systems der Standards als eigenständiges Instrument ganz zu verzichten
 [12].
 
-\section*{Liste der Hauptnachteile verschiedener Versionen der Analoga der
+\paragraph{Liste der Hauptnachteile verschiedener Versionen der Analoga der
   SF-Analyse:}
 \begin{itemize}
 \item Es gibt immer noch eine Vermischung der Konzepte „System“ und „Konflikt“
@@ -176,12 +183,12 @@ des Systems der Standards als eigenständiges Instrument ganz zu verzichten
   Systemen ist nicht vollständig realisiert, auch ist ein funktionaler Ansatz
   so gut wie nicht vertreten.
 \item Die Begriffe „Substanz“ und „Feld“, wenn sie auch durch andere ersetzt
-  werden, dann eher zu allgemein [10] oder umgekehrt - hochspezialisiert [6];
+  werden, sind eher zu allgemein [10] oder umgekehrt -- hochspezialisiert [6].
 \item Varianten zur Ableitung von Lösungsbildern aus den konstruierten
-  Modellen fehlen entweder oder werden auf die Verwendung des Systems der
-  Standards reduziert: ein wenig modifiziert [5, 9] oder signifikant reduziert
-  [8], d.h. sie basieren auf dem gleichen Prinzip wie die klassische
-  SF-Analyse.
+  Modellen fehlen entweder ganz oder werden auf die Anwendung des Systems der
+  Standards reduziert -- ein wenig modifiziert [5, 9] oder signifikant
+  reduziert [8] --, d.h. sie basieren auf dem gleichen Prinzip wie die
+  klassische SF-Analyse.
 \item Keine der vorgeschlagenen Modellierungsvariationen schlägt eine
   Visualisierung von Widersprüchen vor.
 \end{itemize}
@@ -191,7 +198,7 @@ des Systems der Standards als eigenständiges Instrument ganz zu verzichten
 Bei der Lösung von Problemen durch die klassische SF-Analyse kann man nicht
 immer den gewünschten Standard verwenden oder einen geeigneten auswählen,
 besonders, wenn er keine grafische Interpretation hat.  Zum Beispiel ist die
-Aufgabe, eine Nadel im Heuhaufen zu finden, allgemein bekannt.  In de n
+Aufgabe, eine Nadel im Heuhaufen zu finden, allgemein bekannt.  In den
 meisten Fällen wird sie mit der SF-Syntheseregel (Standard 1.1.1 [14]) gelöst,
 in der es zwei Substanzen -- Nadel und Heu -- und kein Feld gibt [3, S. 90].
 Es scheint, dass eine solche Konstruktion des Modells offensichtlich ist und
@@ -204,64 +211,64 @@ Anwenden eines Feldes lösen?
 Eine der Hauptursachen für solche Modellierungsfehler ist das Fehlen
 funktioneller Komponenten in der SF-Analyse. Dies spiegelt sich aber in den
 Übersichten der vorgestellten Arbeiten nicht gebührend wider. Der zweite Grund
-ist die schlechte Anwendung eines systematischen Ansatzes, was am ehesten
-damit verbunden ist, dass die Modellierung von Systemen (funktionaler Systeme
-oder klassisch -- technischer Systeme) nur beschreibenden Charakter hat.
+ist die schlechte Anwendung eines systemischen Ansatzes, was am ehesten damit
+verbunden ist, dass die Modellierung von Systemen (funktionaler Systeme oder
+klassisch -- technischer Systeme) nur beschreibenden Charakter hat.
 
-Ein Versuch, einen systematischen Ansatz anzuwenden, wurde in [9, S. 82] bei
-der Entwicklung einer strukturell-energetischen Synthese von Systemen
+Ein Versuch, einen systemischen Ansatz anzuwenden, wurde in [9, S. 82] bei der
+Ausarbeitung einer strukturell-energetischen Synthese von Systemen
 unternommen. Aber solche „Energieketten“, die aus elementaren Strukturgliedern
-aufgebaut sind, auch wenn sie ein wichtiger Schritt zur Verbesserung der
-Effizienz der SF-Analyse sind, enthalten auch wesentliche Mängel, die der
-weiteren Verbreitung dieser Methode im Wege stehen, nämlich:
+aufgebaut sind, auch wenn sie einen wichtigen Schritt zur Verbesserung der
+Effizienz der SF-Analyse darstellen, enthalten wesentliche Mängel, die der
+weiteren Verbreitung dieser Methode im Wege stehen:
 \begin{itemize}
-\item Als Elementarkomponenten werden immer noch dieselben „Stoffe“ und
+\item Als elementare Komponenten werden immer noch dieselben „Stoffe“ und
   „Felder“ verwendet, womit die Prinzipien der Interaktion aus der SF-Analyse
   entlehnt werden.
-\item Der gerichtete Energiefluss ist durch physikalische Effekte begrenzt:
-  \emph{„Substanz-Feld-Paare, mit denen Systeme gesteuert werden können, sind
-    in der Natur viele bekannt. Insbesondere können ferromagnetische
-    Substanzen oder Ferropartikel mit magnetischen oder elektromagnetischen
-    Feldern verwendet werden; ebenso elektrisches Feld und elektrorheologische
-    Flüssigkeiten (d.h.  Gemische, die ihre Viskosität unter elektrischem
-    Einfluss ändern Felder)”}.
-\item Das Prinzip der Vollständigkeit von Systemen, das 4 Arten von
-  elementaren Strukturgliedern einschließt, und in der Beschreibung der
-  Methode vorgestellt wird, wird nicht in vollem Umfang in der Konstruktion
-  von Modellen verwendet, was zum Auslassen einer Reihe möglicher Richtungen
-  der Transformation dieser Modelle führt.
+\item Der steuernde Energiefluss wird auf physikalische Effekte beschränkt:
+  \emph{„Substanz-Feld-Paare, welche die Steuerbarkeit von Systemen
+    ermöglichen, sind in der Natur viele bekannt. Insbesondere können
+    ferromagnetische Substanzen oder Ferropartikel mit magnetischen oder
+    elektromagnetischen Feldern verwendet werden; ebenso elektrische Felder
+    oder elektrorheologische Flüssigkeiten (d.h. Gemische, die ihre Viskosität
+    unter dem Einfluss elektrischer Felder ändern)”}.
+\item Das Prinzip der Vollständigkeit von Systemen, das vier Arten von
+  elementaren Strukturgliedern umfasst und in der Beschreibung der Methode
+  vorgestellt wird, wird nicht in vollem Umfang in der Konstruktion von
+  Modellen verwendet, was zum Auslassen einer Reihe möglicher Richtungen der
+  Transformation dieser Modelle führt.
 \item Das „Produkt“ wird als Empfänger des Feldes betrachtet -- in „sich
-  ändernden“ Systemen -- oder als dessen Transformator - in "messenden"
+  ändernden“ Systemen -- oder als dessen Transformator - in „messenden“
   Systemen, aber nirgendwo wird es zu einem vollständigen Funktionssystem
-  ergänzt, analog zum „Werkzeug“, was den Anwendungsbereich derartiger Modelle
-  erheblich begrenzt und das Suchfeld möglicher Lösungen einschränkt -- in
-  diesem Fall -- aufgrund nicht genutzter Ressourcen des „Produkts“.
+  ergänzt in Analogie zum „Werkzeug“, was den Anwendungsbereich derartiger
+  Modelle erheblich begrenzt und das Suchfeld möglicher Lösungen einschränkt
+  -- in diesem Fall -- aufgrund nicht genutzter Ressourcen des „Produkts“.
 \item Es fehlt Funktionalität: Die Interaktionen elementarer Kettenglieder
-  wird nicht konkretisiert, sogar wenn eines von ihnen das „Produkt“ ist.
+  werden nicht konkretisiert, sogar wenn eines von ihnen das „Produkt“ ist.
 \end{itemize}
-Was muss getan werden? Für den Anfang die meisten oben erwähnten Nachteile
-beseitigen. Insbesondere muss man sich von der stereotypen Beschreibung des
-Modells als Dreiecks "2S+1F" trennen, das Gebiet der Modellierung -- die
-Konfliktsituation -- eindeutig bestimmen und, bitteschön, das Allerwichtigste
--- Begriffe und Modelle anwenden, die aus bewährten Ansätzen bekannt sind: dem
-systemischen und dem funktionalen.
+Was muss getan werden? Für den Anfang müssen die meisten oben erwähnten
+Nachteile beseitigt werden. Insbesondere muss man sich von der stereotypen
+Beschreibung des Modells in der Form eines Dreiecks „2S+1F“ lösen, das Gebiet
+der Modellierung -- die Konfliktsituation -- eindeutig bestimmen und,
+bitteschön, das Allerwichtigste -- die Begriffe und Modelle anwenden, die aus
+bewährten Ansätzen bekannt sind: dem systemischen und dem funktionalen.
 
-In der Praxis kommt der systematische Ansatz daher mit dem funktionalen, weil
-Objekte (Geräte, Prozesse) der realen Welt, die von Menschen benutzt werden,
-jedes seinen eigenen Zweck hat, der durch den \textbf{Funktionsbegriff}
-ausgedrückt wird.  Somit werden Objekte als \textbf{funktionale Systeme} (FS)
-modelliert.  In der TRIZ besteht ein funktionales System aus einer Reihe von
-Teilen.  Zum Beispiel wird postuliert in [15, S. 94-97] der Autor das
-obligatorische Vorhandensein von vier Teilen in einem technischen System (TS):
-Antrieb (A), Transmission (T), Steuerungsorgan (S) und Arbeitskörper (W). Die
-Energiequelle (E) fällt hier entweder mit dem Antrieb zusammen oder wird aus
-dem System herausgenommen, wenn die Energie von außen kommt, auch von einem
-Menschen.
+In der Praxis wird der systemische Ansatz zusammen mit dem funktionalen
+angewendet, weil Objekte (Geräte, Prozesse) der realen Welt, die von Menschen
+benutzt werden, jedes seinen eigenen Zweck hat, der durch den
+\textbf{Funktionsbegriff} ausgedrückt wird.  Somit werden Objekte als
+\textbf{funktionale Systeme} (FS) modelliert.  In der TRIZ besteht ein
+funktionales System aus einer Reihe von Teilen.  Zum Beispiel postuliert der
+Autor in [15, S. 94-97] das obligatorische Vorhandensein von vier Teilen in
+einem technischen System (TS): Antrieb (A), Transmission (T), Steuerungsorgan
+(SO) und Arbeitsorgan (AO). Die Energiequelle (EQ) fällt hier entweder mit dem
+Antrieb zusammen oder wird aus dem System herausgenommen, wenn die Energie von
+außen kommt, darunter auch von einem Menschen.
 
-Und nun ist es erforderlich, von der beschreibenden Natur der Modellierung von
-Objekten als FS zu einer Instrumentalversion überzugehen. Aber dafür muss man
-besser verstehen, was die ausgewählten Teile (E, A, T, S, W) genau darstellen
-und welche Rolle sie für die Funktionsweise des Systems spielen.
+Und nun ist es erforderlich, vom beschreibenden Charakter der Modellierung von
+Objekten als FS zu einer instrumentellen Variante überzugehen. Aber dafür muss
+man besser verstehen, was die ausgewählten Teile (EE, A, T, SO, AO) genau
+darstellen und welche Rolle sie für die Funktionsweise des Systems spielen.
 
 K. Marx schreibt zu diesem Thema [16]: „Alle entwickelte Maschinerie besteht
 aus drei wesentlich verschiednen Teilen, der Bewegungsmaschine, dem
@@ -281,18 +288,18 @@ verändert.“
 
 Bei der Analyse des vorhandenen Instrumentariums und seiner Anwendungen auf
 die Lösung von Aufgaben wurde offensichtlich, dass die Teile des Systems
-Energiewandler sind (genauer gesagt -- deren Charakteristik), welche der
-Arbeitskörper benötigt, um den Zweck des Systems (die Funktion) zu
+Energiewandler sind (genauer gesagt -- der energetischen Charakteristik),
+welche das Arbeitsorgan benötigt, um den Zweck des Systems (die Funktion) zu
 realisieren:
 \begin{itemize}
 \item Umwandler der ersten Art ändern die Energiequalität, d.h. deren Typ.
 \item Umwandler der zweiten Art ändern die Menge und raum-zeitliche
   Organisation (Intensität, Richtung, Anwendungsort) des Energieflusses.
 \end{itemize}
-In Gänze gesprochen, um zu verstehen, was jedes Teil des Systems (als
-Umwandler) darstellt, ist es bequemer, ein solches Konzept wie
-\textbf{Element} zu verwenden, das ausgedrückt werden kann als
-\begin{itemize}
+Um zu verstehen, was jedes Teil des Systems (als Umwandler) darstellt, ist es
+also einfacher, ein Konzept wie \textbf{Element} zu verwenden, das ausgedrückt
+werden kann durch
+\begin{itemize}[noitemsep]
 \item[1.] Substanz,
 \item[2.] Energie,
 \item[3.] Information.
@@ -303,13 +310,13 @@ Von daher ist es offensichtlich, dass das \textbf{funktionale System bestimmt
 \textbf{externen Funktion}, d.h. der Fähigkeit, eine Änderung eines Merkmals
 der Elemente anderer Systeme zu bewirken: Zustände, Eigenschaften, Parameter.
 
-Um die Arbeitsfähigkeit des Systems zu gewährleisten, ist es erforderlich, das
-dieses über ein ausführendes Element verfügt sowie die Fähigkeit, dass dieses
-Element Energie in ausreichendem Umfang und geforderter Form für die
-Realisierung der gegebenen Funktion empfangen kann.
+Um die Arbeitsfähigkeit des Systems zu gewährleisten, ist es erforderlich,
+dass dieses über ein ausführendes Element verfügt sowie die Fähigkeit, dass
+dieses Element Energie in ausreichendem Umfang und geforderter Form für die
+Realisierung der gegebenen Funktion erhält.
 
 In den meisten Fällen muss das System mindestens zwei Elemente enthalten:
-Arbeitskörper und Energiequelle. Bei Bedarf werden zusätzliche Energiewandler
+Arbeitsorgan und Energiequelle. Bei Bedarf werden zusätzliche Energiewandler
 sowie ein Minimalsystem der Steuerung eingeführt, d.h. die Möglichkeit, die
 Energieversorgung zum Arbeitsorgan ein- und auszuschalten.
 
@@ -323,7 +330,24 @@ kann als \textbf{Element-Funktions-Modell} oder \textbf{EFM.K} bezeichnet
 werden.
 
 \begin{center}
-  Bild einfügen\\ Variante der Darstellung eines EFM
+    \begin{tikzpicture}
+      \draw (0,0)--(4,0)--(4,1)--(0,1)--(0,0) ; 
+      \draw (6,0)--(10,0)--(10,1)--(6,1)--(6,0) ;
+      \node[draw,text width=1cm,align=center] (EQ1) at (1,.5) {EQ1}; 
+      \node[draw,text width=1cm,align=center] (AO1) at (3,.5) {AO1}; 
+      \node[draw,text width=1cm,align=center] (AO2) at (7,.5) {AO2}; 
+      \node[draw,text width=1cm,align=center] (EQ2) at (9,.5) {EQ2};
+      \draw[->,line width=2pt] (EQ1)--(AO1); 
+      \draw[->,line width=2pt] (EQ2)--(AO2); 
+      \draw[->,line width=2pt] (AO1)--(AO2);
+      \node[text width=1cm] at (1,-.3) {E1.2}; 
+      \node[text width=1cm] at (3,-.3) {E1.1}; 
+      \node[text width=1cm] at (7,-.3) {E2.1}; 
+      \node[text width=1cm] at (9,-.3) {E2.2};
+      \node[text width=1cm] at (2,1.5) {FS1};
+      \node[text width=1cm] at (8,1.5) {FS2};
+      \node[text width=2cm,align=center] at (5,.8) {Funktion};
+    \end{tikzpicture}\\ Variante der Darstellung eines EFM
 \end{center}
 Somit sind zwei Grundbausteine identifiziert, aus denen jedes funktionale
 System besteht: 1) Ein Element als Energieumformer und 2) eine Funktion.
@@ -334,10 +358,10 @@ diejenigen Elemente berücksichtigt, die an den betrachteten Interaktionen
 beteiligt sind, und zweitens werden die Grenzen der Elemente sowie die Grenzen
 des Systems basierend auf den Aufgabenbedingungen und dem gesunden
 Menschenverstand festgelegt. Das heißt, wenn wir Komponenten verbessern, zum
-Beispiel eines elektrischen Generators, können wir alle als einzelne Elemente
-mit dem erforderlichen Detaillierungsgrad betrachten. Aber wenn der Generator
-die elektrische Energiequelle des Systems ist, dann muss er als einzelnes
-I-Element dargestellt sein.
+Beispiel eines Elektrogenerators, so können wir alle als einzelne Elemente mit
+dem erforderlichen Detaillierungsgrad betrachten. Aber wenn der Generator die
+elektrische Energiequelle des Systems ist, dann kann er als einzelnes
+EQ-Element dargestellt werden.
 
 Das heißt, hier wirkt das Prinzip der Fraktalität, wenn jedes Element, bis zu
 einer gewissen Grenze, in seine Bestandteile zerlegt werden kann, deren
@@ -347,11 +371,11 @@ Darüber hinaus kann man über verschiedene Arten solcher Modelle und Varianten
 ihrer Transformationen sprechen, die auf Regeln hinauslaufen. Das heißt:
 zuerst ist die Situation zu analysieren und ein Element-Funktions-Modell des
 Konflikts aufzubauen. Danach wird das Modell analysiert und durch Anwendung
-der Regeln werden neue Modelle synthetisiert: Modelle der Richtungen der Suche
+der Regeln erfolgt die Synthese neuer Modelle: Modelle in Richtung der Suche
 nach Lösungswegen (RSL).
 \begin{center}\bf   EFM.K $\to$ EFM.RSL \end{center}
 Danach kommt die Synthese von Lösungen. Dafür sind aber schon heuristische
-Methoden, Analogien und figuratives Denken (Phantasie) anzuwenden, die zur
+Methoden, Analogien und bildliches Denken (Phantasie) anzuwenden, die zur
 Überwindung der finalen Barriere beitragen, welche Entscheidungsmodelle von
 ihren realen Inkarnationen trennen.
 
@@ -362,12 +386,12 @@ wie kann man diese Prinzipien am effektivsten einsetzen?
 
 Die Aufgabe, eine Nadel im Heuhaufen zu finden, ist recht einfach. Aber es
 gibt auch schwierigere Aufgaben, die hier nicht betrachtet werden. Deshalb
-gliedert sich Frage des Einsatzes der Prinzipien in zwei Teile:
+gliedert sich die Frage des Einsatzes der Prinzipien in zwei Teile:
 \begin{itemize}
-\item[1.] In einfachen Fällen erhält man die Lösung auf der Ebene der Regeln
-  und es stellt sich die Frage „Warum brauchen wir Prinzipien?“.
-\item[2.] Bei schwierigeren Aufgaben stellt sich eine etwas andere Frage: „Wie
-  die Prinzipien benutzen?“ oder „Wie auf sie kommen?“
+\item[1.] In einfachen Aufgaben erhält man die Lösung direkt auf der Ebene der
+  Regeln und es stellt sich die Frage „Wozu brauchen wir Prinzipien?“.
+\item[2.] Bei schwierigen Aufgaben stellt sich eine etwas andere Frage: „Wie
+  die Prinzipien anwenden?“ oder „Wie auf sie kommen?“
 \end{itemize}
 In der klassischen TRIZ gibt es zwei \textbf{Werkzeug-Analoge}, bei denen
 Prinzipien angewendet werden:
@@ -383,28 +407,28 @@ verwenden?
 Eingans definieren wir im Rahmen des Modells das Wesen des Problems und die
 Richtungen für seine Beseitigung. Die Spitze des Eisbergs ist eine
 \textbf{Funktion}, da diese die Rolle eines Indikators für die Aktivität von
-Elementen hat. Und der Konflikt ist vorhanden, wenn die Funktion
-unbefriedigend, schädlich oder nicht dort vorhanden ist, wo sie sein sollte.
+Elementen hat. Ein Konflikt ist vorhanden, wenn die Funktion unbefriedigend,
+schädlich oder nicht dort vorhanden ist, wo sie sein sollte.
 
 Dies spricht dafür, dass es unbefriedigende Eigenschaften in den Elementen
-gibt, die an der Realisierung dieser Funktionen beteiligt sind und für deren
-Ausführung sowohl von der Seite des „Werkzeugs“ als auch von der Seite des
-„Produkts“ verantwortlich sind.
+gibt, die an der Realisierung dieser Funktionen beteiligt sind und die für
+deren Ausführung sowohl von der Seite des „Werkzeugs“ als auch von der Seite
+des „Produkts“ verantwortlich sind.
 
-Trotz der qualitativen Unerschöpflichkeit der Materie, da „jedes Ding
-unzählige verschiedene Qualitäten hat. Nach der Untersuchung jeder endlichen
+Trotz der qualitativen Unerschöpflichkeit der Materie -- „jedes Ding hat
+unzählige verschiedene Qualitäten. Nach der Untersuchung jeder endlichen
 Anzahl von Eigenschaften einer Sache können wir nicht sagen, dass diese Sache
-von uns bereits vollständig studiert wurde“ [17, S. 70], -- ist es möglich,
-sich auf eine endliche Anzahl von Merkmalen zu beschränken, die für die
+von uns bereits vollständig studiert wurde.“ [17, S. 70] -- ist es möglich,
+sich auf eine endliche Anzahl von Merkmalen zu beschränken, welche für die
 Bedingungen einer bestimmten Aufgabe von Bedeutung sind und am meisten die zu
 realisierenden Funktionen beeinflussen. Das heißt, wenn diese Eigenschaften
 geändert werden, ändern sich auch die Funktionen in die gewünschte Richtung
-(normalisieren sich). Und genau für einen solchen formalen Ansatz können
+(werden normalisiert). Und genau für einen solchen formalen Ansatz können
 Prinzipien angewendet werden, die auf die Transformation von Elementen und
-ihrer Beziehungen ausgerichtet sind.
+ihrer Beziehungen zielen.
 
-Die Anwendung von Techniken in der Anfangsetappe kann zu zwei Hauptergebnissen
-führen:
+Die Anwendung von Prinzipien in der Anfangsetappe kann zu zwei
+Hauptergebnissen führen:
 \begin{itemize}
 \item[1.] Der Konflikt ist beseitigt, es gibt keine unerwünschten Folgen --
   das Problem ist gelöst. 
@@ -415,39 +439,39 @@ führen:
   eines \textbf{Widerspruchs der Bedingungen} (WB) sprechen -- hier sind die
   Bedingungen mit der Anwendung oder Nichtbenutzung des Prinzips verbunden.
 \end{itemize}
-Wenn die Prinzipien nicht sofort funktionieren und der Konflikt nicht ohne
-Folgen gelöst werden konnte, dann heißt das, dass das Problem auf der ebene
-des Systems nicht gelöst werden kann und es ist notwendig, entweder auf die
+Wenn die Prinzipien nicht sofort greifen und der Konflikt nicht ohne Folgen
+gelöst werden konnte, dann heißt das, dass das Problem auf der betrachteten
+Systemebene nicht gelöst werden kann und es notwendig ist, entweder auf die
 Ebene des Obersystems oder auf die Mikroebene zu gehen, wo der \textbf{WB} als
 \textbf{Widerspruch der Anforderungen (WA)} umformuliert wird, zu dessen
 Lösung ebenfalls auf die Prinzipien zurückgegriffen werden kann.
 
-\emph{\textbf{Erklärung.} Die Begriffe \textbf{Widerspruch der Bedingungen
+\emph{\textbf{Erläuterung.} Die Begriffe \textbf{Widerspruch der Bedingungen
     (WB)} und \textbf{Widerspruch der Anforderungen (WA)}\footnote{Die
     Begriffe WB und WA wurden 2013 vom Autor eingeführt und erfolgreich in
-    praktischen Übungen am MOU TRIZ in St. Petersburg getestet.}  werden als
-  allgemeinere Begriffe für Widersprüche anstelle von technischer Widerspruch
-  (TW) und Physikalischer Widerspruch (PW) der klassischen TRIZ verwendet.
-  Solche Bezeichnungen sind auch universeller und daher in verschiedenen
-  Tätig"|keits"|bereichen (nicht nur in der Technologie) anwendbar, drücken
-  aber auch das Wesen der Widersprüche dieser Typen aus: einschließlich der
-  Konflikte zwischen Bedingungen und Anforderungen.}
+    praktischen Übungen an der MOU TRIZ in St. Petersburg getestet.}  werden
+  als allgemeinere Begriffe für Widersprüche anstelle von technischer
+  Widerspruch (TW) und physischer Widerspruch (PW) der klassischen TRIZ
+  verwendet.  Solche Bezeichnungen sind auch universeller und daher in
+  verschiedenen Tätigkeitsbereichen (nicht nur im Ingenieurbereich) anwendbar,
+  drücken aber auch das Wesen der Widersprüche dieser Typen aus:
+  einschließlich der Konflikte zwischen Bedingungen und Anforderungen.}
 
 \section*{Vorteile und Super-Effekte}
-Es wurde eine Variante der Konfliktmodellierung vorgestellt, die folgende
-Hauptvorteile besitzt:
+Die vorgestellte Variante der Konfliktmodellierung besitzt folgende
+hauptsächlichen Vorteile:
 \begin{itemize}
 \item Es werden Ressourcen systemischer und funktionaler Ansätze verwendet:
   deren Synthese und Instrumentalisierung wurde verwirklicht.
 \item Es werden psychologische Barrieren in der Etappe der Beschreibung der
   Modellbildungs-Regeln überwunden.
-\item Eindeutigkeit und Universalität der Begriffe sowie Genauigkeit bei der
-  Steuerung der der Regeln des Erstellens und Transformierens von Modellen --
-  all das erlaubt es, schwierige Konflikte zu modellieren, die in beliebigen
-  Tätigkeitsfeldern auftreten können.
+\item Eindeutigkeit und Universalität der Begriffe sowie eine genauere
+  Anwendung der Regeln zum Erstellen und Transformieren von Modellen -- all
+  das erlaubt es, komplizierte Konflikte aus beliebigen Tätigkeitsfeldern zu
+  modellieren.
 \item Der Platz der Prinzpien wurde bestimmt und Möglichkeiten ihrer
   Konstruktion erweitert (siehe Präsentation).
-\item Es wurde ein bedeutender Schritt in Richtung eines neuen Verständnisses
+\item Es wurde ein wesentlicher Schritt in Richtung eines neuen Verständnisses
   des Wesens von Erfindungs-Werkzeugen und ihrer integrierten Verwendung
   gegangen.
 \end{itemize}
@@ -459,62 +483,61 @@ Hauptvorteile besitzt:
   SF-Modellierung). – Baku, OLMI, 1973.
 \item[2.] G.S. Altschuller, B.L. Zlotin, A.V. Zusman, V.I. Filatov.
   \foreignlanguage{russian}{Поиск новых идей: от озарения к технологии. Теория
-    и практика решения изобретательских задач.}  (Such nach neuen Ideen: Von
-  der Erleuchtung zur Technologie. Theorie und Praxis des Lösens von
-  Erfindungsaufgaben). Kischinjow. Kartja Moldovenjsake, 1989.
+    и практика решения изобретательских задач.}  (Suche nach neuen Ideen: Vom
+  Geistesblitz zur Technologie. Theorie und Praxis des Lösens von
+  Erfindungsaufgaben). Kischinjow. Kartja Moldovenjaske, 1989.
 \item[3.] G.I. Ivanonv. \foreignlanguage{russian}{Формулы творчества, или Как
   научиться изобретать: Кн.  для учащихся ст. классов.} (Formeln des
-  Schöpfertums, oer wie man Erfinden lernt. Lehrbuch für Schüler höherer
+  Schöpfertums, oder wie man Erfinden lernt. Lehrbuch für Schüler höherer
   Klassen). Moskau, Verlag Prosweschtschenie, 1994.
 \item[4.] V.N. Glasunov. \foreignlanguage{russian}{Параметрический метод
   разрешения противоречий в технике. Методы анализа проблем и поиска решений в
   технике.} (Der parametrische Zugang zum Lösen von Widersprüchen in der
-  Technik.  Problemanalysemethoden und Lösungssuche in der Technik) Moskau,
+  Technik.  Problemanalysemethoden und Lösungssuche in der Technik). Moskau,
   Verlag Retschnoj Transport, 1990.
 \item[5.] M.S. Rubin. \foreignlanguage{russian}{Элепольный анализ как развитие
   вепольного и функционального анализа в ТРИЗ}. (EleFeld-Analyse als
-  Entwicklung der SF-und funktionalen Analyse in der TRIZ). TRIZ Developers
-  Summit 2013.  URL: \url{https://triz-summit.ru/confer/tds-2013/articles/}
+  Entwicklung der SF- und funktionalen Analyse in der TRIZ). TRIZ Developers
+  Summit 2013.\\  URL: \url{https://triz-summit.ru/confer/tds-2013/articles/}
 \item[6.] V. Petrov, G. Voronov. \foreignlanguage{russian}{Новый подход к
   вепольному (структурному) анализу}. (Ein neuer Zugang zur
-  SF-(Struktur)-Analyse).  TRIZ Developers Summit 2013.  URL:
+  SF-(Struktur)-Analyse).  TRIZ Developers Summit 2013. \\ URL:
   \url{https://triz-summit.ru/confer/tds-2013/articles/}
 \item[7.] Sara Greenberg. Introducing substance-field, as a method for
   studying living systems. (Einführung der SF-Methode als Methode zum Studium
-  lebender Systeme). TRIZ Developers Summit 2013.  URL:
+  lebender Systeme). TRIZ Developers Summit 2013. \\ URL:
   \url{https://triz-summit.ru/confer/tds-2013/articles/}
 \item[8.] Yu. Belski. \foreignlanguage{russian}{Инструменты ТРИЗ для ХХI века:
   современный вещественно-полевой анализ}. (TRIZ-Instrumente für das
-  21. Jahrhundert: Moderne SF-Analyse). 2008. URL:
+  21. Jahrhundert: Moderne SF-Analyse). 2008.\\ URL:
   \url{https://refdb.ru/look/2055665.html}
 \item[9.] B.I. Goldovski, M.I. Wainerman.
   \foreignlanguage{russian}{Рациональное творчество. О направленном поиске
     новых технических решений.} (Rationales Schöpfertum. Über die gezielte
-  Suche neuer technischer Lösungen) – Moskau, Verlag Retschnoj Transport,
-  1990.
+  Suche neuer technischer Lösungen). Moskau, Verlag Retschnoj Transport, 1990.
 \item[10.] V.A. Koroljov.  \foreignlanguage{russian}{Веполи: 20 лет спустя
-  (2)}.  (SF-Modelle: 20 Jahre später. Teil 2).  URL:
+  (2)}.  (SF-Modelle: 20 Jahre später. Teil 2). \\ URL:
   \url{http://coroliov.trizinfor.org/works/ws6.html}
 \item[11.] N.B. Feygenson.  \foreignlanguage{russian}{Вепольной анализ и его
   аналоги – прагматические аспекты}. (SF-Analyse und ihre Analogien --
-  pragmatische Aspekte).  TRIZ Developers Summit 2013.  URL:
+  pragmatische Aspekte).  TRIZ Developers Summit 2013.\\  URL:
   \url{https://triz-summit.ru/confer/tds-2013/articles/}
 \item[12.] S.A. Logvinov. \foreignlanguage{russian}{Проблемы обновления
   системы стандартов и вепольного анализа}. (Probleme der Systemerneuerung und
-  SF-Analyse). TRIZ Developers Summit 2013.  URL:
+  SF-Analyse). TRIZ Developers Summit 2013. \\ URL:
   \url{https://triz-summit.ru/confer/tds-2013/articles/}
 \item[13.] V.A. Koroljov. \foreignlanguage{russian}{Веполи: 20 лет спустя}.
-  (SF-Modelle: 20 Jahre später.) URL:
+  (SF-Modelle: 20 Jahre später.)\\ URL:
   \url{http://coroliov.trizinfor.org/data/c82.htm}
 \item[14.] G.S. Altschuller. \foreignlanguage{russian}{Маленькие необъятные
-  миры: стандарты на решение изобретательских задач // В сб. "Нить в
-  лабиринте".} (Kleine unermessliche Welten: Standards der Lösung von
-  Erfindungsaufgaben). Petrosawodsk, 1988. – S. 165-230. URL:
+  миры: стандарты на решение изобретательских задач. В сб. „Нить в
+  лабиринте“.} (Kleine unermessliche Welten: Standards der Lösung von
+  Erfindungsaufgaben). Petrosawodsk, 1988. S. 165-230.\\ URL:
   \url{http://www.altshuller.ru/triz/standards.asp}
 \item[15.] Yu.P. Salamatov. \foreignlanguage{russian}{Как стать изобретателем:
-  пособие для учителя.} (Wie wird man Erfinder. Handreichung für
-  Lehrer). Moskau, Verlag Prosweschtschenie, 2006.
-\item[16.] K. Marx. Kapital, Band 1, Kap. 13. MEW 23.
+  пособие для учителя.} (Wie wird man Erfinder. Handreichung für Lehrer).
+  Moskau, Verlag Prosweschtschenie, 2006.
+\item[16.] K. Marx. Kapital, Band 1, Kap. 13. MEW 23. Dietz Verlag, Berlin.
 \item[17.] A.I. Uiomov. \foreignlanguage{russian}{Вещи, свойства и отношения.}
   (Dinge, Eigenschaften und Beziehungen). Moskau, Verlag der AdW, 1963.
 \end{itemize}
