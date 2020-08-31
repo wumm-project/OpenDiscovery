@@ -93,6 +93,7 @@ Thiel_R
     24.--25. November 2016 in Lichtenwalde.
 
 * Thiel-16c.tex
+  * comment = Überarbeitung für Thiels 90. Geburtstag als einzelne Publikation 
   * au = Rainer Thiel
   * title = Dialektik, TRIZ und ProHEAL. 
   * lang = de  
