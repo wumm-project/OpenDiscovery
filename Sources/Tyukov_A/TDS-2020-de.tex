@@ -1,5 +1,5 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage{a4wide,url,graphicx,wrapfig}
+\usepackage{a4wide,url,graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[main=german,russian]{babel}
 
@@ -129,10 +129,11 @@ verwendet, der aus den folgenden Etappen besteht:
 \item[3)] Durchführung einer Ursache-Wirkungs-Analyse der Primärursachen,
   Entwurf einer Liste fehlender Komponenten.
 \end{itemize}
-\begin{quote}
-  \ergaenzen Abbildung 4 -- Durchführen einer Funktionsanalyse an einem
+\begin{center}
+  \includegraphics[width=.95\textwidth]{image002.jpg}\\
+  \textbf{Abbildung 4}. Durchführen einer Funktionsanalyse an einem
   Trainingsbeispiel für Zigaretten, verfasst von Anton Tyukov.
-\end{quote}
+\end{center}
 In der beschriebenen Lösung werden anstelle von Funktionsanalysediagrammen
 Datenflussdiagramme (DFD) als Werkzeug zur Informationsflussanalyse verwendet.
 In der Arbeit wird der Begriff des Defizits anstelle des üblichen
@@ -226,32 +227,37 @@ Innerhalb der Unternehmensebene wurden beschrieben:
 \end{itemize}
 In den meisten Fällen wird die BPMN-Notation verwendet.
 
-\begin{quote}
-  \ergaenzen Abbildung 1 - Struktur und Routing der logischen
-  Diagrammgruppierung Grafik (Ebene 1)
-\end{quote}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{image004.jpg}\\
+  \textbf{Abbildung 1}. Struktur und Routing der logischen Diagrammgruppierung
+  Grafik (Ebene 1)
+\end{center}
 Diese Architektur ist logisch in die folgenden Funktionsblöcke unterteilt:
 Datenquellen, Datenvorverarbeitung mit Integration, Datenspeicherung und
 Analytik, datenbasierte Dienste. Dieses Diagramm wird nur zur Analyse der
 Systemheit von Komponenten und das Routing von anderen Diagrammen verwendet,
 die unter Beteiligung von Entwicklern erstellt wurden.
 
-\begin{quote}
-  \ergaenzen Abbildung 2 - Logische Darstellung der Datenarchitektur im System
+\begin{center}
+  \includegraphics[width=.95\textwidth]{image006.jpg}\\
+  \textbf{Abbildung 2}. Logische Darstellung der Datenarchitektur im System
   (Ebene 2)
-\end{quote}
-\begin{quote}
-  \ergaenzen Abbildung 3 - Visuelle Beschreibung einiger ausgewählter
+\end{center}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{image008.jpg}\\
+  \textbf{Abbildung 3}. Visuelle Beschreibung einiger ausgewählter
   Anwendungen (Ebene 3)
-\end{quote}
-\begin{quote}
-  \ergaenzen Abbildung 4 - Der Prozess des Hochladens, Herunterladens und
+\end{center}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{image010.jpg}\\
+  \textbf{Abbildung 4}. Der Prozess des Hochladens, Herunterladens und
   Verwaltens verteilter Ausrüstungen.
-\end{quote}
-\begin{quote}
-  \ergaenzen Abbildung 5 - Beispiele für die Beschreibung von
+\end{center}
+\begin{center}
+  \includegraphics[width=.95\textwidth]{image012.jpg}\\
+  \textbf{Abbildung 5}. Beispiele für die Beschreibung von
   Steuerungsalgorithmen und Anschlussplanungen
-\end{quote}
+\end{center}
 
 \section*{5. Diskussion und Schlussfolgerungen}
 
@@ -269,8 +275,7 @@ datenbasierter Steuerungssystem aufgestellt.  Zur Fehlerklassifizierung wurden
   Systemimplementierung, v) Team, vi) Arbeit, vii) Technologie.
 \end{quote}
 Informationen mit einer Beschreibung der vorgeschlagenen Defizite und der Wege
-zu deren Behebung wird in Tabelle 1 vorgestellt.
-\newpage
+zu deren Behebung sind in der folgenden Tabelle 1 zusammengestellt.
 
 \begin{quote}
   \textbf{Tabelle 1:} Vorgeschlagene allgemeine Unzulänglichkeiten und
@@ -298,6 +303,10 @@ zu deren Behebung wird in Tabelle 1 vorgestellt.
 
     Aktivitäten der Entwickler koordinieren (gemeinsame
     Systemarchitektur).\\\hline 
+  \end{tabular}
+\end{center}
+\begin{center}\small
+  \begin{tabular}{|p{.3\textwidth}|p{.3\textwidth}|p{.3\textwidth}|}\hline 
 
     Komponenten doppelt (Systemimplementierung) &
 
@@ -352,10 +361,6 @@ zu deren Behebung wird in Tabelle 1 vorgestellt.
 
     Die Informationsbereitstellung muss über die für den Nutzer zugänglichsten
     Kanäle erfolgen: Smartphone, Email.\\\hline
-  \end{tabular}
-\end{center}
-\begin{center}\small
-  \begin{tabular}{|p{.3\textwidth}|p{.3\textwidth}|p{.3\textwidth}|}\hline 
 
     Geringe Motivation des Nutzers zur Nutzung der Anwendung (Stakeholder) &
 
@@ -380,6 +385,10 @@ zu deren Behebung wird in Tabelle 1 vorgestellt.
     Erstellen eines Bündels Client-Server-Daten-Qualität für die ständige
     Überwachung der tatsächlichen Leistung entsprechend der Vereinbarungen mit
     dem Anwender.\\\hline
+  \end{tabular}
+\end{center}
+\begin{center}\small
+  \begin{tabular}{|p{.3\textwidth}|p{.3\textwidth}|p{.3\textwidth}|}\hline 
 
     Zu hohe Kopplung zwischen den Anwendungen (Team) &
 
@@ -442,6 +451,7 @@ weiterentwickelt werden:
 \item[(iii)] Weitere Strukturierung der Defizite und Wege zu ihrer
   Überwindung.
 \end{itemize}
+\newpage
 \section*{Literaturverzeichnis}
 
 \begin{itemize}
@@ -453,7 +463,7 @@ weiterentwickelt werden:
   TRIZ-Beratungspraxis. In \emph{TRIZ in der Entwicklung}. Sammlung von
   Forschungsarbeiten.  TRIZ Development Summit, St. Petersburg, 2016,
   S. 268-280. (in Russisch)
-\item[4.] Rubin M.S., Kiyaev, V.I. Grundlagen der TRIZ und Innovationen.
+\item[4.] Rubin M.S., Kiyaev V.I. Grundlagen der TRIZ und Innovationen.
   TRIZ-Anwendung in Software- und Informationssystemen. St. Petersburg, 2011,
   S. 280. (in Russisch)
 \item[5.] Neil Ford. 97 Etüden für Architekten von Programmsystemen. In
