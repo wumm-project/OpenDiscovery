@@ -21,8 +21,9 @@
   dcterms:title "How to invent"@en ;
   dc:format "LaTeX" ;
   dc:language "en" ;
-  dc:year "1960" ; 
-  rdfs:comment "Translation of Altshuller_GS/HowInvent-1960" .
+  dc:year "1960" ;
+  rdfs:seeAlso <http://opendiscovery.org/rdf/BIB/Altshuller_1960> ;
+  rdfs:comment "English Translation of BIB/Altshuller_1960" .
 
 <file://Altshuller_GS/HowInvent-1960-ru.odt> a od:Source ;
   dcterms:creator odp:Altshuller_GS ;
@@ -30,7 +31,8 @@
   dc:format "odt" ;
   dc:language "ru" ;
   dc:year "1960" ; 
-  rdfs:comment "Local copy of the original paper" .
+  rdfs:seeAlso <http://opendiscovery.org/rdf/BIB/Altshuller_1960> ;
+  rdfs:comment "Local copy of BIB/Altshuller_1960" .
 
 <file://Balzer_D/Balzer-17.tex> a od:Source ;
   dcterms:creator odp:Balzer_D ;
@@ -121,201 +123,228 @@
 
 <file://GDR-InventorSchools/Thiel-07.tex> a od:Source ;
   dcterms:creator odp:Thiel_R ;
-  dcterms:title "" ;
+  dcterms:title "Zur Lehrbarkeit dialektischen Denkens – Chance der Philosophie, Mathematik und Kybernetik helfen"@de ;
   dc:format "LaTeX" ;
   dc:language "de" ;
-  rdfs:comment "" .
+  dc:year "2007" ; 
+  rdfs:comment """Eine schriftliche Version wurde im Protokollband
+  Fuchs-Kittowski, Klaus / Zimmermann, Rainer E.: 
+  “Kybernetik, evolutionäre Systemtheorie und Dialektik”,
+  ISBN 978-3-89626-919-5, S. 185--202
+  veröffentlicht""" .
 
 <file://GDR-InventorSchools/Thiel-16a.tex> a od:Source ;
   dcterms:creator odp:Thiel_R ;
-  dcterms:title "" ;
+  dcterms:title "Hegel, Altschuller, TRIZ. Zehn Anmerkungen"@de ;
   dc:format "LaTeX" ;
   dc:language "de" ;
-  rdfs:comment "" .
+  dc:year "2016" ;
+  dcterms:source <http://dx.doi.org/10.14625/thiel_20160925> .
 
 <file://GDR-InventorSchools/Thiel-16b.tex> a od:Source ;
   dcterms:creator odp:Thiel_R ;
-  dcterms:title "" ;
+  dcterms:title "Altschuller, TRIZ und ProHEAL"@de ;
   dc:format "LaTeX" ;
   dc:language "de" ;
-  rdfs:comment "" .
+  dc:year "2016" ;
+  rdfs:comment "Beitrag zur 21. Leibniz-Konferenz „Systematisches Erfinden“, 24.-25. November 2016 in Lichtenwalde."@de .
 
 <file://GDR-InventorSchools/Thiel-16c.tex> a od:Source ;
   dcterms:creator odp:Thiel_R ;
-  dcterms:title "" ;
+  dcterms:title "Dialektik, TRIZ und ProHEAL"@de ;
   dc:format "LaTeX" ;
   dc:language "de" ;
-  rdfs:comment "" .
+  dc:year "2019" ;
+  rdfs:comment """Überarbeitetes Material des Autors zu ProHEAL, das vom Autor wesentlich
+  zusammen mit Dr.-Ing. Hans-Jochen Rindfleisch, Verdienter Erfinder der DDR,
+  erarbeitet wurde."""@de .
 
 <file://GDR-InventorSchools/Thiel-16.tex> a od:Source ;
   dcterms:creator odp:Thiel_R ;
-  dcterms:title "" ;
+  dcterms:title "Erfinderschulen – Problemlöse-Workshops. Projekt und Praxis"@de ;
   dc:format "LaTeX" ;
   dc:language "de" ;
-  rdfs:comment "" .
+  dc:year "2016" ;
+  dcterms:source <http://dx.doi.org/10.14625/thiel_20160703> .
 
 <file://GDR-InventorSchools/Thiel-Kybernetik.tex> a od:Source ;
   dcterms:creator odp:Thiel_R ;
-  dcterms:title "" ;
+  dcterms:title "Rainer Thiel und die Kybernetik"@de ;
   dc:format "LaTeX" ;
   dc:language "de" ;
-  rdfs:comment "" .
-
-<http://opendiscovery.org/rdf/BIB/Goldovsky_1983>
-  a od:Publication; 
-  dcterms:creator odp:Goldovsky_BI ;
-  dc:language "ru";
-  dc:format "pdf" ; 
-  dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
-  dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
-  dcterms:issued "1983"  . 
+  dc:year "2020" ;
+  rdfs:comment """Ausführliche Version eines Interviews von Sebastian Bähr, das 
+  in der Sonderbeilage des ND zum 3. Oktober 2020 veröffentlicht wurde."""@de .
 
 <file://Goldovsky_BI/Laws-1983-de.tex> a od:Source ;
   dcterms:creator odp:Goldovsky_BI ;
-  dcterms:title "" ;
+  dcterms:title "System der Gesetzmäßigkeiten des Aufbaus und der Entwicklung technischer Systeme"@de ;
   dc:format "LaTeX" ;
   dc:language "de" ;
+  dc:year "1983" ;
   rdfs:seeAlso <http://opendiscovery.org/rdf/BIB/Goldovsky_1983> ; 
-  rdfs:comment "German translation" .
+  rdfs:comment "German translation of BIB/Goldovsky_1983" .
 
 <file://Goldovsky_BI/Laws-1983.pdf> a od:Source ;
   dcterms:creator odp:Goldovsky_BI ;
   dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
   dc:format "pdf" ;
   dc:language "ru" ;
-  rdfs:comment "A local copy of the original paper" .
+  dc:year "1983" ;
+  rdfs:seeAlso <http://opendiscovery.org/rdf/BIB/Goldovsky_1983> ; 
+  rdfs:comment "A local copy of BIB/Goldovsky_1983" .
 
 <file://Goldovsky_BI/metodolog-2164-de.tex> a od:Source ;
   dcterms:creator odp:Goldovsky_BI ;
-  dcterms:title "" ;
+  dcterms:title "Über die Gesetze der Konstruktion technischer Systeme"@de ;
   dc:format "LaTeX" ;
   dc:language "de" ;
-  rdfs:comment "" .
+  dc:year "2018" ;
+  rdfs:comment "German translation of BIB/Goldovsky_2018" .
 
 <file://Goldovsky_BI/metodolog-2164.pdf> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dcterms:creator odp:Goldovsky_BI ;
+  dcterms:title "О законах построения технических систем"@ru ;
+  dc:format "pdf" ;
+  dc:language "ru" ;
+  dc:year "2018" ;
+  rdfs:seeAlso <http://opendiscovery.org/rdf/BIB/Goldovsky_2018> ; 
+  rdfs:comment "Local copy of BIB/Goldovsky_2018" .
 
 <file://Graebe_HG/Heilbronn-2019-Slides.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "The Contribution to TRIZ by the Inventor Schools in the GDR"@en ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "en" ;
+  dc:year "2019" ;
+  rdfs:comment "Presentation at the TRIZ-Fest 2019 in Heilbronn" .
 
 <file://Graebe_HG/lte-19-ru.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "О Развитии Технических Систем"@ru ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "ru" ;
+  dc:year "2019" ;
+  rdfs:comment "Russian translation of Graebe_HG/lte-19" .
 
 <file://Graebe_HG/lte-19.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "Zur Entwicklung Technischer Systeme"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:year "2019" ;
+  dc:language "de" .
 
 <file://Graebe_HG/Minsk-2019-de.odt> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "Das Erbe der Erfinderschulen in der DDR und die Entwicklung von TRIZ"@de ;
+  dc:format "odt" ;
+  dc:language "de" ;
+  dc:year "2019" ;
+  rdfs:comment "German translation of Graebe_HG/Minsk-2019" .
 
 <file://Graebe_HG/Minsk-2019.doc> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "Наследие движения школ изобретателeй в ГДР и развитиe ТРИЗ"@ru ;
+  dc:format "doc" ;
+  dc:year "2019" ;
+  dc:language "ru" ;
+  rdfs:comment "Presented at TDS 2019 in Minsk" .
 
 <file://Graebe_HG/Minsk-2019-Slides.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "The Heritage of the Inventor School Movement in the GDR"@en ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "en" ;
+  dc:year "2019" ;
+  rdfs:comment "Slides of the presentation at TDS 2019 in Minsk" .
 
 <file://Graebe_HG/mts-20-de.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "Die Menschen und ihre Technischen Systeme"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "de" ;
+  dc:year "2020" ;
+  dcterms:source <http://dx.doi.org/10.14625/graebe_20200519> .
 
 <file://Graebe_HG/mts-20-en.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "Men and their technical systems"@en ; 
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "en" ;
+  dc:year "2020" ;
+  rdfs:comment "An English trimmed version of Graebe_HG/mts-20-de. Published in the Proceedings od the TRIZ Future Conference 2020, p. 399-410." .
 
 <file://Graebe_HG/Newbee-de.txt> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "A TRIZ Newbee's Report" ;
+  dc:format "txt" ;
+  dc:language "de" ;
+  dc:year "2019" ;
+  rdfs:comment "German translation of Graebe_HG/Newbee" .
 
 <file://Graebe_HG/Newbee.doc> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "A TRIZ Newbee's Report" ;
+  dc:format "doc" ;
+  dc:language "en" ;
+  dc:year "2019" ;
+  dcterms:source <https://triz-journal.com/a-triz-newbees-report/> ;
+  rdfs:comment "Published in the TRIZ Journal" .
 
 <file://Graebe_HG/TRIZfest-2019-de.docx> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "Der Theoriebeitrag der Erfinderschulen der DDR zu TRIZ"@de ;
+  dc:format "docx" ;
+  dc:language "de" ;
+  dc:year "2019" ;
+  rdfs:comment "German translation of Graebe_HG/TRIZfest-2019" .
 
 <file://Graebe_HG/TRIZfest-2019.docx> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dcterms:creator odp:Graebe_HG ;
+  dcterms:title "The Contribution to TRIZ by the Inventor Schools in the GDR"@en ;
+  dc:format "docx" ;
+  dc:language "en" ;
+  dc:year "2019" ;
+  rdfs:comment "Published in the Proceedings of the 15th MATRIZ TRIZfest-2019 International Conference. ISBN 978-0-578-62617-8, S. 346-352" .
 
 <file://Kleemann_KP/2016-07-06.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Kleemann_KP ;
+  dcterms:title "Tragödie der Soziologie oder die Schwierigkeit der Interdisziplinarität"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "de" ;
+  dc:year "2016" ;
+  dcterms:source <http://dx.doi.org/10.14625/kleemann_20160706> .
 
 <file://Kleemann_KP/2017-05-02.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Kleemann_KP ;
+  dcterms:title "Das Wissen des Ichs und die Revolution – Einführung in Simulationstheorien des digitalen Wandels"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "de" ;
+  dc:year "2017" ;
+  rdfs:comment "Vorlesungsausarbeitung, Vorversion von Kleemann_KP/2018-12-25"@de .
 
 <file://Kleemann_KP/2018-12-14.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Kleemann_KP ;
+  dcterms:title "Probleme der Forschung zum digitalen Wandel – eine Propädeutik der Digital Humanities"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "de" ;
+  dc:year "2018" ;
+  dcterms:source <http://dx.doi.org/10.14625/kleemann_20181214> .
 
 <file://Kleemann_KP/2018-12-25.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Kleemann_KP ;
+  dcterms:title "Privatheit, das Wissen des Ichs und die digitale Revolution. Eine Einführung in Simulationstheorien des digitalen Wandels"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "de" ;
+  dc:year "2018" ;
+  dcterms:source <http://dx.doi.org/10.14625/kleemann_20181225> .
 
 <file://Kleemann_KP/2019-03.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Kleemann_KP ;
+  dcterms:title "Agile Methoden, der digitale Wandel und widerspruchsbasierte Managementmethoden – ein Bericht über empirische Erfahrungen"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
+  dc:language "de" ;
+  dc:year "2019" ;
   rdfs:comment "" .
 
 <file://Kozhemyako_A/Kozhemyako-19-en.tex> a od:Source ;

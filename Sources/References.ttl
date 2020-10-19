@@ -6,7 +6,7 @@
 @prefix od: <http://opendiscovery.org/rdf/Model#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-<http://opendiscovery.org/Data/References/>
+<http://opendiscovery.org/Data/Sources/References/>
     cc:attributionName "The Open Discovery Project" ;
     cc:attributionURL <http://opendiscovery.org> ;
     cc:license <http://www.apache.org/licenses/LICENSE-2.0> ;
@@ -275,3 +275,30 @@
   dc:creator "Lippert, K.", "Cloutier, R." ;
   dcterms:title "TRIZ for Digital Systems Engineering: New Characteristics and Principles Redefined";
   dc:publisher " Systems 2019, 7(3), 39; doi: 10.3390/systems7030039".
+
+<http://opendiscovery.org/rdf/BIB/Goldovsky_1983>
+  a od:Publication; 
+  dcterms:creator odp:Goldovsky_BI ;
+  dc:language "ru";
+  dc:format "pdf" ; 
+  dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
+  dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
+  dcterms:issued "1983"  . 
+
+<http://opendiscovery.org/rdf/BIB/Goldovsky_1983>
+  a od:Publication; 
+  dcterms:creator odp:Goldovsky_BI ;
+  dc:language "ru";
+  dc:format "pdf" ; 
+  dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
+  dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
+  dcterms:issued "1983"  . 
+
+<http://opendiscovery.org/rdf/BIB/Goldovsky_2018>
+  a od:Publication; 
+  dcterms:creator odp:Goldovsky_BI ;
+  dc:language "ru";
+  dc:format "pdf" ; 
+  dcterms:title "О законах построения технических систем"@ru ;
+  dcterms:source <https://www.metodolog.ru/node/2164>; 
+  dcterms:issued "2018"  . 
