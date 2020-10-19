@@ -16,6 +16,151 @@
       in <http://eprints.rclis.org/22454/1/LODE-BD-2.pdf>""" ;
     rdfs:label "Contents of OpenDiscovery/Sources"  .
 
+<file://Altshuller_GS/HowInvent-1960-en.tex> a od:Source ;
+  dcterms:creator odp:Altshuller_GS ;
+  dcterms:title "How to invent"@en ;
+  dc:format "LaTeX" ;
+  dc:language "en" ;
+  dc:year "1960" ; 
+  rdfs:comment "Translation of Altshuller_GS/HowInvent-1960" .
+
+<file://Altshuller_GS/HowInvent-1960-ru.odt> a od:Source ;
+  dcterms:creator odp:Altshuller_GS ;
+  dcterms:title "Как делаются открытия"@ru ;
+  dc:format "odt" ;
+  dc:language "ru" ;
+  dc:year "1960" ; 
+  rdfs:comment "Local copy of the original paper" .
+
+<file://Balzer_D/Balzer-17.tex> a od:Source ;
+  dcterms:creator odp:Balzer_D ;
+  dcterms:title "Gemeinsamkeiten und Unterschiede von TRIZ, künstlicher Intelligenz und Kybernetik als wissensbasierte Methoden für die Lösung technischer Probleme"@de ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  dc:year "2017" ;
+  dcterms:source <http://dx.doi.org/10.14625/balzer_20170110> ;
+  rdfs:comment "LaTeX source of the publication" .
+
+<file://Balzer_D/Balzer-2018.doc> a od:Source ;
+  dcterms:creator odp:Balzer_D, odp:Regen_W, odp:Sieber_F ;
+  dcterms:title "ТРИЗ как метод анализа и создания экологичных и устойчивых технологических систем"@ru ;
+  dc:format "doc" ;
+  dc:language "ru" ;
+  dc:year "2018" .
+
+<file://Balzer_D/Balzer-2018-ru.tex> a od:Source ;
+  dcterms:creator odp:Balzer_D, odp:Regen_W, odp:Sieber_F ;
+  dcterms:title "ТРИЗ как метод анализа и создания экологичных и устойчивых технологических систем"@ru ;
+  dc:format "LaTeX" ;
+  dc:language "ru" ;
+  dc:year "2018" ;
+  rdfs:comment "Balzer_D/Balzer-2018, recompiled as LaTeX source" .
+
+<file://Bayer_T/BA-2019.pdf> a od:Source ;
+  dcterms:creator odp:Bayer_T ;
+  dcterms:title "Ausarbeitung einer potenziellen Methodenintegration aus der TRIZ Lehre in den Design Thinking Prozess"@de ;
+  dc:format "pdf" ;
+  dc:language "de" ;
+  dc:year "2019" ; 
+  rdfs:comment "Bayer's Bachelor Thesis" .
+
+<file://Domkin_K/Leipzig-20.pptx> a od:Source ;
+  dcterms:creator odp:Domkin_KI ;
+  dcterms:title "TRIZ tools for consulting"@en ;
+  dc:format "pptx" ;
+  dc:language "en" ;
+  dc:year "2020" ; 
+  rdfs:comment "Slides of a talk given in Leipzig 2020-01-03" .
+
+<file://GDR-InventorSchools/HegelHoerz-05.tex> a od:Source ;
+  dcterms:creator odp:Thiel_R ;
+  dcterms:title "Zu Herbert Hörz „Dialektik als Heuristik“. Kritik dem Freund und Gleichgesinnten"@de ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  dc:year "2006" ; 
+  rdfs:comment """Original published as 
+  Rainer Thiel: Wie wird Dialektik nutzbar als Heuristik?
+  EWE 17 (2006) 2: 230--233. 
+  https://groups.uni-paderborn.de/ewe""" .
+
+<file://GDR-InventorSchools/Herrlich-16.tex> a od:Source ;
+  dcterms:creator odp:Herrlich_M, odp:Schollmeyer_J ;
+  dcterms:title "Von der Arbeitsgemeinschaft „Erfindertätigkeit und Methodik des Erfindens“ über die KDT-Erfinderschulen hin zur Deutschen Erfinder-Akademie"@de ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  dc:year "2006" ; 
+  rdfs:comment "Material of an interview with M. Herrlich taken by J. Schollmeyer" .
+
+<file://GDR-InventorSchools/KdT-1988-2.tex> a od:Source ;
+  dcterms:title "Erfindungsmethodische Arbeitsmittel. Lehrmaterial zur Erfindungsmethode"@de ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  dc:year "1988" ; 
+  rdfs:comment "Compiled from the scanned booklet. Not yet complete" .
+
+<file://GDR-InventorSchools/KdTLehrbrief-Teil1.pdf> a od:Source ;
+  dcterms:title "Die Methode des Herausarbeitens von Erfindungsaufgaben und Lösungsansätzen - Erfindungsmethode der KDT-Erfinderschulen"@de ;
+  dc:format "pdf" ;
+  dc:language "de" ;
+  dc:year "1988" ; 
+  rdfs:comment "Scan of the booklet. Part 1 as separate publication" .
+
+<file://GDR-InventorSchools/KdTLehrbrief-Teil2-1.pdf> a od:Source ;
+  dcterms:title "Erfindungsmethodische Arbeitsmittel. Lehrmaterial zur Erfindungsmethode"@de ;
+  dc:format "pdf" ;
+  dc:language "de" ;
+  dc:year "1988" ; 
+  rdfs:comment "Scan of the booklet. Part 2-1 due to technical reasons" .
+
+<file://GDR-InventorSchools/KdTLehrbrief-Teil2-2.pdf> a od:Source ;
+  dcterms:title "Erfindungsmethodische Arbeitsmittel. Lehrmaterial zur Erfindungsmethode"@de ;
+  dc:format "pdf" ;
+  dc:language "de" ;
+  dc:year "1988" ; 
+  rdfs:comment "Scan of the booklet. Part 2-2 due to technical reasons" .
+
+<file://GDR-InventorSchools/Thiel-07.tex> a od:Source ;
+  dcterms:creator odp:Thiel_R ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  rdfs:comment "" .
+
+<file://GDR-InventorSchools/Thiel-16a.tex> a od:Source ;
+  dcterms:creator odp:Thiel_R ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  rdfs:comment "" .
+
+<file://GDR-InventorSchools/Thiel-16b.tex> a od:Source ;
+  dcterms:creator odp:Thiel_R ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  rdfs:comment "" .
+
+<file://GDR-InventorSchools/Thiel-16c.tex> a od:Source ;
+  dcterms:creator odp:Thiel_R ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  rdfs:comment "" .
+
+<file://GDR-InventorSchools/Thiel-16.tex> a od:Source ;
+  dcterms:creator odp:Thiel_R ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  rdfs:comment "" .
+
+<file://GDR-InventorSchools/Thiel-Kybernetik.tex> a od:Source ;
+  dcterms:creator odp:Thiel_R ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  rdfs:comment "" .
+
 <http://opendiscovery.org/rdf/BIB/Goldovsky_1983>
   a od:Publication; 
   dcterms:creator odp:Goldovsky_BI ;
@@ -25,19 +170,347 @@
   dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
   dcterms:issued "1983"  . 
 
-<http://opendiscovery.org/rdf/BIB/Goldovsky_1983_de>
-  a od:Publication; 
+<file://Goldovsky_BI/Laws-1983-de.tex> a od:Source ;
   dcterms:creator odp:Goldovsky_BI ;
-  dc:language "ru";
-  bibo:
-  dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
-  dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
-  dcterms:issued "1983"  . 
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  rdfs:seeAlso <http://opendiscovery.org/rdf/BIB/Goldovsky_1983> ; 
+  rdfs:comment "German translation" .
 
-<http://opendiscovery.org/rdf/BIB/Goldovsky_1983>
-  a od:Publication; 
+<file://Goldovsky_BI/Laws-1983.pdf> a od:Source ;
   dcterms:creator odp:Goldovsky_BI ;
-  dc:language "ru"; 
   dcterms:title "Система закономерностей построения и развития технических систем"@ru ;
-  dcterms:source <https://triz-summit.ru/file.php/id/f303253-file-original.pdf>; 
-  dcterms:issued "1983"  . 
+  dc:format "pdf" ;
+  dc:language "ru" ;
+  rdfs:comment "A local copy of the original paper" .
+
+<file://Goldovsky_BI/metodolog-2164-de.tex> a od:Source ;
+  dcterms:creator odp:Goldovsky_BI ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  rdfs:comment "" .
+
+<file://Goldovsky_BI/metodolog-2164.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/Heilbronn-2019-Slides.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/lte-19-ru.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/lte-19.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/Minsk-2019-de.odt> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/Minsk-2019.doc> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/Minsk-2019-Slides.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/mts-20-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/mts-20-en.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/Newbee-de.txt> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/Newbee.doc> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/TRIZfest-2019-de.docx> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Graebe_HG/TRIZfest-2019.docx> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Kleemann_KP/2016-07-06.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Kleemann_KP/2017-05-02.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Kleemann_KP/2018-12-14.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Kleemann_KP/2018-12-25.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Kleemann_KP/2019-03.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Kozhemyako_A/Kozhemyako-19-en.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Ontology-Project/KuryanRubin-2020-en.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Ontology-Project/KuryanRubin-2020.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Petrov_VM/ldas-20-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Petrov_VM/ldas-20-de.toc> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Petrov_VM/ldas.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Rubin_MS/Rubin-19-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shpakovsky_NN/mts-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shpakovsky_NN/mts.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub-2006-en.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub-2006.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub-2006-ru.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub-2006.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub-2007.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub-2007.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Smirnov_EE/Smirnov-2016-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Smirnov_EE/Smirnov-2016-ru.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Tsourikov_V/Tsourikov-19-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Tsourikov_V/Tsourikov.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Tyukov_A/TDS-2020-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Tyukov_A/TDS-2020.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Vernadsky_VI/Thought-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Vernadsky_VI/Thought-EditHistory-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Vernadsky_VI/thought-ru.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub_2006/Referenzen.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub_2006/Shub-2006-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub_2006/Shub-2006-ru.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub_2006/Shub-2006-Web.pdf> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  rdfs:comment "" .
+
