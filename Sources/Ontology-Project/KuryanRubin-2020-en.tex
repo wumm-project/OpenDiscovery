@@ -2,6 +2,10 @@
 \usepackage{a4wide,url,graphicx,enumitem}
 \usepackage[utf8]{inputenc}
 \usepackage[russian,main=english]{babel}
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc}
+\usetikzlibrary{arrows.meta}
+\newcommand{\abox}[2]{\parbox{#1cm}{\centering #2}}
 
 \parindent0pt
 \parskip3pt
@@ -250,8 +254,34 @@ knowledge and skills of TRIZ specialists. At the new stage, the different
 parts of the area of TRIZ knowledge must be combined into a single system as
 shown in the figure. 3.
 
-\begin{center}
-  \addpicture
+\begin{center}\tikz[>={Triangle[length=3pt 9, width=3pt 3]}] {
+
+  \node at (1,8) {Structure of TRIZ-3 knowledge};
+  
+\node[draw, align=left] at (0,7) [rectangle] (A0) {\abox{3}{TRIZ Ontology}};
+\node[draw] at (0,5) [rectangle] (A1) {\abox{3}{TRIZ knowledge sources (books,
+    papers, internet resources)}};
+
+\node[draw] at (4,7) [rectangle] (A2) {\abox{3}{TRIZ Glossary}};
+\node[draw] at (4,6) [rectangle] (A3) {\abox{3}{TRIZ knowledge areas}};
+\node[draw] at (4,5) [rectangle] (A4) {\abox{3}{TRIZ tools}};
+\node[draw] at (4,4) [rectangle] (A5) {\abox{3}{Kinds of TRIZ activities}};
+
+\node[draw] at (8,6) [rectangle] (A6) {\abox{2}{\vskip2em TRIZ education\vskip2em}};
+\node[draw] at (8,4) [rectangle] (A7) {\abox{2}{TRIZ certification}};
+
+\draw[-] (A0) -- (2,7) -- (2,4) |- (A1) ;
+\draw[->] (2,7) -- (A2) ;
+\draw[->] (2,6) -- (A3) ;
+\draw[->] (2,5) -- (A4) ;
+\draw[->] (2,4) -- (A5) ;
+\draw[-] (A2) -| (6,5); 
+\draw[-] (A3) -| (6,5); 
+\draw[-] (A4) -| (6,5); 
+\draw[->] (A5) -- (A7);  
+\draw[->] (6,5) |- (A6);  
+}
+
   Fig. 3. TRIZ knowledge area structure (3rd stage)
 \end{center}
 
@@ -283,10 +313,20 @@ writings of this period.
 In addition, the terms of the glossary were classified by another criterion
 (see Figure 4).
 
-\begin{center}
-  \addpicture
-  Fig. 4. Classification of TRIZ terms
-\end{center}
+\begin{quote}
+  Fig. 4. Classification of TRIZ terms in the glossary -- displayed as list
+
+  \begin{itemize}[noitemsep]
+  \item Basic notions (C) -- notions, that are not derived from other other
+    TRIZ notions and do not require technics for their definition (56).
+  \item Model (M) -- a set of interrelated notions; related to one or several
+    rules (216).
+  \item Rules (T) -- rules how to work with basic notions and models (114). 
+  \item Groups of terms (G) -- union of notions and/or models and technics
+    (38). 
+  \item Synonyms (S) -- (32).
+  \end{itemize}
+\end{quote}
 
 The basic concepts consist as of terms borrowed from other subject areas of
 knowledge, e.g. system, function, harm, as well as terms that have been
@@ -346,10 +386,21 @@ Taking into account the history and dynamics of knowledge development in the
 field of TRIZ, an top level ontological
 chart\footnote{\url{https://triz-summit.ru/onto_triz/},\\ \url{https://onto.devtas.ru/new?view=c38a00d7-e97c-9648-bbc2-2af7b21d5d0e}. }
 \emph{Theory of Inventive Problem Solving} (TRIZ) was formed:
-\begin{center}
-  \includegraphics[width=.8\textwidth]{5.png}\\
-  Figure 5: TRIZ top level ontological chart.
-\end{center}
+\begin{quote}
+  Figure 5: TRIZ top level ontological chart -- displayed as list
+
+  Theory of inventive problem solving
+  \begin{itemize}[noitemsep]
+  \item Tools for the development of creative imagination (RTV)
+  \item Law of system development
+  \item TRIZ specialization
+  \item TRIZ theories
+  \item TRIZ application areas
+  \item TRIZ history
+  \item Scientific base of TRIZ
+  \item TRIZ model
+  \end{itemize}
+\end{quote}
 In general, the section names on the ontological chart \emph{TRIZ} speak for
 themselves, we will only clarify several sections. The section
 \emph{Specialisation in TRIZ} covers materials on training methods and
@@ -373,11 +424,19 @@ thinking: analysis, synthesis, evaluation.
 \end{center}
 
 The top level of the \emph{TRIZ Model} ontological chart is shown in figure 7.
-\begin{center}
-  \includegraphics[width=.8\textwidth]{7.png}\\
-  Figure 7: TRIZ Model ontological chart
-  \url{https://onto.devtas.ru/new?view=2c3fc934-2486-76ba-4262-ed91a8ca1570}
-\end{center}
+\begin{quote}
+  Figure 7: TRIZ Model ontological chart -- displayed as list (with arrows
+  reversed)
+
+  TRIZ model
+  \begin{itemize}[noitemsep]
+  \item contains $\to$ visualization of the TRIZ model
+  \item contains $\to$ objects of the TRIZ model
+  \item related to $\to$ project activities based on TRIZ
+  \item contains $\to$ TRIZ methods
+  \item related to $\to$ model of inventive thinking
+  \end{itemize}
+\end{quote}
 The TRIZ Model ontological chart contains:
 \begin{itemize}[noitemsep]
 \item examples of visualisation of the TRIZ Model, e.g. as in figure 6,
