@@ -40,6 +40,8 @@
   dc:format "LaTeX" ;
   dc:language "de" ;
   dc:year "2017" ;
+  dcterms:license <https://creativecommons.org/licenses/by/3.0> ;
+  rdfs:comment "Licensed according the rules of LIFIS-Online"; 
   dcterms:source <http://dx.doi.org/10.14625/balzer_20170110> ;
   rdfs:comment "LaTeX source of the publication" .
 
@@ -139,6 +141,8 @@
   dc:format "LaTeX" ;
   dc:language "de" ;
   dc:year "2016" ;
+  dcterms:license <https://creativecommons.org/licenses/by/3.0> ;
+  rdfs:comment "Licensed according the rules of LIFIS-Online"; 
   dcterms:source <http://dx.doi.org/10.14625/thiel_20160925> .
 
 <file://GDR-InventorSchools/Thiel-16b.tex> a od:Source ;
@@ -165,6 +169,8 @@
   dc:format "LaTeX" ;
   dc:language "de" ;
   dc:year "2016" ;
+  dcterms:license <https://creativecommons.org/licenses/by/3.0> ;
+  rdfs:comment "Licensed according the rules of LIFIS-Online"; 
   dcterms:source <http://dx.doi.org/10.14625/thiel_20160703> .
 
 <file://GDR-InventorSchools/Thiel-Kybernetik.tex> a od:Source ;
@@ -217,6 +223,8 @@
   dc:format "LaTeX" ;
   dc:language "en" ;
   dc:year "2019" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "Presentation at the TRIZ-Fest 2019 in Heilbronn" .
 
 <file://Graebe_HG/lte-19-ru.tex> a od:Source ;
@@ -225,6 +233,8 @@
   dc:format "LaTeX" ;
   dc:language "ru" ;
   dc:year "2019" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "Russian translation of Graebe_HG/lte-19" .
 
 <file://Graebe_HG/lte-19.tex> a od:Source ;
@@ -232,6 +242,8 @@
   dcterms:title "Zur Entwicklung Technischer Systeme"@de ;
   dc:format "LaTeX" ;
   dc:year "2019" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   dc:language "de" .
 
 <file://Graebe_HG/Minsk-2019-de.odt> a od:Source ;
@@ -240,6 +252,8 @@
   dc:format "odt" ;
   dc:language "de" ;
   dc:year "2019" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "German translation of Graebe_HG/Minsk-2019" .
 
 <file://Graebe_HG/Minsk-2019.doc> a od:Source ;
@@ -248,6 +262,8 @@
   dc:format "doc" ;
   dc:year "2019" ;
   dc:language "ru" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "Presented at TDS 2019 in Minsk" .
 
 <file://Graebe_HG/Minsk-2019-Slides.tex> a od:Source ;
@@ -256,6 +272,8 @@
   dc:format "LaTeX" ;
   dc:language "en" ;
   dc:year "2019" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "Slides of the presentation at TDS 2019 in Minsk" .
 
 <file://Graebe_HG/mts-20-de.tex> a od:Source ;
@@ -264,6 +282,8 @@
   dc:format "LaTeX" ;
   dc:language "de" ;
   dc:year "2020" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   dcterms:source <http://dx.doi.org/10.14625/graebe_20200519> .
 
 <file://Graebe_HG/mts-20-en.tex> a od:Source ;
@@ -272,6 +292,8 @@
   dc:format "LaTeX" ;
   dc:language "en" ;
   dc:year "2020" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "An English trimmed version of Graebe_HG/mts-20-de. Published in the Proceedings od the TRIZ Future Conference 2020, p. 399-410." .
 
 <file://Graebe_HG/Newbee-de.txt> a od:Source ;
@@ -280,6 +302,8 @@
   dc:format "txt" ;
   dc:language "de" ;
   dc:year "2019" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "German translation of Graebe_HG/Newbee" .
 
 <file://Graebe_HG/Newbee.doc> a od:Source ;
@@ -289,6 +313,8 @@
   dc:language "en" ;
   dc:year "2019" ;
   dcterms:source <https://triz-journal.com/a-triz-newbees-report/> ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "Published in the TRIZ Journal" .
 
 <file://Graebe_HG/TRIZfest-2019-de.docx> a od:Source ;
@@ -297,6 +323,8 @@
   dc:format "docx" ;
   dc:language "de" ;
   dc:year "2019" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "German translation of Graebe_HG/TRIZfest-2019" .
 
 <file://Graebe_HG/TRIZfest-2019.docx> a od:Source ;
@@ -305,6 +333,8 @@
   dc:format "docx" ;
   dc:language "en" ;
   dc:year "2019" ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "Published in the Proceedings of the 15th MATRIZ TRIZfest-2019 International Conference. ISBN 978-0-578-62617-8, S. 346-352" .
 
 <file://Kleemann_KP/2016-07-06.tex> a od:Source ;
@@ -313,6 +343,8 @@
   dc:format "LaTeX" ;
   dc:language "de" ;
   dc:year "2016" ;
+  dcterms:license <https://creativecommons.org/licenses/by/3.0> ;
+  rdfs:comment "Licensed according the rules of LIFIS-Online"; 
   dcterms:source <http://dx.doi.org/10.14625/kleemann_20160706> .
 
 <file://Kleemann_KP/2017-05-02.tex> a od:Source ;
@@ -329,6 +361,8 @@
   dc:format "LaTeX" ;
   dc:language "de" ;
   dc:year "2018" ;
+  dcterms:license <https://creativecommons.org/licenses/by/3.0> ;
+  rdfs:comment "Licensed according the rules of LIFIS-Online"; 
   dcterms:source <http://dx.doi.org/10.14625/kleemann_20181214> .
 
 <file://Kleemann_KP/2018-12-25.tex> a od:Source ;
@@ -337,6 +371,8 @@
   dc:format "LaTeX" ;
   dc:language "de" ;
   dc:year "2018" ;
+  dcterms:license <https://creativecommons.org/licenses/by/3.0> ;
+  rdfs:comment "Licensed according the rules of LIFIS-Online"; 
   dcterms:source <http://dx.doi.org/10.14625/kleemann_20181225> .
 
 <file://Kleemann_KP/2019-03.tex> a od:Source ;
@@ -348,65 +384,114 @@
   rdfs:comment "" .
 
 <file://Kozhemyako_A/Kozhemyako-19-en.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Kozhemyako_A ;
+  dcterms:title "Features of the use of TRIZ for solving organizational managerial tasks: schematization of an inventive situation and work with contradictions." ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "en" ;
+  dc:year "2019" ;
+  rdfs:comment "English translation of the Russian original. Not yet finished" .
 
 <file://Ontology-Project/KuryanRubin-2020-en.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Kuryan_AG, odp:Rubin_MS, odp:Shchedrin_N, odp:Eckardt_O, odp:Rubina_NV ; 
+  dcterms:title "TRIZ Ontology. Current State and Perspectives"@en ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "en" ;
+  dc:year "2020" ;
+  rdfs:comment "English translation of Ontology-Project/KuryanRubin-2020.tex" .
 
 <file://Ontology-Project/KuryanRubin-2020.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Kuryan_AG, odp:Rubin_MS, odp:Shchedrin_N, odp:Eckardt_O, odp:Rubina_NV ; 
+  dcterms:title "ТРИЗ Онтология. Текущее состояние и перспективы"@ru ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "ru" ;
+  dc:year "2020" .
 
 <file://Petrov_VM/ldas-20-de.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Petrov_VM ;
+  dcterms:title "Gesetzmäßigkeiten der Entwicklung künstlicher Systeme"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
-
-<file://Petrov_VM/ldas-20-de.toc> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "de" ;
+  dc:year "2020" ;
+  rdfs:comment "German translation of Petrov_VM/ldas.tex" .
 
 <file://Petrov_VM/ldas.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Petrov_VM ;
+  dcterms:title "Закономерности развития искусственных систем"@ru ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "ru" ;
+  dc:year "2020" ;
+  rdfs:comment "Paper presented at TDS 2020" .
+
+<file://Petrov_VM/Laws-20-Annotation-ru.tex> a od:Source ;
+  dcterms:creator odp:Petrov_VM ;
+  dcterms:title "Законы и закономерности развития систем"@ru ;
+  dc:format "LaTeX" ;
+  dc:language "ru" ;
+  dc:year "2020" ;
+  rdfs:comment "The free part from vol. 1 of a series of books by V.M. Petrov on system development laws" .
 
 <file://Rubin_MS/Rubin-19-de.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
+  dcterms:creator odp:Rubin_MS ;
+  dcterms:title "Zum Zusammenhang zwischen den Entwicklungsgesetzen allgemeiner Systeme und den Entwicklungsgesetzen technischer Systeme"@de ;
   dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
+  dc:language "de" ;
+  dc:year "2019" ;
+  rdfs:comment "German translation of an unpublished manuscript by M.S.Rubin" .
 
 <file://Shpakovsky_NN/mts-de.tex> a od:Source ;
+  dcterms:creator odp:Shpakovsky_NN ;
+  dcterms:title "Der Mensch und das technische System"@de ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  dc:year "2003" ;
+  rdfs:comment "German translation of Shpakovsky_NN/mts.tex" .
+
+<file://Shpakovsky_NN/mts.tex> a od:Source ;
+  dcterms:creator odp:Shpakovsky_NN ;
+  dcterms:title "Человек и Техническая Система"@ru ;
+  dc:format "LaTeX" ;
+  dc:language "ru" ;
+  dcterms:source <http://www.gnrtr.ru/Generator.html?pi=201&cp=3>, <http://www.gnrtr.ru/Generator.html?pi=200&cp=3> ; 
+  dc:year "2003" .
+
+<file://Shpakovsky_NN/TTE.pdf> a od:Source ;
+  dcterms:creator odp:Shpakovsky_NN ;
+  dcterms:title "Tree of Technology Evolution"@en ;
+  dc:format "pdf" ;
+  dc:language "en" ;
+  dc:year "2016" ;
+  dcterms:license <https://creativecommons.org/licenses/by/3.0> ;
+  rdfs:comment "Licensed by the author 2020-10-22"; 
+  rdfs:comment "Open Source of BIB/Book/Shpakovsky_2016, English translation of BIB/Book/Shpakovsky_2010" .
+
+<file://Shub_L/Shub_2006/Referenzen.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  dc:year "2018" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub_2006/Shub-2006-de.tex> a od:Source ;
+  dcterms:creator odp:Meier ;
+  dcterms:title "" ;
+  dc:format "LaTeX" ;
+  dc:language "" ;
+  dc:year "2018" ;
+  rdfs:comment "" .
+
+<file://Shub_L/Shub_2006/Shub-2006-ru.tex> a od:Source ;
   dcterms:creator odp:Meier ;
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
   rdfs:comment "" .
 
-<file://Shpakovsky_NN/mts.tex> a od:Source ;
+<file://Shub_L/Shub_2006/Shub-2006-Web.pdf> a od:Source ;
   dcterms:creator odp:Meier ;
   dcterms:title "" ;
   dc:format "LaTeX" ;
+  dc:year "2018" ;
   dc:language "" ;
   rdfs:comment "" .
 
@@ -415,6 +500,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Shub_L/Shub-2006.pdf> a od:Source ;
@@ -422,6 +508,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Shub_L/Shub-2006-ru.pdf> a od:Source ;
@@ -436,6 +523,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Shub_L/Shub-2007.pdf> a od:Source ;
@@ -450,6 +538,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Smirnov_EE/Smirnov-2016-de.tex> a od:Source ;
@@ -457,6 +546,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Smirnov_EE/Smirnov-2016-ru.pdf> a od:Source ;
@@ -464,6 +554,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Tsourikov_V/Tsourikov-19-de.tex> a od:Source ;
@@ -471,6 +562,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Tsourikov_V/Tsourikov.pdf> a od:Source ;
@@ -485,6 +577,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Tyukov_A/TDS-2020.pdf> a od:Source ;
@@ -499,6 +592,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Vernadsky_VI/Thought-EditHistory-de.tex> a od:Source ;
@@ -506,6 +600,7 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
 <file://Vernadsky_VI/thought-ru.pdf> a od:Source ;
@@ -513,33 +608,6 @@
   dcterms:title "" ;
   dc:format "LaTeX" ;
   dc:language "" ;
-  rdfs:comment "" .
-
-<file://Shub_L/Shub_2006/Referenzen.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
-
-<file://Shub_L/Shub_2006/Shub-2006-de.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
-
-<file://Shub_L/Shub_2006/Shub-2006-ru.tex> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
-  rdfs:comment "" .
-
-<file://Shub_L/Shub_2006/Shub-2006-Web.pdf> a od:Source ;
-  dcterms:creator odp:Meier ;
-  dcterms:title "" ;
-  dc:format "LaTeX" ;
-  dc:language "" ;
+  dc:year "2018" ;
   rdfs:comment "" .
 
