@@ -412,9 +412,9 @@
   dc:format "LaTeX" ;
   dc:language "de" ;
   dc:year "2020" ;
-  rdfs:comment "German translation of Petrov_VM/ldas.tex" .
+  rdfs:comment "German translation of Petrov_VM/ldas-20-ru.tex" .
 
-<file://Petrov_VM/ldas.tex> a od:Source ;
+<file://Petrov_VM/ldas-20-ru.tex> a od:Source ;
   dcterms:creator odp:Petrov_VM ;
   dcterms:title "Закономерности развития искусственных систем"@ru ;
   dc:format "LaTeX" ;
@@ -430,6 +430,14 @@
   dc:year "2020" ;
   rdfs:comment "The free part from vol. 1 of a series of books by V.M. Petrov on system development laws" .
 
+<file://Petrov_VM/Laws-20-Annotation-de.tex> a od:Source ;
+  dcterms:creator odp:Petrov_VM ;
+  dcterms:title "Gesetze und Gesetzmäßigkeiten der Entwicklung von Systemen"@de ;
+  dc:format "LaTeX" ;
+  dc:language "de" ;
+  dc:year "2020" ;
+  rdfs:comment "German translation of Petrov_VM/Laws-20-Annotation-ru.tex" .
+
 <file://Rubin_MS/Rubin-19-de.tex> a od:Source ;
   dcterms:creator odp:Rubin_MS ;
   dcterms:title "Zum Zusammenhang zwischen den Entwicklungsgesetzen allgemeiner Systeme und den Entwicklungsgesetzen technischer Systeme"@de ;
@@ -438,7 +446,7 @@
   dc:year "2019" ;
   rdfs:comment "German translation of an unpublished manuscript by M.S.Rubin" .
 
-<file://Shpakovsky_NN/mts-de.tex> a od:Source ;
+<file://Shpakovsky_NA/mts-de.tex> a od:Source ;
   dcterms:creator odp:Shpakovsky_NN ;
   dcterms:title "Der Mensch und das technische System"@de ;
   dc:format "LaTeX" ;
@@ -446,7 +454,7 @@
   dc:year "2003" ;
   rdfs:comment "German translation of Shpakovsky_NN/mts.tex" .
 
-<file://Shpakovsky_NN/mts.tex> a od:Source ;
+<file://Shpakovsky_NA/mts.tex> a od:Source ;
   dcterms:creator odp:Shpakovsky_NN ;
   dcterms:title "Человек и Техническая Система"@ru ;
   dc:format "LaTeX" ;
@@ -454,7 +462,7 @@
   dcterms:source <http://www.gnrtr.ru/Generator.html?pi=201&cp=3>, <http://www.gnrtr.ru/Generator.html?pi=200&cp=3> ; 
   dc:year "2003" .
 
-<file://Shpakovsky_NN/TTE.pdf> a od:Source ;
+<file://Shpakovsky_NA/TTE.pdf> a od:Source ;
   dcterms:creator odp:Shpakovsky_NN ;
   dcterms:title "Tree of Technology Evolution"@en ;
   dc:format "pdf" ;

@@ -1,0 +1,673 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{a4wide,url,enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[main=german,russian]{babel}
+
+\parindent0pt
+\parskip3pt
+
+\title{Gesetze und Gesetzmäßigkeiten der Entwicklung von Systemen} 
+
+\author{Vladimir Petrov}
+
+\date{2020}
+
+\begin{document}
+\maketitle
+
+\begin{quote}
+  \foreignlanguage{russian}{«Законы и закономерности развития систем»}
+  (Gesetze und Gesetzmäßigkeiten der Entwicklung von Systemen) ist eine
+  vierbändige Monographie des
+  Autors\footnote{\url{https://ridero.ru/books/zakony_i_zakonomernosti_razvitiya_sistem},
+    ISBN 978-5-0051-5728-7.}, in welcher er die aktuelle Sicht auf die
+  Problematik der Gesetze und Gesetzmäßig\-keiten der Entwicklung von
+  (technischen und allgemeinen) Systemen entwickelt, wie sie aus der
+  TRIZ-Theorie bekannt ist.
+
+  Dieser Text ist eine deutsche Übersetzung eines kostenfreien Fragments aus
+  dem Buch, ausgeführt von Hans-Gert Gräbe, Leipzig.
+\end{quote}
+\section*{Einleitung}
+
+Die Monographie „Gesetze und Gesetzmäßigkeiten der Systementwicklung“ ist
+einzigartig, weil sie die vollständigste Beschreibung der Gesetze und
+Gesetzmäßigkeiten der Systementwicklung bietet. Sie besteht aus vier
+Büchern. Die Monographie ist eine Verbesserung des Buchs „Gesetze der
+Systementwicklung“ (2018?).  Seit jener Zeit hat der Autor einige seiner
+Ansichten über Gesetze und Gesetzmäßigkeiten verändert. Darüber hinaus ist die
+Monografie in einzelne Bücher unterteilt, damit sie sich leichter lesen lässt.
+
+\textbf{Das erste Buch} enthält eine Einführung in die Monographie. Es
+beschreibt die grundlegenden Konzepte und Definitionen, die Struktur der
+Gesetze und Gesetzmäßigkeiten der Systementwicklung, jedes Gesetz und jede
+Gesetzmäßigkeit, die Bestimmung der Gesetze und Gesetzmäßigkeiten und die
+Methodik der Vorhersage der Entwicklung von Systemen.
+
+Dieses Buch ist eine Vogelperspektive auf das gesamte System dieser Gesetze
+und Gesetz\-mäßig\-keiten. Im diesem Buch können Sie nicht nur mit der
+gemeinsamen Struktur der Gesetze und Gesetzmäßigkeiten bekannt machen, sondern
+auch mit jedem einzelnen von ihnen. In diesem Buch werden allerdings keine
+Beispiele gegeben. Dazu wird auf die weiteren Bücher verwiesen.  In diesem
+Buch werden Beispiele nur zu Begriffen und Definitionen im ersten Kapitel
+gegeben. Das Buch 1 ist eine Art monographische Zusammenfassung.
+
+\textbf{Das zweite Buch} beschreibt universelle Gesetze der Systementwicklung
+(Gesetze der Dialektik, die Gesetzmäßigkeit der Entwicklung in S-Kurven und
+die Gesetzmäßigkeiten der Entwicklung von Bedürfnisse und Funktionsänderungen.
+
+\textbf{Das dritte Buch} ist den Gesetzen und Gesetzmäßigkeiten der
+Konstruktion und der Entwicklung von Systemen gewidnet.  Das vierte Buch
+beschreibt die Gesetzmäßigkeit der Verän\-derung des Grades der Steuerbarkeit
+und Dynamik sowie der Vorhersagbarkeit der Entwicklung von Systemen. Praktisch
+ist dies der zweite Teil des dritten Buches. Darüber hinaus werden Anwendungen
+besprochen.
+
+Die Monografie richtet sich an ein breites Spektrum von Lesern, die an
+Innovationen interessiert sind oder sich mit diesen befassen. In erster Linie
+richtet sie sich an Wissenschaftler, Ingenieure und Erfinder, die
+schöpferische Aufgaben lösen. Sie kann für Hochschullehrer, Graduierte und
+Studierende von Nutzen sein, welche die Theorie des erfinderischen
+Problemlösens (TRIZ), technisches Schöpfertum, den systemischen Ansatz und den
+Innovationsprozess studieren wollen, sowie für Leiter von Unternehmen und für
+Geschäftsleute.
+
+Das Buch könnte für Patentanwälte von besonderem Interesse sein.
+
+\section*{Vorwort}
+
+\begin{flushright}
+  \begin{minipage}{.8\textwidth}\it
+    Technische Systeme entwickeln sich gesetzmäßig. Diese Gesetzmäßigkeiten
+    sind erkennbar, sie können dazu verwendet werden, alte technische Systeme
+    bewusst zu verbessern und neue zu schaffen, wodurch der Prozess der Lösung
+    erfinderischer Aufgaben zu einer exakten Wissenschaft der Entwicklung
+    technischer Systeme wird. Hier verläuft auch die Grenze zwischen Methoden
+    zur Aktivierung der Variantensuche und einer modernen Theorie der Lösung
+    erfinderischer Aufgaben (TRIZ).
+
+    Man muss die Gesetze der Entwicklung technischer Systeme zu kennen und
+    anwenden.
+    \begin{flushright}
+      G.S. Altschuller
+    \end{flushright}
+  \end{minipage}
+\end{flushright}
+Die Gesetze der Entwicklung technischer Systeme bilden das Fundament der
+Theorie der Lösung erfinderischer Aufgaben (TRIZ).
+
+Das erste System von Gesetzen der Entwicklung technischer Systeme wurde vom
+TRIZ-Autor G.S. Altschuller vorgeschlagen. Später wurde dieses System von
+Gesetzen nicht nur von Altschuller verbessert, sondern auch von seinen
+Kollegen. Die Geschichte der Gesetze der Entwicklung technischer Systeme wird
+im Buch „Die Geschichte der Entwicklung von Gesetzen:
+TRIZ“\footnote{V.M. Petrov. \foreignlanguage{russian}{История развития
+    законов: ТРИЗ} (Geschichte der Entwicklung der TRIZ-Gesetze).  Ridero,
+  2018. ISBN 9785449360793.} beschrieben.
+
+Diese Monographie ist eine Verbesserung des Buches „Gesetzmäßigkeiten der
+Entwicklung von Systemen“\footnote{V.M. Petrov.
+  \foreignlanguage{russian}{Законы развития систем: ТРИЗ} (TRIZ-Gesetze der
+  Systementwicklung). 2. Auflage. Ridero, 2019.  ISBN 9785449099853.}.  Das
+Buch war wegen seiner Einzigartigkeit recht weit verbreitet. Es ist die
+umfassendste Darstellung von Gesetzen und Gesetzmäßigkeiten der Entwicklung
+von Systemen. In dieser Ausführlichkeit waren die Gesetze noch in keinem Buch
+dargestellt.
+
+Seit der Veröffentlichung dieses Buches hat der Autor jedoch einige seiner
+Ansichten zu Gesetze und Gesetzmäßigkeiten geändert. Darüber hinaus hat sich
+der Autor bemüht, die neue Monografie leichter lesbar zu gestalten, indem sie
+in einzelne Bücher unterteilt wurde.
+
+Im Allgemeinen werden Gesetze und Gesetzmäßigkeiten verwendet für:
+\begin{itemize}[noitemsep]
+  \item das Auffinden innovativer Lösungen;
+  \item die Entwicklung starken (erfinderischen, talentierten) Denkens;
+  \item die Vorhersage der Systementwicklung.
+\end{itemize}
+\textbf{Das erste Buch} ist eine Einführung in die Monographie. Es beschreibt
+die grundlegenden Konzepte und Definitionen, die Struktur der Gesetze und
+Gesetzmäßigkeiten der Systementwicklung, alle Gesetze und Gesetzmäßigkeiten,
+die Bestimmung der einzelnen Gesetze und Gesetzmäßigkeiten und die Methodik
+zur Vorhersage der Entwicklung von Systemen.
+
+Dieses Buch ist wie eine Vogelperspektive auf das gesamte System dieser
+Gesetze und Gesetzmäßigkeiten. Aus diesem Buch werden Sie nicht nur die
+allgemeine Struktur der Gesetze und Gesetzmäßigkeiten kennenlernen, sondern
+auch jede von ihnen. Allerdings werden in diesem Buch keine Beispiele gegeben.
+Dies erfolgt erst in den weiteren Bänden. In diesem Buch werden Beispiele nur
+zu Begriffen und Definitionen im Kapitel eins gegeben, und Beispiele für die
+Tendenz zur Änderung von Feldern, die im Anhang beschrieben wird.
+
+Das erste Buch ist eine Art Zusammenfassung der gesamten Monografie. Es kann
+auch als Nachschlagewerk verwendet werden.
+
+In den anderen Büchern wird jedes der Gesetze und jede der Gesetzmäßigkeiten
+im Detail beschrieben, die Methodik und Algorithmen ihrer Anwendung für
+verschiedene Ziele. Darüber hinaus werden jedes Gesetz und jede
+Gesetzmäßigkeit anhand zahlreicher Beispiele, Aufgaben und von Bildmaterial
+veranschaulicht.
+
+\textbf{Das zweite Buch} beschreibt universelle Gesetze der Systementwicklung
+(Gesetze der Dialektik, die Gesetzmäßigkeit der S-förmigen Entwicklung und
+Gesetzmäßigkeit der Entwicklung von Bedürfnisse und von Funktionsänderungen.
+
+\textbf{Das dritte Buch} ist den Gesetzen und Gesetzmäßigkeiten der
+Konstruktion und Entwicklung von Systemen gewidmet.
+
+\textbf{Das vierte Buch} beschreibt die Gesetzmäßigkeit der Veränderung der
+Steuerbarkeit und Dynamik sowie der Vorhersage der Entwicklung eines Systems.
+Praktisch ist dies der zweite Teil des dritten Buches. Darüber hinaus werden
+Anwendungen beschrieben.
+
+Die Nummerierung der Kapitel in den Büchern ist fortlaufend.
+
+Die Monographie richtet sich an Forscher, Ingenieure und Erfinder, die
+schöpferische Aufgaben zu lösen haben. Es kann für Hochschullehrer nützlich
+sein, für Graduierte und Studenten, welche die Theorie der Lösungen
+erfinderischer Aufgaben (TRIZ), schöpferische Ingenieursarbeit, den
+Systemansatz und Innovationsprozesse studieren wollen.
+
+\section*{Danksagungen}
+
+Ich danke meinem Lehrer, Kollegen und Freund Heinrich Altschuller, vor allem,
+weil er die Grundlage für die Theorie der Entwicklung technischer Systeme
+schuf -- die Gesetze ihrer Entwicklung, dafür, dass ich das Glück hatte, mit
+ihm über verschiedene Dinge zu kommunizieren und über verschiedene Aspekte der
+TRIZ und des Lebens zu diskutieren, insbesondere über einige Materialien
+dieses Buches.
+
+Ich verdanke Esther Zlotyna sehr viel, meiner Frau und TRIZ-Partnerin.  Viele
+Jahre haben wir zusammengearbeitet, um verschiedene TRIZ-Materialien zu
+entwickeln, darunter erörterten wir auch die ersten Materialien dieser Arbeit.
+
+Ich möchte meinem Freund und Kollegen Boris Goldowsky (Russland) meinen
+aufrichtigen Dank aussprechen für seine wertvollen Ratschläge und Kommentare
+während der Ausarbeitung des Buches, die dazu beigetragen haben, meine Meinung
+zu bestimmten Aspekten zu ändern, die in diesem Buch beschrieben sind.
+
+\section*{Einführung}
+
+\textbf{Grundlage der TRIZ} sind die Gesetze der Entwicklung technischer
+Systeme.  Sie bilden eine zusammenhängende Struktur von Gesetzen,
+Gesetzmäßigkeiten und Trends der Technikentwicklung.
+
+Bevor wir die Gesetze der Entwicklung technischer Systeme betrachten, wollen
+wir auf den oft vernommenen Einwand antworten „Es kann keine Gesetze der
+Technikentwicklung geben. Technik entwickeln die Menschen nach ihren Wünschen,
+das ist ein zufälliger Prozess“.
+
+Natürlich wird Technik von Menschen entwickelt.
+
+Die ersten „Erfindungen“ wurden von den Urmenschen unter Nutzung der Natur
+gemacht. Für die Jagd war er nicht stark genug, also benutzte er eine
+Keule. Für die Bearbeitung von Häuten verwende er einen scharfen Stein usw. So
+begann er, seine ersten Bedürfnisse zu befriedigen. Diese „Werkzeuge“ gingen
+kaputt oder stellten ihn nicht ganz zufrieden, er perfektionierte sie und
+verwendete die alten nicht weiter ... So diktierte selbst in jenen fernen
+Zeiten die Realität, welche Technik zu bleiben hat und welche ausstirbt.
+Später wurden diese Bedingungen immer rigider.
+
+Das Leben eines technischen Systems hängt von vielen Faktoren ab: vom Umfeld,
+in dem es eingesetzt ist, von seinen ergonomischen, ökologischen, ökonomischen
+und anderen Charakteristiken. In der nächsten Etappe werden die
+Unzulänglichkeiten eines wenig erfolgreichen Systems verbessert.  Hinzu kommt,
+dass die menschlichen Bedürfnisse ständig wachsen. Um sie zu befriedigen,
+werden neue technische Systeme entwickelt, die miteinander konkurrieren.
+
+Nur Systeme mit den besten Charakteristiken überleben. Auf diese Weise
+vollzieht sich eine „natürliche Auslese“, der Prozess der Evolution
+technischer Systeme.  Dieser Prozess ähnelt der natürlichen Auslese in der
+Natur. Wenn Sie die Geschichte der Entwicklung konkreter Systeme analysieren,
+ist es möglich, Gesetzmäßigkeiten ihrer Entwicklung zu bestimmen, und indem
+man die Gesetzmäßigkeiten verallgemeinert, erhält man Gesetze. Das ist die Art
+von Arbeit, die Heinrich Altshuller leistete, indem er Hunderttausende von
+Patenten untersucht hat.
+
+Ein ähnliches Vorgehen ist auch bei anderen künstlichen Systemen üblich.
+
+Von den drei Welten menschlichen Schöpfertums -- \textbf{Wissenschaft,
+  Technologie, Kunst} -- war die Wissenschaft die erste, die ihre Aura der
+persönlichen Exklusivität verlor. Sie untersucht \textbf{objektive
+  Gesetzmäßigkeiten}, und ihr Entwicklungsweg ist vorbestimmt.
+
+Im Gegensatz zu Forschern (Menschen der Wissenschaft) haben viele Menschen,
+die Technik entwickeln (Erfinder), nicht einmal die leiseste Ahnung von der
+Existenz irgendwelcher Gesetzmäßigkeiten in dieser Entwicklung.
+
+Dabei ist die Bedeutung von Kreativität in Wissenschaft und Technik sehr nahe:
+\textbf{Ziel der Wissenschaft} ist die Gewinnung von Erkenntnissen über die
+Eigenschaften der Materie, \textbf {Ziel von Technik} ist die Nutzung dieser
+Eigenschaften zur Befriedigung der Bedürfnisse der Menschen und der
+Gesellschaft.
+
+\section*{Kapitel 1. Begriffe und Definitionen}
+
+\subsection*{1.1. Gesetz}
+
+Wir tragen einige Definitionen zusammen.
+
+Ein \textbf{Gesetz} ist ein notwendiges, wesentliches, nachhaltiges, sich
+wiederholendes Phänomen. Ein Gesetz drückt eine Beziehung zwischen
+Gegenständen (\foreignlanguage{russian}{предмет}), den Bestandteilen dieses
+Gegenstands, zwischen den Eigenschaften von Dingen
+(\foreignlanguage{russian}{вещи}) als auch zwischen den
+Eigenschaften innerhalb dieser Dinge aus.  
+
+Aber nicht alle Beziehungen sind Gesetze. Beziehungen können notwendig und
+zufällig sein.  Ein Gesetz ist eine \textbf{notwendige Beziehung}. Es bringt
+die wesentliche Beziehung zwischen im Raum koexistierenden Dingen zum
+Ausdruck. Es ist ein Gesetz des Funktionierens.
+
+Gesetze existieren \emph{objektiv}, unabhängig vom Bewusstsein der Menschen.
+
+Eine \textbf{Gesetzmäßigkeit} ist eine Bedingtheit durch objektive Gesetze;
+eine Existenz und Entwicklung in Übereinstimmung mit den Gesetzen\footnote{Das
+  bleibt missverständlich, hier deshalb die Formulierung im Original:
+  \foreignlanguage{russian}{Закономерность, обусловленность объективными
+    законами; существование и развитие соответственно законам.}}.
+
+V.P. Tugarinov gibt die folgende Definition eines Gesetzes: 
+\begin{quote}
+  Ein Gesetz ist eine solche Beziehung zwischen wesentlichen Eigenschaften
+  oder Stufen der Entwicklung von Phänomenen der objektiven Welt, die
+  universellen und notwendigen Charakter haben und sich in der relativen
+  Stabilität und Wiederholbarkeit dieser Beziehungen manifestieren.
+
+  Der Begriff «Gesetz» dient zur Bezeichnung wesentlicher und notwendiger,
+  gemeinsamer oder allgemeiner
+  Beziehungen\footnote{\foreignlanguage{russian}{общей или всеобщей связи}}
+  zwischen Gegenständen, Erscheinungen, Systemen, ihrer Seiten oder anderer
+  Bestandteile im Prozess der Existenz und Entwicklung. Diese Beziehungen und
+  Verbindungen sind objektiv. Die Gesetze der Wissenschaft sind ihr
+  Spiegelbild im menschlichen Bewusstsein.
+
+  Der Begriff der „Gesetzmäßigkeit“ unterscheidet sich inhaltlich vom Gesetz
+  seinem Inhalt und seiner akzeptierten Verwendung nach. Wenn man von der
+  Gesetzmäßigkeit der einen oder anderen Erscheinung
+  (\foreignlanguage{russian}{явление}) spricht, wird damit sehr häufig nur die
+  Tatsache betont wird, dass der Prozess oder die Erscheinung nicht zufällig
+  ist, sondern der Wirkung eines bestimmten eines Gesetzes oder einer Reihe
+  von Gesetzen unterworfen ist. Letzteres gilt insbesondere für eine
+  Gesetzmäßigkeit, die von ihrem Inhalt her weiter gefasst ist als ein Gesetz,
+  und bezeichnet auch die gemeinschaftliche Wirkung
+  (\foreignlanguage{russian}{совокупное действие}) einer Reihe von Gesetzen und
+  deren Ergebnis ((\foreignlanguage{russian}{итоговый результат})).
+
+  Der Unterschied zwischen Gesetzen und Gesetzmäßigkeiten ist nicht
+  ausschließlich, sondern ist als teilweises Zusammenfallen des Inhalts dieser
+  Konzepte zu verstehen.
+\end{quote}
+
+Die Geschichte der Entstehung und Herausbildung des Begriffs \emph{Gesetz}
+wird ausführlich von L. A. Drujanow beschrieben. Darüber hinaus hebt er zwei
+Merkmale hervor, die dem Gesetzesbegriff innewohnen, und beschreibt vier (die
+Hierarchie dieser Merkmale und die Texthervorhebungen sind durch den Autor
+dieses Aufsatzes ausgeführt):
+\begin{itemize}
+\item \textbf{Wesentliche Beziehung}. «Das objektive Gesetz... ist eine
+  wesentliche Beziehung von Phänomenen (oder Seiten ein und desselben
+  Phänomens). Ein objektives Gesetz bezieht sich nicht auf ein einzelnes
+  Objekt, sondern auf einen Komplex (\foreignlanguage{russian}{совокупность})
+  von Objekten, die eine bestimmte Klasse, Art, Menge konstituieren, welcher
+  die Art ihres „Verhaltens“ (Funktionieren und Entwicklung) definiert.
+  ... Da ... in der Natur wesentliche Beziehungen wirken (objektive Gesetze),
+  ist ihr Verhalten nicht zufällig, chaotisch; sie funktionieren und
+  entwickeln sich auf gesetzmäßige Weise und zusammen mit Veränderlichkeit
+  zeichnen sie sich durch relative Stabilität und Harmonie aus.»
+\item \textbf{Notwendigkeit}. «...jedes objektive Gesetz (Naturgesetz) hat ein
+  notwendiger Charakter; das Gesetz, die gsetzmäßige Beziehung ist immer
+  gleichzeitig eine notwendige Beziehung, die, im Gegensatz zu einer
+  zufälligen Beziehung, in Anwesenheit von bestimmten Bedingungen zwangsläufig
+  stattfinden (auftreten, eintreten) muss ...  Folglich ist eine wesentliche
+  gesetzmäßige Beziehung (Gesetz) zugleich auch eine notwendige Beziehung.
+  Mit anderen Worten, die Notwendigkeit ist der wichtigste Charakterzug eines
+  Gesetzes, einer Gesetzmäßigkeit. Jedes Naturgesetz ist auf diese Weise
+  Ausdruck des notwendigen Charakters der wesentlichen Beziehungen in
+  der objektiven Welt.»
+\item \textbf{Universalität}. «Ein anderer wichtigster Charakterzug eines
+  jeden objektiven Gesetzes ist seine Universalität
+  (\foreignlanguage{russian}{всеобщность}). Jedes Naturgesetz ist ausnahmslos
+  allen Erscheinungen oder Objekten eines bestimmten Typs oder einer
+  bestimmten Art inhärent ...  Universalität ist damit ein zweiter wichtiget
+  Charakterzug objektiver Gesetze, der Naturgesetze.  Da jedes Gesetz
+  notwendigen und universellen Charakter hat, da es sich immer und überall
+  verwirklicht, wo entsprechende Objekte und Bedingungen vorliegen, sind
+  folglich gesetzmäßige Beziehungen dauerhaft, stabil, sich wiederholend...
+  Das Gesetz ist invariant bezüglich der Erscheinungen».
+\item \textbf{Wiederholender Charakter}. «Es ist leicht zu erkennen, wie
+  wichtig für den Menschen die Existenz von Stabilität, Wiederholbarkeit,
+  Ordnung in der Natur ist, für die Wissenschaft und praktische Tätigkeit der
+  Menschen. Wenn es in der Natur nichts wiederholte, sondern jedes Mal auf
+  eine neue Art und Weise geschähe, könnten sich weder Mensch noch Tier an die
+  umgebenden Bedingungen anpassen, wäre eine zilegerichtete Tätigkeit nicht
+  möglich, wissenschaftliche Erkenntnisse und das Leben selbst... Weil
+  Wiederholbarkeit, Ordnung... wichtige Merkmale der objektiven Gesetze sind,
+  beginnt die wissenschaftliche Suche nach gesetzmäßigen Beziehungen in der
+  Natur gewöhnlich mit der Feststellung der Wiederholbarkeit bestimmter Seiten
+  oder Eigenschaften der untersuchten Objekte... Deshalb ist die Wissenschaft
+  nicht an beliebigen sich wiederholenden Beziehungen zwischen Objekten
+  interessiert, sondern nur an solchen, die zugleich wesentlichen Charakter
+  haben, d.h. sie ist an wesentlichen sich wiederholenden Beziehungen
+  interessiert».
+\end{itemize}
+«... können wir ein objektives Gesetz (das Naturgesetz) definieren als
+wesentliche Beziehung, die notwendigen, universellen, sich wiederholenden
+(regelmäßigen) Charakter hat».
+
+B.S. Ukrainzev formulierte als gemeinsame Besonderheiten der objektiven
+Gesetze der Technik:
+\begin{itemize}
+\item \textbf{Zielumsetzung -- Realisiereung von Bedürfnissen}. «Alle
+  technischen Konstruktionen oder Gerätschaften sowie auch deren werden nach
+  Zielvorstellungen geschaffen, d.h. in einer Weise, dass sie in ihrer
+  Funktionsweise Mittel zur Erreichung eines menschlichen Ziels sind.  Deshalb
+  sind alle technischen Gesetze in ihrem Wesen Gesetze der
+  Zweckverwirklichung».
+\item \textbf{Steurbarkeit der Technik durch den Menschen}. «Die Gesetze (der
+  Technik) vereint das Prinzip der Kopplung von Möglichkeiten der Technik und
+  Möglichkeiten des Menschen oder, anders ausgedrückt, das Prinzip der
+  menschlichen Kontrolle über die Technik».
+\item \textbf{Das Prinzip der Technologität}. «... eine neue Konstruktion muss
+  so gestaltet sein, dass sie mit vorhandenen Produktionsmitteln und basierend
+  auf vorhandenen Produktionsfähigkeiten als Ausgangspunkte des weiteren
+  technischen Fortschritts hergestellt werden kann».
+\item \textbf{Effektives Funktionieren der Technik}. «Die Gesetze der Technik
+  sind auch Gesetze des effektiven Funktionierens der technischen Mittel zur
+  Erreichung der gesellschaftlichen und persönlichen Ziele... Wenn der
+  gesellschaftliche Wert der arbeitsmäßigen, materiellen und energetischen
+  Aufwendungen für die Herstellung und den Betrieb von Technik den
+  gesellschaftlichen Wert der Ergebnisse ihrer Anwendung als künstliches
+  materielles Mittel der Zielverwirklichung übersteigt, dann ist diese Technik
+  wenig effektiv ist und die Gesellschaft benötigt eine andere Techniken,
+  welche die Anforderungen und Prinzipien der Technik-Effizienz erfüllt».
+\item \textbf{Kompatibel mit den ökonomischen Möglichkeiten der Gesellschaft}.
+  «Die Gesetze der Technik haben noch eine weitere Gemeinsamkeit, die im
+  Prinzip der Entsprechung zwischen Technik und den ökonomischen
+  Möglichkeiten der Gesellschaft im gegebenen Stadium ihrer Entwicklung zum
+  Ausdruck kommt».
+\end{itemize}
+A.I. Polovinkin formulierte Anforderungen, denen technische Gesetze genügen
+müssen:
+\begin{itemize}
+\item Die Formulierung eines technischen Gesetzes soll von der Form her
+  lakonisch, einfach und elegant und vom Inhalt her den obigen Definitionen
+  eines Gesetzes entsprechen.
+\item Die Formulierung eines technischen Gesetzes soll verallgemeinernd sein
+  eine große Anzahl bekannter und möglicher Faktoren widerspiegeln. Mit
+  anderen Worten, ein Gesetz muss eine empirische Überprüfung an vorhandenen
+  oder speziell gewonnenen Faktoren zulassen, die von quantitativer oder
+  qualitativer Form sind. Dabei muss die Formulierung des Gesetzes so klar
+  sein, dass zwei Personen, die unabhängig voneinander faktisches Material
+  auswählen und verarbeiten, die gleichen Überprüfungsergebnisse erhalten.
+\item Die Formulierung eines technischen Gesetzes soll nicht nur konstatieren:
+  «was? wo? wann?» auftritt (d.h., die Fakten ordnen sowie kurz und knapp
+  beschreiben), sondern, wenn möglich, auch die Frage nach dem «Warum?»
+  beantworten. In diesem Zusammenhang stellen wir fest, dass es in der
+  Wissenschaft viele empirische Gesetze gab und gibt, die nicht oder nur
+  teilweise auf die Frage «Warum?» antworten. Und es scheint fast keine
+  wissenschaftlichen Gesetze zu geben (wegen des lokalen Charakters ihres
+  Wirkens), elche die Frage «warum?» beantworten.  Auf solche Fragen antwortet
+  in der Regel erst eine Theorie, die auf mehreren Gesetzen beruht.
+\item Die Formulierung eines technischen Gesetzes soll autonom unabhängig
+  sein, d.h. zu den Gesetzen werden nur solche verallgemeinerten Aussagen
+  gezählt, die sich nicht logisch aus anderen technischen Gesetzen ableiten
+  lassen. Die herleitbaren Schlussfolgerungen fassen wir unter dem Begriff der
+  technischen Gesetzmäßigkeiten zusammen.
+\item Die Formulierung eines technischen Gesetzes soll gegenseitige
+  Zusammenhänge berück\-sich\-tigen: «Technik -- Arbeitsgegenstand», «Mensch
+  -- Technik», «Technik -- Natur», «Technik -- Gesellschaft».
+\item Die Formulierung eines technischen Gesetzes soll eine voraussagende
+  Funktion haben, d.h. neue unbekannte Fakten vorhersagen, die mehr oder
+  weniger offensichtlich, und manchmal ungewöhnlich, paradox, sind.
+\item Die Formulierung aller Technik-Gesetze soll eine einheitliche, klar
+  definierte begriffliche Basis haben.
+\end{itemize}
+
+\subsection*{1.2. System}
+\subsubsection*{1.2.1. Allgemeine Begriffe}
+
+In diesem Buch werden wir die Gesetze und Gesetzmäßigkeiten der
+Systementwicklung betrachten.  Dazu definieren wir zunächst den Begriff eines
+Systems und einige damit verbundene Konzepte.
+
+Ein \textbf{System} (lat. griech. System, „zusammengesetzt“, ein Ganzes
+bestehend aus Teilen; Verbindung) ist eine Menge von \emph{Elementen}, die
+\emph{untereinander verbunden} sind und \emph{untereinander integrieren}, die
+ein \emph{einheitliches Ganzes} bilden, das \emph{Eigenschaften} besitzt, die
+nicht bereits in den konstituierenden Elementen, einzeln betrachtet, enthalten
+sind.
+
+Eine solche Eigenschaft wird als \textbf{Systemeffekt} oder \textbf{Emeregenz}
+bezeichnet.
+
+\textbf{Emergenz} (engl. emergent -- erscheinen unerwartet auftreten) bedeutet
+in der Systemtheorie das Vorhandensein besonderer Eigenschaften eines Systems,
+die seinen Teilsystemen und Blöcken nicht inhärent sind, such nicht der
+einfachen Summe der nicht verbundenen Elemente ohne deren besonderen
+systembildenden Beziehungen; Nichtreduzierbarkeit der Systemeigenschaften auf
+die Summe der Eigenschaften seiner Komponenten; Synonym -- „Systemeffekt“.
+
+Häufig wird diese Eigenschaft auch als \textbf{Synergieeffekt} bezeichnet (aus
+grieh. Synergia -- zusammen wirken) -- Steigerung der Effizienz der Wirkung als
+Ergebnis der Integration, Verschmelzen der einzelnen Teile zu einem einzigen
+System, was auch als systemischer Effekt bezeichnet wird.
+
+Zum Beispiel führt der Austausch von Dingen nicht zu einem Synergieeffekt,
+weil ihre Anzahl gleich bleibt. Der Austausch von Ideen führt dagegen zu einem
+Synergieeffekt, denn im Ergebnis hat eine Person mehr Ideen hat.
+
+\textbf{Synergie} (griech. synergia -- Zusammenarbeit, Unterstützung, Hilfe,
+Mitgefühl, Gemeinschaft; griech. syn -- zusammen; griech. ergon -- Sache,
+Arbeit, Tätigkeit, Aktion) -- summierender Effekt der Wechselwirkung von zwei
+oder mehr Faktoren, charakterisiert dadurch, dass ihre Wirkung deutlich über
+die Wirkung jeder einzelnen der Komponente als deren einfache Summe
+hinausgeht.
+
+\subsubsection*{1.2.2. Zusätzliche Begriffe}
+
+\textbf{Integrität} -- Merkmal eines Systems, das Autonomie ausdrückt und
+Einheit des Systems gegenüber der Umwelt ausdrückt. Sie steht im Zusammenhang
+mit dem Funktionieren des Systems und der ihm innewohnenden
+Entwicklungsgesetzmäßigkeiten.
+
+Integrität ist kein absolutes, sondern ein relatives Konzept, denn das System
+hat viele Beziehungen zu umliegenden Objekten und der Umwelt und existiert nur
+in Einheit mit ihnen.
+
+\textbf{Eigenschaft} -- Seite (Attribut) eines Systems. Sie definiert 
+eine Unterscheidung oder eine Gemeinsamkeit des Objekts mit anderen Objekten.
+
+Eigenschaften werden in der \emph{Beziehung} der Subsysteme im System erkannt,
+deshalb ist jede Eigenschaft relativ. Eigenschaften existieren objektiv,
+unabhängig vom menschlichen Bewusstsein.
+
+\textbf{Beziehung} -- Wechselseitige Verbindung, wechselseitige Abhängigkeit
+und Beziehung der Elemente eines Systems untereinander. Das ist ein mentaler
+Vergleich verschiedener Objekte und ihrer Seiten.
+
+\paragraph{Beispiel 1.1. Satz (in der Sprache).}
+Ein Satz besteht aus \emph{Worten} und \emph{der Art und Weise des Satzbaus --
+  der Grammatik}.
+
+Keines dieser Elemente hat die Eigenschaft, einen \emph{Gedanken}
+auszudrücken.  Erst in der Vereinigung in ein einziges System, den Satz,
+entsteht die neue Eigenschaft „Gedanke“ als systemische Wirkung.
+
+Der Satz ist \emph{ganzheitlich}. Er ist autonom und hat seine eigenen
+Entwicklungsgesetzmäßig\-keiten, die Gesetzmäßigkeiten der Entwicklung der
+Grammatik.
+
+Im Satz zeigt die Beziehung der einzelnen Wörter, ihre \emph{Eigenschaften},
+die in ihrer \emph{Beziehung} zueinander gefunden werden.
+
+\subsubsection*{1.2.3. Systemhierarchie}
+
+Systemen ist der Begriff \textbf{Hierarchie} eigen. 
+
+\textbf{Hierarchie eines Systems}:
+\begin{itemize}[noitemsep]
+\item das System selbst;
+\item seine Subsysteme;
+\item sein Obersystem;
+\item die äußere Umgebung.
+\end{itemize}
+\textbf{System} - Komponenten des Systems.
+
+\textbf{System} - ist das Objekt, in das das System als Subsystem eintritt.
+
+Die Hierarchie kann höhere Ränge haben, zum Beispiel ein Oberobersystem und
+niedrigere Ränge, wie ein Subsubsystem.
+
+Das Oberobersystem ist das Objekt, zu dem das Obersystem gehört, und das
+Subsubsystem sind die Elemente, aus denen das Subsystem besteht. Die Anzahl
+der Ränge kann genügend groß sein.
+
+\paragraph{Beispiel 1.2. Computer.}
+\begin{itemize}[noitemsep]
+\item System -- der Personalcomputer.
+\item Subsysteme: Systemeinheit und Ein-/Ausgabegeräte, (z.B.
+  Tastatur, Maus, Monitor, Drucker, Scanner, Kamera usw.).
+\item Subsubsysteme der Systemeinheit: Prozessor, Motherboard, Grafikkarte,
+  RAM, Festplatte, Diskettenlaufwerk, Soundkarte, Netzkarte, Netzteil, etc.
+\item Obersystem -- Computernetzwerke, etc.
+\item Oberobersystem -- das World Wide Web, das Internet.
+\item Äußere Umgebung -- die Umgebung, in der sich der Computer befindet,
+  z.B. der Raum, Luft, etc. 
+\end{itemize}
+
+\paragraph{Beispiel 1.3. Telefon.}
+\begin{itemize}[noitemsep]
+\item System -- Telefon.
+\item Subsysteme: Mikrofon und Kopfhörer, Tastatur, Bildschirm, Speicher usw.
+\item Subsubsysteme sind die Elemente, aus denen ein Mikrofon oder ein
+  Kopfhörer bestehen, Tastatur, Bildschirm, Speicher usw.  
+\item Obersystem -- automatisches Vermittlungsssystem (AVS), Telefonnetze,
+  etc.
+\item Das Oberobersystem des AVS ist das regionale und weltweite Telefonnetz.
+\item Äußere Umgebung -- meistens Raum und Luft.
+\end{itemize}
+
+\paragraph{Beispiel 1.4. Automobil.}
+\begin{itemize}[noitemsep]
+\item System -- das Auto.
+\item Subsysteme: Räder, Motor, Benzintank, Lenkung usw.
+\item Subsubsysteme des Motors sind Kolben und Zylinder, Pleuelstange, Kerze,
+  Ventile, Kurbelwelle, Kurbelgehäuse usw.
+\item Obersystem -- Straßenverkehr, dazu gehören: Straßen, Tankstellen,
+  Parkplätze, Verkehrsleitsystem, Garagen, Reparaturdienste,
+  Produktionsstätten usw.
+\item Oberobersystem -- das regionale und weltweite Straßennetz.
+\item Äußeres Umfeld -- der offene Raum und atmosphärische Phänomene.
+\end{itemize}
+
+\subsubsection*{1.2.4. Künstliche Systeme}
+
+\textbf{Künstliche Systeme} werden auch als \textbf{anthropogene Systeme}
+bezeichnet.
+
+Ein \textbf{anthropogenes System} (griech. anthropos -- Mensch, genesis --
+Ursprung, Herausbildung eines sich entwickelnden Phänomens) ist ein System,
+das im Ergebnis der bewusst gerichteten menschlichen Tätigkeit geschaffen
+wurde.
+
+\paragraph{Beispiel 1.5. Anthropogene Systeme.}
+Es handelt sich um eine breite Klasse von Systemen, die vom Menschen
+geschaffen wurden: Sprache, Konzepte, Gedanken, Wissen, Wissenschaft,
+Literatur und Kunst, soziale Gruppen (Stämme, Gemeinschaften, Staaten usw.),
+landwirtschaftliche Systeme, künstlich geschaffene Objekte der Fauna und Flora
+(Gentechnik, Biotechnologie usw.), technische Systeme, etc.
+
+Das Hauptaugenmerk dieser Monographie wird auf die Betrachtung einer
+speziellen Klasse von anthropogenen Systemen gerichtet -- auf
+\textbf{technische Systeme}.
+
+Ein \textbf{technisches System (TS)} ist ein \emph{System}, das mit dem
+konkreten \emph{Zweck} geschaffen wurde, ein bestimmtes \emph{Bedürfnis} zu
+erfüllen. Es erfüllt eine \emph{Funktion} aus, indem es einen \emph{Prozess}
+auf der Grundlage eines bestimmten \emph{Wirkprinzips} ausführt.
+
+TS sind durch eine gewisse \emph{Struktur} und \emph{Flüsse} gekennzeichnet.
+
+\emph{Anmerkung:} Ein technisches System kann sowohl künstliche als auch
+natürliche Elemente umfassen.
+
+Beispiele für technische Systeme sind: Flugzeug, Auto, Klimaanlage, Telefon,
+Fernseher, Computer, Internet usw.
+
+\paragraph{Beispiel 1.6. Flugzeug.}
+Das Flugzeug besteht aus Flügeln, Rumpf, Motor, Fahrwerk usw.
+
+Keines dieser Elemente hat die Eigenschaft zu fliegen. Vereint in einem System
+hat das Flugzeug eine neue Eigenschaft erworben -- fliegen als systemischen
+Effekt.
+
+\paragraph{Beispiel 1.7. Telefon.}
+Das Telefon besteht aus Mikrofon, Kopfhörer, Tastatur, Display, Speicher usw.
+
+Keines dieser Elemente hat die Eigenschaft, Töne über Entfernung zu
+übertragen. In einem gemeinsamen System vereint, hat das Telefon eine neue
+Eigenschaft erworben -- die Übertragung von Tönen über eine Entfernung als
+systemischen Effekt.
+
+\paragraph{Beispiel 1.8. Algorithmus.}
+Ein Algorithmus ist eine Abfolge verschiedener Operationen, die zu einem
+konkreten Ergebnis führt.
+
+Der Algorithmus besteht aus einzelnen Operationen, die in einer bestimmten
+Reihenfolge ausgeführt werden.
+
+Jede der Operationen und die Reihenfolge selbst, in der sie durchgeführt
+werden, führen nicht zum gewünschten Ergebnis. In einem System vereint, hat
+der Algorithmus eine neue Eigenschaft erworben, ein konkretes Ergebnis als
+systemischen Effekt zu produzieren.
+
+\subsection*{1.3. Bedürfnis}
+
+Ein \textbf{Bedürfnis} ist der Bedarf an etwas, das für die Aufrechterhaltung
+der Lebensaktivität eines Individuums, einer sozialen Gruppe, der Gesellschaft
+erforderlich ist, der innere Motivator der Aktivität.
+
+\subsection*{1.4. Wirkprinzip}
+
+Ein \textbf{Wirkprinzip} ist die Art und Weise, wie die Hauptfunktion des
+Systems ausgeführt wird.
+
+\subsection*{1.5. Funktion}
+\subsubsection*{1.5.1. Definition}
+
+Als \textbf{Funktion} (lat. functio -- Ausführung, Ausführung) wird der
+Prozess der Einwirkung des Subjekts auf ein Objekt bezeichnet, die ein
+bestimmtes Ergebnis hat.
+
+Darüber hinaus ist die Funktion definiert als „eine äußere Manifestation der
+Eigenschaften eines beliebigen des Objekts in diesem Beziehungssystem“.
+
+Im Weiteren werden wir eine kürzere Formulierung des Funktionsbegriffs
+verwenden.
+
+Eine \textbf{Funktion} ist eine Aktion eines \emph{Subjekts} auf einem
+\emph{Objekt}, die zu zu einem bestimmten Ergebnis führt. Das Ergebnis der
+Aktion kann eine \emph{Änderung} eines Objektparameters oder seine
+\emph{Erhaltung} sein.
+
+Eine Funktion wird als \emph{Verb} angeschrieben.
+
+\paragraph{Beispiel 1.9. Flugzeug.}
+Ein Flugzeug transportiert (bewegt) Passagiere. Das Flugzeug ist das Subjekt,
+„bewegen“ die Funktion und die Passagiere das Objekt. Transportieren bedeutet,
+das Objekt zu verändern.
+
+\paragraph{Beispiel 1.10. Kaffee.}
+Die Tasse enthält den Kaffee. Die Tasse ist das Subjekt, „enthalten“ die
+Funktion, der Kaffee das Objekt. Enthalten bedeutet, das Objekt zu bewahren.
+
+\paragraph{Beispiel 1.11. Computer.}
+Der Computer verarbeitet Informationen. Der Computer ist das Subjekt,
+„verarbeitet“ die Funktion, die Information das Objekt. Verarbeiten bedeutet,
+das Objekt (die Information) zu ändern.
+
+\begin{center}
+  Ende des kostenlosen Buchfragments.
+\end{center}
+\end{document}
