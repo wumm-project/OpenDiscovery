@@ -337,6 +337,15 @@
   rdfs:comment "Licensed by the author 2020-10-22"; 
   rdfs:comment "Published in the Proceedings of the 15th MATRIZ TRIZfest-2019 International Conference. ISBN 978-0-578-62617-8, S. 346-352" .
 
+<file://Khomenko_NN/Tongs-2007-en.tex> a od:Source ;
+  dcterms:creator odp:Khomenko_NN ;
+  dcterms:title "Inventive problem solving using the OTSM-TRIZ “TONGS” model" ;
+  dc:format "LaTeX" ;
+  dc:language "en" ;
+  dcterms:source <https://otsm-triz.org/sites/default/files/ready/tongs_en.pdf> ;
+  dc:year "2007" ;
+  rdfs:comment "LaTeX version of the pdf" .
+
 <file://Kleemann_KP/2016-07-06.tex> a od:Source ;
   dcterms:creator odp:Kleemann_KP ;
   dcterms:title "Tragödie der Soziologie oder die Schwierigkeit der Interdisziplinarität"@de ;
