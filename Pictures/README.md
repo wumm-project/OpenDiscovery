@@ -17,6 +17,13 @@ DesignThinking.jpg
 * Google search = 82 occurencies (2019-09-08)
 * license = no information
 
+Diffusion_von_Ideen.png
+* source = https://de.wikipedia.org/wiki/Datei:Diffusion_von_Ideen.svg
+* title = Innovationszyklus von Rogers (1992)
+* language = de
+* creator = Robert Orzanna
+* license = CC-BY-SA 4.0
+
 how-to-solve-your-technical-problems-using-TRIZ.png
 * source = unknown
 * title = TRIZ Problem Solving Method
