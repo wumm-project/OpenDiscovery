@@ -36,3 +36,33 @@ images.png
   Inventive Problem Solving
 * creator = Song-Kyoo Kim
 * license = International Journal of Innovation, Management and Technology
+
+SCurve-1.png
+* source = https://triz-journal.com/technology-maturity-using-s-curve-descriptors/
+* title = S-Curves for performance, level of inventions
+* creator = Michael S. Slocum
+* license = TRIZ Journal Copyright
+
+SCurve-2.png
+* source = https://triz-journal.com/technology-maturity-using-s-curve-descriptors/
+* title = S-Curves for number of inventions, profitability 
+* creator = Michael S. Slocum
+* license = TRIZ Journal Copyright
+
+SCurve-3.png
+* source = https://triz-journal.com/technology-maturity-using-s-curve-descriptors/
+* title = S-Curves for performance of useful and harmful functions
+* creator = Michael S. Slocum
+* license = TRIZ Journal Copyright
+
+SCurve-4.png
+* source = https://triz-journal.com/technology-maturity-using-s-curve-descriptors/
+* title = S-Curves for number of inventions, profitability 
+* creator = Michael S. Slocum
+* license = TRIZ Journal Copyright
+
+SCurve-5.png
+* source = https://triz-journal.com/technology-maturity-using-s-curve-descriptors/
+* title = Six S-Curve states
+* creator = Michael S. Slocum
+* license = TRIZ Journal Copyright
