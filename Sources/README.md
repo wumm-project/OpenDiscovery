@@ -18,7 +18,8 @@ directory in your TEXINPUTS path.
 
 To be completed and to be transformed into RDF Metarecords.
 
-Altshuller_GS
+###Altshuller_GS
+
 * HowInvent-1960-ru.odt (in Russian)
   * au = G.S. Altshuller, 
   * title = КАК ДЕЛАЮТСЯ ОТКРЫТИЯ (мысли о методике научной работы)
@@ -26,7 +27,8 @@ Altshuller_GS
   * How to invent. 1960
   * Source: https://www.altshuller.ru/triz/investigations1.asp
 
-GDR-InventorSchools
+###GDR-InventorSchools
+
 * HegelHoerz-05.tex
   * au = Rainer Thiel
   * title = Zu Herbert Hörz „Dialektik als Heuristik“. Kritik dem Freund und
@@ -35,18 +37,6 @@ GDR-InventorSchools
   * license = CC-0
   * Version of 19.12.2005, with comments by Hans-Gert Gräbe, 24.12.2018
     Unpublished Manuscript
-
-Goldovsky, B.I.
-* Goldovski-1983.pdf
-  * au = B.I. Goldovsky, Голдовский Б.И.
-  * title = Система закономерностей построения и развития технических систем
-  * lang = ru
-  * Source: https://triz-summit.ru/triz/metod/gold/regular/
-* Goldovski-1983-de.tex
-  * au = B.I. Goldovsky
-  * title = System der Gesetzmäßigkeiten des Aufbaus und der Entwicklung technischer Systeme 
-  * lang = ru
-  * Source: https://triz-summit.ru/triz/metod/gold/regular/
 
 * Herrlich-16.tex
   * au = Michael Herrlich, Justus Schollmeyer
@@ -58,7 +48,30 @@ Goldovsky, B.I.
   * Talk at the 21. Leibniz Conference „Systematisches Erfinden“,
     24.--25. November 2016 in Lichtenwalde.  Yet in progress
 
-Thiel_R
+###Goldovsky_BI
+
+* Goldovski-1983.pdf
+  * au = B.I. Goldovsky, Голдовский Б.И.
+  * title = Система закономерностей построения и развития технических систем
+  * lang = ru
+  * Source: https://triz-summit.ru/triz/metod/gold/regular/
+* Goldovski-1983-de.tex
+  * au = B.I. Goldovsky
+  * title = System der Gesetzmäßigkeiten des Aufbaus und der Entwicklung technischer Systeme 
+  * lang = ru
+  * Source: https://triz-summit.ru/triz/metod/gold/regular/
+
+###Graebe_HG
+
+* Newbee.doc
+  * au = Hans-Gert Gräbe
+  * title = A TRIZ Newbee's Report
+  * lang = en
+  * license = CC-0
+  * Published in the TRIZ Journal
+  * Newbee-de.txt is a German preversion in markdown syntax
+
+###Thiel_R
 
 * Thiel-07.tex
   * au = Rainer Thiel
@@ -100,13 +113,4 @@ Thiel_R
   * license = CC-0
   * Material provided by the author in the version as of 11.02.2019, work in
     progress
-
-Graebe_HG
-* Newbee.doc
-  * au = Hans-Gert Gräbe
-  * title = A TRIZ Newbee's Report
-  * lang = en
-  * license = CC-0
-  * Published in the TRIZ Journal
-  * Newbee-de.txt is a German preversion in markdown syntax
 
