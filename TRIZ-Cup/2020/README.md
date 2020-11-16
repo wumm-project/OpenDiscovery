@@ -1,16 +1,4 @@
-# Material of the TRIZ Summit Cup
-
-## The history and motivation
-
-I have large background in the organisation of mathematical olympiads and so
-it was no surprise for me to see the very enthusiastic faces of both the
-children and the supervisors of the final round of the TRIZ Summit Cup at the
-TRIZ Developer Summit in June 2018 in Minsk.
-
-The TRIZ Summit Cup competition was established in 2014 and has been offered
-annually since then. The materials and further notes on implementation and
-results are available in Russian on the
-[website of the competition](https://triz-summit.ru/contest/).
+# Material of the TRIZ Summit Cup 2019/2020
 
 ## The 2019/20 competition
 
@@ -45,6 +33,21 @@ organizers in
 **Note that all derived materials provided in this directory are (so far) not**
 **authorized by the organisators of the competition. **
 
+* LaTeX versions of the exercises in Russian and English and a translation to
+  German in separate documents.
+  - Exercises-ru.pdf
+  - Exercises-ru.tex
+  - Exercises-en.pdf
+  - Exercises-en.tex
+  - Exercises-de.pdf
+  - Exercises-de.tex
+
+Note that the LaTeX versions require the od.sty LateX style located at
+Sources/od.sty in this repo and the tikz graphics package to be compiled. 
+
+The following material was removed and replaced by the correcsponding actual
+materials in different language versions in the parent directory
+
 * The original announcement and translations to English and German in a single
   document.
   - InformationLetter-2020.docx
@@ -60,15 +63,6 @@ organizers in
   - ContestantsQuestionnaire-2020.docx
   - ContestantsQuestionnaire-2020.pdf
 
-* LaTeX versions of the exercises in Russian and English and a translation to
-  German in separate documents.
-  - Exercises-ru.pdf
-  - Exercises-ru.tex
-  - Exercises-en.pdf
-  - Exercises-en.tex
-  - Exercises-de.pdf
-  - Exercises-de.tex
-
 * Information letter about the results of the contest and translations to
   English and German in a single document.  
   - Results.docx
@@ -76,9 +70,6 @@ organizers in
   - Results.md
     - The list of the award winners as plain txt, one team per line, in
       markdown notation
-
-Note that the LaTeX versions require the od.sty LateX style located at
-Sources/od.sty in this repo and the tikz graphics package to be compiled. 
 
 ## Some points and observations within the translation process 
 
@@ -134,7 +125,7 @@ also such an (not authorized) addition, obtained from the German version by
 bare translation, incorporating the changes of nomination in the improved
 Russian version.
 
-## Concluding:
+## Conclusion
 
 I have no idea if the competition is really minded also for a non-Russian
 audience, even if I very liked that.  I hope, the German and English versions
@@ -147,4 +138,4 @@ German LaTeX version compared to the Russian one.
 The English version is compiled from the structure of the German version,
 substituting the German texts by those from the authorized English version.
 
-Hans-Gert Gräbe, 28.11.2019
+Hans-Gert Gräbe, 28.11.2019, update 16.11.2020
