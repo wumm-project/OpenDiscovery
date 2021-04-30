@@ -1,0 +1,1597 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{od}
+\usepackage[english]{babel}
+
+\parindent0pt
+\parskip4pt
+\setlist[itemize]{noitemsep}
+
+
+\title{ProHEAL Basics -- Extended Version}
+
+\author{Hans-Gert Gr\"abe, Rainer Thiel}
+\date{Version of April 2021} 
+
+\begin{document}
+\maketitle
+
+\section{ProHEAL Basics -- a Short Overview}
+
+\begin{center}
+  \begin{tikzpicture}[scale=.95,transform shape,
+    bbox/.style={draw,fill=white,rectangle,align=center},
+    >={Triangle[length=0pt 6,width=0pt 5]},
+    rounded corners=2pt,line width=.8pt]
+  \draw[dashed,line width=.3pt] (4,11) -- (4.5,3) ;
+  \draw[dashed,line width=.3pt] (12.5,11) -- (12,3) ;
+  \node[bbox,text width=4cm] at (8,13) (A0)
+       {Technical-economic problem situation};
+  \node[text width=3cm,align=center] at (8,11) (B0)
+       {Technical-economic field of operation};
+  \node[bbox,text width=3cm] at (3,11) (B0a)
+       {Societal need};
+  \node[bbox,text width=3.5cm] at (13,11) (B0b)
+       {State of the art. Basic variant};
+  \node[bbox,text width=5cm] at (8,9) (A1)
+       {Technical-economic (external) contradiction};
+  \node[text width=3cm,align=center] at (8,7) (B1)
+       {Critical functional area of the basic variant};
+  \node[bbox,text width=3cm] at (3.3,7) (B1a)
+       {IDEAL to the core variant};
+  \node[bbox,text width=3.5cm] at (13,7) (B1b)
+       {Harmful technical effect};
+  \node[bbox,text width=5cm] at (8,5) (A2)
+       {Technical-technological (inner) contradiction};
+  \node[text width=3cm,align=center] at (8.5,3)  (B2)
+       {Critical impact point of the core variant};
+  \node[bbox,text width=4cm] at (3.6,3) (B2a)
+       {Ideal natural law effect to the key variant};  
+  \node[bbox,text width=3.5cm] at (13,3) (B2b)
+       {Harmful natural law effect};
+  \node[bbox,text width=6cm] at (8,1) (A3)
+       {Technical-natural (internal) contradiction};
+  \node[bbox,text width=3cm] at (8,-1) (A4)
+       {Solution strategy};
+  \node[rotate=90,text width=3.6cm] at (0,3) (D1)
+       {Problem solution\\ imaginable at the level of natural sciences}; 
+  \node[rotate=90,text width=3.5cm] at (0,7) (D2)
+       {Problem solution conceivable at the state of art of technical
+         science};   
+  \node[rotate=90,text width=3.5cm] at (0,11) (D2)
+       {Problem solution feasible at the state of the art};
+  \draw[->] (A0) -- (B0a) ;
+  \draw[->] (B0a) -- (A1) ;
+  \draw[->] (A0) -- (B0b) ;
+  \draw[->] (B0b) -- (A1) ;
+  \draw[->] (A1) -- (B1a) ;
+  \draw[->] (B1a) -- (A2) ;
+  \draw[->] (A1) -- (B1b) ;
+  \draw[->] (B1b) -- (A2) ;
+  \draw[->] (A2) -- (B2a) ;
+  \draw[->] (B2a) -- (A3) ;
+  \draw[->] (A2) -- (B2b) ;
+  \draw[->] (B2b) -- (A3) ;
+  \draw[->] (A3) -- (A4) ;
+  \draw[->,dashed] (B0) -- (B0a) ;
+  \draw[->,dashed] (B0) -- (B0b) ;
+  \draw[->,dashed] (B1) -- (B1a) ;
+  \draw[->,dashed] (B1) -- (B1b) ;
+  \draw[->,dashed] (B2) -- (B2a) ;
+  \draw[->,dashed] (B2) -- (B2b) ;
+\end{tikzpicture}
+\end{center}
+
+
+\section{The problem area levels in the ProHEAL path model}
+
+The ProHEAL path model provides for a graded structuring of the problems in
+different problem field levels as manageable sections of a solution path and
+thus creates for the first time the necessary prerequisites for systematic
+application of various methodological instruments for determining the current
+location of the real core problem.
+
+Insert Picture.
+
+\subsection{The technical-economic problem area level}
+
+At this first level, all problem-determining facts come into consideration
+that the social need in the sense of a potential need for a solution and the
+status of technology as a system of available technical products and processes
+in the sense of a potential solution offer.
+
+The consideration is person- and process-related and determined by the
+product-goods-purpose relationship.
+
+Results in this problem area level are
+\begin{itemize}
+\item the technical and economic objectives of an innovation project,
+\item the \emph{basic variant} of a process or product innovation that is
+  tailored to the technological requirements,
+\item the \emph{critical functional area} in the multi-dimensional
+  optimization behavior of this basic variant,
+\item the \emph{technical-economic contradiction} (TEC) that prevents an
+  optimal design and tayloring of the basic variant.
+\end{itemize}
+If there is no basic varaint that can be optimized in terms of the
+technical-economic objective, we are faced with an inventive problem that is
+to be analyzed at the next level on which the solution of the TEC is the aim
+of the invention.
+
+\subsection{The technical-technological problem area level}
+
+At this next level, all the facts are considered that affect the technical
+system of the basic variant, its structure, function, its behavior and its
+immediate technological environment.
+
+The consideration is object- and function-related and determined by the
+technical means-action-counteraction relations.
+
+Results in this problem area level are
+\begin{itemize}
+\item the in the sense of solving the TEC \emph{ideal technical subsystem} in
+  the critical functional area of the basic variant,
+\item the \emph{undesired effects} as not inteded, technically disadvantageous
+  influence of the ideal subsystems on the functional behavior of the basic
+  variant,
+\item the \emph{critical operational area} in the functional structure where
+  the causal interdependency of the ideal subsystem and the undesired effects
+  are located,
+\item the \emph{technical-technological contradiction} (TTC), that prevents to
+  eliminate or suppress the undesired effect by varying the functional
+  principle of the ideal subsystem.
+\end{itemize}
+If a technical subsystem with an alternative functional principle for the
+critical functional area of the basic variant can be found without causing a
+significant undesirable side effect, then we obtained an invention as a
+solution to the TEC. Due to the heuristic approach, this often turns out to be
+located in the low-tech area, as "surprisingly simple solution (SSS)" that in
+the best case only requires a technical trial run as application.
+
+If the solution at this problem area level is not achieved, the problem
+situation has to be formulated as invention task that contains the TTC as well
+as a solution strategy tailored to this contradiction. This aims at defining
+the harmful natural laws in the critical operational area of the functional
+structure and to replace it with an alternative, known operating principle.
+We move forward to the third problem field level.
+
+\subsection{The technical-scientific problem field level}
+
+At this third level, all facts come into consideration that concern the
+operating principle, the requirements for its technical use as well as its
+theoretical and experimental basics.
+
+The consideration is model- and event-related and determined by the
+field-factor-effect relationships.
+
+Results in this problem area level are
+\begin{itemize}
+\item the \emph{ideal operating principle} that solves the TTC in the critical
+  operational area of the functional structure,
+\item the \emph{harmful natural law} that prevents the technical deployment of
+  the ideal operating principle,
+\item \emph{new technical-constructive boundary conditions} in the critical
+  operational area, which suppress the effects of the harmful natural law,
+\item the \emph{technical-scientific contradiction} (TSC), which prevents the
+  development of the ideal principle by varying the technical-constructive
+  boundary conditions in the critical operational area.
+\end{itemize}
+If the new operating principle can be technically unfolded in the necessary
+dimensions to ensure the fulfillment of the function in the critical range, we
+are faced with an invention as a solution to the TTC.  Since this enters new
+technical-scientific territory, the solution is usually in the high-tech
+area. It requires for its verification application-oriented fundamental
+research.
+
+If a solution to the problem cannot be found in this way, we are faced with a
+system-immanent TSC, that questions the development and viability of the
+system as a whole. The solution strategy then requires the search for a
+suitable, so far unknown operating principle or a fundamental process
+innovation. Both solution strategies usually go beyond the scope of a timely
+and financially definable innovation project. They were therefore not subject
+to further methodological considerations in the inventor school, insofar as
+they could not based on corrections of the existing process and a
+corresponding new solution for the basic variant.
+
+\section{The ABER matrices as a strategic tool in the invention methodology}
+
+For the path model through the problem field levels, the invention methodology
+proposes a set of methodological instruments, which from its heuristic
+application characteristics includes three categories of tools and techniques:
+\begin{itemize}
+\item \emph{Strategic tools} for goal and route planning, for working out the
+  problem-determining contradiction at each level and to find solution
+  strategies to overcome such a contradiction. These tools differ in the three
+  problem area levels and have an inventive method specifics.
+\item \emph{Tactical tools} for the procurement and processing of information,
+  for the generation of solution variants and their evaluation according to
+  given solution strategies.
+\item \emph{Creativity techniques} to activate and strengthen intuition,
+  imagination and fluency in thinking and the ability to abstract, associate
+  and lateral thinking.
+\end{itemize}
+The technical tools and creativity techniques do not have inventive methodical
+specific. They can be used in all three problem area levels. Your choice is
+determined solely by the heuristic specifics of the respective work situation
+and the activities related to the situation.
+
+\subsection{The outcome matrix (ABER(1) matrix)}
+This is used to systematically record the target-determining
+\begin{center}
+  \begin{tabular}{lcl}
+    Requirements (\textbf{A}nforderungen) && Functionality\\
+    Conditions (\textbf{B}edingungen) & \emph{related to}&
+    Profitablity\\
+    Expectations (\textbf{E}rwartungen) && Controllability\\
+    Restrictions (\textbf{R}estriktionen) && Usefulness
+  \end{tabular}
+\end{center}
+of the technical system that is to be the subject of the innovation.
+
+\begin{center}\small
+  \providecommand{\bbox}[2]{\parbox{#1cm}{\small\vspace*{4pt}\centering
+      #2\vspace*{4pt}}} 
+  \begin{tabular}{|l|c|c|c|c|}\hline
+    & \bbox{1.9}{Functionality} & \bbox{1.8}{Profitablity}
+    & \bbox{1.7}{Controllability} & \bbox{1.5}{Usefulness}\\\hline
+    \textbf{A:} Requirements & &&&\\\hline
+    \textbf{B:} Conditions   & &&&\\\hline
+    \textbf{E:} Expectations   & &&&\\\hline
+    \textbf{R:} Restrictions & &&&\\\hline
+  \end{tabular}
+\end{center}
+
+The \emph{need for innovation} which is expressly or implicitly expressed in a
+technical-economic problem situation results, for example, from increased
+requirements, changed conditions, new expectations and tightened restrictions
+with regard to production, distribution, use, abrasion or removal of the
+technical system.
+
+The ABER(1) matrix has 16 fields and contains at least as many outcome
+parameters as elements. It thus serves to systematically question the actual
+\emph{need for action}, the \emph{objective of action} and the \emph{project
+  idea} on which the innovation project is based, and converts these into
+technical-economic system properties of the technical product or service with
+direct reference to the corresponding process parameters.
+
+Working with the ABER(1) matrix therefore also includes a process analysis
+going beyond the scope of the actual objective of the action. As result of
+this analysis the technical system with its overall function is delimited in
+the sense of a black box model and sufficiently defined with its interfaces in
+the overall process. It is important that no process level is skipped to
+capture also hidden facts, that not immediately trigger need for action and
+therefore are not mentioned in the action goal, but may cause additional
+problems.
+
+This already may result in a \emph{more precise definition of the action
+  objective} and in a \emph{modification of the project idea}, which can be
+decisive for the later invention. In the end the intention of the ABER matrix
+is to include all conceivable "yes, but" to anticipate, which would otherwise
+be opposed against an invention when it comes to putting it into production
+and introduce it to the market.
+
+The heuristic goal of further work with the ABER(1) matrix is first to find
+out the technical-economic parameter that serves as \emph{guiding figure} for
+the objective of the action according to variation as an independent variable,
+the variation behavior of the parameter system the target figure as a
+whole. In the further analysis of the complex target variable comes it is
+important to define the systemic, technical-economic problem that results from
+it this variation of the reference variable results.
+
+The \emph{technical-economic problem} is basically seen in the fact that the
+variation of the reference variable deteriorate other, high-ranking outcome
+parameters to an inadmissible degree or they cannot be complied with in terms
+of limit values.
+
+Whether this problem can be solved within the framework of a professional
+design and dimensioning or whether the system-related limits of parameter
+optimization are exhausted here, i.e.  whether there is a \emph{need for
+  innovation} in the sense of solving a TEC, can of course only be determined
+on the specific technical system.  This can be an existing technical system in
+terms of the required overall function (reference variant) or one composed of
+components of the known and commercially available state of the art (basic
+variant). The advantage of a reference variant is that optimization algorithms
+as well as manufacturing and operational experience are available. The
+potential for error is therefore relatively small. But the potential for
+contradiction is high as the system as a whole may be out of date. It is the
+other way in the case with a basic variant. A decision goed usually for a
+basic variant with a balanced ratio of potential for error and contradiction.
+
+\subsection{The critical function matrix (ABER(2) matrix)}
+
+It serves to systematically delimit the critical functional area and to define
+the \emph{technical-technological innovation goal} in the form of the ideal
+subsystem of the basic variant by defining
+\begin{itemize}
+\item the functional requirements,
+\item the design and manufacturing conditions,
+\item the technological influences as well
+\item the natural law restrictions and their fulfillment
+\end{itemize}
+in relation to the elementary components of the subsystem:
+\begin{itemize}
+\item \emph{Operand} (object that is acted on),
+\item \emph{Operation} (way of acting)
+\item \emph{Operator} (means to act),
+\item \emph{Counter-operation} (type and way of counter-action in the sense of
+  creating a function-realizing equilibrium) and
+\item \emph{Couter-operator} (means to stabilize the function).
+\end{itemize}
+This results in determining the \emph{requirements for a technical-scientific
+  solution} in terms of new functional requirements, other design and
+manufacturing conditions, changed technological influences or other types of
+natural law restrictions in the functional realization that are to be
+considered for which neither suitable means-effect relationships nor
+function-fulfilling technical arrangements are known in the system-related
+state of the art.
+
+Working with the ABER(2) matrix is based on a \emph{function-related
+  structural analysis} of the system considered as a whole, to delimit the
+critical functional area and define the interface conditions for the
+\emph{ideal subsystem} in both structural and functional direction. This makes
+the interrelations transparent and manipulable, which cause the
+\emph{undesired effect} in the functional behavior of the ideal subsystem.
+
+The ABER(2) matrix has 20 fields and at least as many functional or structural
+parameters as elements for the ideal subsystem. When it is created, the
+\emph{need for innovation} and the \emph{technical-technological innovation
+  goal} are questioned. At the same time the \emph{inventive innovation idea}
+is taking shape in the new functional principle of the ideal subsystem. The
+considerations extend beyond the ideal subsystem also to its
+interrelationships with the technical system as a whole. This is fixed in the
+definition of the design conditions and the technological influences in the
+ABER(2) matrix.
+
+Working with the ABER(2) matrix does not only pursue to find the
+\emph{contradiction-free inventive solution idea} for the ideal subsystem.
+The result also may be the formulation of a \emph{technical-technological
+  contradiction} (TTC) that prevents such a solution based on known principles
+of action. It is that the contradicting structural and functional parameters
+in the critical operational area of the ideal subsystem have been found and
+based on this, a solution strategy can be generated that is oriented on a new
+operating principle.
+
+\subsection{The matrix of the operational field (ABER(3) matrix)}
+
+It is based on a scientific-mathematical model and a working hypothesis based
+on that model concerning the processes in the critical operational area of the
+ideal subsystem. It serves to systematically record
+\begin{itemize}
+\item Requirements (A),
+\item Conditions (B),
+\item Findings (E),
+\item Restrictions (R)
+\end{itemize}
+in relation to
+\begin{itemize}
+\item technically usable \emph{effects},
+\item technologically to be controlled \emph{side effects} and
+  \emph{accompanying effects},
+\item constructively required \emph{counter-effects} and \emph{guiding
+  effects} in the functional structure of the ideal subsystem
+\end{itemize}
+as well as the elaboration of the causal relationships between those
+operational field parameters.
+
+The required \emph{application-oriented scientific research effort} results
+from previously unrealized effectiveness and efficiency requirements,
+completely new usage conditions, not yet available scientific knowledge or
+ethical and ecological restrictions.
+
+The operational field matrix has 12 fields and at least as many operational
+field parameters as elements to transform the problem and the \emph{solution
+  goal} from the technical to the natural science level of observation and
+representation. The problem remains unchanged the TTC. The solution goal now
+is the new function-fulfilling according to the solution strategy
+\emph{operating principle}. The solution goal is therefore no longer
+immediately oriented towards the invention, but primarily towards the
+acquisition of scientific knowledge, which opens up new space for inventive
+thinking.
+
+However, the operational field matrix also serves to critically question
+\emph{inventive innovation ideas} and needs for technical-scientific solutions
+from natural science point of view. This can lead to a new view of the problem
+and a \emph{new inventive innovation idea}, which no longer implies an
+undesirable effect and therefore is free of contradictions in the
+technical-technological meaning.
+
+For the critical, solution-oriented questioning of the inventive innovation
+idea from this scientific point of view, the substance-field analysis (Wepol
+analysis) is suitable (ALTSCHULLER 1979).  Within ProHEAL it was further
+developed from a more phenomenological to an analytical tool to create
+effect-related solution modules.
+
+For this purpose, a \emph{system of physical effects} in different forms was
+developed, most recently as a knowledge store on an electronic data carrier,
+that can be used to search for suitable solution variants or solution modules
+starting with a problem- and contradiction-oriented menu. Also Manfred
+v. Ardenne's monograph "Effects of Physics and their Application"
+published in 1988 was used in the inventor schools.  
+
+\subsection{ProHEAL -- tool for the engineer and inventor}
+
+The ABER matrix gives the open-minded observer many suggestions to have. So it
+is made by increasing parameters in one or more matrix fields Strived for and
+perhaps found inventive solutions. The open-minded one The observer had to do
+with the so-called basic variant, which he considered reason was. But soon the
+open-minded viewer can also look at obstacles and had reached the limits that
+prevented him from advancing. Then it got difficult.
+
+The attempts to improve (increase) common parameter values of technical
+objects lead mostly approaches the situation in which the engineer has to
+pause to say: "Yes but what shouldn't happen?" That is a question of
+undesirable consequences. One objective of inventions is based on the most
+accurate knowledge of all possible "Yes but ...". It is to be striven to find
+for every "Yes but ..."  not a "Either ... or", but an "As well ... as". The
+observing engineer feels now caught in a vicious circle. The "yes but ..."
+signals that there is a dialectical contradiction: Two tendencies are opposed
+to each other -- battle of opposites -- each tendency inevitably produces the
+other, often several others as well. The ABER matrix helps to perceive and
+understand what is happening. This is the starting point to determine the
+entries in the ABER matrix. What the designer refers to from the very
+beginning are the societal needs, the manufacturer needs, the user needs. A
+concrete objective must be derived from this.  If no solution has been found
+for the contradiction after the first attempts, further questions about the
+basic variant must be asked and answered.
+
+ProHEAL shows the way to a solution. The \emph{mandatory target figure}
+(either completely specified or completed by the responsible engineer) is
+characterized in [P:(1.3)] as an expression of the identified system of ABER.
+The technical-economic parameters are to be derived from it. That some or many
+of them should be improving a lot (but none should deteriorate) is initially
+just a request or wish. They are rooted in the network of
+technical-technological or technical-scientific properties of the \emph{basic
+  variant} and are interlinked by these properties. From these connections in
+the ABER system inevitably result the "Yes, but", which are to be inventively
+transformed -- through changes in the basic variant -- in "as well as". In
+this inevitability lies the difficulty of a purposeful, effective invention.
+
+The "yes but" become all the more delicate and acute, 
+\begin{itemize}
+\item the more the effectiveness $E$ is to be increased, because then limits
+  of improvements based only on optimization of the technical object are
+  reached or have to be crossed;
+\item the more consistently the target figure -- the ABER system -- is
+  respected in its complexity so that improvements regarding some parameters
+  no longer can be achieved by "cheap" approaches at the expense of
+  deterioration in other parameters that one improperly ignored.
+\end{itemize}
+
+In the technical-economic development, such contradictions can be ignored for
+a while. It is possible
+\begin{itemize}
+\item if they are not serious in terms of their importance, because the
+  parameters standing in contradictory relation are not serious in the overall
+  system; in other words, if the complex target (the system of ABER) allows
+  for a distinction between basic and less important parameters.
+\item if the contradiction is in the initial stage of development, where
+  improvements of the parameters affect each other in a not yet excluding way.
+  In this initial stage, a compromise solution can be found by optimization
+  based on the state of the art which leads to a sufficient increase of value
+  for each of the two parameters.
+\end{itemize}
+
+The method of invention must now evoke awareness,
+\begin{itemize}
+\item how the technical-economic contradiction to be resolved by analyzing the
+  technical object -- more precisely: the basic variant -- is determined.
+  Which relationships in the technical object are "responsible" for the
+  conflict situation in the system of ABER?  These primary, often complex
+  relationships are usually not easily disentangled. More about the analysis
+  up to the determination of the technical-economic contradiction see
+  [P:sect. 1--4].
+\item how to find the point or secondary context hidden deeper in the
+  technical object, in its structure where parameters can be changed in such a
+  way that the primary context, on which the technical-economic contradiction
+  is based, can be rendered harmless. This leads to the question about the
+  technical-technological and possibly technical-scientific contradiction that
+  must be uncovered when the technical-economic contradiction should be
+  brought to disappearance. See [P:sect. 5--9].
+\end{itemize}
+
+\subsection{The basic structure of ProHEAL}
+  
+At the beginning the term a \emph{guiding variable} GV has to be defined. The
+guiding variable is a system-specific parameter of central importance, the
+variation of which influences the development of the performance capability
+and/or the effectiveness of a technical system may be increased. In different
+words: Such increases are -- mostly based on many years of experience --
+expected as a result of a variation in the guiding variable. The guiding
+variable can be, for example: the unit of performance of a large transformer
+or a large generator, the number of integrated curcuits of a microprocessor,
+the load level of a transport system, the starting torque of an electric motor
+(based on its nominal torque), the clock speed of a machine tool, the
+equilibrium concentration of a chemical process, the specific number of
+separation stages of an extraction process. More on this in [P:(2.3.4)].
+
+A \emph{technical-economic contradiction} (TEC) arises if in the variation of
+a technical parameter that is decisive for the achievement of this higher
+economic effect -- the guiding variable GV -- at least two important
+technical-economic parameters $E_1$ and $E_2$ of the technical object behave
+mutually opposite.
+
+For example, consider the development of a container. As guiding variable GV
+we choose the thickness of the wall of the container in relation to its edge
+length. Reducing the thickness of the wall two essential technical-economic
+action parameters of the container are favourably influenced: the specific use
+of material, related to the container volume, and the payload ratio, i.e. the
+ratio of loadable mass to self mass of the container.  We can therefore
+combine both parameters to the technical-economic action parameter $E_1$. The
+opposing technical-economic action parameter $E_2$ is the specific load
+capacity of the container, i.e. the loadable load in relation to the load
+level of the transport system in question. The latter becomes to low when the
+container wall thickness falls below a certain limit thus outweighing by far
+the economic advantages of material savings and the low weight of the
+container. In addition, slimming the wall thickness makes the container more
+susceptible to corrosion and mechanical damage. A further reduction in the
+specific wall thickness under a characteristic statistical limit value thus
+gives rise to a critical technical-economic contradiction.
+
+A \emph{technical-technological contradiction} (TTC) is given when during
+variation of the technical parameter that primarily determines the expression
+of the functional technical effect -- the \emph{structural value} SV -- at
+least two decisive technical-technological action parameters $T_1$ and $T_2$
+of the technical object become opposite to each other in their behavior.
+
+In the example of the container with regard to overcoming the
+technical-economic contradiction we initially consider the container function
+as structural value SV.  A functional technical effect is decisively
+influenced by it, namely the distribution of the load forces and the type of
+their effect (in the form of compression, tension, shear and/or bending
+stresses) in relation to the local strength distribution in the wall of the
+container. One of the essential effectiveness parameter of the container is
+based on this technical effect, its specific, i.e. related to its volume load
+capacity. We denote this with $T_1$. By suitably shaping the container wall
+the technical effect can be brought into effect in such a way that material
+savings and higher payload ratio no longer are in a technical-economic
+contradiction with the specific load capacity of the container.
+
+If this does not succeed, we are faced with a TTC.  It arises due to the fact
+that with the container shape as structural value SV not only the load-bearing
+capacity is significantly determined, but also the specific usable volume,
+i.e.  the portion of the volume of the cargo container that can be filled and
+its accessibility, i.e. the way of loading and unloading the container. We can
+combine these properties to technical-technological effectiveness parameter
+$T_2$. The technical-technological contradiction can consist in the fact that
+a container shape is required to achieve a higher load-bearing capacity, that
+leads to a lower specific usable volume and/or less favorable way of loading
+or unloadability the container. This is the case, for example, when the
+container bottom should be given a curved shape to increase the load-bearing
+capacity and thereby the usable container height (when transporting bulky
+goods) or its unloadability (when transporting port of bulk goods) is
+inadmissibly impaired.
+
+A \emph{technical-scientific contradiction} (TSC) exists if, in the variation
+of a technical-scientific parameter that is decisive for the occurrence of a
+scientific effect, i.e. the \emph{impact value} IV, at least two
+technical-scientific effectiveness parameters $S_1$ and $S_2$ of the technical
+object take values in opposite directions instead of the same direction as
+required.
+
+Concerning the solution of the TTC in the case of the container we can, at
+least locally, consider the elasticity of the material of the container wall
+as effective variable IV. The impact of the natural law bound to this quantity
+is the elastic deformation of the container wall. This impact causes two
+essential technical-scientific effectiveness parameters to go in opposite
+directions:
+\begin{itemize}
+\item on the one hand, the adaptability of the shape of the container to the
+  shape of the cargo and the adaptability of its strength distribution to
+  the distribution of the specific load ($S_1$), but also
+\item on the other hand, the stability pf the form of the container ($S_2$).
+\end{itemize}
+
+Both effectiveness parameters will not contradict each other if the elasticity
+is appropriately distributed in the container wall or if the shape durability
+does not play a decisive role or is even undesirable. The latter is for
+example the case with the waste container. That's why the garbage bag is made
+of extremely thin, highly elastic shear and biodegradable plastic film.
+Choosing the impact value "elasticity" not only the TSC is solved, but also
+the TTC.  At the same time the susceptibility to corrosion due to the
+extremely thin container wall is here even desirable because it results in
+rapid biodegradation of the container.
+
+A TSC can be given, for example, if the negative influence of the selected
+impact value "elasticity" on the stability of the shape consists in that under
+dynamic loading vibrations of the container wall occur, which lead to
+resonance phenomena and as a result to an impairment of the load and/or to
+premature destruction of the container wall.
+
+\subsection{Surprisingly simple solutions (SSS)}
+
+The SSS are solutions with a particularly favorable ratio of effort and
+benefit.  In [P:(6.4),(9.3)] we pay particular attention to solutions whose
+verbal description contains word like "by itself", "self-movement",
+"self-fixation" etc.  Already [P:(2.14)] contains a question aimed at such
+solutions: "Which secondary functions in the system are suitable, to make
+other side effects usable or to avoid harmful side effects or to transform
+them into useful ones?" Very often such a suitability is given. Then a
+solution or partial solution of the type "by itself" can already be formulated
+during the very beginng of the system analysis, in this case a
+self-compensation.  Experience show that such simple and ideal solutions are
+mostly out of the field of vision.  Therefore inventors rarely search for
+them.
+
+Such solutions are characterized by the fact that their material realization
+can be reached predominantly with already existing functional units and energy
+potentials, with little equipment effort and/or little operating energy. In
+that sense they are simple, elegant, ideal. The technical world is full of
+such solutions from ancient times on, which unfortunately we are carelessly
+passing because we are using them from very childhood on. A typical example is
+the ship's anchor, an extremely simple device with pointed shovels that "by
+itself" all the more dig deeper into the ocean floor the stronger the wind or
+the waves attack the ship.  The fishhook behaves analogously in the fish's
+mouth.
+
+A similar example is provided by Duncker's pendulum, which addresses the
+problem of accuracy of a pendulum clock under temperature changes. But even in
+physics classes in schools such SSS that can be found en masse throughout the
+centuries of history of technology found are totally ignored. As a curious
+child I was surprised that the simple toilet cistern regulates the water
+supply automatically.  So I asked my father, and because he was a craftsman,
+he explained it to me. Even G.S. Altshuller does not pay enough attention in
+his books to such surprisingly simple solutions. If you have never seen the
+opportunities, it becomes difficult.
+
+\subsection{The general heuristic path model of ProHEAL}
+
+\subsubsection*{W.1. The structure of the path model}
+
+The path model is shown in the figure as a heuristic scheme. It shows how from
+the technical-economic issues based on the necessary effectiveness and
+functional properties of technical objects, their structural and functional
+properties are derived and finally, it is abstracted to functional basics of
+technical-scientific effects and how to advance -- progressing from
+abstraction level to abstraction level -- on the search for solution ideas
+further and further away from the own specialist domain to distant analogy
+areas.  Already here inventions with a high economic benefit can arise.
+
+\subsubsection*{W.2. The social need and the ABER}
+
+From the more or less vaguely formulated technical-economic problem situation
+as starting point -- according to the heuristic path model -- are the social
+needs and the associated ABER to be determined. It is indispensable to detect
+the causes for the emergence of the social need and the ABER derived from it
+contrasting it with the current available state of technology and its past
+development.  In this course it is always necessary also to check whether the
+given task is oriented to overcome the causes or only to eliminate undesirable
+economic, social, technical or ecological effects.  During such an analysis
+the main technical-scientific problem to be solved can be delimited and a
+\emph{reference variant} of the technical system can be determined that most
+closely matches the ABER.
+
+Now in order to identify and weight the defects and shortcomings of the
+reference variant, to find the causes and to create an independent, "tailored"
+definition and solution of the specific problem, within a conceptual process
+of product planning first a \emph{target figure} is determined. Along that
+target, from the ideal state of the art a representative \emph{basic variant}
+of the technical system is created, identifying suitable technical means
+through patent research and analysis of world-class solutions and combining
+them to form the overall system. As part of a system analysis the basic
+variant is compared to the reference variant to find weak points and defects
+that lead to TEC in their behavior and are inventively to fix. From the basic
+variant a solution is to be developed that has clear technological and
+economic advantages compared to the reference variant.
+
+\subsubsection*{W.3. The target figure and the state of the art}
+
+The ABER are initially available in a verbal-descriptive form and express
+social, economic and technological issues that affect a certain social
+situation of need and interests (see [P:sect. 1]). From this a target figure
+is to be derived, which essentially expresses the functional properties of the
+technical system to be created and in what way its production and application
+does meet the social need in the best way. This is done assigning to the
+components of the target figure the relevant ABER parts. This defines and
+evaluates concrete characteristics of suitability and effectiveness. On the
+one hand, these include the respective social, economic and/or technological
+specifics of the social need and on the other hand the objective specificity
+of the technical object or object area (see [P:(1.3)]).
+
+These suitability and effectiveness characteristics must first be described
+qualitatively, before parameter values can be specified. A premature and
+uncritical commitment to functional or economic parameters that are familiar
+or mentioned in the task or even limiting oneself to them must be avoided.
+
+In order to be able to define these parameters correctly, it is necessary to
+derive from the state of technology the most suitable
+\emph{technical-technological principle} (TTP) for the technical object to be
+developed. That is a characteristic principle of manufacturing and/or applying
+technical objects in a specific technology domain. With this principle, a
+class of methods and means is delimited in the state of the art which
+represents the basis for further problem processing. Thus the choice of the
+TTP has decisive importance for the further solution. It should be done in
+such a way that such a TTP is preferred that fits the purpose of the technical
+object to be created (target component $Z_1$) in the best way and that does
+not conflict with the ABER or -- in comparison to other principles -- violates
+as less as possible A and E from the ABER system. For this, the following
+should first be considered all procedures and means 
+\begin{itemize}
+\item that are \emph{available} on the material state of the art,
+\item that \emph{appear feasible} based on the ideal state-of-the-art, and
+  finally
+\item that \emph{seem conceivable} on the given state of technological
+  development and that \emph{seem imaginable} on the given state of sciences.
+\end{itemize}
+If a TTP is prescribed with the task, it has to be checked if it is feasible
+for the target figure and should be compared with other known principles.  If
+necessary, this must be discussed with the client.
+
+On the basis of the TTP, basic variants of the technical system are designed
+using the \emph{methods and means available from the state of the art}.  This
+is done transforming the target figure determined by the ABER in two stages:
+
+In the \emph{first transformation stage}, the types of technical objects are
+determined, which are \emph{necessary} according to the TTP to ensure the
+suitability of the technical system with respect to the target figure.  To
+every object type now such utility properties are attributed, which on the one
+hand are typical for the respective object type and on the other hand
+correspond to special suitability characteristics of the target figure. In
+doing so, it is appropriate first to determine the necessary contributions
+specific for that object type to the expediency of the system (component $Z_1$
+of the target figure). Then those for the respective object type
+characteristic functional properties are defined that guarantee the
+suitability of the technical system with regard to its controllability and its
+usability. For a sufficient suitability of the technical system -- especially
+with regard to its controllability -- it can be necessary to take into account
+additional object types, that match such specific suitability characteristics
+with their functional or operational properties.
+
+In this way, the target figure is transformed from a system of socially
+determined \emph{suitability characteristics} into a system of object-related
+\emph{functional properties}. This target figure is the basis for a systematic
+patent research and world status analysis for the pre-selection of suitable
+technical objects, which in their combination according to the TTP are
+sufficiently suitable to form a technical system that meets the ABER
+conditions.
+
+In a \emph{second transformation stage}, the \emph{main function} of the
+technical system according to the TTP is defined. It can be assumed that the
+main function activates the functional properties of the individual objects
+and links them in the process of their use in such a way that the suitability
+characteristics of the technical system according to the ABER are produced.
+This main function breaks down, related to the usage process, in its
+\emph{necessary and sufficient subfunctions}. Here, a hierarchy level of the
+technical system is selected that on the one hand is as high as possible, on
+the other hand takes into account the extraction of object types from the
+target figure that was already completed.
+
+To the individual sub-functions such objects are assigned, that are activated
+by the respective sub-function in the sense of the main function of the
+technical system. For each sub-function, those functional properties are
+defined that are caused by these technical objects, which means that they
+define \emph{specific technical means}. The sub-functions through which those
+object-related functional properties are activated that produce the
+suitability of the technical system concerning manageability and usability are
+established in the same way, however define \emph{necessary supporting
+  functions}.
+
+In this way, the target figure is transformed from a \emph{system of
+  object-related functional properties} into a \emph{system of process-related
+  functional properties of technical means}. This target figuer is used for
+the appropriate selection of technical means from the set of technical objects
+take into account and their functional coupling constituting the basic variant
+of the technical system. Additionally, the target figure forms in this
+transformation stage together with the non-transformed component $Z_2$
+(economic efficiency) the basis for the definition of the main
+technical-economic performance data of the technical system and for their
+quantitative determination in terms of a nominal figure.
+
+The \emph{system analysis} is based on this nominal figure. It is aimed at
+determining the effectiveness properties of the technical system in their
+combination, especially to uncover contradictory tendencies in their
+developmental behavior and to reveal the relevant technical causes in the
+context of a developmental weakness analysis. The function-related target
+figure can already provide an initial indication of the critical functional
+area (critical system area). This is usually the area where the greatest
+number of sub-functions meet in a technical object.
+
+\subsubsection*{W.4. The basic variant}
+
+The technical means selected from the available state of the art according to
+the target figure are divided into \emph{sub-systems in the form of separable
+  structural units} based on their function.  Each structural unit embodies
+one of the process-related sub-functions as part of the main function or a
+necessary auxiliary function that is responsible for control, protection
+and/or environmental compatibility of the system. With the functional
+combination of the technical means to sub-systems and the sub-systems to the
+overall system of the basic variant the ABER -- the functional requirements
+(\textbf{A}nforderungen) and structural conditions (\textbf{B}edingungen) as
+well as the external influences (\textbf{E}infl\"usse) and restrictions
+(\textbf{R}estriktionen) -- it has to be taken into account how the individual
+technical means or subsystems exert influence on each other when combined to
+form the basic variant. To do this, for their coupling (by means of
+morphological scheme) a \emph{ranking} has to be defined according to the
+technical-technological importance of the subsystems in such a way that a
+subsystem or technical means of higher rank defines the ABER for the
+subsystems or technical means on the respective lower levels of hierarchy.
+
+\subsubsection*{W.5. The decisive defect and the core variant}
+
+The basic variant developed according to the state of the art or the technical
+sciences still have decisive deficiencies. These deficiencies can be of
+technical-economic nature, arising from the fact that the utility and economic
+properties could not be brought into agreement with the target figure, i.e.
+requirements and/or restrictions had to be violated. The defects can also of
+"heuristic" nature, e.g. if means are neither available nor feasible, but at
+most conceivable or even only imaginable.
+
+A \emph{technical-economic deficiency} is present if the technical means
+required according to the target figure are principally available or known,
+but at least in a crucial functional property the required performance and/or
+effectiveness parameters are not achievable or only at the expense of other
+evaluation parameters.
+
+A \emph{heuristic deficiency} is present if for at least one of the functional
+properties required by the ABER no technical means are known which would be
+suitable according to their functional properties to produce the required
+means-effect relationships. To become aware of a heuristic deficiency requires
+inventive instinct and courage to work since conventional and proven
+technology has to be questioned.
+
+For further problem processing, that basic variant is selected which has the
+smallest deficiencies. An inventive approach is characterized by the property
+that it does not allow any serious technical-economic deficiencies, but
+deliberately accepts serious heuristic deficiencies when they challenge for
+inventive solutions.  If there is a serious heuristic deficiency the subsystem
+or system area where the deficiency appears is declared as the decisive
+subsystem or the \emph{core variant} of the technical system. For the
+problematic core of the basic variant in this subsystem or system area new,
+conceivable solutions are generated by new modifications or previously unusual
+combinations of known technical objects.  From these core variants, the one is
+chosen that does best fit into the overall context of the technical system of
+the basic variant. This may already be an inventive solution and is then the
+result of a heuristic approach, which can be described as \emph{projecting
+  invention}.
+
+If the basic variant consists of an inventive core variant with only low
+technological scope and in the remainder of verified and tested system
+components according to the available state of the art, and does not show
+significant deficiencies in relation to the target figure, it can be
+optimized, transferred into an overall operational project and tested in a
+pilot series or trial production.
+
+However, if there are still considerable deviations between the utility value
+and the effectiveness of the basic variant on the one hand and the target
+figure on the other, and in particular the functional characteristics of the
+core variant in the overall context of the technical system are still in
+question, then the further procedure is aimed at identifying the causes of
+these deficiencies more precisely and to investigate and fix them. For this
+purpose, first of all, a \emph{technical-economic objective} is derived from
+the target figure as more precise specification, which is aimed at the
+increase of those performance and/or economic parameters (main performance
+data), the fulfillment of which is still in question.
+
+\subsubsection*{W.6. The structurally prepared basic variant}
+
+The cause of the deficiencies is initially searched for in the structure of
+the technical system. For this purpose, the basic variant is structured
+according to its structure abstracting from functional properties of
+individual objects or groups of objects to structural properties of the
+technical system. This is done in such a way that the technical objects
+combined and functionally linked in the basic variant are considered with
+regard to their necessary structural properties (mainly contained in the
+target components \emph{controllability} and \emph{usability}) and are
+coordinated in such a way that they can be spatially and/or temporally
+combined to form the structural units and the overall system of the basic
+variant.
+
+This creates the system-specific structural properties of the technical means.
+Here, above all, the structural properties in the system area of the core
+variant are emphasized that primarily influence the specific performance
+and/or economic parameters of the technical-economic objective.  A variation
+of the structural properties of the technical system in the sense of the
+technical-economic objectives often results in a deterioration in specific
+functional properties that already highlightes a technical-economic
+contradiction.
+
+In many cases this is a conflict between the requirements of
+manufacturability, mountability and/or maintainability (or the continuous
+process management, the monitorability and controllability of procedures) and
+the requirements of functionality, insensitivity to external disturbances and
+internal functional security.
+
+Here the inventive processing is initially aimed to find the critical
+structural unit or functional weak point that primarily prohibits an optimal
+design and dimensioning of the basic variant. By a clever transformation or
+redesign of one or more objects within this critical system area the
+functional performance can be increased without changing the function itself.
+If this succeeds, then an inventive solution of the contradiction between
+structural and functional properties of the basic variant has been found in
+the sense of the technical-economic objective.  Such an approach is called
+\emph{constructive invention}. The inventive solution has initially to be
+transferred into a functional model and to be test for its functionality.
+
+If it turns out that the technical-economic objective cannot be met, if
+functions are not changed, the basic variant has to be prepared concerning its
+functional fulfillment and a corresponding system analysis is required.
+
+\subsubsection*{W.7. The preparation of the basic variant cncerning its
+  functional fulfillment}
+
+In the functional preparation of the basic variant, the structural properties
+of technical objects is abstracted to their functional properties. The aim is
+to \emph{identify the essential functional relationships} of the basic variant
+as technical system with its environment, and which internal functional
+relationships (means-effect relationships) between its components are decisive
+for that.
+
+First of all, on has to determine the overall function of the basic variant
+and its known or foreseeable side effects as well as the interface conditions
+to its technical-technological environment. This is done by a \emph{black box
+  analysis}.  The interface conditions (boundary conditions) of the black box
+define the input variables of the technical system from the specified output
+variables of a preceding system within a higher-level process, and its output
+variables from the specified input variables of a following system at the same
+higher level. Depending on the type of input and output variables from this
+results the transfer or support function mainly to be implemented by the basic
+variant as a technical system. This is therefore defined as the \emph{main
+  function}.
+
+However, this does \emph{not} happen process-related -- as with the
+transformation of the target figure -- process-related, but object-related.
+That is, the function is not considered as necessary, process-related
+activation of certain functional properties of technical objects, but as
+\emph{structurally constrained effect of certain functional properties of
+  technical means}. After that the necessary technical prerequisites for the
+creation and maintenance of the main function, i.e. for the functioning of the
+technical system, are determined. From this the required auxiliary functions
+are defined, concerning the types \emph{interference suppression function} and
+\emph{protection function}.
+
+Defining the \emph{interference suppression function}, one can first refer to
+the functional properties that are contained in the target component $Z_3$
+(controllability).  In addition, it is necessary to determine what side
+effects are triggered from the specific objects of the basic variant during
+operation or use. These side effects must be recorded as completely as
+possible.  There are harmful as well as useful or usable side effects.
+Necessary measures to suppress the harmful side effects caused by the overall
+function to acceptable levels lead to the definition of the interference
+suppression function.
+
+Necessary measures to suppress harmful effects caused on the main function and
+the interference suppression function of the technical system by the
+environment, lead to the definition of the \emph{protection function} of the
+system. Defining the protection function we can initially be conducted by the
+usage properties and usage conditions, which are combined in the target
+component $Z_4$ (usability). Concerning the harmful effects from the
+environment not only technical, technological and natural ones are to be
+considered, but possibly also social (qualification, discipline) and
+organizational (supply of means of transport, material, energy and/or
+information) are to be taken into account.
+
+An important for the inventor functional class are the \emph{auxiliary
+  functions}. This are functions, which are generated "for free" by the
+objects of the basic variant in addition to their main functional
+destination. They have to be investigated whether and to what extent they can
+used to support or even to replace functions of one or more other objects of
+the basic variant. This can lead to a \emph{fusion of functions}, the effect
+of which goes beyond the sum of the individual effects of the objects in
+question. This is an important indicator for an inventive achievement.
+
+Auxillary functions that cannot be used are considered as \emph{unnecessary
+  functions}.  They should be eliminated as completely as possible by a more
+suitable choice or design of the objects of the basic variant, at least when
+they provoke a disruption of the functional flow of value or cause unnecessary
+costs.
+
+For a complete recording and advantageous design of all interrelationships
+between the system and its environment, it is necessary to delimit an
+\emph{operational field} for the inventor in relation to the technical system.
+It includes all objects -- technical and natural -- as well as all factors --
+social, organizational and technological -- with their harmful and beneficial
+effects that the technical system with its function has to take into account
+or that can be effectively included in its function. It depends on the correct
+delimitation of the operational field and the technical system whether the
+protection function is correctly determined and whether objectively available
+options to simplify functions or to increase function value are recognized
+and used for improvements. (See [P:sect. 3]).
+
+Depending on the situation, this can be done in such a way that suitable
+objects from the operational field are used to support or simplify functions
+including them in the basic variant by structural as well as functional
+integration assigning them an adaptation function.  Conversely, it can also
+prove to be advantageous, and in some cases even necessary to relocate certain
+objects from the basic variant to the outer part of the operational field. A
+close functional and structural link across the system boundaries in the sense
+of a mediation function can generate a positive influencing factor in the
+outer operating field or reinforce an existing one. Possibly one gets thereby
+at the same time a simplification of the function of the basic variant or an
+increase in their functional value.
+
+With the black box analysis of the basic variant, its function-related
+processing is essentially completed. The knowledge gained about the functional
+characteristics of the basic variant, their mutual dependencies and the
+possibilities to optimally coordinate them with each other and with the system
+environment are now used to attempt to resolve the contradiction between
+structural and functional properties that occurred during the
+structure-related preparation of the basic variant.  Here you can in an
+inventive way, through an original distribution of the required functions to
+the individual objects of the basic variant and the skillful use of so far
+neglected structural and functional properties create the prerequisites for an
+optimal overall solution.
+
+\subsubsection*{W.8. The optimization of the basic variant compared to the
+  reference variant and the TEC}
+
+In order to be able to optimize the basic variant, a technical performance
+parameters has to be determined as a \emph{guiding variable}, the variation of
+which affects to a decisive extent on the one hand the effectivity parameters
+of the technical-economic objective and, on the other hand, the necessary
+structural and functional properties of the technical system. Choosing the
+guiding variable, we decide the direction of the further development of the
+technical system and the development trend of its utility and economic
+efficiency properties.
+
+The guiding variable must therefore be in agreement with the target figure,
+even if it turns out that its variation -- although professonally thought
+ahead -- leads to changes in the structural and functional properties of the
+technical system, which (at least partially) are still in contradiction to the
+technical-economic objectives. As orientation for the correct determination of
+the guiding variable can serve the reference variant which was derived from
+the worldwide material state of the art.
+
+As guiding variable serves the technical performance parameter in which the
+reference variant still deviates at most from the target figure.  That is, the
+requested performance (in the target component $Z_1$) is achieved either not
+at all or under the given implementation conditions only with impermissibly
+high technical ($Z_3$), technological ($Z_4$) and/or economic effort ($Z_2$).
+This way, a follow-up strategy is prohibited from the beginning and a
+progressive solution strategy is designed that meets real social needs.
+
+In addition, the reference variant can be included in the black box analysis
+as a suggestion for the functional and structural conceptualizsation of the
+basic variant. Did we already succeed -- possibly in an inventive way -- to
+develop a basic concept that can be optimized then we will find an optimal
+overall solution for the basic variant that meets the technical-economic
+objective through well-coordinated design and dimensioning of the individual
+objects. If it is found, then the functionality and the functional value of
+the basic variant has to be tested on a test sample.  For this, it is
+sufficient to reconstruct that part of the functional area of the basic
+variant, in which the decisive structural and functional changes are located
+that were carried out compared to the tried and tested state of the art. As a
+rule, it is the core variant and its closer system environment.
+
+If an optimal overall solution has not yet been found or if the design of the
+basic variant proves to be not functional, the decisive TEC is be to
+determined.  In other words, the decisive technical-economic effectiveness
+parameters have to be determined that relate to one another in such a way that
+the increase in one parameter leads to an impermissible reduction of the other
+parameter, if the guiding variable is varied according to the
+technical-economic objective (see [P:sect. 4]).
+
+The further procedure is now no longer possible through \emph{accompanying} or
+tactical inventing, but characterized by \emph{forward-looking}, strategic
+invention. It is actually inventing the true meaning of the method, the
+\emph{invention itself}. This brings us to stage 2 of the organizational
+model, at the beginning of which a \emph{renewal pass} and a
+\emph{specification sheet} with a clear inventive task hav to be negotiated.
+The subject of the invention is now a technical-economic contradiction, the
+goal is to overcome it.
+
+\subsubsection*{W.9. The inventive core variant (key variant)}
+
+When overcoming the TEC, it is assumed that its cause is not distributed
+around the whole technical system, but essentially focused in a specific
+system area -- the area that is critical for the functioning of the technical
+system, the \emph{critical functional area}. The inventive goal now is to
+\emph{discover} this system area and to produce an inventive solution, that
+creates in this critical area new technical conditions, new means-effect
+relationships, opening new possibilities for the development of the basic
+variant and the corresponding variation of the guiding variable in terms of
+the technical-economic objective.
+
+\subsubsection*{W.10. The critical functional area of the basic variant and
+  the ABER}
+
+Based on the result of the black box analysis, the findings during the
+unsuccessful optimization of the basic variant and possibly from a functional
+that was completed with testing negative result, the causes of the
+technical-economic contradiction are to be explored. (See [P:sect. 5]).
+
+For this purpose, continuing the black box analysis the basic variant is first
+divided into the object-related sub-functions, which are essential for a
+working chain of intended and/or to be prevented \emph{changes in state of one
+  or more objects} that produces in the end a stable and effective main
+function.  For the specification of the necessary functional features one can
+exploit the usage properties that are summarized in the target component $Z_1$
+(Expediency) in terms of effects of their activation. Thus one can assign
+system components contained in the basic variant as objects to individual
+sub-functions and assess them with regard to their functional value.
+
+It will always be possible to delimit an area of the technical system in which
+one or several sub-functions are present, which in comparison to the
+neighboring system areas have a significantly lower functional value. This
+system area acts like a bottleneck in the function value flow of the main
+function, which this and other sub-functions does not take full effect and
+thus decisively limits the overall functionality of the technical system. It
+is therefore called \emph{critical functional area} of the technical system.
+
+For the inventor, it is not only the question of the technical-scientific
+causes for the emergence of the functional bottleneck, but also the question
+of the \emph{technical-constructive or operational-procedural reasons} that
+prevent the elimination of these causes in the way to an optimal dimensioning.
+These reasons are to be reduced to a \emph{harmful technical effect} (HTE),
+which prevents the development of the technical system according to the target
+figure.
+
+The answer to this question about the HTE, which is crucial for the
+inventional task, can only be derived gradually. For this purpose, the
+sub-functions created in the critical functional area are divided according to
+their procedural principle into \emph{elementary functions} and corresponding,
+objective \emph{functional units}. The individual functional units are
+resolved into their operational components -- \emph{operation},
+\emph{operand}, \emph{operator} and \emph{counter-operator} -- and according
+to the functional principle of the respective functional unit technically
+defined as functional parameter. In this way the critical functional area can
+be clearly and transparently displayed in a morphological scheme.
+
+The \emph{function value flow} is now examined from elementary function to
+elementary function.  In doing so, following a suitably selected guide
+variable (structural variable), an optimization of the functional units is
+attempted to implement varying the functional determinants while keeping the
+principle of operation.
+
+Depending on the result of these optimization attempts, the root of the
+harmful technical effect may be limited on certain functional units and their
+structural and functional properties. This means that the critical functional
+area is increasingly narrowed and more precisely defined.  At the same time,
+the technical and natural law requirements, constraints, influences and
+restrictions (the ABER) are determined in their specific for the technical
+system form of interrelation that determines the technical-scientific core of
+the problem.
+
+That is, the further set of ABER defined at the beginning of [P:(2.4)] become
+a system linking the sub-objects of the basic variant. This ABER on
+technical-scientific level is the analogue of the ABER on the
+technical-economic level. Note that at this level, we work as \textbf{E} with
+\emph{influences} rather than \emph{expectations}.
+
+These new ABER prevent to overcome the TEC. These ABER are to be changed in a
+following stage of the inventive process in the sense of a technical ideal
+(IDEAL) in such a way that the HTE disappears. In that process it is initially
+not allowed to vary technical product requirements or restrictions by natural
+laws.
+
+\subsubsection*{W.11. The harmful technical effect and the IDEAL}
+
+The (technical) IDEAL primarily refers to the behavior of the technical system
+in its critical functional area. The rest of the technical system is initially
+essentially set immutable. With the IDEAL, such ideal constructive conditions
+and/or such ideal procedural arrangements are thought ahead the recognized
+optimization limits, that all undesirable technical-scientific influencing
+factors disappear or are at least reduced so far in their effect that a
+decisive increase of the functional value in the critical functional area
+appears. The functional principle or the operational principle are initially
+not changed. (See [P:sect. 6]).
+
+In contrast to the technical-economic ABER the technical-scientific ABER are
+not directly derived from the social supersystem and the technological
+environment of the technical system, but rather from its constructive or
+procedural structure and the functional principle implemented there.  With
+these ABER next to \emph{requirements}, \emph{conditions} and
+\emph{restrictions} also \emph{influences} (in the sense of side effects) of
+technical-constructive and technical-scientific type are recorded, which the
+components of the technical system exert on each other, or which affect them
+from the system environment.
+
+Opposing new conditions and pushing back the influencing factors has to
+respect technical requirements for structural and functional basic properties
+of the basic variant and must not violate natural law restrictions, which are
+set by the overall function of the basic variant in a principal way. Otherwise
+the IDEAL will cause another harmful technical effect in another system area,
+which usually also leads to a specific TEC.
+
+Should it turn out that the elimination of a harmful technical effect is only
+possible with the emergence of another one, so in every case it is to "scout"
+whether there is one of these harmful consequential effects, against which a
+supplementary IDEAL may be thought that meets all the requirements and
+restrictions of the technical system.  As a rule, however, this requires a
+detailed examination of the structural and functional interrelationships of
+the technical system -- at least in the environment of the critical functional
+area.
+
+In order to avoid an odyssey through the technical system, this exploratory
+procedure therefore only makes sense as long as it does not go too far beyond
+the originally delimited system.  If such an IDEAL approach is found that can
+be developed futher, a stable \emph{technical effect} (TE) and a mediating
+\emph{functional principle} (FP) has to be searched which correspond to the
+new conditions and influencing factors in the system of technical-scientific
+ABER.  This is the starting point to develop the \emph{sub-function
+  principles} and the \emph{technical principle} of the inventive solution for
+the core variant (key variant) that can be tested in a test sample.
+
+However, if no viable IDEAL approach has been found, so the further process
+starts with the approach that is in greatest compliance with the requirements
+and restrictions in the system of scientific ABER. The findings from the
+exploration of the technical system are now summarized as the
+technical-technological contradiction (TTC) summarized. (See [P:sect. 7]).
+
+\subsubsection*{W.12. The technical-technological contradiction (TTC) and the
+  new functionals principle for the key variant}
+
+The TTC defines the specific technical issue that the removal of the initially
+found harmful technical effect \emph{necessarily} yields another, just as
+difficult to remove harmful effect. To resolve this contradiction now the
+\emph{general problem-solving principles} are brought into consideration. (See
+     [P:sect. 9]).
+
+If a solution has been found to overcome the TTC, it is first to be checked
+its \emph{technical effect} at IDEAL for its fundamental usability.  Then the
+technical-scientific ABER are to be modify accordingly, and it is important to
+ensure that this does not violate technical requirements or scientific
+restrictions.  Finally, it must be checked whether the \emph{harmful technical
+  effect} has actually been eliminated and no new TTC has been created.  Only
+then it time to define -- with reference to the IDEAL -- a more detailed
+specification of the \emph{new technical effect} and the system-compatible
+expression of the \emph{new functional principle} for the key variant.
+
+If a usable approach to solving the TTC is not found, the technical-scientific
+fact is to be determined, which decisively opposes this solution.  For this
+purpose, the system analysis is directed to the critical point of action of
+the key variant, where those technical-scientific restrictions start that are
+decisively involved in the creation of the TTC. Theis from the critical point
+of action emanating technical-scientific restriction is called a \emph{harmful
+  scientific effect} (HSE). It essentially consists in the fact that the
+functional principle of a functional or utility value-determining technical
+partial effect which should be evoked at the critical point of action
+prohibits certain functional and/or structural changes in the vicinity of this
+point of action. (See also [P:sect. 7]).
+
+\subsubsection*{W.13. The technical-scientific contradiction (TSC) and the new
+  operational principle for the key variant}
+
+In a \emph{database of scientific effects and principles}, such approaches are
+searched for that produce the necessary technical partial effect at the
+critical point of action in at least the same strength but the original
+scientific restriction is no more relevant.
+
+Of course, it must always be checked whether only a problematic restriction
+has been exchanged against another. This examination can initially be done on
+a theoretical basis of a technical-scientific model of the point of action and
+its immediate surrounding.  In this process the elementary (functional and
+structural) conditions and relationships have to be investigated that are
+required to create the necessary conditions for the appearance of the new
+technical partial effect at the point of action. It always turns out that at
+least one of these conditions must be met without restriction due to the
+selected operating principle. That is, it is to be regarded as the \emph{new
+  natural law restriction}.
+
+To determine whether or not this new restriction prevents solving the problem
+it can be compared with the IDEAL within the system context of the
+technical-scientific ABER and examined whether the harmful technical effect is
+now eliminated or the TTC can be solved.  If this is the case, starting from
+the IDEAL a \emph{specification of the new technical effect} and the
+system-compatible \emph{expression of the new functional principle} for the
+key variant are to be developed.
+
+However, before the partial function principles and the technical principle
+are developed from this, the simplifying assumptions and the neglected
+possible secondary effects and subordinate influencing factors of the
+\emph{technical-scientific model} have experimentally to be checked on
+validity and reliability.  A \emph{laboratory sample} is used for this, i.e. a
+replica of the structure of the technical system in the area of the critical
+point of action.
+
+If, even after several approaches, a suitable technical-scientific principle
+of action for the solution of the TTC is \emph{not} found, the knowledge
+gained is expressed as \emph{technical-scientific contradiction} (TSC). This
+justifies the problem-specific scientific fact that for the technical system
+of the basic variant \emph{there is no operational principle}, that removes a
+technical-scientific restriction without causing other equally serious ones.
+The reason for this are \emph{restrictive functional and/or structural
+  conditions and requirements} of the technical system that do not allow new
+operating principles to develop either.
+
+With the help of the \emph{general problem-solving principles} an attempt is
+now made to meet to "weaken" these conditions and requirements in such a way
+that one of the considered operational principles no longer leads to a TSC.
+This means that also the TTC and the TEC are also solvable in principle. (See
+[P:sect. 9]). 
+
+\section{PROHeal -- the Algorithm} 
+
+The information in brackets refers to the points in the handout ...
+
+\subsection*{A. Technical-economic Part of the Program}
+
+\textbf{Objective:} Critique of the state of the art from a
+technical-economical point of view. Determine the relevant target and
+reference variables.
+
+\begin{itemize}[leftmargin=30pt]
+\item[(A1)] Specify the societal need (SN) according to operational tasks
+  of the enterprise (OTE) including
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item[(A1a)] Determine the overall SN (1.3), (1.6) 
+  \item[(A1b)] Determine the special SN (1.1), (1.2), (1.4)
+  \end{itemize}
+\item[(A2)] Find the ABER (1.4), (1.6), (1.7)
+\item[(A3)] Determine the required use properties (1.4), (1.5) 
+\item[(A4)] Define the components $Z_i$ of the target variable $\zeta$ (1.8),
+  (1.9), (1.10)
+\item[(A5)] Choose the technical-technological principle (2.1)
+\item[(A6)] Determine the basic variant of the technical system starting from
+  the state of the art (2.2), (2.3), (2.4)
+\item[(A7)] Formulate the technical-economic objective (2.5), (4.3b)
+\item[(A8)] Black box analysis of the technical system (2.6), (2.7), (2.8),
+  (2.9), (2.10), (2.11), (2.14), (2.15), (3.4)
+\item[(A9)] Delimit the technical-economic field of operation (2.12), (2.13),
+  (3.1), (3.2), (3.3)
+\item[(A10)] Determine the lead variable $G_F$ (2.5f), (4.1)
+\item[(E1)] \textbf{Decide:} Is the technical system appropriately delimited?
+  (4.2), (3.4)
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} Go to (E2)
+  \item \textbf{No:} Back to (A8)
+  \end{itemize}
+\item[(E2)] \textbf{Decide:} Is an optimization solution possible?  (2.9),
+  (2.14), (2.15)
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} Work out the optimization solution $\to$ \textbf{STOP}
+  \item \textbf{No:} Go to (A11)
+  \end{itemize}
+\item[(A11)] Find and formulate the technical-economic contradiction that
+  determines the problem (4.2), (4.3), (4.4)
+\item[(E3)] \textbf{Decide:} Is there a case of "Business blindness"? 
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} Back to (E2)
+  \item \textbf{No:} Proceed with part B
+  \item \textbf{Unknown:} Back to (A5)
+  \end{itemize}
+\end{itemize}
+
+\subsection*{B. Technical-technological Part of the Program}
+
+\textbf{Objective:} Critique of the state of the art from a
+technical-technological point of view. Determine the decisive operation
+parameters.
+
+\begin{itemize}[leftmargin=30pt]
+\item[(B1)] Find and formulate the undesired effect (2.10), (2.11), (2.15c),
+  (2.15e), (5.1), (5.4)
+\item[(B2)] Delimit the critical functional area in the structure of the
+  technical system (2.8), (2.15c), (2.15d) (3.4), (5.2), (5.3)
+\item[(B3)] Draft the ideal vision for the core variant (in the critical
+  functional area of the technical system) -- IDEAL -- (6.1)
+\item[(B4)] Develop ideas about the necessary technical requirements (ABER)
+  for the usefulness of the ideal image (ideal conceptions) (6.2)
+\item[(B5)] Conceptual modification of the technical system with regard to
+  required functional properties outside the critical functional area
+  according to the ideal vision on the ABER (6.3), (6.4)
+\item[(E4)] \textbf{Decide:} Will a harmful technical effect reappear?  (6.5)
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} Back to (B2)
+  \item \textbf{No:} Go to (E5)
+  \end{itemize}
+\item[(E5)] \textbf{Decide:} Are the ABER sufficiently determined? (6.2a)
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} Go to  (B6)
+  \item \textbf{No:} Back to (B4)
+  \end{itemize}
+\item[(B6)] Exgtract the ideal final result (IFR) (6.4)
+\item[(E6)] \textbf{Decide:} Is the ideal vision in the ABER technically
+  feasible?  (6.2a), (9.5)
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} An unexpected approach to a \textbf{surprisingly simple
+    solution} (SSS) is found (6.5). Back to (E2). 
+  \item \textbf{No:} Go to (B7)
+  \end{itemize}
+\item[(B7)] Find and formulate the technical contradiction (6.2d), (7)
+\item[(E7)] \textbf{Decide:} Is it a prejudice of the professional world?
+  (6.2a), (9.5)
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} Transition to the elimination of a technical
+    contradiction with surprising impact (6.2a), (9.5). Back to (E2).
+  \item \textbf{No:} Go to part C
+  \item \textbf{Unknown:} Back to (B1)
+  \end{itemize}
+\end{itemize}
+
+\subsection*{C. Technical-scientific Part of the Program}
+
+\textbf{Objective:} Critique of the state of the art from a
+technical-scientific point of view.  Determination of the decisive effective
+variables.
+
+\begin{itemize}[leftmargin=30pt]
+\item[(C1)] Derive the technical-scientific cause of the harmful technical
+  effect from the ideal vision of the ABER (8.1a)
+\item[(C2)] Limit the area of the critical point of action in the technical
+  system (2.8)
+\item[(C3)] Model the critical point of action
+\item[(C4)] Formulate a search query to the database of scientific effects to
+  realize the ABER according to the ideal vision (ideal scientific effect)
+  (8.3)
+\item[(E8)] \textbf{Decide:} Is there an appripriate scientific effect?
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} Consider it as basis for a new technical approaches.
+    Back to (E6).
+  \item \textbf{No:} Go to (C5)
+  \end{itemize}
+\item[(C5)] Formulate the technical-scientific contradiction (8.1b), (10.1)
+\item[(E9)] \textbf{Decide:} Is it a matter of blindness in the professional
+  world?  (8.2), (10.1)
+  \begin{itemize}[leftmargin=20pt,noitemsep]
+  \item \textbf{Yes:} Consider these technical approaches from a foreign
+    domain.  Back to (E2).
+  \item \textbf{No:} Go to (C6)
+  \item \textbf{Unknown:} Back to (C1)
+  \end{itemize}
+\item[(C6)] Find suitable solution strategies in the technical system to
+  overcome the technical contradiction (8.2), (9.1), (9.2), (9.4a), (10.2)
+\item[(C7)] Formulate the inventional task with the goal of a radical
+  renewal of the structure of the technical system (9.4b)
+\item[(C8)] Find suitable solution principles to solve the problem of the
+  inventional task (9.3), (9.4a)
+\item[(C9)] Find fundamentally new approaches to solutions (creation of a new
+  generation of the technical system) (10.2) $\to$ \textbf{Back to (A5)}
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.4,transform shape,
+    >={Triangle[length=0pt 6,width=0pt 5]},
+    rounded corners=2pt,line width=.8pt]
+  \node[draw] at (0,15) [rectangle] (A0) {Start};
+  \node[draw] at (0,14) [rectangle] (A1) {A1--A5};
+  \node[draw] at (0,13) [rectangle] (A6) {A6--A8};
+  \node[draw] at (0,12) [rectangle] (A9) {A9--A10};
+  \node[draw] at (2,14) [circle] (E1) {E1};
+  \node[draw] at (4,14) [circle] (E2) {E2};
+  \node[draw] at (6,14) [rectangle] (A11) {A11};
+  \node[draw] at (4,12.7) [rectangle] (A4) {\emph{Optimization}};
+  \node at (4,11.7) [rectangle] (A5) {STOP};
+  \node[draw] at (8,14) [circle] (E3) {E3};
+  \node[draw] at (0,10) [rectangle] (B1) {B1};
+  \node[draw] at (0,9) [rectangle] (B2) {B2};
+  \node[draw] at (0,8) [rectangle] (B3) {B3--B4};
+  \node[draw] at (0,7) [rectangle] (B5) {B5};
+  \node[draw] at (2,9) [circle] (E4) {E4};
+  \node[draw] at (4,9) [circle] (E5) {E5};
+  \node[draw] at (5,9.7) [rectangle] (B6) {B6};
+  \node[draw] at (6,9) [circle] (E6) {E6};
+  \node[draw] at (7,8.3) [rectangle] (B7) {B7};
+  \node[draw] at (6,10.3) [rectangle] (Rel) {\emph{SSS}};
+  \node[draw] at (8,10.3) [rectangle] (UW) {\emph{SI}};
+  \coordinate (Z1) at (7,12) ;
+  \node[draw] at (8,9) [circle] (E7) {E7};
+  \node[draw] at (0,4.7) [rectangle] (C1) {C1--C4};
+  \node[draw] at (0,3.7) [rectangle] (C6) {C6--C9};
+  \node[draw] at (3,4.7) [circle] (E8) {E8};
+  \node[draw] at (7,4.7) [circle] (E9) {E9};
+  \node[draw] at (5,4.7) [rectangle] (C5) {C5};
+  \node[draw] at (3,6) [rectangle] (NTL) {\emph{NTS}};
+  \node[draw] at (7,6) [rectangle] (FTL) {\emph{TSOD}};
+  \coordinate (Z2) at (7,7) ;
+  
+  \draw[->] (A0) -- (A1) ;
+  \draw[->] (A1) -- (A6) ;
+  \draw[->] (A6) -- (A9) ;
+  \draw[->] (A9) -- (E1) ;
+  \draw[->] (E1) -- (E2) ;
+  \node at (2.7,14.3) {yes};
+  \draw[->] (E1) -- (2,12) -- (A9) ;
+  \node at (2.5,13.4) {no};
+  \draw[->] (E2) -- (A11) ;
+  \node at (4.8,14.3) {no};
+  \draw[->] (E2) -- (A4) ;
+  \node at (4.3,13.3) {yes};
+  \draw[->] (A4) -- (A5) ;
+  \draw[->] (A11) -- (E3) ;
+  \draw[->] (E3) -- (7.5,15) -- (4,15) -- (E2) ;
+  \node at (7.5,14.5) {yes};
+  \draw[->,dashed] (E3) -- (8,15.5) -- (2,15.5) -- (A1) ;
+  \node at (3,15.7) {unknown};
+  \draw[->] (E3) -- (8,11.1) -- (0,11.1) -- (B1) ;
+  \node at (7.5,13.5) {no};
+  \draw[->] (B1) -- (B2) ;
+  \draw[->] (B2) -- (B3) ;
+  \draw[->] (B3) -- (B5) ;
+  \draw[->] (B5) -| (E4) ;
+  \draw[->] (E4) -- (B2) ;
+  \node at (1.3,9.2) {yes};
+  \draw[->] (E4) -- (E5) ;
+  \node at (2.9,9.2) {no};
+  \draw[->] (E5) -- (B6) ;
+  \node at (4.3,9.7) {yes};
+  \draw[->] (E5) |- (B3) ;
+  \node at (3.6,8.3) {no};
+  \draw[->] (B6) -- (E6) ;
+  \draw[->] (E6) -- (Rel) ;
+  \node at (6.3,9.7) {yes};
+  \draw[->] (E6) -- (B7) ;
+  \node at (6.2,8.4) {no};
+  \draw[->] (B7) -- (E7) ;
+  \draw[->] (E7) -- (UW) ;
+  \node at (8.3,9.7) {yes};
+  \draw[->,dashed] (E7) -- (7,10.7) -- (2,10.7) -- (B1) ;
+  \node at (3.4,10.4) {unknown};
+  \draw[-,dashed] (UW) -- (Z1) ;
+  \draw[-,dashed] (Rel) -- (Z1) ;
+  \draw[->,dashed] (Z1) -- (7,13) -- (E2) ;
+  \draw[->] (E7) -- (8,6.5) -- (0,6.5) -- (C1) ;
+  \node at (8.4,8.4) {no};
+  \draw[->] (C1) -- (E8) ;
+  \draw[->] (E8) -- (NTL) ;
+  \node at (2.7,5.3) {yes};
+  \draw[->] (E8) -- (C5) ;
+  \node at (3.9,5) {no};
+  \draw[->] (C5) -- (E9) ;
+  \draw[->] (E9) -- (FTL) ;
+  \node at (7.3,5.4) {yes};
+  \draw[->] (E9) |- (C6) ;
+  \node at (7.4,4) {no};
+  \draw[-,dashed] (NTL) |- (Z2) ;
+  \draw[-,dashed] (FTL) |- (Z2) ;
+  \draw[->,dashed] (Z2) -- (E7) ;
+  \draw[->,dashed] (C6) -- (-1.5,3.7) -- (-1.5,14) -- (A1) ;
+  \draw[-,dotted] (-1,15.9) -- (9,15.9) -- (9,11.3) -- (-1,11.3) --
+  (-1,15.9) ; 
+  \draw[-,dotted] (-1,10.9) -- (9,10.9) -- (9,6.6) -- (-1,6.6) --
+  (-1,10.9) ; 
+  \draw[-,dotted] (-1,6.4) -- (9,6.4) -- (9,3.3) -- (-1,3.3) --
+  (-1,6.4) ; 
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Legende}
+\begin{tabular}{ll}
+SSS & Surprisingly simple solution\\
+SI & Surprising impact\\
+NTS & Novel technical solution \\
+TSOD & Technical solution from other domain
+\end{tabular}
+
+\section{German-English Translations of Terms}
+
+
+
+\begin{thebibliography}{xxx}
+\bibitem{Altshuller1973} Genrich S. Altshuller. Erfinden – (k)ein Problem?
+  Verlag Tribüne, Berlin (1973).
+\bibitem{Altshuller1983}  Genrich S. Altshuller, Alexander B. Seljuzki. Flügel
+  für Ikarus. Urania-Verlag, Leipzig (1983).
+\bibitem{Altshuller1986} Genrich S. Altshuller. Erfinden. Wege zur Lösung
+  technischer Probleme. Verlag Technik, Berlin (1986). 
+\bibitem{Cavallucci2000} Denis Cavallucci, P. Lutz, F. Thiebaud. Intuitive
+  Design Method (IDM): A new framework for design method integration. Journal
+  for Manufacturing Science and Production, 3(2-4), pp. 95-102 (2000).
+  \url{https://doi.org/10.1515/IJMSP.2000.3.2-4.95}
+\bibitem{Graebe2019a} Hans-Gert Gräbe. The Development of the GDR Inventor
+  Schools and the Evolution of TRIZ (in Russian). In: Online material of the
+  TRIZ Summit, Minsk (2019).
+\bibitem{Graebe2019b} Hans-Gert Gräbe. The Contribution to TRIZ by the
+  Inventor Schools in the GDR. Proceedings of the 15th MATRIZ TRIZfest, pp.
+  346-352 (2019).
+\bibitem{RM-23} Peter Koch, Klaus Stanke. 50 Jahre systematische Heuristik.
+  Rohrbacher Manuskripte, Heft 23. LIFIS, Berlin (2021, in preparation).
+\bibitem{Mueller1973} Johannes Müller, Peter Koch et al. Programmbibliothek
+  zur systematischen Heuristik für Naturwissenschaftler und Ingenieure. In:
+  Wissenschaftliche Abhandlungen des Zentralinstituts für Schweißtechnik
+  Halle, Band 97-99, Halle (1973).
+\bibitem{Mueller1990} Johannes Müller. Arbeitsmethoden der
+  Technikwissenschaften.  Systematik, Heuristik, Kreativität. Springer, Berlin
+  (1990).
+\bibitem{Petrov2020} Vladimir P. Petrov. Laws and patterns of systems
+  development. Book in 4 vol. (in Russian).  Ridero, Moscow (2020).
+\bibitem{RT89} Hans-Jochen Rindfleisch, Rainer Thiel, Gerhard Zadek.
+  KDT-Erfinderschule, Lehrbrief 2: Erfindungs­methodische Arbeitsmittel.
+  Lehrmaterial zur Erfindungsmethode. Berlin (1989).
+\bibitem{RT94} Hans-Jochen Rindfleisch, Rainer Thiel. Erfinderschulen in der
+  DDR. Trafo Verlag, Berlin (1994).
+ \bibitem{RM-21} Rainer Thiel.  Dialektik, TRIZ und ProHEAL. Rohrbacher
+   Manuskripte, Heft 21. LIFIS, Berlin (2020).
+\end{thebibliography}
+
+\end{document}
+
+Übersetzungen:
+
+Teilfunktion - sub-function
+Führungsgröße - guiding variable -> guiding figure
+Zielgröße - target figure -> outcome figure
+Hilfsfunktion - auxiliary function
+Wirkprinzip - operational principle
+Wirkbereich - operational area 
+
+figure, weil diese Größen mehrdimensional entsprechend der jeweiligen
+ABER-Matrix sind.
