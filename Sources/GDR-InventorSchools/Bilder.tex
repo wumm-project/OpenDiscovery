@@ -1,0 +1,196 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{od}
+\usepackage[main=russian,english]{babel}
+
+\parindent0pt
+\parskip4pt
+\setlist[itemize]{noitemsep}
+
+\title{ProHEAL Basics -- Extended Version}
+
+\author{Hans-Gert Gr\"abe, Rainer Thiel}
+\date{Version of June 2021} 
+
+\begin{document}
+
+% ProHEAL Diagram Overview - Russian version
+\begin{center}
+  \begin{tikzpicture}[scale=.95,transform shape,
+    bbox/.style={draw,fill=white,rectangle,align=center},
+    >={Triangle[length=0pt 6,width=0pt 5]},
+    rounded corners=2pt,line width=.8pt]
+  \draw[dashed,line width=.3pt] (4,11) -- (4.5,3) ;
+  \draw[dashed,line width=.3pt] (12.5,11) -- (12,3) ;
+  \node[bbox,text width=4cm] at (8,13) (A0)
+       {Technical-economic problem situation};
+  \node[text width=3cm,align=center] at (8,11) (B0)
+       {Technical-economic field of operation};
+  \node[bbox,text width=3cm] at (3,11) (B0a)
+       {Societal need};
+  \node[bbox,text width=3.5cm] at (13,11) (B0b)
+       {State of the art. Basic variant};
+  \node[bbox,text width=5cm] at (8,9) (A1)
+       {Technical-economic (external) contradiction};
+  \node[text width=3cm,align=center] at (8,7) (B1)
+       {Critical functional area of the basic variant};
+  \node[bbox,text width=3cm] at (3.3,7) (B1a)
+       {IDEAL of the core variant};
+  \node[bbox,text width=3.5cm] at (13,7) (B1b)
+       {Harmful technical effect};
+  \node[bbox,text width=5cm] at (8,5) (A2)
+       {Technical-technological (inner) contradiction};
+  \node[text width=3cm,align=center] at (8.5,3)  (B2)
+       {Critical operational area of the core variant};
+  \node[bbox,text width=4cm] at (3.6,3) (B2a)
+       {Ideal scientific effect};  
+  \node[bbox,text width=3.5cm] at (13,3) (B2b)
+       {Harmful scientific effect};
+  \node[bbox,text width=6cm] at (8,1) (A3)
+       {Technical-scientific (internal) contradiction};
+  \node[bbox,text width=3cm] at (8,-1) (A4)
+       {Solution strategy};
+  \node[rotate=90,text width=3.6cm] at (0,3) (D1)
+       {Problem solution\\ imaginable at the level of natural sciences}; 
+  \node[rotate=90,text width=3.5cm] at (0,7) (D2)
+       {Problem solution conceivable at the state of art of technical
+         science};   
+  \node[rotate=90,text width=3.5cm] at (0,11) (D2)
+       {Problem solution feasible at the state of the art};
+  \draw[->] (A0) -- (B0a) ;
+  \draw[->] (B0a) -- (A1) ;
+  \draw[->] (A0) -- (B0b) ;
+  \draw[->] (B0b) -- (A1) ;
+  \draw[->] (A1) -- (B1a) ;
+  \draw[->] (B1a) -- (A2) ;
+  \draw[->] (A1) -- (B1b) ;
+  \draw[->] (B1b) -- (A2) ;
+  \draw[->] (A2) -- (B2a) ;
+  \draw[->] (B2a) -- (A3) ;
+  \draw[->] (A2) -- (B2b) ;
+  \draw[->] (B2b) -- (A3) ;
+  \draw[->] (A3) -- (A4) ;
+  \draw[->,dashed] (B0) -- (B0a) ;
+  \draw[->,dashed] (B0) -- (B0b) ;
+  \draw[->,dashed] (B1) -- (B1a) ;
+  \draw[->,dashed] (B1) -- (B1b) ;
+  \draw[->,dashed] (B2) -- (B2a) ;
+  \draw[->,dashed] (B2) -- (B2b) ;
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.4,transform shape,
+    >={Triangle[length=0pt 6,width=0pt 5]},
+    rounded corners=2pt,line width=.8pt]
+  \node[draw] at (0,15) [rectangle] (A0) {Начало};
+  \node[draw] at (0,14) [rectangle] (A1) {A1--A5};
+  \node[draw] at (0,13) [rectangle] (A6) {A6--A8};
+  \node[draw] at (0,12) [rectangle] (A9) {A9--A10};
+  \node[draw] at (2,14) [circle] (E1) {E1};
+  \node[draw] at (4,14) [circle] (E2) {E2};
+  \node[draw] at (6,14) [rectangle] (A11) {A11};
+  \node[draw] at (4,12.7) [rectangle] (A4) {\emph{Оптимизация}};
+  \node at (4,11.7) [rectangle] (A5) {СТОП};
+  \node[draw] at (8,14) [circle] (E3) {E3};
+  \node[draw] at (0,10) [rectangle] (B1) {B1};
+  \node[draw] at (0,9) [rectangle] (B2) {B2};
+  \node[draw] at (0,8) [rectangle] (B3) {B3--B4};
+  \node[draw] at (0,7) [rectangle] (B5) {B5};
+  \node[draw] at (2,9) [circle] (E4) {E4};
+  \node[draw] at (4,9) [circle] (E5) {E5};
+  \node[draw] at (5,9.7) [rectangle] (B6) {B6};
+  \node[draw] at (6,9) [circle] (E6) {E6};
+  \node[draw] at (7,8.3) [rectangle] (B7) {B7};
+  \node[draw] at (6,10.3) [rectangle] (Rel) {\emph{УПР}};
+  \node[draw] at (8,10.3) [rectangle] (UW) {\emph{НД}};
+  \coordinate (Z1) at (7,12) ;
+  \node[draw] at (8,9) [circle] (E7) {E7};
+  \node[draw] at (0,4.7) [rectangle] (C1) {C1--C4};
+  \node[draw] at (0,3.7) [rectangle] (C6) {C6--C9};
+  \node[draw] at (3,4.7) [circle] (E8) {E8};
+  \node[draw] at (7,4.7) [circle] (E9) {E9};
+  \node[draw] at (5,4.7) [rectangle] (C5) {C5};
+  \node[draw] at (3,6) [rectangle] (NTL) {\emph{НТР}};
+  \node[draw] at (7,6) [rectangle] (FTL) {\emph{ТРДО}};
+  \coordinate (Z2) at (7,7) ;
+  
+  \draw[->] (A0) -- (A1) ;
+  \draw[->] (A1) -- (A6) ;
+  \draw[->] (A6) -- (A9) ;
+  \draw[->] (A9) -- (E1) ;
+  \draw[->] (E1) -- (E2) ;
+  \node at (2.7,14.3) {да};
+  \draw[->] (E1) -- (2,12) -- (A9) ;
+  \node at (2.5,13.4) {нет};
+  \draw[->] (E2) -- (A11) ;
+  \node at (4.8,14.3) {нет};
+  \draw[->] (E2) -- (A4) ;
+  \node at (4.3,13.3) {да};
+  \draw[->] (A4) -- (A5) ;
+  \draw[->] (A11) -- (E3) ;
+  \draw[->] (E3) -- (7.5,15) -- (4,15) -- (E2) ;
+  \node at (7.5,14.5) {да};
+  \draw[->,dashed] (E3) -- (8,15.5) -- (2,15.5) -- (A1) ;
+  \node at (3,15.7) {неизвестно};
+  \draw[->] (E3) -- (8,11.1) -- (0,11.1) -- (B1) ;
+  \node at (7.5,13.5) {нет};
+  \draw[->] (B1) -- (B2) ;
+  \draw[->] (B2) -- (B3) ;
+  \draw[->] (B3) -- (B5) ;
+  \draw[->] (B5) -| (E4) ;
+  \draw[->] (E4) -- (B2) ;
+  \node at (1.3,9.2) {да};
+  \draw[->] (E4) -- (E5) ;
+  \node at (2.9,9.2) {нет};
+  \draw[->] (E5) -- (B6) ;
+  \node at (4.3,9.7) {да};
+  \draw[->] (E5) |- (B3) ;
+  \node at (3.6,8.3) {нет};
+  \draw[->] (B6) -- (E6) ;
+  \draw[->] (E6) -- (Rel) ;
+  \node at (6.3,9.7) {да};
+  \draw[->] (E6) -- (B7) ;
+  \node at (6.2,8.4) {нет};
+  \draw[->] (B7) -- (E7) ;
+  \draw[->] (E7) -- (UW) ;
+  \node at (8.3,9.7) {да};
+  \draw[->,dashed] (E7) -- (7,10.7) -- (2,10.7) -- (B1) ;
+  \node at (3.4,10.4) {неизвестно};
+  \draw[-,dashed] (UW) -- (Z1) ;
+  \draw[-,dashed] (Rel) -- (Z1) ;
+  \draw[->,dashed] (Z1) -- (7,13) -- (E2) ;
+  \draw[->] (E7) -- (8,6.5) -- (0,6.5) -- (C1) ;
+  \node at (8.4,8.4) {нет};
+  \draw[->] (C1) -- (E8) ;
+  \draw[->] (E8) -- (NTL) ;
+  \node at (2.7,5.3) {да};
+  \draw[->] (E8) -- (C5) ;
+  \node at (3.9,5) {нет};
+  \draw[->] (C5) -- (E9) ;
+  \draw[->] (E9) -- (FTL) ;
+  \node at (7.3,5.4) {да};
+  \draw[->] (E9) |- (C6) ;
+  \node at (7.4,4) {нет};
+  \draw[-,dashed] (NTL) |- (Z2) ;
+  \draw[-,dashed] (FTL) |- (Z2) ;
+  \draw[->,dashed] (Z2) -- (E7) ;
+  \draw[->,dashed] (C6) -- (-1.5,3.7) -- (-1.5,14) -- (A1) ;
+  \draw[-,dotted] (-1,15.9) -- (9,15.9) -- (9,11.3) -- (-1,11.3) --
+  (-1,15.9) ; 
+  \draw[-,dotted] (-1,10.9) -- (9,10.9) -- (9,6.6) -- (-1,6.6) --
+  (-1,10.9) ; 
+  \draw[-,dotted] (-1,6.4) -- (9,6.4) -- (9,3.3) -- (-1,3.3) --
+  (-1,6.4) ; 
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Список сокращений}
+\begin{tabular}{ll}
+УПР & Удивительно Простое Решение\\
+НД & Неожиданное Действие\\
+НТР & Новое Техническое Решение \\
+ТРДО & Техническое Решение из Другой Области
+\end{tabular}
+
+\end{document}
