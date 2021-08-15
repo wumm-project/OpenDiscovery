@@ -1,0 +1,687 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{od}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\setlist{noitemsep}
+
+\title{Towards a Linked Open Data TRIZ Ontology} 
+\author{Hans-Gert Gräbe, Leipzig}
+\def\theauthor{Hans-Gert Gräbe}
+\date{13.\,08.\,2021}
+\begin{document}
+\maketitle
+\begin{abstract}
+  We discuss some basic aspects of TRIZ ontology modelling that have emerged
+  from our practical work on semantic concepts and with semantic tools in the
+  context of the TRIZ Ontology Project. Particular emphasis is placed on the
+  distinction between a conceptual and a methodological level of modelling.
+  Concepts and tools are first to be described, designed and modeled before
+  they can be used in a methodological way.
+  
+  The paper is not about research but about a practical contribution to
+  enhance the common public TRIZ research infrastructure with new tools and
+  data based on modern Semantic Web concepts. All code and data is publicly
+  available at github \cite{25} and waits for new combatants.\bigskip
+
+  \textbf{Keywords:} Linked Open Data, TRIZ Ontology, RDF, Semantic
+  Technologies
+\end{abstract}
+
+\section*{1 Aim of this Paper}
+
+In this paper we report on the efforts within the WUMM project \cite{26} to
+apply semantic technologies in the TRIZ domain to relevant methodological as
+well as social aspects and processes.
+
+The first activities were aimed at building up a semantically supported
+\emph{TRIZ Social Network}, in which information about important TRIZ
+activities (conferences, events, presentations, other TRIZ-relevant
+activities) is collected. A second focus was on the semantic preparation of
+the TRIZ Body of Knowledge \cite{14,15} in a multilingual version.
+
+Recently we refocused our activities in favor of a contribution to the TRIZ
+Ontology Project (TOP) launched at the TRIZ Developer Summit 2019 in Minsk.
+TOP attempts to model and map the landscape of TRIZ concepts across the whole
+spectrum of different TRIZ areas. In addition to a common view on fundamental
+concepts of TRIZ problem solving, it also focuses on areas such as
+\begin{itemize}
+ \item laws of evolution of technical and general systems (ZRTS and ZRS),
+ \item development of creative imagination (RTV),
+ \item theory of the development of innovative personalities (TRTL),
+ \item TRIZ history,
+ \item TRIZ application areas etc.
+\end{itemize}
+
+Thus this project is strongly in the spirit of development of a general LOD
+World\footnote{LOD is the abbreviation for Linked Open Data, a world of
+  interlinked data and “worlds of concepts” steadily growing during the last
+  15 years. See \url{https://lod-cloud.net/}.} and its efforts on
+terminological, taxonomic and notational standardisation of conceptual worlds
+in precisely definable areas such as FOAF \cite{7}, SKOS \cite{19,20}, ORG
+\cite{17}. However, TOP does not yet adequately exploit the experience gained
+in such more general projects how socio-cultural coordination processes can be
+organised forming an Open Culture environment.
+
+The TOP project is chosen as a reference project because it is one of the
+first efforts \emph{across} TRIZ schools to apply semantic concepts to and
+within TRIZ. In section 2, this background is presented in more detail. In
+section 3 we compare their semantic approaches with modern developments in the
+rapidly changing field of semantic technologies. In section 4, we discuss in
+more detail the concept of a \emph{system}, which is central to TRIZ, and
+shortcomings of various modelling approaches. Such connections between models
+and concepts in well-defined conceptual worlds form the socio-cultural core of
+semantic technologies \cite{9}. Finally, in section 5, the central
+meta-concepts of our ontologisation are presented on this modelling basis as
+an example.
+
+As an infrastructure project, WUMM is designed for participation and
+collaboration of interested parties. Section 5 is essential to understand the
+basic approach if you plan to delve deeper into individual WUMM sub-projects
+to which you would like to contribute. There is no space in this paper to go
+into more detail on such individual sub-projects. The interested reader is
+referred to \cite{10}.  The materials are openly available in our github
+infrastructure \cite{25} in machine-readable RDF format. The concepts can be
+evaluated on the basis of first practical results, especially our multilingual
+and provenance-aware combined glossary, in a prototypical web implementation
+\cite{27}.
+
+\section*{2 Background}
+
+In 2019, a group of TRIZ specialists around A.G. Kuryan and M.S. Rubin
+launched the \emph{TRIZ Developer Summit Ontology Project} (TOP). It aims at
+nothing less than to collect detailed information of the status quo of the
+whole TRIZ theory corpus in an ontological mapping. The work is a natural
+continuation of earlier efforts by other authors \cite{14,15} to outline a
+\emph{TRIZ Body of Knowledge}. While the latter focused on a guide through the
+literature, the TOP activities are concerned with the identification of
+essential concepts and relationships between these concepts using a modern
+semantic approach.
+
+The status of the TOP project was presented at the TRIZ Developer Summits in
+2019 and 2020 and fixed in two publications \cite{11,12}. In a webinar
+series\footnote{See \url{https://wumm-project.github.io/OntologyWebinar} for
+  links to the presentations and an English summary of the talks and
+  discussions.} first approaches of a detailed modelling of several TRIZ
+sub-areas were presented. The project operates its own
+website\footnote{\url{https://triz-summit.ru/onto_triz/}} on which
+consolidated results are published.
+
+The main results so far have been a mapping of the "continents" of the TRIZ
+world as a \emph{Top Level Ontology} as well as a (still developing) division
+of that world into \emph{Ontomaps} as specifically defined areas, which are to
+be modeled in more detail. Moreover, a \emph{thesaurus} of about 500 terms as
+essential TRIZ concepts has been identified, which are also to be defined in
+more detail. V. Souchkov’s glossary in its version 1.2 \cite{21} serves as
+basis for this work. In the meantime a first list of 100 terms \cite{23} has
+been published on the TOP website.
+
+The efforts differ significantly from earlier approaches to develop a TRIZ
+ontology \cite{3, 4, 5, 6, 31, 32}. In those earlier works, the focus was
+rather on models of elements of a concrete TRIZ problem solving strategy based
+on IDM. The model was mainly used to develop corresponding tools, e.g.
+\cite{5}, or processual elements in flow charts, e.g. \cite{4}. The efforts
+were not directed towards a community infrastructure effort and – different to
+the WUMM project – the material was not released to the public domain.
+
+\section*{3 Ontology Modelling Basics}
+
+The basis for these and the more recent modelling in the TOP project is the
+OWL ontology. Although being very powerful, OWL has several disadvantages. OWL
+was designed as a unified tool for multiple tasks. The associated high
+complexity proved counterproductive, as it leads to algorithmically unsolvable
+tasks in sufficiently meaningful contexts. It has proven successful not to
+fully formalise meanings and to use different concepts and tools for different
+aspects.
+
+Limits for the cardinality of attribute values of a predicate, which are
+required to validate data and implement a web interface, are expressed in more
+recent developments of the Semantic Web on the basis of SHACL \cite{18}. The
+inference possibilities of OWL that go beyond this are hardly used in
+practice. The modelling restrictions of weaker OWL variants as OWL-DL do not
+meet the requirements of real-world modelling even of \emph{structural}
+relationships in TRIZ.
+
+Our approach therefore returns to RDF as modelling base and consistently
+relies on the SKOS ontology as a lightweight modelling framework for
+structural relationships in conceptual systems. Such a restriction is
+reasonable also according to general insights into the development of
+conceptual systems in a first stage of ontological modelling. On this basis we
+model structural aspects and relationships between TRIZ concepts and tools.
+\emph{Processual} relationships as in \cite{4} or questions of an
+implementation of web interfaces as in \cite{5} are initially not covered.
+Note that comprehensive experience from other application areas is available
+using SHACL especially for the second question.
+
+The main disadvantage of the TOP approach so far is the inconsistent use of
+semantic means. They play a role in background and internal processes within
+the TOP team, but even a clear namespace concept for URIs\footnote{URI –
+  Unique Resource Identifier, one of the basic RDF concepts. This string is
+  the digital identity of a concept and allows to add independently
+  information about “the same thing” in a distributed environment.}, the
+public availability of the results in an RDF store or at least as files in a
+relevant format and even a SPARQL endpoint for querying the concepts – all
+this is missing.
+
+Such an infrastructure was developed and set up in the context of the WUMM
+project \cite{26}. The data is publicly available at github \cite{25} and
+forms the basis for a prototypical web site \cite{27} that uses simple
+semantic tools to present different facets of the data. Via a SPARQL endpoint
+\cite{29} experts can make their own complex queries to the data set.
+
+This technical basis is the starting point for our contribution to the TOP
+project as \emph{WUMM TRIZ Ontology Companion Project} (WOP) \cite{30}. This
+project accompanies the TOP activities in order
+\begin{enumerate}
+\item to carry out a remodelling according to semantic standards, 
+\item to enhance the material multilingually and
+\item to compile a Linked Open Data infrastructure on this basis,
+\end{enumerate}
+and thus to improve the basis for the necessary social coordination processes.
+Note that WOP is not an integral part of the TOP activities.
+
+In addition to our own modelling (so far of the TRIZ Principles, the TRIZ
+Inventive Standards and the TRIZ Business Standards), the \emph{Top Level
+  Ontology} and the division into \emph{Ontomaps} are available in this
+format. The work on a \emph{thesaurus} as well as the presentation of
+different approaches to a common glossary is actively accompanied with own
+efforts, including RDF versions of glossaries developed by Lippert/Cloutier
+\cite{13}, Matvienko \cite{16} and in the VDI norm 4521 \cite{24}. Different
+explanations of the same term can coexist within our system since the
+provenance of the definitions of different TRIZ schools is stored. This
+aspect, together with the focus on multilingualism based on relevant RDF
+concepts, are essential add ons of the WOP approach to TOP.
+
+In the following we explain the basic modelling and semantic assumptions,
+concepts and settings of the WOP approach in more detail.
+
+\section*{4 Modelling a TRIZ Ontology}
+
+\subsection*{4.1 TRIZ and the World of (Technical) Systems}
+
+Main TRIZ concepts revolve around the central notion of a \emph{system}, its
+planning, creation, operation, maintenance, further development,
+etc. Following the widely accepted understanding of that concept in the TRIZ
+community, TOP defines this notion as follows:
+\begin{quote}
+  A \emph{system} is a set of elements in relationship and connection with
+  each other, which forms a certain integrity, unity. The need to use the term
+  “system” arises when it is necessary to emphasize that something is large,
+  complex, not fully immediately understandable, yet whole, unified. In
+  contrast to the notions of “set” and “aggregate“, the concept of a system
+  emphasizes order, integrity, regularities of construction, functioning and
+  development. The notion of system is part of the system and functional
+  approach, and is used in the system operator.
+\end{quote}
+Usually, however, the definition of a system refers to the concept of a
+\emph{component}, as in Souchkov’s glossary \cite{21}:
+\begin{quote}  
+  \emph{Technical System:} A number of components (material objects) that were
+  consciously combined to a system by establishing specific interactions
+  between the components. A technical system is designed, developed,
+  manufactured, and assigned to perform a controllable main useful function or
+  a number of functions within a particular context. A technical system can
+  include subsystems which can be considered as separate technical systems.
+
+  \emph{Component:} A material object (substance, field, or substance-field
+  combination) that constitutes a part of a technical system or its
+  supersystem. A component might represent both a single object and a group of
+  objects.
+\end{quote}
+In both concepts a system is essentially a collection of components that
+interact in a specific way to produce the characteristic functionalities of
+the system. The subsystems referred to as components provide own functions,
+but the functionalities of the system do not result from a simple addition of
+the functions of the components, but as an emergent system property from their
+interaction. For the modelling of systems, their \emph{structural}
+organisation and their \emph{processual} organisation are equally important.
+The systemic approach is thus self-similar and fractal; the terms “system” and
+“component” are largely used synonymously depending on the respective
+modelling focus.
+
+In TRIZ, an \emph{engineering problem} is always conceptualised as the design
+of a new system or the improvement of an existing one. The design of a new
+system can be considered as a special case of further development, since also
+in this case concepts of a model of the “system as it is” do exist, how vague
+they may be.
+
+The delimitation of meaningful systems as modelling units has many facets and
+points of view, see for example \cite[section 8]{22}. In the TRIZ concepts, a
+certain functional completeness plays a major role in this delimitation, even
+if a defined throughput of energy, material and information is required to
+operate the system.
+
+For a system, its \emph{design} and \emph{operation} have to be distinguished,
+as explained in \cite{8} in more detail. This also applies to
+\emph{components} of a system. In the white-box analysis of a system, its
+components are considered as viable black-boxes, which are characterised in
+the design dimension by a \emph{specification of their functionality} and in
+the operational dimension by its \emph{guaranteed specification compliant
+  operation}, provided that the operating conditions (in particular the
+throughput of material, energy and information required for its operation) are
+ensured within the system. The description of these operating conditions is
+part of the specification, which thus consists of an input and an output part
+(also referred to as import and export interfaces in Computer Science).
+
+The components thus constitute a \emph{world of technical systems} in the
+sense of the explanations in \cite{8}, to which we refer for further details
+of this conceptualisation.
+
+\subsection*{4.2 Abstraction Levels of Modelling}
+
+An ontology is about “modelling of models”, because the clarification of terms
+and concepts of an ontology is intended to be practically used in real-world
+modelling contexts. This “modelling of models” references a typical
+engineering context, in which the modelling of real systems plays a central
+role and serves as basis of further planned action (including project
+planning, implementation, operation, maintenance, further development of the
+system).
+
+In this process, several levels of abstraction are to be distinguished.
+
+\paragraph{0.}
+The level of the \emph{real-world system} as the target of the engineering
+task. This level is only \emph{practically} accessible. The model to be
+developed at level 1 must be appropriate to cover all problems arising in the
+process of development and use of the real system and to express its inherent
+contradictory character.
+
+This contradictory nature of the system can be formulated only in language
+terms, i.e. on the model level and \emph{applying} the concepts available
+there.  These concepts must therefore not only be able to describe the
+structure of the system itself, but have also to cover a description of the
+necessary aspects of its operation.
+
+\paragraph{1.}
+The level of \emph{modelling the real-world system}. The worlds of
+\emph{several} conceptual systems often meet in the modelling of a real-world
+system with its \emph{core and cross-cutting concerns} (concepts known from
+Software Engineering \cite{22}). In addition to the methodological dimension
+of a TRIZ ontology, this regularly includes the conceptual world of a
+domain-specific technical ontology and possibly other conceptual worlds such
+as a company-internal compliance etc.
+
+These different conceptual systems (ontologies) provide the language means,
+concepts (RDF subjects) and properties (RDF predicates), which are to be
+\emph{applied} at this level. This level is also the \emph{level of
+  methodological practice}.
+
+\paragraph{2.}
+The \emph{level of the meta-model} is the actual (TRIZ) ontology level (and
+also of domain-specific ontologies) on which the systemic concepts are
+\emph{defined}.
+
+These definitions are processed \emph{applying} the methodological concepts
+whose linguistic means are made available on meta-level 2.
+
+\paragraph{3.}
+The \emph{modelling meta-level 2} is the level at which the methodological
+concepts are \emph{defined}.
+
+\subsection*{4.3 The TOP Concept of a System}
+
+A central concept in TOP modelling is the distinction between the stages of
+\begin{itemize}
+\item[(1)] the system as it is,
+\item[(2)] the TRIZ model of the system as it is,
+\item[(3)] the TRIZ model of the system as required, and
+\item[(4)] the system as required.
+\end{itemize}
+The TOP glossary \cite{23} explains the differences as follows
+\begin{itemize}
+\item[(1)] The \emph{system as it is} is a system in its original state before
+  it is analysed and transformed into a new “system as it is”.
+\item[(2)] The \emph{TRIZ model of the system as it is} is formed from the
+  “system as it is” by means of various TRIZ models: component-structural and
+  functional models, su-field or ele-field models, description of
+  contradictions or of typical conflict schemes, etc. Depending on the chosen
+  model type, the model will be transformed into the “TRIZ model of the system
+  as required”.
+\item[(3)] The \emph{TRIZ model of the system as required} is formed from the
+  “TRIZ model of the system as it is” by procedures which correspond to the
+  selected model transformation method (functional, su-field, ele-field,
+  solution of the contradictions in requirements and properties, etc.). The
+  transition is performed along the line 
+  \begin{center}
+    System as it is $\to$ TRIZ model of the system as it is\\ $\to$ TRIZ model
+    of the system as required $\to$ System as required
+  \end{center}
+\item[(4)] The \emph{system as required} is a system derived from the “system
+  as it is” through a transformation, based on the “model of the system as
+  required”.
+\end{itemize}
+
+In stage (1) “system” can only mean a \emph{model of the system} in which, in
+addition to the ontology of the TRIZ methodology, domain-specific ontologies
+play a central role. A system can only be described via a model.
+
+In stage (2) the “TRIZ model of the system as it is” is derived by application
+of specific structural TRIZ concepts and instruments. How is this to be
+understood? Is the (model of the) “system as it is” initially a
+domain-specific model that is to be enriched by an appropriate TRIZ model in
+this stage (2)? Such an understanding would contradict TRIZ modelling
+practices, which methodically are to be applied already in the creation of the
+domain model. For example, modelling the specific application at stage (1) the
+schema of a \emph{minimal technical system} as template is to be filled in to
+get the problem-specific model. According to the hill schema, in stage (2)
+rather the specific TRIZ structure of the problem-specific model is to be
+determined. This requires to strengthen the domain-specific model from stage
+(1) in a targeted manner at points to be identified (operative zone and
+operative time).
+
+This TRIZ model as a \emph{prototypical abstraction} of the problem-specific
+model of the real-world problem determines at the same time the \emph{abstract
+  TRIZ tools} to be applied at stage (3) and thus provides the context for the
+transition to the abstract solution model “on the top of the hill”, the
+\emph{TRIZ model of the system as required}. In the end, this abstract
+solution model has to be “rolled down the hill” to obtain the
+(problem-specific model of the) “system as required” in stage (4).
+
+The TRIZ model is thus a \emph{context} for all four stages of real-world
+modelling. In this way the notion of TRIZ model is also explained in
+\cite{23}:
+\begin{quote}  
+  A \emph{TRIZ model} is a schematic notation of a gradual transition from the
+  problem to TRIZ model of the problem, then to TRIZ model of the solution and
+  then to the solution itself; or from the system to TRIZ model of the system,
+  then to TRIZ model of the new system and then to actual change of the system
+  (“system as required”). The TRIZ model includes the basic components of
+  inventive thinking: analysis, synthesis, evaluation.
+\end{quote}
+Hence a \emph{TRIZ model} is the common (developing during the stages)
+abstract TRIZ context of the four model stages described above, including the
+modelling process itself. However, these four stages all refer to abstraction
+level 1 models of a real-world system in the meaning developed in section 4.2;
+no distinction is made between application of concepts from level 2 of a
+\emph{TRIZ ontology of tools} (present at level 1 as concept instances) and
+level 3 of a \emph{TRIZ ontology of methods} (present at level 1 only in a
+methodological-practical way).
+
+What does this mean for the scope of a TRIZ ontology? The modelling of any
+system starts at stage (1) with a problem-specific model of the “system as it
+is” based on domain-specific concepts. If this modelling is practically
+performed on the methodological basis of TRIZ principles, the domain-specific
+system of concepts must be enriched with TRIZ methodological concepts such as
+MPV, conflicting pairs, operative zone and operative time, etc. Stage (2)
+requires a special abstraction from domain-specific concepts for the
+extraction of abstract TRIZ patterns as a “TRIZ model of the system as it is”
+(TRIZ task model) according to the hill schema. Hence the modelling of the
+real-world system requires the domain-specific concepts of the
+problem-specific model to be compatible with the requirements of TRIZ
+modelling. Both ontologies – the domain-specific and the TRIZ ontology – have
+a similar relationship of the specific to the general and thus stand in a
+relationship of mutual complementarity of their modelling languages at the
+level of the problem-specific model.
+
+It is obvius, however, that the (problem and domain specific) “model of the
+system as it is” (MSI), the abstract “TRIZ model of the system as it is”
+(TSI), the resulting “TRIZ model of the system as required” (TRIZ solution
+model, TSO) and finally the (again problem and domain specific) “model of the
+system as required” (MSO) call up largely the same language constructs from
+the point of view of a TRIZ ontology and are thus four instances of the
+(developing through the four stages) model of the real-world system related by
+consecutive instance transformations. These instance transformations can be
+characterised as follows:
+\begin{itemize}
+\item \textbf{MSI $\to$ TSI}: Consolidation and refinement of TRIZ-relevant
+  concepts in the MSI.
+\item \textbf{TSI $\to$ TSO}: Description of an abstract transformation and
+  execution of the parts of the transformation that are possible at this
+  level, i.e. without interaction with the domain-specific parts of the model.
+\item \textbf{TSO $\to$ MSO}: Detailing the model, completion and execution of the
+  domain-specific part of the transformation.
+\end{itemize}
+For the level 2 ontology (it answers the question “Which TRIZ tools are
+available and how do they relate to each other?”), the distinction between
+these four system models is therefore not relevant. Corresponding language
+tools are only required at level 3, when it comes to the \emph{description} of
+the application of the TRIZ methodology itself.
+
+Concerning the balance between the new and the old, as suggested by relevant
+methodologies for the further development of conceptual systems, we see the
+requirement to clearly distinguish between these two levels of ontologisation
+and limit our ontological modelling to level 2.
+
+\section*{5 Basics of the WUMM Ontology Project}
+
+\subsection*{5.1 SKOS Basics}
+
+The SKOS ontology \cite{19,20} allows to express concepts and their relations
+in a lightweight way. The class \texttt{skos:Concept} and the predicates
+\texttt{skos:narrower}, \texttt{skos:broader} and \texttt{skos:related} are
+used for this purpose. The first two predicates describe hierarchical
+relationships between concepts, the third one is used for non-hierarchical
+relationships.
+
+Relationships between concepts can be of very different nature.  Hierarchical
+relationships, for example, can model (transitive) subconcept relationships in
+taxonomies as well as whole-part relationships, which are inherently
+non-transitive when concepts of different qualities are related. Both types of
+conceptualisation have an intentional as well as an extensional aspect – the
+new units of meaning, especially their emergent properties, can neither be
+adequately described by mere enumeration of their subconcepts nor by the
+“legitimate interpretation of sense” of the intentions of their constitution
+in the meaning developed by Berger/Luckmann in \cite{2}. In the SKOS primer
+\cite{20} these modelling aspects are described in more detail, especially the
+modelling of class-instance and whole-part relationships. We follow the
+recommendation in \cite[sect. 4.7]{20} and introduce subpredicates of the
+generic SKOS predicates listed above for different modelling contexts.  More
+detailed modelling rules for such contexts are described and discussed below.
+
+The WUMM project aims to model a unified level 2 space of TRIZ concepts
+without “concepts of concepts”. Hence we limit the concepts used from the SKOS
+universe to those described above and do not use further SKOS aggregation
+concepts such as \texttt{skos:Concept\-Scheme}, \texttt{skos:Collection},
+\texttt{skos:OrderedCollection} etc. The aggregation of different concepts in
+collections (assignment to TRIZ generations \cite[Table 1]{12}, in concept
+classes Basic, Model, Rule and TermGroup \cite[Fig. 4]{12} or Categories in
+\cite{21}) is realised via special predicates.
+
+SKOS provides an initial descriptive framework for conceptualisations. We use
+the following concepts (K) from the SKOS ontology \cite{19}
+\begin{itemize}
+\item \texttt{skos:Concept}, \texttt{skos:prefLabel}, \texttt{skos:altLabel} –
+  concept naming
+\item \texttt{skos:definition}, \texttt{skos:example}, \texttt{skos:note} –
+  concept properties
+\item \texttt{skos:narrower}, \texttt{skos:broader}, \texttt{skos:related} –
+  concept relations.
+\end{itemize}
+For the meaning and usage of the different SKOS concepts, we refer to
+\cite{19} and the explanations below.
+
+\subsection*{5.2 URIs and Namespaces}
+
+The allocation of meaningful URIs is one of the central problems of
+transferring the existing stock of data on TRIZ concepts, since the individual
+glossary entries in the existing TOP sources are identified solely by their
+labels. This applies even to the OSA platform\footnote{The OSA platform is
+  used as an TOP internal ontology editor, see
+  \url{https://wumm-project.github.io/TOP} for more information about the
+  platform, its odds and evens.} since the URIs assigned there (both for the
+nodes and the edges of the RDF graph) are not publicly visible.
+
+For a concise concept of URIs we first define \emph{namespaces} which
+correspond to the different modelling contexts. Since \emph{ontology
+  modelling} has the basic purpose to be applied in problem-specific
+\emph{modellings of real-world systems}, at least these two modelling contexts
+have to be distinguished. In our application the modelling context of a
+(prototypical) real-world system is present only in examples which practically
+demonstrate the effect of ontology modelling decisions. At the level of
+ontology modelling, we further distinguish between the parts of the concepts
+that are largely uncontroversial\footnote{These are mainly the concepts to be
+  included in a glossary. We assign URIs of a \texttt{skos:Concept} to them
+  and model their names as \texttt{skos:prefLabel}.} and the parts of the
+concept for which special conceptual approaches have been developed within the
+WUMM Ontology Project (WOP). For these different abstraction layers we use the
+following namespaces:
+\begin{itemize}
+\item \texttt{ex:} – the namespace of a problem-specific model of a special
+  real system.
+\item \texttt{tc:} – the namespace of the TRIZ concepts (RDF subjects).
+\item \texttt{od:} – the namespace of WUMM’s own concepts (RDF predicates,
+  general concepts).
+\end{itemize}
+
+\subsection*{5.3 Provenance of Explanations}
+
+Another problem of this ontological modelling is the representation of the
+provenance of the individual explanations. For this purpose the SKOS concepts
+listed under (K) are replaced for each individual source by subconcepts in the
+namespace \texttt{od:} in order to separate the “worlds” of the individual
+TRIZ schools. The same applies to the use of provenance-dependent subclasses
+of \texttt{skos:Concept}.
+
+Such notational variations are for example
+\begin{itemize}
+\item \texttt{skos:Concept} $\to$ \texttt{od:GSAThesaurusEntry},
+  \texttt{od:VDIGlossaryEntry} \ldots
+\item \texttt{skos:definition} $\to$ \texttt{od:SouchkovDefinition},
+  \texttt{od:VDIGlossaryDefinition} \ldots
+\item \texttt{skos:example} $\to$ \texttt{od:VDIGlossaryExample} \ldots
+\end{itemize}
+etc. Here \texttt{GSAThesaurus} stands for the thesaurus published on the
+Altshuller website \cite{1}, \texttt{VDIGlossary} for the VDI glossary
+\cite{24} and \texttt{SouchkovDefinition} for V. Souchkov's glossary
+\cite{21}. All these data were available or provided in a machine-readable
+format, transformed into suitable RDF formats and stored as open source both
+as files in the github repo \emph{RDFData} at \cite{25} and in our RDF Store
+\cite{28}. See the RDF data itself, which can also be queried via our SPARQL
+Endpoint \cite{29}.
+
+This is used to build a \emph{combined glossary} where definitions from
+different TRIZ schools of the same concept co-exist. This is implemented
+prototypically\footnote{See \url{http://wumm.uni-leipzig.de/ontology.php}.} in
+such a way, that for each concept represented by a URI, a link displays all
+RDF triples in which this concept occurs as a subject or object. Further links
+in this representation can be used to navigate in the entire RDF graph.
+
+\section*{6 Conclusion}
+
+We presented in this paper some of our experiences within the WUMM project
+\cite{26} as a contribution to an Open TRIZ Research Infrastructure based on
+modern Semantic Web technologies.
+
+The theoretical explanations focus on a critical consideration of the
+modelling of a TRIZ system concept as proposed in the context of the TOP
+project. We justify in more detail why, in our view, it makes sense to
+distinguish between the \emph{conceptual level of model structures} and the
+level of \emph{methodological concepts} of the \emph{application} of model
+structures in the course of modelling a TRIZ ontology.
+
+This distinction is in the core of the WUMM project, which initially
+concentrates on the conceptual-taxonomic level of TRIZ. Collecting
+conceptual-taxonomic data we use the features of RDF to preserve the
+provenance of different interpretations in a machine-readable dataset. Thus we
+avoid to take our own position in the dispute over the exact meaning of
+individual glossary terms. This lays the foundation for a (potentially)
+broader process of understanding and standardisation. Moreover, RDF's
+multilinguality concepts can be used to support such a process also across
+different languages. Of course, this raises additional hurdles of
+cross-cultural understanding also at the semantic level. The WUMM project uses
+the technical infrastructure of github which is well suited to offer a
+practical technical basis also for such a socio-cultural communication
+process.
+
+This paper is not a research paper, but takes the opportunity to report to the
+audience of the \emph{TRIZ Future Conference} as the leading annual conference
+in the field of systematic innovation methodologies on the status of our
+research infrastructure project.  
+
+\section*{7 Postscript}
+
+The paper was accepted by the reviewers for presentation at the \emph{TRIZ
+  Future Conference 2021}, but it does not meet the "novelty" criteria for a
+paper to be included in the Conference Proceedings, as 63\% of the material
+presented here\footnote{According to the analysis of the chairs of the
+  conference.} can also be found on the pages of the WUMM project (in
+particular in various preprint publications) and hence „is not new“.  Such
+rules massively hinder the further development of scientific ideas and call
+into question the discursive character of scientific work. \emph{LIFIS-Online}
+is a scientific journal that stands on clearly different positions. Hence this
+survey is published in this journal.
+
+\begin{thebibliography}{xxx}
+\bibitem{1} Altshuller Web Site. Basic TRIZ Terms.\\
+  \url{https://www.altshuller.ru/thesaur/thesaur.asp}
+\bibitem{2} Berger, P.L., Luckmann, T. (1966). The Social Construction of
+  Reality: A Treatise in the Sociology of Knowledge. Anchor Books.
+\bibitem{3} Bultey, A., de Beuvron, F.d.B., Rousselot, F. (2007). A
+  Substance-field Ontology to Support the TRIZ Thinking Approach.
+  International Journal of Computer Applications in Technology 30 (1),
+  113-124.\\  \url{https://doi.org/10.1504/IJCAT.2007.015702}.
+\bibitem{4} Bultey, A., Yan, W., Zanni, C. (2015). A Proposal of a Systematic
+  and Consistent Substance-field Analysis. Procedia Engineering 131,
+  701-710. \\ \url{https://doi.org/10.1016/j.proeng.2015.12.357}.
+\bibitem{5} Cavallucci, C., Rousselot, F., Zanni, C. (2011). An Ontology for
+  TRIZ.  Proc. TRIZ Future Conference 2009. Procedia Engineering 9,
+  251–260.\\ \url{https://doi.org/10.1016/j.proeng.2011.03.116}.
+\bibitem{6} Dubois, S., Lutz, P., Rousselot, F., Vieux, G. (2007). A Model for
+  Problem Representation at Various Generic Levels to Assist Inventive Design.
+  International Journal of Computer Applications in Technology 30 (1),
+  105-112.\\  \url{https://doi.org/10.1504/IJCAT.2007.015701}.
+\bibitem{7} FOAF Vocabulary Specification 0.99. W3C Namespace Document.
+  Version of 14 January 2014. \url{http://xmlns.com/foaf/spec/}
+\bibitem{8} Gräbe, H.-G. (2020). Human and Their Technical Systems. In
+  Proceedings of the TRIZ Future Conference 2020. Springer, Cham,
+  399-410.\\ \url{https://doi.org/10.1007/978-3-030-61295-5_30}
+\bibitem{9} Gräbe, H.-G. (2021). Technical Systems and Their Purposes. In
+  TRIZ-Anwendertag 2020. Springer Vieweg, 1-13.
+  \url{https://doi.org/10.1007/978-3-662-63073-0_1}.
+\bibitem{10} Gräbe, H.-G. (2021). About the WUMM modelling concepts of a TRIZ
+  ontology. Manuscript 2021. Online available at
+  \url{https://wumm-project.github.io/Texts/WOP-Basics.pdf}
+\bibitem{11} Kuryan, A., Souchkov, V., Kucharavy, D.: Towards Ontology of
+  TRIZ (2019). Proceedings of the TRIZ Developers Summit 2019, Minsk.\\
+  \url{https://triz-summit.ru/confer/tds-2019/}. 
+\bibitem{12} Kuryan, A., Rubin, M., Shchedrin, N., Eckardt, O., Rubina, N.
+  (2020).  TRIZ Onto\-logy. Current State and Perspectives. TRIZ Developers
+  Summit 2020 (in Russian).\\ \url{https://triz-summit.ru/confer/tds-2020/}. 
+\bibitem{13} Lippert, K., Cloutier, R. (2019). TRIZ for Digital Systems
+  Engineering: New Characteristics and Principles Redefined. Systems 2019,
+  7 (3), 39.\\  \url{https://doi.org/10.3390/systems7030039}.
+\bibitem{14} Litvin, S., Petrov, V., Rubin, M. (2007). TRIZ Body of
+  Knowledge.\\ \url{https://triz-summit.ru/en/203941.}
+\bibitem{15} Litvin, S., Petrov, V., Rubin, M., Fey, V. (2012). TRIZ Body of
+  Knowledge.\\  \url{https://matriz.org}
+\bibitem{16} Matvienko, N.N. (1991). TRIZ Terms: A Problem Book (in Russian).
+  Vladivostok, 1991.
+\bibitem{17} The Organization Ontology. W3C Recommendation. Version of 16
+  January 2014.  \url{https://www.w3.org/TR/vocab-org/}
+\bibitem{18} Shapes Constraint Language (SHACL). W3C Recommendation. Version
+  of 20 July 2017. \url{https://www.w3.org/TR/shacl/}
+\bibitem{19} SKOS – The Simple Knowledge Organization System.\\
+  \url{https://www.w3.org/TR/skos-reference/.}
+\bibitem{20} SKOS Simple Knowledge Organization System Primer.\\
+  \url{https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/.}
+\bibitem{21} Souchkov, V. (2018). Glossary of TRIZ and TRIZ-related terms,
+  version 1.2. The International TRIZ Association, MATRIZ.
+  \url{https://matriz.org}
+\bibitem{22} Szyperski, C. (2002). Component Software: Beyond Object-Oriented
+  Programming. Addison Wesley.
+\bibitem{23} TRIZ 100 Glossary (2021). A Short Glossary of Key TRIZ Concepts
+  and Terms (in Russian).  \url{https://triz-summit.ru/onto_triz/100/.}
+\bibitem{24} VDI-Norm 4521 Blatt 1 (2016). Inventive Problem Solving with TRIZ
+  – Basics and Terminology (in German). April 2016.
+\bibitem{25} The WUMM github Repositories.\\
+  \url{https://github.com/wumm-project.}
+\bibitem{26} The github Pages of the WUMM Project.\\
+  \url{https://wumm-project.github.io/.}
+\bibitem{27} The Web Demonstration Pages of the WUMM Project.\\
+  \url{http://wumm.uni-leipzig.de.}
+\bibitem{28} The RDF Store of the WUMM Project.\\
+  \url{http://wumm.uni-leipzig.de/rdf.}
+\bibitem{29} The SPARQL Endpoint of the WUMM Project.\\
+  \url{http://wumm.uni-leipzig.de:8891/sparql.}
+\bibitem{30} The WUMM TOP Companion Project.\\
+  \url{https://wumm-project.github.io/Ontology.html}
+\bibitem{31} Zanni-Merk, C., Rousselot, F., Cavallucci, D. (2009). An
+  Ontological Basis for Inventive Design. Computers in Industry, 60 (8),
+  563-574.
+\bibitem{32} Zanni-Merk, C., de Beuvron, F.d.B., Rousselot, F., Yan, W.
+  (2013).  A Formal Ontology for a Generalized Inventive Design Methodology.
+  Applied Ontology, 8 (4), 231-273.  \url{https://doi.org/10.3233/AO-140128}.
+\end{thebibliography}
+
+\ccnotice
+\end{document}
+

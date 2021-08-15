@@ -1,0 +1,986 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{od}
+\usepackage[utf8]{inputenc}
+\usepackage[main=english,russian]{babel}
+\setlist{noitemsep}
+\usetikzlibrary{arrows.meta, positioning}
+\usetikzlibrary{shapes.geometric, snakes}
+
+\title{\raggedright ProHEAL – Social Needs and Sustainability Aspects in the
+  Methodology of 
+  the GDR Inventor Schools}  
+
+\author{Hans-Gert Gräbe, Leipzig, Rainer Thiel, Storkow}
+\def\theauthor{Hans-Gert Gräbe, Rainer Thiel}
+\date{15.\,08.\,2021}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  This paper presents the basic conceptual elements of ProHEAL, a version of
+  TRIZ developed in the 1980s within the framework of the GDR inventor
+  schools. It elaborated already at that time on the embedding of technical
+  solutions in the organisation of production and identified the resulting
+  technical-economic contradictions in a much more structured way than in the
+  ARIZ-85C variant still used in the TRIZ mainstream. In addition to a
+  presentation of the conceptual approach, the explanations are also relevant
+  for a history of TRIZ ideas. The developments came to an abrupt end in 1990
+  after German unification and are widely unknown in the TRIZ community.
+  \bigskip
+  
+  \textbf{Keywords:} ProHEAL, GDR inventor schools, TRIZ history of ideas.
+\end{abstract}
+
+\section*{1 The GDR Inventor Schools}
+
+The GDR inventor schools in the 1980s mark an important early independent TRIZ
+development outside the Russian-speaking community. The specific conditions in
+the GDR at the beginning of the 1980s were characterised by a greater economic
+autonomy of the big plants (combinats) at the one side and growing overall
+economic problems on the other, which had accumulated during 15 years of
+Honecker's “unity of economic and social policy” \cite{6,7}. Thus
+technical-economic aspects already played an important role in that TRIZ
+variation. Such aspects were taken up only 20 years later with “Business TRIZ”
+in the TRIZ mainstream.
+
+Unfortunately, this heritage is largely unknown in the international TRIZ
+community, certainly also because relevant materials \cite{13,14} have so far
+only been available in German and have not been translated into one of the two
+leading TRIZ languages, Russian and English.
+
+Within the WUMM project \cite{16} we started to digitise historical materials
+from this development and make them publicly available, initially at least in
+scanned form \cite{17}. The 90th birthday of Rainer Thiel in September 2020
+was an occasion to reprint the KdT teaching material \cite{13} from 1989 in an
+annotated version \cite{15}. It systematises the experiences of that time in a
+detailed algorithmic variant ProHEAL (a German abbreviation for \emph{Program
+  for the elaboration of inventive tasks and solution approaches} – in short:
+the invention program), which is on par with ARIZ-85C in its level of detail.
+
+Within the space restrictions of this publication, we present the central
+ProHEAL-specific concepts – the path model, the decision model and the
+versions of the ABER matrix on the three problem field levels. In an appendix
+we reproduce English translations of the ProHEAL thinking field structure, an
+uncommented verbal and graphical representation of the ProHEAL algorithm, and
+the ProHEAL decision tree.
+
+The explanations in sections 3 and 4 follow \cite[part 2, ch. 4]{14}, the
+detailed algorithmic presentation of the ProHEAL path model in the appendix is
+taken from \cite{13} and \cite{15}.  \cite[ch. 5]{15} contains a detailed
+explanations of the 13 steps of the path model, which are also available in
+English translation with \cite{8}.
+
+\section*{2 ProHEAL Basics – a Short Overview}
+
+The starting point of the TRIZ influence on ProHEAL were the German
+translation of three of Altshuller’s publications \cite{1,2,3}. These ideas
+fell on fertile ground, prepared on the one hand by the structure of
+\emph{Honorable Inventors} existing since 1950 and on the other hand by the
+\emph{Systematic Heuristics} of Johannes Müller \cite{10,11}. The latter
+experienced a short but intensive institutional boom in the early 1970s with
+lasting influence on a whole generation of engineers \cite{9}. Details of the
+organisational unfolding of the inventor schools are presented in more detail
+in \cite{6,7} and \cite{14}.
+
+Due to the specific scope of application in socio-economic practices of large
+production units (combinates), ProHEAL differs significantly in some
+approaches from TRIZ in Altshuller’s variant available at that time.
+
+This refers \textbf{firstly} to the more detailed elaboration of
+\emph{technical-economic contradictions} between social needs and
+technological possibilities. Although Altshuller is also aware of
+administrative contradictions, they are not seriously addressed in his work.
+
+\textbf{Secondly}, ProHEAL early abandoned a monofunctional orientation, which
+still plays a central role in the TRIZ system concept as MPV (for example
+\cite{12}). In ProHEAL, value determinations are recorded under different
+aspects as evaluation figure\footnote{In German “Zielgröße” but here the
+  notion “evaluation figure” is used to emphasise its multidimensional
+  structure.} at all levels of detail in the ABER matrices. Thus
+contradictions in the problem description are already identified during
+requirements elicitation. Such concepts of \emph{generalised contradictions},
+that are formed from a larger number of action and evaluation parameters,
+nowadays is elaborated in the IDM approach \cite{5} in more detail.
+
+\textbf{Thirdly}, in addition to solving a contradictory problem situation,
+the transfer of the solution into production also plays an important role in
+ProHEAL. Thus, even the solutions of contradictions on levels 2 and 3 are
+being returned to level 1 in node E2 to decide about the transfer to
+production, see the figure in the appendix.
+
+As in TRIZ, the \emph{ProHEAL Path Model} distinguishes three levels of
+contradiction. On the first level, a \emph{basic variant} of the system as
+required is developed from the technical-economic requirements, and the
+(external) \emph{technical-economic contradiction} (TEC) is identified. This
+contradiction can either already be solved at this level or a \emph{critical
+  functional area} of the basic variant is identified in which the problems
+caused by the TEC are concentrated. On the second level, the ideal technical
+subsystem for the \emph{core variant} and the harmful technical effects are
+detailed. They meet in this area in the (internal)
+\emph{technical-technological contradiction} (TTC). This too can either
+already be solved or the \emph{critical operational area} of the core variant
+is identified. There a deeper \emph{technical-scientific contradiction} (TSC)
+does manifest itself. Finally, on the third level, the ideal natural process
+of the core variant and its harmful effects are opposed to each other in the
+critical operational area.
+
+Solutions on the second level often lead to unexpected low-tech inventions
+that are easy to implement in production – \emph{surprisingly simple
+  solutions} (SSS) or a \emph{surprising impact} (SI). Solutions on the third
+level often lead to high-tech inventions. They have to be verified more
+comprehensively before transferring them to production. If no solution is
+found on the third level either, serious scientific research is required that
+goes beyond the possibilities of a company innovation project. The agenda to
+be worked on (C6-C9 in the appendix) lies outside of ProHEAL.
+
+\section*{3 The Problem Field Levels in the\\ ProHEAL Path Model}
+
+\subsection*{3.1 The Technical-Economic Problem Field Level}
+
+At this first level, all problem-determining facts come into consideration
+that relate the social need as potential need for a solution and the status of
+technology as a system of available technical products and processes as
+potential solution.
+
+The consideration is person- and process-related and determined by the
+product-goods-purpose relationship.  Results at this problem field level are
+\begin{itemize}
+\item the \emph{technical-economic objectives} of an innovation project,
+\item the \emph{basic variant} of a process or product innovation that is
+  tailored to the technological requirements,
+\item the \emph{critical functional area} in the multi-dimensional
+  optimisation behavior of this basic variant,
+\item the \emph{TEC} that prevents an optimal design and tailoring of the
+  basic variant.
+\end{itemize}
+
+If the basic variant cannot be optimised in terms of the technical-economic
+objectives, we are faced with an inventive problem that has to be analysed at
+the next level on which the solution of the TEC is the goal of the invention.
+
+\subsection*{3.2 The Technical-Technological Problem Field Level}
+
+At this next level, all the facts are considered that affect the technical
+system of the basic variant, its structure, function, its behavior and its
+immediate technological environment.
+
+The consideration is object- and function-related and determined by the
+technical means-action-counteraction relations.  Results at this problem field
+level are
+\begin{itemize}
+\item the \emph{ideal technical subsystem} as an ideal solution of the TEC in
+  the critical functional area of the basic variant,
+\item the \emph{undesired effects} as not intended, technically
+  disadvantageous influence of the ideal subsystem on the functional behavior
+  of the basic variant,
+\item the \emph{critical operational area} in the functional structure where
+  the causal interdependence of the ideal subsystem and the undesired effects
+  are located,
+\item the \emph{TTC}, that prevents to eliminate or suppress the undesired
+  effect by varying the parameters of the functional principle of the ideal
+  subsystem.
+\end{itemize}
+
+If a technical subsystem with an \emph{alternative} functional principle in
+the critical functional area of the basic variant can be found without causing
+significant undesired side effects, then we obtained an invention as a
+solution to the TEC. Due to the heuristic approach, this often turns out to be
+located in the low-tech area, as a \emph{surprisingly simple solution}.  In
+the best case it only requires a technical trial run before productive
+roll-out.
+
+If the solution at this problem field level is not achieved, the problem
+situation has to be formulated as inventive task that contains the TTC as well
+as a solution strategy tailored to this contradiction. The goal is to
+determine the harmful natural law effects in the critical operational area of
+the functional structure and to replace them with an alternative, known
+operating principle, at the third problem field level.
+
+\subsection*{3.3 The Technical-Scientific Problem Field Level}
+
+At this third level, all facts come into consideration that concern the
+operating principle of the basic variant, the requirements for its technical
+use as well as its theoretical and experimental basics.
+
+The consideration is model- and event-related and determined by the
+field-factor-effect relationships.  Results at this problem field level are
+\begin{itemize}
+\item the \emph{ideal operating principle} that solves the TTC in the critical
+  operational area of the functional structure,
+\item the \emph{harmful natural law effects} which prevent the technical
+  deployment of the ideal operating principle,
+\item \emph{new technical-constructive boundary conditions} in the critical
+  operational area, which suppress the harmful natural law effects,
+\item the \emph{TSC}, which prevents the deployment of the ideal operating
+  principle by varying the technical-constructive boundary conditions in the
+  critical operational area.
+\end{itemize}
+
+If the new operating principle can be technically unfolded in the necessary
+dimensions to ensure the fulfillment of the function in the critical range, we
+are faced with an invention as a solution to the TTC. Since this enters new
+technical-scientific territory, the solution is usually in the high-tech
+area. It requires further application-oriented fundamental research for its
+verification.
+
+If a solution to the problem cannot be found in this way, we are faced with a
+\emph{system-immanent TSC}, that questions the development and viability of
+the system as a whole. The solution strategy then requires to search for a
+suitable, so far unknown operating principle or a fundamental process
+innovation. Both problem solving strategies usually go beyond the scope of a
+timely and financially definable innovation project. They were therefore not
+subject to further methodological considerations in ProHEAL, since they could
+not be based on corrections of the existing process and a corresponding new
+solution for the basic variant.
+
+\section*{4 The ABER Matrices as a Strategic Tool\\ in the Invention
+  Methodology}
+
+The ProHEAL invention methodology proposes a set of methodological
+instruments, which includes three categories of tools and techniques:
+\begin{itemize}
+\item \emph{Strategic tools} for goal and path planning, for working out the
+  problem-determining contradiction at each level and to find solution
+  strategies to overcome such a contradiction. 
+\item \emph{Tactical tools} for the procurement and processing of information,
+  for the generation of solution variants and their evaluation according to
+  given solution strategies.
+\item \emph{Creativity techniques} to activate and strengthen intuition,
+  imagination, fluency in thinking and the ability to abstract, associate and
+  for lateral thinking.
+\end{itemize}
+
+The strategic tools differ at the three problem field levels and have
+inventive method specifics.  The tactical tools and creativity techniques do
+not have inventive methodical specifics and can be used at all three problem
+field levels in a similar way. The choice is determined solely by the
+heuristic specifics of the respective working situation and the activities
+related to the situation.
+
+\subsection*{4.1 The Evaluation Matrix (ABER(1) Matrix)\\ at Problem Field
+  Level 1}
+
+It is used to systematically record the goal-determining
+\begin{itemize}
+\item \emph{Requirements} (\textbf{A}nforderungen),
+\item \emph{Conditions} (\textbf{B}edingungen),
+\item \emph{Expectations} (\textbf{E}rwartungen) and
+\item \emph{Restrictions} (\textbf{R}estriktionen)
+\end{itemize}
+related to
+\begin{itemize}
+\item \emph{Functionality},
+\item \emph{Profitability},
+\item \emph{Controllability} and
+\item \emph{Usefulness}
+\end{itemize}
+of the investigated technical system.
+
+The need for innovation is explicitly or implicitly expressed in a
+\emph{technical-economic problem situation}. It results, for example, from
+increased requirements, changed conditions, new expectations and tightened
+restrictions with regard to production, distribution, use, abrasion or removal
+of the technical system.
+
+\begin{center}
+  \begin{tabular}{|l|c|c|c|c|}\hline
+    & Functionality & Profitability & Controllability & Usefulness\\\hline
+    A: Requirements &&&&\\\hline
+    B: Conditions &&&&\\\hline
+    C: Expectations &&&&\\\hline
+    D: Restrictions &&&&\\\hline
+  \end{tabular}
+  
+  A template of the ABER(1) matrix.
+\end{center}
+
+The ABER(1) matrix has 16 entries and contains at least as many evaluation
+parameters as elements. It is used to systematically explore the actual need
+for action, the action goals, the project idea on which the innovation project
+is based. It converts this information into technical-economic system
+properties of the technical product or service with direct reference to the
+corresponding evaluation parameters.
+
+\emph{Extensive parameter variations} are used to elaborate negative feedback
+in the ABER matrices at different levels. E.g. an improvement in functional
+requirements may cause increased costs and thus have negative impact on
+profitability. In this way, TEC are extracted from the variation of parameters
+in the ABER(1) matrix.
+
+Working with the ABER(1) matrix also requires a \emph{process analysis} beyond
+the scope of the actual action goals. As result of this analysis the technical
+system with its overall function is \emph{delimited} as black box model and
+its interfaces are sufficiently defined within the overall process. It is
+important that no process is skipped to capture also hidden facts, that not
+immediately trigger need for action and therefore are not mentioned in the
+goals, but may cause additional problems.
+
+This already may result in a more precise definition of the action goals and
+in a modification of the project idea, which can be decisive for the later
+invention. The intention of the ABER(1) matrix is to anticipate all
+conceivable ”yes, but” ("ja, aber" in German), which are expected to be
+opposed against an invention when it comes to introduce it into production and
+to the market.
+
+The heuristic goal of further work with the ABER(1) matrix is first to find
+out the main technical-economic parameter that serves as \emph{guiding
+  parameter} for the action goals if it is varied as independent variable, and
+the variation behavior of the system of parameters of the evaluation figure as
+a whole. In the further analysis of the evaluation figure it is important to
+define the systemic, technical-economic problem situation that results from
+it.  The technical-economic problem situation results from the fact that
+improving the guiding parameter deteriorates other, high-ranking evaluation
+parameters to an inadmissible degree or they go beyond given limit values.
+
+ProHEAL assumes that the discussion of the technical-economic problem
+situation starts with an already contoured specific technical system. This can
+be an existing technical system in terms of the required overall function
+(\emph{reference variant}) or one composed of components of the known and
+commercially available state of the art (\emph{basic variant}). For a
+reference variant optimisation algorithms as well as manufacturing and
+operational experience are available. The potential for error is therefore
+relatively small. But the potential for contradiction is high as the system as
+a whole may be out of date. It is the other way in the case with a basic
+variant. A decision goes usually for a basic variant with a balanced ratio of
+potential for error and contradiction.
+
+\subsection*{4.2 The Critical Function Matrix (ABER(2) Matrix)\\ at Problem
+  Field Level 2}
+
+It serves to systematically delimit the \emph{critical functional area} and to
+define the technical-technological innovation objective in the form of the
+\emph{ideal subsystem of the basic variant} by defining
+\begin{itemize}
+\item the functional requirements (A),
+\item the design and manufacturing conditions (B),
+\item the technological influences (E = \textbf{E}influss) as well as
+\item natural law restrictions and their fulfillment (R)
+\end{itemize}
+in relation to the elementary components of the subsystem:
+\begin{itemize}
+\item \emph{Operand} (object that is acted on),
+\item \emph{Operation} (way of acting)
+\item \emph{Operator} (means to act),
+\item \emph{Counter-operation} (way of counter-action in the sense of creating
+  an equilibrium which realises the function) and
+\item \emph{Counter-operator} (means to stabilise the function).
+\end{itemize}
+
+As result the technical-scientific solution needs are determined in terms of
+new functional requirements, other design and manufacturing conditions,
+changed technological influences or other types of natural law restrictions in
+the functional realisation. Further such solution needs are to be considered
+for which neither suitable means-effect relationships nor function-fulfilling
+technical arrangements are known in the system-related state of the art.
+
+The work with the ABER(2) matrix is based on a \emph{function-related
+  structural analysis} of the system considered as a whole. It aims at
+delimiting the critical functional area and defining the interface conditions
+for the ideal subsystem in both structural and functional direction. This
+makes the interrelations transparent and manipulable, which cause the
+undesired effect in the functional behavior of the ideal subsystem.
+
+The ABER(2) matrix has 20 entries and at least as many functional or
+structural parameters as elements for the ideal subsystem. When it is created,
+the \emph{need for innovation} and the \emph{technical-technological
+  innovation goal} are explored. At the same time the inventive innovation
+idea is shaped as the new functional principle of the ideal subsystem. The
+considerations are to be extended beyond the ideal subsystem also to its
+interrelationships with the technical system as a whole. This is fixed in the
+definition of the design conditions and the technological influences in the
+ABER(2) matrix.
+
+The work with the ABER(2) matrix is not only directed towards a
+contradiction-free inventive solution idea for the ideal subsystem. The result
+also may be the formulation of a \emph{TTC} that prevents such a solution
+based on known operating principles. In this case, the contradicting
+structural and functional parameters in the critical operational area of the
+ideal subsystem have been found and based on this, a solution strategy can be
+generated that is oriented on a new operating principle.
+
+\subsection*{4.3 The Operational Field Matrix (ABER(3) Matrix)\\ at Problem
+  Field Level 3}
+
+It is based on a scientific-mathematical model and a working hypothesis based
+on that model concerning the processes in the \emph{critical operational area}
+of the ideal subsystem. It serves to systematically record
+\begin{itemize}
+\item Requirements (A),
+\item Conditions (B),
+\item Findings (E = \textbf{E}rkenntnisse),
+\item Restrictions (R)
+\end{itemize}
+\newpage
+in relation to
+\begin{itemize}
+\item technically usable effects,
+\item technologically to be controlled side effects and accompanying effects,
+\item constructively required counter-effects and guiding effects in the
+  functional structure of the ideal subsystem
+\end{itemize}
+as well as the elaboration of the causal relationships between those
+operational parameters.
+
+The demand on application-oriented scientific research results from previously
+unrealised effectiveness and efficiency requirements, completely new usage
+conditions, not yet available scientific knowledge or ethical or ecological
+restrictions.
+
+The operational field matrix has 12 entries and at least as many operational
+parameters as elements to transform the problem and the solution goal from the
+technical to the level of scientific observation and representation.
+
+Now the solution goal is a new functional principle according to the solution
+strategy and the operating principle. The solution goal is therefore no longer
+immediately oriented towards the invention, but primarily towards the
+acquisition of scientific knowledge, which opens up new space for inventive
+thinking.
+
+The operational field matrix also serves to critically question inventive
+innovation ideas and needs for technical-scientific solutions from a point of
+view of natural science restrictions. This can lead to a new view on the
+problem and a new inventive innovation idea, which no longer implies an
+undesired effect and therefore is free of contradictions in the
+technical-technological meaning.
+
+For the critical, solution-oriented exploration of the inventive innovation
+idea from this scientific point of view, substance-field analysis can be
+applied. Within ProHEAL substance-field analysis was developed further from a
+more phenomenological to an analytical tool to create effect-related solution
+modules.
+
+For this purpose, a system of scientific effects in different forms was
+developed as a knowledge store on electronic media, that could be used to
+search for suitable solution variants starting with a problem- and
+contradiction-oriented menu. Also Manfred Ardenne’s monograph \cite{4} was
+used in the inventor schools.
+
+\section*{5 Conclusion}
+
+To understand the specific experiences of the GDR inventor schools and the
+algorithmic TRIZ variant ProHEAL presented here it is indispensable to take
+into account the larger picture of the specific economic development
+conditions in the GDR of the 1980s. Altshuller's \emph{Theory of the
+  Development of Creative Personalities} and his term \emph{heresy} used in
+this context \cite{H} refer to special experiences and observations of the
+founder of TRIZ as such a personality. At the same time, they point to a
+special position and mechanisms of social exclusion of such "troublemakers"
+when they are not needed to solve mature problems that resist "normal"
+problem-solving approaches. Bundles of such problems in times of crisis -- and
+this is what the GDR economy of the 1980s was all about -- opens up scope for
+the application of contradiction-oriented problem-solving methodologies in a
+wider range.
+
+There was a \emph{practical} fertile ground and roots already prepared in the
+1970s which could now grow more intensively in a number of GDR combinates. At
+a first level, this required broadening the personnel base of appropriately
+trained experts. The practical organisational and methodological approaches of
+this movement of trainings are described in more detail in \cite{14}.  Even
+driven by strong traits of self-organisation, it would not have reached the
+dimensions that were ultimately achieved without the provision of time and
+material resources by a number of combinates. The dissolution of this
+economic-structural basis after 1990 led to the rapid collapse of these
+training structures.
+
+Even the few efforts of far-sighted representatives of a West German culture
+of innovation don't change this general picture -- what value can be generated
+in a capitalist market economy from experiences gained in a socialist planned
+economy? Such a judgement shows ideological blindness, as witnesses the
+experience of the introduction of TRIZ methods in South Korea, which was also
+essentially triggered by the open-mindedness of strategic management and the
+provision of resources by large economic units as SAMSUNG.
+
+Germany was faced with a second TRIZ wave at the beginning of the 2000s, which
+was triggered by Russian-speaking TRIZ experts emigrating to Germany.  This
+wave was already unable to pick up these older developments, neither in terms
+of personnel nor organisation, and the TRIZ expertise of representatives of
+this first generation -- such as Michael Herrlich, Hansjürgen Linde,
+Hans-Joachim Rindfleisch, Rainer Thiel, Dietmar Zobel -- is still perceived as
+marginal even in the inner German discourse.
+
+It should be all the more interesting to compare those developments, which
+date back more than 30 years, with current trends -- above all with
+\emph{Business TRIZ} -- to identify moments of the uncompensated and let them
+become effective. This paper aims to contribute to such a process.
+
+\section*{6 Postscript}
+
+The paper was accepted by the reviewers for presentation at the \emph{TRIZ
+  Future Conference 2021}, but it does not meet the "novelty" criteria for a
+paper to be included in the Conference Proceedings, as 61\% of the material
+presented here\footnote{According to the analysis of the chairs of the
+  conference.} can also be found on the pages of the WUMM project and hence
+„is not new“.  Such rules massively hinder the further development of
+scientific ideas and call into question the discursive character of scientific
+work. \emph{LIFIS-Online} is a scientific journal that stands on clearly
+different positions. Hence this survey is published in this journal.
+
+\newpage
+\begin{thebibliography}{xxx}
+\bibitem{1} G.S. Altshuller (1973). Erfinden – (k)ein Problem? Verlag Tribüne,
+  Berlin.  Translation of \foreignlanguage{russian}{Алгоритм Изобретения}
+  (1969).
+\bibitem{2} G.S. Altshuller, A.B. Seljuzki (1983). Flügel für Ikarus.
+  Urania-Verlag, Leipzig. Translation of \foreignlanguage{russian}{Крылья для
+    Икара: как решить изобретательские проблемы} (1980).
+\bibitem{3} G.S. Altshuller (1986). Erfinden. Wege zur Lösung technischer
+  Probleme. Verlag Technik, Berlin. Translation of
+  \foreignlanguage{russian}{Творчество как точная наука. Теория решения
+    изобретательских задач} (1979).
+\bibitem{H} G.S. Altshuller, I.M. Vertkin (1991). How to become a heretic: A
+  life strategy for a creative personality (in Russian).  
+\bibitem{4} M. von Ardenne, G. Musiol, S. Reball (1989). Effekte der Physik
+  und ihre Anwendungen. Verlag der Wissenschaften, Berlin.
+\bibitem{5} D. Cavallucci, P. Lutz, F. Thiebaud (2000). Intuitive Design
+  Method (IDM): A new framework for design method integration. Journal for
+  Manufacturing Science and Production, 3(2-4), 95-102.
+  \url{https://doi.org/10.1515/IJMSP.2000.3.2-4.95}
+\bibitem{6} H.-G. Gräbe (2019). The Development of the GDR Inventor Schools
+  and the Evolution of TRIZ (in Russian). In: Online material of the TRIZ
+  Developers Summit 2019, Minsk.
+  \url{https://triz-summit.ru/confer/tds-2019/}. 
+\bibitem{7} H.-G. Gräbe (2019). The Contribution to TRIZ by the Inventor
+  Schools in the GDR.  Proceedings of the 15th MATRIZ TRIZfest, 346-352.
+\bibitem{8} H.-G. Gräbe, R. Thiel (2021). ProHEAL Basics – Extended
+  Version. Manuscript.
+  \url{https://wumm-project.github.io/GDR-InventorSchools/ProHEAL-en.pdf}
+\bibitem{9} P. Koch, K. Stanke (2021). 50 Jahre Systematische Heuristik.
+  Rohrbacher Manu\-skripte, Heft 23. LIFIS, Berlin.\\
+  \url{https://nbn-resolving.org/urn:nbn:de:bsz:15-qucosa2-755699}
+\bibitem{10} J. Müller, P. Koch et al. (1973). Programmbibliothek zur
+  systematischen Heuristik für Naturwissenschaftler und Ingenieure. In:
+  Wissenschaftliche Abhandlungen des Zentralinstituts für Schweißtechnik
+  Halle, Band 97-99.
+\bibitem{11} J. Müller (1990). Arbeitsmethoden der Technikwissenschaften.
+  Systematik, Heuristik, Kreativität. Springer, Berlin. ISBN
+  978-3-642-93442-1. 
+\bibitem{12} V.P. Petrov (2020). Laws and patterns of systems development.
+  Book in 4 vol. (in Russian).  Ridero, Moscow (2020).
+\bibitem{13} H.-J. Rindfleisch, R. Thiel, G. Zadek (1989). KDT-Erfinderschule,
+  Lehrbrief 2: Erfindungsmethodische Arbeitsmittel. Lehrmaterial zur
+  Erfindungsmethode. Berlin.
+\bibitem{14} H.-J. Rindfleisch, R. Thiel (1994). Erfinderschulen in der DDR.
+  Trafo Verlag, Berlin. ISBN 3-930412-23-3.
+\bibitem{15} R. Thiel (2020). Dialektik, TRIZ und ProHEAL. Rohrbacher
+  Manuskripte, Heft 21.  LIFIS, Berlin.\\
+  \url{https://nbn-resolving.org/urn:nbn:de:bsz:15-qucosa2-749491}
+\bibitem{16} WUMM-Project. Github Pages at
+  \url{https://wumm-project.github.io/}
+\bibitem{17} WUMM-Project. Material about the German Inventor Schools in the
+  1980s. \\ \url{https://wumm-project.github.io/GIS}
+\end{thebibliography}
+\newpage
+
+\section*{Appendix. The ProHEAL Building Blocks}
+
+In the following, we reproduce an English translation of the main blocks of
+the ProHEAL approach, the \emph{Thinking Field Structure}, the \emph{Path
+  Model} and the \emph{Decision Model} as published (in German) in
+\cite[Appendix]{13} and republished in \cite[Appendix]{15}.  They give the
+TRIZ expert a good overview of similarities and differences of the ProHEAL
+approach to other TRIZ versions.
+
+\subsection*{Appendix 1. The ProHEAL Thinking Field Structure}
+
+\begin{center}
+  \begin{tikzpicture}[scale=.9,transform shape,
+    bbox/.style={draw,fill=white,rectangle,align=center},
+    >={Triangle[length=0pt 6,width=0pt 5]},
+    rounded corners=2pt,line width=.8pt]
+  \draw[dashed,line width=.3pt] (4,11) -- (4.5,3) ;
+  \draw[dashed,line width=.3pt] (12.5,11) -- (12,3) ;
+  \node[bbox,text width=4cm] at (8,13) (A0)
+       {Technical-economic Problem Situation};
+  \node[text width=3cm,align=center] at (8,11) (B0)
+       {Technical-economic Operational Field};
+  \node[bbox,text width=3cm] at (3,11) (B0a)
+       {Societal Need};
+  \node[bbox,text width=3.5cm] at (13,11) (B0b)
+       {State of the Art. Basic Variant};
+  \node[bbox,text width=5cm] at (8,9) (A1)
+       {Technical-economic (external) Contradiction};
+  \node[text width=3cm,align=center] at (8,7) (B1)
+       {Critical Functional Area of the Basic Variant};
+  \node[bbox,text width=3cm] at (3.3,7) (B1a)
+       {IDEAL of the Core Variant};
+  \node[bbox,text width=3.5cm] at (13,7) (B1b)
+       {Harmful Technical Effect};
+  \node[bbox,text width=5cm] at (8,5) (A2)
+       {Technical-technological (internal) Contradiction};
+  \node[text width=3cm,align=center] at (8.5,3)  (B2)
+       {Critical Operational Area of the Core Variant};
+  \node[bbox,text width=4cm] at (3.6,3) (B2a)
+       {Ideal Scientific Effect of the Core Variant};  
+  \node[bbox,text width=3.5cm] at (13,3) (B2b)
+       {Harmful Scientific Effect};
+  \node[bbox,text width=6cm] at (8,1) (A3)
+       {Technical-scientific (internal) Contradiction};
+  \node[bbox,text width=3cm] at (8,-1) (A4)
+       {Solution Strategy};
+  \node[rotate=90,text width=3.5cm] at (0,3) (D1)
+       {Problem solution imaginable based on the state of the art of science}; 
+  \node[rotate=90,text width=3.5cm] at (0,7) (D2)
+       {Problem solution conceivable based on the state of the art of
+         science and technology};   
+  \node[rotate=90,text width=3.5cm] at (0,11) (D2)
+       {Problem solution feasible based on the state of the art of
+         technology}; 
+  \draw[->] (A0) -- (B0a) ;
+  \draw[->] (B0a) -- (A1) ;
+  \draw[->] (A0) -- (B0b) ;
+  \draw[->] (B0b) -- (A1) ;
+  \draw[->] (A1) -- (B1a) ;
+  \draw[->] (B1a) -- (A2) ;
+  \draw[->] (A1) -- (B1b) ;
+  \draw[->] (B1b) -- (A2) ;
+  \draw[->] (A2) -- (B2a) ;
+  \draw[->] (B2a) -- (A3) ;
+  \draw[->] (A2) -- (B2b) ;
+  \draw[->] (B2b) -- (A3) ;
+  \draw[->] (A3) -- (A4) ;
+  \draw[->,dashed] (B0) -- (B0a) ;
+  \draw[->,dashed] (B0) -- (B0b) ;
+  \draw[->,dashed] (B1) -- (B1a) ;
+  \draw[->,dashed] (B1) -- (B1b) ;
+  \draw[->,dashed] (B2) -- (B2a) ;
+  \draw[->,dashed] (B2) -- (B2b) ;
+\end{tikzpicture}
+\end{center}
+\newpage
+
+\subsection*{Appendix 2. ProHEAL – The Algorithm}
+
+The following presentation follows \cite[Appendix]{13}, in which the algorithm
+is presented in short form as a programme flow chart. The numbers in brackets
+refer to the detailed version of the algorithm in \cite[ch. 3]{15} (30 printed
+pages). Since the presentation of the details would go far beyond the scope of
+this paper, we refer the interested reader to this (German) publication.  See
+also the diagrammatic presentation of the path model in part D of this
+appendix.
+
+\subsubsection*{A. The Technical-Economic Part of the Program}
+
+\textbf{Objective:} Critique of the state of the art from a technical-economic
+point of view. Determine the relevant evaluation and reference variables.
+
+\begin{itemize}[leftmargin=35pt,align=left]
+\item[(A1)] Specify the societal need (SN) according to operational tasks of
+  the enterprise
+  \begin{itemize}[leftmargin=20pt]
+  \item[(A1a)] Determine the overall SN (1.3), (1.6)
+  \item[(A1b)] Determine the special SN (1.1), (1.2), (1.4)
+  \end{itemize}
+\item[(A2)] Find the ABER (1.4), (1.6), (1.7)
+\item[(A3)] Determine the required usage properties (1.4), (1.5)
+\item[(A4)] Define the components in the evaluation figure (1.8), (1.9),
+  (1.10)
+\item[(A5)] Choose the technical-technological principle (2.1)
+\item[(A6)] Determine the basic variant of the technical system starting from
+  the state of the art (2.2), (2.3), (2.4)
+\item[(A7)] Formulate the technical-economic objective (2.5), (4.3b)
+\item[(A8)] Black box analysis of the technical system (2.6), (2.7), (2.8),
+  (2.9), (2.10), (2.11), (2.14), (2.15), (3.4)
+\item[(A9)] Delimit the technical-economic field of operation (2.12), (2.13),
+  (3.1), (3.2), (3.3)
+\item[(A10)] Determine the guiding parameter (2.5f), (4.1)
+\item[(E1)] \textbf{Decide:} Is the technical system appropriately delimited?
+  (4.2), (3.4)
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} Go to (E2)
+  \item \textbf{No:} Back to (A8)
+  \end{itemize}
+\item[(E2)] \textbf{Decide:} Is an optimisation solution possible? (2.9),
+  (2.14), (2.15)
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} Work out the optimisation solution → STOP
+  \item \textbf{No:} Go to (A11)
+  \end{itemize}
+\item[(A11)] Find and formulate the TEC that determines the problem (4.2),
+  (4.3), (4.4)
+\item[(E3)] \textbf{Decide:} Is there a case of ”business blindness”?
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} Back to (E2)
+  \item \textbf{No:} Proceed with part B
+  \item \textbf{Unknown:} Back to (A5)
+  \end{itemize}
+\end{itemize}
+\newpage
+\subsubsection*{B. The Technical-technological Part of the Program}
+        
+\textbf{Objective:} Critique of the state of the art from a
+technical-technological point of view. Determine the decisive functional
+parameters.
+
+\begin{itemize}[leftmargin=35pt,align=left]
+\item[(B1)] Find and formulate the undesired effect (2.10), (2.11), (2.15c),
+  (2.15e), (5.1), (5.4)
+\item[(B2)] Delimit the critical functional area in the structure of the
+  technical system (2.8), (2.15c), (2.15d) (3.4), (5.2), (5.3)
+\item[(B3)] Draft the ideal subsystem for the core variant (in the critical
+  functional area of the technical system) – IDEAL – (6.1)
+\item[(B4)] Develop ideas about the necessary technical requirements (ABER)
+  for the usefulness of the IDEAL (ideal conceptions) (6.2)
+\item[(B5)] Conceptual modification of the technical system with regard to
+  required functional properties outside the critical functional area
+  according to the IDEAL on the ABER (6.3), (6.4)
+\item[(E4)] \textbf{Decide:} Does a harmful technical effect reappear? (6.5)
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} Back to (B2)
+  \item \textbf{No:} Go to (E5)
+  \end{itemize}
+\item[(E5)] Decide: Are the ABER sufficiently determined? (6.2a)
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} Go to (B6)
+  \item \textbf{No:} Back to (B4)
+  \end{itemize}
+\item[(B6)] Extract the ideal final result (6.4)
+\item[(E6)] \textbf{Decide:} Is the ideal vision in the ABER technically
+  feasible? (6.2a), (9.5)
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} An unexpected approach to a surprisingly simple solution
+    (SSS) is found (6.5). Back to (E2).
+  \item \textbf{No:} Go to (B7)
+  \end{itemize}
+\item[(B7)] Find and formulate the TTC (6.2d), (7)
+\item[(E7)] \textbf{Decide:} Is it a prejudice of the professional world?
+  (6.2a), (9.5)
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} Transition to the elimination of the TTC with surprising
+    impact (6.2a), (9.5). Back to (E2).
+  \item \textbf{No:} Go to part C
+  \item \textbf{Unknown:} Back to (B1)
+  \end{itemize}
+\end{itemize}
+\newpage
+\subsubsection*{C. The Technical-scientific Part of the Program}
+        
+\textbf{Objective:} Critique of the state of the art from a
+technical-scientific point of view. Determination of the decisive operational
+parameter.
+
+\begin{itemize}[leftmargin=35pt,align=left]
+\item[(C1)] Derive the technical-scientific cause of the harmful technical
+  effect from the ABER (8.1a)
+\item[(C2)] Find the critical operational area in the technical system (2.8)
+\item[(C3)] Model the critical operational area.
+\item[(C4)] Formulate a search query to the database of scientific effects to
+  realise the ABER according to the ideal vision (ideal scientific effect)
+  (8.3)
+\item[(E8)] \textbf{Decide:} Is there an appropriate scientific effect?
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} Consider it as basis for a new technical approaches.
+    Back to (E6).
+  \item \textbf{No:} Go to (C5)
+  \end{itemize}
+\item[(C5)] Formulate the technical-scientific contradiction (8.1b), (10.1)
+\item[(E9)] \textbf{Decide:} Is it a matter of blindness in the professional
+  world? (8.2), (10.1)
+  \begin{itemize}[leftmargin=20pt]
+  \item \textbf{Yes:} Consider technical approaches from a foreign
+    domain. Back to (E2).
+  \item \textbf{No:} Go to (C6)
+  \item \textbf{Unknown:} Back to (C1)
+  \end{itemize}
+\item[(C6)] Find suitable solution strategies in the technical system to
+  overcome the TSC (8.2), (9.1), (9.2), (9.4a), (10.2)
+\item[(C7)] Formulate the invention task with the goal of a radical renewal of
+  the structure of the technical system (9.4b)
+\item[(C8)] Find suitable solution principles to solve the problem of the
+  invention task (9.3), (9.4a)
+\item[(C9)] Find fundamentally new approaches to solutions (creation of a new
+  generation of the technical system) (10.2) → Back to (A5)
+\end{itemize}
+\newpage
+\subsubsection*{D. Diagrammatic Presentation of the Algorithmic Structure of
+  ProHEAL}  
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2,transform shape,
+    >={Triangle[length=0pt 6,width=0pt 5]},
+    rounded corners=2pt,line width=.8pt]
+  \node[draw] at (0,15) [rectangle] (A0) {Start};
+  \node[draw] at (0,14) [rectangle] (A1) {A1--A5};
+  \node[draw] at (0,13) [rectangle] (A6) {A6--A8};
+  \node[draw] at (0,12) [rectangle] (A9) {A9--A10};
+  \node[draw] at (2,14) [circle] (E1) {E1};
+  \node[draw] at (4,14) [circle] (E2) {E2};
+  \node[draw] at (6,14) [rectangle] (A11) {A11};
+  \node[draw] at (4,12.7) [rectangle] (A4) {\emph{Optimisation}};
+  \node at (4,11.7) [rectangle] (A5) {STOP};
+  \node[draw] at (8,14) [circle] (E3) {E3};
+  \node[draw] at (0,10) [rectangle] (B1) {B1};
+  \node[draw] at (0,9) [rectangle] (B2) {B2};
+  \node[draw] at (0,8) [rectangle] (B3) {B3--B4};
+  \node[draw] at (0,7) [rectangle] (B5) {B5};
+  \node[draw] at (2,9) [circle] (E4) {E4};
+  \node[draw] at (4,9) [circle] (E5) {E5};
+  \node[draw] at (5,9.7) [rectangle] (B6) {B6};
+  \node[draw] at (6,9) [circle] (E6) {E6};
+  \node[draw] at (7,8.3) [rectangle] (B7) {B7};
+  \node[draw] at (6,10.3) [rectangle] (Rel) {\emph{SSS}};
+  \node[draw] at (8,10.3) [rectangle] (UW) {\emph{SI}};
+  \coordinate (Z1) at (7,12) ;
+  \node[draw] at (8,9) [circle] (E7) {E7};
+  \node[draw] at (0,4.7) [rectangle] (C1) {C1--C4};
+  \node[draw] at (0,3.7) [rectangle] (C6) {C6--C9};
+  \node[draw] at (3,4.7) [circle] (E8) {E8};
+  \node[draw] at (7,4.7) [circle] (E9) {E9};
+  \node[draw] at (5,4.7) [rectangle] (C5) {C5};
+  \node[draw] at (3,6) [rectangle] (NTL) {\emph{NTS}};
+  \node[draw] at (7,6) [rectangle] (FTL) {\emph{TSD}};
+  \coordinate (Z2) at (7,7) ;
+  
+  \draw[->] (A0) -- (A1) ;
+  \draw[->] (A1) -- (A6) ;
+  \draw[->] (A6) -- (A9) ;
+  \draw[->] (A9) -- (E1) ;
+  \draw[->] (E1) -- (E2) ;
+  \node at (2.8,14.3) {yes};
+  \draw[->] (E1) -- (2,12) -- (A9) ;
+  \node at (2.5,13.4) {no};
+  \draw[->] (E2) -- (A11) ;
+  \node at (4.8,14.3) {no};
+  \draw[->] (E2) -- (A4) ;
+  \node at (4.4,13.3) {yes};
+  \draw[->] (A4) -- (A5) ;
+  \draw[->] (A11) -- (E3) ;
+  \draw[->] (E3) -- (7.5,15) -- (4,15) -- (E2) ;
+  \node at (7.2,14.6) {yes};
+  \draw[->,dashed] (E3) -- (8,15.5) -- (2,15.5) -- (A1) ;
+  \node at (3,15.3) {unknown};
+  \draw[->] (E3) -- (8,11.1) -- (0,11.1) -- (B1) ;
+  \node at (7.6,13.4) {no};
+  \draw[->] (B1) -- (B2) ;
+  \draw[->] (B2) -- (B3) ;
+  \draw[->] (B3) -- (B5) ;
+  \draw[->] (B5) -| (E4) ;
+  \draw[->] (E4) -- (B2) ;
+  \node at (1.2,9.2) {yes};
+  \draw[->] (E4) -- (E5) ;
+  \node at (2.9,9.2) {no};
+  \draw[->] (E5) -- (B6) ;
+  \node at (4.3,9.7) {yes};
+  \draw[->] (E5) |- (B3) ;
+  \node at (3.6,8.3) {no};
+  \draw[->] (B6) -- (E6) ;
+  \draw[->] (E6) -- (Rel) ;
+  \node at (6.4,9.7) {yes};
+  \draw[->] (E6) -- (B7) ;
+  \node at (6.3,8.4) {no};
+  \draw[->] (B7) -- (E7) ;
+  \draw[->] (E7) -- (UW) ;
+  \node at (8.4,9.7) {yes};
+  \draw[->,dashed] (E7) -- (7,10.7) -- (2,10.7) -- (B1) ;
+  \node at (3.4,10.4) {unknown};
+  \draw[-,dashed] (UW) -- (Z1) ;
+  \draw[-,dashed] (Rel) -- (Z1) ;
+  \draw[->,dashed] (Z1) -- (7,13) -- (E2) ;
+  \draw[->] (E7) -- (8,6.5) -- (0,6.5) -- (C1) ;
+  \node at (8.4,8.4) {no};
+  \draw[->] (C1) -- (E8) ;
+  \draw[->] (E8) -- (NTL) ;
+  \node at (2.6,5.3) {yes};
+  \draw[->] (E8) -- (C5) ;
+  \node at (3.9,5) {no};
+  \draw[->] (C5) -- (E9) ;
+  \draw[->] (E9) -- (FTL) ;
+  \node at (7.4,5.4) {yes};
+  \draw[->] (E9) |- (C6) ;
+  \node at (7.4,4) {no};
+  \draw[-,dashed] (NTL) |- (Z2) ;
+  \draw[-,dashed] (FTL) |- (Z2) ;
+  \draw[->,dashed] (Z2) -- (E7) ;
+  \draw[->,dashed] (C6) -- (-1.5,3.7) -- (-1.5,14) -- (A1) ;
+  \draw[-,dotted] (-1,15.9) -- (9,15.9) -- (9,11.3) -- (-1,11.3) --
+  (-1,15.9) ; 
+  \draw[-,dotted] (-1,10.9) -- (9,10.9) -- (9,6.6) -- (-1,6.6) --
+  (-1,10.9) ; 
+  \draw[-,dotted] (-1,6.4) -- (9,6.4) -- (9,3.3) -- (-1,3.3) --
+  (-1,6.4) ; 
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Legend}
+\begin{tabular}{ll}
+SSS & Surprisingly Simple Solution\\
+SI & Surprising Impact\\
+NTS & Novel Technical Solution\\
+TSD & Technical Solution from another Domain
+\end{tabular}
+\newpage
+
+\subsection*{Appendix 3. The ProHEAL Decision Tree}
+
+In \cite[Appendix]{13} the decision tree is also presented as a diagram and
+announced as \emph{Renewal Passport, Part I -- Elaboration of Inventive Tasks
+  and Solution Approaches within the Nomenclature Framework of the
+  achievements and work stages of the Plan Science and Technology}.  This
+formulates a normative claim as to how ProHEAL fits into more general planning
+documents, which play an important role not only in a socialist planned
+economy.  Whether this normative claim was realised in practice is another
+matter.
+
+\begin{itemize}[leftmargin=30pt,itemsep=6pt]
+\item[(P1)] Can the \textbf{technical-economic contradiction} be solved by
+  multidimensional optimisation based on the state of the art?
+  \begin{itemize}
+  \item Yes. Derive a \textbf{Draft Specification}\footnote{German:
+    "Pflichtenheft".} of the realisation without inventive objective.
+  \item No. Continue with (P2).
+  \end{itemize}
+\item[(P2)] Can the \emph{harmful technical effect} be determined and
+  explained using sufficiently secured hypotheses or models based on the state
+  of the technical-technological experience and the technical-scientific
+  knowledge?
+  \begin{itemize}
+  \item Yes. Continue with (P4).
+  \item No. Continue with (P3).
+  \end{itemize}
+\item[(P3)] Hypothesis generation. Derivation of the target question for
+  hypothesis testing.  Derive a \textbf{Draft Specification} for the required
+  research with a discovery-oriented question.
+
+  Return to (P2) with the results.
+\item[(P4)] Does the \emph{ideal final result} appear realisable as a complete
+  elimination of the \emph{harmful technical effect} without substantial
+  change of the technical system as a whole?
+  \begin{itemize}
+  \item Yes, under certain conditions.  Derive a \textbf{Draft Specifiction}
+    of the realisation with inventive objective.
+  \item Not realisable, even taking into account all feasible options.
+    Continue with (P5).
+  \end{itemize}
+\item[(P5)] Does the \textbf{technical-technological contradiction} appear to
+  be solvable based on the state of the art in technology or at least a
+  solution is hypothetically conceivable?
+  \begin{itemize}
+  \item Yes.  Continue with (P7). 
+  \item No, and even hypothetically not conceivable.  Continue with (P6).
+  \end{itemize}
+\item[(P6)] Solve the \textbf{technical-scientific contradiction} by finding
+  hypotheses, building models and deriving the search question for effective
+  operational principles.  Derive a \textbf{Draft Specification} of the
+  research project with inventive objective.
+
+  Return to (P5) with the results.
+\newpage
+\item[(P7)] Is a \textbf{solution strategy for the technical-technological
+  contradiction} feasible? 
+  \begin{itemize}
+  \item Yes, possibly in more distant analogy areas and/or on the basis of on
+    the basis of sufficiently secured hypotheses. Continue with (P9).
+  \item No. Continue with (P8).
+  \end{itemize}
+\item[(P8)] The search question has to be formulated on the basis of
+  insufficiently secured hypotheses concerning the technical applicability of
+  operational and working principles.  Derive a \textbf{Draft Specification}
+  of research with an inventive objective.
+
+  Return to (P7) with the results.
+\item[(P9)] Derive a \textbf{Draft specification} for realisation from the
+  principal solution approaches with an inventive objective.
+\end{itemize}
+
+\ccnotice
+\end{document}
+
