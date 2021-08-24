@@ -10,7 +10,7 @@
 \title{ProHEAL Basics -- Extended Version}
 
 \author{Hans-Gert Gr\"abe, Rainer Thiel}
-\date{Version of 2021-08-22} 
+\date{Version of August 24, 2021} 
 
 \begin{document}
 \maketitle
@@ -155,8 +155,91 @@ third level.
 
 \subsection{The ABER Matrices}
 
-Details see in \cite{ProHEAL-21}.
+One of the most proven TRIZ approaches for identifying conflicting demand
+situations in given models and partial models is parameter variation.
+Contradictions arise where the variation of one parameter in a desired way is
+associated with the variation of another parameter in an undesired direction.
+Such contradictions become particularly apparent when parameters are varied
+far beyond ranges of normal operation.
 
+In this context parameters are usually divided into independent and dependent
+ones, whereby in TRIZ and also in ProHEAL a \emph{single} independent leading
+parameter, the \emph{guiding variable} (ProHEAL) or the \emph{main parameter
+  of value} MPV (TRIZ), is assumed to control the behaviour of the system in a
+particular way with respect to its (externally conditioned) purpose. Parameter
+groups and generalised contradictions are examined more systematically only in
+the TRIZ variant where action parameters and evaluation parameters are
+distinguished.
+
+The probably most interesting ProHEAL-specific TRIZ tool are the ABER matrices
+for the detection and analysis of such contradictory situations. With the same
+(or comparable, see below) row labels, the ABER matrices on the three levels
+of the path model differ in the column headings. Originally, the approach had
+three rows -- Requirements (German: \textbf{A}nforderungen), Conditions
+(German: \textbf{B}edingungen) and Restrictions (German:
+\textbf{R}estriktionen) -- covering the "hard" part of the external
+conditions.  The fourth row label \textbf{E} stands for rather soft external
+factors and differs slightly on the three levels (expectations (German:
+\textbf{E}rwartungen) on the technical-economic level, experiences (German:
+\textbf{E}rfahrungen) on the technical-technological level, and findings
+(German: \textbf{E}rkenntnisse) on the technical-scientific level). The column
+headings reflect the most important analytical dimensions on the respective
+level, the matrix entries are filled according to a level-specific process
+model, as discussed in more detail in \cite{ProHEAL-21}.
+
+Each field of the matrix filled in this way contains one or more target
+variables with expected variation behaviour. Variation of the guiding variable
+leads to variations of the target variables and thus allows to identify
+contradictory tendencies between the different parts and analytical dimensions
+in this multi-dimensional field of the evaluation figure. Here, too, the
+target conflicts become particularly clear through powerful parameter
+variations.
+
+Below we reproduce an English translation of an example from
+\cite[p. 62]{RM-21} of an ABER matrix on the technical-economic level
+concerning the development of transport means. 
+  
+\begin{center}\renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|l|c|c|c|c|}\hline
+    & {Functionality} & {Profitablity} & {Controllability} &
+    {Usefulness}\\\hline
+    \textbf{A:} Requirements &  (A.1) & (A.2) & (A.3) & (A.4)\\\hline
+    \textbf{B:} Conditions &  (B.1) & (B.2) & (B.3) & (B.4)\\\hline
+    \textbf{E:} Expectations& (E.1) & (E.2) & (E.3) & (E.4)\\\hline
+    \textbf{R:} Restrictions& (R.1) & (R.2) & (R.3) & (R.4)\\\hline
+  \end{tabular}\par 
+\end{center}
+\begin{quote}
+\begin{itemize}[leftmargin=3em]
+\item[(A.1)] Performance and fitness to drive up to a driving speed of $x$
+  km/h
+\item[(A.2)] 1. Fuel saving\par 2. Utilises heat of exhaust gas
+\item[(A.3)] 1. Easy to operate, wearing parts easily accessible\par
+  2. Replacement parts available on board (or can be carried)
+\item[(A.4)] 1. Adaptable to local traffic conditions\par 
+  2. Can be used as truck unit, delivery van and touring van
+\item[(B.1)] 1. Approved for road transport\par 2. Can be used as traction unit
+\item[(B.2)] 1. Service-friendly\par 2. Well suited fo load transport
+\item[(B.3)] 1. Temporarily overloadable to $x$ times of the normal load\par
+  2. Good driving behaviour (undelayed), follows steering immediately
+\item[(B.4)] 1. Insensitive to stone impact\par 2. Heat repellent\par
+  3. Temperature regulating\par 4. Humidity balancing
+\item[(E.1)] 1. High acceleration capacity\par 2. Delay-free acceleration
+\item[(E.2)] 1. High transport yield\par 2. Low cost
+\item[(E.3)] 1. Automatically compensates skidding movements\par
+  2. Self-adjusting to changing road conditions\par 3. Self-monitoring 
+\item[(E.4)] 1. Independent of service stations\par 2. Insensitive to low
+  temperatures (e.g. when starting)
+\item[(R.1)] 1. Traction and braking system keep the track\par
+  2. Lighting and signalling system in conformity with traffic regulations
+\item[(R.2)] 1. Robust and low demand in terms of maintenance\par 2. Frugal in
+  terms of fuel quality
+\item[(R.3)] 1. Traffic-safe\par 2. Vibration resistant\par 3. Shock and
+  impact resistant\par 4. Theft-proof
+\item[(R.4)] 1. Compatible with emission standards\par 2. Corrosion resistant
+  to de-icing salt\par 3. Suited for inner-city traffic
+\end{itemize}
+\end{quote}
 \subsection{The Refinement of the Problem Field Levels}
 
 In contrast to other TRIZ versions, in its first phase -- the modelling of the
@@ -1086,52 +1169,6 @@ of the considered operational principles no longer leads to a TSC.  This means
 that also the TTC and the TEC can be solved in principle. (See
 \cite[A.9]{RM-21}).
 
-\section{The ABER(1)-Matrix. An Example}
-
-Evaluation parameters and components. An example of the ABER matrix by
-Hans-Jochen Rindfleisch and Rainer Thiel published in \cite[appendix
-  III/2]{RT94}.
-  
-\begin{center}\renewcommand{\arraystretch}{1.5}
-  \begin{tabular}{|l|c|c|c|c|}\hline
-    & {Functionality} & {Profitablity} & {Controllability} &
-    {Usefulness}\\\hline
-    \textbf{A:} Requirements &  (A.1) & (A.2) & (A.3) & (A.4)\\\hline
-    \textbf{B:} Conditions &  (B.1) & (B.2) & (B.3) & (B.4)\\\hline
-    \textbf{E:} Expectations& (E.1) & (E.2) & (E.3) & (E.4)\\\hline
-    \textbf{R:} Restrictions& (R.1) & (R.2) & (R.3) & (R.4)\\\hline
-  \end{tabular}\par 
-\end{center}
-\begin{itemize}[noitemsep]
-\item[(A.1)] Performance and fitness to drive up to a driving speed of $x$
-  km/h
-\item[(A.2)] 1. Fuel saving\par 2. Utilising exhaust gas heat
-\item[(A.3)] 1. Easy to operate, wearing parts easily accessible\par
-  2. Replacement parts available on board (or can be carried)
-\item[(A.4)] 1. Adaptable to local traffic conditions\par 
-  2. Can be used as truck unit, delivery van and touring van
-\item[(B.1)] 1. Approved for road transport\par 2. Can be used as traction unit
-\item[(B.2)] 1. Service-friendly\par 2. Well suited fo load transport
-\item[(B.3)] 1. Temporarily overloadable to $x$ times normal load\par
-  2. Driving behaviour (undelayed), follows steering
-\item[(B.4)] 1. Insensitive to stone impact\par 2. Heat repellent\par
-  3. Temperature regulating\par 4. Humidity balancing
-\item[(E.1)] 1. High acceleration capacity\par 2. Delay-free acceleration
-\item[(E.2)] 1. High transport yield\par 2. Low cost
-\item[(E.3)] 1. Automatically compensating skidding movements\par
-  2. Self-adjusting to changing road conditions\par 3. Self-monitoring 
-\item[(E.4)] 1. Independent of service stations\par 2. Insensitive to low
-  temperatures (e.g. when starting)
-\item[(R.1)] 1. Traction and braking system true to track\par
-  2. Lighting and signalling system in conformity with traffic regulations
-\item[(R.2)] 1. Undemanding in terms of maintenance\par 2. Frugal in terms of
-  fuel quality 
-\item[(R.3)] 1. Traffic-safe\par 2. Vibration resistant\par 3. Shock and
-  impact resistant\par 4. Theft-proof
-\item[(R.4)] 1. Compatible with emission standards\par 2. Corrosion resistant
-  to de-icing salt\par 3. Harmless for inner-city traffic
-\end{itemize}
-
 \section{German-English Translations of Terms}
 \begin{center}
   \begin{tabular}{l|l}
@@ -1279,10 +1316,10 @@ Hans-Jochen Rindfleisch and Rainer Thiel published in \cite[appendix
   Arbeitsgemeinschaft „Erfindertätigkeit und Schöpfertum“ beim Bezirksvorstand
   der KDT, 1980.
 \bibitem{Thiel1986} Rainer Thiel.  Methodologische Grundlagen des
-  schöpferischen Problemlösungsprozesses. Reihe \emph{Grundlagen des
-    wissen\-schaft\-lich-technischen Schöpfertums in Forschungs- und
-    Entwicklungsprozessen}, Lehrbrief 2.2., Berlin und Jena, 1986.\\
-    \url{http://d-nb.info/1035446324} 
+  schöpferischen Problem\-lösungs\-pro\-zesses. Reihe \emph{Grundlagen des
+    wissenschaftlich-technischen Schöpfertums in Forschungs- und
+    Entwicklungsprozessen}, Lehrbrief 2.2., Berlin und Jena,
+  1986.\\ \url{http://d-nb.info/1035446324}
 \bibitem{Thiel2016} Rainer Thiel.  Erfinderschulen – Problemlöse-Workshops.
   Projekt und Praxis. LIFIS-Online, 03.07.2016.
   \url{http://dx.doi.org/10.14625/thiel_20160703}.
