@@ -1,0 +1,2077 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{od}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[main=ngerman,russian]{babel}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+
+\newcommand{\bbox}[2]{\parbox{#1cm}{\small\centering #2}}
+
+\title{Die Menschen und ihre Technischen Systeme} 
+\author{Hans-Gert Gräbe, Leipzig}
+%\def\theauthor{Hans-Gert Gräbe}
+\date{19.\,05.\,2020}
+\begin{document}
+\maketitle
+
+\begin{flushright}
+  Die Philosophen haben die Welt nur verschieden interpretiert;\\ es kömmt
+  darauf an sie zu verändern.\\ Karl Marx. 11. Feuerbachthese
+\end{flushright}
+
+\section{Einführung}
+
+Das Ganze ist mehr als die Summe seiner Teile. In \cite{Graebe2020} ist
+ausgeführt, dass es sogar sehr viel mehr als diese Summe ist, denn in den
+System\emph{beziehungen} multiplizieren sich die Teile und addieren sich nicht
+nur.  Deshalb ist ein submersiver Systembegriff auch deutlich besser geeignet,
+die Vielfalt der Welt begriff"|lich zu erfassen als der auch in der
+TRIZ-Theorie verbreitete immersive Systembegriff.
+
+Die begriff"|liche Fundierung der eigenen Theorie wird im TRIZ Body of
+Knowledge \cite{TBK-2007} nur halbherzig betrieben\footnote{Das mag als hartes
+  Urteil erscheinen, stellen sich die Autoren doch selbst die Aufgabe „a.
+  Define TRIZ as a Theory — this should indicate TRIZ functions as well as
+  current and potential scope of applicability; b.  Name the starting points
+  (in other words, postulates) on which TRIZ as a Theory is based; c.  Provide
+  a structure of TRIZ as a system, by associating postulates with functions;
+  d.  Assess the consistency of this method. Leading TRIZ experts should all
+  agree upon this method and verify that everything concurrently satisfying
+  items a, b, and c refers to TRIZ.“ Doch der einzige Satz in jenem
+  Basisdokument zu dem hier besprochenen Thema ist folgender: „TRIZ methods
+  lean upon the objective trends of evolution of systems (predominantly,
+  engineering systems)“.}. Insbesondere in der Frage, was denn ein
+\emph{technisches System} sei, wird auf die Anschauung verwiesen -- jeder
+wisse doch, worüber hier die Rede sei. Die Vielfalt der Verständnisse wurd in
+einer Facebook-Diskussion \cite{Graebe2019b} im August 2019 deutlich.  Das ist
+natürlich keine wissenschaftliche Arbeitsgrundlage.
+
+In diesem Aufsatz wird eine Annäherung an den Begriff \emph{technisches
+  System} versucht und gefragt, ob ein solcher Begriff überhaupt trägt, um die
+\emph{Welt der technischen Systeme} genauer zu analysieren.  Die wenig
+überraschende Antwort lautet \emph{nein}, denn das Ganze ist eben auch hier
+mehr als die Summe seiner Teile.
+
+Relationale Verhältnisse in der \emph{Welt der technischen Systeme} werden
+eher im Begriff des \emph{technischen Prinzips} sichtbar als im Begriff des
+\emph{technischen Systems}. Insofern ist der Zugang in \cite{Shpakovsky2010}
+deutlich besser geeignet, die Evolution in der Welt der technischen Systeme zu
+beschreiben als der Zugang in \cite{TESE2018}.  Der Begriff \emph{Prinzip} ist
+dabei nicht als TRIZ-Prinzip misszuverstehen, denn jene unglückliche englische
+und deutsche Übersetzung des russischen Originals
+„\emph{\foreignlanguage{russian}{Приём}}“ ist besser mit Vorgehensweise oder
+Designmuster übersetzt.
+
+\section{Theorie und Praxis}
+
+Anliegen dieses Aufsatzes ist es, einen Beitrag zur theoretischen Fundierung
+der TRIZ zu leisten. Theoretische Fundierungen erfolgreicher Praxen haben eine
+gewisse Eigenart. Auf einer wissenschaftlichen Tagung der Astrophysiker wurde
+ein Vortragender nach seiner viel beachteten Videosimulation der
+Gravitationswellenausstrahlung bei der Kollision von zwei schwarzen Löchern
+gefragt, ob bekannt sei, ob die simulierten Gleichungen überhaupt eine Lösung
+besäßen.  Nein, das sei nicht bekannt.
+
+Wie wichtig ist es, diese Lücke im Fundament der Theorie zu schließen? Oder
+sollten lieber Mittel auf die Detektion realer Gravitationswellen konzentriert
+werden?  Was würde aber in jenen riesigen und kostspieligen unterirdischen
+Tanks anderes detektiert als spezielle Muster von Lichtblitzen, die im selben
+Theoriegebäude als Zeichen der Wirkung von Gravitationswellen angesehen
+würden?
+
+Was ist das Tun von Mathematikern und Philosophen wert, die mit ihren
+Anforderungen an die Rigorosität von Argumentationen der Praxis der Physiker
+und Ingenieure ständig hoffnungslos hinterherlaufen? Braucht es die
+Mathematiker, wenn die Physiker zwei divergente Reihen voneinander
+subtrahieren und am Ende das Ergebnis stolz verkünden: „$-\frac{\pi}{3}$“?
+Wieso, fragt der Mathematiker erstaunt. „Aus physikalischen Gründen“.  Näher
+erläutert sieht der Mathematiker, dass dazu die Reihen umsortiert werden
+müssten.  Aber ist das immer statthaft? Nein, weiß der Mathematiker aus
+anderen Praxen.  Darf man das also hier?
+
+Interessant wird es, wenn der Mathematiker mit der Antwort „nicht immer“
+kommt. Die vorher unkonditionierte Praxis der Physiker wird damit
+kontextualisiert, die Physiker beginnen zu fragen, was jenseits dieses
+Kontextes passiert, und finden neue, praxistaugliche Effekte.  Das Fundament
+wurde verstärkt, das Haus weiter ausgebaut.
+
+Schlimmer wird es, wenn die „Fundamentalisten“ feststellen, dass das Fundament
+nicht trägt -- die Erde steht nicht im Mittelpunkt der Welt, es gibt keinen
+Äther, die Sache mit dem Phlogiston usw.  Dann muss das Gebäude abgetragen und
+ein neues errichtet werden.  Auch ein solcher „Paradigmenwechsel“ (T.S. Kuhn)
+ist allerdings kein Abriss, sondern eine Transformation, die nicht alle alten
+Erkenntnisse über Zusammenhänge entwertet, sondern viele von ihnen nur auf das
+neue Fundament stellt und entsprechend anpasst.
+
+\section{Gesetze der Evolution technischer Systeme?}
+
+Ausgangspunkt dieser Untersuchungen war eine Debatte mit den Organisatoren des
+TRIZ-Cups 2019/20 über die Gültigkeit eines „Gesetzes der Verdrängung des
+Menschen aus technischen Systemen“, das in einer späteren Fassung der
+Ausschreibung als „Trend“ bezeichnet wurde. Unter den acht Gesetzen der
+Entwicklung technischer Systeme, die Altschuller 1979 selbst formulierte
+\cite[S. 2]{TESE2018}, kommt ein solcher Ansatz nicht vor, auch nicht in der
+Auf"|listung von fünf Gesetzen und zehn Tendenzen in
+\cite[S. 148\,ff.]{KS2017}.  
+
+Systematisierungen von „Gesetzen der Evolution technischer Systeme“ oder zum
+„technology forecasting“ sind aber in der TRIZ-Literatur weit verbreitet. Sie
+sind auch Teil der verschiedenen Versionen eines „TRIZ Body of Knowlegde“,
+etwa \cite{TBK-2007}. Meine weiteren Ausführungen beziehen sich auf
+\cite{TESE2018} als Referenz, da hier von einflussreichen TRIZ-Theoretikern
+mit der Autorität der MATRIZ im Rücken ein aktueller Zusammenschnitt der
+Debatten um „Trends of Engineering Systems Evolution“ gegeben wird. Einen
+deutlich anderen Ansatz, die Betrachtung der Evolution einzelner Funktionen
+und nicht kompletter technischer Systeme, schlägt N. Shpakovsky in
+\cite{Shpakovsky2010} mit seinem Konzept der „Evolutionsbäume“ vor.
+
+Auch in der marxistischen Literatur wird ein solcher Herauslösungsprozess des
+Menschen aus produktiven Prozessen thematisiert und an vielen Stellen als
+unausweichlich charakterisiert.  So entwickelt Marx selbst im
+„Maschinenfragment“ \cite[S. 570 ff.]{MEW42} -- einem frühen Rohentwurf der
+eigenen ökonomischen Theorie -- die Vision einer Gesellschaft, in welcher der
+„gesellschaftliche Stoffwechsel“ \cite[S. 37]{MEW23} auf eine Weise
+organisiert ist, dass
+\begin{quote}
+  es nicht mehr der Arbeiter [ist], der modifizierten Naturgegenstand als
+  Mittelglied zwischen das Objekt und sich einschiebt; sondern den
+  Naturprozess, den er in einen industriellen umwandelt, er als Mittel
+  zwischen sich und die unorganische Natur [schiebt], deren er sich
+  bemeistert \cite[S. 572]{MEW42},
+\end{quote}
+und stellt weiter dar, dass die Entwicklung der Produktivkräfte
+\emph{notwendig} auf eine solche Weise der Organisation des gesellschaftlichen
+Stoffwechsels zusteuert.
+\begin{quote}
+  In den Produktionsprozess des Kapitals aufgenommen, durchläuft das
+  Arbeitsmittel aber verschiedene Metamorphosen, deren letzte die
+  \emph{Maschine} ist oder vielmehr ein \emph{automatisches System der
+    Maschinerie} (System der Maschinerie; das \emph{automatische} ist nur die
+  vollendetste adäquateste Form derselben und verwandelt die Maschinerie erst
+  in ein System), in Bewegung gesetzt durch einen Automaten, bewegende Kraft,
+  die sich selbst bewegt; dieser Automat bestehend aus zahlreichen mechanischen
+  und intellektuellen Organen, sodass die Arbeiter selbst nur als bewusste
+  Glieder desselben bestimmt sind. \cite[S. 584]{MEW42}
+\end{quote}
+Dieser Gedanke sei allerdings weitgehend singulär und im übrigen Marxschen
+Werk nirgends ausgearbeitet, so \cite{Goldberg2016}. Zumindest auf das
+Interesse an technischen Systemen und Entwicklungen trifft das allerdings
+nicht zu, hierzu finden sich viele Stellen im Werk dieser Klassiker. Engels'
+Interesse besonders an militär-historischen Entwicklungen ist weithin bekannt,
+in \cite{MEW15} wird die Evolution des gezogenen Gewehrs auf eine Weise
+analysiert, die es mit jeder TRIZ-Analyse aufnehmen kann, etwa in der
+Herausarbeitung des sozio-technischen Widerspruchs \cite[S. 199]{MEW15}:
+\begin{quote}
+  Unter diesen Umständen ergab sich folgende dringende Aufgabe: eine
+  Feuerwaffe zu erfinden, welche die Schussweite und die Genauigkeit der
+  Büchse mit der Schnelligkeit und Leichtigkeit des Ladens und mit der Länge
+  des Laufs der glattläufigen Muskete vereint, eine Waffe also, die zugleich
+  Büchse und Nahkampfwaffe ist, welche man jedem Infanteristen in die Hand
+  geben kann.
+
+  So sehen wir also, dass gerade durch die Einführung des Kampfes in
+  aufgelöster Ordnung in die moderne Taktik sich die Forderung nach einer
+  solchen verbesserten Kriegswaffe erhob. [\ldots] Fast alle Verbesserungen,
+  die an Handfeuerwaffen seit 1828 vorgenommen wurden, dienten diesem Zweck.
+\end{quote}
+\cite{Goldberg2016} untersucht allerdings nicht diese Frage, sondern aktuelle
+Kapitalkonzentrationsprozesse, die erforderlich sind, um die immer
+kostspieligeren technischen Großprojekte zu finanzieren.  In diesem Kontext
+wird neuerdings viel über \emph{Plattformkapitalismus} geschrieben.  Der
+unmittelbare Zusammenhang zwischen technologischen und finanziellen
+Möglichkeiten ganzer Staaten im Kontext einer „wealth of nations“ ist
+hinreichend bekannt. Im TRIZ-Umfeld spielen derartige Überlegungen eine eher
+marginale Rolle.
+
+Technikoptimistischen Sichten der „Verdrängung des Menschen aus technischen
+Systeme“ steht die Position aus dem Kybernetikdiskurs der 1960er bis 1980er
+Jahre entgegen \cite[S. 10]{KFK2000}:
+\begin{quote}
+  Welche Stellung hat der Mensch im hochkomplexen
+  informations-technolo"|gischen System? Unsere Antwort auf die Frage war
+  immer: Der Mensch ist die einzig kreative Produktivkraft, er muss Subjekt
+  der Entwicklung sein und bleiben.  Daher ist das Konzept der
+  Vollautomatisierung, nach dem der Mensch schrittweise aus dem Prozess
+  eliminiert werden soll, verfehlt!
+\end{quote}
+
+Die Probleme eines solchen „Konzepts der Vollautomatisierung“, einer Welt der
+„in Bewegung gesetzten Automaten“ werden mittlerweile in einer ökologischen
+Krise planetaren Ausmaßes sichtbar. Die Verdrängungsthese selbst wird dabei
+als direkte Gefährdung wahrgenommen, was hier seinerseits als \emph{These}
+explizit formuliert werden soll:
+\begin{quote}\it
+  \textbf{These 1:} Die (scheinbare) Verdrängung des Menschen aus technischen
+  Systemen weist auf eine existenziell gefährliche, unterkomplexe Wahrnahme
+  dieser technischen Systeme hin.
+\end{quote}
+Das TRIZ-Prinzip 11 der \emph{Prävention} weist auf Handlungsbedarf in dieser
+Richtung hin. Der Anwendungskontext dieses Prinzips wird in \cite{TT} wie
+folgt umrissen: „Der Einsatz des Prinzips ist besonders in solchen Fällen
+wichtig, in denen das System nicht über ein ausreichendes Maß an
+Zuverlässigkeit verfügt“, um dann festzustellen, dass dem eigentlich
+strukturell abgeholfen werden könne -- „Notfallsituationen können vermieden
+werden, indem der Prozess zuverlässig gemacht wird.“ Dem stehen allerdings
+gewichtige Gründe entgegen -- „was die technischen Systeme, die ihn
+durchführen, erheblich verkompliziert oder verteuert. Dies ist kostspielig und
+oft prinzipiell unmöglich. Mit anderen Worten: Notfälle sind
+unvermeidlich“. Der Optimismus der Autoren, dass „zusätzliche Rettungs- und
+Notfallsysteme [\ldots] in das Hauptsystem“ eingebaut werden, die allerdings
+„nicht am Hauptsystem teilnehmen, sondern erst in einer Gefahrensituation zu
+arbeiten beginnen“, erscheint mit Blick auf Kosten reduzierende Designpraxen
+und die allgemeine Ausrichtung der anderen TRIZ-Prinzipien auf
+Effizienzgewinne als Widerspruch in der TRIZ-Methodik selbst.  Dahinter mag
+sich \emph{auch} ein prinzipielles Problem menschlichen Handelns verbergen --
+niemand ist unfehlbar --, allerdings zeigt die Aussage, „das Prinzip kann dort
+angewendet werden, wo die Zuverlässigkeit des Systems offensichtlich
+unzureichend ist und ein Weg zur Erhöhung der Zuverlässigkeit auf das
+notwendige Niveau nicht möglich ist“ (ebenda), dass der Einbau solcher
+„Fehler“ in technische Systeme -- in Kenntnis derselben -- auf breiter Front
+billigend in Kauf genommen wird.
+
+Dies ist allerdings in keiner Weise mehr ein technisches Problem.  Harrisburg,
+Tschernobyl, Fukushima oder der Klimawandel sind genü"|gend Fingerzeige, um
+sich mit diesen Positionen genauer zu befassen.
+
+Wir zeigen im Weiteren, dass die 10 in \cite{TESE2018} als „Trends“
+präsentierten „Gesetze der Entwicklung technischer Systeme“ in Wirklichkeit
+Design Pattern in den ingenieur-technischen Praxen des Entwurfs sowie der
+Anpassung und Verbesserung technischer Systeme sind und sich somit
+\emph{unmittelbar} auf sozio-technische Praxen beziehen. Dabei beziehen sie
+sich auf ein \emph{spezifisches} begriff"|liches Abstraktionsniveau der sich
+insgesamt in Widersprüchen entwickelnden Beschreibungsformen von
+Welt. Insbesondere stehen die „Trends“ im Widerspruch zu Entwicklungslinien,
+die sich auf anderen Abstraktionsniveaus abzeichnen. Kurz, das oben in These
+und Gegenthese entfaltete ambivalente Verhältnis zu einer „Verdrängung des
+Menschen aus technischen Systemen“ ist kein Alleinstellungsmerkmal nur für
+diesen Trend, sondern trifft in ähnlicher Weise auch auf die anderen Trends
+zu.
+
+\section{Technik und Welt verändernde Praxen}
+
+Betrieb und Nutzung technischer Systeme ist heute ein zentrales Element Welt
+ver"|ändern"|der menschlicher Praxen. Dafür ist planmäßiges und abgestimmtes
+arbeitsteiliges Handeln erforderlich, denn das Nutzen eines Systems setzt
+dessen Betrieb voraus.  Umgekehrt ist es wenig sinnvoll, ein System zu
+betreiben, das nicht genutzt wird. In der Informatik ist dieser Zusammenhang
+zwischen Definition und Aufruf einer Funktion gut bekannt -- der Aufruf einer
+Funktion, die noch nicht definiert wurde, führt zu einem Laufzeitfehler; die
+Definition einer Funktion, die nie aufgerufen wird, weist auf einen
+Designfehler hin.
+\enlargethispage{-1em}
+
+Eng verbunden mit der informatischen Unterscheidung von Definition und Aufruf
+einer Funktion ist die Unterscheidung von Designzeit und Laufzeit.  Eine
+solche Unterscheidung hat im realweltlichen arbeitsteiligen Einsatz
+technischer Systeme noch größere Bedeutung -- während der Designzeit wird das
+prinzipielle kooperative Zusammenwirken \emph{geplant}, während der Laufzeit
+\emph{der Plan ausgeführt}. Für technische Systeme sind also zusätzlich deren
+interpersonal als \emph{begründete Erwartungen} kommunizierten
+\emph{Beschreibungsformen} und die in \emph{erfahrenen Ergebnissen}
+resultierenden \emph{Vollzugsformen} zu unterscheiden.
+
+Marx \cite[S. 193]{MEW23} merkt dazu an:
+\begin{quote}
+  Eine Spinne verrichtet Operationen, die denen des Webers ähneln, und eine
+  Biene beschämt durch den Bau ihrer Wachszellen manchen menschlichen
+  Baumeister. Was aber von vornherein den schlechtesten Baumeister vor der
+  besten Biene auszeichnet, ist, dass er die Zelle in seinem Kopf gebaut hat,
+  bevor er sie in Wachs baut. Am Ende des Arbeitsprozesses kommt ein Resultat
+  heraus, das beim Beginn desselben schon in der Vorstellung des Arbeiters,
+  also schon ideell vorhanden war.
+\end{quote}
+So einfach ist es allerdings nicht, wie das folgende Beispiel einer
+Konzertauf"|führung zeigt. Dieser die Zuhörer erfreuenden Vollzugsform geht
+die Erarbeitung der Beschreibungsform, die Verständigung über die genaue
+Interpretation des aufzuführenden Werks, voraus. Diese Verständigung auf einen
+\emph{gemeinsamen Plan} ist selbst ein voraussetzungsreicher praktischer
+Prozess.  Die Voraussetzungen resultieren aus vorgängigen Praxen -- etwa dem
+\emph{privaten Verfahrenskönnen} der einzelnen Musiker in der Beherrschung
+ihrer Instrumente sowie dem Vorliegen der Partitur als etablierter
+Beschreibungsform des aufzuführenden Konzertstücks.  Wenn Alexander Shelley am
+14. Oktober 2018 im Leipziger Gewandhaus ohne diese Partitur von Mozarts
+Klavierkonzert KV 491 ans Dirigentenpult tritt, so wird deutlich, dass jene
+Beschreibungsform allenfalls das Rohmaterial liefert, auf dessen Basis sich
+Dirigent und Orchester in den vorausgegangenen Proben auf eine situativ
+konkrete Beschreibungsform als Basis der nun zur Auf"|führung gelangenden
+Vollzugsform geeinigt haben. Mehr noch weisen die opulenten Gesten des
+Dirigenten in Richtung Orchester darauf hin, dass in diesen Proben auch
+\emph{Sprache} generiert wurde, um die Ergebnisse längerer
+Verständigungsprozesse in eine kompakte Form zu fassen, die den zeitkritischen
+Tempi der Vollzugsform gewachsen ist.  Den Rahmen einfacher
+ingenieur-technischer „Baumeisterarbeit“ sprengt Gabriela Montero, die
+Solistin jenes Abends, mit ihrer Zugabe: Das Publikum wird aufgefordert, eine
+Melodie vorzugeben, woraus die Virtuosin eine Improvisation als Vollzugsform
+entwickelt, zu der es keine interpersonal kommunizierbare Beschreibungsform
+gibt, wenn man einmal von den Tonaufzeichungen jenes Gewandhausabends und den
+Berichten der begeisterten Hörerschaft absieht.  Dass auch hierfür technische
+Meisterschaft erforderlich war, steht außer Frage.
+
+Das Verhältnis der Menschen zu ihren technischen Systemen ist also komplex und
+nur in einer dialektischen Perspektive der Weiterentwicklung bereits
+vorgefundener technischer Systeme zu fassen, wenn man sich nicht unentrinnbar
+in unfruchtbare Henne-Ei-Debatten verstricken will.  Das relativiert aber
+auch die Marxsche Forderung an die Philosophen, denn deren Interpretationen
+sind die Differenzen zwischen den begründeten Erwartungen und den erfahrenen
+Ergebnissen früherer Praxen vorgängig. Ob es ausreicht, diese Differenzen auf
+der Ebene der Techniker, der Ingenieure oder der Fachwissenschaftler zu
+besprechen oder eine Intervention der „interpretierenden Philosophen“ als
+eigenständige Reflexionsdimension von Bedeutung ist, mag an dieser Stelle
+offen bleiben.
+
+\section{Systeme und Komponenten}
+
+Neben der Beschreibungs- und Vollzugsdimension spielt für technische Systeme
+auch der \emph{Aspekt der Wiederverwendung} eine große Rolle.  Dies gilt,
+zumindest auf der artefaktischen Ebene, allerdings \emph{nicht} für die
+meisten technischen Großsysteme -- diese sind \emph{Unikate}, auch wenn bei
+deren Montage standardisierte Komponenten verbaut werden. Auch die Mehrzahl
+der Informatiker ist mit der Erstellung solcher Unikate befasst, denn die
+IT-Systeme, die derartige Anlagen steuern, sind ebenfalls Unikate.  Dasselbe
+gilt auch für die Ämter, Behörden und öffentlichen Einrichtungen. So ist zum
+Beispiel die Leipziger Stadtverwaltung aktuell damit befasst, ihre
+Verwaltungsprozesse zu „digitalisieren“, was unter Führung des Dezernats
+Allgemeine Verwaltung und zusammen mit dem städtischen IT-Dienstleister Lecos
+erfolgt. Im Industriesektor ist deshalb deutlich zwischen Werkzeugmaschinenbau
+und Industrieanlagenbau -- zwischen Ausrüstern sowie Planern und „Baumeistern“
+entsprechender Unikate -- zu unterscheiden, auch wenn dies in einschlägigen
+Statistiken \cite{VDMA2019} zum \emph{Maschinen- und Anlagenbau}
+zusammengefasst wird.
+
+Die Besonderheiten eines technischen Systems liegen damit vor allem im Bereich
+des \emph{Zusammenspiels der Komponenten}. So unterscheiden sich
+beispielsweise die Produktionsleitsysteme verschiedener BMW-Werke deutlich
+voneinander \cite{Kropik2009}. Die Werke wurden zu verschiedenen Zeiten nach
+dem jeweiligen Stand der Technik und dem sich ebenfalls verändern"|den
+Geschäftsmodell des Unternehmens konzipiert. Einmal in die Welt gesetzt, sind
+derartige technischen Großsysteme nur noch bedingt modifizierbar und werden
+deshalb nach Ablauf entsprechender Amortisationsfristen auch konsequent außer
+Betrieb gestellt. Gleichwohl spielt der Aspekt der Wiederverwendung auch bei
+solch unterschiedlichen technischen Systemen eine Rolle, verschiebt sich aber
+von der unmittelbaren Ebene der technischen Artefakte auf höhere Ebenen der
+Abstraktion in der Beschreibungsdimension.
+
+Damit sind wesentliche Elemente zusammengetragen, die eine erste Annäherung an
+den \emph{Begriff eines technischen Systems} erlauben.  Der Begriff ist in
+einem planerisch-realweltlichen Kontext vierfach überladen
+\begin{itemize}
+\item [1.] als realweltliches Unikat (z.B. als Produkt, auch wenn das Unikat
+  ein Service ist),
+\item [2.] als Beschreibung dieses realweltlichen Unikats (z.B. in der Form
+  einer speziellen Produktkonfiguration)
+\end{itemize}
+und für in größerer Stückzahl hergestellte Komponenten auch noch
+\begin{itemize}
+\item [3.] als Beschreibung des Designs des System-Templates (Produkt-Design)
+  sowie
+\item [4.] als Beschreibung und Betrieb der Auslieferungs- und
+  Betriebsstrukturen der nach diesem Template gefertigten realweltlichen
+  Unikate (als Produktions-, Qualitätssiche"|rungs-, Auslieferungs-, Betriebs-
+  und Wartungspläne).
+\end{itemize}
+Besonders Punkt 4 spielt im TRIZ-Kontext kaum eine Rolle, obwohl davon
+auszugehen ist, dass weder im privaten noch im unternehmerischen Umfeld
+technische Produkte nachhaltig nachgefragt werden, für die absehbar
+unzureichender Service angeboten wird.
+
+Als Grundlage für einen derart abgrenzenden Systembegriff soll im Weiteren der
+submersiv gefasste Begriff offener Systeme der Theorie dynamischer Systeme
+\cite{Bertalanffy1950} verwendet werden, der
+\begin{itemize}
+\item [1.] eine innere Abgrenzung gegen vorgefundene Systeme (Komponenten), 
+\item [2.] eine äußere Abgrenzung und funktional determinierte Einbettung in
+  eine (funktionierende) Umwelt sowie
+\item [3.] einen (funktionierenden) externen Durchsatz postuliert, der zu
+  innerer Strukturbildung führt und damit die Leistungsfähigkeit des Systems
+  bestimmt,
+\end{itemize}
+und seine Fruchtbarkeit für eine Behandlung mit mathematischen Instrumenten
+seither vielfach unter Beweis gestellt hat.  
+
+\emph{Technische Systeme} sind in einem solchen Kontext Systeme, auf deren
+Gestaltung kooperativ und arbeitsteilig agierende Menschen Einfluss nehmen,
+wobei \emph{vorgefundene} technische Systeme auf Beschreibungsebene durch eine
+\emph{Spezifikation} ihrer Schnittstellen und auf Vollzugsebene durch die
+\emph{Gewähr spezifikationskonformen Betriebs} normativ charakterisiert sind.
+
+Wir bewegen uns dabei klar im Bereich der Standard-TRIZ-Terminologie eines
+\emph{Systems von Systemen} -- ein technisches System besteht aus Komponenten,
+die ihrerseits technische Systeme sind, deren \emph{Funktionieren} (sowohl im
+funktionalen als auch im operativen Sinn) für die aktuell betrachtete
+Systemebene vorausgesetzt wird.
+
+Dem Begriff eines technischen Systems kommt damit die epistemische Funktion
+der (funktionalen) „Reduktion auf das Wesentliche“ zu.  Einstein wird der
+Ausspruch zugeschrieben „make it as simple as possible but not simpler“. Das
+\emph{Gesetz der Vollständigkeit eines Systems} bringt genau diesen Gedanken
+zum Ausdruck, allerdings tritt dieser dabei nicht als \emph{Gesetz}, sondern
+als ingenieur-technische \emph{Modellierungsdirektive} in Erscheinung.  Die
+scheinbare „Naturgesetzlichkeit“ der beobachteten Dynamik ist also wesentlich
+an \emph{vernünftiges} (im Sinne von \cite{Vernadsky2001}) \emph{menschliches
+  Agieren} gebunden.
+
+Mit einem Ansatz der „Reduktion auf das Wesentliche“ sowie der „Gewähr
+spezifikationskonformen Betriebs“ sind in diese Begriffsbildung inhärent
+menschliche Praxen eingebaut, aus denen heraus die Begriffe „wesentlich“,
+„Gewähr“ und „Betrieb“ überhaupt erst sinnvoll gefüllt werden können.  Eine
+Unterscheidung zwischen technischen und sozio-technischen Systemen, die für
+M. Rubin „offensichtlich und wesentlich“ (private Kommunikation) ist, wird
+damit problematisch. Wesentliche Begriffe aus dem sozial determinierten
+Praxisverhältnis von Menschen wie Ziel, Nutzen, Gewährleistung und
+Verantwortung sind fest in die Begriffsgenerierungsprozesse der Beschreibung
+konkreter technischer Systeme eingebaut und finden in den konkreten
+gesellschaftlichen Setzungen eines primär rechtsförmig konstituierten
+bürgerlichen Systems ihre „natürliche“ Fortsetzung.
+
+\section{Die Welt der Technischen Systeme. Basics}
+
+In der TRIZ-Literatur spielen solche begriff"|lichen Fundierungen kaum eine
+Rolle.  Einschlägige Lehrbücher wie etwa \cite{KS2017} betrachten den Begriff
+des \emph{technischen Systems} als intuitiv gegeben, der sich aus einer
+„industriellen Praxis“ heraus \cite[S. 2]{KS2017} von selbst versteht, während
+andere Begriffe wie „Prozess“, „Produkt“, „Dienstleistung“, „Ressourcen“ und
+„Effekte“ \cite[S. 6--10]{KS2017} genauer eingeführt werden. Selbst die
+ausführliche Beschreibung der „Evolution technischer Systeme“ in 5 Gesetzen
+und 11 Trends \cite[Kap. 4.8]{KS2017} basiert allein auf der lapidaren
+Feststellung „Die Existenz technischer Evolution ist eine zentrale Erkenntnis
+der TRIZ“.  Auch \cite{TESE2018} bleibt in dieser Frage vage; im Vorwort von
+B. Zlotin heißt es allein zum \emph{Zweck} von Betrachtungen der Evolution
+ingenieur-technischer Systeme „humanity can achieve practically any realistic
+goal, but certain priorities must be set to ensure the greatest possible
+impact on the economy and human life. [\ldots] The powers of contemporary
+science and technology as well as financial investment should be applied to
+carefully selected and formulated objectives.“
+
+Es ist natürlich möglich, in einem diskursiven Rahmen die verbale Fassung
+eines Begriffs offen zu lassen und auf andere Weise -- etwa durch den Bezug
+auf gemeinsame Praxen oder durch den „gewöhnlichen Gebrauch“ -- die Konvergenz
+der Begriffsverwendung zu erreichen.  Ein solches Grundmuster wird im
+TRIZ-Kontext für den Begriff \emph{technisches System} besonders auch in
+\cite{TESE2018} angewendet, indem der Begriff durch eine Vielzahl von
+Beispielen in Kombination mit den Begriffen „Muster“ und „Evolution“
+illustriert, die genaue Fassung aber dem geneigten Leser überlassen wird.  Der
+dort mittlerweile erfolgte Rückzug auf Begriffe wie „Muster“ oder „Trend“
+gegenüber dem schärferen und wissenschaftspraktisch vorbelegten Begriff
+„Gesetz“ unterstützt das Anliegen der Autoren von \cite{TESE2018}, empirische
+Erfahrung zu systematisieren, verweist aber zugleich auf das schwache
+theoretische Fundament eines solchen Systematisierungsanliegens.  Das weite
+Spektrum praktisch kursierender Präzisierungen eines derart im Ungewissen
+gelassenen Begriffs wurde in einer Facebook-Diskussion \cite{Graebe2019b} im
+August 2019 deutlich. Für ein genaueres Abwägen der Argumente zu oben
+formulierter These und Gegenthese ist ein solches Fundament allerdings nicht
+ausreichend.
+
+Wie kann der Begriff eines \emph{technischen Systems} also weiter geschärft
+werden?  In unserem Seminar \cite{Graebe2020} haben wir „den Systembegriff als
+Beschreibungsfokussierung identifiziert, mit der konkrete Phänomene durch
+\emph{Reduktion auf das Wesentliche} [\ldots] einer Beschreibung zugänglich
+werden.“  Die Reduktion richtet sich auf folgende drei Dimensionen
+\cite[S. 18]{Graebe2020} 
+\begin{itemize}
+\item [(1)] Abgrenzung des Systems nach außen gegen eine \emph{Umwelt},
+  Reduktion dieser Beziehungen auf Input/Output-Beziehungen und garantierten
+  Durchsatz.
+\item [(2)] Abgrenzung des Systems nach innen durch Zusammenfassen von
+  Teilbereichen als \emph{Komponenten}, deren Funktionieren auf eine
+  „Verhaltenssteuerung“ über Input/Out"|put-Beziehungen reduziert wird.
+\item [(3)] Reduktion der Beziehungen im System selbst auf „kausal
+  wesentliche“ Beziehungen.
+\end{itemize}
+Weiter wird ebenda festgestellt, dass -- ähnlich wie im Konzertbeispiel --
+einer solchen reduktiven Beschreibungsleistung vorgefundene (explizite oder
+implizite) Beschreibungsleistungen vorgängig sind:
+\begin{enumerate}
+\item[(1)] Eine wenigstens vage Vorstellung über die (funktionierenden)
+  Input/Output-Leis"|tungen der Umgebung.
+\item[(2)] Eine deutliche Vorstellung über das innere Funktionieren der
+  Komponenten (über die reine Spezifikation hinaus).
+\item[(3)] Eine wenigstens vage Vorstellung über Kausalitäten im System
+  selbst, also eine der detaillierten Modellierung vorgängige, bereits
+  vorgefundene Vorstellung von Kausalität im gegebenen Kontext.
+\end{enumerate}
+Die Punkte (1) und (2) können ihrerseits in systemtheoretischen Ansätzen für
+die Beschreibung der „Umwelt“\footnote{Hierfür ist allerdings die Abgrenzung
+  eines oder mehrerer Obersysteme in einer noch umfassenderen „Umwelt“
+  erforderlich.}  sowie der Komponenten (als Untersysteme) entwickelt werden,
+womit die Beschreibung von \emph{Koevolutionsszenarien} wichtig wird, die
+ihrerseits für die Vertiefung des Verständnisses von Punkt (3) relevant sind.
+
+Dabei ist der Fokus zunächst auf ein genaueres Verständnis des Begriffs
+\emph{System} gerichtet, der als Reduktion von Komplexität in den drei oben
+angeführten Dimensionen betrachtet wird. Da in diesem Verständnis Komponenten
+eines Systems selbst wieder Systeme sind, liegt auch im allgemeinen Fall die
+Betrachtung eines Systems als „System von Systemen“ nahe, wie es in
+\cite{Holling2000} thematisiert ist.  Wesentliches Reduktionskriterium für
+Beziehungen zwischen Komponenten sind in solchen Systemen \emph{spezifische
+  Eigenzeiten und Eigenräume} wie in den Abbildungen 1--3 in
+\cite{Holling2000} dargestellt ist, die auch in den TRIZ-Prinzipien 18
+\emph{Ausnutzung mechanischer Schwingungen}, 19 \emph{periodische Wirkung}, 23
+\emph{Rückkopplung} und 25 \emph{Selbstbedienung} eine Rolle spielen.
+
+Die Beschreibung von Planung, Entwurf und Verbesserung technischer Systeme
+geht in einem solchen Ansatz von der Leistungsfähigkeit bereits vorhandener
+technischer Systeme aus, die sowohl in (2) als Komponenten als auch -- aus der
+Sicht eines Systems im Obersystem -- in (3) als benachbarte Systeme zu
+berücksichtigen sind.
+
+Ingenieur-technische Praxen bewegen sich damit in einer \emph{Welt technischer
+  Systeme}. Aus der konkreten Beschreibungsperspektive eines Systems sind
+andere Systeme als Komponenten oder Nachbarsysteme allein in ihrer
+\emph{Spezifikation} wichtig. Eine solche Reduktion auf das Wesentliche
+erscheint praktisch als verkürzte Sprechweise über eine gesellschaftliche
+Normalität, was ich kurz als \emph{Fiktion} bezeichne.  Diese Fiktion kann und
+wird im täglichen Sprachgebrauch so lange aufrecht erhalten, so lange die
+gesellschaftlichen Umstände die Aufrechterhaltung der daran gebundenen
+gesellschaftlichen Normalität garantieren können, so lange also der
+\emph{Betrieb der entsprechenden Infrastrukturen} gewährleistet ist.
+Technische Systeme sind damit wenig"|stens in ihrer Vollzugsdimension
+\emph{immer} sozio-technische Systeme.
+
+Ein Ausblenden dieser sozialen Zusammenhänge kann sich also allenfalls auf die
+\emph{Planung} derartiger Systeme sowie deren artefaktische Daseinsdimension
+beziehen, die den \emph{Betrieb} der erforderlichen Infrastruktur ausblendet
+oder in ein Obersystem verschiebt.  Letzteres ist aber unzweckmäßig, da das
+Beheben von Problemen im Betrieb eines Systems Kenntnisse über dessen
+Funktionieren nicht nur auf der Ebene der Spezifikation, sondern auch auf der
+Ebene der Implementierung erfordert.
+
+Eine solche Engführung des Begriffs \emph{technisches System} resultiert
+möglicherweise aus spezifischen Praxen der Vermittlung und Weiterentwicklung
+von TRIZ-Grundlagen, da TRIZ-Praktiker zu derartigen Auseinandersetzungen um
+Fundierungen der von ihnen angewendeten Theorien ein entspanntes bis
+ignorantes Verhältnis an den Tag legen. Für eine Theorie der Evolution
+technischer Systeme ist aber eine noch weitergehende Engführung und
+Abstraktion des Begriffs erforderlich, da sich die bisherige Begriffsgenese
+ausschließlich an der zu einem gegebenen Zeitpunkt \emph{vorgefundenen}
+Landschaft technischer Systeme orientiert.
+
+\section{Zum Evolutionsbegriff. Die sozio-ökonomische\\ Dimension} 
+
+Um evolutionäre Aspekte zu thematisieren, ist eine Zuordnung von zu
+verschiedenen Zeiten existierenden technischen Systemen zu
+\emph{Entwicklungslinien} erforderlich. Hier gehen \cite{Shpakovsky2010} und
+\cite{TESE2018} deutlich verschiedene Wege.
+
+In \cite{TESE2018} wird \emph{Evolution}, wie V. Souchkov im Vorwort
+\cite[S. IX]{TESE2018} feststellt, als „innovative development“ verstanden,
+„since -- in contrast to nature -- craftsmen and engineers make decisions
+based on logic, previous experience, and knowledge of basic principles rather
+than chance.“ Die Konzentration auf „craftsmen and engineers“ weist noch
+einmal auf die Engführung der Praxen hin, aus denen die Systematisierung in
+\cite{TESE2018} abgeleitet wurde.
+
+Mögliche Zugänge zur Einbettung des bisher entwickelten Begriffs in
+historische Geneseprozesse könnten sich an der wissenschaftshistorischen
+Betrachtung \cite{Weller2008} der Entwicklung der
+\emph{Automatisierungstechnik} als eines der wichtigsten interdisziplinären
+technikwissenschaftlichen Bereiche und damit \emph{aus der Perspektive der
+  Praxen des Industrieanlagenbaus} oder aber der industriehistorischen
+Untersuchung der Genese der \emph{Praxen der Produktion} realweltlicher
+technischer Systeme orientieren, in denen Produktlinien \cite{Pohl2005},
+Produktionsnetzwerke \cite{Friedli2013} oder neuerdings auch technische
+Ökosysteme \cite{Graebe2018} eine zentrale Rolle spielen. Mit dem Bereich des
+\emph{Systems Engineering} existiert zudem ein aus der Informatik
+hervorgegangenes umfassendes technikwissenschaftliches Forschungsgebiet mit
+vergleichbaren Fragestellungen, dessen Grundlagen in einer internationalen
+Norm ISO 15288 \emph{Systems and Software Engineering} dokumentiert sind.
+
+Der Zugang in \cite{TESE2018} ist allerdings ein anderer -- zur
+Identifizierung von Entwicklungslinien wird der Begriff \emph{technisches
+  System} zwischen „technology push“ und „market pull“ als „simple means for
+understanding the advancement of man-made systems“ eingebettet
+\cite[S. 1]{TESE2018}. Der Bezug auf den noch ungenaueren Begriff „man-made
+systems“ wird im Weiteren genauer erläutert: Innovation als „improvement of
+already-existing systems“ wird durch das Fortschreiben wissenschaftlicher
+Erkenntnis angetrieben, aus der heraus neue Systeme, Produkte und
+Dienstleistungen entstehen, die von einem „market pull, the second trigger for
+innovation“ einem Formungs- und Ausleseprozess unterworfen sind, „that
+stimulates the development of a system by meeting the needs of that system's
+users“.  Die genaue Ausformung dieses nicht von ingenieur-technischen, sondern
+von innovations-unternehmerischen Praxen getriebenen Ansatzes wird in
+\cite[Kap. 3]{TESE2018} deutlich.  Die Gründe für den universalistischen
+Anstrich des Vortrags der Erfahrungen hat S. Gerovitch in \cite{Gerovitch1996}
+hinreichend genau analysiert, so dass dies hier unberücksichtigt bleiben und
+auf die nüchterne Feststellung reduziert werden kann, dass sich die Grundlagen
+dieser impliziten Begriffsbildungsprozesse im Rahmen des sozio-technischen
+ökonomischen Systems einer kapitalistischen Wirtschaftsordnung als Obersystem
+bewegen (westlicher Prägung füge ich hinzu, da die Übertragbarkeit auf stärker
+autokratisch geprägte Wirtschaftsordnungen wie etwa in China oder Russland
+zusätzliche Betrachtungen erfordert).  In Wirklichkeit ist die
+Kontextualisierung noch enger gezogen, wie die Analyse der Beispiele zeigt --
+eine Unterscheidung zwischen Industrieanlagenbau, Werkzeugmaschinenbau und
+Konsumgüterproduktion, wie sie etwa in volkswirtschaftlichen Analysen üblich
+ist, wird nicht vorgenommen, gleichwohl grundsätzlich die Perspektive einer an
+einem größeren Markt orientierten Produktgängigkeit der untersuchten
+\emph{technischen Systeme} eingenommen.  Der Unikat-Charakter der
+überwiegenden Mehrzahl technischer Großsysteme und damit die Praxen des
+Industrieanlagenbaus bleiben damit unberücksichtigt.
+
+Damit ist der Gegenstandsbereich der technischen Systeme hinreichend umrissen,
+deren Evolution in \cite{TESE2018} untersucht wird. Zugleich wird M. Rubins
+Position verständlich, dass in einem solchen Kontext die Unterscheidung von
+technischen und sozio-technischen Systemen „offensichtlich und wesentlich“
+ist, was M. Rubin (private Kommunikation) mit Verweis auf \cite{Rubin2007} und
+\cite{Rubin2010} selbst wie folgt umreißt:
+\begin{quote}
+  Bei der Betrachtung eines technischen Systems berücksichtigen wir keine
+  anderen bestehenden Beziehungen (soziale, politische, wirtschaftliche,
+  Marketing usw.) im System, mit Ausnahme von Objekten und Beziehungen
+  technischer Natur. Diese externen (menschlichen, kulturellen) Beziehungen
+  können durch zusätzliche Anforderungen oder Einschränkungen an technische
+  Objekte ersetzt werden.  Bei der Betrachtung von Systemen als
+  sozio-technisch werden eine Reihe technischer Objekte und Zusammenhänge
+  berücksichtigt, beispielsweise wenn die TRIZ-Analyse von
+  Produktionsunternehmen nicht nur als technisches System (Maschinen, Geräte),
+  sondern die Fabrik als sozio-technisches Objekt betrachtet wird:
+  Bestellsystem und Marketing, Personalpolitik, Finanzen und die
+  wirtschaftliche Lage des Unternehmens, Systeme der Entscheidungsfindung usw.
+  Offensichtlich verändert dies den Gegenstand der Überlegungen und die
+  Untersuchungsinstrumente grundlegend.
+\end{quote}
+Natürlich bedürfen die Begriffe „technisches Objekt“, „technischer
+Zusammenhang“ und „Beziehung technischer Natur“, mit denen hier über die
+Grenzen zwischen technischen und sozio-technischen Systemen hinweg vermittelt
+werden soll, weiterer Präzisierung.
+
+Kehren wir jedoch zu \cite{TESE2018} zurück und untersuchen genauer, auf
+welcher Aggregationsgrundlage die „Evolution ingenieur-technischer Systeme“
+untersucht wird.  Da wir inzwischen auch ein Obersystem identifiziert haben,
+gegen welches die Ausführungen relatiert werden können, können wir die
+TRIZ-Methodik selbst zur Rekonstruktion der Modellierung und damit zur Analyse
+der begriffstheoretischen Fundierung von \cite{TESE2018} einsetzen.
+
+Ausgangspunkt ist das sozio-ökonomische System einer industriellen
+Produktionsweise. „Der Reichtum dieser Gesellschaften“, so beginnt Marx seine
+Analyse eines solchen sozio-ökonomi"|schen Systems in \cite{MEW23}, „erscheint
+als eine 'ungeheure Warensammlung', die einzelne Ware als seine
+Elementarform. Unsere Untersuchung beginnt daher mit der Analyse der Ware.“
+Auch wir starten mit diesem Begriff als einer hochgradigen Abstraktion.  Marx'
+Arbeitswertheorie abstrahiert im Begriff der \emph{Ware} bekanntlich von
+sämtlichen qualitativen Eigenschaften außer der einen, Produkt menschlicher
+Arbeit zu sein\footnote{Marx folgt dabei der Begriffsentwicklungsmethodik von
+  Hegel. Rainer Thiel \cite[S. 190]{Thiel2007} schreibt dazu: „Hegels
+  Begriffsentwicklung beginnt mit dem 'Sein'. Und was tut der Dialektiker
+  Hegel? Er entwickelt – mit der Sturheit eines Schelms, wie ein Computer –
+  den Inhalt des 'reinen Seins': 'Sein, reines Sein, -- ohne alle weitere
+  Bestimmung. In seiner unbestimmten Unmittelbarkeit ist es nur sich selbst
+  gleich und auch nicht ungleich gegen Anderes, hat keine Verschiedenheit
+  innerhalb seiner, noch nach außen. Durch irgendeine Bestimmung oder Inhalt,
+  der in ihm unterschieden, oder wodurch es als unterschieden von einem Andern
+  gesetzt würde, würde es nicht in seiner Reinheit festgehalten. Es ist die
+  reine Unbestimmtheit und Leere. – Es ist nichts in ihm anzuschauen, wenn von
+  Anschauen hier gesprochen werden kann; oder es ist nur dies reine, leere
+  Anschauen selbst. Es ist ebensowenig etwas in ihm zu denken, oder es ist
+  ebenso nur dies leere Denken. Das Sein, das unbestimmte, unmittelbare, ist
+  in der Tat Nichts, und nicht mehr noch weniger als Nichts'.“ Im Gegensatz zu
+  dieser reinen Gedankenakrobatik bezieht sich Marx aber immer auf die diesen
+  Begriffsentwicklungen vorgängigen \emph{gesellschaftlichen Praxen},
+  vgl. etwa die Feuerbachthesen 1--3, \cite{MEW3}.}.  Erst auf einer solchen
+Abstraktionsebene werden konkrete Waren global austauschbar und konstituieren
+damit einen globalen Markt als \emph{Verhältnis} -- Feld in der
+TRIZ-Terminologie -- zwischen diesen Warenkonkreta, den \emph{Tauschwert}.
+
+Darum geht es in \cite{TESE2018} allerdings nicht, sondern um funktionale
+Qualitäten konkreter Warengruppen wie Waschmaschinen oder Federhalter. Das
+allgemeine Konkurrenzverhältnis abstrakter Waren zerfällt dabei in konkretere
+Konkurrenzverhältnisse einzelner Warengruppen auf Einzelmärkten, die in
+\cite{TESE2018} als „market pull“ die Hauptfunktion des Werkzeugs „Markt“
+sind, welches die Objekte „engineering systems“ zu „nützlichen Produkten“
+umformt -- ich folge dabei den TRIZ-Begriff"|lichkeiten von \cite{TT}.  Mit
+der Marktgängigkeit von Produkten ist eine erste Struktureinheit im Obersystem
+identifiziert -- konkrete Märkte, auf denen \emph{konkrete} Waren mit
+\emph{spezifischen} funktionalen Eigenschaften -- \emph{Gebrauchswerten} in
+der Terminologie von Marx -- miteinander im Wettbewerb stehen.  Die
+\emph{Funktion} Konkurrenzverhältnis des \emph{Werkzeugs} Markt wird in
+\cite{TESE2018} seinerseits als \emph{Werkzeug} mit Technologie formender
+Funktionalität betrachtet.  Dieser Gedanke soll nun genauer entwickelt werden.
+
+Jede Ware ist „ein Ganzes vieler Eigenschaften und kann daher nach
+verschiedenen Seiten nützlich sein“ \cite[S. 49]{MEW23}. Jede konkrete Ware
+ist damit selbst ein technisches System im oben entwickelten Verständnis, wenn
+sie als durch ihre Spezifikation gegebenes Ensemble „nützlicher“
+Funktionalitäten betrachtet wird. Dieses Ensemble nützlicher Eigenschaften
+bestimmt aber auch die Möglichkeiten und Grenzen der Substituierbarkeit von
+Waren im gesamtgesellschaftlichen technologischen Prozess\footnote{Diese
+  Grenzen sind allerdings fließend, wie A. Kuryan in der Diskussion
+  \cite{Graebe2019b} am Beispiel eines Hammers demonstriert, der zum
+  Offenhalten einer Balkontür eingesetzt wird (\foreignlanguage{russian}{„Если
+    ты решил с помощью молотка подпевать дверь на балконе, чтобы она не
+    закрывалась, то ты создал решение.“}). Die Bedeutung derartiger
+  Grenzüberschreitungen für die TRIZ-Analyse der Evolution technischer Systeme
+  bedarf einer genaueren Untersuchung, die hier nicht geleistet werden kann.}.
+Jene Grenzen führen zu einer Stratifizierung „des Markts“ in konkrete Märkte
+für konkrete Warengruppen. Im sozio-ökonomischen Obersystem haben wir damit
+zwischen dem Werkzeug-Template „Markt“ und konkreten realweltlichen
+Ausprägungen dieses Werkzeugs zu unterscheiden. Diese realweltliche Struktur
+der \emph{Technologiemärkte} ist der in \cite{TESE2018} ausgeführten
+S-Kurven-Analyse vorgängig und wird dort implizit als gegeben vorausgesetzt.
+Jeder solche Technologiemarkt ist durch ein spezifisches Bündel technischer
+Funkionalitäten charakterisiert, wobei \cite{TESE2018} mit dem Ansatz des MPV
+(main parameter of value) postuliert, dass sich ein solcher Markt um einen
+speziellen technischen Parameter herum gruppiert, der für die Wertschöpfung
+von besonderer Bedeutung ist.
+
+Damit ist aber das Erfordernis einer weiteren Abstraktion verbunden, denn
+konkrete Waren, im obigen Sinne als technische Systeme, als \emph{konkrete}
+Bündel technischer Funktionalitäten verstanden, sind prinzipiell geeignet, auf
+\emph{mehreren} derartigen Technologiemärkten gehandelt zu werden und werden
+dies praktisch auch. Ein solcher Technologiemarkt wird auch weniger durch die
+auf ihm gehandelten Waren bestimmt als durch die diese Waren produzierenden
+Unternehmen. Darum geht es den Autoren von \cite{TESE2018} auch, wenn sie
+Altschullers S-Kurven-Analyse zu einer \emph{pragmatischen S-Kurven-Analyse}
+weiterentwickeln.  Damit verschiebt sich aber das in \cite{TESE2018}
+aufgerufene Abstraktionserfordernis von einem MPV als eigenständigem
+Charakteristikum zur \emph{unternehmerischen Fähigkeit}, technische Artefakte
+mit diesem MPV in angemessenem Preis-Leistungs-Verhältnis \emph{zu
+  produzieren}.  Damit wird auch deutlich, dass sich auf jenen
+Technologiemärkten zwar „Produkte voneinander unabhängig betriebner
+Privatarbeiten“ begegnen, die Produzenten aber \emph{nicht} „erst in
+gesellschaftlichen Kontakt treten durch den Austausch ihrer Arbeitsprodukte“
+\cite[S. 87]{MEW23} in dem Sinne, dass das Spannungsverhältnis zwischen
+begründeten Erwartungen und erfahrenen Ergebnissen der Konditionen
+\emph{früheren} Austauschs ihrer Arbeitsprodukte die Dynamik jenes
+Technologiemarkts bestimmt.  
+\enlargethispage{1em}
+
+Gegenstand technologischer Evolution sind damit aber diese technologischen
+Produktionsbedingungen selbst. Dies wird auch in \cite{TESE2018} so gesehen,
+denn die im Buch beschriebenen Handlungsoptionen beziehen sich auf die
+Organisation entsprechender Innovationsprozesse in Unternehmen. Damit kann
+aber das Obersystem in unserer TRIZ-Analyse der begriff"|lichen Grundlagen von
+\cite{TESE2018} weiter eingeschränkt werden auf die strategischen
+Führungsstrukturen von Unternehmen, in denen die Innovationsprozesse praktisch
+gestaltet werden. Auch hierbei haben wir es mit der Dualität von
+System-Template -- gängigen gesellschaftlichen Verfahrensweisen zur
+Organisation von Innovationsprozessen -- und konkreten realweltlichen
+System"|ausprägungen in den einzelnen Unternehmen zu tun. Die
+\emph{Hauptfunktion} jener Strukturen im Unternehmen ist die Organisation des
+Innovationsprozesses in enger Verbindung mit der allgemeinen
+Geschäftsstrategie.  Dieser Prozess selbst wird vom strategischen Management
+entschieden und verantwortet, das hierzu die \emph{widersprüchlichen
+  Anforderungen} verschiedener Unternehmensteile (R\&D, Vertrieb, Finanzen,
+Controlling, SCM, CRM) unter einen Hut zu bringen hat. Die in \cite{TESE2018}
+zusammengetragenen Empfehlungen sind \emph{ein} Aspekt in diesem komplexen
+Abwägungsprozess. Eine Methodik zwischen „technology push“ und „market pull“
+ist dabei mit Blick etwa auf die Ausführungen in \cite{Preez2006} eher auf dem
+Niveau der 1960er Jahre anzusiedeln. Ebenda wird in Fig.~3 mit „state of the
+art in science and technology“ neben den „needs of society and marketplace“
+ein weiteres Obersystem in Stellung gebracht, das auch bei Patenterteilungen
+mit den Begriffen „Stand der Technik“ und „Erfindungshöhe“ eine wichtige Rolle
+spielt.
+
+\begin{figure}  
+\begin{center}
+  \begin{tikzpicture}[
+      >={Triangle[length=0pt 6,width=0pt 5]},
+      rounded corners=2pt,line width=1pt] 
+  \node[draw=green] at (0,2) [circle] (A0)
+       {\bbox{2}{Idea Generation}};
+  \node[draw=red] at (3,2) [rectangle] (A1)
+       {\bbox{1.8}{Develop- ment}};
+  \node[draw=red] at (6,2) [rectangle] (A2)
+       {\bbox{1.8}{Manufac- turing}};
+  \node[draw=red] at (9,2) [rectangle] (A3)
+       {\bbox{1.8}{Marketing and Sales}};
+  \node[draw=green] at (12,2) [circle] (A4)
+       {\bbox{2}{Commercial Product}};
+  \node[draw=green] at (6,4.3) [rectangle] (A5)
+       {\bbox{8}{State of the art\\[12pt] in science and technology}}; 
+  \node[draw=green] at (6,-.3) [rectangle] (A6)
+       {\bbox{8}{Needs of society\\[12pt] and the marketplace}};   
+  \draw[color=red] (1,.3) node
+       {\bbox{2}{\footnotesize \sc{Market Pull}}};
+  \draw[color=red] (11.3,3.6) node
+       {\bbox{2.3}{\footnotesize \sc{Technology Push}}};
+  \draw[color=red] (-.5,4.4) node {\bbox{2}{New\\ Technology}};
+  \draw[color=red] (-.5,-.5) node {\bbox{2}{New\\ Ideas}};
+  
+  \draw[<->] (1.2,2) -- (2,2) ;
+  \draw[<->] (4,2) -- (5,2) ;
+  \draw[<->] (7,2) -- (8,2) ;
+  \draw[<->] (10,2) -- (10.8,2) ;
+  \draw[<->] (3,2.5) -- (3,3.5) ;
+  \draw[<->] (6,2.5) -- (6,3.5) ;
+  \draw[<->] (9,2.5) -- (9,3.5) ;
+  \draw[<->] (3,1.5) -- (3,0.5) ;
+  \draw[<->] (6,1.5) -- (6,0.5) ;
+  \draw[<->] (9,1.5) -- (9,0.5) ;
+  \draw[<->] (-.4,4) -- (-.4,3.3) ;
+  \draw[<->] (.4,4.5) -- (1.4,4.5) ;
+  \draw[<->] (-.4,0) -- (-.4,0.7) ;
+  \draw[<->] (.4,-.5) -- (1.4,-.5) ;
+  \draw[->,dashed] (1,3) arc(120:60:10) ;
+  \draw[<-,dashed] (1,1) arc(-120:-60:10) ;
+\end{tikzpicture}
+\end{center}
+\caption{Eine Reproduktion von \cite[Fig. 3]{Preez2006}, die dort von
+  \cite{Galanakis2006} übernommen ist.}
+\end{figure}
+
+Wir haben damit bereits \emph{drei} sozio-technische Obersysteme (Ökonomie,
+Innovationsmanagement, Wissenschaft und Technologie) mit jeweils eigenen
+Begriff"|lichkeiten, Strukturen, Komponenten, Beschreibungs- und
+Vollzugsformen identifiziert, die in der einen oder anderen Weise zur in
+\cite{TESE2018} behandelten Thematik in Bezug stehen, ohne damit der uns
+interessierenden Präzisierung des Begriffs \emph{technisches System} --
+besonders auch in Abgrenzung zum Begriff \emph{sozio-technisches System} --
+näher gekommen zu sein. Die TRIZ-Methodik empfiehlt in einem solchen Fall, den
+Zugang von einer anderen Seite neu zu versuchen, vorher aber die Erkenntnisse
+aus dem Fehlversuch zu fixieren.  Diesbezüglich sind drei Aspekte interessant:
+
+\paragraph{1)}
+Der Anspruch von \cite{TESE2018}, (auch) einen innovationsmethodischen Beitrag
+zu leisten, setzt auf weitgehend überholten innovationsmethodischen Konzepten
+auf, die dort entwickelte „pragmatische S-Kurven-Analyse“ muss ihre
+Passfähigkeit zu moderneren innovationsmethodischen Konzepten erst noch unter
+Beweis stellen.
+
+\paragraph{2)}
+Die Argumentation in \cite{TESE2018} nimmt impliziten Bezug auf gängige
+innovationsmethodische Theorieansätze, wie sie in \cite{Preez2006}
+systematisch dargestellt sind.  Insbesondere \cite[Fig. 3]{Preez2006} geht gut
+als Diagramm einer Root Cause Analysis durch mit \emph{Idea Generation} (A)
+und \emph{Commercial Product} (B) als die beiden Hauptkomponenten und weiteren
+Hilfskomponenten (Development, Manufacturing, Marketing and Sales).  Es gibt
+zwei Root Cause Pfeile -- $(A) \longrightarrow (B)$, vermittelt durch „State
+of the art in science and technology“, und $(B) \longrightarrow (A)$,
+vermittelt durch „Needs of society and the marketplace“. Eine TRIZ Root Cause
+Analysis, wenigstens in der in \cite[Kap. 4.7]{KS2017} beschriebenen Weise,
+kann mit derartigen \emph{Rückkopplungsschleifen} nicht arbeiten, da diese
+keine „Wurzel“ haben. Das wichtige TRIZ-Prinzip 25 der \emph{Rückkopplung} ist
+an dieser Stelle nicht anschlussfähig.  Eine zweite terminologische Feinheit
+ist anzumerken: „push“ und „pull“ beziehen sich im englischen
+Sprachgebrauch\footnote{Dasselbe gilt für die informatische Semantik der
+  Operationen \texttt{push} und \texttt{pull}, siehe etwa
+  \url{https://de.wikipedia.org/wiki/Stapelspeicher}. } auf verschiedene Enden
+des Kausalpfeils. Im Sinne des TRIZ-Funktionsmodells \cite[Kap. 4.4]{KS2017}
+ist „push“ eine Funktion des Werkzeugs, „pull“ eine Funktion des Zielobjekts,
+eines „aktiven Objekts“ im Sinne einer „inversion of control“\footnote{Dazu
+  etwa \url{https://de.wikipedia.org/wiki/Inversion_of_Control}.}, etwa nach
+dem TRIZ-Prinzip 13 der \emph{Funktionsumkehr} zu verstehen.  Im Diagramm
+\cite[Fig. 3]{Preez2006} werden diese beiden Begriffe offensichtlich auf die
+Komponente \emph{Commercial Product} bezogen.  Für \emph{Idea Generation} als
+Bezugskomponente dieses weitgehend symmetrischen Arrangements drehen sich die
+Begriffe um -- push wird zum pull und umgekehrt.
+
+\paragraph{3)}
+Wir haben \emph{mehrere} Obersysteme identifiziert, womit noch einmal deutlich
+wird, dass der Begriff \emph{Obersystem} nicht immersiv zu denken ist und
+nicht mit dem Begriff \emph{Umwelt} verwechselt werden darf. Obersysteme sind
+spezifische Nachbarsysteme mit eigener Sprache und Logik. Die Beziehung
+Obersystem -- System ist dieselbe wie die Beziehung System -- Komponente und
+oben hinreichend genau beschrieben: Es handelt sich um zwei verschiedene
+Betrachtungsperspektiven auf die „Totalität der Welt“ mit zwei verschiedenen
+Begriffen des \emph{Wesentlichen} und damit aus zwei verschiedenen
+Reduktionsperspektiven. Ins Obersystem geht das System allein durch seine
+Spezifikation (Beschreibungsdimension) und das Versprechen
+spezifikationskonformer Leistung (Vollzugsdimension) ein. Im Konzertbeispiel
+wird aus dem \emph{gegebenen} Können der Musiker auf der Ebene des Orchesters
+die Interpretation des Musikstücks „produziert“.  Die
+Leistungs\emph{fähigkeit} der Teilsysteme ist dabei dem
+Leistungs\emph{potenzial} des Obersystems vorgängig -- die Interpretation von
+Mozarts Klavierkonzert KV 491, die Alexander Shelley mit dem Leipziger
+Gewandhausorchester und Gabriela Montero als Solistin vorgelegt hat, wäre mit
+einem Laienorchester nicht möglich gewesen. Aus der Perspektive des Systems
+agiert das Obersystem ebenfalls funktional: Die Schnittstelle des Systems
+definiert in der Beschreibungsdimension eine erwartete Input- oder
+Durchsatzleistung in Quantität, Qualität und Struktur, die dem Funktionieren
+des Systems (zur Laufzeit) vorgängig ist, das Obersystem stellt in der
+Vollzugsdimension diese Voraussetzungen sicher. Eine solche Strukturierung
+bringt die aus der Mathematik bekannten deduktiven Wenn-Dann-Beziehungen mit
+realweltlichen Prozessen in Verbindung, wobei der modus ponens in
+realweltlichen Systemen eine deutlich komplexere Semantik hat als in der
+Mathematik, wo dieser bekanntlich ausschließlich als logische Klammer eine
+Rolle spielt, wenn aus kleineren Wenn-Dann-Beziehungen komplexere solche
+Beziehungen (Lemmata, Sätze, Theoreme bis zum Beweis eines der
+Millenium-Probleme) regelgerecht deduziert werden sollen.  Auch hier hat
+dieser Reduktionsmechanismus einen klaren Zweck -- arbeitsteilige Reduktion
+von Komplexität.
+
+\section{Zum Evolutionsbegriff. Die ideengeschichtliche\\ Dimension}
+
+Kehren wir jedoch zu \cite{TESE2018} und unserer Frage nach der Fundierung des
+Begriffs \emph{technisches System} zurück. Dem Rat der TRIZ-Methodik folgend,
+es mit einem anderen Ansatz zu versuchen, wenden wir uns dem „technology push“
+\cite[S. 2]{TESE2018} zu, „that creates new systems, products, and services,
+that are not yet required by the market“, um aus dieser Perspektive die
+systemischen Begriff"|lichkeiten zu entwickeln.  Zunächst sind Zweck und
+Nutzen eines solchen Systems zu bestimmen.
+
+Aus der Perspektive des „Coupling Model of Innovation“ in
+\cite[Fig. 3]{Preez2006} ist dieses System als „Ideengenerator“ die sprudelnde
+Quelle, deren Produkte das formende Flussbett des „state of the art in science
+and technology“ durchfließen, um sich an dessen Ende durch einen „technology
+push“ in „commercial products“ zu verwandeln.  Die „Ideenquelle“ wird (ebenda)
+durch einen „market pull“ angetrieben, der aus den „needs of society and the
+marketplace“ gespeist wird. Wie oben bereits erläutert sind diese Termini mit
+der TRIZ-Welt von „Werkzeug“, „Aktion“, „Objekt“ und „Produkt“ sowie dem
+Konzept der Systemtransformation etwa auch nach \cite{TT} relatierbar, wären
+als solche aber nicht Teil der Analyse des uns interessierenden Systems,
+sondern des Obersystems „Innovationsmanagement“. In der Tat erfüllt dieses
+Begriffs"|universum dessen Reduktionserfordernis „auf das Wesentliche“, in
+welches die „Ideenquelle“ als Komponente allein mit ihrer funktionalen
+Spezifikation eingeht, von deren genauem inneren Funktionieren beim
+Innovationsmanagement -- jedenfalls im Verständis von \cite{Preez2006} --
+abstrahiert wird.
+\enlargethispage{-2em}
+
+Das ist in \cite{TESE2018} natürlich anders, denn mit der Untersuchung der
+Evolution ingenieur-technischer Systeme soll ja gerade die ideengeschichtliche
+Dimension derartiger Prozesse untersucht werden.  Zu diesem Zweck heißt es
+bereits in der Überschrift von Kapitel 1 „Technology Pull: Beyond Technology
+Push and Market Pull“.  Wie ist das zu verstehen? Wird der Fokus auf die
+Komponente \emph{Idea Generation} gerichtet? Dann wären in der Tat die
+Begriffe „push“ und „pull“ gegenüber \cite{Preez2006} zu vertauschen -- aber
+von „market push“ ist keine Rede.  Stattdessen wird in den weiteren
+Ausführungen in \cite{TESE2018} deutlich, dass in der Tat ein \emph{Umdrehen}
+des oberen Pfeils gemeint ist, die Komponente \emph{Idea Generation} des
+Obersystems (!) Innovationsmanagement Input aus \emph{zwei} Richtungen
+bekommt, die beide vom \emph{Commercial Product} als Quelle -- also Werkzeug
+im TRIZ-Verständnis -- ausgehen.
+
+So deutlich wie hier formuliert wird in \cite{TESE2018} allerdings auf die
+innovationstheoretischen Vorstellungen von \cite{Preez2006} nicht Bezug
+genommen.  Wir folgen dennoch einer solchen weiteren Modellreduktion und
+wollen den Leser dabei zugleich von einem Dilemma befreien -- dem
+Zirkelschluss zwischen den Komponenten \emph{Idea Generation} und
+\emph{Commercial Product}.  Dazu lassen wir die beiden nun auf \emph{Idea
+  Generation} gerichteten Pfeile in den Komponenten „Wissenschaft und Technik“
+und „Bedürfnisse/Markt“ starten und überlassen das \emph{Commercial Product}
+der Teilkomponente \emph{Marketing and Sales} der Komponente
+\emph{Unternehmen}.
+
+Unsere anstehende TRIZ-Analyse der inneren Struktur und Funktionsweise des
+Systems mit dem provisorischen Namen „Ideengenerator“ ist damit auf die
+Erforschung der Beziehung zwischen den drei \emph{Komponenten}\footnote{Oder
+  „Nachbarsysteme“?  -- Nein. Nachbarsysteme wären alle vier nur aus der
+  Perspektive eines Obersystems.  Die früher als Obersystem identifizierten
+  Systeme erscheinen nun -- in temporärer Ermangelung eines anderen
+  TRIZ-Begriffs, im System selbst als Komponenten. Eine Lösung des Rätsels
+  wird weiter unten vorgeschlagen. } „Bedarf“, „Technologie“ und „Unternehmen“
+auszurichten, die -- nach dem oben entwickelten Systembegriff -- mit ihren
+\emph{gegebenen} funktionalen Spezifika Input, Output und Durchsatz die innere
+Struktur des zu beschreibenden Systems bestimmen.  Ein solcher Ansatz passt
+deutlich besser auf die Ausführungen in \cite[Kap. 1]{TESE2018}, denn die
+Autoren betonen „parameters of the technology of the system are linked to
+parameters of the market“ -- der Einfluss der beiden Komponenten wird also als
+nicht unabhängig voneinander betrachtet, sondern lässt sich auf der Ebene von
+Parameterkopplungen fassen (so jedenfalls die Autoren).
+
+Wir sehen an diesem Zugang ein grundsätzliches Verfahren, ferne Komponenten in
+ein System zu integrieren: die beiden relationalen -- also feldartigen im
+Sinne einer Stoff-Feld-Modellierung wie in \cite[Kap. 4.9]{KS2017} genauer
+entwickelt -- Beziehungen $(B)\stackrel{F_1}{\longrightarrow} (A)$
+(„technology pull“) und $(B) \stackrel{F_2}{\longrightarrow} (A)$ („market
+pull“) im Obersystem \emph{Innovationsmanagement} erscheinen im System (A) als
+Komponenten $(F_1)$ und $(F_2)$, zwischen denen ein Feld
+$(F_1)\stackrel{B}{\longleftrightarrow}(F_2)$ postuliert wird, um die für das
+System \emph{wesentlichen} Beziehungen zwischen $(F_1)$ und $(F_2)$ zu
+modellieren, die sich aus der Existenz der (fernen, da nicht ins System
+übernommenen) Komponente (B) im Obersystem ergeben.  Einen solchen für
+Modellreduktionen wichtigen Standard, der allerdings in den 76 TRIZ-Standards
+fehlt, hatte ich in \cite{Graebe2019a} als \emph{Stoff-Feld-Swap} bezeichnet.
+So ist wohl auch M. Rubin zu verstehen, wenn er anmerkt, dass „externe
+(menschliche, kulturelle) Beziehungen durch zusätzliche Anforderungen oder
+Einschränkungen an technische Objekte ersetzt“ und damit in technische Systeme
+importiert werden können, ohne diese zu einem sozio-technischen System
+„aufzublasen“.
+
+Doch kehren wir zur Rekonstruktion des Begriffssystems von \cite{TESE2018}
+zurück.  Da es nicht über"|haupt um die Evolution technischer Systeme geht,
+sondern um die sich aus der TRIZ-Theorie ergebenden Schlussfolgerungen für
+eine solche Evolution, ist -- dem TRIZ-Standard 1.1.1 \emph{Vervollständige
+  ein unvollständiges Stoff-Feld-Modell} folgend -- als weitere Komponente der
+\emph{TRIZ-Theoriekörper} zu berücksichtigen. Auch dieser Korpus ist als
+Komponente zu modellieren, da dieser in \cite{TESE2018} in seiner Gesamtheit
+als nicht weiter zu hinterfragende Einheit auftrtt, also allein mit seiner
+Input/Output-Leistung in die Systemmodellierung eingeht.  Außerdem
+unterscheiden sich die MPV beider Dimensionen deutlich -- während im
+TRIZ-Theoriekörper das \emph{Lösen von Problemen} im Fokus steht, geht es in
+\cite{TESE2018} um die \emph{Evolution in der „Welt der technischen Systeme“}.
+
+Wir befinden uns mit der bisherigen Begriffsbildung auf der Abstraktionsebene
+des Technikbegriffs des VDI (Verein Deutscher Ingenieure -- der deutschen
+Standesorganisation der Ingenieure), der in der VDI-Richtlinie 3780 den
+Technikbegriff in den folgenden drei Dimensionen fasst:
+\begin{itemize}
+\item Menge der nutzenorientierten, künstlichen, gegenständlichen Gebilde
+  (Artefakte oder Sachsysteme);
+\item Menge menschlicher Handlungen und Einrichtungen, in denen Sachsysteme
+  entstehen und
+\item Menge menschlicher Handlungen, in denen Sachsysteme verwendet werden.
+\end{itemize}
+Die Definition vermeidet den Begriff „technisches System“ zugunsten von
+„nutzenorientierten, künstlichen, gegenständlichen Gebilden“. Ähnlich
+\cite{Shpakovsky2003} mit dem Begriff des \emph{technischen Objekts}, der dort
+dem Begriff des \emph{technischen Systems} vorgängig ist. In der hier
+vorgelegten VDI-Definition werden neben der artefaktischen Dimension auch noch
+„Sachsysteme“ einbezogen werden -- neben der Maschine also auch noch die
+Maschinerie\footnote{Marx geht hier noch weiter: Das „\emph{automatische
+    System der Maschinerie} [\ldots] verwandelt die Maschinerie erst in ein
+  System“ \cite[S. 584]{MEW42}.} und damit die Unikate technischer
+Großsysteme.  Mit der unmittelbaren Verknüpfung der „gegenständlichen
+Sachsysteme“ und den Bedingungen und Folgen ihrer Entstehung sowie Verwendung
+wird einer Unterscheidung zwischen technischen und sozio-technischen Systemen
+bereits im Grundansatz widersprochen.
+
+\section{Was sind Komponenten?}
+
+Auf diese Frage hat \cite{Szyperski2002} eine einfache Antwort: „Components
+are for Composition“.  Diese Definition folgt dem oben entwickelten
+Verständnis, dass Systeme aus \emph{bereits vorhandenen} Komponenten
+zusammengesetzt werden, wobei neben OTS-Komponenten (off the shelf) auch
+selbst entwickelte Komponenten eingesetzt werden können. Allerdings müssen vor
+der Integration zum (lauf"|fähigen) Gesamtsystem diese Entwicklungen
+abgeschlossen sein. Im Wasserfallmodell der Softwareentwicklung wird diese
+sequenzielle Vorgehensweise expliziert, agile Vorgehensmodelle sind flexibler,
+erfordern zur frühzeitigen prototypischen Demonstration von
+Teilfunktionalitäten aber auch Platzhalterkomponenten -- Mock-Komponenten und
+provisorische Oberflächen.
+
+In \cite{Szyperski2002} zerfällt mit diesem Verständnis die Welt der
+Produktion technischer Systeme in zwei Teilwelten -- „design to component“ und
+„design from component“. Ersteres ist das Gebiet der Komponentenentwickler mit
+dem Fokus, Komponenten mit einer speziellen Fachfunktion („core concern“ --
+dies entspricht dem MPV in \cite{TESE2018}) zu entwickeln. Neben dieser
+Fachfunktion muss die Komponente aber noch eine größere Menge von
+Hilfsfunktionen (Logging, Datensicherheit, Zugangsmanagement,
+Druckeransteuerung usw. -- die „cross cutting concerns“) erfüllen, die auf
+etablierte Konzepte (Beschreibungsdimension) und andere zu integrierende
+Komponenten (Vollzugsdimension) \emph{anderer technischer Prinzipien und
+  Systeme} zurückgreifen.  Komponenten sind in einem solchen Verständnis stets
+\emph{Bündel von Funktionen}, die zugleich Verfahrenswissen aus
+\emph{mehreren} Bereichen bündeln.  All diese Beschreibungsformen muss der
+Komponentenentwickler wenigstens in der Abstraktion ihrer \emph{Spezifikation}
+beherrschen, um nützliche Komponenten zu bauen.  Zweiteres ist das Gebiet der
+Komponentenassembler. Diese bauen (vorher zu entwerfende) Systeme aus
+verfügbaren Komponenten zusammen, entwickeln oder modifizieren weitere
+Hilfsfunktionalitäten (den „glue code“), integrieren und testen das
+Gesamtsystem, bevor es beim Kunden zum Einsatz kommt.
+
+Die Schnittstelle zwischen beiden Professionen bildet das verwendete
+\emph{Komponenten-Frame"|work} wie etwa Spring Boot, das nicht nur durch
+Normungen und Standardisierungen das prinzipielle Zusammenwirken der
+Komponenten auf einer höheren Ebene der Abstraktion beschreibt
+(Beschreibungsdimension), sondern auch von verschiedenen Anbietern als
+Laufzeitsystem für Komponenten (Vollzugsdimension) zur Verfügung gestellt
+wird. Derartige Laufzeitsysteme -- sicher ebenfalls technische Systeme --
+haben eine Spezifik: sie werden \emph{gemeinsam} von Anbieter und Kunde
+betrieben, was eine Koordination der sozio-technischen Begleitprozesse auf
+hohem Niveau erfordert. In der Informatik hat sich dabei ein System von
+Serviceleveln bewährt, die vertraglich vereinbart werden und die Verantwortung
+zwischen Anbieter und Kunde verteilen. Bei drei Serviceleveln liegt gewöhnlich
+die Verantwortung für die Auswahl und Schulung des Personals für die
+Fachanwendung (Level 1) komplett beim Kunden, die Konfiguration und
+Rekonfiguration des Laufzeitsystems beim Kunden (Level 2) wird entweder vom
+Anbieter (im Rahmen eines „Produktlinien-Managements“) oder einer
+spezialisierten Fachabteilung des Kunden übernommen, Wartungen, Updates des
+Systems sowie Integration oder Reintegration neuer Komponenten (Level 3) liegt
+in den Händen des Anbieters. In einem solchen System liegt eine arbeitsteilige
+Situation vor -- der Anbieter ist für die Qualität der Funktionalität
+zuständig, der Kunde für die Qualität der Daten. Außerdem verantwortet der
+Kunde die Funktionen und Fehlfunktionen des Systems vor der Allgemeinheit und
+muss sich entsprechende Schäden, die durch den Betrieb des Systems verursacht
+wurden, im Rahmen eines Anscheinsbeweises rechtlich zuordnen lassen.  Die
+operative (technische) Qualität des realweltlichen Systems wird in diesem
+sozio-technischen Verhältnis von \emph{beiden} Parteien gleichermaßen
+beeinflusst, so dass eine sinnvolle Trennung von technischer und
+sozio-technischer Ebene \emph{praktisch} unzweckmäßig ist und so auch nicht
+erfolgt.
+
+Im Arbeitsprozess werden dabei zu bearbeitende Objekte (in diesem Fall Daten)
+zwischen den verschiedenen Komponenten -- hier nicht nur Funktions- sondern
+auch Verantwortungseinheiten -- ausgetauscht, was insbesondere im Falle
+unzureichender Qualität der Objektbearbeitung zu weiteren Widersprüchen führt.
+Für C. Szyperski \cite{Szyperski2002} sind diese allein sozio-technisch
+begründeten Widersprüche der Ausgangspunkt für eine deutliche Abgrenzung der
+Begriffe \emph{Komponente} und \emph{Objekt}, in der die im Kontext der
+objekt-orientierten Programmierung erfolgte Zusammenführung von Funktion und
+Verhalten in Objektbegriff wieder zurückgenommen und die Rolle von Objekten
+konsequent auf das TRIZ-Prinzip 24 des \emph{Vermittlers} beschränkt wird.
+Ich komme weiter unten auf diese Problematik zurück.
+
+\section{Normierung und Standardisierung}
+
+Dieses Vorgehen in der Softwarebranche ist auch in vielen
+ingenieur-technischen Anwendungen präsent. „Baukastensysteme“ sind weit
+verbreitet und erlauben es, realweltliche technische Unikat-Systeme auf
+dieselbe Weise zu entwerfen wie im Konzertbeispiel erläutert. Während dort
+aber auf das \emph{private Verfahrenskönnen} der Musiker als Voraussetzung
+abgestellt wurde, werden hier die \emph{Logik der Fachanwendung} als „core
+concerns“ der Komponenten mit der \emph{Logik der Vernetzung} der
+Infrastruktur als „cross cutting concerns“ zusammengeführt. Beide Logiken sind
+orthogonal zueinander, womit die Trends 4.2 „of increasing system
+completeness“ und 4.4 „of transition to the supersystem“ einander praktisch
+entgegenwirken. 
+\begin{quote}\it 
+  \textbf{These 2:} Ein besseres beschreibungstechnisches Verständnis der
+  Infrastrukturanforderungen miteinander agierender Komponenten (Übergang zum
+  Obersystem) führt zu einer \emph{Abschwächung} der Anforderungen an die
+  Vollständigkeit der einzelnen Komponenten.
+\end{quote}
+Insbesondere die zur Begründung von Trend 4.2 in \cite{TESE2018} angeführte
+Hierachisierung in „operating agent“ (als Kernfunktion), „transmission“
+(Unterstützung durch ein Arbeitsmittel), „energy source“ (Einsatz von
+Naturkräften) und „control system“ (Einsatz von Steuerung als prozesshaftem
+technischen Teilsystem und Quelle des „Trends der Dynamisierung“) sind von
+diesen Entwicklungen betroffen, wie ein Besuch im Baumarkt unmittelbar zeigt
+-- die Maschinensysteme namhafter Hersteller konzentrieren sich auf die
+Bereitstellung der Energie, über entsprechende APIs (etwa Klett-, Schraub-
+oder Klickverschlüsse auf mechanischer Ebene) können passende Werkzeuge mit
+der Energiemaschine gekoppelt werden\footnote{Wobei durch Fortschritte der
+  Materialwissenschaften insbesondere mit Klettverschlüssen eine massive
+  Rückkehr zu \emph{mechanischen} Kopplungsprinzipien entgegen dem
+  TRIZ-Prinzip 28 des \emph{Austauschs mechanischer Wirkschemata} zu
+  verzeichnen ist.}, wobei je nach Geschäftsstrategie der namhaften Hersteller
+der jeweilige Technologie-Teilmarkt „passender Gerätschaften“ monopolisiert
+oder auch für weniger namhafte Hersteller von passenden Arbeitsmitteln
+geöffnet ist. In beiden Fällen spielen \emph{Normierung und Standardisierung}
+in dieser „Welt der technischen Systeme“, also inhärent sozio-technische
+Prozesse, eine deutlich größere Rolle als die Weiterentwicklungen der rein
+technischen Artefakte. Gleiches gilt auf der Ebene der Kontrollsysteme, wo
+programmierbare Universalsteuerungen wie die UVR 1611 der Firma Technische
+Alternative das „Herz“ vieler technischer Regelungen im Smart-Home-Bereich
+bilden.
+
+Ein solcher Normierungsprozess öffnet zugleich ökonomische Skaleneffekte für
+Standardkomponenten, d.h. für Umsetzungskonzepte, die sich bereits in Richtung
+„idealer Endresultate“ etabliert haben. Die Skaleneffekte wirken sich
+kosten\emph{senkend} pro Einzelstück aus und verschieben damit die Leitwirkung
+vom Wettbewerb um die bessere \emph{technische} Lösung zum Wettbewerb um die
+kostengünstigere \emph{ökonomische} Produktion.  Die S-Kurve endet also nicht
+unbedingt -- und wohl auch eher selten -- mit der Außerdienststellung im
+Stadium 4 \cite[S. 38]{TESE2018}, sondern geht auf dem Höhepunkt ausgereifter
+\emph{technischer} Qualität (einschließlich Normierung und Standardisierung)
+in eine Phase der \emph{allgemeinen Verfügbarkeit} über, in der die
+\emph{immer geringeren} ökonomischen Aufwendungen für die Verfügbarkeit dieses
+„Stands der Technik“ die Leitfunktion der weiteren Entwicklung übernehmen.
+
+Der Trend 4.1 „of increasing (technical) value“ schlägt dabei in einen Trend
+„of decreasing economic value“ um, oder -- um es in ökonomischen Termini
+auszudrücken -- der vorher durch die Nachfrage getriebene Markt geht in einen
+vom Angebot getriebenen Markt über: Derselbe (reife) Gebrauchswert hat einen
+immer geringeren Tauschwert.  Damit geht der Wert der „Idealität“
+\cite[Kap. 4.1.1]{KS2017} in der Tat durch die Decke, aber als Folge eines
+\emph{ökonomischen} Gesetzes.  Dies korrespondiert zum TRIZ-Prinzip 17 des
+\emph{Übergangs zu anderen Dimensionen}.
+\begin{quote}\it
+  \textbf{These 3:} Der (technische) Trend 4.1 „of increasing (technical)
+  value“ schlägt im Stadium 3 der S-Kurven-Entwicklung um in einen
+  (ökonomischen) „Trend of decreasing (economic) value“.
+\end{quote}
+Damit wechselt im Stadium 3 in der Produktion gängiger Werkzeuge und
+Standardkomponenten die Leitfunktion (MPV) der weiteren Entwicklung von den
+technischen Triebkräften zu den ökonomischen. Diesen Prozess der
+„Commodification“ hat F. Naetar in \cite{Naetar2005} hinreichend beschrieben;
+das Thema muss hier also nicht vertieft werden. Diese Entwicklung ist
+allerdings selbst widersprüchlich, wie in der marxistischen Literatur am
+Phänomen der \emph{tendenziell fallenden Profitrate} diskutiert wird:
+Geringere Produktionskosten durch technischen Fortschritt eines Produzenten
+erhöhen dessen Profitrate im Vergleich zu den Konkurrenten. Der Marktpreis
+(„decreasing economic value“) wirkt allerdings regulierend und senkt
+perspektivisch die Profitrate der Wettbewerber, die diesen technischen
+Fortschritt nicht oder zu spät implementieren.
+
+Das TRIZ-Prinzip 17 des \emph{Übergangs zu anderen Dimensionen}, auf das oben
+Bezug genommen wurde, erscheint hier allerdings -- im Gegensatz zur Lesart in
+der Komponente TRIZ-Theoriekörper -- nicht als \emph{abstraktes Designmuster},
+sondern als \emph{abstraktes Evolutionsmuster}, also nicht als Mittel der
+aktiven Beeinflussung eines Problemlöseprozesses, sondern als
+passiv-beobachtendes Beschreibungsmuster realweltlicher Entwicklungen.  In
+diesem Sinne kann aber auch \emph{jedes andere} der TRIZ-Prinzipien sowie auch
+jeder der TRIZ-Standards als abstraktes Evolutionsmuster formuliert
+werden. Umgekehrt erscheinen die Evolutionstrends in der Komponente
+TRIZ-Theoriekörper als weitere abstrakte Designmuster, die neben die
+„Prinzipien“ und die „Standards“ treten.
+\begin{quote}\it
+  \textbf{These 4:} Jedes der TRIZ-Prinzipien und jeder der TRIZ-Standards
+  kann auch überzeugend als „Trend der Evolution technischer Systeme“
+  formuliert werden und umgekehrt.
+\end{quote}
+Die Hierarchie der Evolutionsmuster gibt damit insbesondere Anlass zu einer
+„Hierarchie der Lösungsprinzipien“ \cite[Kap. 3]{Zobel2016}, wie Dietmar Zobel
+bereits vor über 10 Jahren vorgeschlagen hat, siehe auch \cite{Zobel2020}.
+Damit wird zugleich die Bedeutung der „Matrix“ entwertet. Leonid Shub
+\cite{Shub2006} weist darauf hin, dass dies auch Altschuller bereits 1985
+engeren Vertrauten gegenüber geäußert habe.  M. Rubin schlägt in
+\cite{Rubin2019} in diesem Sinne den Bogen von Entwicklungsgesetzen zu
+TRIZ-Standards und weiter zur Algorithmisierung von Vorgehensweisen in
+erfinderischen Praxen im ARIS, was genauer zu untersuchen bleibt.
+
+Mit dem Verzicht auf die Betrachtung sozio-ökonomischer Zusammenhänge bleibt
+die Bedeutung von Prozessen der Normierung und Standardisierung in
+\cite{TESE2018} allerdings ausgeblendet. Damit versperren sich die Autoren
+aber selbst den Blick in eine lebendige Welt technischer Systeme in einem
+fortgeschrittenen Zustand der Evolution. So zeichnet sich das technische
+System der \emph{Schraubverbindungen} durch eine Massenproduktion genormter
+Maschinenschrauben und Holzschrauben aus, was nun genauer ausgeführt werden
+soll.
+
+Für die Herstellung von Maschinenschrauben ist hohe Präzision und Stimmigkeit
+von Durchmesser und Anstellwinkel der Gewinde erforderlich, damit diese mit
+den Gegen"|stücken zusammenpassen.  Diese Präzision wird nicht nur durch eine
+industrielle Herstellungsweise erreicht, sondern für Spezialanwendungen auch
+mit entsprechenden Werkzeugen -- etwa einem Gewindeschneider.  Mit Schlitz-,
+Kreuzschlitz-, Sechskant-, Senkkopf-, Inbus- usw. -schrauben gibt es ein
+großes Sortiment vorgefertigter Lösungen für verschiedene Einsatzszenarien
+(TRIZ-Prinzip~3 der \emph{lokalen Qualität}), dazu entsprechende Werkzeuge:
+Schraubenschlüssel, Steckschlüssel, Schraubendreher, Inbus-Schlüssel
+usw. (noch einmal TRIZ-Prinzip 3), sowohl als Einzelwerkzeuge wie auch als
+Einsätze für den Akkuschrauber als Energiemaschine (TRIZ-Prinzip 1 der
+\emph{Zerlegung}, TRIZ-Standard 3.1 \emph{Übergang zu einem Bi-System}).
+Biegsame Schraubendreher\footnote{Amazon bietet ein solches 31-teiliges Set
+  der Firma Lotex GmbH für 20,99 Euro an.} (zusammen mit dem Akkuschrauber
+TRIZ-Standard 3.1 \emph{Übergang zu einem Poly-System}) können verwendet
+werden, um Schraubverbindungen auch an schwer zugänglichen Stellen einzusetzen
+usw.
+
+Die Welt der Holzschrauben vermeidet das Zwei-Komponenten-System (noch einmal
+TRIZ-Standard 3.1: Schraube und Mutter), indem der Halt im zu bearbeitenden
+Material selbst gesucht wird (Trend 4.6 \emph{of increasing degree of
+  trimming} -- wieso gehört diesTrimmen als zentrale TRIZ-Methode weder zu den
+„Prinzipien“ noch zu den „Standards“?), entweder durch Vorbohren (TRIZ-Prinzip
+10 \emph{der vorherigen Wirkung}) oder durch eine selbstschneidende Schraube
+(TRIZ-Prinzip 25 der \emph{Selbstbedienung} oder auch wieder Trend 4.6 des
+\emph{Trimmens}). Leider bieten manche Materialien diesen Halt nicht, es
+kommen zusätzlich \emph{Dübel} zum Einsatz (TRIZ-Nicht-Trend des
+\emph{Anti-Trimmens}), inzwischen eine eigene Welt technischer Lösungen, die
+das Herz jedes TRIZ-Praktikers höher schlagen lässt.  Und da haben wir noch
+nicht über spezielle Anwendungen von Schraubverbindungen wie in der Chirurgie
+gesprochen, wo wesentliche Parameter an Material und Zuverlässigkeit aus den
+Bedingungen des Obersystems zu sehr speziellen Systemlösungen führen.
+
+Ich habe diese Welt so ausführlich beschrieben, um drei Aspekte zu
+verdeutlichen:
+\begin{itemize}
+\item [1.] Es ist eine Welt technischer Systeme, in der Prinzipien des
+  Problemlösens auf TRIZ-Basis eine wichtige Rolle spielen.
+\item [2.] Das strukturierende Moment in jener Welt sind nicht die technischen
+  Systeme, sondern die \emph{technischen Prinzipien}.
+\item [3.] Die 10 „Trends“ sind wenig hilfreich, um sich in dieser Welt
+  hochvolatiler Anforderungssituationen zurecht zu finden, weil stets nach
+  \emph{konkreten} Lösungen in \emph{konkreten} Kontextualisierungen gefragt
+  wird, und dabei nicht die „Evolution einzelner technischer Systeme“ eine
+  Rolle spielt, sondern ein globaler \emph{Stand der Technik}, in dem sich die
+  „Evolution der Welt der technischen Systeme“ als Ganzes spiegelt. 
+\end{itemize}
+
+Nun soll an dieser Stelle nicht das Kind mit dem Bade ausgeschüttet werden,
+denn die Beobachtungen des letzten Abschnitts haben sich aus der Inspektion
+eines Bereichs der Evolution technischer Systeme ergeben, der in
+\cite{TESE2018} ausgeblendet bleibt.  Insofern hat das Ergebnis unserer
+Untersuchungen den Charakter einer \emph{partiellen TRIZ-Lösung} und es bleibt
+die Frage zu beantworten, in welcher Kontextualisierung sich die
+Argumentationen in \cite{TESE2018} bewegen. Wir hatten gesehen, dass die
+Autoren -- im Gegensatz zu N. Shpakovsky \cite{Shpakovsky2010} -- die
+Entwicklungslinien \emph{nicht} um technische Prinzipien herum bauen, sondern
+nur Entwicklungsbereiche betrachten, wo eine solche Ablösung technischer
+Prinzipien von technischen Systemen noch nicht erfolgt ist.  Wir
+diagnostizieren hier widersprüchliche Beschreibungsformen von zwei klar
+voneinander getrennten Welten, so dass sich die Frage aufdrängt, ob dieser
+Widerspruch mit dem TRIZ-Prinzip 36 der \emph{Anwendung von Phasenübergängen}
+zu lösen ist, der hinter dem Wechsel der Leitfunktion von einer technischen zu
+einer ökonomischen Dimension zu vermuten ist.
+
+Vor einer vertiefenden Betrachtung dieser Frage ziehen wir hier zunächst
+wieder ein Zwischenfazit.  Auf der Suche nach Strukturierungsprinzipien, die
+einer Theorie der Evolution technischer Systeme zu Grunde gelegt werden
+könnten, haben wir Normierungen und Standardisierungen näher analysiert. Wir
+haben herausgearbeitet, dass diese eine zentrale Rolle spielen in einem
+Transformationsprozess in der Welt technischer Systeme selbst -- dem Übergang
+von einer primären Problemhaftigkeit einer „jungen“ Technologie zur
+allgemeinen Verfügbarkeit einer „reifen“ Technologie.  Mit einem solchen
+Phasenübergang ist zugleich ein allgemeines Agens der Entwicklung technischer
+Systeme aufgedeckt, das in \cite{TESE2018} aus offensichtlich strukturellen
+Gründen keine Rolle spielt -- der Erfahrungshintergrund von \cite{TESE2018}
+sind, wie von weiten Teilen der TRIZ, die erfinderischen Praxen \emph{vor}
+diesem Phasenübergang, die sich an Patenten und der Weiterentwicklung des
+„Stands der Technik“ orientieren.  Die zweite Phase aber, der flächendeckende
+Betrieb einer allgemein verfügbaren Technologie, ist ebenfalls voller
+Widersprüche und Gegenstand der Praxen einer neuen Generation von TRIZniks,
+die viel enger mit den unmittelbaren Erfordernissen einer technisierten
+\emph{Produktion} verbunden sind.  Vom Grundsatz her geht es dabei um die
+\emph{Aufrechterhaltung einer gesellschaftlichen Normalität} als Grundlage der
+„Fiktionen“ der „Normalbürger“ über das Funktionieren ihrer technischen
+Umwelt.  Beides -- „Fiktionen“ und „Normalbürger“ -- steht hier in Quotes, da
+sich dahinter komplizierte Prozesse der Komplexitätsreduktion von
+Beschreibungsdimensionen verbergen, die in einem gesellschaftlichen
+Synchronisationsverhältnis stehen, das sich parallel zur Entwicklung
+technischer Systeme entwickelt.
+\begin{quote}\it
+  \textbf{These 5:} Die Evolution technischer Systeme bleibt ohne die
+  Einbeziehung der Evolution alltäglicher reduktionistischer Vorstellungen
+  über das Funktionieren von Technologien des Alltags unverständlich.   
+\end{quote}
+
+Die Betrachtungsperspektive in \cite{Shpakovsky2010} der \emph{Verbesserung
+  vorgefundener} technischer Systeme, um Erfahrungen aus der Beratung großer
+Produktionsbetriebe wie SAMSUNG genauer zu analysieren, nimmt die Phase 2 der
+allgemeinen Verfügbarkeit einer Technologie stärker in den Blick und kommt
+dabei auch zu einem anderen Verständnis der Entwicklung technischer Systeme
+als \cite{TESE2018}.
+
+\section{Zwecke}
+
+In den letzten zwei Abschnitten haben wir uns der Frage nach dem Begriff
+\emph{Technisches System} von zwei Seiten her zu nähern versucht. Die eine
+Richtung startete beim Bedarf des sozio-ökonomischen Systems nach einem
+\emph{Ideengenerator} und war schnell bei den Problemlösepraxen der
+TRIZ-Praktiker angekommen. Der andere Weg führte über Normierungen und
+Standardisierungen in eine Welt der Allgemeinverfügbarkeit technischer
+Systeme, in der es keine Probleme mehr zu geben scheint, denn alles
+funktioniert hervorragend -- wenigstens so lange die mit der Nutzung
+verbundene \emph{Fiktion} gesellschaftlich aufrecht erhalten werden kann.
+
+Aus beiden Richtungen landen wir in einer \emph{Welt technischer Systeme} oder
+vielleicht auch nur technischer Artefakte, die Jürgen Mittelstraß in einem
+umstrittenen Aufsatz \cite{Mittelstrass2011} als „schöne neue Leonardowelt“
+bezeichnet hat.  Vielleicht sind es aber auch keine „Artefakte“ sondern eher
+„technische Objekte“, die N. Shpakovsky in \cite{Shpakovsky2003} als
+Ausgangspunkt für die Frage nimmt, ob denn jede Ansammlung technischer Objekte
+bereits als technisches System bezeichnet werden kann oder welche zusätzlichen
+Anforderungen hierfür zu stellen sind.  Dieselbe Frage muss sich die
+VDI-Definition gefallen lassen.
+
+Shpakovskys Antwort lautet, dass sich technische Systeme durch einen
+\emph{wohldefinierten Zweck} auszeichnen, der \emph{von außen} vorgegeben ist
+und den sie erfüllen müssen.  Der hier entwickelte Systembegriff ist für eine
+solche Sichtweise gut geeignet, denn mit der \emph{Spezifikation} der
+Komponente können Zwecke gut und genau formuliert werden. Weniger klar ist
+zunächst, \emph{woher} diese Zwecke kommen.  Die TRIZ-Antwort ist eindeutig:
+„Aus dem Obersystem“. Allerdings hatten wird in unserer Analyse festgestellt,
+dass es durchaus \emph{mehrere} Obersysteme zu einem System geben kann und der
+Begriff eines \emph{benachbarten} Systems der Situation eher angemessen ist.
+Denkt man die Welt der technischen Systeme zunächst ohne Hierarchisierungen,
+so finden wir eine Welt von \emph{Beziehungen} zwischen technischen Systemen
+vor, aus denen heraus \emph{Zwecke} erklärt werden können: \emph{Jenes}
+technische System ist entwickelt worden, weil \emph{dieses} dessen nützliche
+Funktion als Betriebserfordernis benötigt. Der Zweck \emph{jenes} Systems ist
+es also, \emph{diesem} zu dienen.  Technische Objekte \emph{bündeln} auf diese
+Weise Funktionen und Dienste verschiedener Komponenten, um selbst Dienste
+anzubieten.  Auch an dieser Stelle bietet sich wieder ein Substanz-Feld-Swap
+an -- das Relationale, die einzelne Funktion, den einzelnen Dienst als
+Substanz zu betrachten und die Funktionen bündelnden technischen Objekte als
+Relationen, als Vermittler zwischen diesen Funktionen.  \emph{Zwecke} sind in
+einem solchen Verständnis aus menschlichen Praxen erwachsende
+\emph{Anforderungen}, nach denen solche Funktionsbündel zusammengestellt
+werden.  \emph{Entwicklungslinien} solcher als Funktionsbündel entstandener
+technischer Systeme beginnen bei einfachen Kompositionsprinzipien -- zu einer
+Schraube eine passende Mutter finden --, reichen über bewährte
+Verfahrensweisen -- was ist beim Streichen eines Fensters zu beachten? Welche
+Farben auswählen? Welche Pinsel? Wie den Untergrund vorbereiten? Wie
+streichen? -- bis hin zu höheren Abstraktionsformen wie etwa der Form, die
+benötigt wird, um eine größere Menge von Ziegelsteinen aus Lehm zu formen,
+diese zu brennen und dann aus ihnen ein ganzes Haus zu errichten.
+
+Diese Zwecke strukturierenden Abstraktionen sind allerdings nicht willkürlich,
+sondern folgen ihrerseits \emph{Zwecken zweiter Ordnung}.  Szyperski
+\cite[S. 139\,ff.]{Szyperski2002} identifiziert unter der Überschrift „Aspekte
+der Skalierung und Granularität“ eine längere Liste solcher „Zweck-Muster“,
+nach denen \emph{Funktionen} zu Einheiten gebündelt -- also als Komponenten
+zugeschnitten -- werden: Als
+\begin{itemize}\itemsep0pt
+\item Einheit der Abstraktion („design expertise embodied ready for use“)
+\item Einheit der Abrechnung (Einheit der Kostenüberwachung)
+\item Einheit der Analyse (Einheit der Fehlersuche)
+\item Einheit der Übersetzung (Einheit eines Transformationsprozesses)
+\item Einheit der Auslieferung (Einheit des Transports)
+\item Einheit der Entpackung (Bausatz samt Montageanleitung)
+\item Einheit der Disputation (Einheit der Auseinandersetzung um
+  Verantwortlichkeiten) 
+\item Einheit der Erweiterung 
+\item Einheit des Fehlereinschlusses (fault containment)
+\item Einheit der Instanziierung
+\item Einheit der Installation
+\item Einheit des Ladens usw.
+\end{itemize}
+Diese \emph{Zwecke zweiter Ordnung} sind ihrerseits nicht unabhängig
+voneinander, wie \cite[S. 145]{Szyperski2002} bemerkt -- eine Einheit der
+Analyse kann nicht sinnvoll in \emph{mehrere} Einheiten der Erweiterung
+aufgebrochen werden.
+
+Diese vielfältigen \emph{Praxen des Komponentenzuschnitts} stehen ihrerseits
+nicht losgelöst voneinander, sondern konstituieren eigene Welten praktischer
+Interaktionen und Erfahrungen. Im \emph{Komponentenframework} werden diese
+Erfahrungen normiert und standardisiert.  Die Allgegenwart und Bequemheit der
+Nutzung technischer Objekte reproduziert sich damit auf der Ebene
+ingenieur-technischer Tätigkeit, auf der es aber wiederum nicht die Prinzipien
+selbst, sondern die \emph{Passfähigkeit der Prinzipien} ist, auf die es
+ankommt.  Auch diese Passfähigkeit fällt nicht vom Himmel, sondern ist
+ihrerseits ein Resultat \emph{vernünftiger menschlicher Praxen}.
+
+Die Welt der technischen Systeme ist damit in eine Welt der Beziehungen
+zwischen technischen Systemen eingebettet, in der sich komplexe
+sozio-technische Beziehungen spiegeln, die von konkreten Zwecken getrieben
+werden. Diese Zwecke sind ihrerseits mannigfach aufeinander bezogen, und es
+ist diese Beziehungsstruktur, die Gegenstand einer Strukturierung durch
+„Zwecke zweiter Ordnung“ ist.  Dass damit das Ende der Fahnenstange noch nicht
+erreicht ist, sondern Komponentenframeworks selbst durch übergreifende
+\emph{Entwurfsmuster} \cite{Gamma1995} und Prozess"|templates wie „dependency
+injection“ oder „inversion of control“ strukturiert werden usw., muss hier
+sicher nicht im Detail erörtert werden.
+
+Wir haben in diesem Abschnitt gesehen, dass es zur Untersuchung evolutionärer
+Aspekte wichtiger sein könnte, die Welt der \emph{Beziehungen} zwischen
+technischen Systemen in Augenschein zu nehmen als die Welt der technischen
+Systeme selbst. In unserem systemtheoretischen Ansatz wird eine solche
+Beziehung als Beziehung zwischen Komponenten eines Systems primär
+\emph{funktional} betrachtet als Spezifikation in der Beschreibungsdimension
+und als Versprechen garantierter spezifikationskonformer Leistung in der
+Vollzugsdimension. Gegenstand der TRIZ-\emph{Methodik} ist die Transformation
+des einen in das andere. Sie ist dabei selbst nur Beschreibungsform, die den
+Domänenexperten hilft, diese Transformation \emph{praktisch} zu organisieren.
+Funktionen erscheinen in diesem Transformationsprozess in drei Modi:
+\emph{vor} der Transformation als \emph{Zweck}, als etwas, das man gern in der
+Welt haben würde, \emph{in} der Transformation als Implementierung und
+\emph{nach} der Transformation als \emph{Dienst}, als realisiertes
+Versprechen. 
+\begin{quote}\it
+  \textbf{These 6:} Technische Systeme erscheinen als Funktionsbündel, deren
+  einzelnes Element -- die Funktion -- in drei verschiedenen Modi: als Zweck,
+  als Implementierung und als Dienst.
+\end{quote}
+Wir haben zugleich herausgearbeitet, dass sich derartige
+Transformationsprozesse auch auf höheren Ebenen der Abstraktion in der Welt
+technischer Systeme vollziehen. Standardisierungen auf höherer
+Abstraktionsebene richten sich allerdings nicht so sehr auf Wiederverwendung
+(reuse) als auf gemeinsame Nutzung (sharing). In \cite[Kap.9 ]{Szyperski2002}
+werden unter der Überschrift „Pattern, Frameworks, Architectures“
+(informatische) Beispiele einer solchen \emph{gemeinsamen Verwendung} genannt:
+\begin{itemize}\itemsep0pt
+\item sharing consistency -- programming languages
+\item sharing concrete solution fragments -- libraries
+\item sharing individual contracts -- interfaces
+\item sharing individual interaction fragments -- messages and protocols
+\item sharing individual interaction architectures -- patterns
+\item sharing architectures -- frameworks
+\item sharing overall structure -- system architectures
+\item system of subsystems -- framework hierarchies
+\end{itemize}
+
+\section{Schichtenarchitekturen}
+
+Im letzten Abschnitt hatten wir herausgearbeitet, das Zwecke,
+Implementierungen und Dienste nicht nur auf der unmittelbaren technischen
+Ebene bedeutsam sind, sondern auch \emph{Zwecke höherer Ordnung} auf die
+Lebenswirklichkeit strukturierenden Einfluss haben, sich in
+\emph{Verfahrensweisen} implementieren und auf diese Weise zu
+\emph{referenzierbaren Diensten} werden.
+
+Ein Beispiel hierfür sind die Trends der Evolution ingenieur-technischer
+Systeme \cite{TESE2018} selbst, die mit der Autorität der MATRIZ als
+internationaler TRIZ-Organisation in die entsprechenden Zertifikatsprozesse
+integriert und so zu einem gewissen Gemeingut werden.  Noch viel deutlicher
+wird dies allerdings in Komponentenframeworks der Softwarebranche, wo die
+Entwicklung einer Lösung unter Verwendung eines solchen Frameworks bereits die
+Modellierung vorstrukturiert. Kooperative Zusammenhänge, die sich in solche
+gemeinsamen Abstraktions"|strukturen einbetten, haben es in derartigen weithin
+bekannten und akzeptierten Kontexten um ein Vielfaches leichter, sich zu
+verständigen.  Normierung und Standardisierung vereinfacht also nicht nur die
+Bündelung auf der Ebene technischer Strukturen, sondern auch auf höheren
+Abstraktionsebenen menschlicher Gestaltungspraxen.
+
+Normierung und Standardisierung sind das zentrale Mittel, um Vorgehensweisen
+als \emph{Stand der Technik} zu befestigen und auf diese Weise
+\emph{Fiktionen} gesellschaftlicher Normalität zu generieren, auf die
+komplexere technische Prozesse mit höheren Abstraktionen aufsetzen können. Das
+TRIZ-Prinzip 7 \emph{Matrjoschka} ist nur eine unterkomplexe Formulierung der
+damit verbundenen begriff"|lichen Anforderungen, denn wie in den Proben im
+Konzertbeispiel ist das entsprechende Zusammenspiel technischer Prinzipien und
+technischer Abstraktionen höherer Ordnung, das mit der Standardisierung
+erreicht werden soll, primär eines der Herstellung der Passfähigkeit der
+begleitenden Beschreibungsdimensionen, also des Generierens von
+\emph{Sprache}, in welcher die neuen Semantiken ausgedrückt werden können. Die
+\emph{begriff"|liche} Harmonisierung der Standards als \emph{Semantik} ist der
+\emph{technischen} Normierung als \emph{Syntax} vorgängig, aber erst beide
+zusammen können in einer \emph{sozio-technischen Verfahrensweise} als
+Grundlage für eine neue \emph{Fiktion} verdichtet werden. Erst \emph{nach}
+Durchlaufen eines solchen Prozesses können etwa Schraubverbindungen im Sinne
+einer verkürzten Sprechweise als \emph{gesellschaftliche Normalität} ihre
+Wirkung entfalten, mit der bereits Kleinkinder mit ihren ersten Lego-Baukästen
+vertraut gemacht werden.  Damit wird zugleich deutlich, dass dieses
+\emph{Schöpfen von Sprache} nicht willkürlich ist, sondern sich an den
+\emph{Pragmatiken} (Praxen) gesellschaftlicher Herausforderungen orientiert.
+
+Derartige \emph{Schichtenarchitekturen} spielen allerdings nicht nur auf der
+Seite der Beschrei"|bungs- und Verständigungsdimension eine entscheidende
+Rolle bei der Reduktion von Komplexität, die zum Erklimmen immer höherer
+Abstraktionsebenen technischer Praxen erforderlich ist, sondern auch in der
+Vollzugsdimension, was nun am Beispiel des OSI-7-Schichten-Modells näher
+erläutert werden soll. Dieses Modell beschreibt das Funktionieren heutiger
+Internetverbindungen und hat sich -- seit den ersten ARPA-Net-Versuchen 1974
+-- in etwa 40 Jahren \emph{technischer Evolution} zur Grundlage unserer
+heutigen \emph{digitalen Praxen} mit ihrer Fiktion der allgemeinen
+Ende-zu-Ende-Verbindbarkeit entwickelt\footnote{Dass dies eine \emph{Fiktion}
+  ist, weiß nicht nur das Viertel der Weltbevölkerung, das hinter der „Great
+  Chinese Firewall“ lebt, sondern wurde auch im „Arabischen Frühling“ 2012 mit
+  der Komplettabschaltung des Netzes in Ägypten durch die damaligen Machthaber
+  deutlich. Dummerweise traf jene Abschaltung auch die Wirtschaft und wurde
+  deshalb nach 10 Tagen zurückgenommen. Seither haben sich die Techniken der
+  punktuellen Ausblendung einzelner Teilnehmer und Teilnehmergruppen aus
+  dieser Fiktion aber weiter verfeinert wie auch die Techniken des Widerstands
+  dagegen.}.
+
+Die unterste Ebene des OSI-Protokollstacks dient der Herstellung der
+\emph{Fiktion}, dass Bitfolgen verschickt werden.  Dabei ist der Widerspruch
+zwischen der Verschiedenheit der physikalischen Trägermedien und der
+Einheitlichkeit der erforderlichen Abstraktion zu lösen. Die API-Spezifikation
+ist denkbar einfach -- der Zustandsraum besteht aus Worten über einem Alphabet
+aus zwei Buchstaben, die Folge der Buchstaben wird durch einen zeitlichen
+Pulsbetrieb (TRIZ-Prinzip 19 der periodischen Wirkung) dargestellt, womit sich
+die \emph{Pragmatik} auf die einfache Frage der Darstellung von zwei
+verschiedenen Zuständen reduziert, die durch das allgemeine Prinzip des
+„Triggern“ umgesetzt wird\footnote{Trigger spielen in vielen technischen
+  Prozessen als Schwellwerte, die Events auslösen, eine wichtige Rolle. Ihr
+  bewusster Einsatz wirkt sich in nachgeordneten Systemen wie ein (technisch
+  geschaffener) \emph{Phasenübergang} aus.  Wie ordnet sich ein solches weit
+  verbreitetes Verfahren in die TRIZ-Systematik ein?}, indem über das Setzen
+von Schwellwerten analoge Prozesse „digitalisiert“ werden.  In den jeweiligen
+Implementierungen des Standards werden damit die verschiedenen Prinzipien der
+physikalischen Trägermedien in einer einheitlichen \emph{Semantik}
+zusammengefasst und als API-Spezifikation formalisiert, damit die nächste
+Ebene des Protokollstacks auf diese \emph{formalisierte Semantik} als
+\emph{Syntax} zugreifen kann. Ein wesentliches Charakteristikum ist dabei die
+\emph{Taktrate}, also die Geschwindigkeit, in welcher der jeweilige Knoten die
+Bitfolgen „produziert“.  Neue Trägermedien (wie etwa WLAN) lassen sich in eine
+solche Architektur leicht einbauen, denn sie müssen nur die vorgegebene
+Spezifikation \emph{implementieren}.
+
+Die zweite Ebene des Protokollstacks geht von der Fiktion der Bitfolgen aus
+und löst ein elementares Problem (Pragmatik) der Übertragung solcher Bitfolgen
+zwischen zwei Knoten des Netzes.  Der dabei zu lösende Widerspruch ist der
+zwischen differierenden Taktraten der beiden Knoten -- das Problem der
+Übertragungsgeschwindigkeit.  Dazu werden die Bitfolgen in \emph{Frames} als
+Übertragungseinheiten konstanter Größe unterteilt und deren korrekte
+Übertragung einschließlich Fehlerbehandlung auf dieser Ebene sichergestellt.
+Die Semantik der sicheren Übertragung führt dazu, dass die Fiktion der
+Bitfolgen durch die Fiktion der von Knoten zu Knoten übertragenen Frame-Folgen
+als syntaktische Basis für die nächste Ebene des Protokollstacks abgelöst
+wird.  Der Begriff der Taktrate spielt nun keine Rolle mehr. 
+
+Die dritte Ebene des Protokollstacks organisiert auf dieser Basis das Routing
+und Weiterleiten über größere Entfernungen.  Der zu lösende Widerspruch
+besteht darin, dass das Ziel der Übertragung bekannt ist, nicht aber der Weg
+dorthin.  Die hierfür geschaffene neue Sprachform sind \emph{Datenpakete} als
+weitere Abstraktion, die auf der sicheren Übertragung der Frames von Knoten zu
+Knoten aufsetzt und die Paketübertragung über weitere Entfernungen
+organisiert.  Während auf der Frame-Ebene die beteiligten Knoten bekannt und
+Teil der Input-Spezifikation der Schnittstelle sind, ist nun das Problem
+(Pragmatik) der Identifizierung entsprechender Wege zum Zielknoten zu lösen,
+wofür entsprechende Routingalgorithmen und Routingprotokolle als
+\emph{Sprache} zu vereinbaren waren.  Dabei ist die \emph{Verfügbarkeit der
+  Sprache der Frames} eine essentielle Voraussetzung für das Entwickeln der
+neuen Sprachformen, denn dabei sind vielfältige Informationen zwischen
+benachbarten Knoten auszutauschen und komplexe Informationen lokal zu
+aggregieren.  Während die Lösungen der Probleme auf den ersten beiden Ebenen
+des Protokollstacks nur \emph{lokale} sozio-technische Abstimmungen erfordern,
+ist für diese dritte Ebene eine \emph{globale} Abstimmung erforderlich, denn
+die zu entwickelnde Sprache müssen \emph{alle} Knoten im Internet sprechen,
+wenn die Paketvermittlung global funktionieren soll. Die weitgehend
+anarchistische, aber auch heute noch gut funktionierende Lösung dieser
+sozialen Aufgabe durch die Internetpioniere ist bekannt -- die Gründung der
+IANA als „technische Weltregierung des Internets“ im Jahre 1988.  Auch ein
+Designfehler der damaligen Lösung konnte inzwischen erfolgreich beseitigt
+werden -- die (aus damaliger Sicht extrem großzügige) Abschätzung der
+erforderlichen Internetadressen mit $2^{32}$, also etwa 4 Milliarden, die dem
+Protokoll ipv4 zu Grunde liegt, wurde und wird durch ipv6 mit einem Adressraum
+von $2^{128}\approx 3.4\cdot 10^{38}$ ersetzt.
+
+Damit ist zugleich ein Mechanismus der \emph{Höherentwicklung} technischer
+Systeme angedeutet, der in den Evolutionsbetrachtungen weder in
+\cite{TESE2018} noch in \cite{Shpakovsky2010} eine Rolle spielt.
+
+Wir sehen an diesem Beispiel zugleich, wie die „Herausnahme des Menschen aus
+technischen Systemen“ funktioniert, denn das Internet ist ja ein
+fortgeschrittenes technisches System, das komplett ohne Zutun des Menschen
+funktioniert. Komplett?  Das bezieht sich allein auf die operative Ebene der
+Vollzugdimension. Die Herstellung der erforderlichen Ausrüstung, der Betrieb
+der Infrastruktur als Service für die vergesellschaftete Menschheit, die
+„Aufrechterhaltung der Fiktion“, Reparatur und Planung von Erweiterungen sind
+ohne aktiv tätige Menschen nicht denkbar. Diese zerfallen allerdings, bezogen
+auf eine konkrete Technologie, in zwei Gruppen -- die große Gruppe der
+„Normalos“ und die kleine Gruppe der „Experten“. Erstere können mit der
+Beschreibungsform auf der Eebene der Fiktion leben, um mit begründeten
+Erwartungen verantwortungsbeladen am gesellschaftlichen Leben teilzunehmen.
+Die kleine Gruppe der Experten in jener Technologie kennt sich auch mit der
+Implementierung aus. In ihrem \emph{privaten Verfahrenskönnen} spiegelt sich
+die Arbeitsteiligkeit der modernen Industriegesellschaft.  Allerdings ist
+dieser Faden dünn und kann reißen, besonders unter sozio-ökonomisch prekären
+Bedingungen, wie wir von Tschernobyl wie auch Fukushima wissen. In meiner
+These~1 kommt diese Fragilität moderner Technik-Semiotik zum Ausdruck. Wichtig
+ist nicht so sehr die Beschreibungsdimension, als vielmehr deren Verankerung
+als \emph{privates Verfahrenskönnen} konkreter Menschen in der
+Vollzugsdimension.
+\begin{quote}\it
+  \textbf{These 7:} Jeder „Experte“ ist „Normalo“ in Bezug auf fast alle
+  Technologien. 
+\end{quote}
+Mit dem bisher entwickelten Ansatz bewegen wir uns im Kontext des
+Technikbegriffs, der in meiner Vorlesung genauer entwickelt wird und drei
+Dimensionen umfasst -- das \emph{gesellschaftlich verfügbare Verfahrenswissen}
+(Stand der Wissenschaft), \emph{institutionalisierte Verfahrensweisen} (die
+technischen Prinzipien, die in \cite{Shpakovsky2010} als
+Strukturierungsgrundlage für Evolutionslinien verwendet werden) und
+\emph{privates Verfahrenskönnen} (mindestens einer entsprechend ausgebildeten
+Schicht von Ingenieuren und Technikern als „Träger von Vernunft“ im Sinne von
+\cite{Vernadsky2001}).
+
+\section{Komponenten und Objekte}
+
+Mit der funktionalen Orientierung auf Zwecke, Implementierungen und Dienste
+bleibt das \emph{Target}, das \emph{Objekt} jener funktionalen Einwirkungen
+eigentümlich im Dunkeln. In der TRIZ-Terminologie ist vom \emph{bearbeiteten
+  Objekt} die Rede, das durch entsprechende funktionale Transformationen durch
+ein \emph{Werkzeug} zu einem \emph{nützlichen Produkt} wird. Das Werkzeug,
+insoweit es selbst hergestellt werden muss, ist seinerseits \emph{Objekt}, oft
+zur Verdeutlichung auch \emph{technisches Objekt}, aber in der
+Einsatzperspektive \emph{Werkzeug $\to$ bearbeitet $\to$ Objekt} ist es nur
+noch Träger von Funktionalität. Wichtig ist allein \emph{bearbeitet $\to$
+  Objekt}, die spezifikationskonforme Erfüllung einer Funktion, weniger das
+genaue Instrument. \cite{Shpakovsky2003} fragt sogar, wann eine Sammlung
+technischer Objekte zu einem technischen System wird. Bei den dabei
+betrachteten technischen Objekten kann es sich aber nur um Werzkeuge oder
+Komponenten handeln, denn anderes ist nicht zu einem technischen System
+aggregierbar. Kurz, in der TRIZ-Literatur werden die Begriffe Komponenten und
+Objekt in einer weitgehend unscharfen Synonymität verwendet.
+
+Szyperskis Buch \cite{Szyperski2002} dagegen fundiert auf einer klaren
+Unterscheidung zwischen diesen beiden Begriffen. Eine \emph{Komponente} wird
+durch drei Eigenschaften charakterisiert:
+\begin{itemize}
+\item[(1)] als Einheit der unabhängigen Verteilung,
+\item[(2)] als Einheit der Komposition durch Dritte und
+\item[(3)] als etwas, das keinen (extern beobachtbaren) Zustand hat.
+\end{itemize}
+Besonders die dritte Charakterisierung ist für unsere Zwecke interessant, denn
+in diesem Verständnis ist eine Komponente ein rein funktionales Konstrukt ohne
+„Gedächtnis“, ein über eine Spezifikation definiertes Bündel von Funktionen,
+das -- so (2) -- komplett entkontextualisiert und von Dritten
+rekontextualisiert werden kann.  Dass ein solcher Transformationsprozess in
+übergeordneten sozio-technischen Beziehungen zwischen Anbieter und Nutzer
+selbst wieder kontextualisiert ist, hatten wir weiter oben schon
+herausgearbeitet.  In diesem Sinne ist -- nicht unerwartet -- Szyperskis
+Komponentenbegriff also selbst reduktionistisch.  In den Charakteristika (1)
+und (2) wird aber auch in diesem Ansatz deutlich, dass der sozio-technische
+Charakter nicht von einem technischen abgetrennt werden kann.
+
+Ein \emph{Objekt} wird in \cite{Szyperski2002} durch folgende drei
+Charakteristika gekennzeichnet:
+\begin{itemize}
+\item [1.] als Einheit der Instanziierung, die eine eindeutige Identität hat, 
+\item [2.] als etwas mit extern beobachtbaren Zustand,
+\item [3.] das Zustand und Verhalten kapselt.
+\end{itemize}
+Während es in einem solchen Konzept keinen Sinn hat, mehr als eine Komponente
+einer Art im System zu haben (da sie zustandslos sind, könnten wir sie nicht
+einmal unterscheiden), ist in den Objekten die gesamte systemische
+Individualität gebündelt.
+
+Als klassisches Beispiel wird eine Datenbank angeführt -- der Datenbankserver,
+der die komplexe Transaktionsfunktionalität zur Verfügung stellt, ist die
+Komponente, die einzelnen Datenbanken die Objekte.  Dabei wird auch die
+sozio-ökonomische Stellung des „unabhängigen Dritten“ deutlich. Der Anbieter
+der Komponente, der Datenbankhersteller, liefert die Komponente, die
+Datenbanksoftware, aus, die als „Einheit der Verteilung“ auf einem Rechner des
+Kunden installiert wird. Dieser „unabhängige Dritte“ baut diese Komponente in
+seine eigene Middleware-Architektur als „Einheit der Komposition“ ein.  Ihre
+Wirkung entfaltet die Komponente aber erst durch die Bearbeitung von Objekten,
+der Datenbanken und Datensätze, die der Kunde (!) gestaltet, zur Verfügung
+stellt und verantwortet.
+
+Die klare Unterscheidung der Begriffe Komponente und Objakt, die Szyperski
+hier vornimmt, zeichnet damit die realweltliche Trennung der
+Verantwortungsbereiche von Anbieter und Kunde in einer servicebasierten
+Wirtschaft nach: der Anbieter liefert ein \emph{Bündel von Funktionen}, das im
+Verantwortungsbereich des Kunden \emph{auf den Objekten des Kunden} seine
+Funktionalität entfaltet. Wenn etwas schief geht, dann kann es am Anbieter
+gelegen haben -- es lag eine Fehlfunktion vor --, es kann aber auch am Kunden
+gelegen haben -- die bearbeiteten Objekte waren fehlerhaft. Diese Fragen
+werden heute üblicherweise in Service Level Agreements geregelt, erläutern
+aber den Untertitel „Beyond Object-Oriented Programming“ von
+\cite{Szyperski2002}.  Die Zusammenführung von Funktion und Attribut in
+lokalen Objekten als Kern des OO-Paradigmas wird (wieder) aufgelöst und dem
+Objekt eine passive Rolle zugeschrieben, die von Zustand als
+Attribut\emph{wert} und Verhalten als \emph{Reaktion} auf funktionale
+Einwirkung determiniert wird.
+
+In einem solchen Verständnis sind Objekte Träger des Gedächtnisses in der Welt
+der technischen Systeme. Sie sind es, die sich „merken“, was mit ihnen
+funktional unternommen wurde.  Während in der TRIZ im Grundzusammenhang
+\emph{Werkzeug $\to$ bearbeitet $\to$ Objekt} die einzelne Funktion im
+Vordergrund steht, steht das von vielen Komponenten bearbeitete Objekt in
+einer Vermittlerrolle zwischen den Komponenten. Wenn wir oben herausgearbeitet
+haben, dass die Welt  der \emph{Beziehungen} zwischen Komponenten wichtiger
+ist als die Welt der technischen Systeme selbst, so haben wir mit den Objekten
+nun auch die \emph{Vermittler} dieser Beziehungen identifiziert.
+
+Auch dabei ist allerdings zu beachten, dass diese Vermittlung selten durch ein
+einziges Objekt erfolgt, sondern in den meisten Fällen durch ein ganzes Set
+von Objekten. Dies sei  am Beispiel des CORBA-Lizenzdiensts
+\cite[S. 242]{Szyperski2002} erläutert:
+\begin{itemize}
+\item Soll ein Objekt einen Dienst (im Weiteren das \emph{Dienstnutzerobjekt})
+  nutzen, so kann es sein, dass es hierfür eine Lizenz benötigt.
+\item Dafür muss der Dienstanbieter eine solche Lizenz ausstellen, ein zweites
+  Objekt, das \emph{Lizenddienstobjekt}.
+\item Diese Lizenz ist eine auf den Lizenznehmer (das Dienstnutzerobjekt)
+  zugeschnittene Spezialisierung eines allgemeinen Lizenzverfahrens, verfügbar
+  als drittes Objekt, als \emph{Lizenzverfahrensobjekt}.  Dieses Objekt wurde
+  bei der Registrierung der Lizenz des Dienstanbieters angelegt. Der Nutzung
+  der Lizenz in der Vollzugsdimension geht das Anlegen der Lizenz in der
+  Beschreibungsdimension voraus.
+\item Die Lizenzdienst-Factory, ein zweiter Dienst, ist nun in der Lage, auf
+  die Anfrage des potenziellen Dienstnutzers als viertes Objekt ein
+  \emph{Lizenzobjekt} zu generieren, das seinerseits den Prozess der Nutzung
+  der Lizenz durch das Dienstnutzerobjekt überwacht:
+  \begin{itemize}
+  \item Es nimmt das Lizenzverfahrensobjekt und das Dienstnutzerobjekt und
+    erzeugt daraus das Lizenzdienstobjekt.
+  \item Es versetzt den Dienst in den für die Nutzung durch das
+    Dienstnutzerobjekt erforderlichen Zustand (etwa Demomodus, Abrechnung),
+    was mit dem Anlegen weiterer Objekte verbunden ist, denn nur Objekte
+    können Zustände speichern. 
+  \item Es erlaubt dem Dienstnutzerobjekt, den Dienst zu nutzen und überwacht
+    diese Nutzung (speichert etwa die Nutzungszeit, um diese später an den
+    Abrechnungsdienst zu übergeben).
+  \item Es wartet, bis die Dienstnutzung abgeschlossen ist (dies kann aktiv
+    durch das Dienstnutzerobjekt getriggert werden, aber auch -- etwa durch
+    Zeitablauf -- vom Lizenzobjekt) und löst die Gesamtstruktur am Ende auf,
+    ohne zu vergessen, die Abrechnungsobjekte an den Abrechnungsdienst
+    weiterzugeben.  
+  \end{itemize}
+\end{itemize}
+Dieses ausführliche Beispiel der Interaktion -- in diesem Fall digitaler --
+technischer Objekte zeigt prototypisch die Einbettung der im TRIZ-Fokus
+stehenden Detailperspektive \emph{Werkzeug $\to$ bearbeitet $\to$ Objekt} in
+komplexere Zusammenhänge.
+
+\emph{Zweck} der Bearbeitung ist auf erster Stufe die Transformation des
+Objekts in ein \emph{nützliches Produkt}. Die \emph{Welt der nützlichen
+  Produkte} ist selbst eine Welt der \emph{Beziehungen} zwischen Zwecken.
+Wolf Göhring expliziert in \cite{Goehring1999} eine solche \emph{lineare}
+Beziehungskette für die Tasse Kaffee, die morgens auf Ihrem Frühstückstisch
+steht. Sozio-ökonomisch wird dies auch als \emph{Wertschöpfungskette}
+thematisiert. Die Verflechtungsstrukturen sind aber deutlich komplexer, die
+gesellschaftlichen Verhältnisse haben viel Ähnlichkeit mit dem (technischen)
+OSI-7-Schichten-Modell. Auf der untersten Ebene steht die ingenieur-technische
+Herstellung zweckorientierter technischer Verhältnisse und der Betrieb dieser
+technischen Infrastruktur.  Auf der nächsten Ebene erscheinen die
+Vermittlungsstrukturen zwischen diesen Verhältnissen, die sich nicht in einem
+„Wertschöpfungsnetzwerk“ erschöpfen, denn beim Betrieb jener Infrastruktur
+geht es ja nicht (nur) um das abstrakte Verhältnis von Tauschwerten, sondern
+um das reale Verhältnis von Gebrauchswerten.  Wie im angeführten
+Lizenzdienstbeispiel manifestieren sich aber in jenen \emph{Verhältnissen von
+  Verhältnissen} Zwecke und Verhältnisse höherer Ordnung -- im genannten
+Beispiel Beziehungen immaterieller Besitzrechte an Ideen und Verfahrensweisen
+mit unmittelbarer Rückwirkung auf die sozio-ökonomischen Verhältnisse der
+darunterliegenden Ebene, denn Lizenzkosten müssen bezahlt werden.  Lizenzen
+verursachen also den Nutzern Kosten und den Inhabern Einkünfte. Letzteres
+wirkt (in unserem Beschreibungsansatz von Systemen) als Durchsatz
+strukturierend und damit funktionsreproduzierend auf das soziale System der
+Erfinder zurück. Mit Open Source und Open Culture sind diese Prinzipien
+aktuell aber ihrerseits in einen Transformationsprozess eingetreten, den Wolf
+Göhring in \cite{Goehring1999} vorausschauend dargestellt und in
+\cite{Goehring2007} vertiefend beschrieben hat.
+
+\section{Entwicklungslinien in der Welt technischer Systeme}
+
+Mit den Kategorien junger und reifer Technologien ist eine Phasengrenze in der
+Welt der technischen Systeme identifiziert, auf deren beiden Seiten die
+Entwicklung technischer Systeme unterschiedlichen Paradigmen folgt.  In der
+\emph{ersten Phase} steht das Paradigma des Erfindens im Vordergrund, das sich
+auf die Eroberung von Neuland im Bereich technischen Wissens konzentriert.
+Technische Systeme werden um die Stabilisierung eines technischen Prinzips
+herum gebaut, die Beschreibungsformen des neuen technischen Prinzips werden
+perfektioniert und -- etwa über Patentschriften -- in den sozio-kulturellen
+und auch ökonomischen Strukturen der Gesellschaft befestigt.
+
+In der \emph{zweiten Phase} steht das Problemlösen im Vordergrund, d.h. die
+\emph{Bündelung} verfüg"|barer \emph{verschiedenartiger} technischer
+Funktionalitäten in technischen Systemen zur \emph{Lösung praktischer
+  Probleme}.  Dieser Problemlöseprozess ist gesellschaftlich vielfach
+vorstrukturiert -- beim Lösen eines Problems kann auf bereits bekannte
+Lösungen von Teilproblemen zurückgegriffen werden. Ein solcher Rückgriff
+gestaltet sich am einfachsten -- ist aber keineswegs darauf beschränkt --,
+wenn diese Teillösung bereits in der Form einer als Artefakt verfügbaren
+technischen Komponente konzentriert ist, die bei spezifikationskonformem
+Gebrauch die benötigte Leistung mitbringt.  Für diesen spezifikationskonformen
+Gebrauch ist allerdings neben der Komponente selbst und ggf. den zum Betrieb
+erforderlichen technischen, Service-, Wartungs-, Anpassungs- und
+Weiterentwicklungsstrukturen auch ein Verständnis der Standardisierungs- und
+Normierungsstrukturen als Teil der \emph{Beschreibungsdimension} jener
+Komponente erforderlich und ein damit wenigstens grobes Verständnis der
+\emph{Metamodellierung}, welche der Modellierung der vorliegenden Komponente
+vorgängig ist und in welche die Beschreibung der Komponente eingebunden ist.
+
+Wir hatten allerdings auch gesehen, dass technische Systeme als
+Multifunktionsbündel, die „core concern“ und „cross cutting concerns“ unter
+einer Haube vereinigen, in der Regel in \emph{mehrere} derartige
+Metamodellierungen eingebettet sind. In jenen Metamodellierungen erfolgt
+ebenfalls eine Bündelung technischer Funktionalitäten, allerdings nach anderen
+Prinzipien, durch zusammenfassende Abstraktion \emph{ähnlicher
+  Funktionalitäten}, mit der neben den konkreten \emph{Funktionsprinzipien}
+auch \emph{Sprache} und zusammenhängende Begriff"|lichkeiten generiert werden.
+Wir hatten auch gesehen, dass dies kein zweistufiger Prozess ist, sondern
+dieser sich als Höherentwicklung kulturell-technischer Verfahrensweisen über
+viele Abstraktionsstufen in ähnlicher Weise als \emph{Technologieniveau}
+wiederholt. In der technisch-praktischen Beherrschung eines solchen
+Technologieniveaus wie etwa der 13-nm-Technologie für Wafer läuft die
+Beherrschung der darunter liegenden Technologieniveaus -- Waferherstellung,
+Einkristallzüchtung, Maskenherstellung, Chemie von Belichtungsstrukturen,
+Präzisionsmaschinenbau, Reinstraumtechnologie usw. -- zusammen. Vor 50 Jahren
+war es in einer scheinbar unipolaren Welt technischer Systeme noch möglich,
+mit einer COCOM-Liste einem Teil der Menschheit mit dem Entzug des Zugangs zu
+diesem „Stand der Technik“ zu drohen, auch wenn der „Sputnikschock“ jene
+Unipolarität längst erschüttert hatte.  Versuche, Huawei heute mit ähnlichen
+Mittel strafen zu wollen, geraten schnell zur Farce.
+
+Entwicklungslinien in der Welt technischer Systeme lassen sich damit nicht in
+erster Linie als Entwicklungslinien technischer Systeme verfolgen, sondern nur
+als Entwicklungslinien technischer Prinzipien. Die in der TRIZ-Praxis
+verbreitete Unterteilung in bearbeitetes Objekt, Werkzeug, Transmission,
+Energiequelle und Steuerung, siehe etwa \cite{TESE2018} als Teil des Trends
+4.2 der \emph{wachsenden Vollständigkeit des Systems} oder \cite{TT}, ist ein
+Reflex auf die Höherentwicklung des von der Menschheit insgesamt beherrschten
+Technologieniveaus.  Während gezielter Werkzeuggebrauch zur Bearbeitung
+„interessanter“ Objekte bereits bei höheren Tierarten beobachtet wird, kann
+die Transformation von Werkzeugen in Richtung besserer Handhabbarbeit bis zum
+Faustkeil im Neolithikum zurückverfolgt werden.  Die Nutzung natürlicher
+Energiequellen -- neben Feuer, Wasser und Windkraft auch die domestizierter
+Tiere wie Ochsen, Pferde, Kamele und Elefanten -- kann ebenfalls mindestens
+3000 Jahre zurückverfolgt werden. Die ausgeklügelten Regulierungsmechanismen
+etwa von Bewässerungssystemen legen Zeugnis ab von den hohen Steuerungskünsten
+der Ingenieure jener Zeit auf der Basis der damals verfügbaren Wirkprinzipien.
+\enlargethispage{-1em}
+
+In der Neuzeit steht die technische Bändigung der chemischen Energie fossiler
+Energieträger am Beginn der \emph{ersten industriellen Revolution}. Allerdings
+ergab sich der entscheidende Durchbruch vor 150 Jahren zu industriellen
+Fertigungsmethoden nicht aus jenen \emph{technischen} Neuerungen, sondern aus
+\emph{produktionsorganisatorischen} Neuerungen, die auf der Basis jener
+technischen Neuerungen erst möglich wurden. Begleitet wird diese Entwicklung
+auch von spannenden mechanischen Regulationssystemen wie etwa Druckreglern an
+Dampfmaschinen, die Uhrmacher- und Feinmechanikerleistungen der frühen Neuzeit
+fortsetzten.
+
+Das Ganze wiederholt sich auf höherem Niveau mit der Verfügbarkeit dezentraler
+Antriebstechnologie auf der Basis flüssiger und gasförmiger Energieträger als
+\emph{zweite industrielle Revolution}. Fundament dieser Weiterentwicklung ist
+der Übergang der ersten industriellen Produktionsweise in einen reifen
+Zustand.  Auch hier sind es aber erst die produktionsorganisatorischen
+Fortschritte einer Fließbandproduktion, welche die Basis für neue Dimensionen
+von Steuerbarkeit durch \emph{Automatisierungstechnik} bilden.  Jener Basis
+sind zwei Entwicklungen vorgängig -- neben der Verfügbarkeit dezentraler
+Antriebstechnik als neues Technologieniveau auch die in den vorhergehenden 50
+Jahren entwickelten produktionsorganisatorischen Beschreibungsformen der
+aufkommenden Industriegesellschaft.  Erst jene lassen die Zergliederung
+komplexer Arbeitsabläufe in kleinteilige Arbeitsschritte zu und eröffnen damit
+das Potenzial für Mechanisierung und Automatisierung. Erst auf der Basis einer
+solchen industriellen Massenfertigung können die ersten Computer praktisch
+gebaut werden, obwohl deren konstruktiver Aufbau seit Leibniz (1672),
+spätestens aber mit der „Analytical Engine“ von Charles Babbage (1837)
+prinzipiell bekannt war. Eine technische Realisierung war bis dahin an der
+ungenügenden Beherrschung des erforderlichen Niveaus feinmechanischer
+Technologien gescheitert.  Während Turings bahnbrechenden Überlegungen 1936
+noch ohne praktische Wirkung blieben, baut Konrad Zuse 1941 den ersten
+funktionsfähigen Rechner. Drei Jahre später ist es wiederum Turing, der mit
+diesen neuen Werkzeugen das Geheimnis der Enigma lüftet.
+
+Mit dem Computer beginnt in der zweiten Hälfte des 20. Jahrhunderts die
+\emph{dritte industrielle Revolution}, in der Beschreibungs- und
+Vollzugsformen von Technik enger zusammenrücken. Mit dem neuen
+Technologieniveau, das seinerseits ohne automatisierte Produktionslinien nicht
+denkbar ist, werden nicht nur neue Steuerungstechniken möglich, sondern
+entwickelt sich die Techniksprache der Metamodellierung selbst weiter --
+Begriffe wie Kybernetik, Regelkreis, Regeltechnik, Programmiersprache usw.
+erblicken das Licht  der Welt.
+
+Mittlerweile wird von einer vierten industriellen Revolution gesprochen, aber
+das ist mög"|licher"|weise eine begriff"|liche Fehlkonstruktion und nur die
+produktionsorganisatorische Phase jener dritten industriellen Revolution. Im
+Gegensatz zum Einzelplatzcomputer geht es dabei um die Potenziale einer
+vernetzten Computerwelt und den Phasenübergang der Computertechnologie von
+einer „jungen“ zu einer „reifen“ Technologie.
+
+Die in \cite{TESE2018} präsentierten Entwicklungslinien erscheinen in einem
+solchen Verständnis wie die Schatten an Platons Höhle. Es ist höchste Zeit, zu
+komplexeren Beschreibungsformen sozio-technischer Systeme zu kommen.
+
+\section{Zusammenfassung}
+
+Mit dem Begriff des \emph{technischen Systems} dreht sich der ganze
+TRIZ-Theoriekorpus um einen in der TRIZ-Literatur wenig präzisierten Begriff,
+der als weitgehend aus der Anschauung verständlich postuliert wird. Mit den 40
+TRIZ-Prinzipien, den 76 TRIZ-Standards und den (in \cite{TESE2018}) 10
+TRIZ-Evolutionstrends wird dabei ein Universum theoretischer Reflexion
+praktischer Erfahrung mit tendenziell universalistischem Anspruch aufgespannt,
+ohne sich besonders um das Fundament dieses Theoriegebäudes zu sorgen. 
+
+In diesem Aufsatz wurde der Versuch unternommen, die Tragfähigkeit des
+Begriffs \emph{technisches System} für diesen Theoriekontext genauer
+auszuleuchten und diesen auch mit Ansätzen aus benachbarten Theoriegebäuden zu
+relatieren.  Es stellt sich heraus, dass eine Konzentration auf die
+artefaktische Dimension von Technik, wie sie dem Begriff  \emph{technisches
+  System} inhärent ist, den Blick auf wesentliche relationale Phänomene in
+einer \emph{Welt der technischen Systeme} verstellt und der in
+\cite{Shpakovsky2010} verwendete Begriff des \emph{technischen Prinzips} für
+die Analyse relationaler Phänomene besser geeignet ist.
+
+Derartige technische Prinzipien können ihrerseits \emph{Technologieniveaus}
+zugeordnet werden, in denen sich der wachsende Abstraktionsgrad der
+Beschreibungsdimension von Technologien manifestiert.  Es wird weiterhin
+vorgeschlagen, zwischen jungen und reifen Technologien zu unterscheiden und
+den dort beobachteten Phasenübergang von Praxen genauer zu analysieren, die
+zunächst auf Erfinden und später auf Problemlösen ausgerichtet sind. 
+
+Damit ist das Ende der Fahnenstange aber noch nicht erreicht, denn denn diese
+\emph{Prinzipien} prägen Objekten \emph{Wirkungen} auf, die erst in ihrer
+Zusammenschau -- als \emph{Verhältnis von Verhältnissen} -- ihre Gesellschaft
+strukturierende Wirkung einer theoretischen Reflexion zugänglich machen.
+Diese in den \emph{technischen Objekten} materialisierten Verhältnisse von
+Verhältnissen konstituieren ihrerseits eine \emph{Welt technischer Objekte},
+in der wiederum die \emph{Beziehungen} entscheidend sind für die
+Strukturierungsprozesse.  Das im Einsteinjahr 2005 veröffentlichte
+\emph{Potsdamer Manifest} \cite{Duerr2005} des VdW fordert deshalb eine
+Revolution des Denkens selbst -- „think in a new way“ --, den Übergang von der
+Frage „Was ist?“ zur Frage „Was bindet?“, von einem
+„materialistisch-mechanistischen Weltbild“ zu einem „geistig-lebendigen
+Kosmos“.
+
+Denn das Ganze ist \emph{stets mehr} als die Summe seiner Teile.
+
+\begin{thebibliography}{xxx}
+\bibitem{Bertalanffy1950} Ludwig von Bertalanffy (1950). An outline of General
+  System Theory. The British Journal for the Philosophy of Science, vol. I.2,
+  134–165.
+\bibitem{Duerr2005} Hans-Peter Dürr, Daniel Dahm, Rudolf zur Lippe. Potsdamer
+  Denkschrift.  München 2006; 118. ISBN 978-3-86581-012-0.
+\bibitem{MEW15} Friedrich Engels (MEW 15). Die Geschichte des gezogenen
+  Gewehrs.  MEW 15, S. 195--226. Dietz Verlag, Berlin.
+\bibitem{Friedli2013} Thomas Friedli, Stefan Thomas, Andreas Mundt (2013).
+  Management globaler Produktionsnetzwerke. Strategie – Konfiguration –
+  Koordination. Hanser, München. ISBN 978-3-446-43449-3
+\bibitem{Gamma1995} Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+  (1995). Design Patterns: Elements of Reusable Object-Oriented Software.
+  Addison-Wesley. ISBN 978-0-201-63361-0.
+\bibitem{KFK2000} Klaus Fuchs-Kittowski (2000).  Wissens-Ko-Produktion.
+  Verarbeitung, Verteilung und Entstehung von Informationen in
+  kreativ-lernenden Organisationen. In: Fuchs-Kittowski u.a.  (Hrsg.).
+  Organisationsinformatik und Digitale Bibliothek in der
+  Wissenschaft. Wissenschaftsforschung, Jahrbuch 2000. Gesellschaft für
+  Wissenschaftsforschung, Berlin.
+  \url{http://www.wissenschaftsforschung.de/JB00_9-88.pdf}
+\bibitem{Galanakis2006} Kostas Galanakis (2006).  Innovation process. Make
+  sense using systems thinking.  In: Technovation Volume 26, Issue 11,
+  p. 1222--1232.
+\bibitem{Gerovitch1996} Slava Gerovitch (1996). Perestroika of the History of
+  Technology and Science in the USSR: Changes in the Discourse. Technology and
+  Culture, Vol. 37.1, S. 102--134.
+\bibitem{Goehring1999} Wolf Göhring (1999).  Mittels Informations- und
+  Kommunikationstechnik die Warenproduktion dialektisch aufheben? In: Jörg
+  Becker, Wolf Göhring (Hrsg.).  Kommunikation statt Markt: Zu einer
+  alternativen Theorie derInformationsgesellschaft.  GMD-Report 61, Sankt
+  Augustin, Oktober 1999, 129–140.
+\bibitem{Goehring2007} Wolf Göhring (2007). Die revolutionäre Bedeutung von
+  Informations- und Kommunikationstechnik als besonderer Produktivkraft. In:
+  Horst Müller (Hrsg.).  Die Übergangsgesellschaft des 21. Jahrhunderts.
+  Kritik, Analytik, Alternativen.  BoD, Norderstedt.
+\bibitem{Goldberg2016} Jörg Goldberg, André Leisewitz (2016). Umbruch der
+  globalen Konzernstrukturen. Z 108, S. 8--19.
+\bibitem{Graebe2018} Hans-Gert Gräbe (2018).  12. Interdisziplinäres Gespräch
+  \emph{Nachhaltigkeit und technische Ökosysteme}. Leipzig, 02.02.2018.\\ 
+  \url{http://mint-leipzig.de/2018-02-02.html}.
+\bibitem{Graebe2019a} Hans-Gert Gräbe (2019a).
+  \foreignlanguage{russian}{Наследие Движения Школ Изобретателeй в ГДР и
+    Развитиe ТРИЗ} (Das Erbe der Erfinderschulbewegung in der DDR und die
+  Entwicklung der TRIZ). Erschienen im Online-Protokollband des TRIZ Summit
+  2019 Minsk.
+\bibitem{Graebe2019b} Hans-Gert Gräbe (2019b).  Aufzeichnung einer Diskussion
+  über TRIZ und Systemdenken in meinem Open Discovery Blog.\\
+  \url{https://wumm-project.github.io/2019-08-07}.
+\bibitem{Graebe2020} Hans-Gert Gräbe (2020). Reader zum 16. Interdisziplinären
+  Gespräch \emph{Das Konzept Resilienz als emergente Eigenschaft in offenen
+    Systemen} am 7.2.2020 in Leipzig.\\
+  \url{http://mint-leipzig.de/2020-02-07/Reader.pdf}.
+\bibitem{Holling2000} Crawford S. Holling (2000). Understanding the Complexity
+  of Economic, Ecological, and Social Systems. In: Ecosystems (2001) 4,
+  390–405.
+\bibitem{KS2017} Karl Koltze, Valeri Souchkov (2017).  Systematische
+  Innovation. Hanser, München. Zweite Auf"|lage. ISBN 978-3-446-45127-8.
+\bibitem{Kropik2009} Markus Kropik (2009). Produktionsleitsysteme in der
+    Automobilfertigung. Springer, Dordrecht. ISBN 978-3-540-88991-5.
+\bibitem{TBK-2007} S. Litvin, V. Petrov, M. Rubin (2007). TRIZ Body of
+  Knowledge.\\ \url{https://triz-summit.ru/en/203941}.
+\bibitem{TESE2018} Alexander Lyubomirskiy, Simon Litvin et al. (2018). Trends
+  of Engineering System Evolution. Sulzbach-Rosenberg.  ISBN
+  978-3-00-059846-3.
+\bibitem{MEW3} Karl Marx (MEW 3).  Thesen über Feuerbach. MEW 3, S. 533--535.
+  Dietz Verlag, Berlin.
+\bibitem{MEW23} Karl Marx (MEW 23). Das Kapital, Band 1. MEW 23. Dietz Verlag,
+  Berlin.
+\bibitem{MEW42} Karl Marx (MEW 42). Grundrisse der Kritik der politischen
+  Ökonomie.  MEW 42. Dietz Verlag, Berlin.
+\bibitem{Mittelstrass2011} Jürgen Mittelstraß (2011).  Schöne neue
+  Leonardo-Welt.  Frankfurter Allgemeine Zeitung, 25. Juli 2011, S. 7.
+\bibitem{Naetar2005} Franz Naetar (2005). „Commodification“, Wertgesetz und
+  immaterielle Arbeit. Grundrisse 14, S. 6--19.
+\bibitem{Pohl2005} Klaus Pohl, Günter Böckle, Frank J. van der Linden (2005).
+  Software Product Line Engineering. Foundations, Principles and Techniques.
+  Springer. ISBN 978-3-540-28901-2
+\bibitem{Preez2006} Niek D Du Preez, Louis Louw, Heinz Essmann (2006). An
+  innovation process model for improving innovation capability.  Journal of
+  high technology management research, vol 17, 1--24.
+\bibitem{Rubin2007} Michail S. Rubin (2007). \foreignlanguage{russian}{О
+  выборе задач в социально-технических системах} (Über die Wahl von Aufgaben
+  in sozial-technischen Systemen). In: \foreignlanguage{russian}{ТРИЗ Анализ.
+    Методы исследования проблемных ситуаций и выявления инновационных задач}.
+  (TRIZ-Analyse. Methoden zur Untersuchung von Problemsituationen und zur
+  Identifizierung innovativer Aufgaben). Hrsg. von S.S. Litvin, V.M. Petrov,
+  M.S. Rubin. Moskau. S. 35--46.\\
+  \url{https://www.trizland.ru/trizba/pdf-books/TRIZ-summit2007.pdf}.
+\bibitem{Rubin2010} Michail S. Rubin (2010).
+  \foreignlanguage{russian}{Филогенез социокультурных систем. Секреты развития
+    цивилизаций}.  (Phylogenese soziokultureller Systeme. Geheimnisse der
+  Zivilisationsentwicklung).
+  \url{http://www.temm.ru/en/section.php?docId=4472}.
+\bibitem{Rubin2019} Michail S. Rubin (2019).  \foreignlanguage{russian}{О
+  связи комплекса законов развития систем с ЗРТС} (Zur Verbindung des
+  Komplexes der Gesetze der Systementwicklung mit den Gesetzen der Entwicklung
+  technischer Systeme). Manuskript, November 2019.
+\bibitem{Shpakovsky2003} Nikolay Shpakovsky (2003).
+  \foreignlanguage{russian}{Человек и Техническая Система} (Der Mensch und das
+  technische System).\\
+  \url{https://wumm-project.github.io/Texts/Shpakovsky-mts-ru.pdf}
+\bibitem{Shpakovsky2010} Nikolay Shpakovsky (2010).  Tree of Technology
+  Еvolution. Forum, Moscow.
+\bibitem{Shub2006} Leonid Shub (2006). \foreignlanguage{russian}{Осторожно!
+  Таблица технических противоречий}. (Vorsicht! Die Widerspruchstabelle).
+  \url{http://metodolog.ru/conference.html}.
+
+  Siehe auch ders. Vorsicht Widerspruchsmatrix, Kurzfassung in Deutsch.\\
+  \url{https://wumm-project.github.io/Texts/Shub-2006.pdf}.
+\bibitem{Szyperski2002} Clemens Szyperski (2002). Component Software: Beyond
+  Object-Oriented Programming. Pearson, Edinburgh. ISBN: 978-0-321-75302-1.
+\bibitem{TT} Target Invention (2020). TRIZ Trainer.
+  \url{https://triztrainer.ru}.
+\bibitem{Thiel2007} Rainer Thiel (2007). Zur Lehrbarkeit dialektischen Denkens
+  – Chance der Philosophie, Mathematik und Kybernetik helfen. In: Klaus
+  Fuchs-Kittowski, Rainer E. Zimmermann (Hrsg.). Kybernetik, evolutionäre
+  Systemtheorie und Dialektik. Trafo Verlag, Berlin 2012, ISBN:
+  978-3-89626-919-5, S. 185--202
+\bibitem{VDMA2019} VDMA. Maschinenbau in Zahl und Bild 2019. 
+\bibitem{Vernadsky2001} Vladimir I. Vernadsky (1997, Original 1936--38).
+  Scientific Thought as a Planetary Phenomenon.
+  \url{https://wumm-project.github.io/Texts.html}
+\bibitem{Weller2008} Wolfgang Weller (2008). Automatisierungstechnik im
+  Überblick. Was ist, was kann Automatisierungstechnik? Beuth, Berlin. ISBN
+  978-3-410-16760-0.
+\bibitem{Zobel2016} Dietmar Zobel, Rainer Hartmann (2016). Erfindungsmuster.
+  2. Auf"|lage.  Expert Verlag, Renningen.
+\bibitem{Zobel2020} Dietmar Zobel (2020). Beiträge zur Weiterentwicklung der
+  TRIZ.\\  LIFIS Online 19.01.2020. DOI: \url{10.14625/zobel_20200119}
+\end{thebibliography}
+
+%\ccnotiz
+\end{document}
+
