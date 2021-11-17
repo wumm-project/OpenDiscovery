@@ -1,3 +1,14 @@
+# Information about sources of the pictures
+
+## General Information
+
+* Nov 2021 - I started to collect in that directory all pictures that are used
+  in my slides.
+
+## Metadata of selected pictures
+
+This should be transformed in RDF in the future.
+
 792e2aa57e3e.jpg
 * source = unknown
 * title = Theory of Inventive Problem Solving
