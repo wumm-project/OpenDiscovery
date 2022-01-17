@@ -14,6 +14,7 @@ section at our [Github Pages](https://wumm-project.github.io/) and also at the
 
 ## The directory structure
 
+* Tetris-2009 - Material from the TETRIS project.
 * Pictures - A collection of pictures useful for presentations of different
   aspects of the TRIZ approach together with known licensing information.  See
   the README.md over there.
