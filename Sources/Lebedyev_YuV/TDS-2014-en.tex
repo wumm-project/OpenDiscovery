@@ -1,0 +1,376 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{od}
+\usepackage[russian,main=english]{babel}
+
+\setlist{noitemsep}
+
+\author{Lebedev Y.V., Logvinov S.A.}
+\title{Integration of Flow and Functional Analysis}
+\date{TRIZ Developer Summit, 2014}
+
+\begin{document}
+\maketitle
+
+\begin{quote}
+  Translated from the Russian Original available at
+  \url{https://triz-summit.ru/confer/tds-2014/article/} 
+\end{quote}
+
+Flow analysis is an effective tool for analysing technical systems in TRIZ. It
+is a good complement to functional analysis (FA), as it allows to identify
+problems not identified by other means of analysis.
+
+Nevertheless, until now:
+\begin{itemize}
+\item There is no accepted methodology for conducting flow analysis.
+\item No information from FA is used in flow analysis.
+\item The results of flow analysis and FA are integrated only when building
+  the causal chain of undesirable effects.
+\end{itemize}
+
+This paper attempts to consider flow analysis as a special case of functional
+analysis: flows in a technical system (TS) are considered as a special case of
+components of the TS that have important features.
+
+The functional relationship of flows to other ('stationary') components of the
+system is considered: to source, channel, receiver and control system of the
+flow, which form a functionally complete technical subsystem.
+
+The proposed approach opens up the following possibilities:
+\begin{itemize}
+\item The possibility of applying well-established functional analysis
+  techniques in flow analysis.
+\item Partial integration of the processes of flow and functional analyses.
+\item Identification of components interacting with the flows to be improved.
+\end{itemize}
+
+\section*{Problem Statement}
+
+The practice of flow analysis is highly effective. A properly constructed flow
+model can identify problems that are poorly detectable by FA tools. The reason
+is clear -- FA takes almost no account of information about the spatial
+structure of the TS being analysed. But the flow model intuitively takes this
+information into account. The functional model (FM) is a "snapshot" of the TS
+taken at a given point in time. But this completely or almost completely
+ignores the dynamics of the TS. When building a FM of the system at work, one
+has to go to all sorts of tricks or simply has to disregard the "canonical
+purity" of the description. A typical example: component 1 -- moves --
+component 2. When strictly following the rules of composing the FM, such a
+formulation is no longer correct, as it implies different positions of the
+components at different time.
+
+The introduction of flows into the FM removes this kind of difficulty by
+\textbf{treating flows as dynamic components of a system} whose lower system
+level components move in space under the influence of static components.
+However, unlike FA, to date flow analysis is clearly unsatisfactory
+formalised.  In fact, there is no unified methodology for conducting it.  In
+addition, there are no tools for exchanging information between FA and flow
+analysis models. The two analyses are carried out independently and their
+results are combined only when the causal chain of undesirable effects is
+built.
+
+There have been repeated attempts to combine the two instruments. One of the
+most elaborated methodologies is described in A. Kashkarov's dissertation
+\cite{1}.  Unfortunately, his proposed methodology is quite cumbersome, which
+completely kills one of the main advantages of flow analysis -- its intuitive
+clarity and transparency.
+
+This article discusses approaches that allow for the integration of FA and
+flow analysis without losing these inherent merits.
+
+\section*{Choice of a Methodological Prototype}
+
+To continue the discussion, we select one of the existing variants of flow
+analysis methodology as a basis for further improvement. Apparently, the
+relationship between flow analysis and other TRIZ tools is best described in
+O. Gerasimov's dissertation \emph{Technology of Selecting Tools for Innovative
+  Design basaed on TRIZ-FVA} \cite{2}. However, this description is very
+brief, which makes it difficult to use in practical work.
+
+In addition, this description uses a number of concepts introduced within
+ZRTS\footnote{ZRTS -- Laws of Development of Technical Systems.}  (flow
+analysis appeared as a development of one of the laws of ZRTS -- the Law
+\emph{Improve the Efficiency of the Use of Flows of Matter, Energy and
+  Information}). It is useful to recall the history of the emergence and
+development of this law.
+
+The precursor of the law is the law of minimal energy conductivity of systems
+formulated by G. Altshuller \cite{3}. In the course of development of the
+system of ZRTS this law remained practically unchanged for a long time (from
+1975 to 2002, judging by dates of publications). In particular, in
+\cite[p. 56]{4} the law is briefly mentioned as part of the law of increasing
+coherence in systems; in Salamatov's book \cite{5} the law is reproduces
+almost verbatim.
+
+In V. Petrov's book \cite{6} the law is considered as an increase in specific
+energy saturation of systems and is a sub-trend of the law of system
+transition to the micro-level. But here it is no longer considered as
+requiring a minimal necessary level, but as a line of systems development.
+
+In the work of S. Litvin and A. Lyubomirsky \cite{7}, the law is completely
+revised and considered as "law of increasing the efficiency of matter, energy
+and information flows".
+
+It is not difficult to see that both V. Petrov and S. Litvin, A. Lyubomirsky
+have, in essence, a completely new law, not so much developing the predecessor
+but located nearby:
+\begin{itemize}
+\item Firstly, this formulation of the law refers not to a system to be
+  constructed, but to ways of improving an already viable system.
+\item Secondly, \cite{7} significantly extends the range of flows considered
+  with "energy flows" to "matter, energy and information flows", i.e. to all
+  kinds of flows existing in the system.
+\end{itemize}
+In doing so, the description of the law is not so much a trend (a line of
+development) as a list of mechanisms (essentially recommendations to improve
+flows in the system).  The list of mechanisms is quite extensive at 42 items,
+structured by type of flow and divided into two groups, implying "changes in
+the conductivity of flows" and "changes in the efficiency of flows". It is
+this version of the law and its recommendations for conducting flow analysis
+that we will choose as prototype for future work.
+
+\section*{What are we Going to Improve?}
+
+First of all, definitions. A serious shortcoming of most theoretical work in
+TRIZ is the lack of attention to notions and definitions.  In particular,
+S. Litvin and A. Lyubomirsky formulate four main trends of this law (parasitic
+flows, as a special case of harmful ones, are described almost word by word
+as harmful ones):
+\begin{itemize}
+\item Improve the efficiency of use of useful flows.
+\item Reduce the damaging power of harmful flows.
+\item Increase the conductivity of useful flows.
+\item Reduce the conductivity of harmful flows.
+\end{itemize}
+The first two trends are obvious to triviality and trivial to complete
+non-instrumentality. But it is also completely impossible to argue with them.
+Of course, it can be useful to formulate obvious things explicitly as axioms,
+and this has been done.
+
+But there are serious problems with the other two trends.
+\begin{itemize}
+\item Increase the conductivity of useful flows.
+\item Reduce the conductivity of harmful flows.
+\end{itemize}
+First of all, \textbf{conductivity of flow} sounds similar to the concepts of
+\textbf{resistance \underline{of} electricity} or \textbf{conductivity of
+  water in a pipe}.  But we have, after all, to talk about conductivity of
+flow \textbf{channels} (paths) ("resistance of the \textbf{conductor}
+\underline{to} electric current"). It is not a matter of simple matching of
+words, but of distinguishing substantially different categories previously
+mixed in a single term.
+
+So first let's try to clarify some key terms.  In this paper
+\begin{itemize}
+\item We call \textbf{a flow} such a movement of material objects, energy or
+  information in a system in which individual parts of the flow move according
+  to the same law one after the other (part of the flow may move in a
+  supersystem, but the key is its presence and movement in the system in
+  question).
+\item We call the \textbf{flow source} the component of the system that
+  generates the flow and sets its initial parameters.
+\item We call \textbf{flow channel} the system component which defines the
+  path of the movement of the flow (the channel may be distributed in space,
+  and may have no clear, unambiguous boundaries).
+\item We call the \textbf{consumer} the component of the system which
+  is transformed by a given useful flow, or one that is directly damaged by
+  the harmful flow in question.
+\end{itemize}
+
+\begin{center}
+  Add Diagram
+\end{center}
+
+Notes:
+\begin{itemize}
+\item[A.] The above formulations are not absolutely general for all
+  conceivable cases, but are sufficient for applied purposes (analysis of TS
+  and elaboration of proposals for their improvement).
+\item[B.] The assignment of elements of a system to one or another of the
+  defined components are not unconditional and are determined by the specifics
+  of the task to be performed.
+\item[C.] In many systems, the flow is the object of transformation, not the
+  subject.  Accordingly, the "consumer" is the subject and should more
+  properly be called the "transducer" of the flow. However, for the needs of
+  practical flow analysis there is no significant difference, so we omit this
+  peculiarity from further consideration.
+\end{itemize}
+This formulation separates four types of system components that functionally
+significantly differ in relation to the flow in question:
+\begin{itemize}
+\item the flow itself, as the subject of the transformation,
+\item the source of the flow,
+\item the channel for holding/limiting/directing the flow,
+\item the consumer -- a component that is directly affected by the flow by
+  changing at least one of its parameters.
+\end{itemize}
+In terms of "subject -- function -- object", the channel transforms the flow,
+the flow transforms the product. An essential detail is that a minimum FM
+consists of a flow element and a channel. Source and consumer may not be
+included in the FM.
+
+The complexity of the model (introducing new additional elements) only seems
+to exist. The explicit introduction of a component which was previously
+implied by default
+\begin{itemize}
+\item simplifies the analysis of the model,
+\item reveals a direct, unmediated link between the flow model and the
+  functional model, and also between the flow model and ZRTS.
+\end{itemize}
+In particular:
+\begin{itemize}
+\item In the flow model it is possible to operate with other components of the
+  system (source, channel, consumer).
+\item In the functional model, in addition to the components appear all of the
+  flows in question.
+\item The four system components (source, flow, channel and product) can be
+  explicitly aligned, the components are specified by which the manageability
+  of the flow (source and channel) can grow, etc.
+\end{itemize}
+In the proposed formulations also the pairs of trends are mentioned quite
+clearly:
+\begin{itemize}
+\item Improving the efficiency of the use of useful flows \textbf{by the
+  consumer}.
+\item Reducing the damaging power of harmful flows in relation to
+  \textbf{other elements of the TS}.
+\end{itemize}
+BUT:
+\begin{itemize}
+\item Increase the conductivity of \textbf{channels} of useful flows.
+\item Reduce the conductivity of \textbf{channels} of harmful flows.
+\end{itemize}
+In this formulation, trends become much clearer. Thus:
+\begin{itemize}
+\item the incompleteness of the current wording of the law becomes apparent,
+\item the second pair of trends is still highly objectionable.
+\end{itemize}
+Simple examples:
+\begin{itemize}
+\item The useful flow of fuel in an internal combustion engine (ICE). If the
+  conductivity of this flow channel is increased, additional fuel flows into
+  the combustion chambers which will result in incomplete combustion, which in
+  turn will lead to a number of serious problems.
+\item Useful flow of hot water or steam in the heat exchanger. Increasing the
+  conductivity of this channel heat will be removed from the system, although
+  we need the opposite.
+\item The harmful Joule heat flux from the passage of electric current through
+  an electronic circuit when the conductivity of this flow channel is reduced
+  will additionally heat up the board, although again the opposite is
+  required.
+\item If the conductivity of the conductor in the useful flow of electric
+  current in a light bulb is increased, it will result in a change in its
+  rating and beyond a certain limit the lamp simply burns out.
+\item If the conductivity of the useful flow of a semi-finished product to
+  some kind of actuator (to the consumer of the flow) rises above a certain
+  limit, the consumer will become overstocked and/or a store as buffer has to
+  be introduced.
+\end{itemize}
+Of course, there are different ways to paraphrase this. A typical way to
+overcome these ambiguities in a flow or ZRTS analysis is to say "in this case
+there is a different sub-trend ...".  However, \textbf{these kinds of clauses
+  (and even the need for them itself) drastically reduce the instrumentality
+  of the method}.
+
+Of course, increasing the conductivity of the flow channel is often very
+useful. The techniques for such an increase are detailed in the current
+version of the law and remain true and certainly useful. The same goes for
+cases where the channel conductivity is reduced.
+
+The proposed refinements to the concepts, while seemingly simple, make it
+possible to significantly improve the effectiveness of flow analysis.
+
+\section*{An Algorithm to Conduct the Analysis}
+The following logic is proposed for conducting a flow analysis.
+\begin{enumerate}
+\item Build a flow model using the existing prototypical methodology.
+\item Identify the flow deficiencies as recommended.
+\item Clarify the identified deficiencies, identify their type:
+  \begin{itemize}
+  \item Inadequate parameters and functions of the flow
+    \begin{itemize}
+    \item Inadequate and harmful flow functions
+    \item Excessive expenses for the functioning of the flow
+    \end{itemize}
+  \item Inadequate parameters and functions of the channel
+    \begin{itemize}
+    \item Inadequate and harmful channel functions
+    \item Excessive expensesfor the formation and functioning of the channel
+    \end{itemize}
+  \end{itemize}
+\item ONLY for the identified problematic areas of the flow we construct
+  refined flow models, in which we explicitly separate the flow itself and the
+  channel.
+\item Based on step 4, we construct a functional model for the components
+  associated with the problematic flow and conduct a standard FA. (As a matter
+  of fact, this is a standard and widely used technique by practitioners: to
+  build a detailed FM at a deeper system-level for the problematic part of the
+  system identified by the model at the higher level.)
+\item To eliminate the deficiencies identified in the construction of the FM
+  according to point 5 use the recommendations of the law to improve the
+  efficiency of matter, energy and information flows. In doing so, it is
+  convenient to make use of the classification of flows and of trends which
+  are characteristic for different types of flows. An attempt at such
+  classification and trends is given in \cite{8}.
+\end{enumerate}
+
+\section*{Conclusions}
+Suggested approach:
+\begin{itemize}
+\item It is not a direct combination of the two methodologically quite
+  different tools. Essentially, the proposed approach allows for the
+  application of well-established and repeatedly proven techniques and methods
+  of functional ANALYSIS to a convenient and illustrative flow-based MODEL.
+\item It is easy to apply and can be quickly mastered by practitioners being
+  familiar with either FA or flow analysis. The approach can be applied by
+  specialists, familiar with different variants of both FM and flow models. It
+  is no secret that real-world models are constructed a little differently by
+  each professional.  Therefore, a rigidly prescribed algorithm may not be
+  suitable for many practitioners.
+\end{itemize}
+Of course, it would be tempting to fully merge the two models, as was done,
+for example, in \cite{1}. But at the output we get a very cumbersome model,
+overloaded with both information and graphic elements. The proposed approach
+allows, in our view, to obtain sufficiently weighty results with not too much
+effort.
+
+\begin{thebibliography}{xxx}
+\bibitem{1} Kashkarov A.G.
+  \foreignlanguage{russian}{Вещественно-энергетические преобразования в
+    технической системе.  Методика построения и анализа моделей} --
+  Substance-energy transformations in a technical system. A methodology of
+  model construction and analysis. 2009.
+  \url{http://www.triz-summit.ru/ru/203864/204357/204590/}
+\bibitem{2} Geramsimov O.M. \foreignlanguage{russian}{Технология выбора
+  инструментов инновационного проектирования на основе ТРИЗ-ФСА} -- Technology
+  for selecting innovation design tools based on TRIZ-FVA.  2010.
+  \url{http://www.triz-summit.ru/ru/203864/204737/204739/}
+\bibitem{3} Altshuller G.S., Creativity as an exact science. -- Moscow:
+  Sov. Radio, 1979. Laws of Systems Development; 2nd Law of "Energy
+  Conductivity" of a System. \url{http://www.altshuller.ru/triz/zrts1.asp#12} 
+\bibitem{4} Altshuller G.S., Zlotin B.L., Zusman A.V. et al.
+  \foreignlanguage{russian}{Поиск новых идей: от озарения к технологии (теория
+    и практика решения изобретательских задач)} -- Search for new ideas: from
+  insight to technology (theory and practice of inventive problem solving).
+  Kishinev, 1989.
+  \url{http://www.trizway.com/content/poisk_novih1.pdf}
+\bibitem{5} Salamatov Y.P. 1991-1996. \foreignlanguage{russian}{Система
+  Законов Развития Техники (Основы Теории Развития Технических Систем)} -- The
+  System of Technological Development Laws (Fundamentals of Technical Systems
+  Development Theory).   \url{http://www.trizminsk.org/e/21101440.htm}
+
+  Yuri Salamatov. TRIZ: the Right Solution at the Right Time: a Guide to
+  Innovative Problem Solving.  Institute of Innovative Design.
+\bibitem{6} Vladimir Petrov. \foreignlanguage{russian}{Серия статей «Законы
+  развития систем»} -- Series of papers on Laws of Systems Development, 24
+  September 2002
+  \url{http://www.trizland.ru/trizba/pdf-books/zrts-12-microlevel.pdf}
+  \url{http://www.trizland.ru/trizba/pdf-books/zrts-16-energo.pdf}
+\bibitem{7} Litvin S. S., Lyubomirsky A.L. \foreignlanguage{russian}{Законы
+  развития технических систем} -- Laws of development of technical systems,
+  February 2003. \url{http://www.metodolog.ru/00822/00822.html}
+\bibitem{8} Lebedev Y. V. \foreignlanguage{russian}{Классификация потоков в
+  технических системах} -- Classification of flows in technical systems, 2011.
+  \url{http://www.metodolog.ru/node/967}
+\end{thebibliography}
+\end{document}
