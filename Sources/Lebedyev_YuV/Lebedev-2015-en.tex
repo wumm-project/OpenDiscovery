@@ -1,10 +1,15 @@
 \documentclass[a4paper,11pt]{article}
-\usepackage{ls}
+\usepackage{od}
 \usepackage[russian,main=english]{babel}
 
 \author{Lebedev Yuri Valentinovich}
 \title{Improving the Tools of Flow Analysis}
 \date{St. Petersburg, 2015}
+
+\setlist{noitemsep}
+\newcommand{\abox}[2]{\fbox{
+    \begin{minipage}[t]{#1\textwidth}\centering #2\end{minipage}
+}}
 
 \begin{document}
 \maketitle
@@ -14,8 +19,10 @@
 
   Supervisor -- TRIZ Master S.A. Logvinov
 
-  Translated from the Russian Original available at
-  \url{https://matriz.org/yu-lebedev/} 
+  Translated by Hans-Gert Gräbe from the Russian Original available at
+  \url{https://matriz.org/yu-lebedev/}
+
+  Proofreading is yet required.
 \end{quote}
 
 \section{Introduction}
@@ -348,24 +355,30 @@ methodology and carrying out the study, analysing the results and developing
 methodological recommendations for flow analysis on the basis of these
 results.
 \begin{itemize}
-\item Lebedev Y.V. Structuring the law to increase the efficiency of
-  substance, energy and information, 2011.
-  \url{http://www.metodolog.ru/node/850}
-\item Lebedev Y.V. Classification of flows in technical systems, 2011.
+\item Lebedev Y.V. \foreignlanguage{russian}{Структурирование закона повышения
+  эффективности использования вещества, энергии и информации} -- Structuring
+  the law to increase the efficiency of substance, energy and information,
+  2011.  \url{http://www.metodolog.ru/node/850}
+\item Lebedev Y.V. \foreignlanguage{russian}{Классификация потоков в
+  технических системах} -- Classification of flows in technical systems, 2011.
   \url{http://www.metodolog.ru/node/967}
-\item Lebedev Y.V. Method for determination of uncoordinated parameters, 2011.
+\item Lebedev Y.V. \foreignlanguage{russian}{Метод определения несогласованных
+  параметров} -- Method for determination of uncoordinated parameters, 2011.
   \url{http://www.metodolog.ru/node/992}
-\item Logvinov S.A., Lebedev Y.A., Lebedev Y.V. „Intractable Secondary
-  Problems" -- Classification and Identification Methods, TRIZ-Summit-2012.
+\item Logvinov S.A., Lebedev Y.A., Lebedev
+  Y.V. \foreignlanguage{russian}{«Неразрешимые вторичные задачи».
+    Классификация и способы идентификации} -- "Intractable Secondary
+  Problems".  Classification and Identification Methods. TRIZ-Summit 2012.\\ 
   \url{http://triz-summit.ru/ru/confer/TDS-2012/205327/205392/205551/}
-\item Lebedev Y.V., Logvinov S.A. Integration of stream and functional
-  analysis, TRIZ-Summit 2014.
-  \url{http://triz-summit.ru/ru/confer/TDS-2014/article/}
-\item Kuznetsova T.V., Lebedev Y.V., Logachev D.N., Logvinov S.A. Features of
-  Consulting Projects in the Russian Market, 2014.
-  \url{http://www.metodolog.ru/node/1780}
-\item Lebedev Y.V., Logvinov S.A. Rube Goldberg Machine as an Object of
-  Analysis, 2015.  \url{http://www.metodolog.ru/node/1910}
+\item Lebedev Y.V., Logvinov S.A. Integration of flow and functional analysis.
+  TRIZ-Summit 2014.  \url{http://triz-summit.ru/ru/confer/TDS-2014/article/}
+\item Kuznetsova T.V., Lebedev Y.V., Logachev D.N., Logvinov S.A.
+  \foreignlanguage{russian}{Особенности выполнения консультационных проектов
+    на российском рынке} -- Features of Consulting Projects in the Russian
+  Market, 2014.  \url{http://www.metodolog.ru/node/1780}
+\item Lebedev Y.V., Logvinov S.A. \foreignlanguage{russian}{Машина Руба
+  Голдберга как объект анализа} -- The Rube Goldberg Machine as an Object of
+  Analysis, 2015.\\  \url{http://www.metodolog.ru/node/1910}
 \end{itemize}
 
 \section{Flows and their relationship to other system components}
@@ -414,7 +427,7 @@ transmission in this formulation with energy source and energy converter.
 
 The general diagram of a functionally complete TC is as follows
 \begin{center}
-  Include Diagram
+  \includegraphics[width=.8\textwidth]{1.png}
 \end{center}
 
 Of course, real systems are usually more complex. This law establishes only
@@ -431,16 +444,16 @@ In the case of a flow, it is not localised to a point. Therefore, a scheme of
 a functionally complete minimax operating on a flow should look somewhat
 different.
 \begin{center}
-  Include Diagram
+  \includegraphics[width=.8\textwidth]{2.png}
 \end{center}
 More traditional Sankey diagrams for flow analysis (see e.g. \cite{B12})
 \begin{center}
-  Include Diagram
+  \includegraphics[width=.8\textwidth]{3.png}
 \end{center}
 either completely ignore the component component or, at the very least, the
 functional (out-of-flow) links between components:
 \begin{center}
-  Include Diagram
+  \includegraphics[width=.8\textwidth]{4.png}
 \end{center}
 In this paper, a flow is treated as a peculiar, but one component of a
 system. Also, components of its implementation such as source, channel and
@@ -488,7 +501,7 @@ machine already suggests such a possibility of unification. However, as noted
 above, this scheme goes back to the very foundations of theory. This confirms
 the validity of the proposed approach. Indeed:
 \begin{center}
-  Include Diagram
+  \includegraphics[width=.8\textwidth]{5.png}
 \end{center}
 This diagram shows almost explicitly the energy flows from the source to the
 inverter and on to the actuator, and the information flows from the control
@@ -814,7 +827,72 @@ harmful ones.
 When stationary components are matched to each flow, it is possible to make
 more precise recommendations on the application of these techniques.
 \begin{center}
-  Include two Diagrama
+  \abox{.4}{The positive effect of a flow}
+
+  \abox{.25}{Improvement of the consumer}\hfill
+  \abox{.25}{Improvement of the source}\hfill
+  \abox{.25}{Improvement of the channel}
+  
+  \abox{.3}{
+    \begin{itemize}[leftmargin=10pt]
+    \item Preliminary saturation of the working area
+    \item Convert the receiver to a better flow sensitivity
+  \end{itemize}}\hfill
+  \abox{.3}{
+    \begin{itemize}[leftmargin=10pt]
+    \item Improve the specific characteristics of the flow or the source
+    \item Flow modulation (including conversion to a pulsed flow)
+    \item Giving the flow additional useful functions
+    \item Use of gradients
+    \item Reuse of the flow
+    \item Use of an additional flow to reinforce the useful effect of the flow
+    \item Use of resonance
+    \item Decrease the flow intensity by switching to a self-regulating flow
+  \end{itemize}}\hfill
+  \abox{.3}{
+    \begin{itemize}[leftmargin=10pt]
+    \item Eliminating bottle necks
+    \item Removes dead zones
+    \item Removes grey areas
+    \item Changing the flow carrier 
+    \item Outsource the flow to the supersystem
+    \item Reduce the number of flow transformations
+    \item increasing the conductivity of the channel links
+    \item Reduce channel length
+    \item Put multiple useful flows in one channel
+  \end{itemize}}
+\newpage
+  
+  \abox{.4}{The negative effect of a flow}
+
+  \abox{.25}{Improvement of the consumer}\hfill
+  \abox{.25}{Improvement of the source}\hfill
+  \abox{.25}{Improvement of the channel}
+  
+  \abox{.3}{
+    \begin{itemize}[leftmargin=10pt]
+    \item Pre-saturation of the working area 
+    \item Convert the receiver to be less flow sensitive
+    \end{itemize}}\hfill
+  \abox{.3}{
+    \begin{itemize}[leftmargin=10pt]
+    \item Decrease specific flow characteristics 
+    \item Avoid the flow
+    \item Use of gradients
+    \item Uniformly distribute the flow over time 
+    \item Beneficial use of a harmful flow 
+    \item Insertion of a second flow to correct the damage from the first flow
+    \item Combine the flow with an antiflow
+    \item Remove the flow by adding it with itself
+    \item Remove resonance
+    \end{itemize}}\hfill
+  \abox{.3}{
+    \begin{itemize}[leftmargin=10pt]
+    \item Put the flow in a channel
+    \item Installing in the path of the flow bottle necks or dead zones
+    \item Reduce the conductivity of the flow channel
+    \item Increase the channel length
+    \end{itemize}}
 \end{center}
 
 This division is superficially similar to the division of Altshuller's 40
@@ -830,10 +908,34 @@ justification. At the same time, the proposed division allows:
 \item Focus the identified weaknesses and therefore the objectives on the
   specific components of the system under analysis
 \end{itemize}
+\newpage
 In addition, it is possible to select (or rank) different solutions depending
 on the conditions of the project:
 \begin{center}
-  Include two Diagrams
+  \abox{.4}{The positive effect of a flow}
+
+  \abox{.25}{Improvement of the consumer}\hfill
+  \abox{.25}{Improvement of the source}\hfill
+  \abox{.25}{Improvement of the channel}
+  
+  \abox{.6}{$\Longleftarrow$ The easy way (short solution) $\Longleftarrow$}
+
+  \abox{.6}{$\Longrightarrow$ The effective way (long
+    solution)$\Longrightarrow$}
+
+\vskip2em
+
+  \abox{.4}{The negative effect of a flow}
+
+  \abox{.25}{Improvement of the consumer}\hfill
+  \abox{.25}{Improvement of the source}\hfill
+  \abox{.25}{Improvement of the channel}
+  
+  \abox{.6}{$\Longleftarrow$ The easy way (short solution) $\Longleftarrow$}
+
+  \abox{.6}{$\Longrightarrow$ The effective way (long
+    solution)$\Longrightarrow$}
+
 \end{center}
 
 This is made possible by the law of unequal development of the parts of the
@@ -2207,7 +2309,7 @@ of 5 parts but divided into more than 80 steps and supplied with a few dozens
 of comments. Quite often such a step-by-step algorithm is also provided with
 an algorithm diagram by type:
 \begin{center}
-  Include Diagram
+  \includegraphics[width=.8\textwidth]{6.png}
 \end{center}
 Taken from the cited work of O. M. Gerasimov \cite{B9}.
 
