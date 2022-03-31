@@ -35,6 +35,13 @@ Diffusion_von_Ideen.png
 * creator = Robert Orzanna
 * license = CC-BY-SA 4.0
 
+Funnel.png
+* source = Researchgate
+* title = TRIZ-based Anticipatory Design of Future Products and Processes
+  (2012)
+* language = en
+* creator = Giovanni Cascini
+
 how-to-solve-your-technical-problems-using-TRIZ.png
 * source = unknown
 * title = TRIZ Problem Solving Method
