@@ -40,7 +40,7 @@ Funnel.png
 * title = TRIZ-based Anticipatory Design of Future Products and Processes
   (2012)
 * language = en
-* creator = Giovanni Cascini
+* creator = Gaetano Cascini
 
 how-to-solve-your-technical-problems-using-TRIZ.png
 * source = unknown
