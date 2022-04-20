@@ -831,73 +831,101 @@ harmful ones.
 
 When stationary components are matched to each flow, it is possible to make
 more precise recommendations on the application of these techniques.
+
 \begin{center}
-  \abox{.4}{The positive effect of a flow}
+  \begin{tikzpicture}[
+      box/.style={draw,align=center,rounded corners=2pt,text width=4.5cm},
+      >={Triangle[length=3pt 9, width=3pt 3]}]
+    \node[box,fill=orange!70] at (6,10) (A1) {\textbf{The positive\\ effect of
+        a flow}}; 
+    \node[box,fill=orange!70] at (1,8) (B1) {Improvement of the
+      \textbf{consumer}}; 
+    \node[box,fill=orange!70] at (6,8) (B2) {Improvement of\\ the
+      \textbf{source}}; 
+    \node[box,fill=orange!70] at (11,8) (B3) {Improvement of the
+      \textbf{channel}}; 
+    \node[box, below = of B1] (C1) {
+      \begin{itemize}[leftmargin=10pt]
+      \item Preliminary saturation of the working area
+      \item Convert the receiver to a better flow sensitivity
+      \end{itemize}
+    };
+    \node[box, below = of B2] (C2) {
+      \begin{itemize}[leftmargin=10pt]
+      \item Improve the specific characteristics of the flow or the source
+      \item Flow modulation (including conversion to a pulsed flow)
+      \item Giving the flow additional useful functions
+      \item Use of gradients
+      \item Reuse of the flow
+      \item Use of an additional flow to reinforce the useful effect of the
+        flow
+      \item Use of resonance
+      \item Decrease the flow intensity by switching to a self-regulating flow
+      \end{itemize}
+    };
+    \node[box, below = of B3] (C3) {
+      \begin{itemize}[leftmargin=10pt]
+      \item Eliminating bottle necks
+      \item Removes dead zones
+      \item Removes grey areas
+      \item Changing the flow carrier 
+      \item Outsource the flow to the supersystem
+      \item Reduce the number of flow transformations
+      \item increasing the conductivity of the channel links
+      \item Reduce channel length
+      \item Put multiple useful flows in one channel
+      \end{itemize}
+    };
 
-  \abox{.25}{Improvement of the consumer}\hfill
-  \abox{.25}{Improvement of the source}\hfill
-  \abox{.25}{Improvement of the channel}
+\draw[->,line width=2pt,orange] (A1) -- (B1) ;
+\draw[->,line width=2pt,orange] (A1) -- (B2) ;
+\draw[->,line width=2pt,orange] (A1) -- (B3) ;
+  \end{tikzpicture}
   
-  \abox{.3}{
-    \begin{itemize}[leftmargin=10pt]
-    \item Preliminary saturation of the working area
-    \item Convert the receiver to a better flow sensitivity
-  \end{itemize}}\hfill
-  \abox{.3}{
-    \begin{itemize}[leftmargin=10pt]
-    \item Improve the specific characteristics of the flow or the source
-    \item Flow modulation (including conversion to a pulsed flow)
-    \item Giving the flow additional useful functions
-    \item Use of gradients
-    \item Reuse of the flow
-    \item Use of an additional flow to reinforce the useful effect of the flow
-    \item Use of resonance
-    \item Decrease the flow intensity by switching to a self-regulating flow
-  \end{itemize}}\hfill
-  \abox{.3}{
-    \begin{itemize}[leftmargin=10pt]
-    \item Eliminating bottle necks
-    \item Removes dead zones
-    \item Removes grey areas
-    \item Changing the flow carrier 
-    \item Outsource the flow to the supersystem
-    \item Reduce the number of flow transformations
-    \item increasing the conductivity of the channel links
-    \item Reduce channel length
-    \item Put multiple useful flows in one channel
-  \end{itemize}}
-\newpage
-  
-  \abox{.4}{The negative effect of a flow}
+  \begin{tikzpicture}[
+      box/.style={draw,align=center,rounded corners=2pt,text width=4.5cm},
+      >={Triangle[length=3pt 9, width=3pt 3]}]
+    \node[box,fill=orange!70] at (6,10) (A1) {\textbf{The negative\\ effect of
+        a flow}}; 
+    \node[box,fill=orange!70] at (1,8) (B1) {Improvement of the
+      \textbf{consumer}}; 
+    \node[box,fill=orange!70] at (6,8) (B2) {Improvement of\\ the
+      \textbf{source}}; 
+    \node[box,fill=orange!70] at (11,8) (B3) {Improvement of the
+      \textbf{channel}}; 
+    \node[box, below = of B1] (C1) {
+      \begin{itemize}[leftmargin=10pt]
+      \item Pre-saturation of the working area
+      \item Convert the receiver to be less flow sensitive
+      \end{itemize}
+    };
+    \node[box, below = of B2] (C2) {      
+      \begin{itemize}[leftmargin=10pt]
+      \item Decrease specific flow characteristics
+      \item Avoid the flow
+      \item Use of gradients
+      \item Uniformly distribute the flow over time
+      \item Beneficial use of a harmful flow
+      \item Insertion of a second flow to correct the damage from the first
+        flow
+      \item Combine the flow with an antiflow
+      \item Remove the flow by adding it with itself
+      \item Remove resonance
+      \end{itemize}
+    };
+    \node[box, below = of B3] (C3) {
+      \begin{itemize}[leftmargin=10pt]
+      \item Put the flow in a channel
+      \item Installing in the path of the flow bottle necks or dead zones
+      \item Reduce the conductivity of the flow channel
+      \item Increase the channel length
+      \end{itemize}
+    };
 
-  \abox{.25}{Improvement of the consumer}\hfill
-  \abox{.25}{Improvement of the source}\hfill
-  \abox{.25}{Improvement of the channel}
-  
-  \abox{.3}{
-    \begin{itemize}[leftmargin=10pt]
-    \item Pre-saturation of the working area 
-    \item Convert the receiver to be less flow sensitive
-    \end{itemize}}\hfill
-  \abox{.3}{
-    \begin{itemize}[leftmargin=10pt]
-    \item Decrease specific flow characteristics 
-    \item Avoid the flow
-    \item Use of gradients
-    \item Uniformly distribute the flow over time 
-    \item Beneficial use of a harmful flow 
-    \item Insertion of a second flow to correct the damage from the first flow
-    \item Combine the flow with an antiflow
-    \item Remove the flow by adding it with itself
-    \item Remove resonance
-    \end{itemize}}\hfill
-  \abox{.3}{
-    \begin{itemize}[leftmargin=10pt]
-    \item Put the flow in a channel
-    \item Installing in the path of the flow bottle necks or dead zones
-    \item Reduce the conductivity of the flow channel
-    \item Increase the channel length
-    \end{itemize}}
+\draw[->,line width=2pt,orange] (A1) -- (B1) ;
+\draw[->,line width=2pt,orange] (A1) -- (B2) ;
+\draw[->,line width=2pt,orange] (A1) -- (B3) ;
+  \end{tikzpicture}
 \end{center}
 
 This division is superficially similar to the division of Altshuller's 40
@@ -913,34 +941,57 @@ justification. At the same time, the proposed division allows:
 \item Focus the identified weaknesses and therefore the objectives on the
   specific components of the system under analysis
 \end{itemize}
-\newpage
 In addition, it is possible to select (or rank) different solutions depending
 on the conditions of the project:
 \begin{center}
-  \abox{.4}{The positive effect of a flow}
 
-  \abox{.25}{Improvement of the consumer}\hfill
-  \abox{.25}{Improvement of the source}\hfill
-  \abox{.25}{Improvement of the channel}
+  \begin{tikzpicture}[
+      box/.style={draw,align=center,rounded corners=2pt,text width=4.5cm},
+      >={Triangle[length=3pt 9, width=3pt 3]}]
+    \node[box,fill=orange!70] at (6,10) (A1) {\textbf{The positive\\ effect of
+        a flow}};
+    \node[box,fill=orange!70] at (1,8) (B1) {Improvement of the
+      \textbf{consumer}}; 
+    \node[box,fill=orange!70] at (6,8) (B2) {Improvement of\\ the
+      \textbf{source}}; 
+    \node[box,fill=orange!70] at (11,8) (B3) {Improvement of the
+      \textbf{channel}};
+    
+    \node[fill=orange!70, single arrow, below = of B2, rotate=180, text
+      width=12cm, align=center] (C1) {\rotatebox{180}{The easy way (short
+        solution)}} ;
+
+    \node[fill=orange!70, single arrow, below = of C1, text width=12cm,
+      align=center] {The effective way (long solution)} ;
+
+    \draw[->,line width=2pt,orange] (A1) -- (B1) ;
+    \draw[->,line width=2pt,orange] (A1) -- (B2) ;
+    \draw[->,line width=2pt,orange] (A1) -- (B3) ;
+  \end{tikzpicture}
   
-  \abox{.6}{$\Longleftarrow$ The easy way (short solution) $\Longleftarrow$}
+  \begin{tikzpicture}[
+      box/.style={draw,align=center,rounded corners=2pt,text width=4.5cm},
+      >={Triangle[length=3pt 9, width=3pt 3]}]
+    \node[box,fill=orange!70] at (6,10) (A1) {\textbf{The negative\\ effect of
+        a flow}};
+    \node[box,fill=orange!70] at (1,8) (B1) {Improvement of the
+      \textbf{consumer}}; 
+    \node[box,fill=orange!70] at (6,8) (B2) {Improvement of\\ the
+      \textbf{source}}; 
+    \node[box,fill=orange!70] at (11,8) (B3) {Improvement of the
+      \textbf{channel}}; 
+    
+    \node[fill=orange!70, single arrow, below = of B2, rotate=180, text
+      width=12cm, align=center] (C1) {\rotatebox{180}{The easy way (short
+        solution)}} ;
 
-  \abox{.6}{$\Longrightarrow$ The effective way (long
-    solution)$\Longrightarrow$}
+    \node[fill=orange!70, single arrow, below = of C1, text width=12cm,
+      align=center] {The effective way (long solution)} ;
 
-\vskip2em
-
-  \abox{.4}{The negative effect of a flow}
-
-  \abox{.25}{Improvement of the consumer}\hfill
-  \abox{.25}{Improvement of the source}\hfill
-  \abox{.25}{Improvement of the channel}
-  
-  \abox{.6}{$\Longleftarrow$ The easy way (short solution) $\Longleftarrow$}
-
-  \abox{.6}{$\Longrightarrow$ The effective way (long
-    solution)$\Longrightarrow$}
-
+    \draw[->,line width=2pt,orange] (A1) -- (B1) ;
+    \draw[->,line width=2pt,orange] (A1) -- (B2) ;
+    \draw[->,line width=2pt,orange] (A1) -- (B3) ;
+  \end{tikzpicture}
 \end{center}
 
 This is made possible by the law of unequal development of the parts of the
