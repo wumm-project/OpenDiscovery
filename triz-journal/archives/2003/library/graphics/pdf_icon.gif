@@ -1,0 +1,1261 @@
+
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>The TRIZ Journal Article Archive - 2003</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Description" CONTENT="The TRIZ Journal Article Archive - 2003">
+<META NAME="Keywords" CONTENT="The TRIZ Journal Article Archive - 2003">
+<META NAME="Author" content="RealInnovation.com Authorship - Innovation">
+<META NAME="Copyright" content="Copyright &#65533; 2004-2011 - RealInnovation.com. All Rights Reserved.">
+
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script src="/css/menu.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/include/datetimepicker.js"></script>
+<link href="/css/menu_global.css" type="text/css"  rel="stylesheet" media="screen" />
+<link href="/css/menu_side.css" type="text/css"  rel="stylesheet" media="screen" />
+
+
+<!-- START GOOGLE AD MANAGER -->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-2532690673289043");
+  GS_googleEnableAllServices();
+</script>
+
+
+
+<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link1");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link2");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link3");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link4");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link5");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link6");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link7");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link8");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_premium_link1");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_premium_link2");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_premium_link3");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_calendar_sponsored_event1");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_calendar_sponsored_event2");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_calendar_sponsored_event3");
+</script>
+
+
+
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+
+<!-- END GOOGLE AD MANAGER -->
+
+
+<SCRIPT type="text/javascript" id="wa_u" ></SCRIPT><SCRIPT type="text/javascript" src="/triz_journal.js"></SCRIPT>
+
+
+</HEAD>
+<body bgcolor="#ffffff" link="#000099" vlink="#006633" alink="#F7941D" topmargin="2" leftmargin="2" marginheight="2" marginwidth="2"><noindexfb>
+
+
+
+
+<!-- Start Header -->
+<!-- Start Header -->
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+		<td width="403" valign="top"><div style="margin-left:0px; margin-top:13px;"><a href="/"><img width="280" height="40" alt="The TRIZ Journal" border="0" src="/library/graphics/triz_journal.gif" style="margin-left:2px;" /></a><a href="http://www.triz-journal.com/commentary/archive/celebrating_10_years_of_the_triz_journal.html"><img src="/library/graphics/10years.gif" height="40" width="40" border="0" alt="Celebrating 10 Years On The Web"></a></div><table style="margin-left:57px;" onMouseOver="this.style.cursor='hand';window.status='Go To Real Innovation - www.realinnovation.com';return true" onMouseOut="this.style.cursor='auto';window.status='';return true" onClick="location.href='http://www.realinnovation.com/'"><tr><td style="font-family:Verdana,Arial;font-size:10px;">Part of the <b><span style="color:#1095CB;">Real</span><span style="color:#1E2482;">Innovation</span> Network</b></td></tr></table></td>
+		<td align="right">
+			<!--BPL-->
+			
+
+<table cellpadding="0" cellspacing="0">
+
+	<tr>
+
+		
+			<td><script type="text/javascript">GA_googleFillSlot("tj_premium_link1");</script></td>
+			<td><img src="library/graphics/clear.gif" height="1" width="15"></td>
+			<td><script type="text/javascript">GA_googleFillSlot("tj_premium_link2");</script></td>
+			<td><img src="library/graphics/clear.gif" height="1" width="15"></td>
+			<td><script type="text/javascript">GA_googleFillSlot("tj_premium_link3");</script></td>
+			<td><img src="library/graphics/clear.gif" height="1" width="15"></td>
+		
+
+		<td>
+			<a href="/adsales/ad-opps.asp" target="_top"><img src="/library/graphics/innovation_premiumlinks.gif" width="11" height="66" border="0" alt="Click To Learn More About PremiumLinks" style="vertical-align:middle;margin-bottom:1px;" /></a>
+		</td>
+
+	</tr>
+
+</table>
+			<!--EPL-->
+		</td>
+	</tr>
+</table>
+<!-- End Header -->
+
+<!-- Navigation and Search-->
+<table border="0" cellspacing="0" cellpadding="0" style="background-color:#002963;" width="100%">
+	<tr>
+		<td width="50%" valign="top" style="background-color:#0099CC;background-image:  url(/library/graphics/background-hor.gif);">
+			<div align="left" class="nav_text" style="margin-left:5px; margin-top:6px; margin-right:px; white-space:nowrap;">
+</noindexfb><a class="nav_text" href="http://www.triz-journal.com">Home</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a class="nav_text" href="http://www.triz-journal.com/archives/">Article Archives</a>
+<noindexfb></div></td>
+		<td width="50%" valign="top" style="background-color:#0099CC; white-space:nowrap;">
+			<div align="right" style="margin-left:20px; margin-top:1px; margin-bottom:1px; margin-right:4px">
+			<form method="get" name="fbsearch" class="search_text" action="http://search.realinnovation.com/cgi-bin/ss_query" /> Search:
+				<select name="related" size="1" style="margin-left:10px; background-color:#ebeff2; border:1px solid #ccc; border-bottom-color:#eee; border-right-color:#eee; color:#333; padding:2px 0 2px 1px; width:104px; font-face:tahoma; font-size:11px;">
+    			<option value="0">Entire Site</option>
+    			<option value="1">Articles</option>
+    			<option value="2">Commentary</option>
+    			<option value="3">Dictionary</option>
+    			<option value="4">Discussion Forum</option>
+    			<option value="5">News</option>
+				</select>
+				<input type="text" maxlength="100" name="keys" style="margin-left:10px; background-color:#ebeff2; border:1px solid #ccc; border-bottom-color:#eee; border-right-color:#eee; color:#333; padding:2px 0 2px 1px; width:154px; font-face:tahoma; font-size:11px;" onfocus="this.style.background='#FFFFCC'" onblur="this.style.background='#E0E0E0'" />
+				<input type="hidden" name="sitenbr" value="157456965">
+				<input type="hidden" name="rgn" value="trizjournal"><input type="hidden" name="e" value="tjl"><input type="image" src="/library/graphics/innovation_button.gif" alt="Submit your info" style="vertical-align:middle;margin-bottom:2px;" /></form>
+			</div>
+		</td>
+	</tr>
+
+</table>
+<!-- End Navigation and Search-->
+<!-- End Header -->
+
+<!--Main table-->
+<table border="0" cellspacing="0" cellpadding="0" style="background-image:  url(/library/graphics/header.jpg); background-repeat: repeat-x; background-position:;" width="100%">
+	<tr>
+		<td width="125" valign="top" style="background-color:#0099CC;background-image:  url(/library/graphics/background.gif);">
+			<!-- LEFT NAV -->
+			<ul id="menu" class="dbMenu onMouse">
+
+				<li><a href="/newsletter/">Subscribe</a></li>
+				<li><a href="/content/what_is_triz.asp">What is TRIZ?</a></li>
+				<li><a href="/content/contradiction_matrix.asp">Contradiction Matrix<br>& 40 Principles</a></li>
+				<li><a href="/archives/year/">Archives</a>
+</li>
+				<li><a href="/best_practices.html">Best Practices</a><ul><li><a href='/best_practices/general.html'>General</a></li><li><a href='/best_practices/software_innovation_and_creativity.html'>Software, Innovation and Creativity</a></li><li><a href='/best_practices/consultants_innovation_and_creativity.html'>Consultants, Innovation and Creativity</a></li></ul></li>
+				<li><a href="/submit/" >Call For Papers</a></li>
+				<li><a href="/dictionary/glossary.asp" >Dictionary</a></li>
+				<li><a href="/events/" >Events Calendar</a></li>
+				<li><a href="/jobs/" >Jobs</a></li>
+				<li><a href="/news/" >News</a></li>
+				<li><a href="/commentary/" >Commentary</a></li>
+				<li><a href="/forum/" >Discussion Forum</a></li>
+				<li style="background-color:#429CC6;margin-top:10px;"><div style="background-color:#C0C0C0;text-color:#000099;font-size:11px;font-weight:normal;font-family:Tahoma;text-align:left;color:#000099;padding:2px;margin-left:2px;margin-right:2px;height:4px;">Related Topics</div></li>
+				<li><a href="http://www.bpmenterprise.com">Business Process Mgt</a></li>
+				<li><a href="http://www.realinnovation.com">Innovation</a></li>
+				<li><a href="http://www.sourcingmag.com">Outsourcing</a></li>
+				<li><a href="http://www.isixsigma.com">Six Sigma</a></li>
+				<li style="background-color:#429CC6;margin-top:10px;"><div style="background-color:#C0C0C0;text-color:#000099;font-size:11px;font-weight:normal;font-family:Tahoma;text-align:left;color:#000099;padding:2px;margin-left:2px;margin-right:2px;height:4px;">Quick Access</div></li>
+				<li><a href="/help/">Help</a></li>
+				<li><a href="/search/">Search</a></li>
+				<li><a href="/adsales/">Advertising</a></li>
+				<li><a href="/archives/year/">Article Archive</a></li>
+				<li><a href="/newsletter/archive/">Newsletter Archive</a></li>
+				<li><a href="/suggestion/">Reader Feedback</a></li>
+				<li><a href="/content/triz-journal_editorial_panel.asp">Editorial Panel</a></li>
+			</ul>
+			<!-- END LEFT NAV -->
+		</td>
+
+		<td valign="top" class="body_text" style="background-color:#FFFFFF;padding:5px;">
+			<!--main section-->
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+				  <td class="body_text" valign="top">
+<br>
+
+<!--BeginText-->
+
+<h1>The TRIZ Journal Article Archive - 2003<font size="3"></font></h1>
+<p>
+
+<table align="right" border="0" cellpadding="0" cellspacing="0" width="175">
+<tr>
+<td rowspan="10" width="15"><img src="/library/graphics/clear.gif" width="15" height="1" alt=""></td>
+<td>
+
+<!-- Bookmark, Print and Email-->
+<script language="javascript">
+<!--
+function bookmark(url, description) {
+	var netscape="First push OK and then hit CTRL+D to add a bookmark to this site."
+	if (navigator.appName=='Microsoft Internet Explorer') {
+		window.external.AddFavorite(url, description);
+	}
+	else if (navigator.appName=='Netscape') {
+		alert('Press (Ctrl+D) To Bookmark This Page.');
+	}
+}
+//-->
+</script>
+<table bgcolor="#000099" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td>
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr>
+<td align="center"><a onMouseOver="window.status='Add This Page To Your Browser Bookmarks'; return true" onMouseOut="window.status=' '; return true" href="javascript:bookmark('http://www.triz-journal.com/archives/2003/default.asp','The TRIZ Journal Article Archive - 2003');" ><img src="/library/graphics/bookmarkicon.gif" width="20" height="20" border="0" alt="Bookmark This Page" hspace="1"></a></td>
+<td nowrap><a class="art_fxn" onMouseOver="window.status='Add This Page To Your Browser Bookmarks'; return true" onMouseOut="window.status=' '; return true" href="javascript:bookmark('http://www.triz-journal.com/archives/2003/default.asp','The TRIZ Journal Article Archive - 2003');" ><font face="verdana,geneva,sans-serif" size="1">
+Bookmark This Page</font></a></td>
+</tr>
+<tr>
+<td align="center"><a onMouseOver="window.status='Email This Page'; return true" onMouseOut="window.status=' '; return true" href="/archives/2003/default.asp?action=email"><img src="/library/graphics/emailicon.gif" width="20" height="20" border="0" alt="Email This Page" hspace="1"></a></td>
+<td nowrap><a class="art_fxn" onMouseOver="window.status='Email This Page'; return true" onMouseOut="window.status=' '; return true" href="/archives/2003/default.asp?action=email"><font face="verdana,geneva,sans-serif" size="1">
+Email This Page</font></a></td>
+</tr>
+<tr>
+<td align="center"><a onMouseOver="window.status='Format For Printing'; return true" onMouseOut="window.status=' '; return true" href="/archives/2003/default.asp?action=print"><img src="/library/graphics/printicon.gif" width="20" height="20" border="0" alt="Format for Printing" hspace="1"></a></td>
+<td nowrap><a class="art_fxn" onMouseOver="window.status='Format For Printing'; return true" onMouseOut="window.status=' '; return true" href="/archives/2003/default.asp?action=print"><font face="verdana,geneva,sans-serif" size="1">
+Format for Printing</font></a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+
+<!-- End Print and Email-->
+
+</td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+<tr><td>
+
+
+</td>
+</tr>
+
+<tr>
+<td HEIGHT="5"></td>
+</tr>
+</table>
+
+
+</noindexfb><BODYTEXT>
+</A></P><h1>JANUARY 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <a href="01/a/index.htm">Complexity Increases And Then… (Thoughts From
+      Natural System Evolution)</a><br>
+      By: Darrell Mann<br>
+      &nbsp;</li>
+    <li>
+      <p ALIGN="left">
+      <a href="01/b/index.htm">Solution Dynamics as a Function of Resolution Method
+      (Physical Contradiction v.
+      Technical Contradiction)</a><br>
+      By: Michael S. Slocum, Ellen Domb, Catherine Lundberg<br>
+      &nbsp;</li>
+    <li>
+      <p ALIGN="left">
+      <a href="01/c/index.htm">Anticipating Failures with Substance-Field Inversion</a><br>
+      By: Thomas W. Ruhe<font size="2"><br>
+      </font><font color="#008080"><b>&nbsp;</b></font></li>
+    <li>
+      <p ALIGN="left">
+      <a href="01/d/index.htm">Book Review: &quot;Anatomy of a fiction plot (ANATOMIYA
+      SYUGETA)&quot;</a><br>
+      By: Semyon Savransky<br>
+      &nbsp;</li>
+    <li>
+      <p ALIGN="left">
+      <a href="01/e/index.htm">Using TRIZ to Create an Internet Address for the
+      “GENERATOR” Website</a><br>
+      By: Nikolay Shpakovsky and Elena Novitskaja<br>
+      &nbsp;</li>
+    <li>
+      <p ALIGN="left">
+      <a href="01/f/index.htm">Reorganizing TRIZ Solution Generation Methods into
+      Simple Five in USIT</a> (article + appendix)<br>
+      By: Toru Nakagawa<br>
+      &nbsp;</li>
+  </ol>
+      </blockquote>
+
+
+<h1>FEBRUARY 2003</h1>
+      <p align="left">
+      <font color="#800000"><b>Currently, only PDF versions are available at
+      this time.<br>
+      </b></font>
+  <a href="http://www.adobe.com/prodindex/acrobat/readstep.html#reader" target="_blank">
+  <img src="/library/graphics/pdf_icon.gif" alt="Free Adobe Acrobat Reader" border="0" width="88" height="31"></a><br>
+      <i>Please <a href="../../subscribe">Subscribe</a> to be notified when HTML versions
+      <br>
+      of this month's articles are available.</i><blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>Brainstorming and TRIZ<br>
+      </b>By: Brian Campbell<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="02/a/01.pdf">PDF version</a> (15 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Christmas TRIZ - Ideality - A True Story<br>
+      </b>By: Kevin Landhuis<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="02/b/02.pdf">PDF version</a> (64 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Ideality and 'Self-X' - Part 1: Things That Do Things For Themselves<br>
+      </b>By: Darrell Mann<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="02/c/03.pdf">PDF version</a> (51 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Let's Make the Firework of Innovations<br>
+      </b>By: Kalevi Rantanen<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="02/d/04.pdf">PDF version</a> (27 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Evolving the Corkscrew: A TRIZ-based Hypothesis<br>
+      </b>By: Dana W. Clarke<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="02/e/05.pdf">PDF version</a> (27 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Book Review: TRIZ Companion<br>
+      </b>By: Catherine Lundberg<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="02/f/06.pdf">PDF version</a> (8 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Software Review: &#8220;Invention Highway, Family Edition and Professional
+      Edition&#8221;<br>
+      </b>By: Catherine Lundberg<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="02/g/07.pdf">PDF version</a> (6 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+<h1>MARCH 2003</h1>
+      <p align="left">
+      <font color="#800000"><b>Currently, only PDF versions are available at
+      this time.<br>
+      </b></font>
+  <a href="http://www.adobe.com/prodindex/acrobat/readstep.html#reader" target="_blank">
+  <img src="/library/graphics/pdf_icon.gif" alt="Free Adobe Acrobat Reader" border="0" width="88" height="31"></a><br>
+      <i>Please <a href="../../subscribe">Subscribe</a> to be notified when HTML versions
+      <br>
+      of this month's articles are available.</i><blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>40 Inventive Principles in Quality Management<br>
+      </b>By: Gennady Retseptor<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="03/a/01.pdf">PDF version</a> (65 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Anticipating Failures with Substance-Field Inversion - A TRIZ Methods
+      Case Study<br>
+      </b>By: Thomas W. Ruhe<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="03/b/02.pdf">PDF version</a> (176 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>IDEALITY AND &#8216;SELF-X&#8217; - Part 2: Meals, Wheels, and Carpet Slippers -
+      Technical Case Studies<br>
+      </b>By: Darrell Mann<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="03/c/03.pdf">PDF version</a> (220 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Innovation Metrics: Embedding Innovation in an Organization's Systems<br>
+      </b>Interview with Robert Tucker by Joyce Wycoff<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="03/d/04.pdf">PDF version</a> (11 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>PROYECTO TRIZ in Nicaragua<br>
+      </b>By Hugo Sanchez<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="03/e/05.pdf">PDF version</a> (9 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Thoughts on Substance-Field Models and 76 Standards - Do we need all of
+      the Standards? <br>
+      </b>By: Pentti Soderlin<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="03/f/06.pdf">PDF version</a> (32 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Titanic TRIZ: A Universal Case Study<br>
+      </b>By: Ellen Domb, Ph.D.<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="03/g/07.pdf">PDF version</a> (69 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>SUPPORT &#8211; Sustainable Innovation Tools Project<br>
+      </b>By: University of Leoben<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="03/h/08.pdf">PDF version</a> (14 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+<h1>APRIL 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ for Non-Technical Problem Solving<br>
+      </b>By: Ellen Domb<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="04/a/01.pdf">PDF version</a> (541 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>THE TRIZ-FRACTAL MODEL: Part 1 - On Facilitating the Rapid Diffusion of
+      TRIZ<br>
+      </b>By Dr. Rodney K. King<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="04/b/02.pdf">PDF version</a> (34 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>THE TRIZ-FRACTAL MODEL: Part 2 &#8211; Using the TRIZ-Fractal Model For
+      Functional Modelling and
+      Visual Ideas Management<br>
+      </b>By Dr. Rodney K. King<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="04/c/03.pdf">PDF version</a> (38 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Thoughts on ARIZ - Do we need to redesign the ARIZ 2000?<br>
+      </b>By: Pentti Soderlin<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="04/d/04.pdf">PDF version</a> (23 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Book (and Product) Review: Introduction to ASIT<br>
+      </b>By: Ellen Domb<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="04/e/05.pdf">PDF version</a> (10 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>IDEALITY AND &#8216;SELF-X&#8217; - Part 3: Business Context and Case Studies<br>
+      </b>By: Darrell Mann<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="04/f/06.pdf">PDF version</a> (65 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>A TRIZ POEM?<br>
+      </b>Letter to the editor<br>
+      From: Andre de Zanger<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="04/g/07.pdf">PDF version</a> (7 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+<h1>MAY 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>Combination of ARIZ92 and NM (Nakayama, Masakazu) Method for the 5-th
+      level problems<br>
+      </b>By: Yoshiki Nakamura<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/a/01.pdf">PDF version</a> (193 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Computer-Aided Design: Forecasted Evolution<br>
+      </b>By: V. Abate (1), G. Cascini (2)<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/b/02.pdf">PDF version</a> (130 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Updating TRIZ: 1985-2002 Patent Research Findings<br>
+      </b>By: Darrell Mann and Simon Dewulf<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/c/03.pdf">PDF version</a> (428 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>A Coffee Room Application of Video Technology.<br>
+      </b>By: Kalevi Rantanen<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/d/04.pdf">PDF version</a> (17 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Adaptive evolution in biology and technology: Why are parallels
+      expected?<br>
+      </b>By: Peter Kaplan<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/e/05.pdf">PDF version</a> (418 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Thoughts on Value and Ideality, Is the Concept of Ideality
+      &quot;Scientific&quot;?<br>
+      </b>By: Pentti Soderlin<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/f/06.pdf">PDF version</a> (18 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ, Quantum Physics and Poetry in Solving Personal and Professional
+      Problems<br>
+      </b>By: Judith de Zanger, Ph.D., and Andre de Zanger<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/g/07.pdf">PDF version</a> (17 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Morality and Speed Cameras - Picturing More Than The Surface Behaviour<br>
+      </b>By: Graham Rawlinson<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/h/08.pdf">PDF version</a> (12 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Book Review: TRIZ: Through the Eyes of an American TRIZ Specialist<br>
+      </b>By: Ralph Czerepinski<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="05/i/09.pdf">PDF version</a> (12 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+<h1>JUNE 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>Reangularity, Semangularity, and Ideality</b><br>
+      By: Michael Slocum, Catherine Lundberg, Katrina Walter<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="06/a/01.pdf">PDF version</a> (117 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Conference Minutes, 3rd European TRIZ Conference 2003 at ETH Zuerich<br>
+      </b>By: Carsten Gundlach, Horst Nähler und Rolf Herb<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="06/b/02.pdf">PDF version</a> (319 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Functional thinking in production process environment<br>
+      </b>By: Ives De Saeger<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="06/c/03.pdf">PDF version</a> (160 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Develop New Kind Of Plough By Using TRIZ And Robust Design<br>
+      </b>By: Zhao Xinjun<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="06/d/04.pdf">PDF version</a> (71 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Application Area of Thinking Tool or Problem Solving Tool <br>
+      </b>By: Takahara Toshio<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="06/e/05.pdf">PDF version</a> (144 KB)<b> </b>&nbsp;<font color="#008080">[Updated
+      06/01/2003 10:00 PM PST]</font><b><br>
+&nbsp;</b></font></li>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ and Case Study About Bus Seats<br>
+      </b>By Ali Sen, Korhan Arun<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="06/f/06.pdf">PDF version</a> (228 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>SARS and 40 Principles For Eliminating Technical Contradictions:
+      Creative Singapore<br>
+      </b>By: Iouri Belski, Len Kaplan, Vladimir Shapiro, Leonid Vaner, Wong
+      Peng Wai<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="06/g/07.pdf">PDF version</a> (48 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Book Review: How To Invent (Almost) Anything<br>
+      </b>By: Joe A. Miller<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="06/h/08.pdf">PDF version</a> (13 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Letter to the Editor<br>
+      </b><a href="../../letters/2003/06.htm">Re: Comment: Thoughts on ARIZ -
+      Do we need to redesign the ARIZ 2000?</a><br>
+      From: Celso Co<br>
+      &nbsp;</li>
+  </ol>
+      </blockquote>
+
+
+<h1>JULY 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>40 Principles &#8211; Chemical Illustrations<br>
+      </b>By: Billy Grierson, Iain Fraser, Ailsa Morrison, Stuart Niven, Greig
+      Chisholm<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/a/01.pdf">PDF version</a> (24 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ Patterns of Evolution as a Means for Supporting History of
+      Technology: Analyzing the Brunelleschi&#8217;s Dome Cranes</b><br>
+      By: Gaetano Cascini, Romano Nanni, Davide Russo<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/b/02.pdf">PDF version</a> (418 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ and Case Study About Bus Seats</b><br>
+      By: Ali SEN, Korhan ARUN<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/c/03.pdf">PDF version</a> (199 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Utilising TRIZ Methodologies to Evolve and Develop Next Generation Food
+      Packaging Concepts</b><br>
+      By: Dr John Cooney, Barry Winkless<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/d/04.pdf">PDF version</a> (207 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ on Rapid Prototyping -A Case Study for Technology Foresight<br>
+      </b>By: Jörg Stelzner, Carlos Palacios, Tobias Swaton<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/e/05.pdf">PDF version</a> (879 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>The Forecast of the Ballpoint Pen Evolution<br>
+      </b>By: Yury Danilovsky and Voluslav Mitrofanov<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/f/06.pdf">PDF version</a> (2495 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Modelling 40 Innovation Principles with &quot;Moving Little People&quot;<br>
+      </b>By: Pavel Livotov<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/g/07.pdf">PDF version</a> (263 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Thoughts on Fields - Is the Concept of Field indisputable?</b><br>
+      By: Pentti Soderlin<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/h/08.pdf">PDF version</a> (28 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ for Six Sigma &#8211; an E-book by Geoff Tennant</b><br>
+      Reviewed by: Brian Campbell, Dr. Michael Slocum, Dr. Ellen Domb<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/i/09.pdf">PDF version</a> (10 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>SUPPORT &#8211; Sustainable Innovation Tools Project Update</b><br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="07/j/10.pdf">PDF version</a> (14 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+<h1>AUGUST 2003</h1>
+<blockquote>
+  </p><ol>
+    <li><b>Eco-Innovative Examples for 40 TRIZ Inventive Principles<br>
+    </b>By: Hsiang-Tang Chang and Jahau Lewis Chen<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/a/01.pdf">PDF version</a> (815 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>The Enigmas from GENERATOR <br>
+      </b>By: N. Shpakovsky &amp; E. Novitskaya<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/b/02.pdf">PDF version</a> (15 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>The Integration Of TRIZ Problem Solving Techniques With Other Problem
+      Solving And Assessment Tools<br>
+      </b>By: Jack Hipple<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/c/03.pdf">PDF version</a> (110 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>How People Interact with Objects using TRIZ and ASIT<br>
+      </b>By: Takahara Toshio<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/d/04.pdf">PDF version</a> (185 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Introducing Matrix 2003 - New research and a new format for the popular
+      TRIZ tool<br>
+      </b>By: Ellen Domb and Michael Slocum<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/e/05.pdf">PDF version</a> (12 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Case Study - Applying the TRIZ Methodology to Machine Maintenance<br>
+      </b>By: John Cooney, Darrell Mann<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/f/06.pdf">PDF version</a> (482 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Proposal Of A Set Of Fundamental Principles For Knowledge-Based
+      Creativity Techniques<br>
+      </b>By: Jaime Beleta<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/g/07.pdf">PDF version</a> (204 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Design for Six Sigma (DFSS): A Roadmap for Product Development (Book
+      review)<br>
+      </b>By: Michael Slocum<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/h/08.pdf">PDF version</a> (12 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Utilizing Axiomatic Design to Render Objective Ideality Calculations<br>
+      </b>By: Michael S. Slocum<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="08/i/09.pdf">PDF version</a> (12 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+<h1>SEPTEMBER 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>Systematic Innovation In Service Design Through TRIZ<br>
+      </b>By: Jun Zhang, Kay-Chuan Tan, Kah-Hin Chai<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/a/01.pdf">PDF version</a> (72 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Answers to &#8220;The Enigmas From GENERATOR&#8221;<br>
+      </b>By: Nikolay Shpakovsky and Elena Novitskaja<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/b/02.pdf">PDF version</a> (810 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Invention Quality Measurement (IQM) 1. Patent Valuation. The Methods
+      That TRIZ Forgot<br>
+      </b>By: Barry Winkless<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/c/03.pdf">PDF version</a> (363 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Preview of a New English Translation of a TRIZ Book<br>
+      </b>By: Vladimir Petrov<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/d/04.pdf">PDF version</a> (49 KB)<br>
+      &nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>&#8220;Logical Enhancement of ASIT&#8221;<br>
+      </b>By: Takahara Toshio<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/e/05.pdf">PDF version</a> (192 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Asymmetry<br>
+      </b>By: Darrell Mann<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/f/06.pdf">PDF version</a> (367 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Using Value-Engineering Analysis + TRIZ Method For Improving The
+      Stripping Grain-Harvesting Machine<br>
+      </b>By: Peter Chuksin, Alexander Skuratovich, Nikolay Shpakovsky<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/g/07.pdf">PDF version</a> (565 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Book Review: &#8220;Unified Structured Inventive Thinking &#8211; an Overview&#8221;<br>
+      </b>By: Ellen Domb<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/h/08.pdf">PDF version</a> (23 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>News from MATRIZ</b><br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/i/09.pdf">PDF version</a> (141 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Letter to the editor<br>
+      </b>From: Mark Barkan<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="09/j/10.pdf">PDF version</a> (6 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+<h1>OCTOBER 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>The Development Of The Cotton Gin, 1796 To 1844<br>
+      </b>By: William Fowlkes, Ph.D.<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/a/01.pdf">PDF version</a> (51 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>A New Method For Creating The Non-Technologic Principles Of TRIZ<br>
+      </b>By: Dr Mohammad.H Saliminamin, Navid Nezafati<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/b/02.pdf">PDF version</a> (78 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>ASIT Technique For A Week, Issue 136<br>
+      </b>By: Roni Horowitz<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/c/03.pdf">PDF version</a> (21 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Micro-Stories, Daisies And Dandelions. Segmentation Makes The Product
+      Attractive Both In Journalism And In The Nature<br>
+      </b>By Kalevi Rantanen<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/d/04.pdf">PDF version</a> (10 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Improve It By Breaking It. Examples From Journalism Show How
+      Segmentation Helps To Make Ideas More Saleable And Cost-Effective<br>
+      </b>By Kalevi Rantanen<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/e/05.pdf">PDF version</a> (17 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Book Review: The 121 Heuristics For Problem Solving.<br>
+      </b>By Ellen Domb and Michael Slocum<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/f/06.pdf">PDF version</a> (21 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>The Functional - Resource Approach To The Forecasting Of Technical
+      Systems Evolution - A Fragment From The Book &quot;Evolution of technologies&quot;,
+      Chapter « Graphic and numerical methods based approach to forecasting
+      tasks solving »<br>
+      </b>By: Yury Danilovsky, Voluslav Mitrofanov, Denis Shevchenko<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/g/07.pdf">PDF version</a> (125 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Food Foresight: Analysis Of The Development Patterns Of The Food
+      Industry And Markets Using TRIZ Concepts<br>
+      </b>By: Jorge Oliveira<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/h/08.pdf">PDF version</a> (122 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Evolution Of Systems <br>
+      </b>By: Michel Lecoq<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/i/09.pdf">PDF version</a> (3648 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ And Machine Maintenance Case Study - Part 2 &#8211; Managing Constraints
+      And Perceptions<br>
+      </b>By: Darrell Mann, John Cooney, Barry Winkless<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/j/10.pdf">PDF version</a> (3841 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Comments And Reply About &quot;Invention Quality Measurement (IQM) 1. Patent
+      Valuation. The Methods That TRIZ Forgot&#8221; (TRIZ Journal, Sept. 2003)<br>
+      </b>From: Jose Vicente<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/k/11.pdf">PDF version</a> (12 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>A Response To &quot;TRIZ on Rapid Prototyping - a case study for technology
+      foresight&quot;<br>
+      </b>From: Richard Peyton George<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="10/l/12.pdf">PDF version</a> (194 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+<h1>NOVEMBER 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>Inventions on Computer Keyboard - A TRIZ based analysis<br>
+      </b>By: Umakant Mishra<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/a/01.pdf">PDF version</a> (649 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>How Function is Realized in Problem Solving<br>
+      </b>By: Toshio Takahara<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/b/02.pdf">PDF version</a> (151 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Application of S.I.T. Method in &quot;REGBA&quot; Kitchens Production Plant - The
+      12th International <br>
+      Conference of the Israel Association for Quality, 01 &#8211; 03 December 1998,
+      Jerusalem<br>
+      </b>By:Peretz Manor<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/c/03.pdf">PDF version</a> (708 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>International TRIZ Association - October 5, 2003 - Information Letter
+      No. 25/2003<br>
+      </b>By: M.S. Rubin<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/d/04.pdf">PDF version</a> (23 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Practical Case Study of Resolving the Physical Contradiction in TRIZ;
+      Super Water-Saving Toilet <br>
+      System Using Flexible Tube<br>
+      </b>By: Hong Suk Lee, Kyeong-Won Lee<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/e/05.pdf">PDF version</a> (312 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Thoughts on Critiques and Critics - Why Are the Articles in
+      TRIZ-Journal Subject to Mockery?<br>
+      </b>By: Pentti Soderlin<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/f/06.pdf">PDF version</a> (20 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>TRIZ Challenge - November 2003<br>
+      </b>By: Ian Care<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/g/07.pdf">PDF version</a> (7 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>The Function Model For Existing Product Using Reverse Fishbone Diagram<br>
+      </b>By: Tan Runhua, Cao Guozhong, Zhang Ruihong<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/h/08.pdf">PDF version</a> (173 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>The 4th Japan Invention Machine User Group Meeting<br>
+      </b>By: Yoshihisa Konishi<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/i/09.pdf">PDF version</a> (48 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Book Review: Inventive Thinking through TRIZ by Michael Orloff<br>
+      </b>Reviewed by: Michael S. Slocum and Ellen Domb, Ralph Czerepinski, Jose
+      M. Vicente-Gomila, Richard <br>
+      Kaplan<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="11/j/10.pdf">PDF version</a> (26 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+<h1>DECEMBER 2003</h1>
+<blockquote>
+  </p><ol>
+    <li>
+      <p ALIGN="left">
+      <b>The European TRIZ Association Meeting, November 12-14, 2003, Aachen,
+      Germany.<br>
+      </b>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/a/01.pdf">PDF version</a> (329 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Applying TRIZ to Endodontic Tool Design<br>
+      </b>By: Ellen Domb, John &quot;Jack&quot; Jacklich<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/b/02.pdf">PDF version</a> (535 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>CASE STUDY in TRIZ: &#8216;Global Benchmark&#8217; Evaluation of Thermal Comfort in
+      Sports Equipment<br>
+      </b>By: Simon Dewulf, Vincent Ventenat, Darrell Mann<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/c/03.pdf">PDF version</a> (254 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>40 Inventive Principles with Applications in Service Operations
+      Management<br>
+      </b>By: Jun Zhang, Kah-Hin Chai, Kay-Chuan Tan<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/d/04.pdf">PDF version</a> (65 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Using TRIZ to Create Innovative Business Models and Products<br>
+      </b>By: Atsuko Ishida<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/e/05.pdf">PDF version</a> (381 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Mastery of future generations of products &amp; TRIZ<br>
+      </b>By: Pascal Crubleau, Simon Richir, Ridha Hambli<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/f/06.pdf">PDF version</a> (76 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Mitosis of TRIZ (continuation of the article « the Vector of
+      development of TRIZ passes through &quot;NonTRIZ&quot;: program article»)<br>
+      </b>By: Y.Danilovsky, V.Mitrofanov, D.Shevchenko<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/g/07.pdf">PDF version</a> (59 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Empowering Six Sigma methodology via the Theory of Inventive Problem
+      Solving (TRIZ)<br>
+      </b>By: Amir H.M. Kermani<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/h/08.pdf">PDF version</a> (57 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>I-TRIZ for Six Sigma Business Process Management<br>
+      </b>By: Elena A. Averboukh<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/i/09.pdf">PDF version</a> (232 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Review of &#8220;Solution &#8211; Innovation Card Game&#8221;<br>
+      </b>By: Walter Lamia<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/j/10.pdf">PDF version</a> (8 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Letter from the International TRIZ Association<br>
+      </b>By: M. Rubin<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/k/11.pdf">PDF version</a> (55 KB)<br>
+&nbsp;</font></li>
+    <li>
+      <p ALIGN="left">
+      <b>Letter to the Editor<br>
+      </b>From: Brian Campbell<br>
+      <img border="0" src="/library/graphics/pdf_icon.gif" width="15" height="17">
+      <font size="2"><a href="12/l/12.pdf">PDF version</a> (27 KB)<br>
+&nbsp;</font></li>
+  </ol>
+      </blockquote>
+
+
+</BODYTEXT>
+
+<!--endtext-->
+
+<br><br>
+
+					</td>
+				</tr>
+			</table>
+			<!--end main section-->
+		</td>
+		<td width="125" align="center" valign="top" style="background-color:#D9D9D9">
+			<div align="center" class="nav_text" style="margin-left:5px; margin-top:6px; margin-right:px;color:#000000;"><a href="/adsales/" class="footer_text" style="color:#808080">
+				Ad Links</a></div>
+			
+
+<table>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link1");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link2");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link3");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link4");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link5");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link6");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link7");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link8");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+</table>
+
+
+
+
+<a href="http://store.isixsigma.com/eBooks/Business-Innovation-in-the-21st-Century-eBook/p-107-166/" target="_top"><img alt="Business Innovation in the 21st Century (eBook)" border="0" src="/library/a/iSixSigma_AL.gif" height="240" width="125" style="border:1px solid #CFCFCF; margin-top:5px; margin-right:3px; margin-left:3px;" /></a><br /><br/>
+
+
+
+<a href="/r.asp?id=92" target="_top"><img alt="Advertise on Real Innovation and The TRIZ Journal" border="0" src="/library/a/AdLink.gif" height="120" width="125" style="border:1px solid #CFCFCF; margin-top:5px; margin-right:3px; margin-left:3px;" /></a><br /><br />
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="height:1px" bgcolor="#E0E0E0" valign="top"></td>
+	</tr>
+</table>
+<!--End Main area-->
+
+<!--Footer-->
+
+
+<table border="0" cellpadding="7" cellspacing="0" style="width:100%;vertical-align:top;">
+ 	<tr>
+		<td class="footer_text" style="vertical-align:top;">
+			<a href="http://www.triz-journal.com/uagree/" class="footer_text">Legal Information</a><span style="color:#000000">. &copy; 2006 - 2011 <a href="http://www.ctqmedia.com">CTQ Media</a>. All rights reserved. v1.0, 0.0</span>
+		</td>
+		<td class="footer_text" align="right" style="vertical-align:top;">
+			<a href="http://www.triz-journal.com/submit/" class="footer_text">Submit an Article</a> &bull;
+
+			<a href="http://www.triz-journal.com/about/" class="footer_text">About The TRIZ Journal</a> &bull;
+
+			<a href="http://www.triz-journal.com/contact/Default.asp?ToDo=contact" class="footer_text">Contact Us</a> &bull;
+			<a href="http://www.triz-journal.com/uagree/privacy.asp" class="footer_text">Privacy Policy</a> &bull;
+			<a href="http://search-www.isixsigma.com/sitemap/130985463.html" class="footer_text">Site Map</a>
+		</td>
+	</tr>
+</table>
+<!--Footer-->
+
+
+<script>
+if (parent.frames.length > 0) {
+    // parent.location.href = self.document.location
+}
+var d = new Date()
+if (d.getTimezoneOffset) {
+  var iMinutes = d.getTimezoneOffset()
+  document.cookie = "tz=" + iMinutes
+}
+
+function sendEmail(encodedEmail)
+{
+  location.href = "mailto:" + decodeEmail(encodedEmail);
+}
+
+function decodeEmail(encodedEmail)
+{
+  var email = "";
+  for (i=0; i < encodedEmail.length;)
+  {
+    var letter = "";
+    letter = encodedEmail.charAt(i) + encodedEmail.charAt(i+1)
+
+    email += String.fromCharCode(parseInt(letter,16));
+    i += 2;
+  }
+  return email;
+}
+</script>
+
+</noindexfb>
+
+
+	<script language="JavaScript" type="text/javascript" src="/include/google_triz.js"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,510 @@
+<h1>Strength versus Weight Contradictions In Bridge Design</h1>
+<p><font size="2">&nbsp;&nbsp;</font></p>
+<div align="center">
+  <b><font size="2">Darrell MANN<br>
+  </font></b><span lang="EN-GB"><font size="2">Industrial Fellow, Department Of
+  Mechanical Engineering<br>
+  University Of Bath, Bath, BA2 7AY, UK<br>
+  +44 (1225) 826465&nbsp; FAX +44 (1225) 826928<br>
+  <a href="mailto:D.L.Mann@bath.ac.uk"><span lang="EN-US">D.L.Mann@bath.ac.uk</span></a></font></span>
+</div>
+<p align="center"><span lang="EN-GB"><font size="2">&nbsp;</font></span></p>
+<h1><b><font size="2">INTRODUCTION</font></b></h1>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; Most if not all engineering systems
+experience a strength versus weight conflict of some description. The
+contradiction most commonly manifests itself in the balance designers attempt to
+strike between the need to ensure adequate strength, and the parallel desire to
+utilise the minimum amount of material, and thus achieve the lowest cost.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; The strength/weight conflict plays a
+particularly important role in the design of bridges. In order to remain
+competitive in the bridge engineering sector, designers are forced into a
+perpetual drive to achieve bridge designs which use less materials than their
+predecessors.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; Historical evidence firmly suggests
+that, using traditional design approaches, this quest for ever better
+strength/weight ratios – coupled with other factors -&nbsp; inevitably leads
+to some kind of catastrophic failure:-</font></p>
+<table border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="142" valign="top">
+      <p align="center"><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Bridge</font></p>
+    </td>
+    <td width="132" valign="top">
+      <h2><font size="2" color="green">Type</font></h2>
+    </td>
+    <td width="180" valign="top">
+      <p align="center"><font size="2">Probable Failure Mechanism</font></p>
+    </td>
+    <td width="66" valign="top">
+      <p align="center"><font size="2">Year</font></p>
+    </td>
+    <td width="76" valign="top">
+      <p align="center"><font size="2">Interval</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="142" valign="top">
+      <p align="center"><font size="2">Dee</font></p>
+    </td>
+    <td width="132" valign="top">
+      <p align="center"><font size="2">Trussed Girder</font></p>
+    </td>
+    <td width="180" valign="top">
+      <p align="center"><font size="2">Torsional Instability</font></p>
+    </td>
+    <td width="66" valign="top">
+      <p align="center"><font size="2">1847</font></p>
+    </td>
+    <td width="76" valign="top">
+      <p align="center"><font size="2">-</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="142" valign="top">
+      <p align="center"><font size="2">Tay</font></p>
+    </td>
+    <td width="132" valign="top">
+      <p align="center"><font size="2">Truss</font></p>
+    </td>
+    <td width="180" valign="top">
+      <p align="center"><font size="2">Unstable in wind</font></p>
+    </td>
+    <td width="66" valign="top">
+      <p align="center"><font size="2">1879</font></p>
+    </td>
+    <td width="76" valign="top">
+      <p align="center"><font size="2">32</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="142" valign="top">
+      <p align="center"><font size="2">Quebec</font></p>
+    </td>
+    <td width="132" valign="top">
+      <p align="center"><font size="2">Cantilever</font></p>
+    </td>
+    <td width="180" valign="top">
+      <p align="center"><font size="2">Compressive buckling</font></p>
+    </td>
+    <td width="66" valign="top">
+      <p align="center"><font size="2">1907</font></p>
+    </td>
+    <td width="76" valign="top">
+      <p align="center"><font size="2">28</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="142" valign="top">
+      <p align="center"><font size="2">Tacoma Narrows</font></p>
+    </td>
+    <td width="132" valign="top">
+      <p align="center"><font size="2">Suspension</font></p>
+    </td>
+    <td width="180" valign="top">
+      <p align="center"><font size="2">Aerodynamic instability</font></p>
+    </td>
+    <td width="66" valign="top">
+      <p align="center"><font size="2">1940</font></p>
+    </td>
+    <td width="76" valign="top">
+      <p align="center"><font size="2">33</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="142" valign="top">
+      <p align="center"><font size="2">Milford Haven</font></p>
+    </td>
+    <td width="132" valign="top">
+      <p align="center"><font size="2">Box Girder</font></p>
+    </td>
+    <td width="180" valign="top">
+      <p align="center"><font size="2">Plate Buckling</font></p>
+    </td>
+    <td width="66" valign="top">
+      <p align="center"><font size="2">1970</font></p>
+    </td>
+    <td width="76" valign="top">
+      <p align="center"><font size="2">30</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="142" valign="top">
+      <p align="center"><font size="2">?</font></p>
+    </td>
+    <td width="132" valign="top">
+      <p align="center"><font size="2">Cable-Stayed ?</font></p>
+    </td>
+    <td width="180" valign="top">
+      <p align="center"><font size="2">Instability ?</font></p>
+    </td>
+    <td width="66" valign="top">
+      <p align="center"><font size="2">c2000</font></p>
+    </td>
+    <td width="76" valign="top">
+      <p align="center"><font size="2">c30</font></p>
+    </td>
+  </tr>
+</table>
+<p><i><font size="2">Source: Sibley &amp; Walker, ‘Structural Accidents and
+Their Causes’, I CivE, 1977</font></i></p>
+<p align="center"><font size="2">&nbsp;</font><font size="2"><b>Table 1:
+Landmark Bridge Failures</b></font></p>
+<p><font size="2">&nbsp;<span lang="EN-GB">&nbsp;&nbsp;&nbsp; TRIZ offers much
+to both help understand the mechanisms underlying the bridge failure trend, and
+– more importantly – offers tools to help designers continue to innovate new
+design solutions which improve strength/weight ratios without compromising the
+structural integrity of the bridge.</span></font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; This article examines some of the
+issues surrounding famous historical bridge failures and shows how they may
+begin to be explained in the context of the TRIZ problem definition and problem
+solving process.</font></p>
+<p><font size="2">&nbsp;</font></p>
+<h1><b><font size="2">The Tacoma Narrows Bridge</font></b></h1>
+<p><b><font size="2">&nbsp;</font></b><font size="2">&nbsp;&nbsp;&nbsp; Probably
+the most widely reported – and thus most famous – bridge failure of all
+time, the 1940 failure of the Tacoma Narrows suspension bridge (Figure 1),
+represents a classic case of the consequences of pushing a design too far. The
+failure is extremely well documented in this context in Reference 1.</font></p>
+<p>&nbsp;
+<table cellpadding="0" cellspacing="0" align="left">
+  <tr>
+    <td width="115" height="0"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><img src="image002.gif" width="424" height="296"></td>
+  </tr>
+</table>
+<div align="center">
+  <br clear="ALL">
+  <b>&nbsp;</b> <font size="2"><b>Figure 1: The Tacoma Narrows Bridge</b></font>
+</div>
+<p align="center"><font size="2">&nbsp;&nbsp;&nbsp; The history of suspension
+bridges before and around the time of the Tacoma Narrows failure is revealing in
+the context of the drive by designer’s to produce designs of ever increasing
+span. The main driver of course was to reduce the amount of time, material and
+thus cost of the bridge. As in all prudent design, bridge material requirements
+were calculated on the basis of strength calculations onto which significant
+factors of safety were added. As experience in the design of suspension bridges
+grew, these safety factors were driven downwards in order to reduce material
+usage. History shows, that the factors are edged downwards and downwards until
+failure occurred:-</font></p>
+<div align="left">
+  <table border="0">
+    <tr>
+      <td><font size="2">&nbsp;</font><b><font size="2">Bridge</font></b></td>
+      <td><b><font size="2">&nbsp;Span (ft)</font></b></td>
+      <td><b><font size="2">&nbsp;Failure date</font></b></td>
+    </tr>
+    <tr>
+      <td><font size="2">&nbsp;Dryburgh Abbey (UK)</font></td>
+      <td><font size="2">&nbsp;260</font></td>
+      <td><font size="2">&nbsp;1818</font></td>
+    </tr>
+    <tr>
+      <td><font size="2">&nbsp;Union (UK)</font></td>
+      <td><font size="2">&nbsp;449</font></td>
+      <td><font size="2">&nbsp;1821</font></td>
+    </tr>
+    <tr>
+      <td><font size="2">&nbsp;Menai Straits (UK)</font></td>
+      <td><font size="2">&nbsp;580</font></td>
+      <td><font size="2">&nbsp;1839</font></td>
+    </tr>
+    <tr>
+      <td><font size="2">&nbsp;Roche Bernard (France)</font></td>
+      <td><font size="2">&nbsp;641</font></td>
+      <td><font size="2">&nbsp;1852</font></td>
+    </tr>
+    <tr>
+      <td><font size="2">&nbsp;Wheeling (US)</font></td>
+      <td><font size="2">&nbsp;1010</font></td>
+      <td><font size="2">&nbsp;1854</font></td>
+    </tr>
+    <tr>
+      <td><font size="2">&nbsp;Niagara-Lewiston (US-Canada)</font></td>
+      <td><font size="2">&nbsp;1041</font></td>
+      <td><font size="2">&nbsp;1864</font></td>
+    </tr>
+    <tr>
+      <td><font size="2">&nbsp;Niagara-Clifton (US-Canada)</font></td>
+      <td><font size="2">&nbsp;1260</font></td>
+      <td><font size="2">&nbsp;1889</font></td>
+    </tr>
+    <tr>
+      <td><font size="2">&nbsp;Tacoma Narrows (US)</font></td>
+      <td><font size="2">&nbsp;2800</font></td>
+      <td><font size="2">&nbsp;1940</font></td>
+    </tr>
+  </table>
+</div>
+<p><font size="2">&nbsp;</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp; Following each incident, again as in all
+good design, the experiences of one failure influenced the design of successive
+bridges – usually prompting a modification in design style and an increase in
+safety factor levels. Then, as experience with the new design style increased,
+the safety factors were gradually reduced again… until the next failure
+occurred. And so on.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; The Reference 1 evidence firmly
+suggests that the Tacoma Narrows Bridge failure occurred because the particular
+style employed in the design exceeded the fundamental limits of the
+strength-weight contradiction of the particular design style. More specifically,
+the failure occurred because the design rules used were incomplete. This same
+phenomenon is present in all the failures detailed in Table 1.</font></p>
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="29" height="0"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><img src="image004.gif" width="576" height="275"></td>
+  </tr>
+</table>
+<br clear="ALL">
+&nbsp;&nbsp;&nbsp; The process is illustrated in simple terms in Figure 2.
+<div align="center">
+  <br clear="ALL">
+</div>
+<h3 align="center"><b><font size="2">Figure 2: Typical Route to Failure of
+Design Rules</font></b></h3>
+<p><font size="2">&nbsp;&nbsp;&nbsp; The process described by the figure sees
+the designer first calculating the required strength of a bridge. The designer
+then adds a safety factor to take into account of uncertainties. As experience
+grows, subsequent designers – seeing that an earlier design has not failed –
+are encouraged to reduce safety factors in order to reduce material usage. This
+process repeats until a failure occurs. In retrospect, it is then determined
+that the failure occurred because the ACTUAL strength required was higher than
+the CALCULATED strength required. The difference between the two values usually
+emerges because of an effect which was either considered to be secondary or was
+not considered at all during the formulation of the original strength
+calculation rules.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp; In the case of the Tacoma Narrows failure
+the missing effect was the passage of wind over the bridge. Failure to take
+account of this effect meant that the bridge had insufficient torsional
+strength.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; In evolutionary terms, the Tacoma
+Narrow Bridge design style had exceeded the limits of its fundamental strength
+versus weight capability.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; Subsequent suspension bridge designs
+in which there was a desire to increase span length beyond the 2600ft of Tacoma
+Narrows, required a change in the design paradigm.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; In TRIZ terms, the Tacoma Narrows
+Bridge encountered an administrative contradiction between the demand for
+spanning greater gaps with less material, and the fundamental ability of the
+design style to meet the demand (NB this definition of the administrative
+contradiction differs from several other definitions – see Footnote). TRIZ
+findings show that progress beyond this limit demands a change in paradigm. A
+good example of this as far as suspension bridges are concerned is the Akashi
+Kaikyo Bridge, linking the islands of Honshu and Shikoku in Japan (Figure 3),
+which has a centre section span of over 6500ft. Stability is maintained in this
+structure through incorporation of pendulum-like devices on the towers to keep
+them from swaying and a stabilizing fin beneath the centre deck to resist high
+winds</font></p>
+<p>&nbsp;
+<table cellpadding="0" cellspacing="0" align="left">
+  <tr>
+    <td width="173" height="0"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><img width="307" height="237" src="image005.jpg"></td>
+  </tr>
+</table>
+<div align="center">
+  <br clear="ALL">
+  &nbsp;<font size="2"><b>Figure 3: Akashi Kaikyo Bridge (3-span 2-hinged
+  truss-stiffened suspension bridge)</b></font>
+</div>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; (In terms of the Contradiction
+Matrix, it is perhaps interesting to note here that with the Technical
+Contradiction between the desire to improve the weight of the bridge and
+worsening effect this has on the stability, leads to ‘Periodic Action’ as
+one of the recommended Inventive Principles. This is very encouraging in light
+of the fact that the idea of a pendulum is probably not an instinctive response
+to the bridge stability problem.)</font></p>
+<p><font size="2">&nbsp;<b>Cable-Stayed Bridge Designs</b></font></p>
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="10" height="0"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><img src="image007.gif" width="643" height="230"></td>
+  </tr>
+</table>
+<br clear="ALL">
+&nbsp;&nbsp;&nbsp; The cable-stayed bridge design style – Figure 4 –
+represents an evolutionary advance on suspension bridge types in terms of
+reducing the cost and amount of material required to span a gap.
+<div align="center">
+  <br clear="ALL">
+</div>
+<h3 align="center"><b><font size="2">Figure 4: Cable-Stayed Bridge Clark Bridge,
+Alton, IL</font></b></h3>
+<p><font size="2">&nbsp;&nbsp;&nbsp; As with the suspension bridge, the
+evolution of the cable-stayed design style also exhibits a growing demand for
+greater and greater strength/weight ratios. A graph showing the historical trend
+towards longer span lengths is illustrated in Figure 5.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; The prediction made by Sibley and
+Walker in the Table 1 list of bridge failures that the evolution of cable-stayed
+bridges will move inexorably towards a major failure at some point in the near
+future is indicative of the design style beginning, like the suspension bridge,
+to hit its fundamental limiting administrative contradiction.</font></p>
+<p>&nbsp;
+<table cellpadding="0" cellspacing="0" align="left">
+  <tr>
+    <td width="115" height="0"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><img src="image009.gif" width="421" height="335"></td>
+  </tr>
+</table>
+<div align="center">
+  <br clear="ALL">
+  &nbsp;<font size="2"><b>Figure 5: Cable-Stayed Bridge Span Length Evolution
+  Trend</b></font>
+</div>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; Consistent with the observed trend
+for other bridge types, if a major failure of a cable-stayed bridge does occur,
+the failure will come for the reasons shown in Figure 2 – i.e. due to the
+emergence of an unknown factor which makes actual strength required greater than
+the calculated strength required.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; The closest analogy is probably that
+of a blindfolded man being drawn towards the edge of an unstable cliff and not
+knowing how many more steps he can safely take.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; The limiting administrative
+contradiction helps to define where the edge of the cliff is.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; Overcoming the limiting
+administrative contradiction in the case of strength/weight conflicts is the
+same as shifting the blindfolded man sideways to safer ground – Figure 6.</font></p>
+<p>&nbsp;
+<table cellpadding="0" cellspacing="0" align="left">
+  <tr>
+    <td width="192" height="0"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><img src="image011.gif" width="228" height="213"></td>
+  </tr>
+</table>
+<div align="center">
+  <br clear="ALL">
+  &nbsp;<font size="2"><b>Figure 6: Blindfolded Man/Cliff-Edge Analogy</b></font>
+</div>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; The strength/weight contradiction
+will exist as long as bridges exist. Bridges will exist as long as it takes
+someone to invent a teleportation system. Until then, bridge designers are in
+the middle of a contradiction chain (Reference 4). In the above analogy too, the
+cliff edge continues to exist as long as bridges exist. Each successive
+inventive step to improve strength/weight capability (e.g. the step from
+suspension to cable-stayed) represents the location of a piece of safer ground
+which allows the blindfolded man to progress further in the direction he is
+being drawn towards.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; The administrative contradiction
+concept is discussed further in Reference 3 with respect to the evolution of
+other systems.</font></p>
+<p><font size="2">&nbsp;</font></p>
+<p><font size="2">&nbsp;<b>Strength/Weight Contradictions</b></font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp; TRIZ helps to fundamentally overcome
+the inherent limitations of each generation of a design concept by providing
+designers with tools which allow them to systematically break out of the
+existing design trade-off scenarios. One of the fundamental (limiting)
+contradictions in bridge design concerns the desire to improve (reduce) WEIGHT
+and to prevent STRENGTH from getting worse. In light of the Table 1 conjecture
+that a cable-stayed bridge failure will result from a STABILITY related problem,
+we might also examine what TRIZ has to say about this contradiction:-</font></p>
+<table width="100%" border="0">
+  <tr align="left" valign="top">
+    <td width="25%">I<font size="2">mproving parameter:</font></td>
+    <td width="75%"><font size="2">- WEIGHT (of moving object – in that the
+      bridge will be subject to inevitable deflections and the design has to
+      accommodate often quite large degrees of movement)</font></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td width="25%"><font size="2">Worsening parameter:</font></td>
+    <td width="75%"><font size="2">- STRENGTH, STABILITY</font></td>
+  </tr>
+</table>
+<p><font size="2">&nbsp;&nbsp;&nbsp; Contradiction Matrix recommends:-</font></p>
+<p><font size="2">28 – <font color="red">Mechanics Substitution</font> –
+highly indicative of a mechanical system that is near the limits of its current
+s-curve</font></p>
+<p><font size="2">27 – <font color="red">Cheap/Short Living </font>–
+probably not relevant in the case of long-span bridge design, but possibly
+interesting in light of certain floating pontoon temporary bridge solutions
+found in military applications</font></p>
+<p><font size="2">18 – <font color="red">Mechanical Vibration</font> – also
+interesting in relation to the Akashi Kaikyo Bridge solutions discussed earlier.
+Also suggests attempts to use resonance of the&nbsp;bridge as a benefit as
+opposed to a problem</font></p>
+<p><font size="2">40 – <font color="red">Composite Materials</font> – almost
+inevitable evolution direction in line with evolution of many other systems –
+e.g. aerospace. Affordability will be the main driver.</font></p>
+<p><font size="2">1 – <font color="red">Segmentation </font>– most likely to
+be beneficially applied in conjunction with other of the recommended Principles
+(*)</font></p>
+<p><font size="2">35 – <font color="red">Parameter Changes</font> –
+re-enforces comment at 28</font></p>
+<p><font size="2">19 – <font color="red">Periodic Action</font> – as
+previously mentioned, used on the Akashi Kaikyo Bridge; carrying an implication
+that the strategies employed on that suspension bridge may similarly be
+deployable on future cable-stayed designs.</font></p>
+<p><font size="2">39 – <font color="red">Inert Atmosphere</font> – strong
+parallels here with the Akashi Kaikyo Bridge ‘stabilising fins’ – which
+are employed to dissipate the energy contained in harmful winds.</font></p>
+<p><font size="2">(*) Example I – incorporation of segmented fins to perform
+the stabilising function. Segmentation means use of less fin materials .
+Introduction of gap between fin segments suggests possible means of absorbing
+harmful wind energy and using it to perform a useful function – e.g. power
+generation, Helmholz effect, etc.</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp; Example II – Segmentation plus Parameter
+Changes equals possible transition to segments of the bridge utilising
+fluid-based segments (fluid because it forms the next step along the
+evolutionary path towards ideality) to provide certain strength/motion damping
+properties (e.g. as utilised in fluid power systems, fluid is very good at
+transmitting compressive loads). In that the bridge probably passes over water,
+there is probably plenty of opportunity to utilise an existing resource as well!</font></p>
+<p><font size="2">&nbsp;&nbsp;&nbsp; While necessarily brief, it is felt that
+the evidence above strongly indicates that the Contradiction Matrix and
+Inventive Principles clearly have something to offer future designers of
+lighter, more stable bridges.</font></p>
+<p><font size="2">&nbsp;</font></p>
+<h1><b><font size="2">CONCLUSIONS</font></b></h1>
+</p><ol>
+  <li><font size="2">Bridges fail because of our lack of understanding of all of
+    the factors which go together to define the actual strength requirements.</font></li>
+  <li><font size="2">The limiting administrative contradiction idea – in this
+    case the contradiction between the demand for greater strength/weight ratio
+    and the limited ability of a given design to meet the demand – can help
+    designers along the road to safer bridge designs which require less
+    materials in their construction.</font></li>
+  <li><font size="2">Inventive Principles suggested by the Contradiction Matrix
+    with respect to changing strength versus weight and related paradigms, offer
+    a number of interesting new perspectives on bridge design.</font></li>
+</ol>
+<p>&nbsp;</p>
+<h1><b><font size="2">REFERENCES</font></b></h1>
+</p><ol>
+  <li><font size="2">Petroski, H., ‘<u>Design Paradigms: Case Studies Of Error
+    And Judgement In Engineering</u>’, Cambridge University Press, 1994.</font></li>
+  <li><font size="2">Mann, D.L., ‘Using S-Curves and Trends Of Evolution In
+    R&amp;D Strategy Planning’, TRIZ Journal, July 1999.</font></li>
+  <li><font size="2">Salamatov, Y., ‘<u>TRIZ: The Right Solution At The Right
+    Time</u>’, Insystec BV, The Netherlands, 1999.</font></li>
+  <li><font size="2">Mann, D.L., ‘Contradiction Chains’, TRIZ Journal,
+    January 2000.</font></li>
+</ol>
+<p><font size="2">&nbsp;</font></p>
+<h4><u><font size="2">Footnote</font></u></h4>
+<p><font size="2">&nbsp;&nbsp; The administrative contradiction definition <i>‘a
+contradiction between the demand and the ability to meet the demand</i>’ comes
+from the Salamatov TRIZ text (Reference 3, pp146-149). The definition is
+somewhat different from other TRIZ definitions which traditionally identify this
+type of contradiction as one between a physical requirement of the problem and a
+man-made (cost, risk, time, etc) requirement. The Salamatov definition is felt
+to be more useful in the context of the type of bridge design issues discussed
+here.</font></p>
+<p><font size="2">&nbsp;</font></p>
+

@@ -1,0 +1,402 @@
+<h1>Axiomatic Design And TRIZ: Compatibilities and Contradictions Part II</h1>
+
+<p class="MsoBodyText" align="center">Darrell
+Mann<br>
+Industrial
+Fellow,&nbsp; Department Of Mechanical
+Engineering<br>
+University
+Of Bath, Bath, BA2 7AY, UK<br>
+Phone:
++44 (1225) 826465<br>
+Fax:
++44 (1225) 826928<br>
+<span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><font size="2" face="Arial">E-mail:
+<a href="mailto:D.L.Mann@bath.ac.uk">D.L.Mann@bath.ac.uk</a>&nbsp;</font>
+
+</span></p>
+<p class="MsoBodyText">&nbsp;</p>
+<p class="MsoBodyText"><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt; font-weight: bold" lang="EN-GB">Introduction
+
+</span></font></b></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB">This article follows last month’s brief look at
+Nam Suh’s Axiomatic Design (AD) ideas and their possible relationship with
+TRIZ (1). The aim in this article will be to take a more detailed look at some
+of the AD tools and techniques in an attempt to demonstrate some of the benefits
+they may offer to TRIZ-based problem definition and problem solution processes.</span></font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt; font-weight: bold" lang="EN-GB">Design
+Hierarchy
+
+</span></font></b></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB">In the design of complex systems, last month’s
+article suggested three areas in which AD might benefit a TRIZ-based design
+approach:-<span style="mso-spacerun: yes">&nbsp;</span></span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt">1)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></span></font><span lang="EN-GB">The<span style="mso-spacerun: yes">&nbsp;
+</span>need for a process of iteration between Functional Requirements (FRs) of
+a design and physical design attributes (Design Parameters – DPs) -<span style="mso-spacerun: yes">&nbsp;
+</span>i.e. the Design Parameters must be allowed to influence the form and
+content of the Functional Requirements.</span></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt">2)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></span></font><span lang="EN-GB"><span style="mso-spacerun: yes">&nbsp;</span>AD
+places careful emphasis on the importance of recognising the hierarchical nature
+of design, and particularly to ensuring that the process of iteration between
+Function Requirements in the Functional Domain and selection of Design
+Parameters in the Physical Domain (shown as the green arrows in Figure 1) is
+carried out in a systematic manner. As may be seen in the figure, this
+systemisation occurs through an essentially top-down approach; definition of
+System Level FRs permits derivation and iteration of System Level DPs (green
+arrow ‘A’) and then – most importantly – definition of the System Level
+DPs is necessary before FRs at the next level down in the hierarchy (blue arrow
+‘B’) can be defined; and so on right through each level of the hierarchy. In
+effect, AD suggests that finalisation of top level FRs can only really be
+achieved after each layer of the problem hierarchy has been given due
+consideration and iterated accordingly.</span></p>
+<p align="center"><img border="0" src="99jul_23.gif" width="292" height="355"><span style="mso-ignore:vglayout"><br>
+</span><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Figure
+1: Hierarchical Nature of Functional Domain – Physical Domain Mapping
+
+</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">&nbsp;
+
+</span></font></p>
+<p class="MsoNormal" style="margin-left:30.75pt"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt">&nbsp;</span><span lang="EN-GB">
+
+</span></font></p>
+<p class="MsoNormal" style="margin-left:30.75pt;text-indent:-.25in;mso-list:l7 level1 lfo4;
+tab-stops:list 30.75pt"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt">3)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></span></font><span lang="EN-GB">As well as recognising the relationship between Functional
+Domain and Physical Domain, Suh further extends the AD model to include what he
+describes the Process Domain (Reference 2, Section 4.10). In other words, AD
+demands that manufacturability issues are given appropriate consideration <b style="mso-bidi-font-weight:normal"><span style="font-weight:bold">during</span></b>
+the process of iterating to achieve the most appropriate form of the design
+Functional Requirements (i.e. we might add a third ‘Process Domain’ column
+to Figure 1 above – as shown now in Figure 2).</span>
+<p class="MsoNormal" align="center" style="text-align:center"><img border="0" src="99jul_22.gif" width="451" height="349"><span style="mso-ignore:vglayout"><br>
+</span><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Figure
+2: Hierarchical Nature of Functional Domain – Physical Domain Mapping
+
+</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+12.0pt">&nbsp;</span><span lang="EN-GB">
+
+</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>The hierarchical nature of design is one of the
+most important AD concepts. Suh uses the example of a metalworking lathe as a
+way of illustrating the hierarchy construction process in action. In this case,
+two hierarchies are constructed – the first a functional hierarchy (Figure 3),
+and the second, a physical hierarchy (Figure 4).</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center"><font size="2" face="Arial"><span style="mso-spacerun: yes; mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><img border="1" src="99jul_17.gif" width="576" height="382"><br>
+&nbsp;</span></font><font size="2"><span lang="EN-GB" style="font-size:10.0pt">Figure
+3: Lathe Functional Hierarchy (after Reference 2)
+
+</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center">
+<span style="mso-ignore:vglayout">
+<img border="1" src="99jul_18.gif" width="576" height="378">
+</span><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt"><br>
+Figure
+4: Lathe System Physical Hierarchy (after Reference 2)
+
+</span></font></p>
+<p class="MsoNormal" align="left"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">&nbsp;</span></font><font size="2" color="red" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt; color: red" lang="EN-GB"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>One of the most important ideas in AD is that the functional and physical
+hierarchies are inter-dependent, and it is not possible, therefore, to construct
+the complete functional hierarchy without reading across to the physical domain
+at each corresponding level. Or, as Suh states in The Principles of Design,
+‘without having decided to use a <i style="mso-bidi-font-style:normal"><span style="font-style:italic">tailstock</span></i>,
+we could not have stated the three FRs: tool-holder, positioner, and support
+structure’.
+
+</span></font></p>
+<p class="MsoBodyText2"><font size="2" color="black" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>We should also note the existence of a third (also interdependent)
+hierarchy associated with the process domain. For example, our ideas on the
+‘tool-holder’ function and its corresponding physical manifestation in the
+‘spindle assembly’ will clearly be affected by our ability or otherwise to
+be able to manufacture an appropriate ‘tapered bore’.</span></font></p>
+<p class="MsoNormal"><font size="2" color="red" face="Arial"><span style="mso-spacerun: yes; mso-bidi-font-size: 10.0pt; font-size: 12.0pt; color: red" lang="EN-GB">&nbsp;&nbsp;&nbsp;
+</span></font><font color="black"><span lang="EN-GB" style="color:black">While
+clear corollaries between the hierarchical ideas contained in AD and the
+sub-system/super-system concepts in TRIZ may be seen to exist, the <b style="mso-bidi-font-weight:normal"><span style="font-weight:bold">domain
+shifting</span></b> and <b style="mso-bidi-font-weight:
+normal"><span style="font-weight:bold">process domain</span></b> concepts found
+in AD appear to offer significant benefit to TRIZ methods.
+
+</span></font></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt; font-weight: bold" lang="EN-GB">Constraints
+
+</span></font></b></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>No discussion of AD would be complete without
+consideration of the constraints which commonly attach themselves to any design
+exercise.</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>Suh defined two types of constraint; <i style="mso-bidi-font-style:
+normal"><span style="font-style:italic">input constraints</span></i> –
+constraints involving design specification (usually bounds on size, weight,
+cost, etc), and <i style="mso-bidi-font-style:normal"><span style="font-style:
+italic">system constraints</span></i> – involving constraints imposed by the
+system in which the design solution must function (e.g. geometric shape,
+environmental considerations, prime mover capacity, etc).</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>The distinction between a ‘constraint’ and a
+‘functional requirement’ during problem specification can often be unclear.
+According to Suh, a constraint does not have to be independent of other
+constraints, its precise numeric value is often unimportant providing it is
+inside a limit, and it rarely has a tolerance associated with it.</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>‘Cost’ is a very commonly applied constraint.
+Especially in an overall context – for example, ‘total product factory cost
+must not exceed $x’. An important point here is that, unless we obtain a clear
+picture of the full design hierarchy in the physical (and usually process)
+domain(s), it is difficult or impossible to gauge whether the constraint has
+been met or not.</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>Constraints like this act on the entire
+hierarchy. According to Suh, as we pass up and down a hierarchy, the form of DPs
+and constraints at a given level may change (Reference 2, pp39-40), but for our
+current purposes, we shall merely acknowledge the facts that, a) overall problem
+constraints will exist and, b) that they will have a potential effect of some
+kind at all levels of the functional, physical and process hierarchies.</span></font></p>
+<h2><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB">Aircraft
+Wing Design I</span></font></b></h2>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;font-weight:bold">&nbsp;</span><span lang="EN-GB">
+
+</span></font></b></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp; </span><span style="mso-spacerun: yes">&nbsp;&nbsp;</span>Aircraft
+wings represent some of the most sophisticated systems to be found anywhere in
+the field of engineering endeavour, so, with due apologies to those who might be
+involved in the design and development of real wings, the analysis here is
+inevitably going to be somewhat simplified in order that we might concentrate on
+the AD/TRIZ learning points and not the design intricacies.</span></font></p>
+<p>
+<font size="2" face="Arial"><span lang="EN-GB"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>In the same way that a hierarchy of functional and physical requirements
+was constructed by Suh for the lathe example, we might construct a similar
+picture for an aircraft wing.</span></font></p>
+<p align="center"><img border="1" src="99jul_19.gif" width="576" height="381"><br>
+<font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Figure
+5: Simplified Aircraft Wing Functional Hierarchy
+
+</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>Figure 5 illustrates a possible (simplified) wing
+functional hierarchy. As with the previous lathe example, it is possible to
+picture how each function can map across to a given physical system or
+component.</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>In order to set the example in context, let us
+assume we set a Functional Requirement to increase wing lift performance by x%.
+It is quite likely that we will be expected to bound this FR with a number of
+constraints. Such constraints might include:-</span></font></p>
+</p><ul>
+  <li>
+    <p class="MsoNormal" style="margin-left:58.5pt;text-indent:-.25in;mso-list:l6 level1 lfo7;
+tab-stops:list 58.5pt"><span lang="EN-GB">zero allowable increase in
+manufacture cost</span></li>
+  <li>
+    <p class="MsoNormal" style="margin-left:58.5pt;text-indent:-.25in;mso-list:l6 level1 lfo7;
+tab-stops:list 58.5pt"><span lang="EN-GB">zero allowable decrease in wing
+life</span></li>
+  <li>
+    <p class="MsoNormal" style="margin-left:58.5pt;text-indent:-.25in;mso-list:l6 level1 lfo7;
+tab-stops:list 58.5pt"><span lang="EN-GB">zero allowable increase in
+maintenance</span></li>
+</ul>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>Given the FR, we might expect to adopt a solution
+strategy which examines individual functions or functions which sit at the same
+level in the hierarchy. This is certainly consistent with a TRIZ-based solution
+approach. For example, we might look at how the wing tip can contribute to
+overall increased lift performance by constructing a technical contradiction:
+Thing we are trying to improve - Object Generated Harmful Factors (loss of lift
+due to passage of air over the side of the wing), thing which gets worse –
+Length (e.g. wing span increases), TRIZ recommends – ‘Another Dimension’
+(e.g. incorporation of winglets).</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>Similarly, if we start from the ‘main lifting
+surface’ or ‘cruise lift’ functions, and we don’t consider any possible
+interactions with other parts of the hierarchy, we might derive a solution like
+that shown in Figure 6, where passive boundary layer control features are
+applied locally on appropriate surfaces of the wing in order to create air-flow
+conditions conducive to better lift performance.</span></font></p>
+<p class="MsoNormal" align="center" style="text-align:center"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt"><img border="1" src="99jul_20.gif" width="363" height="204"><br>
+Figure
+6: Example Passive BL Control on an Aircraft Wing (US Patent 4,706,910
+(expired))
+
+</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>This idea of improving performance by
+concentrating on a particular area of the design hierarchy is a common,
+practical and usually valid method.</span></font></p>
+<h2><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB">Aircraft
+Wing Design II</span></font></b></h2>
+<p>
+<font size="2" face="Arial"><span lang="EN-GB"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>An alternative approach, is to examine the bigger picture. This can
+clearly be best done only if the complete hierarchy picture is constructed. The
+previous wing design example looked at passive means of achieving better wing
+lift performance. In this second example we will look at active methods of lift
+enhancement, and, in particular, the use of boundary layer suction to improve
+flow characteristics over the top surface of the wing. There are a number of
+forms active suction can take. Figure 7 illustrates an invention based on
+incorporation of myriad small holes through which unwelcome slow moving air in
+the wing boundary layer region is removed.</span></font>
+</p>
+<p class="MsoNormal" align="center" style="text-align:center"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt"><img border="1" src="99jul_21.gif" width="576" height="402"><br>
+Figure
+7: Example Active BL Control using Suction (US Patent 5,848,768)
+
+</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>Active suction is unlikely to emerge as a design
+possibility as a result of an analysis conducted at a single area of the
+hierarchy (or if it does, it very soon has to work it’s way through the whole
+hierarchy due to the emergence of, for example, the need for means of providing
+the suction, and means of integrating them with other elements of the wing
+design).</span></font></p>
+<p class="MsoNormal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp; </span>This ‘complete picture’ approach is one
+possible advantage which emerges through adoption of an AD approach. There are a
+number of points, however, which point to more significant benefits of the use
+of AD-based design analysis techniques:-</span></font></p>
+<ol type="a">
+  <li>
+    <p class="MsoNormal" style="mso-list: l4 level1 lfo8; tab-stops: list 30.75pt">Only through due consideration of
+the process domain will it be possible to assess the manufacturability
+implications of the suction holes. A requirement for high hole density is
+clearly going to have technical and cost implications. It is quite easy to
+imagine that a requirement for hole densities of the order of hundreds per
+square inch could quite easily increase manufacture cost to the point of
+non-viability. Unless, of course, significant innovations in the hole making
+process are made.</li>
+  <li>
+    <p class="MsoNormal" style="mso-list: l4 level1 lfo8; tab-stops: list 30.75pt">Cost constraints are usually
+applied generally across the whole hierarchy structure rather than apportioned
+to individual parts in order to emphasise the bigger picture and the
+possibilities for penalties in one part of a design to be compensated for by
+benefits in others (e.g. incorporation of holes will increase manufacture cost,
+but the more efficient wing will see a reduction in fuel burn and therefore give
+rise to a reduction in overall operating cost).</li>
+  <li>
+    <p class="MsoNormal" style="mso-list: l4 level1 lfo8; tab-stops: list 30.75pt">The connection between the idea
+of boundary layer suction using small holes and the need to provide an
+anti-icing capability might suggest a number of interaction problems which will
+have implications on the success or otherwise of the design. By plotting the
+‘complete’ hierarchy, we will hopefully identify where such interactions
+occur and thus be able to do something to remedy any likely problems.</li>
+  <li>
+    <p class="MsoNormal" style="mso-list: l4 level1 lfo8; tab-stops: list 30.75pt">Generic constraints like ‘zero
+maintenance increase’ are again useful because they prompt consideration of
+the broadest possible range of potential problem areas – e.g. insect
+contamination can be a problem on many aerodynamic surfaces. It is clearly a
+maintenance issue. It is also clearly going to be a major issue if the
+aerodynamic surface in question is full of tiny holes. Maybe that is just
+another TRIZ contradiction to be solved, or maybe it is further justification
+for a design approach in which the ‘complete’ picture is drawn before any
+hardware development is instigated?</li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<h2><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB">Discussion</span></font></b></h2>
+</p><ol>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l5 level1 lfo6; tab-stops: list .25in; margin-left: 0; margin-right: 0"><span lang="EN-GB">AD characterises ‘good’
+design as that which achieves a one-to-one relationship between a function
+requirement and the physical design feature which achieves it – i.e. every
+component should perform a useful function. This, of course, takes no account of
+the ‘trimming’ ideas found in TRIZ and, particularly, the concept of
+maintaining functionality by trimming components and having their function
+performed by another part of the system.</span></li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l5 level1 lfo6; tab-stops: list .25in; margin-left: 0; margin-right: 0"><span lang="EN-GB">Page 39 of Suh’s AD book
+discusses the point about the importance of minimising the number of FRs at each
+level of the design hierarchy. The book says, ‘<i style="mso-bidi-font-style:
+normal"><span style="font-style:italic">Some designers are proud that their
+design products can perform more functions than were originally specified. In
+this case, they have over-designed the product. Consequently it is more complex,
+more costly, and less reliable than is necessary. The designer who creates such
+a solution should go back and search for a simpler solution’</span></i>
+(Reference 2). In light of the capabilities TRIZ offers, it is perhaps
+appropriate to modify this somewhat harsh assessment to reflect the knowledge
+that <b style="mso-bidi-font-weight:normal"><span style="font-weight:bold">function</span></b>
+per se need not correlate to increased cost or complexity or whatever, provided
+designers are inventive enough to achieve the required functionality without
+increasing the use of resources. In other words, designers ought to focus on <font color="red"><span style="color:red">maximising
+    value </span></font><font color="black"><span style="color:black">rather than
+minimising functional requirements.</span></font><i style="mso-bidi-font-style:normal"><span style="font-style:italic">
+
+</span></i></span></li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l5 level1 lfo6; tab-stops: list .25in; margin-left: 0; margin-right: 0"><font color="black"><span lang="EN-GB" style="color:black">The
+aircraft wing function hierarchy figure (Figure 5) introduces an element of time
+dependency when it splits the lifting surface requirement into distinctly
+different aspects of the flight regime. In some cases, it is convenient to
+display such time-based requirements on one hierarchy picture. In others, it is
+often necessary to construct a complete hierarchy for each possible time
+scenario. In either instance, it is interesting to note the strong correlation
+with Altshuller’s ‘9 Windows’ viewing perspective (Reference 3).</span></font><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="font-style:italic">
+
+</span></i></li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l5 level1 lfo6; tab-stops: list .25in; margin-left: 0; margin-right: 0"><span lang="EN-GB">In the second wing design
+example, we saw the use of many holes to achieve a certain function. In light of
+the subsequently expressed concerns over the practical viability of<span style="mso-spacerun: yes">&nbsp;
+</span>manufacturing such a system economically, it is perhaps interesting to
+relate the problem to the TRIZ ‘space segmentation’ Evolution Trend to see
+where a more practical solution might emerge in the future.<i style="mso-bidi-font-style:normal"><span style="font-style:italic">
+
+</span></i></span></li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l5 level1 lfo6; tab-stops: list .25in; margin-left: 0; margin-right: 0"><span lang="EN-GB">In both wing design examples,
+it is important to note that at some stage in the design process, it is prudent
+to check the existence or otherwise of possible interaction effects with other
+parts of the hierarchy. For example, the winglet design may well have
+implications on the design of the overall wing anti-icing system.<i style="mso-bidi-font-style:normal"><span style="font-style:italic">
+
+</span></i></span></li>
+</ol>
+<h2><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB">Conclusions</span></font></b></h2>
+</p><ol>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l3 level1 lfo5; tab-stops: list .25in; margin-left: 0"><span lang="EN-GB">Axiomatic Design perspectives on
+functional, physical and process hierarchies in the design of a system offer a
+useful alternative to conventional TRIZ perspectives.</span></li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l3 level1 lfo5; tab-stops: list .25in; margin-left: 0"><span lang="EN-GB">It is important to recognise and
+utilise the inter-dependencies which exist between both hierarchical layers <b style="mso-bidi-font-weight:
+normal"><span style="font-weight:bold">and</span></b> the different hierarchical
+regimes.</span></li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l3 level1 lfo5; tab-stops: list .25in; margin-left: 0"><span lang="EN-GB">Definition and use of global
+design constraints provides a useful method for achieving a good overall design
+perspective.</span></li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l3 level1 lfo5; tab-stops: list .25in; margin-left: 0"><span lang="EN-GB">Explicit use of the Process
+Domain and Domain shifting techniques of AD will offer significant enhancements
+to a TRIZ-based design approach.</span></li>
+</ol>
+<p class="MsoNormal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+12.0pt">&nbsp;</span><span lang="EN-GB">
+
+</span></font></p>
+<h2><b style="mso-bidi-font-weight:normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt" lang="EN-GB">References</span></font></b></h2>
+</p><ol>
+  <li>
+    <p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo1;
+tab-stops:list .25in"><span lang="EN-GB">Mann, D.L. ‘Axiomatic Design
+And TRIZ: Compatibilities and Contradictions’, TRIZ Journal, June 1999.</span></li>
+  <li>
+    <p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo1;
+tab-stops:list .25in"><span lang="EN-GB">Suh, N.P., ‘<u>The Principles
+of Design’</u>, (Oxford University Press, 1990).</span></li>
+  <li>
+    <p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo1;
+tab-stops:list .25in"><span lang="EN-GB">Altshuller, G., ‘<u>Creativity
+As An Exact Science’</u>, (New York, Gordon And Breach, 1988).</span></li>
+</ol>
+<p>&nbsp;</p>

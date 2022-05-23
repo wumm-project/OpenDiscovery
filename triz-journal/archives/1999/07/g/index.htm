@@ -1,0 +1,657 @@
+<h1>Using S-Curves and Trends of Evolution in R&amp;D Strategy Planning</h1>
+
+<p class="MsoBodyTextIndent" align="left"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt"><font size="2" color="#008080" face="Times New Roman">A
+version of this material was first presented at the I Mech E seminar on Future
+Heat Pump and Refrigeration Technologies held in London on 20 April 1999
+(Reference 1).</font></span></p>
+<p class="MsoNormal" align="center"><span style="font-size:18.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;mso-bidi-font-family:&quot;Times New Roman&quot;"><font size="5" face="Arial">&nbsp;</font></span><b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US;font-weight:bold;
+font-style:normal">Darrell Mann<br>
+
+</span></font></i></b><b style="mso-bidi-font-weight:
+normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 12.0pt; font-family: Arial; mso-bidi-font-family: Times New Roman; font-weight: bold">Industrial
+Fellow,<span style="mso-spacerun:
+yes">&nbsp; </span>Department Of Mechanical Engineering<br>
+University
+Of Bath, Bath, BA2 7AY, UK
+
+</span></font></b></p>
+<p class="MsoBodyText" align="center"><i style="mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:11.0pt">&nbsp;</span></font></i><font size="2" face="Arial"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+Arial;mso-bidi-font-family:&quot;Times New Roman&quot;">Phone: +44 (1225) 826465<br>
+Fax: +44 (1225) 826928<br>
+E-mail: <a href="mailto:D.L.Mann@bath.ac.uk">D.L.Mann@bath.ac.uk</a>&nbsp;
+
+</span></font></p>
+<p class="MsoBodyText">&nbsp;</p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">INTRODUCTION
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>Effective organisations understand where their products lie on the
+technology evolution characteristics relevant to the market in which they
+operate. A recent article by Michael Slocum (2) demonstrated how TRIZ tools and
+techniques allowed this strategic positioning activity to take place using the
+example of an industry sector currently at the infancy stage. This article seeks
+to build on that work by looking at a product family in the mature phase of its
+evolution path.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>Products at the infancy stage often need no sophisticated analysis of
+performance, level of inventiveness, number of inventions or profitability to
+show that they are infants. Similarly, the strategic R&amp;D decisions available
+to organisations at the infant stage are also usually straightforward; get the
+product to market and start paying back the R&amp;D expenditure or go out of
+business.
+
+</span></font></i></p>
+<p>
+<font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>Mature
+products on the other hand are less easy to categorise and strategic decisions
+on where to take the business next can be anything but clear-cut. A major
+strategic decision for companies in relation to a mature product is the
+perennial optimization versus innovation dilemma shown in Figure 1.
+
+</span></font>
+</p>
+<p class="MsoBodyText" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">&nbsp;</span></font></i></b><img border="1" src="99jul_46.gif" width="336" height="205"><br>
+<b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">Figure 1: The Innovation versus Optimization Dilemma
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>The dilemma is essentially two-fold:
+
+</span></font></i></p>
+</p><ol>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l10 level1 lfo21; tab-stops: list 75.75pt; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal">knowing
+whether or not there is another technology generation to innovate towards, and,
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l10 level1 lfo21; tab-stops: list 75.75pt; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal">knowing
+how far along the s-curve the business is at the moment and, therefore, being
+able to balance the customer ’value’ of the current product versus the
+amount of R&amp;D investment required to mature the new generation product to a
+state where it offers customers the same or preferably greater level of
+‘value’.
+
+</span></font></li>
+</ol>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>This article examines the mature product optimization/innovation dilemma
+and how TRIZ tools may be used to help provide organisations with answers to
+help determine the best way forward. The examination takes place through the
+case of the refrigerant compressor industry.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">TRIZ TECHNOLOGY MATURITY
+DETERMINATION TOOLS
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>As illustrated in Michael Slocum’s article, TRIZ recommends the use of
+four metrics to help in the process of determining where a product lays along
+its evolutionary s-curve – Figure 2 (Reference 3, pp205-7).
+
+</span></font></i></p>
+<p align="center"><img border="0" src="99jul_47.gif" width="266" height="286"><img border="0" src="99jul_48.gif" width="266" height="286"><br>
+<i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal"><span style="mso-spacerun: yes">&nbsp;</span><b style="mso-bidi-font-weight:
+normal"><span style="font-weight:bold">Figure 2: Altshuller’s ‘Lifelines’
+of Technological Systems
+
+</span></b></span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal">&nbsp;</span></font></i><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span style="mso-spacerun: yes; font-size: 12.0pt; mso-bidi-font-size: 10.0pt; font-weight: bold; font-style: normal" lang="EN-GB">&nbsp;&nbsp;&nbsp;
+</span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt;font-style:normal">Each metric merits some
+discussion in light of the refrigerant compressor analysis which follows in the
+next section:
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">Performance – </span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">is often the easiest of the four metrics to obtain data for.
+Quantified performance data is the main output of R&amp;D programmes; the world
+in which engineers live. The trick in terms of using performance data to
+establish product maturity is knowing which performance parameters to use in the
+analysis.
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>The difficulty here lies in the fact that relative importance of
+different parameters often changes as the product matures. This in turn results
+from the fact that engineers are usually required to focus on different
+parameters at different stages in product evolution – Figure 3. Thus a
+parameter like fuel burn was an irrelevance on early aircraft (where the
+emphasis was very much on getting speed and ability to get off the ground were
+considered much more important) and is now, on civil aircraft at least, the
+predominant performance measure.
+
+</span></font></i></p>
+<p>
+<font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>The
+point is, recognising that there is a circular logic to selecting appropriate
+performance metrics; the performance s-curve for fuel burn, say, is an s-curve
+partly because during infancy virtually no attention was paid to it. In the
+final analysis, an assessment of patents for a particular product in relation to
+Figure 3 may be as effective a maturity determinator as any quantified
+performance analysis. It will also usually be significantly quicker.
+
+</span></font>
+</p>
+<p class="MsoBodyText" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal"><img border="1" src="99jul_49.gif" width="576" height="269"><br>
+Figure 3: Typical Invention-Focus S-curve
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>That being said, quantified analysis can often be important. Parameters
+related to product <b style="mso-bidi-font-weight:
+normal"><span style="font-weight:bold">efficiency</span></b> are commonly found
+to be the most appropriate measures upon which to base performance s-curve
+analyses.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>(Particular care should be taken when using parameters which hit <b style="mso-bidi-font-weight:normal"><span style="font-weight:bold">externally
+constrained limits</span></b>. Example – the self-heating container analysis
+in Reference 2 uses ‘beverage temperature’ as one of the performance
+parameters. This is a good metric when the technology is in its infancy and
+there are difficulties in achieving adequate values, but as soon as the
+capability reaches the ceiling at which people are going to be scalded by the
+product, the parameter ceases to become relevant.)
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">Number of Inventions – </span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">usually the next easiest s-curve metric to obtain data for.
+Particularly in light of on-line patent databases and increasingly effective
+search engines.
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>The main problem here, however, relates to the eventual relevance of the
+patents emerging from the search. A search of the US patent database using the
+word ‘compressor’ will produce several thousand patents only a small
+proportion of which will have anything to do with refrigerant compressors. Even
+a search of ‘refrigerant compressor’ patents, however, still proved to be
+largely inadequate; producing over 440 hits, of which, less than half eventually
+turned out to relate directly to the refrigerant compressor problem under
+analysis.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>The almost order of magnitude discrepancy between patents located during
+the Reference 2 study and the subsequent Invention Machine TOPE 3.0 search
+provides a vivid clue to the size of the problem here.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>In the case of the refrigerant compressor analysis performed during this
+study, the analysis literally became a case by case examination of each and
+every one of the 440 plus hits.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">Level of Invention – </span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">determination of level of invention using the definitions
+devised by Altshuller very much relies on a case by case evaluation of patents.
+It often entails analysis of the detailed patent description (i.e. the abstract
+is usually inadequate to make the assessment). A level of invention analysis on
+a product with considerable history like the refrigerant compressor can be an
+extremely time consuming process. It is not entirely clear, to this author at
+least, that the intensive time requirement is justifiable in relation to the
+benefit such an analysis gives.
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">Profitability – </span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">probably the most difficult of the four metrics to obtain
+useful, reliable data for. For a sub-system of a bigger product which in turn
+forms only a part of a large industry dominated by companies which produce a
+diverse range of other products – as is the case for a refrigerant compressor
+– the analysis may well be sufficiently difficult to be, to all intents and
+purposes, impossible.
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>Beyond the four metrics discovered by Altshuller, are a number of other
+methods which may be used to determine the maturity of a given product family.
+Such techniques have developed in the West. Although undoubtedly more crude than
+Altshuller’s methods, they do exhibit a certain degree of commonality in
+approach and may thus have some validated merit if they are used as quick
+indicators. Two approaches are examined here:
+
+</span></font></i></p>
+<p class="MsoBodyText" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal"><img border="1" src="99jul_50.gif" width="384" height="225"><br>
+Figure 4: Likely ‘Number of Cost Reduction Inventions’ versus
+Product Maturity Characteristic</span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal">
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">Cost Reduction Related Inventions</span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal"> – in part derived from the sort of characteristic seen in
+Figure 3, examination of patents relating to product cost reductions can be an
+effective means of determining the maturity of a product. By ‘cost
+reductions’, we mean inventions which relate to making the product cheaper –
+such as improvements to manufacturing technology or method of assembly. Such
+inventions are relatively easy to spot from examination of patent abstracts and
+their preponderance increases as product maturity increases. A ‘cost reduction
+inventions’ versus product evolution stage characteristic will look something
+like the illustration given in Figure 4.
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>Note: The curve closely correlates to both the ‘Number of Inventions’
+and ‘Level of Invention’ characteristics drawn by Altshuller. ‘Cost
+reductions’ are usually easier to spot.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">‘Symptom Curing’ - </span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal"><span style="mso-spacerun: yes">&nbsp;</span>Inventions which
+focus on curing problems which emerge as a result of earlier inventions again
+correlate closely to Altshuller’s ‘Level of Invention’ metric, but they
+too are usually relatively easy to identify and may be expected to follow the
+same sort of trend illustrated in Figure 4. Inventions which cure symptoms –
+as opposed to tackling root cause problems – include the sorts of add-on noise
+reduction devices described during the following refrigerant compressor
+discussions; designers added special noise mufflers to the compressors rather
+than solving the root cause problems associated with why the compressors were
+noisy in the first place.
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">REFRIGERATORS AND REFRIGERANT
+COMPRESSORS
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>Refrigerant compressor inventions were analysed as part of a piece of
+research examining the current state of the art and projecting where and when
+the technology might evolve to new states.<span style="mso-spacerun: yes">&nbsp;
+</span>
+
+</span></font></i></p>
+<p align="center"><img border="1" src="99jul_51.gif" width="331" height="349"><br>
+<b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">Figure 5: Typical Scroll-Type Refrigerant Compressor
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>According to Altshuller’s analysis of the patent database, the large
+majority (77%) of patents fall into a category he described as ‘Apparent’ or
+‘Minor Improvements’. He also concluded that a further 18% came from within
+the same industry sector. The remaining 5% - the most significant advances –
+came from innovations generated by inventors who had looked beyond the horizons
+of their industry knowledge base.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>An analysis of the 220 or so US patents granted for refrigeration
+compressors since 1971 indicates nothing that Altshuller might have classed as a
+major discovery. In fact, the patent profile appears strongly symptomatic of a
+technology at the mature end of its S-curve:
+
+</span></font></i></p>
+<p class="MsoBodyText" style="margin-left:30.75pt;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo22;tab-stops:list 30.75pt"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">1)</span></font></i><b style="mso-bidi-font-weight:normal"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">Thermal efficiency. </span></font></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;</span>While
+theoretically a good measure of performance maturity, it is nevertheless
+difficult to isolate efficiency improvements from other design drivers
+(‘specific work’ for example). No direct figures were calculable for any
+given individual sector of the industry. It was possible to correlate
+reciprocating type compressor performance improvement over time to improvements
+in internal combustion engine piston performance (Figure 6). The analogy hold
+good because patents in both sectors are strongly focused on reduction of losses
+– running clearances, valve characteristics, sealing, etc – rather than
+discovery of better overall compression methods.
+
+</span></font>
+<p align="center"><img border="1" src="99jul_52.jpg" width="384" height="233"><br>
+<b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">Figure 6: Estimated Refrigerant Compressor Efficiency Improvement versus
+Time
+
+</span></font></i></b></p>
+<p>
+<i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>(NB:
+A very important issue when looking at historical performance profiles is to
+ensure due account is taken of external legislation and the effect that it can
+have on industry R&amp;D priorities (and invention profile for that matter).
+Figure 7 illustrates a performance-time curve for overall domestic refrigerators
+and the effect of 1993 Standards legislation. Not all of this overall efficiency
+improvement results from improvements in compressor performance.)
+
+</span></font></i>
+</p>
+<p align="center"><img border="1" src="99jul_53.gif" width="422" height="242"><br>
+<b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">Figure 7: Change in US Domestic Refrigerator Efficiency versus Time
+
+</span></font></i></b></p>
+<p class="MsoBodyText" align="center" style="text-align:center"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-style:normal">(Reference
+4)
+
+</span></font></i></p>
+<p class="MsoBodyText" style="margin-left:30.75pt;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo22;tab-stops:list 30.75pt"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">2)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></span></font></i><b style="mso-bidi-font-weight:normal"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">Number of inventions. </span></font></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal">Establishing
+invention count by year (Figure 8) is relatively easy provided due care and
+attention is taken in ensuring relevance of search engine hits to the actual
+problem at hand. The Figure 8 trend was constructed from a case-by-case patent
+analysis.
+
+</span></font></p>
+<p align="center"><img border="0" src="99jul_54.gif" width="403" height="278"><br>
+<b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">Figure 8: Number of Refrigerant Compressor Patents Granted By Year
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="margin-left:30.75pt;text-align:justify;text-indent:
+-.25in;mso-list:l15 level1 lfo22;tab-stops:list 30.75pt"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">3)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></span></font></i><b style="mso-bidi-font-weight:normal"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal">Invention profile. </span></font></b><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal">An
+analysis of the refrigerant compressor patent profile by technology area is
+shown in Figure 9. The very large majority of the patents were found to be in
+the Level 1 or Level 2 categories – as evidenced by the very high proportion
+of patents focused on symptom curing issues.
+
+</span></font></p>
+<p class="MsoBodyText" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal"><img border="1" src="99jul_55.gif" width="422" height="220"><br>
+Figure 9: Refrigerant Compressor Patent Profile
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>The profile raises a number of points regarding the state of the art and
+the potential for future developments:-
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">Noise/Vibration
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>Noise and vibration is a common symptom of a non-IFR system. Use of
+reciprocating compression systems inevitably leads to this type of issue. Almost
+a quarter of refrigerant compressor patents are inventions aimed at curing noise
+and vibration symptoms. In TRIZ terms, ‘curing symptoms’ is design by
+compromise. The ‘design without compromise’ approach would see noise and
+vibration problems tackled by looking at ‘root causes’. In TRIZ terms this
+might prompt searches for solutions outside the reciprocating piston or scroll
+compressor arena. This is an area considerably beyond the scope of this article,
+but it is nevertheless worth mentioning that similar root-cause analysis work on
+‘ripple-less gear pumps’ is currently being successfully undertaken at Bath
+(5).
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">Fluid/Lubricant
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>Apart from the patents relating to non-CFC based fluids, the large
+majority of fluid and lubricant based inventions relate to either ‘better’
+ways of supplying lubricants to moving components, or keeping lubricant and
+working fluid separate. In TRIZ terms again, these inventions are almost all
+design compromise based. Several are consistent with the ‘trimming’ trend as
+might be expected in such a cost-competitive industry – i.e. attempts to
+achieve more with less – but almost all are small incremental steps and almost
+none suggest a more radical roots-up design approach. Perhaps the closest is US
+patent 5,555,956 which achieves elimination of a separate lubricant by having
+it’s lubricating function performed by another (already existing) part of the
+system – in this case, the working fluid.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">Control
+
+</span></font></i></b></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>Almost a quarter of all refrigerant compressor patents since 1971 have
+related to control issues. An analysis of these patents in relation to the
+‘Action Co-ordination’ technology evolution trend (Figure 10) appears
+consistent with the evolution of control-related inventions.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>The trend correlates quite well with past evolution of, say, domestic
+refrigerator compressors: First generation ‘non-co-ordinated action’ systems
+involved the compressor motor being switched on permanently, irrespective of the
+temperature condition inside the refrigerator. Second generation ‘partial
+co-ordination’ systems include present day thermostat controlled systems where
+the thermostat simply turns a single speed motor on or off. Third generation
+‘co-ordinated action’ systems include systems where a thermostat controls a
+variable speed motor and, more recently, a small number of patents in which the
+motor speed control responds to temperature change rate as well as absolute
+temperature level.
+
+</span></font></i></p>
+<p class="MsoBodyText" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><i style="mso-ansi-font-style:normal;
+mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-weight:bold;font-style:
+normal"><img border="0" src="9.gif" width="716" height="82"><br>
+Figure 10: Action Co-ordination’ Evolution Trend
+
+</span></font></i></b></p>
+<p class="MsoBodyText" align="center" style="text-align:center"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-style:normal">(Picture
+based on TOPE 3.0 output)
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>There appear to be no patents associated with what TRIZ predicts as the
+fourth generation in the ‘action co-ordination’ evolution path. I.e. the
+third generation represents the current state of the art. According to the
+trend, future refrigerator improvements are highly likely to head in the fourth
+generation ‘action during intervals’ direction. By way of example of a
+beneficial improvement to refrigerator systems using an ‘action during an
+interval’, it is perhaps useful to speculate on a refrigerator system which
+uses only cheap rate electricity and then possesses some form of energy store to
+provide the required cooling function outside cheap-rate times.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span style="mso-spacerun: yes; font-size: 12.0pt; mso-bidi-font-size: 10.0pt; font-weight: bold; font-style: normal" lang="EN-GB">&nbsp;&nbsp;&nbsp;
+</span></font></i></b><font size="2"><span lang="EN-GB" style="font-size:
+12.0pt;mso-bidi-font-size:10.0pt;font-style:normal">This use of one the Trends
+of Evolution vividly highlights the optimization versus step-change innovation
+dilemma central to the theme of this paper.
+
+</span></font></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>At the seminar at which this picture was first presented, it was far from
+clear that any of the refrigeration industry representatives present had even
+thought that there may be an evolution step beyond the current system. This is
+perhaps not surprising given their lack of previous exposure to TRIZ. Awareness
+now, however, means that the more enlightened will see the existence of a
+dilemma between continuing to optimize and improve existing ideas (in a manner
+which inevitably means focusing on cost reductions to maintain an acceptable
+profit margin)<span style="mso-spacerun:
+yes">&nbsp; </span>versus decisions to begin investing in the R&amp;D required
+to innovate a new generation of capability.
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><i style="mso-ansi-font-style:
+normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-style:normal"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>The vast majority of evidence from history says that companies are far
+more inclined towards the optimization route. The same history says they are
+usually put out of business <b style="mso-bidi-font-weight:
+normal"><span style="font-weight:bold">when </span></b>someone else – usually
+a small new-start company – takes the innovation plunge.<span style="mso-spacerun: yes">&nbsp;
+</span>
+
+</span></font></i></p>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">CONCLUSIONS
+
+</span></font></i></b></p>
+</p><ol>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">TRIZ metrics for assessing the relative maturity of a
+technology have been successfully applied to gauge the maturity of the
+refrigerant compressor industry.
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">The metrics can often be difficult or even impossible to
+calculate accurately. In either event, the process of analysing a given industry
+sector can be both arduous and time consuming.
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">Use of simpler metrics like ‘cost reduction’ or
+‘symptom curing’ patents may offer<span style="mso-spacerun: yes">&nbsp; </span>quicker,
+qualitative assessment measures.
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">Product maturity knowledge is an important business metric.
+Companies need to know how mature their technology is.
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">They also need to know whether the technology has the ability
+to jump to new S-curves through step change innovations.
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">TRIZ predicted trends of evolution provide very potent means
+of making this kind of assessment.
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">Knowledge that a step change improvement is possible then
+gives rise to an optimization versus innovation R&amp;D strategic decision.
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">Most companies opt for ‘optimization’.
+
+</span></font></li>
+  <li>
+    <p class="MsoBodyText" style="text-align: justify; text-indent: 0; mso-list: l17 level1 lfo9; tab-stops: list .25in; margin-left: 0"><font size="2"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-style:normal">‘Optimizing’ companies eventually get put out of business
+by ‘innovating’ companies.
+
+</span></font></li>
+</ol>
+<div style="border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#E5E5E5;mso-shading:white;mso-pattern:gray-10 auto">
+  <p class="MsoBodyText" style="border:none;mso-border-alt:solid windowtext .5pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt"><i style="mso-bidi-font-style:
+normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 11.0pt" lang="EN-GB">“Wealth
+  in the new regime flows directly from innovation, not from optimisation…
+  wealth is not gained by perfecting the known, but by imperfectly seizing the
+  unknown”</span></font></i></p>
+  <p class="MsoBodyText" style="border:none;mso-border-alt:solid windowtext .5pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt"><i style="mso-bidi-font-style:
+normal"><font size="2" face="Arial"><span style="mso-bidi-font-size: 10.0pt; font-size: 11.0pt" lang="EN-GB"><span style="mso-spacerun:
+yes">&nbsp;</span>(Kevin Kelly, ’New Rules for the New Economy’, Wired
+  magazine)</span></font></i></p>
+</div>
+<p class="MsoBodyText" style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-ansi-font-style:normal;mso-bidi-font-style:normal"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:bold;font-style:normal">REFERENCES
+
+</span></font></i></b></p>
+</p><ol>
+  <li>
+    <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l4 level1 lfo7; tab-stops: list 21.0pt; margin-left: 0"><font face="Arial"><span style="font-family:Arial;mso-bidi-font-family:&quot;Times New Roman&quot;">Mann,
+D.L., ‘Design Without Compromise: A New Perspective on Refrigeration and Heat
+Pump Technologies’, I Mech E seminar, London, April 20 1999.
+
+</span></font></li>
+  <li>
+    <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l4 level1 lfo7; tab-stops: list 21.0pt; margin-left: 0"><font face="Arial"><span style="font-family:Arial;mso-bidi-font-family:&quot;Times New Roman&quot;">Slocum,
+M.S., ‘Technology Maturity Using S-curve Descriptors’, TRIZ Journal, April
+1999.
+
+</span></font></li>
+  <li>
+    <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l4 level1 lfo7; tab-stops: list 21.0pt; margin-left: 0"><font face="Arial"><span style="font-family:Arial;mso-bidi-font-family:&quot;Times New Roman&quot;">Altshuller,
+G., <u>'Creativity As An Exact Science</u>', Chapter 7, Translated by Anthony
+Williams, (New York, Gordon And Breach, 1988.)
+
+</span></font></li>
+  <li>
+    <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l4 level1 lfo7; tab-stops: list 21.0pt; margin-left: 0"><font face="Arial"><span style="font-family:Arial;mso-bidi-font-family:&quot;Times New Roman&quot;">US
+Energy Information Association, http://www.eia.doe.gov/emeu/25opec/sld026.htm.
+
+</span></font></li>
+  <li>
+    <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l4 level1 lfo7; tab-stops: list 21.0pt; margin-left: 0"><font face="Arial"><span style="font-family:Arial;mso-bidi-font-family:&quot;Times New Roman&quot;">Mann,
+D.L., ‘Design Without Compromise: A New Perspective On Fluid Power System
+Component Design’, paper to be presented at PTMC’99, Bath, September 1999.
+
+</span></font></li>
+</ol>

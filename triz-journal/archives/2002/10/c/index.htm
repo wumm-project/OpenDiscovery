@@ -1,0 +1,580 @@
+<h1>Applying TRIZ to Software Problems - Creatively Bridging Academia and Practice in Computing</h1>
+
+<p>This article was first published in the proceedings of TRIZCON2002, The
+Altshuller Institute Conference, May, 2002.</p>
+  <blockquote>
+    <p><b>Kevin C. Rea, Principle Consultant<br>
+    REA Consulting<br>
+    E-mail: <a href="mailto:kcronline@gmail.com">kcronline@gmail.com</a><br>
+	Web site: <a href="http://kevincrea.com/">http://kevincrea.com/</a></b></p>
+  </blockquote>
+<dir>
+  </b></font><font FACE="Arial" size="2"><b>
+  <p>1. Abstract</p>
+</dir>
+</b></font>
+<p>The introduction of structured innovation for computer science is needed to
+teach effective software-problem solving and new concept generation - however,
+realistically curriculums won’t change and industry practices are usually set in
+stone. This paper reports the author’s research efforts to advance TRIZ in the
+software-problem domain. The current state of academia and practice curriculums
+is briefly discussed; context is introduced from two points of view:
+organizational processes as it relates to algorithms for creativity and an
+information modeling using Su-Field analysis.</p>
+<dir>
+  <font FACE="Arial" size="2"><b>
+  <p>2. Introduction</p>
+</dir>
+</b></font>
+<p>Solving software problems should be, in theory, systematic; yet in practice,
+it seems to be very much an art. This art is also a decent business especially
+for big software companies that sell you technical support subscriptions so you
+can debug their products for them! - now that’s creative. </p>
+<p>A majority of software problems today are caused by trial-and-error
+programming. While formal methods apply logic and simple mathematics to
+programming, it is not enough to tackle the increasing complexity that software
+demands now and in the future. Critical systems such as missile defense,
+anti-terrorism detection, and life support need software that works safely and
+consistently per specification. Thus, the introduction of structured innovation
+is needed to bridge both academia and practice, ultimately to provide creative
+solutions for the challenges of the 21<sup>st</sup>  century. </p>
+<dir>
+  <font FACE="Arial" size="2"><b>
+  <p>3. Current Situation</p>
+</dir>
+</b></font>
+<p>Looking at the industry, one can see that software is splintering into more
+and more special interest groups (SIGs); this is happening in both camps -
+academia and practice. Table 1 - Computing Areas of Focus lists the major focus
+groups of both academia and practice. </p>
+<font FACE="Arial"><b>
+<p align="left">Table 1 - Computing Areas of Focus</p>
+</b></font>
+<table BORDER CELLSPACING="0" CELLPADDING="3" style="border-collapse: collapse" bordercolor="#111111">
+  <tr>
+    <td valign="top">Academia<sup>1</sup> </td>
+    <td valign="top">Practice (ACM SIGs) </td>
+  </tr>
+  <tr>
+    <td valign="top">Algorithms and Complexity (AL) </td>
+    <td valign="top">Algorithms and Computation Theory </td>
+  </tr>
+  <tr>
+    <td valign="top">Discrete Structures (DS) </td>
+    <td valign="top">Ada Programming Language </td>
+  </tr>
+  <tr>
+    <td valign="top">Programming Fundamentals (PF) </td>
+    <td valign="top">APL Programming Language </td>
+  </tr>
+  <tr>
+    <td valign="top">Programming Languages (PL) </td>
+    <td valign="top">Applied Computing </td>
+  </tr>
+  <tr>
+    <td valign="top">Architecture and Organization (AR) </td>
+    <td valign="top">Computer Architecture </td>
+  </tr>
+  <tr>
+    <td valign="top">Operating Systems (OS) </td>
+    <td valign="top">Artificial Intelligence </td>
+  </tr>
+  <tr>
+    <td valign="top">Net-Centric Computing (NC) </td>
+    <td valign="top">Computers and the Physically Handicapped </td>
+  </tr>
+  <tr>
+    <td valign="top">Human-Computer Interaction (HC) </td>
+    <td valign="top">Computers and Society </td>
+  </tr>
+  <tr>
+    <td valign="top">Graphics and Visual Computing (GV) </td>
+    <td valign="top">Computer-Human Interaction </td>
+  </tr>
+  <tr>
+    <td valign="top">Intelligent Systems (IS) </td>
+    <td valign="top">Data Communication </td>
+  </tr>
+  <tr>
+    <td valign="top">Information Management (IM) </td>
+    <td valign="top">Computer Personnel Research </td>
+  </tr>
+  <tr>
+    <td valign="top">Software Engineering (SE) </td>
+    <td valign="top">Computer Science Education </td>
+  </tr>
+  <tr>
+    <td valign="top">Social and Professional Issues (SP) </td>
+    <td valign="top">Computer Uses in Education </td>
+  </tr>
+  <tr>
+    <td valign="top">Computational Science and Numerical
+    Methods (CN) </td>
+    <td valign="top">Design Automation </td>
+  </tr>
+  <tr>
+    <td valign="top">Distributed Systems - Concurrency (CN) </td>
+    <td valign="top">Systems Documentation </td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">Electronic Commerce </td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">Computer Graphics and Interactive
+    Techniques </td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">Groupware </td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">Information Retrieval </td>
+  </tr>
+</table>
+<p>The joint task force on computing curricula recently published a report
+in the fall of 2001. The goal of this report was to develop curricula guidelines
+and for undergraduate programs in computing. The final report from the task
+force was scheduled for publication in the fall of 2001. Computing has changed
+dramatically over time in ways that have a profound effect on curriculum design
+and pedagogy. Moreover the scope of what we call computing has broadened to the
+point that it is difficult to define it as a single discipline. Past curriculum
+reports have attempted to merge such disciplines as computer science, computer
+engineering, and software engineering into a single report about computing
+education. Although the focus groups are essential in terms of defining the body
+of knowledge in each discipline, they’re not in themselves sufficient to solve
+the complex software problems that plague our industry today. There are certain
+aspects of both academia and practice that are out of our control: 1)
+Significantly changing the curriculum of computer science and software
+engineering in academia and 2) Changing internal processes of companies to meet
+a special innovation mandate. There must be some way to “bridge” what’s going on
+in both camps, thus harness the complimentary synergy between them. The above
+splintering suggests that whatever inventive methodology is used will need to
+account for the different contexts present in these growing groups.
+Synchronization between academia and practice generally do not reflect
+categories in the US patent fund. If we want to spawn true innovation across a
+society, we need to close the loop with the patent office and feed back
+innovation needs to academia, these patent fund categories are shown in Figure
+1.</p>
+<div align="left">
+  <center>
+  <table border="1" cellpadding="10" cellspacing="10" style="border-collapse: collapse" bordercolor="#111111" width="80%" bordercolorlight="#000000" bordercolordark="#000000">
+    <tr>
+      <td colspan="2" bordercolorlight="#000000" bordercolordark="#000000" valign="top">
+<p align="left">Data Processing<br>
+{USA.700 à USA.707, USA.716, USA.717)</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.700}<br>
+      GENERIC CONTROL SYSTEMS OR SPECIFIC APPLICATIONS</td>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.706} <br>
+      ARTIFICIAL INTELLIGENCE </td>
+    </tr>
+    <tr>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.701}<br>
+      VEHICLES, NAVIGATION, AND RELATIVE LOCATION</td>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.707}<br>
+      DATABASE AND FILE MANAGEMENT, DATA STRUCTURES, OR DOCUMENT PROCESSING</td>
+    </tr>
+    <tr>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.703}<br>
+      STRUCTURAL DESIGN, MODELING, SIMULATION, AND EMULATION</td>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.716}<br>
+      DESIGN AND ANALYSIS OF CIRCUIT OR SEMICONDUCTOR MASK</td>
+    </tr>
+    <tr>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.702}<br>
+      MEASURING, CALIBRATING, OR TESTING</td>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.717}<br>
+      SOFTWARE DEVELOPMENT, INSTALLATION, AND MANAGEMENT</td>
+    </tr>
+    <tr>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.704}<br>
+      SPEECH SIGNAL PROCESSING, LINGUISTICS, LANGUAGE TRANSLATION, AND AUDIO
+      COMPRESSION/DECOMPRESSION</td>
+    </tr>
+    <tr>
+      <td width="50%" bordercolorlight="#000000" bordercolordark="#000000" valign="top" align="left">
+      {USA.705}<br>
+      FINANCIAL, BUSINESS PRACTICE, MANAGEMENT, OR COST/PRICE DETERMINATION</td>
+    </tr>
+  </table>
+  </center>
+</div>
+<font FACE="Arial"><b>
+<p align="left">Figure 1 - Current US Patent Categories for Data Processing</p>
+</b>
+</font><font FACE="Arial" size="2"><b>
+<p>Current Areas of Research</p>
+</b></font>
+<p>Applying TRIZ in the software-problem domain has many potential benefits, not
+only to the software problem solvers, but also the TRIZ community in general.
+One major benefit is the concerted effort to evolve the science of TRIZ so as to
+avoid obsolescence. </p>
+<p>The author is currently active in the following tasks:</p>
+<ol type="a">
+  <li>Brief analysis of the current situation in academia and practice,</li>
+  <li>Development of algorithmic templates for software problems,</li>
+  <li>Potential enhancement of TRIZ tools (Su-Fields with context),</li>
+  <li>Analogies of inventive principles in software<sup>2</sup>,</li>
+  <li>Software patent-fund analysis.</li>
+</ol>
+<p>NOTE: Activities <i>a</i>, <i>b,</i> and <i>c</i> are presented in this
+paper.</p>
+<dir>
+  <font FACE="Arial" size="2"><b>
+  <p>4. Su-field Enhancement</p>
+  </b></font>
+</dir>
+<p>At a low level, all software is data; whether it is for a network process
+like a Web server or an inter-process object like an ActiveX component. This
+data is then organized into something useful - <i>information</i>. It is this
+information that we try to model when discerning about software systems. There
+are many modeling techniques used in software engineering today. The Unified
+Modeling Language™ (UML) is the industry-standard language for specifying,
+visualizing, constructing, and documenting the artifacts of software systems. It
+simplifies the complex process of software design, making a &quot;blueprint&quot; for
+construction, yet it does not provide problem-solving tools. One goal of this
+research is to develop various templates that provide inventive tools for
+methodologies such as UML. Possible enhancements of Su-fields for software
+modeling in UML hold at a minimum, the ability to escape rigid rules and idioms.
+</p>
+<font FACE="Arial">
+<b>
+<p align="left"><img border="0" src="c01.gif" width="450" height="139"><br>
+Figure 2 - Su-field Model3</p>
+</b></font>
+<p>Substance-Field (Su-field) Analysis is a TRIZ analytical tool for modeling
+problems related to existing technological systems. Every system is created to
+perform some functions. The desired function is the output from an object or
+substance (<b>S1</b>), caused by another object (<b>S2</b>) with the help of
+some means (types of energy, <b>F</b>). The general term, <i>substance</i> has
+been used in the classical TRIZ literature to refer to some object. </p>
+<p>Substances are objects of any level of complexity; they can be single items
+or complex systems. The action or means of accomplishing the action is called a
+<i>field</i>. Su-field analysis provides a fast, simple model to use for
+considering different ideas drawn from a knowledge base and to zoom in on the
+zone of interest. However, the analysis can be applied to system as well as
+component levels of abstraction; this is often at the interface between the two
+substances. For complex systems there is a Su-field model for all the zones of
+interest. Two substances and a field are necessary and sufficient to define a
+working technical system.</p>
+<p>There are four basic models:</p>
+</p><ul>
+  <li>Effective complete system,</li>
+  <li>Incomplete system (requires completion or a new system),</li>
+  <li>Ineffective complete system (requires improvement to create
+      the desired effect),</li>
+  <li>Harmful complete system (requires elimination of the negative
+      effect).</li>
+</ul>
+<p>If there is a problem with an existing system and any of the three elements
+are missing, Su-field analysis indicates where the model requires completion and
+offers directions for innovative thinking. If there is an innovative problem and
+the system has the three required elements, Su-field analysis can suggest ways
+to modify the system for better performance. This is particularly true if
+radical changes in the design are possible.</p>
+<p>The field, which is itself often some form of energy, provides some energy,
+force or reaction to guarantee an effect. The effect could be on <b>S1 </b>or
+the output of the field information. The term field is used in the broadest
+sense, including the fields of physics (that is, electromagnetism, gravity and
+strong or weak nuclear interactions). Other fields could be thermal, chemical,
+mechanical, acoustic, light, etc. The two substances can be whole systems,
+subsystems or single objects; they can also be classified as tools or articles.
+A complete model is a <i>triad<sup>3</sup></i> of two substances and a field. The innovative
+problem is modeled to show the relationships between the two substances and the
+field; complex systems can be modeled by multiple, connected Su-field models.</p>
+<p>There are four steps to follow in making the Su-field Model:</p>
+</p><ul>
+  <li>Identify the elements. (The field is either acting upon both
+    substances or is within substance S<sub>2</sub> as a system)</li>
+  <li>Construct the model.</li>
+</ul>
+<p>After completing these two steps, we stop to evaluate the completeness and
+effectiveness of the system. If some element is missing, we try to identify what
+it is.</p>
+</p><ul>
+  <li>Consider solutions from the 76 Standard Solutions.</li>
+  <li>Develop a concept to support the solution.</li>
+</ul>
+<font FACE="Arial"><b>
+<p align="left"><img border="0" src="c02.gif" width="600" height="407"><br>
+Figure 3 - Su-field Symbols</b><sup>4</sup></p>
+<b>
+<p>Context and Time in Information Modeling - the metapattern</b></font><sup>5</sup></p>
+<p>Shifting gears temporarily, context-oriented analysis may be the next big
+wave because on the conceptual level, it can solve problems elegantly. The goal
+of this research is to see if Su-field analysis can be enhanced to include new
+fields, like that of “computation” with the notion of context and time. </p>
+<p>['Metapattern' is a formalization of context, time and validity in
+information models.]</p>
+<p>Metapattern is an exciting new approach to conceptual information modeling.
+It is a technique for meta-information analysis and modeling that emphasizes
+reusability. With the metapattern, analysis is recognized as a critical activity
+in its own right during information system development. The metapattern is not a
+method for technical design or software engineering; it is a highly focused
+analysis tool. But precisely because it provides powerful support for analysis,
+the metapattern helps focus all other development and management activities
+during the complete life cycle of systems. Overall success results from the
+great precision now available in modeling, particularly through the combination
+of a finely grained concept of time stamping and a recursive, simple but formal
+concept of context.</p>
+<p>Social psychologists have known for a long time that the overall behavior of
+a person is never completely consistent. Rather, consistency is limited to what
+is called - in metapattern terms - a context. The type that determines behavior
+is no longer an object-as-such but an object-in-context. Actually, context is
+type. This shift in the meaning of type has it advantageous consequences; first,
+for all conceptual information modeling; second, and practically, for <i>
+operational </i>information systems. Additionally, according to the metapattern,
+provisions for change are present at the smallest relevant scale of information.
+This means that, for any point in time, any aggregation of information can be
+unambiguously reported; when the time of relevance changes, the dynamics of
+information becomes visible. An object behaves according to a particular
+situation; that is, its behavior can change from one situation to another. For
+instance, if you only know Bill as the next door neighbor, you might be
+surprised to see him in action at work or visiting his mother. <i>Another word
+for situation is context.</i> Thus, primary tension shifts to what is around an
+object. We use the term context because most people seem familiar with it in the
+sense of appreciating why something is not always completely the same thing.
+Metapattern is a technique for information modeling that emphasizes flexibility
+and reuse ability. It helps the modeler stride to deliver balance between
+general structure (abstraction) and instances (concreteness) of information. The
+resulting conceptual models will always optimally accommodate requirements. The
+metapattern presumes that in objects behaviors are completely different from one
+context to another. Odd as this may look, the absence of any shared properties
+by an object among its contexts exemplifies the metapattern. To explain further,
+suppose a particular context <b>A</b> exists. And suppose that the equally
+specific object <font FACE="Arial"><i>x</i></font> is contained by <b>A</b>. An
+example would be Bill (<font FACE="Arial"><i>x</i></font>) at work (<b>A</b>).
+This relationship is shown in Figure 4 - Object in context and multiple
+contexts.</p>
+<font FACE="Arial">
+<b>
+<p align="left"><img border="0" src="c03.gif" width="603" height="109"><br>
+Figure 4 - Object in context and multiple contexts</p>
+</b></font><font FACE="Arial" SIZE="2">
+</font>
+<p>Another context, say <b>B</b>, could also contain the object x. Bill (<font FACE="Arial"><i>x</i></font>)
+is either at work (<b>A</b>) or at home (<b>B</b>). Contexts A and B may
+overlap, as in </p>
+<p>Figure 5 - Object in overlapping contexts and conversion of disjunctive
+contexts. However, the overlap can be reduced; in this case to three disjunctive
+contexts as shown in the following figure. ( ! = NOT, ^ = AND)</p>
+<font FACE="Arial"><b>
+<p align="left"><img border="0" src="c04.gif" width="684" height="108"><br>
+Figure 5 - Object in overlapping contexts and conversion of disjunctive
+contexts</p>
+</b></font><font FACE="Arial" SIZE="2">
+</font>
+<p>In the software world, it is fashionable to distinguish between instances and
+types. To call an object a person, for example, usually means that a particular
+object instance is referred to, which obeys the object type of person. The
+relevant instances or elements define a set by extension. Following the
+extensional approach, set members may, or may not share their properties. In
+contrast, a type intentionally specifies a set - that is, through conditions
+that must hold valid for elements to qualify as set members. The assumption that
+Bill is of the person type, unambiguously specifies his properties. With the
+person type assigned to John, he too will exhibit exactly the same properties.
+</p>
+<p>Figure <font FACE="Arial">5</font>, suggests that object <i><b>x</b></i>
+exists in context <b>A</b>. Simultaneously, however, the idea of context leads
+to an independent consideration of the object. This suggests an explicit
+relationship; that is, between a context and an object. It is this explicit
+relationship that I believe can contribute greatly to using Su-field analysis
+for software problems.</p>
+<font FACE="Arial"><b>
+<p>Hypothesis Problem</p>
+</b></font>
+<p>As an example of using Su-field analysis in the context of software, we have
+the problem of implementing a multi-slot communications buffer. If messages are
+produced at approximately the same rate at which they are consumed, a single
+buffer provides reasonable performance since a process would not generally have
+to wait very long for access to the buffer. Commonly, however, producer and
+consumer execution is in bursts. For example, a process writing an output file
+might produce several lines at once, and then do more computation before
+producing another set of lines. In such cases, a buffer capacity larger than one
+can significantly increase performance by reducing the number of times processes
+block (blocking is when a process is waiting for something to happen before it
+can advance its work). This is an example of the classic time/space tradeoff in
+computer systems.</p>
+<font FACE="Arial"><b>
+<p align="left"><img border="0" src="c05.gif" width="600" height="145"><br>
+Figure 6 - Communications Buffer Example</p>
+</b>
+</font>
+<p>Figure 6 - Communications Buffer Example (a) depicts a Producer which will
+place (<i>Deposit</i>) a message (<i>msg</i>) in a predefined memory location,
+called the buffer or <i>buf</i>. The Consumer “consumes” (<i>Fetches</i>) the <i>
+msg</i> from the buffer. The buffer contains a queue of messages that have been
+deposited but not yet fetched. This queue can be represented by a linked list of
+an array. The problem is the Producer does not necessarily deposit messages at
+the same “rate” at which they are consumed.</p>
+<p>An initial model using Su-field analysis may look like the following. Note
+that the field is represented in the relationship of the useful action below.</p>
+<font FACE="Arial"><b>
+<p align="left"><img border="0" src="c06.gif" width="550" height="281"><br>
+Figure 7 - Initial Su-field Model of Problem</p>
+</b>
+</font>
+<p>The situation implies that we have an insufficient desired effect
+(ineffective complete system) - the <i>rate</i> at which we transfer messages is
+carried out with low efficiency. </p>
+<p>Figure 8 - depicts the transformation of the Su-field, showing a buffer as a
+shared resource. The psychological goal of adding the context is to show that S2
+and S3 are very much alike in their relationship to computation at hand. This
+leads me to wonder if <i>one</i> process can be used instead of <i>two</i> to
+perform the same task. Is it possible to use the standard solution of inversion
+based on what context the process is in? In this case, the process would already
+know when it is done depositing the data and resources would be saved.</p>
+<p>The transformation with context shows a need for a shared resource to perform
+synchronization of deposit and fetch procedures. The data buffer S1 has two
+contextual relationships factored by time and validity. Insight into how TRIZ
+can be applied (inversion?) to this problem is the tip of the iceberg.</p>
+<font FACE="Arial"><b>
+<p align="left"><img border="0" src="c07.gif" width="500" height="341"><br>
+Figure 8 - Transformation with Context</p>
+</b></font>
+<p>The combination of Su-field analysis with the inclusion of context lends
+additional insight for modeling in the software domain. At present, this work is
+still very much under development. It is my hope that I will have sufficient
+data to continue along this path. Is it possible to enhance the Su-field
+notation to include context into the modeling process? I think so.</p>
+<dir>
+  <font FACE="Arial" size="2"><b>
+  <p>5. Context-Templates</p>
+  </b></font><font FACE="Arial">
+</dir>
+</font>
+<p>Context-templates (a.k.a. meta-template) serve to complement TRIZ in the
+context of software problems as well as other thinking methods, i.e., - Advanced
+Systematic Inventive Thinking (ASIT)<sup>6</sup>. </p>
+<p>Here are the current goals of the context-template:</p>
+</p><ol>
+  <li>Integrate with the most applicable tool for solving software problems
+    of an inventive nature (i.e., TRIZ-ARIZ, ASIT-Unification, Innovation
+    Platform™),</li>
+  <li>Have a mechanism for directing the solver to the most appropriate and
+    strong solution as well as the most promising strategy,</li>
+  <li>Provide access to important, well organized, and necessary information
+    at any step of the problem-solving process,</li>
+  <li>Force the user to follow the steps with discipline,</li>
+  <li>Flexibility to add, delete, enhance a template in accordance with an
+    emerging or changing software technology and/or with the underlying
+    inventive tool (i.e., ARIZ-71 to ARIZ-2001),</li>
+  <li>Provide a creative thought-provoking experience for people dealing
+    with software problems.</li>
+</ol>
+<p>Conceptually, the templates overlay a methodology or tool and expose
+contextually-relevant information. As an example: ARIZ-61 divides the creative
+process into three stages: analytical, operative, and synthetic. Each stage is
+divided into several sequential steps. Thus, the algorithm separates a single
+complex action into several much easier actions. It looks like this</p>
+<b>
+<p>ARIZ-61</p>
+</b><u>
+<p>Part One: Analytical stage</p>
+    </u>
+    <dl>
+      <dd>1) State the problem.</dd>
+      <dd>2) Imagine the ideal final result (IFR).</dd>
+      <dd>3) Determine what interferes with attaining the result.</dd>
+      <dd>4) Determine why it interferes.</dd>
+      <dd>5) Determine under what condition that will not interfere.</dd>
+</dl>
+<u>
+<p>Part Two: Operative stage.</p>
+    </u>
+    <dl>
+      <dd>1) Explore the possibility of making changes in the object itself.</dd>
+      <dd>2) Explore the possibility of dividing an object into independent parts.</dd>
+      <dd>3) Explore the possibility of altering the outside environment.</dd>
+      <dd>4) Explore the possibility of making changes in neighboring objects.</dd>
+      <dd>5) Study prototypes from other industries.</dd>
+      <dd>6) Return to the original problem and widen that problem’s condition -
+    make the transition to a more general problem statement.</dd>
+</dl>
+<u>
+<p>Part Three: synthetic stage.</p>
+    </u>
+    <dl>
+      <dd>1) Change the shape of a given object- the machine with the new functions
+    should have a new shape.</dd>
+      <dd>2) Change other objects that interact with the one under consideration.</dd>
+      <dd>3) Introduce changes into the means of object functionality.</dd>
+      <dd>4) Explore the implementation of the new-found principal in solving the
+    other technical problems.</dd>
+</dl>
+<font FACE="Arial"><b>
+<p align="left"><img border="0" src="c08.gif" width="490" height="185"><br>
+Figure 9 - Overview of Context-Template</p>
+</b></font>
+<p>Figure 9 - Overview of Context-Template depicts the concept of an overlay
+onto of existing tools and methodologies. This approach gives flexibility while
+maintaining a familiar space for the software problem solver. A part of the
+meta-template is a flowchart as depicted in Figure 10 - Abstract View of
+Template. This flowchart is specific to a particular software discipline
+procedures of a particular organization.</p>
+<b>
+<font FACE="Arial">
+<p align="left"><a target="_blank" href="c09.gif">
+<img border="2" src="c09_small.gif" xthumbnail-orig-image="c09.gif" width="100" height="84"></a><br>
+Figure 10 - Abstract View of Template</p>
+</font></b><font FACE="Arial">
+</font>
+<p>The goal of the flowchart is to filter particular steps that do and do not
+apply to a particular software discipline. </p>
+<font FACE="Arial" size="2"><b>
+<p>Conclusion</p>
+</b></font>
+<p>This paper has presented some of my personal thoughts and current research in
+applying TRIZ to the software problem domain. The intent of this paper is to
+stimulate and foster feedback on applying TRIZ to the software problem domain.
+Although the jury is still out with respect to the validity of these
+enhancements and insights, at minimum I believe they are a start. There is still
+MUCH TO DO in terms of applying these concepts to a significant set of software
+problems. I don’t profess to have all the answers, but I believe I am on to
+something. The introduction of the context-template provides for a way to
+introduce inventive principles into otherwise “concrete” schools of thought. The
+addition of “context” and “time” as it relates to information modeling in
+Su-Field analysis has significant potential and will be explored further in my
+research. My belief is that TRIZ does provide significant opportunities in
+solving software-related problems. To think the unthinkable in the evolution of
+software is needed to truly showcase TRIZ as a powerful in the software domain.
+I welcome your constructive feedback as well as any software problem
+ideas/challenges/insights you may have. </p>
+<p><b>Footnotes</b></p>
+</p><ol>
+  <li>
+  <p class="MsoEndnoteText">Computing Curricula 2001 – Computer Science,
+  Steelman Draft, August 2001; The Joint Task Force on Computing Curricula, IEEE
+  Computer Society and the Association for Computing Machinery (ACM).</li>
+  <li>
+  <p class="MsoEndnoteText">Kevin C. Rea, TRIZ and Software – 40 Principle
+  Analogies, Parts 1 and 2, September 2001; The TRIZ Journal.</li>
+  <li>
+  <p class="MsoEndnoteText">James F. Kowalick, TRIADS: THEIR RELATIONSHIP TO
+  TRIZ. The TRIZ-Journal, 1998.</li>
+  <li>
+  <p class="MsoEndnoteText"><i>Engineering of Creativity: Introduction to TRIZ
+  Methodology of Inventive Problem Solving</i>. Semyon D. Savransky, CRC Press
+  LLC 2000.</li>
+  <li>
+  <p class="MsoEndnoteText">Pieter Wisse, MetaPattern, 2001 Addison-Wesley.</li>
+  <li>
+  <p class="MsoEndnoteText">Dr. Roni Horowitz, From TRIZ to ASIT in 4 steps, The
+  TRIZ Journal – August 2001.</li>
+</ol>
+
+

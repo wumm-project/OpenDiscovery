@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+</head>
+
+<body>
+
+
+
+<h1>Using TRIZ to Resolve Software Interface Problems<font size="3"></font></h1>
+<p>
+
+<table align="right" border="0" cellpadding="0" cellspacing="0" width="175">
+<tr>
+<td rowspan="10" width="15"><img src="http://www.metodolog.ru/triz-journal/library/graphics/clear.gif" width="15" height="1" alt=""></td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+<tr><td>
+
+
+</td>
+</tr>
+
+<tr>
+<td height="5"></td>
+</tr>
+
+<tr>
+<td>
+<table bgcolor="#F7941D" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td><b><font face="arial,sans-serif" size="2" color="#ffffff">Related Tools &amp;
+Articles</font></b></td>
+</tr>
+</table>
+<table bgcolor="#ffcc33" border="0" cellpadding="4" cellspacing="0" width="100%">
+<tr>
+<td bgcolor="#ffffff">
+<table border=0>
+ <tr valign='top'><td><li></td><td height='35'>
+ 
+ <div><font face="verdana,geneva,sans-serif" size="1"><a href='http://www.metodolog.ru/triz-journal/archives/2001/04/c/index.htm'>TRIZ and Software</a><br><br></font></div>
+
+</td></tr>
+
+ <tr valign='top'><td><li></td><td height='35'>
+ 
+ <div><font face="verdana,geneva,sans-serif" size="1"><a href='http://www.metodolog.ru/triz-journal/archives/2008/06/04/'>Case Study: Use of TRIZ in Software Design</a><br><br></font></div>
+
+</td></tr>
+
+ <tr valign='top'><td><li></td><td height='35'>
+ 
+ <div><font face="verdana,geneva,sans-serif" size="1"><a href='http://www.metodolog.ru/triz-journal/archives/2002/10/c/default.asp'>Applying TRIZ to Software Problems</a></font></div>
+
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td height="5"></td>
+</tr>
+
+<tr>
+<td>
+<table bgcolor="#000099" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td><b><font face="arial,sans-serif" size="2" color="#ffffff">Discussion Forum</b></font></td>
+</tr>
+</table>
+<table bgcolor="#ffcc33" border="0" cellpadding="4" cellspacing="0" width="100%">
+<tr>
+<td bgcolor="#ffffff">
+<font face="verdana,geneva,sans-serif" size="1">&quot;Define &quot;ideal final result.&quot; The input NEVER comes back the same. This approach is also true about any of the software products that do cause and effect modeling as a precursor to problem solution.&quot;<br><br><a href='http://www.triz-journal.com/forum/showmessage.asp?messageID=1553'>Contribute to this Discussion</a> </font>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td HEIGHT="5"></td>
+</tr>
+</table>
+
+
+</noindexfb><BODYTEXT>
+<P>By <A href="#authors">Igor Zadesenets</A></P><H2>Abstract </H2><P>Two years ago the author created an experimental program based on the Theory of Inventive Problem Solving (TRIZ). It contained only one chart. The initial sketch threatened to become a complicated project, so the author implemented a few TRIZ tools to resolve unexpected problems. It was found that the interface solution dramatically simplified the program development. The following is a brief description of the problem solving process. </P><H2>Introduction </H2><P>In regards to effectiveness, TRIZ is largely based on overcoming successful psychological inertia. The problem usually occurs when an individual's brain tries to keep the object or process image unchangeable (even though changes are needed to resolve problems). </P><P>But software elements are flexible. For example, a programmer can easily divide, combine, sort, copy, move or erase data, code or images. A programmer finds it easy to start, stop and repeat processes in order to provide parallel operations. And a programmer can easily connect and disconnect any objects while staying accustomed to any change at any time. </P><P>This is the reason why it is easy to find examples of TRIZ methods in software implementation, but difficult to find unexpected solutions.</P><P>Fortunately, software creation problems are not obviously related to software elements. According to the author of <EM><A href="http://www.triz-journal&#46;&#99;&#111;&#109;/archives/2002/07/f/index.htm#top">Hands-On Systematic Innovation</A></EM> and <EM><A href="http://www.triz-journal&#46;&#99;&#111;&#109;/commentary/archive/systematic_software_innovation.html">TRIZ for Software</A></EM>, Darrell Mann, <A href="http://www.triz-journal&#46;&#99;&#111;&#109;/archives/2002/08/c/index.htm">contradictions</A> tend to occur at the interfaces between software and the outside world.<A href="#Ref1"><SUP>1</SUP></A> The human-software interface is important; it may be the most important program element, which directly influences a common success of software components. On the other hand, one's imagination of human behavior is difficult to change. </P><P>Human-software interface problems appear to be the most comfortable for use in TRIZ implementation in comparison to other types of software creation problems. This is true of TRIZ-based software. </P><H3>Object Relationship and Cause-effect Models</H3><P>In general, TRIZ-based software should present one or more recommendations to a customer. To choose and adapt recommendations to a customer's special case the TRIZ-based program should create a system model. The final goal is to build a system where no unacceptable effects occur. The more complete and the more exact the system model is the more complete and exact the recommendation set is. The only way to create such a model today is to request from a customer a system description.</P><P>The two most widely used system descriptions in TRIZ models include:</P><OL><LI>The object-relationship model, which describes connections among objects and includes the fields, functions, actions and interactions as specific examples of the relationship. The Su-field and functional models are, therefore, sub-classes of the object relationship models. Object property, attributes and their characteristics can also be defined as relations to implicit object(s). <LI>The cause-effect model, which describes causes and consequences of interactions. The cause-effect model can also describe relations among properties, actions, processes, single objects, etc. </LI></OL><P>The object-relationship model is the key to formulating comprehensive recommendations. For example, to receive a recommendation such as "divide the wheel into independent parts" one should define the wheel as one that is related to (interacted) objects.</P><P>The cause-effect model can be used to find contradictions and for formulating the <A href="http://www.triz-journal&#46;&#99;&#111;&#109;/archives/1997/02/a/index.html">ideal final result</A> (IFR). The cause-effect logic is partially presented in simple form in any system model. Any system cannot exist without its elements. Taking out field or substance destroys a <A href="http://www.triz-journal&#46;&#99;&#111;&#109;/content/c070409a.asp">Su-field</A>. </P><P>But what if someone wants to receive recommendations such as "perform heating in place or area where you want to secure ampoule sealing and do not perform or eliminate heating where you want to prevent medicine degradation"? One should define that the ampoule sealing is the useful result of the heating and that the medicine degradation is the harmful consequence of the heating.</P><H3>Object-relation Model Implementation</H3><P>There are several ways to present both models in a graph or matrix. One of the simplest forms is by listing relationships. Usually each element of such list contains an "object-relation-object" record. Such relationships can be shown in a table. The author researched a table and found it lends itself to software users and simple in realization. </P><P>Figure 1 shows an example of an object-relationship model implementation. (The author added columns for conjunctions (prepositions) to increase readability.) A user can leave table fields blank or a user may enter object properties, partially defined interactions, actions, processes or even single objects. To define the process the author uses collective names such as "sentence, fact, essential." Take, for example, a coal burning process in a stove, examined in Figure 1. </P><P><TABLE cellSpacing=0 cellPadding=1 align=center bgColor=#001894 border=0><TBODY><TR><TD align=middle><TABLE cellSpacing=0 cellPadding=0 border=0><TBODY><TR align=middle><TD vAlign=top><TABLE cellSpacing=0 cellPadding=0 bgColor=#001894 border=0><TBODY><TR><TD colSpan=2><TABLE cellSpacing=0 cellPadding=2 border=0><TBODY><TR><TD align=left><FONT face=arial color=#ffffff size=-1>&nbsp;<B>Figure<FONT color=#ffffff> 1:</FONT></B><FONT color=#ffffff> System Description Example in Object-relationship Terms</FONT></FONT></TD></TR></TBODY></TABLE></TD></TR><TR bgColor=#ffffff><TD align=middle><IMG height=140 alt="" src="http://www.metodolog.ru/triz-journal/library/graphics/2009-05-iz_01.gif" width=599 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></P><P>Figure 2 contains sentences related to the problem. </P><P><TABLE cellSpacing=0 cellPadding=1 align=center bgColor=#001894 border=0><TBODY><TR><TD align=middle><TABLE cellSpacing=0 cellPadding=0 border=0><TBODY><TR align=middle><TD vAlign=top><TABLE cellSpacing=0 cellPadding=0 bgColor=#001894 border=0><TBODY><TR><TD colSpan=2><TABLE cellSpacing=0 cellPadding=2 border=0><TBODY><TR><TD align=left><FONT face=arial color=#ffffff size=-1>&nbsp;<B>Figure 2:</B> <FONT color=#ffffff>Example of a TRIZ-based Program Creation with Problem Descriptions</FONT></FONT></TD></TR></TBODY></TABLE></TD></TR><TR bgColor=#ffffff><TD align=middle><IMG height=248 alt="" src="http://www.metodolog.ru/triz-journal/library/graphics/2009-05-iz_02.gif" width=600 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></P><P>The descriptions in Figure 2 allow for the presentation of distinct recommendations for a TRIZ-based program user. For example, one can describe the system (program) that was intended to be created. It contains the interactions table (object-relationship table) and the cause-effect relations table. An individual can choose the object cause-effect relations table and receive appropriate recommendations. One of the recommendations (an ideality concept) can be seen on the bottom of Figure 2. The first program's advice is to get rid of the cause-effect relations table. </P><H2>The Problem</H2><P>Recommendations give users the idea to adapt an existing table by entering cause-effect relations. The first thought that may come to mind is shown in Figure 3. The cause-effect links are shown by the red arrows. The simple system model drawing, which contains only four cause-effect links, appears too complex. A new problem, therefore, can be formulated. The new question is: how does one decrease the drawing complexity? </P><P><TABLE cellSpacing=0 cellPadding=1 align=center bgColor=#001894 border=0><TBODY><TR><TD align=middle><TABLE cellSpacing=0 cellPadding=0 border=0><TBODY><TR align=middle><TD vAlign=top><TABLE cellSpacing=0 cellPadding=0 bgColor=#001894 border=0><TBODY><TR><TD colSpan=2><TABLE cellSpacing=0 cellPadding=2 border=0><TBODY><TR><TD align=left><FONT face=arial color=#ffffff size=-1>&nbsp;<B>Figure 3:</B> <FONT color=#ffffff>Cause-effect Relations Reflection on an Object-relations Table</FONT></FONT></TD></TR></TBODY></TABLE></TD></TR><TR bgColor=#ffffff><TD align=middle><IMG height=113 alt="" src="http://www.metodolog.ru/triz-journal/library/graphics/2009-05-iz_03.gif" width=600 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></P><H2>The Contradiction</H2><P>The drawing complexity depends on the number of links drawn. One of the <A href="http://www.triz-journal&#46;&#99;&#111;&#109;/archives/2002/08/c/index.htm">contradictions</A> can be formulated: the number of links should be big to show all the cause-effect relations and the number of links should be small to keep the picture simple and clear.</P><H2>The Problem Solving</H2><P>To resolve similar contradictions a hierarchical menu interface, a tree view interface and a tab interface are widely used.<A href="#Ref3"><SUP>3</SUP></A> Generally, they are different implementations of the same principle. The complex data is divided into separate parts (<A href="http://www.triz-journal&#46;&#99;&#111;&#109;/archives/2000/10/b/index.htm">separation principle</A>) and arranged in a multi-level order (another dimension principle). </P><P>Now, try to implement a tree view interface to the problem. In this special case two tree nodes can be linked only once between two sentences because only one cause-effect relation can be defined. By placing some node (sentence) at the top of the list, one can create the tree, which describes how the root node (sentence) links with other nodes (sentences). Such a tree contains only two levels. On the first level there is the root node and the second level contains other nodes. As shown in Figure 4, one can see that the tree contains cause-effect relations of drawing complexity. The drawing complexity is caused by the fact that the cause-effect relations are drawn inside the interaction table. (This relation is shown with elbow arrows.) The drawing complexity also grows as the number of links increases. The drawing complexity does not depend directly on other facts. </P><P><TABLE cellSpacing=0 cellPadding=1 align=center bgColor=#001894 border=0><TBODY><TR><TD align=middle><TABLE cellSpacing=0 cellPadding=0 border=0><TBODY><TR align=middle><TD vAlign=top><TABLE cellSpacing=0 cellPadding=0 bgColor=#001894 border=0><TBODY><TR><TD colSpan=2><TABLE cellSpacing=0 cellPadding=2 border=0><TBODY><TR><TD align=left><FONT face=arial color=#ffffff size=-1>&nbsp;<B>Figure 4<FONT color=#ffffff>:</FONT></B><FONT color=#ffffff> Two Level Cause-effect Relations Tree</FONT></FONT></TD></TR></TBODY></TABLE></TD></TR><TR bgColor=#ffffff><TD align=middle><IMG height=135 alt="" src="http://www.metodolog.ru/triz-journal/library/graphics/2009-05-iz_04.gif" width=600 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></P><P>Only one step divides a user from a final decision. The root node must be placed on top of the list. It is enough just to select the appropriate row in the table and define it as "root node." In Figure 5, the modified tree example is shown. In three combined pictures the selected row "moves" downward. On the top part of the picture the root is the cause-effect relations drawing inside the interaction table. An individual can see that the elbow arrow points to the drawing complexity. On the middle part the root is the entering of the cause-effect relation. And on the bottom, the root is the described system.</P><P><TABLE cellSpacing=0 cellPadding=1 align=center bgColor=#001894 border=0><TBODY><TR><TD align=middle><TABLE cellSpacing=0 cellPadding=0 border=0><TBODY><TR align=middle><TD vAlign=top><TABLE cellSpacing=0 cellPadding=0 bgColor=#001894 border=0><TBODY><TR><TD colSpan=2><TABLE cellSpacing=0 cellPadding=2 border=0><TBODY><TR><TD align=left><FONT face=arial color=#ffffff size=-1>&nbsp;<B>Figure 5:</B> <FONT color=#ffffff>Dynamic Two Level Cause-effect Relations Tree</FONT></FONT></TD></TR></TBODY></TABLE></TD></TR><TR bgColor=#ffffff><TD align=middle><IMG height=396 alt="" src="http://www.metodolog.ru/triz-journal/library/graphics/2009-05-iz_05.gif" width=600 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></P><P>By using the dynamic principle one can create a dynamic two-level tree. Any time a user selects any row (node, fact) its relations with other rows (nodes, facts) appears. A user is allowed to enter and change the cause-effect relations.</P><P>The described interface is a simple implementation that the author created independently as a TRIZ-based experimental program.<A href="#Ref7"><SUP>7</SUP></A> To create the program the simplest tools were used.</P><H2>Conclusion</H2><P>The Theory of Inventive Problem Solving methods can be implemented to resolve <A href="http://www.triz-journal&#46;&#99;&#111;&#109;/archives/2001/04/c/index.htm">software</A> problems. In the author's opinion, software interface problems are most convenient to TRIZ implementation. The described examples show how using methods such as the ideality concept, contradictions and inventive principles help to resolve real software problems. The knowledge allows for the creation of a simple experimental TRIZ-based program.</P><H2>References</H2><OL><LI><A name=Ref1></A>D.M. Mann, <A href="http://www.triz-journal&#46;&#99;&#111;&#109;/archives/2004/10/04.pdf">TRIZ for Software?</A>, 2004. <LI><A name=Ref2></A><A href="http://www.invention-machine&#46;&#99;&#111;&#109;/">Invention Machine Corporation</A>, GoldFire. <LI><A name=Ref3></A>Ideation International Inc. Innovation WorkBench. <LI><A name=Ref4></A><A href="http://encyclopedia.thefreedictionary&#46;&#99;&#111;&#109;/widget+(computing">Widget Computing</A>. <LI><A name=Ref5></A>S. Ikovenko, "Laws of Engineering System Evolution in Software Development," Keynote paper at TRIZ Centrum, 3rd European TRIZ Conference, ETH Zurich, March 2003. <LI><A name=Ref6></A>K. Rea, "<A href="http://www.triz-journal&#46;&#99;&#111;&#109;/archives/2002/10/c/index.htm">Applying TRIZ to Software Problems</A>," <EM>The TRIZ Journal</EM>, October 2002. <LI><A name=Ref7></A><A href="http://www.adviser.prophp.us/">The Adviser</A>.&nbsp;</LI></OL><H3><A name=authors></a>About the Author:</H3> <p>Igor Zadesenets has been using TRIZ since 1989. From 1992 to 1995 he collaborated with Ideation International Company developing software where Zadesenets developed a TRIZ-based experimental program called Adviser. Contact Igor Zadesenets at <a href="javascript:sendmail('igorzy','gmail.com');">igorzy (at) gmail.com</a>.</p></P><center><table border="0"><tr><td>
+
+</td></tr></table></center>
+
+</b><center>Copyright &copy; 2006-2011
+			&#8211; RealInnovation.com, CTQ Media. All Rights Reserved<br>
+			Reproduction Without Permission Is Strictly Prohibited &#8211; <a href="http://www.triz-journal.com/uagree/licensing.asp">
+			Request Permission</a></center>
+<p><hr size=1 color='#000000' width='50%' align=left><font color='#000000'><b>
+			Publish an Article</font>: Do you have a innovation
+			tip, learning or case study?</b><br><span class='HL2'>Share it</a>
+			with the largest community of Innovation
+			professionals, and be recognized by your peers.</span><br>It's a
+			great way to promote your expertise and/or build your resume. <a href="/submit/">
+			Read more about submitting an article</a>.</p>
+
+</BODYTEXT>
+
+
+
+</body>
+</html>

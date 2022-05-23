@@ -1,0 +1,436 @@
+<h1>TRIZ and Software - 40 Principle Analogies, Part 2</h1>
+
+  <blockquote>
+    <p><b>Kevin C. Rea, Principle Consultant<br>
+    REA Consulting<br>
+    E-mail: <a href="mailto:kcronline@gmail.com">kcronline@gmail.com</a><br>
+	Web site: <a href="http://kevincrea.com/">http://kevincrea.com/</a></b></p>
+  </blockquote>
+<p>In this paper, I present the remaining 21 - 40 inventive principle analogies
+of TRIZ <i>in the context of software</i> and computing from my perspective;
+please see the September 2001 edition for the first twenty software analogies,
+located at:<br>
+<a href="http://www.triz-journal.com/archives/2001/09/e/index.htm">http://www.triz-journal.com/archives/2001/09/e/index.htm</a></p>
+<p>The software analogies presented here are by no means finite; these analogies
+attempt to stimulate the thinking process related to applying TRIZ to solve
+software problems. I am just connecting the dots.</p>
+
+<font FACE="Arial" size="2"><b>
+<p>Background:</p>
+</b></font>
+<p>Genrich Altshuller developed the 40 Principles more than 20 years ago. He and
+his team of associates reviewed thousands of worldwide patents selected
+specifically from leading industries for the inventive nature of their solutions
+to technical contradictions. In particular, Altshuller was interested in
+investigating contradictions that were resolved <i>without</i> compromise.</p>
+<p>Altshuller found that utilizing principles previously used to solve similar
+problems in other inventive solutions could solve technical problems. For
+example: a “wearing problem” in the manufacturing of an abrasive product, and a
+“wearing problem” with the cutting edge of a back-hoe bucket, were both solved
+utilizing the principle of <b>“Segmentation.” </b>After discovering this
+correlation, Altshuller was able to identify 40 such principles from his
+analysis of successful inventions.</p>
+
+<b><font FACE="Arial" size="2">
+<p>Altshuller’s Inventive Principles<sup><a name="1"></a>1,2</sup>:</p>
+<dir>
+  <dir>
+    </font>
+    <p>21. Rushing through</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Conduct a process or certain stages (e.g., destructible, harmful,
+        or hazardous operations) at high speed.</p>
+        <b>
+      </dir>
+      <p>Software Analogy:</b> <i>Conduct the transfer of data in a burst mode
+      just before a worst-case scenario.</p>
+      </i><b>
+      <p>Software Example</b>: Using a burst-level priority scheme for bursty
+      traffic in Asynchronous Transfer Mode (ATM) networks. Statistical gain is
+      achieved in ATM networks by making bursty connections share resources
+      stochastically. When connections with different Quality of Services (QOS)
+      requirements share the same resources, the highest requirements would
+      typically be the limiting factor in determining the admissible load at a
+      link. This may lead to connections with low QOS requirements getting
+      better service then they require, leading to an underutilization of the
+      resources. To alleviate this problem we need “rush-through” using a
+      burst-level priority scheme. This scheme handles related cells in a
+      network on a burst-by-burst basis. Bandwidth is allocated to bursts
+      on-the-fly according to their priorities.</p>
+      <b>
+    </dir>
+    <p>22. Convert harm into benefit</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Eliminate the primary harmful action by adding it to another
+        harmful action to resolve the problem.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Inverse the role of the harmful process and
+      redirect it back.</p>
+      <b>
+      <p>Software Example</b>: Defeating Distributed Denial of Service (DDoS)
+      attacks. A DDoS attack saturates a network. It simply overwhelms the
+      target server with an immense volume of traffic that prevents normal users
+      from accessing the server. In contrast to other types of DoS attacks that
+      operate on an individual basis, these distributed attacks rely on
+      recruiting a fleet of “zombie” computers that unwittingly join forces to
+      flood the victim server. The critical harm is because of the attack’s
+      distributed nature. Attackers can exploit the Internet’s insecure and
+      readily accessible channels to aggregate an enormous traffic volume that
+      doesn’t infiltrate but effectively jams the secure channels. So in
+      applying TRIZ we can convert harm (overloading of computers) into a
+      benefit (decreasing the zombie’s effectiveness) by creating bottleneck
+      processes on the zombie computers, limiting the attack ability; this could
+      be done by requiring the attacking computer to correctly solve a small
+      puzzle before establishing a connection. Solving the puzzle consumes some
+      computational power, limiting the attacker in the number of connection
+      requests it can make at the same time.</p>
+      <b>
+    </dir>
+    <p>23. Feedback</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Introduce feedback (referring back, cross-checking) to improve a
+        process or action.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Introduce a feedback variable in a closed loop to
+      improve subsequent iterations based on qualifiers.</p>
+      <b>
+      <p>Software Example</b>: Rate-based feedback in an Asynchronous Transfer
+      Mode (ATM) system. Closed-loop input rate regulation schemes have come to
+      play an important role in the transport of the Available Bit Rate (ABR)
+      traffic service category for ATM. By modeling the feedback system as a
+      finite Quasi-Birth-Death (QBD) process, the performance of a delayed
+      feedback system with one congested node and multiple connections can be
+      achieved.</p>
+      <b>
+    </dir>
+    <p>24. Mediator</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Use an intermediary carrier article or intermediary process.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Use a mediator to provide a view(s) of data to a
+      process in the context of the processes application space.</p>
+      <b>
+      <p>Software Example</b>: Using mediators in conjunction with the
+      eXtensible Markup Language (XML) to enhance semi-structured data.
+      Mediation can be an important part of XML. In conjunction with a Document
+      Type Definition (DTD), a mediator can assist another process; lets say a
+      user interface in query formulation and query processing more efficiently.
+      The following is a picture of this example.</p>
+      <b>
+    </dir>
+  </dir>
+</dir>
+      <p align="left"><img border="0" src="../d/01.gif" width="468" height="282"></p>
+        </b>
+<dir>
+  <dir>
+      <b>
+    <p>25. Self-service</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Make an object serve itself by performing auxiliary helpful
+        functions.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Same as above.</p>
+      <b>
+      <p>Software Example</b>: Symantec Update; this application periodically
+      checks for updates its applications; if there are new artifacts that need
+      to be updated, a dependency graph is implemented and executed thus
+      servicing the application.</p>
+      <b>
+    </dir>
+    <p>26. Copying</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Instead of an unavailable, expensive, fragile object, use simpler
+        and inexpensive copies.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Instead of creating a new object that takes
+      unnecessary resources perform a shallow copy.</p>
+      <b>
+      <p>Software Example</b>: A <i>shallow copy</i> constructs a new compound
+      object and then (to the extent possible) inserts <i>references</i> into it
+      to the objects found in the original.</p>
+      <b>
+    </dir>
+    <p>27. Dispose (Inexpensive short-lived objects)</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Replace an expensive object with multiple inexpensive objects,
+        comprising certain qualities (such as service life, for instance).</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Same as above.</p>
+      <b>
+      <p>Software Example</b>: Rather than developing a full application out of
+      a prototype causing <i>expensive</i> cost overruns, use Throwaway (or
+      rapid) prototypes. <b>Throwaway (or rapid) prototypes:</p>
+      <dir>
+        <dir>
+          </b><font FACE="Wingdings">
+          <p>§ </font>are built as quickly as possible, without proper
+          engineering,</p>
+          <font FACE="Wingdings">
+          <p>§ </font><i>implement only requirements that are poorly understood,</p>
+          </i><font FACE="Wingdings">
+          <p>§ </font>are used to learn which alleged requirements are real and
+          which are not,</p>
+          <font FACE="Wingdings">
+          <p>§ </font>are THROWN AWAY after the desired information is learned.</p>
+          <b>
+        </dir>
+      </dir>
+    </dir>
+    <p>28. Replacement of Mechanical System</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Replace a mechanical means with a sensory (optical, acoustic,
+        taste, or olfactory) means.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Same as above.</p>
+      <b>
+      <p>Software Example</b>: This is a straightforward example, voice
+      recognition alleviates the mechanical action of typing and mistyping and
+      then backspacing like I am now.</p>
+      <b>
+    </dir>
+    <p>29. Pneumatic or hydraulic construction</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Use gas and liquid parts of an object instead of solid parts
+        (e.g., inflatable, filled with liquids, air cushion, hydrostatic, hydro
+        reactive).</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> None at this time.</p>
+      <b>
+      <p>Software Example</b>: NA</p>
+    </dir>
+    <b>
+    <p>30. Flexible films or thin membranes</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Isolate the object from the external environment using flexible
+        shells and thin films.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Isolate the object from the external environment
+      using wrapper objects.</p>
+      <b>
+      <p>Software Example</b>: A wrapper or adapter object isolates and object
+      from its external environment by maintaining a fixed interface between the
+      inner-object and the outer object (the wrapper object).</p>
+      <b>
+    </dir>
+  </dir>
+</dir>
+    <p align="left"><img border="0" src="../d/02.gif" width="480" height="151"></p>
+        </b>
+<dir>
+  <dir>
+      <b>
+    <p>31. Porous materials</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Make an object porous or add porous elements (inserts, coatings,
+        etc.).</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> None at this time.</p>
+      <b>
+      <p>Software Example</b>: NA.</p>
+      <b>
+    </dir>
+    <p>32. Changing the color</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Change the transparency of an object or its external environment.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Same as above.</p>
+      <b>
+      <p>Software Example</b>: A transparency function in a photo or drawing
+      program.</p>
+      <b>
+    </dir>
+    <p>33. Homogeneity</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Make objects interacting with a given object of the same material
+        (or material with identical properties).</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Create pure objects of a certain type ensuring
+      identical properties.</p>
+      <b>
+      <p>Software Example</b>: The container data object such as an array. Each
+      array element MUST be of the same type allowing for consistent write and
+      read operations.</p>
+      <b>
+    </dir>
+    <p>34. Rejecting and regenerating parts</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Discard portions of an object that have fulfilled their functions
+        or modify these directly during operation.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Discard unused memory of an application.</p>
+      <b>
+      <p>Software Example</b>: The garbage collector process in the Java
+      programming language, periodically “cleans” up memory by discarding
+      objects that have lived past their scope..</p>
+      <b>
+      <dir>
+        </b>
+        <p>b. Conversely, restore consumable parts of an object directly in
+        operation.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Same as above.</p>
+      <b>
+      <p>Software Example</b>: Backtracking in databases allows for an
+      application to restore (or backtrack) to earlier transaction states.</p>
+      <b>
+    </dir>
+    <p>35. Transformation properties</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Change the degree or flexibility.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Same as above.</p>
+      <b>
+      <p>Software Example</b>: A software application can be transformed to
+      provide a different service based on properties changing dynamically. This
+      flexibility allows for more multi-role objects in an application.</p>
+      <b>
+    </dir>
+    <p>36. Phase transition</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Use phenomena that occur during phase transition (e.g., volume
+        changes, loss or absorption of heat, etc.). </p>
+      </dir>
+      <b>
+      <p>Software Analogy</b>: None at this time.</p>
+      <b>
+      <p>Software Example</b>: NA.</p>
+      <b>
+    </dir>
+    <p>37. Thermal expansion</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Use thermal expansion (or contraction) of materials. </p>
+      </dir>
+      <b>
+      <p>Software Analogy</b>: None at this time.</p>
+      <b>
+      <p>Software Example</b>: NA.</p>
+      <b>
+    </dir>
+    <p>38. Accelerated oxidation</p>
+    <dir>
+      <dir>
+        </b>
+        <p ALIGN="JUSTIFY">a. Replace common air with oxygen-enriched air.</p>
+      </dir>
+      <b>
+      <p ALIGN="JUSTIFY">Software Analogy:</b> None at this time</p>
+      <b>
+      <p>Software Example</b>: NA.</p>
+      <b>
+    </dir>
+    <p>39. Inert Environment</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Replace a normal environment with an inert one.</p>
+      </dir>
+      <b>
+      <p>Software Analogy: </b>None at this time.</p>
+      <b>
+      <p>Software Example</b>: NA.</p>
+      <b>
+    </dir>
+    <p>40. Composite materials</p>
+    <dir>
+      <dir>
+        </b>
+        <p>a. Change from uniform to composite (multiple) materials.</p>
+      </dir>
+      <b>
+      <p>Software Analogy:</b> Change from uniform software abstractions to
+      composite ones.</p>
+      <b>
+      <p>Software Example</b>: Software design patterns are the core
+      abstractions behind successful recurring problem solutions in software
+      design. Composite design patterns are the core abstractions behind
+      successful recurring frameworks. A composite design pattern is best
+      described as a set of patterns the integration of which shows a synergy
+      that makes the composition more than just the sum of its parts. This paper
+      presents examples of composite patterns, discusses an analysis and
+      composition technique, and demonstrates that composite patterns extend the
+      pattern idea from single problem solutions to object-oriented frameworks.</p>
+      <b>
+
+    </dir>
+  </dir>
+</dir>
+<font FACE="Arial" size="2">
+<p>Conclusion</p>
+</font></b>
+<p>The analogies presented are just some of many bridges that can be used while
+observing software problems with TRIZ in mind. While some of the physical
+principles may appear to be very distant to the application of software, one
+needs to remember that software can be viewed with a great deal of abstraction.
+Likewise, we may find hidden analogies as we apply TRIZ more frequently to
+software problems.</p>
+<b>
+<p>About the author: </b>Kevin C. Rea is the principal consultant with Global
+Platforms Corporation, a company providing structured innovation training and
+specialized IT/computing and military solutions using TRIZ. He is also an 8-year
+veteran of Lucent Technologies - Bell Labs where he is a computer scientist for
+third generation wireless product development (UMTS). He holds a B.S. in
+Electronic Engineering, a M.S. in Computer Science and is in pursuit of a PhD in
+Computer Science - applying TRIZ to advanced computing problems.</p>
+<p>Part One of Two: <i>TRIZ and Software - 40 Principle Analogies.</p>
+</i>
+
+<p><a name="endnotes"></a></p>
+<p><b>Endnotes:</b></p>
+</p><ol>
+  <li>The Innovation Algorithm. Dr. Genrich Altshuller, Technical Innovation
+  Center, Inc. July 2000</li>
+  <li>Engineering of Creativity: Introduction to TRIZ Methodology of Inventive
+  Problem Solving. Semyon D. Savransky, <a href="mailto:TRIZ_SDS@hotmail.com">TRIZ_SDS@hotmail.com</a>. CRC Press LLC
+  2000, ISBN: 0-8493-2255-3.</li>
+</ol>
+

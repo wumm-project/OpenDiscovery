@@ -1,0 +1,552 @@
+<h1>Design and analysis of a method for monitoring felled seat seam characteristics utilizing TRIZ Methods</h1>
+<table cellspacing="0" border="0" cellpadding="7" width="624">
+  <tr>
+    <td width="50%">
+      <p>Timothy G. Clapp, PhD, PE Professor NC State University Raleigh, NC
+      27695 <a href="mailto:tclapp@tx.ncsu.edu">tclapp@tx.ncsu.edu</a> </td>
+    <td width="50%">
+      <p>Brad A. Dickinson Design Engineer 3-TEX Incorporated Cary, NC 27511 <u><font color="#0000ff">Dickinsonb@stex.com</font></u></td>
+  </tr>
+</table>
+<b>
+<p align="JUSTIFY">Abstract</p>
+</b>
+<p align="JUSTIFY"><font face="Times New Roman">Felled seams are used
+extensively in the construction of apparel and industrial textile products.
+Defects can be formed in the seaming operation that cannot be detected visually.
+These “internal” defects cause the product to fail when used. This paper
+describes the design of an on-line monitoring system to detect internal defects
+created during the felled seaming operation.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">Theory of Inventive Problem
+Solving (TRIZ) methods were used to efficiently design a commercially acceptable
+monitoring system for the seat seaming operation in jeans production.</font></p>
+<font face="Times New Roman" size="2">
+<p align="JUSTIFY">&nbsp;</p>
+</font><b>
+<p align="JUSTIFY">Introduction</p>
+</b>
+<p align="JUSTIFY"><font face="Times New Roman">Modern companies compete in a
+global marketplace. Advances in information technology have made marketing
+products and communicating with customers a simple task. In fact, the customer
+now has a great impact on decisions regarding improvements to existing products
+and the design of new products. Often, engineering design goals focus on meeting
+the needs and requirements of intended customers. Companies that wish to excel
+in the global market must be prepared to generate quickly products that meet the
+customer’s current needs and desires. They must also produce highly innovative
+products to discourage competition. Thus, engineers are now faced with the need
+to solve engineering design problems rapidly, cost effectively, and with a high
+level of innovation. The goal of this paper is to demonstrate the utility of
+TRIZ methods for rapidly creating innovative solutions at the concept generation
+and prototyping phases of the engineering design process. These methods are
+applied to a critical problem in the apparel manufacturing industry.
+Specifically, a sensor system will be designed to monitor the quality of a
+joining operation in the assembly of denim jeans.</font></p>
+<font face="Times New Roman" size="2">
+<p align="JUSTIFY">&nbsp;</p>
+</font><b>
+<p align="JUSTIFY">FELLED SEAM CONSTRUCTION</p>
+</b>
+<table border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="3" align="right">
+  <tr>
+    <td><i>
+      <p align="CENTER"><font face="Times New Roman"><img border="1" src="99dec_21.gif" width="346" height="260"><br>
+      Figure 1: Cross-sectional View of Correct<br>
+      and Incorrect Felled Seatseam Constructions</font></i></td>
+  </tr>
+</table>
+<p align="JUSTIFY"><font face="Times New Roman">In denim jean construction, the
+felled seam comprises more seam length than any other seam type. The U.S.
+government developed <i>Federal Standard 751a (FS751a),</i> which classifies
+seams and stitches used in apparel garments. Lapped seam type C-2 (denoted <b>LSc-2)</b>
+is generally the seam type used in jeans construction. This is the strongest of
+the lapped seams since two rows of stitching are used to secure it. In this seam
+“lapped bottom and top plies fold toward each other and interlock, displaying
+no raw edges on either the outside or inside of the garment”[1]. Two rows of
+type 401 chain stitch bind the seam. Figure 1a is a cross-sectional end view
+schematic of an <b>LSc </b>seam.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">Seam quality problems occur when
+one or both of the two lapped fabric ends that are used to form the seam fail to
+be formed or “stuffed” completely, such as in Figure 1b. Although a raw
+fabric edge may not be visible, an “understuffed” seam exhibits less
+strength than a properly formed seam. When the completed garments undergo the
+post-finishing (washing) process, improperly stuffed seams tend to “blowout”
+resulting in a total rejection of the garment. During the post-finishing process
+it is likely to “blowout” as illustrated in Figure 1c.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">In jeans, the “seatseam” has
+a high instance of failure. This seam runs from the crotch to the top of the
+back of the jeans. This seam was selected as the first application for the new
+monitoring system.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">Clapp [2] developed a method for
+identifying defective seams by measuring the compressed thickness in the center
+of the seam. Figure 1a shows a correct seam with four layers of fabric in the
+center of the seam. Figure 1b shows a defective seam that has only three layers
+of fabric in the center of the seam.</font></p>
+<font face="Times New Roman" size="2"><b>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+  <tr>
+    <td width="100%" valign="top">
+      <table border="0" bgcolor="#FFFFFF" align="right" cellspacing="0" cellpadding="3">
+        <tr>
+          <td width="100%" valign="top"><i>
+            <p align="CENTER"><font face="Times New Roman">Table 1: Engineering
+            Design Specifications<br>
+            &nbsp;for the Seatseam Monitoring System<br>
+            with Completed Design Benchmark<br>
+            Rating (5-highest, 1-lowest)</font></p>
+            </i><center>
+            <div align="center">
+              <table border="1" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF">
+                <tr>
+                  <td align="center" bgcolor="#C0C0C0"><b>
+                    <p><font face="Times New Roman">Engineering Design Factor</font></b></td>
+                  <td align="center" bgcolor="#C0C0C0"><b>
+                    <p><font face="Times New Roman">Rating</font></b></td>
+                </tr>
+                <tr>
+                  <td><b>
+                    <p><font face="Times New Roman">PHYSICAL CONSTRAINTS</font></b></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">1.-Sensing Point/Location</font></td>
+                  <td>
+                    <p><font face="Times New Roman">5</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">2.-Control Unit Location</font></td>
+                  <td>
+                    <p><font face="Times New Roman">5</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">3.-User interface</font></td>
+                  <td>
+                    <p><font face="Times New Roman">3</font></td>
+                </tr>
+                <tr>
+                  <td><b>
+                    <p><font face="Times New Roman">OPERATION</font></b></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">4.-Environmental Conditions</font></td>
+                  <td>
+                    <p><font face="Times New Roman">4</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">5.-Durability</font></td>
+                  <td>
+                    <p><font face="Times New Roman">4</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">6.-Fabric Style</font></td>
+                  <td>
+                    <p><font face="Times New Roman">4</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">7.-Seam Length</font></td>
+                  <td>
+                    <p><font face="Times New Roman">5</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">8.-Sewing Machine Speed</font></td>
+                  <td>
+                    <p><font face="Times New Roman">5</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">9.-Sewing Machine
+                    Maintenance</font></td>
+                  <td>
+                    <p><font face="Times New Roman">3</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">10.-Electrical Power</font></td>
+                  <td>
+                    <p><font face="Times New Roman">4</font></td>
+                </tr>
+                <tr>
+                  <td><b>
+                    <p><font face="Times New Roman">QUALITY</font></b></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">11.-Resolution</font></td>
+                  <td>
+                    <p><font face="Times New Roman">4</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">12.-Edge Detection</font></td>
+                  <td>
+                    <p><font face="Times New Roman">5</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">13.-Fault Location</font></td>
+                  <td>
+                    <p><font face="Times New Roman">5</font></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">14.-Operator Feedback</font></td>
+                  <td>
+                    <p><font face="Times New Roman">5</font></td>
+                </tr>
+                <tr>
+                  <td><b>
+                    <p><font face="Times New Roman">FINANCIAL</font></b></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><font face="Times New Roman">15.-Product/Development
+                    Costs</font></td>
+                  <td>
+                    <p><font face="Times New Roman">4</font></td>
+                </tr>
+              </table>
+            </div>
+            </center></td>
+        </tr>
+      </table>
+      <b>
+      <p align="JUSTIFY">ENGINEERING DESIGN</p>
+      </b>
+      <p align="JUSTIFY"><font face="Times New Roman">The process of engineering
+      design begins with understanding the problem and converting customer
+      requirements into design specifications. Table 1 summarizes the
+      engineering specifications that govern the design of the felled seatseam
+      monitoring system.</font></p>
+      <p align="JUSTIFY"><font face="Times New Roman">Theory of Inventive
+      Problem Solving (TRIZ) methods were used to accelerate and optimize the
+      design of the monitoring system.</font></td>
+  </tr>
+</table>
+</b></font><font face="Times New Roman" size="2"></font><b>
+<p>&nbsp;</p>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+  <tr>
+    <td width="100%"><b>INITIAL DESIGN</b>
+      <table border="1" bgcolor="#FFFFFF" align="right" cellspacing="0" cellpadding="3">
+        <tr>
+          <td width="100%"><b><i>
+            <p align="center"><font face="Times New Roman"><img border="0" src="99dec_22.jpg" width="315" height="260"><br>
+            Figure 2: Sewing Machine to be modeled</font></i></b></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p align="JUSTIFY"><font face="Times New Roman">Three-dimensional solid
+      modeling is used to minimize development time and cost [3]. The first step
+      in the modeling process is to model the existing components. These
+      components establish the geometrical constraints of the sewing machine.
+      Several components of the Pfaff model 5489-H sewing machine, shown in
+      Figure 2, were modeled in the SolidWorks®. As new components are designed
+      and added to the existing model, the solid modeling software allows the
+      designer to check for mating part alignment, dynamic operation, and
+      interference problems. The designer reduces time and cost by not having to
+      physically make the parts and test them.</font></p>
+      <p>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%"><b>
+      <table border="1" bgcolor="#FFFFFF" align="right" cellspacing="0" cellpadding="3">
+        <tr>
+          <td width="100%"><b><i>
+            <p align="center"><font face="Times New Roman"><img border="1" src="4-3.jpg" width="312" height="390"><br>
+            Figure 3: Three-dimensional Solid Model<br>
+            of the Initial Mechanical Prototype.</font></i></b></td>
+        </tr>
+      </table>
+      </b>
+      <p align="JUSTIFY"><font face="Times New Roman">The initial mechanical
+      design is shown in Figure 3. This design used a “ski(1)” to contact
+      the center of the seam. Structural components, bearings, and screws were
+      designed to transform rotational displacement of the ski caused by the
+      seam thickness into an amplified displacement. A linear variable
+      displacement transducer (LVDT) converted the displacement into an
+      electrical voltage for analysis. The LVDT is housed in bracket(11) shown
+      in Figure 2.</font></p>
+      <i></i>
+      <p align="JUSTIFY"><font face="Times New Roman">Figure 3 shows the initial
+      prototype that was constructed and proven to accurately measure compressed
+      seam thickness. Unfortunately the initial design did not meet the design
+      goals for cost, reliability, and jeans size variation.</font></td>
+  </tr>
+</table>
+</b><font face="Times New Roman" size="2">
+<p align="JUSTIFY">&nbsp;</p>
+</font>
+<p align="JUSTIFY"><b>TRIZ METHODS</p>
+</b>
+<p align="JUSTIFY"><font face="Times New Roman">The Theory of Inventive Problem
+Solving (TRIZ) is a collection of concepts and methods formulated by Genrich
+Altshuller [4,5,6] to systematically improve the engineering designer’s
+ability to solve difficult problems. The theory may be best described as “a
+unique way of thinking that enhances creativity by getting individuals to think
+far beyond their own experience, to reach across disciplines, to resolve
+problems using extracted knowledge from other areas of business, science, or
+technology.”[5]</font></p>
+<table border="1" bgcolor="#FFFFFF" cellspacing="0" align="right">
+  <tr>
+    <td><i>
+      <p align="center"><font face="Times New Roman"><img border="1" src="4-4.jpg" width="194" height="366"><br>
+      Figure 4: Modified Mechanical Design<br>
+      &nbsp;after Ideality Concept was applied to the Design</font></i></td>
+  </tr>
+</table>
+<p align="JUSTIFY"><font face="Times New Roman">TRIZ concepts, “Ideality”
+and the “utilization of resources” were used to analyze and improve the
+design of the initial monitoring system. “Ideality” is defined as the sum of
+the useful functions divided by the sum of the harmful functions plus the sum of
+the costs. “Ideality” approaches infinity as the design approaches the Ideal
+Final Result (IFR). The ideal system meets all of the desired useful functions
+with no harmful effects and at no cost. The primary function of the monitoring
+system is to measure compressed seam thickness. The &quot;Ideal&quot; system
+measures seam thickness and identifies all defects in the seam using no parts
+and at no cost.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">The initial prototype was
+comprised of 14 parts. The function of each part was documented. The
+&quot;Ideality&quot; method was used to systemically eliminate each part from
+the system by eliminating or combining functions. This design exercise resulted
+in the elimination of 6 parts from the original system. The &quot;Ideality&quot;
+of the system was increased. The modified design reduced cost and improved
+reliability of the system. Figure 4 shows the modified design.</font></p>
+<font face="Times New Roman" size="2"></font><font face="Times New Roman" size="2"></font>
+<p align="JUSTIFY"><font face="Times New Roman">The design of the sensor system
+is improved by identifying resources that can be used to increase
+&quot;Ideality.&quot; Resources are categorized as substance, space, field,
+time, functional, and informational resources[6]. Table 2 shows a partial list
+of resources available to the designer.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">The sensor system was optimized
+using the informational resource produced by the LVDT displacement signal shown
+in Figure 4. The voltage trace of the LVDT contained much more information than
+just the presence of a defect in the seam. Careful analysis of the trace clearly
+showed when the leading edge of the fabric was approaching the sensor. This
+triggered the encoder to start counting and record the distance traveled. A
+second, large dip in the signal identified the presence of a riser seam and
+prevented the system from classifying this as a defect. At the end of the
+fabric, a sudden rise indicated the presence of the end of the fabric. The
+information contained in the voltage trace was used to eliminate external
+sensors and make the sensing system independent of seam length and speed.</font></p>
+<i>
+<p align="JUSTIFY"><font face="Times New Roman">Table 2: Resources Available to
+Increase Ideality</font></p>
+</i><font face="Times New Roman" size="2"></font>
+<div align="left">
+  <table border="1" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+    <tr>
+      <td><b>
+        <p><font face="Times New Roman" size="2">Substance Resources</font></b></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Sewing machine components</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Lower lever arm</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Sensing ski</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Lower mounting plate</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-LVDT mount</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-LVDT sensor</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-The fabric seam</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Fabric</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Lint/Dust</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Thread</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Thread Waste</font></td>
+    </tr>
+    <tr>
+      <td><b>
+        <p><font face="Times New Roman" size="2">Space Resources</font></b></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Sewing Machine Mounting
+        Locations</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Empty Space Adjacent and Above
+        Puller Wheel</font></td>
+    </tr>
+    <tr>
+      <td><b>
+        <p><font face="Times New Roman" size="2">Field Resources</font></b></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-220 VAC Electrical Supply</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Compressed Air</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Gravity</font></td>
+    </tr>
+    <tr>
+      <td><b>
+        <p><font face="Times New Roman" size="2">Time Resources</font></b></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Repetitive Sewing Machine
+        Motion</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Time to Produce One Stitch</font></td>
+    </tr>
+    <tr>
+      <td><b>
+        <p><font face="Times New Roman" size="2">Informational Resources</font></b></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Fabric Sensor Signal</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Encoder Signal</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Linear Potentiometer Signal</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-User Interface</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Red Indicator Lamp</font></td>
+    </tr>
+    <tr>
+      <td><b>
+        <p><font face="Times New Roman" size="2">Functional Resources</font></b></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Rotational Motion of the Lever
+        Arm</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Vertical Motion of the Linear
+        Potentiometer Shaft</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Rotational Motion of the
+        Puller Wheel</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Rotational Motion of the
+        Sewing Machine Motor</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Cyclic Motion of the Sewing
+        Machine Feed Dogs</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Vertical Motion of the Sewing
+        Machine Presser Foot</font></td>
+    </tr>
+    <tr>
+      <td>
+        <p><font face="Times New Roman" size="2">-Vertical Motion of the Sewing
+        Machine Needles</font></td>
+    </tr>
+  </table>
+</div>
+<i>
+<p align="center"><font face="Times New Roman"><img border="1" src="4-5.jpg" width="352" height="566"><br>
+Figure 5: Information Contained Voltage Trace</font></p>
+</i><font face="Times New Roman" size="2"></font><font face="Times New Roman"></font><font face="Times New Roman" size="2"></font><font face="Times New Roman" size="2">
+<p align="JUSTIFY">&nbsp;</p>
+</font><b>
+<p align="JUSTIFY">CONCLUSIONS</p>
+</b>
+<p align="JUSTIFY"><font face="Times New Roman">The use of TRIZ concepts,
+&quot;Ideality&quot; and &quot;utilization of resources,&quot; resulted in an
+improved sensor system. The concepts directed the designer's thinking to
+systematically eliminate components of the design through the use of resources
+available to the designer. Design objectives were achieved using 40% fewer
+components.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">A production prototype was
+constructed and tested. A rating system of 1-5 (5 - meets goal) was used to
+evaluate the system against the original design goals. Table 1 shows the very
+favorable ratings of the performance of the production prototype. A commercial
+version of this system is now being used in manufacturing to eliminate the
+internal defects that cannot be seen visually.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">This research proves that TRIZ
+methods are valuable tools for rapidly designing robust systems.</font></p>
+<font face="Times New Roman" size="2">
+<p align="JUSTIFY">&nbsp;</p>
+</font><b>
+<p align="JUSTIFY">References</p>
+<blockquote>
+</b>
+<p align="JUSTIFY"><font face="Times New Roman">Hudson, Peyton B., <u>Guide to
+Apparel Manufacturing,</u> Spark Press, Raleigh North Carolina.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">Clapp, Timothy G. et al., United
+States Patent Number 5,671,689, issued September 30,1997.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">LaCourse, Donald E., <u>Handbook
+of Solid Modeling,</u><b> </b>McGraw-Hill 1995.</font></p>
+<p align="JUSTIFY"><font face="Times New Roman">Altshuller, G. (H. Altov), <u>And
+Suddenly the Inventor Appeared<b> </b><i>TRIZ, the Theory of Inventive Problem
+Solving</i></u>,<i> </i>Technical Innovation Center, Inc., Worcester,
+Massachusetts 1996.</font></p>
+<u>
+<p align="JUSTIFY"><font face="Times New Roman" color="#0000ff">http://www.jps.net/triz/triz0000.htm</font></p>
+</u>
+<p align="JUSTIFY"><font face="Times New Roman">Terninko, John, Alla, Zusman,
+Zlotin, Boris, <u>Step-by-Step TRIZ: Creating Innovative Solution Concepts</u>,
+Responsible Management Inc., Nottingham, New Hampshire 1996.</font></p>
+<font face="Times New Roman" size="2">
+<p align="JUSTIFY">&nbsp;</p>
+<p>&nbsp;</p>
+</blockquote>
+</font>
+<p>&nbsp;</p>

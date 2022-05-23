@@ -1,0 +1,546 @@
+<h1>A proposal to integrate TRIZ and CAD (Computer Aided TRIZ-based Design)</h1>
+
+<p>First presented at TRIZCON2001, The Altshuller Institute, March 2001.</p>
+</font>
+
+<p align="left">Dr. Noel León-Rovira<br>
+Instituto Tecnológico y de Estudios Superiores de Monterrey,<br>
+Ave. Eugenio Garza Sada # 2501, Col. Tecnológico,<br>
+CP 6409, Monterrey, NL, Mexico. (email: <a href="mailto:nleon@campus.mty.itesm.mx">nleon@campus.mty.itesm.mx</a>)</p>
+<b>
+<p>Abstract:</b></p>
+<p>This paper continues a series about the research work that is being
+undertaken at the Center of Design and Product Innovation at the Monterrey
+Institute of Technology (Mexico), looking for the integration of different
+design tools and methodologies to increase design effectiveness and
+productivity.</p>
+<p>This time some theoretic reflections about the integration of TRIZ and CAD
+are presented with the objective to contribute to make this integration possible
+in a near future.</p>
+<p>Computer Aided Design tools have evolved over the time and have become very
+useful for modeling the geometry but CAD software does not provides designers
+help in finding solutions to the increased amount of problems that arise when
+implementing embodiment and detailed design. It is analyzed how TRIZ tools as
+Inventive Principles, Substance Field diagrams, SUH diagrams and Trimming
+Modules may be integrated in a CAD environment to help designers to find
+solutions to conflicts arising during the embodiment and detailed design as they
+use CAD systems.</p>
+<b>
+<p>1. Introduction</p>
+</b>
+<p>This paper continues a series about the research work that is being
+undertaken at the Center of Design and Product Innovation at the Monterrey
+Institute of Technology (Mexico), looking for the integration of different
+design tools and methodologies to increase design effectiveness and
+productivity.</p>
+<p>An integrated model of the Conceptual Design Process was presented at TRIZCON’99,
+which is based on integrating QFD, Functional Analysis and TRIZ [1]. Now some
+theoretic reflections about the integration of TRIZ and CAD are presented with
+the objective to contribute to make this integration possible in a near future.</p>
+<p>It is intended to contribute to a reduction in product development time and
+to an improvement in quality and performance by creating the groundwork for
+integrating interactions between product development tools and methods, thereby
+allowing the exploration of alternatives.</p>
+<p>Especially the integration between 3D Modeling CAD packages and TRIZ based
+Computer Aided Inventing Software could enhance the creativity needed for
+developing and improving products.</p>
+<b>
+<p>2. Background and state of the art</p>
+</b>
+<p>The product development process may be defined as the complex system of
+activities that produces the information required for bringing products to
+manufacture.</p>
+<p>Therefore the design process is an information generating process, which
+starts with an abstract and often uncertain and confuse description of a new
+needed product performance. Based on this description a design team first
+creates the concepts and then the embodiment and detailed design required for
+manufacturing the product intended to satisfy the new need.</p>
+<p>Very often during the design process information remains uncertain until
+design decisions are taken which allow going further and gathering new
+information derived from analysis or experiment done on the newly created
+models. This causes the design process to be iterative and recursive: that means
+going forward with uncertain information until the uncertainty may be overcome
+with information obtained through analysis of the recently created models. The
+designer may then continue or go back to the point where the uncertainty arise
+and redefine the decision about shapes, dimensions, physical principles,
+parameters, tolerances, etc. This traditional trial and error approach is
+expensive and time consuming.</p>
+<p>Efficiently and effectively supporting the design process with computational
+tools and methods is limited due to the lack of integration of the methods and
+tools used.</p>
+<p>Different software packages are commonly used to work on the required design
+tasks along the whole design process, as for example text processors; search
+engines; equations solvers and spread sheets; QFD software; drawing, drafting
+and painting tools; 3D-CAD packages; PDM and database managing tools; CAE
+software. Computer Aided Inventing tools based on TRIZ, are computer tools that
+have been used more often in the last years.</p>
+<p>Although each of them is very useful, its lack of integration increases cycle
+time, while the knowledge burden on the designer keeps augmenting as more
+materials and more options become available.</p>
+<p>After the Conceptual Design Process follows the Embodiment Design Process and
+a much bigger amount of decisions have to be taken at this stage. For example,
+Eppinger [2] has indicated that a copier redesign requires 400 people, 125
+subassemblies, 2,000 engineering drawings, and over a million decisions. He has
+conducted a project named Information-Based Product Development and, from his
+point of view, product development information exchange today is more like a
+batch than a continuous process, as individuals or teams generate blocks of
+information which, only when complete, are passed along to those who need them.
+He says this leads to substantial delays.</p>
+<p>Another statement supporting this view states that: “Complex products can
+contain millions of dimensions and characteristics (voltages, forces, etc.) each
+of which impact the performance of the product. However, only a small few of the
+millions of features, the Key Characteristics of the product, will significantly
+affect the final quality, performance, and cost of the product.” [3]</p>
+<p>The annual Software Tools Symposium organized and facilitated by Finch [4]
+provided a forum for the sharing of both existing software tools and concepts
+for potential tools that arise from research. People from MIT, industry, and
+software developing companies came together to discuss how to adapt innovative
+ideas and tools from academic research into marketable products that American
+industry can use.</p>
+<p>Chang [5] developed a new input method for conceptual design of mechanical
+assemblies that enables users to easily explore design concepts and design
+function by function not component by component. Unlike input methods in current
+CAD systems, his method enables users to input partial geometry and group it
+according to its functionality.</p>
+<p>Flowers et. al. [6] conducted the project “Visualizing relationships in
+large information databases”, that was aimed to represent primarily textual
+information in a spatial context to take advantage of human visual processing
+skills. The databases used as case studies in this work include the patent
+database, the science citation index, and product development databases such as
+those used in tolerance buildup or identification of key characteristics.</p>
+<p>Whitney et. al. [7], conducted the project “Information flow mapping to aid
+design of complex products”, looking for a better scale up of knowledge-based
+engineering (KBE) workstations, for products like cars and planes, which are
+complex and require coordination of many people and exchange of a lot of
+information. They are intended to be able to improve the effectiveness of
+product development projects by understanding the influence of information flow
+patterns, inherent in the product itself, on the way work is done.</p>
+<p>Seering et. al. [8] are working on the concurrent application of tools, in
+order that these tools might be applied to the same product development program.
+Their objective is to develop an integrated demonstration of multiple tools
+applied to a single design problem that enables to identify differences and
+conflicts in the underlying assumptions of individual approaches.</p>
+<p>The authors expect through this project to create a better understanding of
+the synergies and conflicts among tools and methodologies when applied to a
+single product development program.</p>
+<p>Schön [9] expresses that during the design process a person needs be able to
+easily create a visual representation, even for abstract and verbal ideas, and
+then respond to it perceptually to discover new arrangements and shapes
+representing new ideas. The new concepts emerge from the visual representation.</p>
+<p>The research question is how interactive systems can aid users in quickly
+creating and manipulating visual representations and whether they can support
+the discovery of new relationships, structures, and meanings in the materials.</p>
+<p>Mitchell [10] points out that &quot;... design is not description of what is,
+it is exploration of what might be. Drawings are valuable precisely because they
+are rich in suggestions of what might be.” He argues that designers frequently
+recognize emergent subshapes and subsequently structure their understanding of
+the design and their reasoning about it in terms of emergent entities and
+relationships -ones that they never explicitly input.</p>
+<p>The whole purpose of the act of drawing might be seen to be in order to look
+at the result. In Gombrich's [11] discussion of Leonardo's creative process he
+suggested that: &quot;in searching for a new solution Leonardo projected new
+meanings into the forms he saw in his old discarded sketches.&quot;</p>
+<p>It is helpful to view the action process of drawing as quite independent of
+the perception process of looking. Reflection upon a design problem may lead to
+a drawing activity based upon a given structure that, through perception,
+generates emergent shapes that offer alternative structures to reflect upon.</p>
+<p>The question may be: Is it possible to perform this activity without “looking”?
+Is it possible to perform automatically a drawing activity based upon a given
+structure, that generates new shapes which lead to alternative structures, which
+in turn lead to new structures and so on? The key question may be, how to “know”
+when the new structure matches the desired constrains?</p>
+<p>The entity of a drawing might be thought of as a visual image together with
+an associated verbal description that imposes structure upon it. From this
+perspective, an emergent shape occurs when a revised description, or structure
+is discovered. The drawing looks the same but the verbal or structural
+description of it is new. In this case the new “structural description” is
+based on the recognition of “new” properties that had not been recognized
+yet.</p>
+<p>Tann [12] tackles emergence, in the context of the use of line drawings in
+design, by formulating higher-level line descriptors, in terms of construction
+lines. The workshop addressed the issue of emergent shapes: the perception of
+shapes in a drawing that do not directly correspond to entities used to
+construct that drawing.</p>
+<p>Stiny [13] describes four functions that can produce emergent shapes rather
+in the manner of a generative grammar. The basic strategy is, then, to take a
+drawing as described in its construction process, and to transform that
+description into an intermediate representation that enables the generation of
+emergent shapes. It was reported by Scrivener et al [14], that drawings
+considered in their bitmap, or pixel array, representation rather than the
+standard structural one were amenable to poststructuring. In other words,
+techniques were illustrated that could be used to impose structures on such a
+drawing that differed from the structures used to construct it. From this work,
+a considerable body of work has been undertaken in the development of a
+computational model of certain perceptual activities [15]. More recently
+attention has been given to how one might interact with drawings in which
+emergent shapes are perceived. The question here is how might the user
+economically indicate an emergent shape to the computer in order to manipulate
+it.</p>
+<p>AID'96 was looking for papers on representations of visual information and
+reasoning processes on such representations that have played a very significant
+role in design problem solving and designers' reasoning. Compared to other types
+of problem solving activities, design is unique in the extent of use of visual
+representations. However, CAD tools merely make the creation of visual
+representations easy, but do not provide leverage on issues such as design
+reasoning.</p>
+<p>It may be concluded that, from the CAD point of view, the research work has
+to uncover the semantics of models for design representations and how can such
+semantics may be represented in the computer and used in ways to intelligently
+assist the designer.</p>
+<p>Following questions has to be addressed:</p>
+</p><ul>
+  <li>How can cognitive models of visual representation and reasoning in design
+    help in generating new visual/spatial/geometric information?</li>
+  <li>What kinds of new designer-computer interactions might support aiding the
+    designer in generation/emergence of new shapes and interpreting such
+    representations?</li>
+</ul>
+<b>
+<p>3. TRIZ and Product design</p>
+</b>
+<p>TRIZ has proved to be a very strong tool in helping to solve difficult
+technical problems that requires inventive thinking; that means problems where
+one or more technical contradictions are involved and which do not have known
+ways or means of solution.</p>
+<p>TRIZ is not originally a tool that belongs to the classical product design
+methodologies and its place in the product design process has yet to be better
+identified in order to increase its efficiency. Some work has been already
+undertaken in this direction by Savransky [16] and Arciszewski and Zlotin [17].</p>
+<p>Although not yet a comprehensive approach for the integration has been
+established and further work is being undertaken, several opportunities of
+synergy and need of improvement have been recognized between TRIZ and the
+embodiment design process.</p>
+<p>It is known that useful ideas may be derived from the use of the
+contradiction matrix, during the conceptual design stage but less experience has
+been achieved in using the Contradiction Matrix during the embodiment design
+process. One possible way may be implementing some inventive principles more
+related to product design as segmentation, local quality, asymmetry, joining,
+nesting, counterweight, previous action, mediator combined with parameters of
+geometric nature as length of moving object, length of stationary object, area
+of moving object, area of stationary object, volume of moving object, volume of
+stationary object, weight of moving object, weight of stationary object to be
+used during the embodiment design process.</p>
+<p>Furthermore the Matrix may be enhanced with solution principles that are
+often used to solve design problems but are not yet included in the matrix, as
+for example increasing the inertial moment of structural sections to solve the
+technical contradiction between strength and weight.</p>
+<p>Other authors [18, 19] have recognized the need to enhance the Contradiction
+Matrix with new parameters and inventive principles that improve the success
+rate in using this tool. In our Center, further work is being developed in this
+direction.</p>
+<p>It is known that SUH diagrams are widely used during the conceptual design
+stage, because they allow an extensive analysis of the possible solutions in
+order to increase Ideality.</p>
+<p>Several modules in TechOptimizer (TO) are aimed to improve the product design
+as the Product Analysis Module that is mainly based on the functional
+decomposition and analysis of the products to be improved, to clarify what may
+be improved. The Trimming and Feature Transfer Modules help to complete the
+Product Analysis module by eliminating components or features of a product but
+maintaining its useful functions unaffected or improved or eliminating harmful
+side effects. The feature transfer module helps in transferring functions from
+one component or feature to another that requires improvement.</p>
+<p>The product improvement process in TechOptimizer is supported with an
+extensive physical effects database, that helps in finding alternative physical
+ways of performing needed functions. However TO does not have an interface to
+CAD systems and therefore its recommendations has to be translated from
+designers in the CAD packages.</p>
+<b><font SIZE="2">
+<p>&nbsp;</p>
+</font>
+<p>4. Ways and methods</p>
+</b>
+<p>Our approach involves identifying the relationships and role of textual and
+graphic information, during the product development process in an integrated
+context. The goal is to take advantage of both types of information
+representations. It is known that human visual processing skills are used to
+uncover relationships that arise when shapes and dimensions are combined into
+new design solutions. On the other side the rapidly developing computer
+searching and combining capabilities based on textual information may be used in
+semantic processors for creating new design concepts.</p>
+<p>The new information generated during the design problem solving process may
+occur through <b>finding</b>, <b>creation</b> or a <b>combination of both</b>.
+Generation of new design information based on finding takes place during the
+adaptation of solutions gathered together based on search systems.</p>
+<p>Generation of new design information based on creation takes place for
+example during the refinement of embodiment and detailing design, as new shapes
+and concepts representing new ideas emerge as response to perceptions and
+discovering, based on the human visual processing and abstraction skills. This
+is the case when computer aided modeling tools as (CAD) and Simulation software
+(CAE) are used to represent shapes and/or to analyze behaviors. Based on the
+graphical representation of the results, human designers are able to create,
+identify or infer new solutions.</p>
+<p>Another case of design information generated through creation takes place
+during automated design or optimization processes. In these cases the new
+information created, is mostly a new combination of parameters based on
+invariant design concepts.</p>
+<p>Generation of new design information based on the combination of finding and
+creation is the most complex type. This takes place for example when new
+qualitative solutions suggested through TRIZ tools are combined with the
+information generated based on emerging shapes and concepts during the
+embodiment and detailed design process.</p>
+<p>The aim of our new approach is finding a way of integrating TRIZ based tools
+with 3D-CAD packages to provide designers help during the design process. This
+means providing this help just at the time designers are interacting with the
+user interface of 3D-CAD systems trying to find a design solution for a
+performance requirement without having to change their design environment.</p>
+<b>
+<p>4.1. Solution requirements</p>
+</b>
+<p>As design models are mainly of graphic nature and TRIZ tools concepts are
+mainly formulated in textual form, the integrated tools and methods should
+enable designers to interact with the graphic design interface of the CAD
+package being processed and when needed, finding TRIZ-based recommendations as
+directions of solutions.</p>
+<p>Ideally the use of TRIZ based tools should be directly applied to the product
+model that is being developed. This means that ways should be found and/or
+developed to convert graphical and text information easily into each other and
+to identify relations between both types of information representation.</p>
+<b>
+<p>4.2 The object oriented 3D-CAD tree-structured graph.</p>
+</b>
+<p>In Figs. 1 and 2 is shown how objects modeled in 3D-CAD packages are related
+to the object oriented tree-structured graph (TSG) of its components. These TSGs
+contain the information about geometric shape, dimensions and topology of the
+objects, from which the parts and assemblies are modeled, therefore each
+component of a 3D parametric model may be accessed through textual information
+for edition or deletion.</p>
+<p>For example for individual parts or components following items may be
+accessed through textual information of its TSG: the shape of its parametric
+profiles, its parameters, the relative position of the construction planes and
+the boolean and unit operations (join, cut, intersect, fillet, chamfer, etc)
+used to model each the part.</p>
+<p>In case of assemblies or subassemblies the relative position and the way
+components or subassemblies are joined together is also accessible through the
+TSGs.</p>
+<b>
+<p>4.3. The Object-Action-Object-Result-Diagrams</p>
+</b>
+<p>Diagrams are commonly used problem solving tools, as they allow focusing the
+attention on the key information required when analyzing and solving problems.
+Specialized diagrams, as SF- and SUH diagrams and bond graphs are examples of
+how diagrams help in conceptualizing and visualizing the required information.</p>
+<p>As objects in 3D-CAD models<b> </b>are represented in TSGs it is possible to
+add to its TSGs information about the way each component interact with each
+other (<b>actions) </b>and about the <b>results </b>obtained through this
+actions. Adding actions and results information to the TSGs a new type of
+Diagarams, the Object-action-object-result diagrams (O<sup>2</sup>-A-R-Diagrams),
+are obtained.</p>
+<p>In Fig.3 an example of an O2-A-R-Diagram is shown, where the constituting
+objects O1-O6 may be seen with their geometric or topological relationships (GTi-j)
+and the functional actions among them as Ai-j arrows. The Results objects are
+linked with Ri arrows outgoing from the objects. A detailed description of the
+O2-A-R -Diagrams is contained in [20].</p>
+<p align="left"><a href="Image52.gif" target="_blank">
+<img SRC="Image52_small.gif" border="2" width="100" height="72"></a><a href="Image52.gif"><br>
+</a>Fig. 1 3D-CAD Model of a gear reducer assembly composed of single<br>
+parts and its object oriented tree-structured graph. (TSG)</p>
+<p align="left"><a href="Image53.gif" target="_blank">
+<img SRC="Image53_small.gif" border="2" width="100" height="72"></a><a href="Image53.gif"><br>
+</a>Fig. 2 3D-CAD Model of a gear reducer housing parts and its object oriented
+tree-structured graph. (TSG)</p>
+<p align="left"><img SRC="Image54.gif" width="414" height="278"><br>
+Fig. 3 Example of an O2-A-R-Diagram</p>
+<p>O2-A-R-Diagrams are the main way in which product model information may be
+related to TRIZ based analysis tools for helping in finding solutions to design
+problems.</p>
+<p>In O2-A-R-Diagrams an <b>object</b> is any physical component in a technical
+system, independently of its level of complexity in the system. That means that
+any technical system may be decomposed in objects, which may also again be
+decomposed in more simple objects, until a level is reached where the
+decomposition is no further possible or necessary. The decomposition of a
+technical system in objects is a logical process. This means that not only
+physically separable components may be decomposed, but also components which are
+physically inseparable, may also be logically decomposed in its building
+features.</p>
+<p>Based on this a car model may be decomposed in several first level subsystems
+of the car (tier one), which constitute objects (assemblies) in a CAD-System.
+These are i.e. the steel body, the engine, the axles, and the transmission,
+among others. Each of these complex assemblies may be handled as a simple object
+which my again be decomposed into subassemblies. For example the engine may be
+divided in the starter system, the fuel injection, the cylinder head with
+valves, the crankshaft-connecting rod-piston subsystem and others. Each of these
+subassemblies may be further decomposed in parts and each part as i.e. the
+connecting rod may again be decomposed in its several constituting features from
+which it is modeled. The features are constituted of profiles, planes,
+dimensions, tolerances, etc. which, are also handled as objects in CAD systems.</p>
+<p>O2-A-R-Diagrams are compatible with the TSGs of most important commercial
+3D-CAD packages and are the basis for a software based user interface being
+developed which starts from the 3D-CAD TSG and allows relevant functional
+information (actions) to be added between each interacting object par (O2) for
+providing results (R). This approach resembles the way CAE software works, where
+additional actions as forces, velocities, accelerations are added to the
+existing objects in order to obtain simulation results as stress maps, velocity
+diagrams, etc.</p>
+<p>The difference is that in this case no simulation is performed, as the aim of
+this approach is not to simulate but to look for new design solutions. The
+O2-A-R -Diagrams are appropriate for being processed with semantic processors to
+derive recommendations of solution concepts for each kind of insufficient or
+harmful actions or results contained in the diagram. As new design solutions are
+commonly searched through variation of shape, dimensions, topology, position,
+number of elements or its mechanical properties, directions of solutions should
+be presented graphically at the CAD display in order to help designers to
+overcome psychological inertia.</p>
+<b><sup><font FACE="Arial" SIZE="2">
+<p>&nbsp;</p>
+</font></sup>
+<p>4.4. Further work with O2-A-R -Diagrams</p>
+</b>
+<p>Automatically formulating design solutions with O2-A-R -Diagrams requires yet
+following tasks to be completed:</p>
+<blockquote>
+  <p>Establishing a set of rules to be applied to typical situations of
+  insufficient or harmful actions or results contained in O2-A-R -Diagrams as a
+  subset of the inventive principles and/or standard solutions.</p>
+  <p>Building the interface for modifying the TSG in CAD systems in order that
+  recommended directions of solution automatically appear as modifications to
+  the 3D-CAD model to allow designers visually identify emergent shapes that
+  reflect alternative structures to reflect upon.</p>
+  <p>As only few of the inventive principles and standard solutions are of
+  geometrical, dimensional or topological nature, further rules derived from the
+  best practices in embodiment design have to be implemented to enrich the rule
+  set.</p>
+  <b>
+  </blockquote>
+  <p>4.5. Some possible cases</p>
+</b>
+<p>In table II are shown several examples of the kind of recommendations that
+may be formulated by the semantic processing Design Advisor:</p>
+<blockquote>
+  <p>A first set of recommendations may be derived from those inventive
+  principles that contain more geometric nature as segmentation, local quality,
+  asymmetry, joining, nesting, counterweight, previous action, mediator,
+  equipontentiality</p>
+  <p>A second set of recommendations may be obtained from the morphological
+  matrix, in terms of changing position, shape, number and type of movement and
+  also derived from DFMA practices in terms of merging parts, eliminating bolts,
+  etc.</p>
+  <p>A third set or recommendations are of the kind of the recommendations
+  derived from SUH diagrams at IWB or from the Product Analysis, Feature
+  Transfer or Trimming modules in TO.</p>
+</blockquote>
+<table border="1" cellspacing="0" cellpadding="3">
+  <tr>
+    <td><b>Table II Basic recommendation examples</b></td>
+  </tr>
+  <tr>
+    <td><b>A. Examples of recommendations derived from inventive
+      principles
+      </b>
+      </p><ol>
+        <li>Provide a <b>mediator</b> between Oi and Oj, that enhances [the]
+      Action Ai,j and improves result Rj</li>
+        <li>Analyze if the <b>asymmetric shape</b> of Oi provides an enhancement of
+      action Ai,j and improves result Rj<br>
+          (Symmetric shape of objects is avoided and a non-symmetric alternative
+      is presented)</li>
+        <li>Changing the local quality of feature Oom in part Oi for enhancing
+        action Ai,j<br>
+          (Marking feature(s) Oom-n in part Oi for stimulating designer to invent
+      a local quality effect on it)</li>
+        <li>Joining part Oi and part Oj, to improve actions Ai,j and Aj,j+1 for
+        obtaining improved results Rj and Rj+1<br>
+          (parts Oi and Oj, are merged together automatically)</li>
+        <li>Nesting part Oi in Oj to enhance action Ai,j<br>
+          (Marking parts Oi and OJ for stimulating designer to invent a nesting
+      solution)</li>
+      </ol>
+      <b>
+      <p>B. Examples of recommendations derived from the morphological matrix.</p>
+      </b>
+      <ol start="6">
+        <li>Analyze if following <b>alternative shapes</b> of [the] (Object Oi),
+        enhances [the] (Action Aij),<br>
+          (Several new shapes derived from the original shape (parametric
+      profiles) Oi appear in the CAD display)</li>
+        <li>Analyze if following alternativ<b> positions</b> GTi-j of (Oi) with
+        respect to [the] (Oj) enhance [the] (Result Rj)<br>
+          (Several <b>new positions</b> of Oi with respect to Oj appear in CAD
+      display)</li>
+        <li>Increase the number of objects Oi performing the action Aij for
+        enhancing result Rj<br>
+          (<b>Instead of 1, several objects</b> Oi are arranged to Oj performing
+      the Action Aij)</li>
+        <li>Alternative arrangement of Object Oi to Oj perfoming action Aij for
+        enhancing result Rj<br>
+          (For example circular concentric insted of matrix array of Oi with
+      respect to Oj)</li>
+      </ol>
+      <p>C. Examples of recommendations derived from SUH diagrams or from the
+      Trimming Module</p>
+      <ol start="10">
+        <li>Find an alternative action (A*i-j) that does not cause [the]
+        undesired (Result Rj)<br>
+          (not of geometric nature)</li>
+        <li>Find a way to enhance [the] (Action Ai-j).</li>
+        <li>Find a <b>new action</b> (A*i-j) that may be performed by object Oi
+        on Oj to enhance [the] (Result Rj).<br>
+          (Not of geometric nature)</li>
+      </ol>
+    </td>
+  </tr>
+</table>
+<b>
+<p>6. Conclusions</p>
+</b>
+<p>Synergies may be found among TRIZ tools and 3D-CAD-Systems, which allow
+improving the structure of the embodiment design process where inventive
+thinking is needed.</p>
+<p>Significant conceptual advances in the way this integration may be performed
+have been achieved as results of our research work that permits implementing a
+prototype in the near future.</p>
+<b>
+<p>7. References</p>
+</b>
+<blockquote>
+<p>[1] León, N and Aguayo, H, A new Model of the Conceptual Design Process
+using QFD/FA/TRIZ, Paper Presented at the QFD-Symposium, Novi Michigan.</p>
+  <p>[2] S. Eppinger: Information-Based Product Development, <u><font COLOR="#0000ff">http://me.mit.edu/groups/cipd/research.html</font></u>,
+  <u><font COLOR="#0000ff">eppinger@mit.edu</font></p>
+  </u>
+  <p>[3] Key Characteristics Symposium organized and facilitated by Professor
+  Anna Thornton,<u><font COLOR="#0000ff">http://web.mit.edu/afs/athena.mit.edu/org/c/consortia/keychar/acthornt/www/papers.html</font></p>
+  </u>
+  <p>[4] Organized and facilitated by Dr. William Finch: <u><font COLOR="#0000ff">http://web.mit.edu/wfinch/www/research/index.html</font></p>
+  </u>
+  <p>[5] Minho Chang, <u><font COLOR="#0000ff">minho@mit.edu</font></u>, Thesis
+  Input methods for conceptual design of mechanical assemblies, Advisor: David
+  Gossard.</p>
+  <p>[6] Woodie Flowers et. al. <u><font COLOR="#0000ff">http://me.mit.edu/people/flowers.html</font></u>,
+  <u><font COLOR="#0000ff">http://me.mit.edu/groups/cipd/projects/pelaez.html</font></u>,
+  Visualizing relationships in large information databases Mechanical
+  Engineering, School of Engineering, MIT.</p>
+  <p>[7] Daniel Whitney et. al. Information flow mapping to aid design of
+  complex products, School of Management, <u><font COLOR="#0000ff">http://me.mit.edu/groups/cipd/projects/dong.html</font></p>
+  </u>
+  <p>Engineering, School of Engineering, MIT</p>
+  <p>[8] Warren P. Seering et. al. Concurrent application of thrust 2 tools</p>
+  <u>
+  <p><font COLOR="#0000ff">http://me.mit.edu/groups/cipd/projects/tlee.html</font></p>
+  </u>
+  <p>[9] Schön, D.A. The reflective practitioner. Maurice Temple Smith, London
+  (1983).</p>
+  <p>[10] Mitchell, W. J. A computational view of design creativity. Preprints:
+  Modelling Creativity and Knowledge-Based Creative Design. Dept of Arch. and
+  Design Science, Univ. of Sydney. (1989) pp. 263-285</p>
+  <p>[11] Gombrich, E. H. Norm and Form: Studies in the art of the renaissance.
+  Phaidon Press, Oxford (1966).</p>
+  <p>[12] Tann, M. Saying what it is by what it is like - describing shapes
+  using line relationships. McCullough, Mitchell &amp; Purcell (eds) The
+  Electronic Design Studio. MIT Press, Cambridge, MA, (1990) pp 201-214.</p>
+  <p>[13] Stiny, G. Pictorial and formal aspects of shape and shape grammars.
+  BirkhÖuser Verlag (1975).</p>
+  <p>[14] Scrivener, S. A. R., Edmonds, E. A. &amp; Thomas, L. A. Improving
+  image generation and structuring using raster graphics. Proc. CAD78. IPC
+  Science and Technology Press. (1978) pp 223-229.</p>
+  <p>[15] Soufi, B. and Edmonds, E.A. 'The cognitive basis of emergence:
+  implication for design support'. Design Studies (1996).</p>
+  <p>[16] S.D. Savransky, http://www.trizexperts.net</p>
+  <p>[17] Arciszewski T, and Zlotin B: IDEATION/TRIZ: Innovation Key to
+  competitive advantage and growth (http://www.ideationtriz.com/report.html)</p>
+<p>[18] Williams, T: Reversability of the 40 Principles of Problem Solving,
+http://triz-journal.com, May Issue, No. 1</p>
+  <p>[19] Savransky, S.D A few words about the Altshuller's contradiction matrix
+  , http://triz-journal.com, August 1997</p>
+  <p>[20] León, Noel, Diseño Asistido por Computadora y TRIZ: Diagramas
+  Objeto-Acción-Resultado, (Unpublished) Monterrey, Mexico, 1998.</p>
+</blockquote>

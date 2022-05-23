@@ -1,0 +1,647 @@
+<h1>Design Without Compromise, Design for Life</h1>
+
+<p class="MsoNormal"><span class="MsoBodyText"><b><font size="2" face="Arial" color="#008080"><span lang="EN-GB" style="font-size: 12.0pt; font-weight: normal">This
+article is an edited version of a paper of the same title presented at the US
+NFPA International Fluid Power Exposition, IFPE<sup>®</sup>2000 Technical
+Conference held in Chicago, April 4-6, 2000.</span></font></b></span></p>
+<p class="MsoNormal" align="center" style="text-align:center"><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:12.0pt;
+font-family:Arial;font-weight:bold">Darrell Mann<br>
+Industrial Fellow<br>
+Department of Mechanical Engineering<br>
+University of Bath<br>
+Bath, BA2 7AY, UK<br>
+</span></font></b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:11.0pt;
+font-family:Arial;">Phone: +44 (1225) 826465<br>
+Fax: +44 (1225) 826928<br>
+E-mail: <a href="mailto:D.L.Mann@bath.ac.uk">D.L.Mann@bath.ac.uk</a></span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="CG Times"><span style="font-size:12.0pt">&nbsp;</span></font></span></p>
+<h4><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt">Introduction</span></font></b></span></h4>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">Designers traditionally find themselves trying to
+perform a balancing act between conflicting design parameters; weight versus
+strength, speed versus life, efficiency versus complexity, or efficiency versus
+cost, to name but a few common trade-off scenarios. In each case, as the
+designer tries to improve one parameter, the other tends to get worse. Higher
+shaft speeds mean shorter bearing life, close tolerance gears in a gear pump
+mean greater pumping efficiency but higher manufacture cost, and so on.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">The net result of these trade-off decisions is a
+product which ultimately satisfies no one.</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Designers
+are generally able to design a system capable of achieving specified performance
+goals; lift a certain maximum load a certain distance at a certain speed.
+Designers are also generally able to understand that users never ultimately
+operate the system in the way they originally intended. They also understand
+that real systems made out of real materials will exhibit a degree of variation
+in the way they perform. Designers are generally able to specify and design to
+accommodate these variations. Some designers are also able to design a product
+to achieve a certain prescribed factory cost. This is a not inconsiderable
+achievement. Unfortunately, customer expectations are such that even this
+capability is no longer sufficient. Sophisticated customers are now demanding
+predictable life-cycle cost, a guaranteed life, a guaranteed maintenance-free
+period, or even, in some extreme cases, a guaranteed level of performance
+retention. In these circumstances, the designer is, generally speaking,
+struggling. In the design compromise trade-off scenario, because life issues are
+the least well understood, they tend to be the ones which receive least
+attention.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">Unlike traditional design strategies, the Russian inventive
+problem solving method, TRIZ, (Reference 1,2) encourages designers to eliminate
+design compromises and trade-offs rather than accommodate them. Through 1500
+person years of research and a comprehensive analysis of over 3 million of the
+world’s patents, TRIZ encapsulates the best compromise-eliminating practices
+of the world’s inventive minds.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">Based on experiential evidence at the University of
+Bath, the four main sources of non-reliability in hydraulic systems are, in
+descending order of frequency:-</span></font></span></p>
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;">1)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font>inadequate system specification</span></font></span></p>
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;">2)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font>contamination-related problems</span></font></span></p>
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;">3)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font>noise and vibration issues</span></font></span></p>
+<p class="MsoNormal" style="margin-left:.75in;text-indent:-.25in;"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;">4)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font>leakage-related issues</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">Each of these is examined in the context of how&nbsp;
+TRIZ’s compromise-eliminating approach can help to shift the paradigm towards
+inherently more reliable, longer life system designs.</span></font></span></p>
+<p class="MsoNormal">&nbsp;</p>
+<h4><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;">Design
+For Reliability</span></font></b></span></h4>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">The basis of successful reliable designs rests with
+the ability to adequately separate specified parameters from the design features
+and system properties which together dictate how the system will behave. One
+such example, is the need to ensure adequate margin between design loads and the
+strength of the materials used in the design - as illustrated in Figure 1.</span></font></span></p>
+<p><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:
+Arial;">Both ‘design loads’ and the corresponding ‘material strength’
+come attached to a degree of statistical variation. In very naive terms, if the
+designer is able to ensure there is no intersection between the two resulting
+statistical characteristics, the design will not fail.</span></font></span>
+<p class="MsoNormal" align="center" style="text-align:center"><img src="image002.gif" width="298" height="198"><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:Arial;font-weight:bold"><br>
+Figure 1. </span></font></b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;">Margin
+Between Design Load and Material Strength</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">In many instances, the separation of design load and
+material strength is determined more by use of empirical rules of thumb, or ‘fudge
+factors’. In all instances, there are pressures which cause designers to
+reduce the separation between the two curves. These pressures are at root
+related to the need to continuously improve customer ‘value’. Value here
+following the Miles definition – now adopted widely into the TRIZ methodology
+– of customer benefits divided by the sum of harmful factors and cost.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">The pressures impact on design margins in two ways.
+Firstly, in terms of increasing customer benefit, there come pressures to
+increase the load carrying capability of a system, and secondly, the designer is
+encouraged to reduce the cost of the system, usually by decreasing the amount of
+material used. The resulting effect is illustrated in Figure 2.</span></font></span></p>
+<p align="center"><img src="image004.gif" width="317" height="193"><span class="MsoBodyText"><br clear="ALL">
+<b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;font-weight:bold">Figure
+2. </span></font></b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;">Net
+Effect of Value Increase Drivers on Load/Strength Relationship</span></font></span>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">The net result of the two characteristics moving
+together is the emergence of the potential – in the area of curve intersection
+– for loads to exceed the capabilities of the system, and thus for the
+potential of a system failure.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">In many senses, intersection of the load and strength
+curves is made inevitable through the combination of competition, driven
+primarily in today’s hydraulics industries by performance and cost, and the
+failure (on the part of customers usually) to appreciate that performance can
+only improve and cost reduce by so much before something – usually reliability
+– has to concede. And because the reliability issues may only become apparent
+two or three years downstream of the point of purchase, they inevitably receive
+least attention.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">The issues surrounding the idea of conflicting
+customer drivers producing a limiting contradiction – increased performance
+plus reduced cost must ultimately equal reduced reliability – will be
+re-visited in a later section. In the meantime, it may be observed that the idea
+of designers trying to find an acceptable balance between conflicting parameters
+– as is the case in instances like the one described here – is the
+traditional way in which the design process is carried out. The designer may of
+course apply a number of techniques to improve the situation – cut off the low
+ends of the material strength characteristic through inspection, for example, or
+cut-off the high-end of the load characteristic by adding relief valves or other
+devices to the system. Either way, it is usually the case that designers accept
+these overall conflict trade-offs as inherent to the design process; accept that
+they are a ‘fundamental’ absolute.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">The TRIZ design approach says that they are
+not.&nbsp; TRIZ contains the findings of those inventors who have identified and
+eliminated the contradictions.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">The process by which TRIZ does this is best
+illustrated through an example. In keeping with the fact that leakage is an
+important source of unreliability, the example describes the case of a bolted
+flange joint between two pipe lengths.</span></font></span></p>
+<h1><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Flange
+Joint</span></font></b></span></h1>
+<span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">The
+bolted flange joint is a very common engineering structure. The traditional
+approach taken in the design of such flange joints is to balance between the
+many conflicting parameters present in the basic design concept. Although the
+designer may not always be directly conscious of the conflicts, it is possible
+to plot each one graphically in a manner similar to that shown in Figure 3. A
+typical design conflict, then, between two parameters A and B is such that as
+the designer tries to improve one, the other tends to get worse, and vice versa.
+The characteristic hyperbolic line relating the two parameters can be seen as a
+line of constant design capability.</span></font></span>
+<p class="MsoNormal" align="center" style="text-align:center"><img src="image006.gif" width="307" height="232"><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:Arial;font-weight:bold"><br>
+Figure 3. </span></font></b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;">Graphical
+Representation of Technical Contradiction</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">With
+respect to a conventional flange joint design, several such conflict graphs may
+be depicted. For example, there are well-established design rules defining the
+number of bolts required around the joint to provide an adequate seal. The
+conflict here exists between the number of bolts used and the leakage
+performance of the flange. The task of the designer is then traditionally to
+find a balance between the two conflicting parameters. This process is
+illustrated in Figure 4.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:
+10.0pt;font-family:Arial;">The three main steps in the process are:-</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">(1) – The designer is under real pressure to minimise the
+number of bolts in the system in order to, amongst other things, minimise cost,
+minimise assembly time, and maximise the convenience of use to the customer.</span></font></span></p>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">(2)
+The inevitable result of this design intent is to worsen the likely reliability
+of the seal.</span></font></span></p>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">(3)&nbsp;
+The designer will aim for a compromise in which ‘acceptable’ seal
+performance is achieved, and the number of bolts is minimised.</span></font></span></p>
+<p class="MsoNormal" align="center" style="text-align:center"><img src="image008.gif" width="317" height="249"><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;
+font-family:Arial;font-weight:bold"><br>
+Figure 4. </span></font></b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt;font-family:Arial;">Bolted
+Flange: Traditional Design Rationale</span></font></span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">The
+graph perhaps also begins to explain why so many flange joints leak. This is
+particularly apparent when aspects like the often poorly understood degradation
+of the flange performance over time are taken into account. I.e. what starts out
+as ‘acceptable’ sealing performance when the flange is new, turns into ‘unacceptable’
+performance after the ravages of time and customer usage.</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">TRIZ
+encourages designers to identify and then seek to eliminate the sorts of
+conflict illustrated in Figure 3. The method has captured a generic problem
+solving framework through which a designer is able to map his or her own
+particular design conflict onto similar ones in which inventors have
+successfully overcome the design conflict.</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">In
+the case of the flange joint design, Reference 3 describes how TRIZ was used to
+break out of the traditional design trade-odd scenario to produce the
+paradigm-shifting design solution illustrated in Figure 5.</span></font></span></p>
+<p class="MsoNormal" align="center" style="text-align:center"><img src="image010.gif" width="298" height="240"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold"><br>
+Figure 5: </span></font></b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;layout-grid-mode:line">US
+Patent: 5230540, ‘Fluid-Tight Joint With Inclined Flange Face</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">This design enables designers to achieve the same sealing
+performance as a conventional parallel-faced flange design with typically half
+the number of bolts.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">In terms of the original, Figure 3, conflict representation,
+by simply introducing a small angle onto one of the flange faces, the designer
+has drawn a new improved characteristic relationship between the parameters –
+Figure 6.</span></font></span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">The
+bolt number versus reliability contradiction still exists, of course, in the
+angled flange design. The point, however, is that TRIZ has changed the design
+paradigm by creating a new relationship between the two conflicting parameters
+(4). Successive application of the method – as illustrated in Figure 6 –
+moves the design towards a point where the contradiction is completely
+eliminated. The figure graphically illustrates the key difference between the
+TRIZ and traditional ‘design-is-a-trade-off’ design approaches.</span></font></span></p>
+<p class="MsoNormal" align="center" style="text-align:center"><img src="image012.gif" width="394" height="228"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold"><br>
+Figure 6</span></font></b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">:
+<span style="layout-grid-mode:line">Difference Between TRIZ and Traditional
+Design Approaches</span></span></font></span></p>
+<h1><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Transitioning
+The Paradigm Shift To Other Areas</span></font></b></span></h1>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">The
+angled flange joint design solution shown above is certainly not a new one, and
+was known about in certain industries long before the gas-turbine industry
+re-invented it for themselves in the Figure 5 design.</span></font></span></p>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">The
+point here is that ‘good’ design solutions have a very strong tendency to
+travel only very slowly between different industry sectors.</span></font></span></p>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">This
+is a phenomenon long recognised by the Russian researchers who constructed the
+TRIZ methodology. They have sought to overcome the problem through a combination
+of capture of inventive ideas in a&nbsp; generically applicable sense, and a
+recognition of the need to find a way of classifying these ‘good’ design
+solutions in a manner which makes them accessible to other designers in whatever
+industry sector.</span></font></span></p>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">It
+is often the case currently that these good solutions travel badly even within
+their existing industry sectors. An example of this – and also incidentally an
+example of the Figure 6 idea of successive design paradigm shifts – is the
+conceptual V-Band clamp based design solution derived at Bath and illustrated in
+Figure 7.</span></font></span></p>
+<p align="center"><img src="image014.gif" width="345" height="155"><br>
+<span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold">Figure
+7</span></font></b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">:
+<span style="layout-grid-mode:line">Possible Application of Inclined Flange Face
+Concept to Other Design Solutions</span></span></font></span></p>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">Here,
+the design achieves a better flange joint which uses only one bolt, or,
+expressed another way, seals significantly better than a conventional V-band
+clamp design. It is also perhaps worth noting that there is no existing patent
+which covers this solution.</span></font></span></p>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">The
+angled-face/reduced contact area concept has also thus far failed to travel to
+other areas within and around the fluid power industry, despite the fact that
+there is no logical reason why it shouldn’t. Thought about in this way, there
+is no reason why the concept couldn’t similarly be deployed to significant
+beneficial effect in a whole host of fluid power industry applications from
+quick-release couplings to valve-block seals to hydraulic motor casings to
+actuator endcap designs… and so on.</span></font></span></p>
+<h1><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Knowledge
+Transfer</span></font></b></span></h1>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">The
+problem of poor knowledge transfer between subject areas and industry sectors is
+illustrated in Figure 8.</span></font></span></p>
+<p align="center"><img src="image016.gif" width="279" height="187"><br>
+<span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold">Figure
+8</span></font></b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">:
+<font color="black"><span style="color:black;layout-grid-mode:
+line">Typical Fluid Power Industry Design Solution Search Space</span></font></span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">The figure suggests that a designer working in the fluid
+power industry is highly unlikely to look outside his or her industry to find
+problem solutions. The phenomenon is understandable from a number of
+perspectives, not least of which is the fact that a good designer will often
+have trained and practiced for a considerable number of years in a particular
+discipline.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">TRIZ calls this propensity to look for design solutions
+within the realms of our known experience&nbsp; ‘psychological inertia’
+(Reference 5).</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">The flange joint example shows how TRIZ helps to overcome
+psychological inertia through a generic contradiction-eliminating problem
+solving framework. A second method is the more direct approach of expressing
+existing solutions in a form accessible to others. An alphabetic listing (for
+example) of all of the world’s good design concepts and solutions would
+probably be of very limited value; adequate if the designer was looking for
+other ‘flange’ designs, but wholly inadequate if the search was required to
+be more broad.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">The principle, then, upon which TRIZ makes good designs
+accessible to others in whatever industry they might be, is to classify the
+solutions in terms of their <b><span style="font-weight:bold">function</span></b>.
+Thought about in this manner, the designer is no longer looking for a ‘flange’
+– a specific solution – but is looking for a ‘breakable joint’ – i.e.
+a generic function.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">Several such functionally classified knowledge databases now
+exist. Probably the best of these databases is the one to be found in the
+Invention Machine TechOptimizer</span></font><font size="2" face="Symbol"><span style="font-size:10.0pt;font-family:Symbol;">Ò</span></font><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">
+software (Reference 6). The database found in the latest version of the software
+contains over 6000 physical, chemical and mathematical effects, and engineering
+design solutions, and by the end of the year will probably contain over 7500.</span></font></span></p>
+<h5><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt">Reliability
+Knowledge Transfer</span></font></b></span></h5>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">In
+the same way that ‘function’ is the common thread by which good design ideas
+can be transferred more readily between different industry sectors, the TRIZ
+Contradiction Matrix (Reference 2, 7) is the mechanism by which the
+contradiction-eliminating good practice of the world’s finest inventors is
+made accessible by designers working in other fields.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">The Contradiction Matrix offers a generic problem solving
+tool in which the problem solver is required to map a specific problem into the
+generic 39x39 structure of the Matrix. The two sides of the Matrix comprise a
+list of 39 engineering parameters. ‘Reliability’ is one of the generic
+parameters contained in the list.</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">Analysis
+of the Matrix highlights an interesting trend in relation to how other inventors
+have sought to resolve reliability versus other parameter conflicts.&nbsp;
+Looking across all 38 of the other parameters in the Matrix with which
+Reliability can conflict – whether that be physical parameters, performance
+parameters, other ‘ility parameters, or manufacture related parameters –
+highlights the fact that only a relatively small proportion of the 40 Inventive
+Principles contained in TRIZ has been used by past inventors to ‘eliminate’
+reliability-centred contradictions.</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">Based
+on the Contradiction Matrix analysis, the top six most common Inventive
+Principles used by inventors trying to eliminate reliability contradictions
+comprise, in descending order of frequency of use:-</span></font></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;text-indent:-.25in;"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-weight:bold">35<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></span></font><span style="font-weight:bold">- Change of Physical
+and Chemical</span></b></span></p>
+<p class="MsoBodyText2" style="margin-left:.25in"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Parameters</span></font></b>&nbsp;&nbsp;</span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;
+(change of aggregate state, change of&nbsp; concentration or consistency, change
+of flexibility, or</span></font></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;
+change of temperature)</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10&nbsp; -&nbsp; Prior Action</span></font></b></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;&nbsp;
+(‘if your object is subjected to harmful factors of environment, create
+conditions that will protect the</span></font></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;&nbsp;
+object from those harmful factors beforehand’)</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11&nbsp; -&nbsp; Beforehand Cushioning</span></font></b></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;&nbsp;
+(‘if your object is unreliable, create conditions in advance that will protect
+the object’)</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3&nbsp; -&nbsp; Local Quality</span></font></b></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;
+(make the object non-uniform, make the environment non-uniform, if multiple
+functions are to be</span></font></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;
+performed, divide the object into parts according to those functions)</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+28&nbsp; -&nbsp; Mechanics Substitution</span></font></b></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;&nbsp;
+(replace mechanical solutions with other physical solutions – acoustic,
+optical, magnetic, thermal,</span></font></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;&nbsp;
+etc)</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp; -&nbsp; Composite Materials</span></font></b></span></p>
+<p class="MsoBodyText2" style="margin-left:.5in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">&nbsp;&nbsp;
+(use composite materials instead of uniform ones.)</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">The
+other 34 Principles lag a long way behind. This is not to say that they have no
+value, just that to date, inventors have had most success with the above six
+strategies. It is interesting to note how some of the six might usefully be
+applied to the problem of improving the reliability of seals used in hydraulic
+systems. A generic rotating seals example will be used.</span></font></span></p>
+<h1><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Rotating
+Seals</span></font></b></span></h1>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">Traditional solutions to the ‘rotating seal’ functional
+requirement within the fluid power industry predominantly comprise of labyrinth,
+o-ring, brush, or designs containing a combination of these types. Whilst
+undoubtedly rugged (and cheap), these design solutions also help to explain why
+so many hydraulic systems suffer from leakage problems.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">The most commonly applied Inventive Principle in the
+reliability context is to ‘change physical parameters’. This recommendation
+occurs from another TRIZ finding that a given material system hits fundamental
+limitations, such that, for example, a mechanical seal can only be improved so
+much before it hits a limit beyond which it cannot progress. In this case, it is
+the need to reduce clearances (and hence tighten manufacture tolerances) to a
+point which makes the system vulnerable to contaminants of an increasingly small
+size, and ultimately a size which cannot be filtered out (see later section on
+self-cleaning filter however) which fundamentally limits the capability of the
+seal. The ‘change physical parameters’ principle (indeed also the ‘mechanics
+substitution’ Principle also in the top six) suggests a move towards a
+non-mechanical solution.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">One such solution is illustrated in Figure 9.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">This design solution – originally conceived for use in the
+laboratory high vacuum sector –&nbsp; may well be appropriate in some form in
+fluid power based applications.</span></font></span></p>
+<p align="center"><img src="image018.gif" width="310" height="194"><br>
+<span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold">Figure
+9</span></font></b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">:
+<font color="black"><span style="color:black;layout-grid-mode:
+line">US Patent 5,799,951 Liquid Metal Rotating Seal</span></font></span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">Similarly, other rotating seal solutions from other
+industries include the design – taken from the aerospace sector this time –
+illustrated in Figure 10.&nbsp; The concept makes effective use of a ferro-magnetic
+fluid to provided a seal during low pressure differential, low rotational speed
+operation, which then turns into a powerful centrifugal seal as duty increases.</span></font></span></p>
+<p align="center"><img src="image020.gif" width="576" height="252"><br>
+<span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold">Figure
+10</span></font></b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">:
+<font color="black"><span style="color:black;layout-grid-mode:
+line">US Patent 4,455,026 Magnetic/Centrifugal Seal</span></font></span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">Of
+course, there will need to be certain modifications to both such designs to
+accommodate the specific boundary conditions of the adopting industry sector,
+but there is no doubt that conceptually the above magnetic seal offers a highly
+rugged, affordable (particularly with a non-switched magnet), low friction,
+zero-fluid-loss solution to a variety of fluid power system design problems.</span></font></span></p>
+<p class="MsoBodyTextIndent"><span class="MsoBodyText"><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">Coming
+back to the earlier point about knowledge transfer between industry sectors, it
+is instructive to observe how TRIZ encourages designers to look beyond the
+current industry design conventions. The Contradictions/Inventive Principles
+route provides ‘triggers’ to invention (how can ‘mechanics substitution be
+applied to this problem?’), or alternatively, the designer could have
+travelled the functionality route - establishing whether other industry sectors
+have found other, better ways of achieving the ‘rotating seal’ function –
+and arriving at the above two solutions that way.</span></font></span></p>
+<p class="MsoNormal" style="text-align:justify"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold">Relationship
+Between Reliability and System Evolution S-Curve</span></font></b></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">All
+designers recognise the difficulties of designing reliability into an existing
+hydraulic system. The right time to think about reliability is at the
+drawing-board stage. This is of course unhelpful if the system is already out in
+the field.</span></font></span></p>
+<span class="MsoBodyText">An unfortunate paradox exists here between the need to
+design for reliability from day one, and the lack of interest of most customers
+in reliability until a technology is relatively mature (Reference 8). Figure 11
+illustrates the point.</span>
+<p class="MsoNormal" align="center" style="text-align:center"><img src="image022.gif" width="273" height="231"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold"><br>
+Figure 11</span></font></b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">:
+Area in System Evolution where&nbsp; Reliability Issues Become Important</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">During the birth and growth phases of a system (or
+technology – we could relate the S-curve to mean hydraulics in general),
+designers and customers are both focused on, first making the system work at
+all, then working optimally, then maximising efficiency. Reliability
+considerations emerge only when the technology is relatively mature, and the
+scope of possibilities for further evolution is already limited. In other words
+because hydraulics is a relatively mature technology it is reaching its
+fundamental limits of advancement.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">In terms of the trends of evolution predicted by TRIZ,
+hydraulic solutions supercede mechanical solutions. The inherently improved
+flexibility and reliability of hydraulics over a mechanical solution has been a
+major reason for the success of hydraulics. Now customer expectations on
+reliability are beginning to exceed the fundamental capability of hydraulic
+systems, the industry must look to markedly changing paradigms (Reference 9).</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">A good example comes in another of the main sources of
+non-reliability in hydraulic systems; that of contamination:</span></font></span></p>
+<h5><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt">Self-Cleaning
+Filter</span></font></b></span></h5>
+<p class="MsoBodyText3"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">The
+previous seal discussion touched on another limiting contradiction relating to
+hydraulic systems, in which customer demands for increased system performance
+capability, operating efficiency and general ‘operability’ dictate the need
+for ever tighter manufacture tolerances and clearances between components.</span></font></span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">In
+many applications the contradiction has reached a point where a system is now
+potentially at risk from contaminants as small as 1</span></font><font face="Symbol"><span style="font-family:Symbol;">m</span></font>m
+in diameter.</span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">This
+in turn creates a very challenging contradiction with respect to the design of
+barrier filters: Fine mesh size will be good for trapping such small particles,
+but will block up potentially very quickly; coarse mesh size will have a long
+life but will not remove fine particles. In TRIZ terms, the barrier filter is
+more or less at its evolutionary limit, and no further progress in overall
+system reliability will come from barrier filters without solving the ‘mesh
+must be coarse AND fine’ contradiction.</span></font></span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">The
+concept of a ‘self-cleaning’ filter overcomes the limiting contradiction by
+effectively beginning a new S-Curve. Referring back to the list of Inventive
+Principles used to solve reliability-centred problems, it is also encouraging to
+note that the conceptual self-cleaning filter being researched at the University
+of Bath uses two of the six Principles cited. More details of the filter may be
+found in Reference 10.</span></font></span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-weight:bold">Limiting
+Contradictions</span></font></b></span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">The
+idea of limiting contradictions is very important in the context of designing
+for reliability in the hydraulics field. This is particularly so with respect to
+early identification of areas which will hit their fundamental limits of
+capability.</span></font></span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">Identification
+of limiting contradictions may be performed at various levels in a hydraulic
+system hierarchy – e.g. the filtration sub-system has a limiting contradiction
+in the same way that the whole system has.</span></font></span></p>
+<p class="MsoBodyText3" align="left" style="text-align:left"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt">At
+the whole-system level, it is possible to identify the limiting contradictions
+through an analysis of customer and manufacture design drivers. In the great
+majority of instances, these overall directions are ‘obvious’ – Figure 12.</span></font></span></p>
+<p align="center"><img src="image024.gif" width="277" height="411"><br>
+<span class="MsoBodyText"><b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;font-weight:bold">Figure
+12</span></font></b><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">:
+Mobile Hydraulics Application Design Directions</span></font></span></p>
+<p class="MsoBodyText2"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;">In
+a traditional design approach, the designer seeks to find the best compromise
+between the various conflicting parameters. In the context of ‘inadequate
+specification’ being the single biggest source of system unreliability, this
+trade-off process lays the foundations of the future reliability, and other
+system, limitations.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">Analysis of a generic mobile hydraulics application sees the
+emergence of three potentially limiting contradictions:-</span></font></span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">1)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font>Pump ripple. Demands for increased reliability ultimately impact
+on the need to tackle the noise and vibration implications inherent to fixed
+displacement pumping systems. This contradicts with drives to reduce cost and
+complexity of the system. Solving noise and vibration issues through the
+traditional approach of adding parts to the system fundamentally (Reference 10)
+fails to tackle the contradiction. The TRIZ compromise-free solution of a ‘ripple-less’
+pump is required if the contradiction is to be eliminated.</span></font></span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">2)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font>Valve Flow-Forces. Here the contradiction concerns the demand for
+increased operability versus, again, the need to reduce rather than increase
+system complexity. Traditional approaches say find an acceptable balance, the
+TRIZ approach says determine the actual function of a valve and eliminate the
+contradiction by designing a system which is both simple and inherently free of
+flow-forces.</span></font></span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;font-family:Arial;">3)<font size="1" face="Times New Roman"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font>Cooling Systems. In several mobile applications, the design of the
+cooling system has already become a limiting contradiction. The conflict here
+derives from the contradiction between simultaneous demands for increased system
+duty and decreased system size. The oil-cooler takes the brunt of this
+contradiction, because it has more work to do and less space in which to do it.</span></font></span></p>
+<p class="MsoNormal"><span class="MsoBodyText"><font size="2" face="Arial"><span style="font-size:10.0pt;
+font-family:Arial;">Fundamental improvements in the reliability of hydraulic
+systems will come only after these limiting or potentially limiting
+contradictions are overcome. They can only be overcome through the application
+of contradiction-eliminating techniques such as those found in TRIZ. All three
+are the subject of ongoing research at the University of Bath (Reference 10).
+Work on a novel contradiction-breaking heat exchanger concept transferable to
+hydraulic applications is described in Reference 11.</span></font></span></p>
+<p class="MsoNormal" style="text-align: justify">&nbsp;</p>
+<h1><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">CONCLUSIONS</span></font></b></span></h1>
+</p><ol>
+  <li>
+    <p class="MsoBodyText" style="margin-left:.25in;text-indent:-.25in;">Inherent
+    hydraulic system reliability levels are becoming progressively less
+    acceptable to customers due to increasing maintenance-free operation and
+    durability demands.</li>
+  <li>
+    <p class="MsoBodyText" style="margin-left:.25in;text-indent:-.25in;">Reliability
+    is best designing into a system at the drawing-board stage. In this case,
+    and also cases where a system is already in service and its reliability is
+    found to be unacceptable, significant design paradigm shifts are required if
+    overall reliability levels are to be noticeably improved.</li>
+  <li>
+    <p class="MsoBodyText" style="margin-left:.25in;text-indent:-.25in;">Current
+    design methods do not appear to offer adequate answers. The existing design
+    paradigms are approaching the limits of their capability. New paradigms are
+    required if significantly better solutions are to be achieved.</li>
+  <li>
+    <p class="MsoBodyText" style="margin-left:.25in;text-indent:-.25in;">Tools
+    contained in the TRIZ inventive problem solving methodology – particularly
+    those associated with the identification and ‘elimination’ of ‘limiting
+    contradictions’ – offer significant potential for shifting design
+    paradigms to allow the realisation of significantly more reliable hydraulic
+    systems.</li>
+  <li>
+    <p class="MsoBodyText" style="margin-left:.25in;text-indent:-.25in;">Like
+    many other industry sectors, the fluid power industry is guilty of failing
+    to take maximum advantage of the good design solutions obtained in other
+    sectors, despite the fact that the functions being sought – e.g. ‘seal’
+    – are commonly very similar.</li>
+  <li>
+    <p class="MsoBodyText" style="margin-left:.25in;text-indent:-.25in;">The
+    TRIZ methodology, coupled with emerging function based ‘knowledge
+    management’ capabilities, provides a basis upon which the good solutions
+    from other industries can be made readily accessible to fluid power industry
+    companies.</li>
+  <li>
+    <p class="MsoBodyText" style="margin-left:.25in;text-indent:-.25in;">Novel
+    static and rotating seal design concepts, building on paradigm-shifting TRIZ
+    and knowledge transfer principles, have been suggested.</li>
+  <li>
+    <p class="MsoBodyText" style="margin-left:.25in;text-indent:-.25in;">Limiting
+    contradictions for a generic mobile hydraulics application have been
+    identified, and contradiction-eliminating conceptual design solutions have
+    been suggested.</li>
+</ol>
+<p class="MsoNormal" style="text-align: justify">&nbsp;</p>
+<h1><span class="MsoBodyText"><b><font size="2" face="Arial"><span lang="EN-GB" style="font-size:10.0pt">REFERENCES</span></font></b></span></h1>
+</p><ol>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Altshuller,
+    G., 'Creativity As An Exact Science', (New York, Gordon And Breach, 1988.)</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Salamatov,
+    Y., ‘TRIZ: The Right Solution At The Right Time’, Insytec BV, The
+    Netherlands, 1999.</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Mann,
+    D.L., ‘Case Studies In TRIZ: Halving The Number Of Bolts Around A Flange
+    Joint’, TRIZ Journal, www.triz-journal.com, October 1998.</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Mann,
+    D.L., ‘Contradiction Chains’, TRIZ Journal, January 2000.</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">TRIZ
+    Journal Special Psychological Inertia issue,&nbsp; August 1998.</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">www.invention-machine.com</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Domb, E.
+    ‘Contradiction Matrix’, TRIZ Journal, June 1998.</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Mann,
+    D.L., ‘Using S-Curves and Trends of Evolution in R&amp;D Strategy Planning’,
+    TRIZ Journal, July 1999.</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Mann,
+    D.L., ‘TRIZ-Based Root Cause Failure Analysis For Hydraulic Systems’,
+    paper presented at ASTM Conference on Hydraulic System Failure, STP1339,
+    Reno, December 1999.</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Mann,
+    D.L., ‘Design Without Compromise: A New Perspective On Fluid Power System
+    Component Design’, paper presented at PTMC99 International Workshop, Bath,
+    September 1999.</li>
+  <li>
+    <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-.25in;">Busov,
+    B., Mann, D.L., Jirman, P., ‘Case Studies In TRIZ: A Novel Heat Exchanger’,
+    TRIZ Journal, December 1999.</li>
+</ol>
+

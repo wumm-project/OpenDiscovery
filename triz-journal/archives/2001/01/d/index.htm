@@ -1,0 +1,615 @@
+<h1>Relation of the invention process to TRIZ (Example: High efficiency DC-DC
+converter for liquid crystal watches)</h1>
+
+<p align="left">MITSUO MORIHISA, Systems Planning,<br>
+Design Systems Development Center,<br>
+Production Technology Dev. Group,<br>
+SHARP CORPORATION</p>
+<font face="?? ?????" lang="JA" size="2" color="#800000"></font><font size="2" color="#000000">
+<p align="left">Partially presented at Invention Machine Corporation 1999 User
+Group Conference<br>
+Oct. 17-19, 1999, Boston, MA, USA</p>
+</font><font face="?? ?????" lang="JA" size="2" color="#000000">
+<p align="JUSTIFY">&nbsp;</p>
+</font><b><font size="2" color="#000000">
+<p align="JUSTIFY">Abstract</p>
+</font></b><font size="2">
+<p align="JUSTIFY">The effectiveness of TechOptimizer is examined through a past
+invention (USP: 4,279,010) done by the author in 1975 without using
+TechOptimizer. This invention comprises a DC-DC converter for liquid crystal
+display watches. It was inevitable to achieve voltage conversion from 1.5V to
+15-20V with over 90% conversion efficiency, as the former DSM (Dynamic
+Scattering Mode) liquid crystal display required 15-20V and the life of the
+battery had to be longer than 1 year.</p>
+<p align="JUSTIFY">After laborious investigations to find voltage transformation
+principles and examples, the author found a paper written in 1919 by M. Schenkel,
+a German engineer. He succeeded to generate ultra high voltage of over 100KV by
+combining capacitors and rectifiers. The author applied his principle and could
+realize in the 1.5V world a voltage conversion efficiency of over 90% using
+capacitors and Field Effect Transistors.</p>
+<p align="JUSTIFY">The author will explain in this paper how TechOptimizer could
+have helped a solitary inventor</font><font size="2" color="#000000">, if it had
+been available at the time of invention.</p>
+</font><b><font size="2">
+<p align="JUSTIFY">&nbsp;</p>
+</font><font size="2" color="#000000">
+<p align="JUSTIFY">1. Introduction</p>
+<p align="JUSTIFY">2. Merits of Tracing using TRIZ</p>
+<p align="JUSTIFY">3. </font><font size="2">Structure</font><font size="2" color="#000000">
+of TechOptimizer J (Japanese version)</p>
+<p align="JUSTIFY">4. Example showing the relation of the invention process to
+TRIZ</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">4-1.
+Aim of this invention</p>
+<p align="JUSTIFY">4-2. </font><font size="2">Identification </font><font size="2" color="#000000">of
+the system problem</p>
+<p align="JUSTIFY">4-3. Oscillator-trimmed voltage multiplication circuit</p>
+</font><font size="2"></font><font size="2" color="#000000">
+<p align="JUSTIFY">(Expected merits of TechOptimizer modules, if they had been
+available at the time of invention.)</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">4-4.
+“Product Analysis” module</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">
+</font><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">4-4-1.
+Product Analysis</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">
+</font><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">4-4-2.
+Trimming results</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">4-5.
+“Principles” module (1)</p>
+</font><font size="2"></font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2">4-6.
+Detailed concrete design</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2"> </font><font lang="JA" size="2">&#12288;</font><font size="2">4-6-1.
+Engineering investigation</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2"> </font><font lang="JA" size="2">&#12288;</font><font size="2">4-6-2.
+Findings of the historic paper by Cockcroft-Walton</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2"> </font><font lang="JA" size="2">&#12288;</font><font size="2">4-6-3.
+Cockcroft-Walton voltage multiplier circuit</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2"> </font><font lang="JA" size="2">&#12288;</font><font size="2">4-6-4.
+Findings of the historic paper by Schenkel</p>
+<p align="JUSTIFY"></font><font lang="JA" size="2">&#12288;</font><font size="2">4-6-5.
+Schenkel’s voltage multiplier circuit (1)</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2"> </font><font lang="JA" size="2">&#12288;</font><font size="2">4-6-6.
+Characteristics and Problems of semiconductor switching elements</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2"> </font><font lang="JA" size="2">&#12288;</font><font size="2">4-6-7.
+Schenkel’s voltage multiplier circuit (2)</p>
+</font><font size="2" color="#000000">
+<p align="JUSTIFY">(Expected merits of TechOptimizer modules, if they had been
+available at the time of invention)</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">
+4-7. “Effects” module</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">
+4-8. “Principles” module (2)</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2" color="#000000">&#12288;</font><font size="2" color="#000000">
+4-9. “Prediction” module</p>
+<p align="JUSTIFY">4-9-1. Trends of Evolution of Technology</p>
+<p align="JUSTIFY">4-9-2. Dynamization</p>
+<p align="JUSTIFY">4-9-3. Controllability</p>
+</font><font size="2">
+<p align="JUSTIFY">5. Conclusions</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2"> 5-1. </font><font size="2" color="#000000">Merits
+of Tracing using T</font><font size="2">RIZ on the breakthroughs at invention</p>
+</font>
+<p align="JUSTIFY"><font lang="JA" size="2">&#12288;</font><font size="2"> 5-2.
+Relation of Characters of Edison to TechOptimizer module functions</p>
+<p align="JUSTIFY">6. References</p>
+</font></b><font size="2"><b>
+<p align="JUSTIFY">-------------------------------------------------------------------------------------------------------------------------</p>
+<p align="JUSTIFY">1. Introduction</p>
+</b></font><font size="2" color="#000000">
+<p>The author introduced TechOptimizer 3.0 J (Japanese version) in February
+1999.</p>
+<p>Through the preliminary consultation with engineering users, the author found
+that they needed educational examples. It is natural that users request to see
+real world applications using software-assisted TRIZ. But it was difficult to
+develop and disclose such examples.</p>
+</font><font size="2">
+<p align="JUSTIFY">So the author analyzed his own technology development works
+in the early 1970’s (up-to-date technology at that time) and evaluated how </font><font size="2" color="#000000">TechOptimizer
+could have been used if it had existed in those days.</p>
+</font><font size="2">
+<p align="JUSTIFY">This paper opens one of the educational examples which
+explains how TechOptimizer could help a solitary inventor and be used for
+promoting TRIZ to engineers.</p>
+</font><font size="2" color="#ff0000"></font><b><font size="2">
+<p align="JUSTIFY">2. </font><font size="2" color="#000000">Merits of Tracing
+using T</font><font size="2">RIZ</p>
+</font></b><font size="2" color="#000000">
+<p align="JUSTIFY">In this paper the author precisely described the process of
+the contents of invention because it was a past released invention. One of the
+main merits of invention tracing is that it gives confidence in the
+effectiveness of TRIZ by ourselves.</p>
+<p align="JUSTIFY">Conditions of inventions that fit for the training and
+verification of TRIZ are….</p>
+<blockquote>
+  <p>(1) Effectiveness-proven inventions by applying to actual products<br>
+  (2) Inventions the situations at which can be interviewed or confirmed<br>
+  (3) Rights already completed and approved inventions</p>
+</blockquote>
+<p>And by applying to already solved actual engineering problems….</p>
+<blockquote>
+  <p>(1) Enables to practically understand the usefulness of TRIZ<br>
+  (2) Enables to grasp the role of engineers in design and invention<br>
+  (3) Causes the will to apply TRIZ to new problems</p>
+</blockquote>
+</font><font size="2" color="#ff0000"></font><b><font size="2">
+<p align="JUSTIFY">3. Structure of TechOptimizer J (Japanese version)</p>
+</font></b><font face="Times New Roman" size="2">
+<p align="left"><a href="Image128.gif" target="_blank">
+<img src="Image128_small.gif" border="1" width="100" height="77"></a><br>
+</font><font size="2">Fig.1: TechOptimizer Innovation Roadmap</p>
+<p align="JUSTIFY">Formerly the process of invention and/or technology
+development depended on only human brain from the start to the end consistently.
+TRIZ software supports the engineers by the Problem Statement, Problem Solving,
+and Patent Retrieval tools. Namely the TRIZ aims the creativity help to the
+engineers by using scientific methodology and software tools.</p>
+<p align="JUSTIFY">The three main aims of TRIZ and corresponding TechOptimizer
+modules are as follows.</p>
+<blockquote>
+  <p align="JUSTIFY">(1) Removes the Psychological Inertia</font><font lang="JA" size="2">&#65306;</font><b><font size="2" color="#000000">“Product
+  Analysis” module<br>
+  </font></b><font size="2">(2) Avoids the Trade Off's &amp; Compromises</font><font lang="JA" size="2">&#65306;</font><b><font face="MS Mincho" lang="JA" size="2" color="#000000">“</font><font size="2" color="#000000">Principles”
+  module, “Prediction” module<br>
+  </font></b><font size="2">(3) Widens the Limited Breadth of Knowledge</font><font lang="JA" size="2">&#65306;</font><b><font face="MS Mincho" lang="JA" size="2" color="#000000">“</font><font size="2" color="#000000">Effects”
+  module</font></b><font size="2"></p>
+</blockquote>
+<p align="JUSTIFY">But we must recognize that the master should be engineers
+(humans), not TRIZ, although the TRIZ is effective. We can confirm the dignity
+of ourselves through the collaborative work with TRIZ. In that sense, TRIZ can
+be good and clever friend to engineers.</p>
+</font><font size="2" color="#ff0000"></font><b><font size="2" color="#000000">
+<p align="JUSTIFY">4. Example showing the relation of the invention process to
+TRIZ</font><font size="2"></p>
+<p align="JUSTIFY">4-1. Aim of this invention</p>
+</font></b><font size="2">
+<p align="JUSTIFY">In this paper the effectiveness of TechOptimizer is examined
+through a past invention (USP: 4,279,010) done by the author in 1975 without
+using TechOptimizer. The present author will explain how TechOptimizer could
+help a solitary inventor</font><font size="2" color="#000000">, if it were
+available at the time of invention.</p>
+</font><font size="2"></font><font face="Times New Roman" size="2">
+<p align="left"><a href="Image129.gif" target="_blank">
+<img src="Image129_small.gif" border="1" width="100" height="63"></a><br>
+</font><font size="2">Fig.2: High efficiency DC-DC converter for liquid crystal
+watches</p>
+</font><font face="?? ?????" lang="JA" size="2"></font><font size="2">
+<p align="JUSTIFY">(1) Situations</p>
+</font><font size="2" color="#000000">
+<p>Early 1970s was a dawn of liquid crystal display age. Main type in those days
+was DSM (Dynamic Scattering Mode) type developed by Heilmeier of RCA. DSM
+display required 15-20V drive voltage.</p>
+</font><font size="2">
+<p align="JUSTIFY">(2) Problems</p>
+</font><font size="2" color="#000000">
+<p>It was inevitable to achieve voltage conversion from 1.5V to 15-20V with over
+90% conversion efficiency as the former DSM liquid crystal display required
+15-20V and the life of the 1.5V battery had to be longer than 1 year. The final
+problem to be solved was to realize a DC-DC converter that has conversion
+efficiency of over 90% at low voltage, very small current area.</p>
+<p>The author made every effort to improve the efficiency within the method of
+conventional auto-transformer type DC-DC converter, but the efficiency didn’t
+exceed 50</font><font lang="JA" size="2" color="#000000">&#65285;</font><font size="2" color="#000000">.
+This meant 3 months battery life. It was “a dream” then to attain over 90%
+conversion efficiency to secure 1 year battery life needed as a commodity.
+Obvious breakthrough was inevitable.</p>
+<p>(3) Conclusion</p>
+<p>First of all, I will show the conclusion. Sharp’s first sample of DSM
+liquid crystal display watch was equipped with 90% efficiency USP 4,279,010
+DC-DC converter. <b><sup>1), 2), 3)</sup></b></font> DSM display had
+old-fashioned, beautiful milky white color letters.</p>
+<sup><font face="Times New Roman" size="2">
+<p align="left"><a href="Image130.gif" target="_blank">
+<img src="Image130_small.gif" border="1" width="100" height="76"></a><br>
+</font><font size="2">Fig.3: Sharp’s first sample of DSM liquid crystal
+display watch using new DC-DC converter</p>
+</font><font size="2" color="#ff0000"></font><b><font size="2">
+<p align="JUSTIFY">4-2. Identification of the system problem</p>
+</font></b><font face="Times New Roman" size="2">
+<p align="left"><a href="Image131.gif" target="_blank">
+<img border="1" src="Image131_small.gif" alt="Image131.gif (11823 bytes)" width="100" height="78"></a><br>
+</font></sup>Fig.4: Auto-transformer type voltage multiplier circuit</p>
+<p><font size="2">There are two oscillators in this watch system.<font color="#000000">
+One is </font>the Quartz Xtal Oscillator and another is the one<font color="#000000">
+involved in the Auto-transformer. From the</font> watch<font color="#000000">
+systems point of view, only the </font>Quartz Xtal Oscillator is essential.</font></p>
+<p>Usually, a voltage conversion process requires 2 functions; the alternating
+current generation and the voltage transformation. Auto-transformer has also 2
+functions and they can’t be divided. The present author challenged to trim the
+oscillator in the auto-transformer.</p>
+<font size="2" color="#ff0000"></font>
+<p align="JUSTIFY"><b>4-3. Oscillator-trimmed voltage multiplication circuit</b></p>
+<sup><font face="Times New Roman" size="2">
+<p align="left"><a href="Image132.gif" target="_blank">
+<img src="Image132_small.gif" border="1" width="100" height="78"></a><br>
+</font></sup>Fig.5: Oscillator-trimmed voltage multiplication circuit</p>
+<font size="2"></font>
+<p><font color="#000000" size="2">The Oscillator can be trimmed if Voltage
+Multiplication Function circuit driven by Quartz Xtal Oscillator signal could be
+found.</font></p>
+<b>
+<p align="JUSTIFY"><font color="#000000" size="2">(Expected merits of
+TechOptimizer modules, if they had been available at the time of invention.)</font></p>
+<p align="JUSTIFY"><font color="#000000" size="2">4-4. “Product Analysis”
+module</font></p>
+</b>
+<p align="JUSTIFY"><font size="2"><font color="#000000">This module gives the
+functional analysis of the system and gives proposals to the trimming of the
+unnecessary functions and ideas of substitutive function. If </font>TechOptimizer
+had existed at the time of invention, <font color="#000000">“Product Analysis”
+module would have </font>given a proposal of a drive signal use of the <font color="#000000">Quartz
+Xtal Oscillator</font>.</font></p>
+<sup><font size="2"></font></sup><b>
+<p align="JUSTIFY"><font color="#000000" size="2">4-4-1. Product Analysis</font></p>
+</b><font size="2"></font><font face="Times New Roman" size="2">
+<p align="left"><a href="Image133.gif" target="_blank">
+<img src="Image133_small.gif" border="1" width="100" height="67"></a><br>
+</font><font size="2">Fig.6: Functional model screen (Before Trimming)</p>
+</font><b><font size="2" color="#000000">
+<p align="JUSTIFY">4-4-2. Trimming results</p>
+</font></b><font face="Times New Roman" size="2"><sup>
+<p align="left"><a href="Image134.gif" target="_blank">
+<img src="Image134_small.gif" border="1" width="100" height="67"></a></sup><br>
+</font><font size="2">Fig.7: Functional model screen (After Trimming)</p>
+</font><b><font size="2" color="#000000">
+<p align="JUSTIFY">4-5. “Principles” module (1)</font></b><font lang="JA" size="2">&#12288;</font></p>
+<p align="left"><a href="Image135.gif" target="_blank"><font size="2">
+<img src="Image135_small.gif" border="1" width="100" height="74"></font></a><font size="2"><br>
+</font><font size="2" color="#000000">Fig.8: “Principles” module
+(1)Auto-transformer Problems</p>
+</font><sup><font size="2"></font></sup><font size="2" color="#000000">
+<p>Principles module’s hint easily seems to lead average electronics engineers
+to the idea of multiplier circuits which has no oscillator in it. But the idea
+got from “<b>Principles” module </b>seems to be more abstract than that got
+from <b>“Product Analysis” module.</p>
+</b></font><sup><font size="2" color="#ff0000"></font></sup><b><font size="2">
+<p align="JUSTIFY">4-6. Detailed concrete design</p>
+<p align="JUSTIFY">4-6-1. Engineering investigation</p>
+</font></b><font size="2" color="#000000">
+<p>I devoted myself to the search of a circuit that had an independent voltage
+multiplication function. I went to the Osaka University library and found the
+historic paper of Cockcroft-Walton (1932)</font><font size="2"> <b>4)</b></font><font size="2" color="#000000">
+and M.Schenkel (1919) </font><b><font size="2">5) </font></b><font size="2" color="#000000">on
+circuits used for ultrahigh voltage generation (100KV).</p>
+<p>I was a radio amateur when I was young and I knew voltage doubling circuit
+composed by diodes and capacitors. But the Cockcroft-Walton and Schenkel
+circuits had theoretically no limitation in the multiplication stage number. (As
+explained later in Chapter4-7, “Effects” module had no data on the voltage
+multiplier circuits.)</p>
+</font><sup><font size="2" color="#ff0000"></font></sup><b><font size="2">
+<p align="JUSTIFY">4-6-2. Findings of the historic paper by Cockcroft-Walton</font></b></p>
+<font size="2" color="#000000">
+<p>Cockcroft and Walton were English and Irish physicists each who succeeded in
+the experiment to smash the atomic nucleus using their 800KV voltage generation
+circuit. (Both physicists won the Nobel Prize for physics) As shown in the
+figure, this circuit was composed of capacitors and switches.</p>
+</font><sup><font face="?? ???" lang="JA" size="2" color="#000000"></font></sup><font face="Times New Roman" size="2">
+<p align="left"><a href="Image136.gif" target="_blank">
+<img src="Image136_small.gif" border="1" width="100" height="89"></a><br>
+</font><font size="2">Fig.9: Cockcroft and Walton Proc.Roy.Soc. paper “Experiments
+with High Velocity Positive Ions ”</p>
+</font><font size="2" color="#000000">
+<p align="JUSTIFY">&nbsp;Three capacitors, C4, C2, C0, each of capacity C, are
+connected in series and capacitor C0 is connected </font><font size="2">to a
+source of steady potential E. If now two other capacitors, C3, C1, are connected
+to capacitors C4, C2, C0, first as shown by the dotted lines S5, S3, S1, and
+then as shown by the full line S6, S4, S2, then in the first cycle when C3 and
+C1 are connected to C2 and C0, capacitor C1 will be charged to voltage E. When
+the switches are moved over to the upper position, capacitor C1 will share its
+charge with capacitor C2 and both will be charged to E/2 if they have equal
+capacity.</p>
+<p align="JUSTIFY">In the next reversal of the switches, capacitors C2 and C3
+will be connected and take up potentials E/4 whilst capacitor C1 will be
+recharged to potential E. It is thus evident that charge will gradually
+transferred to all the capacitors until, in the absence of loss, a potential 3E
+will be developed </font><font size="2" color="#000000">across the capacitors
+C4, C2, C0 in series. (quoted from the P.620 of </font><font size="2">Ref.<b>4) </b>)</p>
+<b>
+<p align="JUSTIFY">4-6-3. Cockcroft-Walton voltage multiplier circuit</p>
+</b><sup></sup></font><font face="Times New Roman" size="2">
+<p align="left"><a href="Image137.gif" target="_blank">
+<img src="Image137_small.gif" border="1" width="100" height="75"></a></font><font size="2" color="#ff0000"><br>
+</font><font size="2">Fig.10:<b> </b>Cockcroft-Walton voltage multiplier circuit
+(In case using diodes as switching elements)</p>
+</font><font size="2" color="#000000">
+<p align="JUSTIFY">This is an actual Cockcroft and Walton type DC-DC converter
+circuit using PN junction diodes as switching element. This circuit is
+originally developed in the ultra high voltage area, but in principle there is
+no limitation to voltage.</p>
+</font><sup><font size="2" color="#ff0000"></font></sup><b><font size="2">
+<p align="JUSTIFY">4-6-4. Findings of the historic paper by Schenkel</p>
+</font></b><sup><font size="2"></font></sup><font face="Times New Roman" size="2">
+<p align="left"><a href="Image138.gif" target="_blank">
+<img src="Image138_small.gif" border="1" width="100" height="89"></a><br>
+</font><font size="2">Fig.11: M.Schenkel’s Elektrotechnische Zeitschrift paper
+“Eine neue Schaltung fuer die Erzeugung hoher Gleichspannungen ”</p>
+</font><font size="2" color="#000000">
+<p>Cockcroft and Walton cited in their paper, the voltage multiplying circuits
+invented by M.Schenkel, German engineer in 1919. This circuit differs in the
+arrangement of capacitors from the Cockcroft and Walton one, but they did not
+use Schenkel circuit as it required some of the capacitors used to withstand
+full voltage of output circuit.</font><font size="2" color="#ff0000"></p>
+</font><b><font size="2">
+<p align="JUSTIFY">4-6-5. Schenkel’s voltage multiplier circuit (1)</p>
+</font></b><font face="Times New Roman" size="2">
+<p align="left"><a href="Image139.gif" target="_blank">
+<img src="Image139_small.gif" border="1" width="100" height="69"></a><br>
+</font><font size="2">Fig.12:<b> </b>Schenkel’s voltage multiplier circuit (In
+case using diodes as switching elements)</p>
+<sup></sup></font><font size="2" color="#000000">
+<p>This is an actual Schenkel type DC-DC converter circuit using diodes as
+switching element. Schenkel type one was superior to Cockcroft and Walton one
+especially in our applications, so the author adopted Schenkel’s circuit.</p>
+</font><b><sup><font size="2" color="#ff0000"></font></sup><font size="2">
+<p align="JUSTIFY">4-6-6. Characteristics and Problems of semiconductor
+switching elements</p>
+</font><sup><font size="2" color="#800080"></font></sup></b><font face="Times New Roman" size="2">
+<p align="left"><a href="Image140.gif" target="_blank">
+<img src="Image140_small.gif" border="1" width="100" height="82"></a><br>
+</font><font size="2">Fig.13: Semiconductor switching elements</p>
+</font><font size="2" color="#000000">
+<p>Two kind of semiconductors were shown here as switching elements</font><font lang="JA" size="2" color="#000000">&#65306;</font><font size="2" color="#000000">one
+is a diode and the other is a MOS transistor. Diode has forward voltage loss,
+but MOS Transistor has no such loss. So, the MOS transistor is superior to diode
+especially in low voltage region. But the MOS transistor operating circuit
+becomes considerably complex because it needs gate control for ON and OFF.</p>
+</font><sup><font size="2"></font><font size="2" color="#ff0000"></font></sup><b><font size="2">
+<p align="JUSTIFY">4-6-7. Schenkel’s voltage multiplier circuit (2)</p>
+</font></b><sup><font face="?? ???" lang="JA" size="2" color="#000000"></font></sup><font face="Times New Roman" size="2">
+<p align="left"><a href="Image131_new.gif">
+<img src="Image131_new_small.gif" border="1" xthumbnail-orig-image="Image131_new.gif" width="100" height="69"></a><br>
+</font><font size="2">Fig.14: Schenkel’s Circuit (2) (Using MOS transistors as
+switching elements)</p>
+<sup></sup></font><font size="2" color="#000000">
+<p align="JUSTIFY">This is an actual Schenkel type X3 multiplying DC-DC
+converter circuit invented using MOS transistors as switching elements.</font><sup><font size="2" color="#ff0000"></p>
+</font><b><font size="2" color="#000000"></font></b></sup><font size="2" color="#000000"><b>
+<p align="JUSTIFY">(Expected merits of TechOptimizer modules, if they had been
+available at the time of invention.)</p>
+<p align="JUSTIFY">4-7. “Effects” module</p>
+</b>
+<p align="JUSTIFY">“Effects” module is an Inverted Data Base of science and
+technology for finding means from goals. As matters now stand, “Effects”
+module has few effects and examples on electronic circuit. </font><font size="2">But
+as most growing part of the TechOptimizer now is </font><font size="2" color="#000000">“Effects”
+module, drastic improvement can be expected in future.</p>
+<p align="JUSTIFY">Recently, the author went to the library of Osaka University
+again where the present author first encountered the papers of Cockcroft-Walton
+(1932) and M.Schenkel (1919) over a quarter century before. There the author
+again found many papers by European scientists written about a century before.
+Perhaps few people will read them now. While the author was reading the papers
+of Cockcroft-Walton and M.Schenkel in the silent space, the author had a
+momentary illusion that ambitious scientists in those days were giving hot
+debate.</p>
+<p align="JUSTIFY">The author </font><font size="2">felt by intuition that many
+epoch making discovery or invention had been stored (or kept idle because it
+were aged) not only in this libraries or other laboratories.</p>
+</font><font size="2" color="#000000">
+<p align="JUSTIFY">The present author knows</font><font size="2"> that Henry
+Altshuller always told people who want advises that “Your engineering problem
+had been already solved by another person.”</p>
+<p align="JUSTIFY">The </font><font size="2" color="#000000">“Effects”
+module’s value exists in a tool which makes the best use of predecessors’
+wisdom regardless of the restriction of time and space.</p>
+</font><sup><font size="2"></font><font size="2" color="#ff0000"></font></sup><b><font size="2" color="#000000">
+<p align="JUSTIFY">4-8. “Principles” module (2)</p>
+</font></b><sup><font size="2"></font></sup><font face="Times New Roman" size="2">
+<p align="left"><a href="Image141.gif" target="_blank">
+<img src="Image141_small.gif" border="1" width="100" height="79"></a><br>
+</font><font size="2">Fig.15: Problem of voltage multiplier circuits using MOS
+transistors as switching elements</p>
+</font><sup><font face="MS Mincho" lang="JA" size="2"></font></sup><font size="2">
+<p>The derived inventive principle 1. “Segmentation” </font><font size="2" color="#000000">easily
+lead electronics engineers to the actual solution “Time segmentation”.</p>
+</font><b><font size="2" color="#000000">
+<p align="JUSTIFY">4-9. “Prediction” module</p>
+<p align="JUSTIFY">4-9-1. Trends of Evolution of Technology</p>
+</font></b><font size="2">
+<p>One of the insights by Altshuller is that all technical systems have a number
+of trends of evolution which are common across the fields and eras.</p>
+</font><sup><font face="?? ???" lang="JA" size="2" color="#000000"></font><font face="?? ???" lang="JA" size="2" color="#ffffff"></font></sup><font face="Times New Roman" size="2">
+<p align="left"><font size="2"><a href="Image142.gif" target="_blank">
+<img border="1" src="Image142_small.gif" alt="Image142.gif (10885 bytes)" width="100" height="72"></a></font><br>
+</font><font size="2" color="#000000">Fig.16: Trends of Evolution of Technology
+(Voltage multiplication from the Switching Means viewpoint)</p>
+</font><sup><font size="2"></font></sup><font size="2" color="#000000">
+<p>Trends of Evolution of Technology instruct us:</p>
+<p>(1) Eighty years before invented voltage multiplying principle which was then
+applied in ultra high voltage area now evolves to use in low voltage area.</p>
+<p>(2) Owing to the advance of semiconductor technology, the principle of the
+switching device evolved dramatically especially in low voltage area.</p>
+<b>
+<p align="JUSTIFY">4-9-2. Dynamization</p>
+</b>
+<p>Among the 14 Trends of Technology Evolution view of Prediction module, this
+case study corresponds to “Dynamization”. This suggests inventors to make
+the system with more flexibility and higher performance.</p>
+<sup></sup></font><font face="Times New Roman" size="2">
+<p align="left"><a href="Image143.gif" target="_blank">
+<img src="Image143_small.gif" border="1" width="100" height="67"></a><br>
+</font><font size="2" color="#000000">Fig.17: Prediction Module (8. Dynamization)</p>
+<sup></sup>
+<p>Prediction Module (8. Dynamization) suggests inventors to watch the dynamic
+trend.</p>
+</font><sup><font size="2"></font></sup><b><font size="2" color="#000000">
+<p align="JUSTIFY">4-9-3. Controllability</p>
+</font></b><font size="2" color="#000000">
+<p>Among the 14 Trends of Technology Evolution view of Prediction module, this
+case study corresponds to “Controllability”. This suggests inventors to make
+the system with more automated one.</p>
+</font><sup><font size="2"></font></sup><font face="Times New Roman" size="2">
+<p align="left"><a href="Image144.gif" target="_blank">
+<img src="Image144_small.gif" border="1" width="100" height="67"></a><br>
+</font><font size="2" color="#000000">Fig.18: Prediction Module (10.
+Controllability)</font><sup><font size="2"></p>
+</font></sup><font size="2" color="#000000">
+<p>Prediction Module (10. Controllability) suggests inventors that automated
+trend is a must.</p>
+</font><sup><font size="2" color="#ff0000"></font></sup><b><font size="2">
+<p align="JUSTIFY">5. Conclusions</p>
+<p align="JUSTIFY">5-1. Merits of Tracing using TRIZ on the breakthroughs at
+invention</p>
+</font></b><sup><font size="2"></font></sup><font face="Times New Roman" size="2">
+<p align="left"><a href="Image145.gif" target="_blank">
+<img src="Image145_small.gif" border="1" width="100" height="67"></a><br>
+</font><font size="2" color="#000000">Fig.19: Three BREAKTHROUGHS in this
+invention (Effective TOPE Modules)</p>
+</font><sup><font size="2"></font></sup><font size="2" color="#000000">
+<p align="JUSTIFY">Lastly we can conclude as follows</p>
+<p>(1) The effectiveness of TechOptimizer has been well verified by applying it
+to a past invention. TechOptimizer surely will save solitary and serious
+inventors to make breakthroughs.</p>
+<p>(2) The experience of the verification well accelerates the will of inventors
+(or engineers) to receive benefits of TechOptimizer in solving new problems of
+theirs.</p>
+<p>(3) We regard the advanced Effects Module as a supremely efficient Inverted
+Knowledge Data Base.</p>
+<sup></sup></font><sup><font size="2" color="#ff0000"></font></sup><b><font size="2">
+<p align="JUSTIFY">5-2. Relation of Characters of Edison to TechOptimizer module
+functions</font></b></p>
+<font size="2">
+<p align="JUSTIFY">Thomas Alva Edison (1847-1931) is a well-known great
+inventor.</p>
+<p align="JUSTIFY">Here I would like to compare the relation of his seven
+characteristics <b>6), 7)</b> to TechOptimizer’s modules functions as follows.</p>
+</p><ol>
+  <li>
+    <p align="JUSTIFY">Extensive reader having wide knowledge through rapid
+    reading and outstanding memory.<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Effects
+    modules<br>
+    <br>
+  </li>
+  <li>
+    <p align="JUSTIFY">Way of thinking free from usual concept or common sense.<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Product
+    Analysis modules<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Principles
+    modules<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Prediction
+    modules<br>
+    <br>
+  </li>
+  <li>
+    <p align="JUSTIFY">Thought a great deal of On the Job Training, and despised
+    the usual school education<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Effects
+    module<br>
+    <br>
+  </li>
+  <li>
+    <p align="JUSTIFY">Had endeavor, attachment, opponent mind with wide
+    curiosity and pioneer spirit.<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">No</font><font size="2"><br>
+    <br>
+    </font><font size="2"></li>
+  <li>
+    <p align="JUSTIFY">Heuristics that considered matters in a whole aspect and
+    understood mutual relations under deliberate thinking.<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Product
+    Analysis module<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Principles
+    module<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Prediction
+    module<br>
+    <br>
+  </li>
+  <li>
+    <p align="JUSTIFY">Had a foresight into the future and prepared for the
+    social system transition<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">Prediction
+    module<br>
+    <br>
+  </li>
+  <li>
+    <p align="JUSTIFY">Excelled to select the invention themes and proceeded
+    them at the same time<br>
+    </font><font face="Wingdings" size="2">à</font><font size="2">No.<br>
+    <br>
+  </li>
+</ol>
+<p>As shown above, TechOptimizer’s five functions seem to correspond to Edison’s
+seven characteristics. It is said that Edison had many good friends. Among them,
+Charles Batchelor and John Kruesi <b>7)</b> were excellent reliable engineers in
+his laboratory.</p>
+<p>The author thinks that Edison would have probably added TechOptimizer as
+another reliable engineering assistant, if TechOptimizer were available to
+Edison then.</p>
+</font><sup><font size="2" color="#ff0000"></font></sup><b><font size="2">
+<p align="JUSTIFY">6. References</p>
+</font></b><font size="2">
+</p><ol>
+  <li>
+    <p align="JUSTIFY">M. Morihisa; JPO NO.60-28232, “DC-DC Converter”(J)</li>
+  <li>
+    <p align="JUSTIFY">M. Morihisa; USP NO.4,279,010, “DC-DC Converter for
+    solid state watches”</li>
+  <li>
+    <p align="JUSTIFY">M. Morihisa, K. Hachimura, T.Sasaki, T.Nakamura; “CMOS
+    Schenkel type DC-DC converter”</font><font lang="JA" size="2">&#65292;</font><font size="2">Nikkei
+    Electronics Magazine, Dec. 3rd, 1973 (J)</li>
+  <li>
+    <p align="JUSTIFY">Cockcroft, J.D. and Walton, E.T.S.; “Experiments with
+    High Velocity Positive Ions,” Proc.Roy.Soc, vol.136, pp.619-630, 1932</li>
+  <li>
+    <p align="JUSTIFY">M. Schenkel; “Eine neue Schaltung fuer die Erzeugung
+    hoher Gleichspannungen”, Elektrotechnische Zeitschrift, vol.40, no.28,
+    pp333-334, 1919</li>
+  <li>
+    <p align="JUSTIFY">Mitsubishi Research Institute, “Zukai TRIZ (Methodology
+    of Innovative Technology of Design) ”, Nihon Jitsugyo Publishing Co.,
+    1999, pp21. (J)</li>
+  <li>
+    <p align="JUSTIFY">K. Hamada; “Kaijin Edison”, Nihon Keizai Sinbunsha
+    Co., 1996 (J)</li>
+</ol>
+</font><sup><font size="2" color="#ff0000"></font></sup><b><font size="2">
+<p align="JUSTIFY">Appendix:</p>
+</font></b><font size="2">
+<p>M. Schenkel; “Eine neue Schaltung fuer die Erzeugung hoher Gleichspannungen”,
+Elektrotechnische Zeitschrift, vol.40, no.28, pp333-334, 1919.</p>
+<p align="left"><a href="Image146.gif" target="_blank">
+<img src="Image146_small.gif" border="1" width="100" height="137"></a></p>
+</font><font face="Times New Roman" size="2">
+<p align="left"><a href="Image147.gif" target="_blank">
+<img src="Image147_small.gif" border="1" width="100" height="140"></a></p>
+</font><sup><font size="2" color="#ff0000"></font></sup><b><font size="2" color="#000000">
+<p align="JUSTIFY">&nbsp;</p>
+<p align="JUSTIFY">About</font><font size="2"> the Author</p>
+</font></b><font size="2">
+<p align="JUSTIFY">Mitsuo Morihisa is a TRIZ practitioner in SHARP Corporation
+in JAPAN. He was born in 1941 and an eager radio amateur in his youth and since
+then had been interested in invention. After graduating master’s course on
+electronic engineering from Tohoku University in 1967, he had been working for
+SHARP in various fields, from Research Development to Systems Planning. He
+believes that nations must share a common destiny more and more by sharing
+wisdom from the different cultures (like TRIZ methodology) towards the coming
+millennium. He likes music by Moussorgsky and Beethoven very much and he has
+been one of the chorus member of Beethoven’s 9th Symphony (below is the
+initiating chorus passage he especially loves) every December.</p>
+<sup></sup></font>
+<p align="JUSTIFY">Email address: <a href="mailto:mmorihisa@hotmail.co.jp">
+mmorihisa@hotmail.co.jp</a></p>
+<font face="Times New Roman" size="2">
+<p align="left"><img src="Image148.gif" width="557" height="445"></p>
+</font><b><font size="2" color="#000000">
+<p align="JUSTIFY">Acknowledgments</p>
+</font></b><font size="2">
+<p align="JUSTIFY">I would like to express sincere thanks to Mr. M. Hotta, Mr.
+Y. Konishi, Mr. N. Togashi, and Mr. Y. Okubo of Mitsubishi Research Institute
+for useful discussions.</p>

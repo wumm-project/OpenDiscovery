@@ -1,0 +1,363 @@
+
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>The TRIZ Journal Article Archive</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Description" CONTENT="The TRIZ Journal Article Archive">
+<META NAME="Keywords" CONTENT="The TRIZ Journal Article Archive">
+<META NAME="Author" content="RealInnovation.com Authorship - Innovation">
+<META NAME="Copyright" content="Copyright &#65533; 2004-2011 - RealInnovation.com. All Rights Reserved.">
+
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script src="/css/menu.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/include/datetimepicker.js"></script>
+<link href="/css/menu_global.css" type="text/css"  rel="stylesheet" media="screen" />
+<link href="/css/menu_side.css" type="text/css"  rel="stylesheet" media="screen" />
+
+
+<!-- START GOOGLE AD MANAGER -->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-2532690673289043");
+  GS_googleEnableAllServices();
+</script>
+
+
+
+<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link1");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link2");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link3");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link4");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link5");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link6");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link7");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_ad_link8");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_premium_link1");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_premium_link2");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_premium_link3");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_calendar_sponsored_event1");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_calendar_sponsored_event2");
+  GA_googleAddSlot("ca-pub-2532690673289043", "tj_calendar_sponsored_event3");
+</script>
+
+
+
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+
+<!-- END GOOGLE AD MANAGER -->
+
+
+<SCRIPT type="text/javascript" id="wa_u" ></SCRIPT><SCRIPT type="text/javascript" src="/triz_journal.js"></SCRIPT>
+
+
+</HEAD>
+<body bgcolor="#ffffff" link="#000099" vlink="#006633" alink="#F7941D" topmargin="2" leftmargin="2" marginheight="2" marginwidth="2"><noindexfb>
+
+
+
+
+<!-- Start Header -->
+<!-- Start Header -->
+<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+		<td width="403" valign="top"><div style="margin-left:0px; margin-top:13px;"><a href="/"><img width="280" height="40" alt="The TRIZ Journal" border="0" src="/library/graphics/triz_journal.gif" style="margin-left:2px;" /></a><a href="http://www.triz-journal.com/commentary/archive/celebrating_10_years_of_the_triz_journal.html"><img src="/library/graphics/10years.gif" height="40" width="40" border="0" alt="Celebrating 10 Years On The Web"></a></div><table style="margin-left:57px;" onMouseOver="this.style.cursor='hand';window.status='Go To Real Innovation - www.realinnovation.com';return true" onMouseOut="this.style.cursor='auto';window.status='';return true" onClick="location.href='http://www.realinnovation.com/'"><tr><td style="font-family:Verdana,Arial;font-size:10px;">Part of the <b><span style="color:#1095CB;">Real</span><span style="color:#1E2482;">Innovation</span> Network</b></td></tr></table></td>
+		<td align="right">
+			<!--BPL-->
+			
+
+<table cellpadding="0" cellspacing="0">
+
+	<tr>
+
+		
+			<td><script type="text/javascript">GA_googleFillSlot("tj_premium_link1");</script></td>
+			<td><img src="library/graphics/clear.gif" height="1" width="15"></td>
+			<td><script type="text/javascript">GA_googleFillSlot("tj_premium_link2");</script></td>
+			<td><img src="library/graphics/clear.gif" height="1" width="15"></td>
+			<td><script type="text/javascript">GA_googleFillSlot("tj_premium_link3");</script></td>
+			<td><img src="library/graphics/clear.gif" height="1" width="15"></td>
+		
+
+		<td>
+			<a href="/adsales/ad-opps.asp" target="_top"><img src="/library/graphics/innovation_premiumlinks.gif" width="11" height="66" border="0" alt="Click To Learn More About PremiumLinks" style="vertical-align:middle;margin-bottom:1px;" /></a>
+		</td>
+
+	</tr>
+
+</table>
+			<!--EPL-->
+		</td>
+	</tr>
+</table>
+<!-- End Header -->
+
+<!-- Navigation and Search-->
+<table border="0" cellspacing="0" cellpadding="0" style="background-color:#002963;" width="100%">
+	<tr>
+		<td width="50%" valign="top" style="background-color:#0099CC;background-image:  url(/library/graphics/background-hor.gif);">
+			<div align="left" class="nav_text" style="margin-left:5px; margin-top:6px; margin-right:px; white-space:nowrap;">
+</noindexfb><a class="nav_text" href="http://www.triz-journal.com">Home</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a class="nav_text" href="http://www.triz-journal.com/archives/">Article Archives</a>
+<noindexfb></div></td>
+		<td width="50%" valign="top" style="background-color:#0099CC; white-space:nowrap;">
+			<div align="right" style="margin-left:20px; margin-top:1px; margin-bottom:1px; margin-right:4px">
+			<form method="get" name="fbsearch" class="search_text" action="http://search.realinnovation.com/cgi-bin/ss_query" /> Search:
+				<select name="related" size="1" style="margin-left:10px; background-color:#ebeff2; border:1px solid #ccc; border-bottom-color:#eee; border-right-color:#eee; color:#333; padding:2px 0 2px 1px; width:104px; font-face:tahoma; font-size:11px;">
+    			<option value="0">Entire Site</option>
+    			<option value="1">Articles</option>
+    			<option value="2">Commentary</option>
+    			<option value="3">Dictionary</option>
+    			<option value="4">Discussion Forum</option>
+    			<option value="5">News</option>
+				</select>
+				<input type="text" maxlength="100" name="keys" style="margin-left:10px; background-color:#ebeff2; border:1px solid #ccc; border-bottom-color:#eee; border-right-color:#eee; color:#333; padding:2px 0 2px 1px; width:154px; font-face:tahoma; font-size:11px;" onfocus="this.style.background='#FFFFCC'" onblur="this.style.background='#E0E0E0'" />
+				<input type="hidden" name="sitenbr" value="157456965">
+				<input type="hidden" name="rgn" value="trizjournal"><input type="hidden" name="e" value="tjl"><input type="image" src="/library/graphics/innovation_button.gif" alt="Submit your info" style="vertical-align:middle;margin-bottom:2px;" /></form>
+			</div>
+		</td>
+	</tr>
+
+</table>
+<!-- End Navigation and Search-->
+<!-- End Header -->
+
+<!--Main table-->
+<table border="0" cellspacing="0" cellpadding="0" style="background-image:  url(/library/graphics/header.jpg); background-repeat: repeat-x; background-position:;" width="100%">
+	<tr>
+		<td width="125" valign="top" style="background-color:#0099CC;background-image:  url(/library/graphics/background.gif);">
+			<!-- LEFT NAV -->
+			<ul id="menu" class="dbMenu onMouse">
+
+				<li><a href="/newsletter/">Subscribe</a></li>
+				<li><a href="/content/what_is_triz.asp">What is TRIZ?</a></li>
+				<li><a href="/content/contradiction_matrix.asp">Contradiction Matrix<br>& 40 Principles</a></li>
+				<li><a href="/archives/year/">Archives</a>
+</li>
+				<li><a href="/best_practices.html">Best Practices</a><ul><li><a href='/best_practices/general.html'>General</a></li><li><a href='/best_practices/software_innovation_and_creativity.html'>Software, Innovation and Creativity</a></li><li><a href='/best_practices/consultants_innovation_and_creativity.html'>Consultants, Innovation and Creativity</a></li></ul></li>
+				<li><a href="/submit/" >Call For Papers</a></li>
+				<li><a href="/dictionary/glossary.asp" >Dictionary</a></li>
+				<li><a href="/events/" >Events Calendar</a></li>
+				<li><a href="/jobs/" >Jobs</a></li>
+				<li><a href="/news/" >News</a></li>
+				<li><a href="/commentary/" >Commentary</a></li>
+				<li><a href="/forum/" >Discussion Forum</a></li>
+				<li style="background-color:#429CC6;margin-top:10px;"><div style="background-color:#C0C0C0;text-color:#000099;font-size:11px;font-weight:normal;font-family:Tahoma;text-align:left;color:#000099;padding:2px;margin-left:2px;margin-right:2px;height:4px;">Related Topics</div></li>
+				<li><a href="http://www.bpmenterprise.com">Business Process Mgt</a></li>
+				<li><a href="http://www.realinnovation.com">Innovation</a></li>
+				<li><a href="http://www.sourcingmag.com">Outsourcing</a></li>
+				<li><a href="http://www.isixsigma.com">Six Sigma</a></li>
+				<li style="background-color:#429CC6;margin-top:10px;"><div style="background-color:#C0C0C0;text-color:#000099;font-size:11px;font-weight:normal;font-family:Tahoma;text-align:left;color:#000099;padding:2px;margin-left:2px;margin-right:2px;height:4px;">Quick Access</div></li>
+				<li><a href="/help/">Help</a></li>
+				<li><a href="/search/">Search</a></li>
+				<li><a href="/adsales/">Advertising</a></li>
+				<li><a href="/archives/year/">Article Archive</a></li>
+				<li><a href="/newsletter/archive/">Newsletter Archive</a></li>
+				<li><a href="/suggestion/">Reader Feedback</a></li>
+				<li><a href="/content/triz-journal_editorial_panel.asp">Editorial Panel</a></li>
+			</ul>
+			<!-- END LEFT NAV -->
+		</td>
+
+		<td valign="top" class="body_text" style="background-color:#FFFFFF;padding:5px;">
+			<!--main section-->
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<tr>
+				  <td class="body_text" valign="top">
+<br>
+
+<!--BeginText-->
+
+<h1>The TRIZ Journal Article Archive<font size="3"></font></h1>
+<p>
+
+<table align="right" border="0" cellpadding="0" cellspacing="0" width="175">
+<tr>
+<td rowspan="10" width="15"><img src="/library/graphics/clear.gif" width="15" height="1" alt=""></td>
+<td>
+
+<!-- Bookmark, Print and Email-->
+<script language="javascript">
+<!--
+function bookmark(url, description) {
+	var netscape="First push OK and then hit CTRL+D to add a bookmark to this site."
+	if (navigator.appName=='Microsoft Internet Explorer') {
+		window.external.AddFavorite(url, description);
+	}
+	else if (navigator.appName=='Netscape') {
+		alert('Press (Ctrl+D) To Bookmark This Page.');
+	}
+}
+//-->
+</script>
+<table bgcolor="#000099" border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td>
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr>
+<td align="center"><a onMouseOver="window.status='Add This Page To Your Browser Bookmarks'; return true" onMouseOut="window.status=' '; return true" href="javascript:bookmark('http://www.triz-journal.com/archives/default.asp','The TRIZ Journal Article Archive');" ><img src="/library/graphics/bookmarkicon.gif" width="20" height="20" border="0" alt="Bookmark This Page" hspace="1"></a></td>
+<td nowrap><a class="art_fxn" onMouseOver="window.status='Add This Page To Your Browser Bookmarks'; return true" onMouseOut="window.status=' '; return true" href="javascript:bookmark('http://www.triz-journal.com/archives/default.asp','The TRIZ Journal Article Archive');" ><font face="verdana,geneva,sans-serif" size="1">
+Bookmark This Page</font></a></td>
+</tr>
+<tr>
+<td align="center"><a onMouseOver="window.status='Email This Page'; return true" onMouseOut="window.status=' '; return true" href="/archives/default.asp?action=email"><img src="/library/graphics/emailicon.gif" width="20" height="20" border="0" alt="Email This Page" hspace="1"></a></td>
+<td nowrap><a class="art_fxn" onMouseOver="window.status='Email This Page'; return true" onMouseOut="window.status=' '; return true" href="/archives/default.asp?action=email"><font face="verdana,geneva,sans-serif" size="1">
+Email This Page</font></a></td>
+</tr>
+<tr>
+<td align="center"><a onMouseOver="window.status='Format For Printing'; return true" onMouseOut="window.status=' '; return true" href="/archives/default.asp?action=print"><img src="/library/graphics/printicon.gif" width="20" height="20" border="0" alt="Format for Printing" hspace="1"></a></td>
+<td nowrap><a class="art_fxn" onMouseOver="window.status='Format For Printing'; return true" onMouseOut="window.status=' '; return true" href="/archives/default.asp?action=print"><font face="verdana,geneva,sans-serif" size="1">
+Format for Printing</font></a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+
+<!-- End Print and Email-->
+
+</td>
+</tr>
+<tr>
+<td height="5"></td>
+</tr>
+<tr><td>
+
+
+</td>
+</tr>
+
+<tr>
+<td HEIGHT="5"></td>
+</tr>
+</table>
+
+
+</noindexfb><BODYTEXT>
+</A></P><p>View the article archive by:</p><ul><li><a href="year/">Year</a></li><li><a href="topic/">Topic</a></li><li><a href="experience_level/">Experience Level</a></lki><li><a href="industry/">Industry</a></li></ul></p>
+</BODYTEXT>
+
+<!--endtext-->
+
+<br><br>
+
+					</td>
+				</tr>
+			</table>
+			<!--end main section-->
+		</td>
+		<td width="125" align="center" valign="top" style="background-color:#D9D9D9">
+			<div align="center" class="nav_text" style="margin-left:5px; margin-top:6px; margin-right:px;color:#000000;"><a href="/adsales/" class="footer_text" style="color:#808080">
+				Ad Links</a></div>
+			
+
+<table>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link1");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link2");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link3");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link4");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link5");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link6");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link7");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+	<tr><td align="center" class="smalltext"><script type="text/javascript">GA_googleFillSlot("tj_ad_link8");</script></td></tr>
+	<tr><td><img src="/library/graphics/clear.gif" height="0" width="1" alt=""></td></tr>
+
+</table>
+
+
+
+
+<a href="http://store.isixsigma.com/eBooks/Business-Innovation-in-the-21st-Century-eBook/p-107-166/" target="_top"><img alt="Business Innovation in the 21st Century (eBook)" border="0" src="/library/a/iSixSigma_AL.gif" height="240" width="125" style="border:1px solid #CFCFCF; margin-top:5px; margin-right:3px; margin-left:3px;" /></a><br /><br/>
+
+
+
+<a href="/r.asp?id=92" target="_top"><img alt="Advertise on Real Innovation and The TRIZ Journal" border="0" src="/library/a/AdLink.gif" height="120" width="125" style="border:1px solid #CFCFCF; margin-top:5px; margin-right:3px; margin-left:3px;" /></a><br /><br />
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="height:1px" bgcolor="#E0E0E0" valign="top"></td>
+	</tr>
+</table>
+<!--End Main area-->
+
+<!--Footer-->
+
+
+<table border="0" cellpadding="7" cellspacing="0" style="width:100%;vertical-align:top;">
+ 	<tr>
+		<td class="footer_text" style="vertical-align:top;">
+			<a href="http://www.triz-journal.com/uagree/" class="footer_text">Legal Information</a><span style="color:#000000">. &copy; 2006 - 2011 <a href="http://www.ctqmedia.com">CTQ Media</a>. All rights reserved. v1.0, 0.0</span>
+		</td>
+		<td class="footer_text" align="right" style="vertical-align:top;">
+			<a href="http://www.triz-journal.com/submit/" class="footer_text">Submit an Article</a> &bull;
+
+			<a href="http://www.triz-journal.com/about/" class="footer_text">About The TRIZ Journal</a> &bull;
+
+			<a href="http://www.triz-journal.com/contact/Default.asp?ToDo=contact" class="footer_text">Contact Us</a> &bull;
+			<a href="http://www.triz-journal.com/uagree/privacy.asp" class="footer_text">Privacy Policy</a> &bull;
+			<a href="http://search-www.isixsigma.com/sitemap/130985463.html" class="footer_text">Site Map</a>
+		</td>
+	</tr>
+</table>
+<!--Footer-->
+
+
+<script>
+if (parent.frames.length > 0) {
+    // parent.location.href = self.document.location
+}
+var d = new Date()
+if (d.getTimezoneOffset) {
+  var iMinutes = d.getTimezoneOffset()
+  document.cookie = "tz=" + iMinutes
+}
+
+function sendEmail(encodedEmail)
+{
+  location.href = "mailto:" + decodeEmail(encodedEmail);
+}
+
+function decodeEmail(encodedEmail)
+{
+  var email = "";
+  for (i=0; i < encodedEmail.length;)
+  {
+    var letter = "";
+    letter = encodedEmail.charAt(i) + encodedEmail.charAt(i+1)
+
+    email += String.fromCharCode(parseInt(letter,16));
+    i += 2;
+  }
+  return email;
+}
+</script>
+
+</noindexfb>
+
+
+	<script language="JavaScript" type="text/javascript" src="/include/google_triz.js"></script>
+
+
+</body>
+</html>
+

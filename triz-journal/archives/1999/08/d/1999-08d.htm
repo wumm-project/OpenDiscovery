@@ -1,0 +1,237 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+</head>
+
+<body>
+
+<pre>/****************************************************************************
+* Roller Coaster Simulation
+*
+* Title: roller_coaster.java, Kevin C. Rea, 1999
+*
+****************************************************************************
+*
+* Invariant:: 0 &lt;= seats_available &lt;= N
+</pre>
+<pre>Ride() is the operation of getting in line and taking a ride on the coaster
+Load() is the operation of loading the passengers and giving the ride
+Unload() is the operation to unload the passengers when the ride is over
+N is how many seats the coaster has
+</pre>
+<pre>Coarse-Grained Solution:
+Ride(): &lt;await 0 &lt; seats_available &amp;&amp; &lt;= N ==&gt; --seats_available&gt;
+{coaster_loading_passengers == TRUE}
+</pre>
+<pre>Load(): &lt;await seats_available == 0 ==&gt; seats_available += N&gt;
+{passengers_riding &gt; 0}
+</pre>
+<pre>Unload(): &lt;--passengers_riding&gt;
+</pre>
+<pre>Ensuring the Invariant:
+(passengers_waiting &gt; 0 ==&gt; seats_available == 0 || coaster_loading_passengers || passengers_riding &gt; 0) &amp;&amp;
+Exclusion::
+(passengers_riding &gt; 0 ==&gt; !coaster_loading_passengers) &amp;&amp;
+(coaster_loading_passengers ==&gt; passengers_riding == 0) &amp;&amp; (0 &lt;= seats_available &lt;= N)</pre>
+<pre>*/</pre>
+<pre>import Utilities.*;
+import Synchronization.*;</pre>
+<pre>/* Main Driver */
+class roller_coaster extends MyObject {</pre>
+<pre>public static int M = 25; // Number of people in park
+public static int P = 1; // Number of passenger cars
+public static int N = 4; // Number of passengers a car holds
+public static void main(String[] args) {
+Monitor rcMon = new Monitor();</pre>
+<pre>/* Create the Objects */
+car theCar;
+passenger aPassenger;</pre>
+<pre>/* Create arrays of threads for initialization */
+Thread t1[] = new Thread[M];
+Thread t2[] = new Thread[P];</pre>
+<pre>/* Fill the thread arrays */
+for (int i = 0; i &lt; M; i++) {
+aPassenger = new passenger(i, rcMon);
+t1[i] = new Thread(aPassenger);
+}</pre>
+<pre>for (int i = 0; i &lt; P; i++) {
+theCar = new car(i, rcMon);
+t2[i] = new Thread(theCar);
+}</pre>
+<pre>/* Start Threads */
+for(int i = 0; i &lt; M; i++) {
+t1[i].start();
+}</pre>
+<pre>/* Start Threads */
+for(int i = 0; i &lt; P; i++) {
+t2[0].start();
+}
+</pre>
+<pre>try {
+for (int i = 0; i &lt; M; i++) {
+t1[i].join();
+}
+} catch (InterruptedException e) {
+System.err.println(&quot;Interrupted out of passenger thread join&quot;);
+}
+</pre>
+<pre>try {
+for (int i = 0; i &lt; P; i++) {
+t2[i].join();
+}
+} catch (InterruptedException e) {
+System.err.println(&quot;Interrupted out of coaster thread join&quot;);
+}</pre>
+<pre>System.out.println(&quot;Program has terminated Normally&quot;);</pre>
+<pre>} /* End Main */
+} /* End coaster class */</pre>
+<pre>////////////////////////////// PASSENGER CLASS //////////////////////////////
+class passenger extends MyObject implements Runnable {
+private int id;
+private Monitor passengerMon;</pre>
+<pre>public passenger(int i, Monitor monitorIn) {
+id = i;
+this.passengerMon = monitorIn;
+}</pre>
+<pre>public void run() {
+while(true) {
+nap((int) random(80));
+passengerMon.Ride(id);
+}
+}
+} // end passenger class</pre>
+<pre>/////////////////////////////////// CAR CLASS //////////////////////////////
+class car extends MyObject implements Runnable {
+private int id;
+private Monitor carMon;</pre>
+<pre>public car(int i, Monitor monitorIn) {
+id = i;
+this.carMon = monitorIn;
+}</pre>
+<pre>public void run() {
+while(true) {
+carMon.Load(id);
+nap((int) random(80));
+carMon.Unload(id);
+</pre>
+<pre>}
+}
+} // end car class
+
+</pre>
+<pre>class Monitor {
+private int i, line_length; // Number of passengers waiting to board the car.
+private int seats_available = 0;
+boolean coaster_loading_passengers = false;
+boolean passengers_riding = true;
+</pre>
+<pre>/* For each &lt;awaitB¡ -&gt; S¡&gt;, declare one private notification instance
+of class Object */
+private Object notifyPassenger = new Object(); // enter/exit protocol provides mutual exclusion.
+private Object notifyCar = new Object(); // the car waits on this.
+</pre>
+<pre>// For each &lt;awaitBi -&gt; Si&gt; define one private synchronized method (checkBSi)
+public void Ride(int i) {
+synchronized (notifyPassenger) {
+while (!checkSeats()) {
+try {
+notifyPassenger.wait();
+} catch (InterruptedException e){}
+}
+}
+System.out.println(&quot;Passenger &quot;+ i + &quot; gets in car at: &quot; + System.currentTimeMillis());
+synchronized (notifyCar) {notifyCar.notify();}
+}
+</pre>
+<pre>// checkBSi
+private synchronized boolean checkSeats() {
+if ((seats_available &gt; 0) &amp;&amp; (seats_available &lt;= roller_coaster.N) &amp;&amp; (!passengers_riding)) {
+seats_available--;
+return true;
+} else return false;
+}
+</pre>
+<pre>/* For each &lt;awaitB¡ -&gt; S¡&gt;, define one public (non-synchronized) method¡ */
+public void Load(int i) {
+synchronized (notifyCar) {
+while (!checkRiding()) {
+try {
+notifyCar.wait();
+} catch (InterruptedException e){}
+}
+}
+System.out.println(&quot;The Car is full and gives RIDE at &gt;&gt; &quot;+ System.currentTimeMillis());
+synchronized(notifyPassenger) {notifyPassenger.notifyAll();}
+}
+</pre>
+<pre>private synchronized boolean checkRiding() {
+if (seats_available == 0) {
+seats_available = roller_coaster.N;
+coaster_loading_passengers = true;
+passengers_riding = true;
+return true;
+} else return false;
+}
+</pre>
+<pre>/* &lt;Sj&gt; */
+public void Unload(int i) {
+synchronized (this) {
+passengers_riding = false;
+coaster_loading_passengers = false;
+}
+System.out.println(&quot;The Car RETURNS and unloads passengers at &gt;&gt; &quot;+ System.currentTimeMillis());
+synchronized(notifyPassenger) {notifyPassenger.notifyAll();}
+}
+} // end roller_coaster monitor class</pre>
+<pre>/*</pre>
+<pre>Java version=1.2.1, Java vendor=Sun Microsystems Inc.
+OS name=Windows NT, OS arch=x86, OS version=4.0
+Sat Aug 28 15:34:19 EDT 1999
+The Car is full and gives RIDE at &gt;&gt; 935868859630
+The Car RETURNS and unloads passengers at &gt;&gt; 935868859740
+Passenger 23 gets in car at: 935868859740
+Passenger 15 gets in car at: 935868859740
+Passenger 8 gets in car at: 935868859740
+Passenger 1 gets in car at: 935868859740
+The Car is full and gives RIDE at &gt;&gt; 935868859750
+The Car RETURNS and unloads passengers at &gt;&gt; 935868859780
+Passenger 12 gets in car at: 935868859780
+Passenger 21 gets in car at: 935868859790
+Passenger 7 gets in car at: 935868859790
+Passenger 4 gets in car at: 935868859800
+The Car is full and gives RIDE at &gt;&gt; 935868859800
+The Car RETURNS and unloads passengers at &gt;&gt; 935868859830
+Passenger 6 gets in car at: 935868859830
+Passenger 17 gets in car at: 935868859830
+Passenger 20 gets in car at: 935868859830
+Passenger 3 gets in car at: 935868859840
+The Car is full and gives RIDE at &gt;&gt; 935868859840
+The Car RETURNS and unloads passengers at &gt;&gt; 935868859910
+Passenger 2 gets in car at: 935868859910
+Passenger 0 gets in car at: 935868859910
+Passenger 10 gets in car at: 935868859910
+Passenger 16 gets in car at: 935868859910
+The Car is full and gives RIDE at &gt;&gt; 935868859910
+The Car RETURNS and unloads passengers at &gt;&gt; 935868859980
+Passenger 1 gets in car at: 935868859990
+Passenger 4 gets in car at: 935868859990
+Passenger 6 gets in car at: 935868859990
+The Car is full and gives RIDE at &gt;&gt; 935868859990
+Passenger 5 gets in car at: 935868859990
+The Car RETURNS and unloads passengers at &gt;&gt; 935868860061
+Passenger 17 gets in car at: 935868860061
+Passenger 3 gets in car at: 935868860071
+Passenger 7 gets in car at: 935868860071
+Passenger 12 gets in car at: 935868860071
+The Car is full and gives RIDE at &gt;&gt; 935868860071
+.....</pre>
+<pre>*/
+// end ouput run (compiled with Java 1.2.1 Native Threads)</pre>
+
+</body>
+
+</html>
+

@@ -1,0 +1,587 @@
+<h1>Compatiability Analysis and Case Studies of Axiomatic Design and TRIZ</h1>
+
+<p><font color="#008080">This is part 2 of a 2-part article. <a href="../../08/d/index.htm">Part
+1</a> appeared in August, 2000. A Comparison of TRIZ and Axiomatic Design.</font></p>
+<b>
+
+<p ALIGN="CENTER">Kai Yang and Hongwei Zhang<br>
+<a href="mailto:kyang@mie.eng.wayne.edu">kyang@mie.eng.wayne.edu<br>
+</a>Department of Industrial and Manufacturing Engineering<br>
+Wayne State University<br>
+Detroit, MI 48202, USA</p>
+</font><font SIZE="2">
+<p>&nbsp;</p>
+</font><b>
+<p>ABSTRACT</p>
+</b>
+<p>This is our second research paper in comparisons of TRIZ and Axiomatic
+Design. In this paper, design problem solving approaches of Axiomatic Design and
+TRIZ are analyzed and compared in detail, and several case studies are discussed
+to support our point of view about these two methodologies.</p>
+<p>&nbsp;</p>
+<b>
+<p>INTRODUCTION</p>
+</b>
+<p>The first research paper in comparisons of TRIZ and Axiomatic Design, these
+two methodologies are reviewed and briefly compared. The conclusion is that some
+design rules in AD and problem-solving tools in TRIZ are related and share the
+same ideas in essence. The objectives of this paper is to compare and contrast
+TRIZ and Axiomatic Design problem solving methods in detail, and to discuss the
+possibility of integration of them. The long-term goal of this work is to
+develop a generic framework and tools to help designers make and understand
+correct design decisions.</p>
+<p>The body of this paper is divided into five parts. The first part discusses
+the domain mapping theory in AD and contradiction transformation idea in TRIZ.
+The second and third parts analyze two axioms and their possible corresponding
+techniques in TRIZ. The fourth part presents complementarity of these two
+methodologies using a case study, and the last part discusses the advantages and
+limitations of TRIZ and Axiomatic design.</p>
+<p>&nbsp;</p>
+<b>
+<p>DOMAIN MAPPING IN AD AND CONTRADICTION TRANSFORMATION IN TRIZ</p>
+</b>
+<p>AD states that design is the creation of synthesized solutions in the form of
+products, processes, or systems that satisfy perceived needs through the mapping
+between the FRs in functional domain and the DPs in physical domain, through the
+proper selection of DPs that satisfy FRs. To conduct design, one must determine
+the design objective by defining it in terms of functional requirements. Then to
+satisfy these functional requirements, a physical embodiment characterized in
+terms of design parameters must be created. The design process involves relating
+these FRs of the functional domain to the DPs of the physical domain.</p>
+<p>TRIZ, on the other hand, states that some design problem may be modeled as a
+technical contradiction, which is the functional conflict or coupling. A problem
+requires creativity when attempts to improve some functional attributes lead to
+deterioration of other functional attributes. A design problem associated with a
+pair of functional contradiction can be resolved either by finding a trade-off
+between the contradictions, or by overcoming it. TRIZ does not accept
+trade-offs, and it stresses that an ideal design solution is to overcome the
+conflict.</p>
+<p>Extensive studies in invention problem solving demonstrate that a functional
+contradiction is derived from a physical one. In order to overcome a functional
+conflict, one has to identify a physical element of the system that controls the
+competing attributes, and this element must be modified in such a way that it
+would meet the opposite requirements to its state. Transforming a functional
+contradiction in system level into a physical contradiction in component level
+is always required in TRIZ. Figure 1 illustrates this idea.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The following Ampoules Sealing case study demonstrates that TRIZ and AD
+theory offer the compatible ideas in problem solving.</p>
+<i>
+<p>Ampoules Sealing Case Study</p>
+</i>
+<p>In a manufacturing process a burner is used to seal ampoules containing
+drugs. The problem is that the flame may overheat the drug in ampoules and
+degrade the drugs. What should we do in this situation?</p>
+<p>Let us use AD theory and TRIZ to analyze the manufacturing process and then
+compare their similarity and differences. From AD standpoint, the functional
+requirements in the functional domain of this manufacturing process may be
+expressed as two independent requirements that satisfy the Axiom 1.</p>
+<p>FR1 = seal ampoules</p>
+<p>FR2 = protect drugs from deterioration during the process</p>
+<p>The original design selects only one design parameter in its physical domain,
+which is:</p>
+<p>DP1 = heat by a burner.</p>
+<p>There are two FRs but only one DP in the design solution. The number of DPs
+is less than the number of FRs. Based on the Theorem 1, the design is either a
+coupled design result, or the FRs cannot be satisfied. It is clearly that this
+is a coupled design because DP1 affects both FR1 and FR2. The design equation
+is:</p>
+<p>&nbsp;</p>
+<p>In order to satisfy two FRs independently, the process design should be
+decoupled. Theorem 2 states: when a design is coupled due to the greater number
+of FRs than DPs (i.e, <i>m&gt;n</i>), it may be decoupled by addition of new DPs
+so as to make the number of FRs and DPs equal to each other. If a subset of the
+design matrix containing <i>n<font FACE="Symbol">´</font>n</i> elements, one
+can constitute a triangular design matrix to decouple the previous design.</p>
+<p>So, the coupled design represented by above equation can be modified into a
+decoupled design by adding a DP and changing the design matrix into a triangular
+one as follows:</p>
+<p>&nbsp;</p>
+<p>If the burner represents DP1, what is DP2? It is obvious that DP2 should
+counteract the effect of the heat produced by the burner. In practice, water is
+an ideal component to offset the heat. So, the one possible design solution is
+given in figure 2.</p>
+<p>&nbsp;</p>
+<font FACE="Times New Roman" SIZE="2">
+<p ALIGN="CENTER"><img SRC="Image18.gif" WIDTH="407" HEIGHT="241"></p>
+</font>
+<p>From TRIZ standpoint, this design problem situation can be easily modeled as
+the technical contradiction (functional conflict) in the system level: we want
+to heat ampoule top (attribute “A”) to seal ampoules but it causes
+degradation to medicine (attribute “B”).</p>
+<b>
+<p>&nbsp;</p>
+</b>
+<p>TRIZ contradiction analysis states that at the heart of a technical
+contradiction is hidden a physical one. In order to overcome the technical
+contradiction, a physical component should be modified in such a way that it
+would meet the opposite requirements. In this ampoule sealing case, the heat
+improves “A” (seal), but degrades “B”(medicine in the ampoule). So, the
+ampoules should be hot to improve seal, and it should be cold to not damage the
+medicine. Clearly the ampoule is the physical component that controls the
+technical contradiction.</p>
+<p>TRIZ Knowledge Base tools provide several separation principles to overcome
+physical contradictions. Three most frequently used principles are separation of
+opposite properties in space, separation of opposite properties in time and
+separation of opposite properties between whole system and its components.</p>
+<p>Careful examination of three separation principles, it is not difficulty to
+recognize that separation in space should be used in this situation. In order to
+make the top of an ampoule hot and other part cold, it is proposed to surround
+the ampoules with a water jacket. The water takes excess heat away from ampoules
+to prevent overheating the drag (see figure 2).</p>
+<p>&nbsp;</p>
+<b>
+<p>INDEPENDENCE AXIOM IN AD AND SEPARATION PRINCIPLES IN TRIZ</p>
+</b>
+<p>Independence Axiom in AD implies that the design matrix be of a special form.
+The consequences of applying Axiom 1 to the design matrix are as follows:</p>
+<blockquote>
+  <blockquote>
+    <p>It is desirable to have a square matrix, i.e., <i>n=m</p>
+    </i>
+    <p>The matrix should be either diagonal or triangular.</p>
+  </blockquote>
+</blockquote>
+<p>In real design situation, we need to search for DPs that yield a diagonal or
+triangular design matrix. The degree of independence can be treated as the
+definition of tolerance.</p>
+<p>There are a hierarchy in both the functional domain and the physical domain,
+and a zigzagging process between two domains in design process. The domain
+process is most straightforward when the solution consists of uncoupled design
+at each level. When the design is uncoupled, we can deal with the individual FRs
+of a hierarchical level without considering other FRs of the same level and
+proceeding hierarchical levels. When the design is coupled, we must consider the
+effect of a decision on other FRs and DPs. Figure 3 shows the design matrices
+and structure models. Therefore, the designer should try to find solutions by
+attempting to uncouple or decoupled design in every level of design hierarchy.</p>
+<p>The problem is how to decouple a coupled design. It is obvious to modify
+design matrix to be either diagonal or triangular. In practice, many coupled
+designs undergo changes and become a decoupled design through a trial and error
+process that is in opposition to TRIZ methodology.</p>
+<p>In TRIZ methodology, a coupled design is defined as the existence of a
+contradiction. Removal of dependency of coupling means to overcome a technical
+or physical contradiction by applying inventive principles or separation
+principles. Thus, these principles can serve, with AD corollaries and theorems,
+as the guidelines of de-coupling a coupled design.</p>
+<p>The design process of the Paper Handling Mechanism [11] illustrates how
+separation principles in TRIZ aid to satisfy Axiom 1 in AD.</p>
+<font FACE="Times New Roman" SIZE="2">
+<p><img SRC="Image19.gif" WIDTH="594" HEIGHT="167"></p>
+</font><i>
+<p>&nbsp;</p>
+<p>Paper Handling Mechanism Case Study</p>
+</i>
+<p>The function of the paper handling mechanism used in an automatic teller
+machine is “isolate one bill from piled bills”, which is the first FR of the
+system. Several physical structures can be used to realize this functional
+requirement, such as friction, vacuum and leafing etc. Friction method is
+selected and its mechanism is showed in figure 4.</p>
+<font FACE="Times New Roman" SIZE="2">
+<p ALIGN="CENTER"><img SRC="Image20.gif" WIDTH="251" HEIGHT="173"></p>
+</font>
+<p ALIGN="CENTER">&nbsp;</p>
+<p>However, this DP does not always work correctly because the friction is
+changeable under some circumstances. If the friction force working on the tope
+of bill becomes too large by some accident, two or more bills will be sent
+forwards, and if it becomes too small the top bill may not be isolated. So, we
+have to decompose the first level functional requirement into two functional
+requirements: “give a forward force to the first bill” and “give a
+backward force to the second bill”. To satisfy these two requirements, the new
+DP of this design is a pair of rollers rotating in the same direction shown in
+figure 5. Furthermore, the friction coefficient of the upper roller is large
+than that of the lower roller.</p>
+<font FACE="Times New Roman" SIZE="2">
+<p ALIGN="CENTER"><img SRC="Image21.gif" WIDTH="243" HEIGHT="168"></p>
+</font>
+<p ALIGN="CENTER">&nbsp;</p>
+<p>So, the design equation is:</p>
+<blockquote>
+  <blockquote>
+    <font FACE="Times New Roman" SIZE="2">
+    <p><img SRC="Image22.gif" WIDTH="166" HEIGHT="38"></p>
+    </font>
+  </blockquote>
+</blockquote>
+<p>FR1: give the a forward force to the first bill</p>
+<p>FR2: give a backward force to the second bill</p>
+<p>DP1: upper roller</p>
+<p>DP2: lower roller</p>
+<p>A<font SIZE="2">11</font> represents the friction between upper roller and
+the first bill; A<font SIZE="2">22</font> is the friction between lower roller
+and the second bill. A<font SIZE="2">12</font> and A<font SIZE="2">21</font>
+represent the friction between two bills, so A<font SIZE="2">12</font> is equal
+to A<font SIZE="2">21</font>. Compared to A<font SIZE="2">11</font> and A<font SIZE="2">22</font>,
+A<font SIZE="2">12</font> and A<font SIZE="2">21</font> can be ignored, thus two
+requirements can be satisfied independently.</p>
+<p>The remaining questions are:</p>
+</p><ul>
+  <li>What happens if there are three or more bills are inserted between the two
+    rollers at the same time?</li>
+  <li>What happens after the first bill is sent forward if the roller keeps
+    rotating?</li>
+  <li>What happens when the quality of the bill changes?</li>
+</ul>
+<p>To solve these problems, the following four more FRs are defined.</p>
+<p>FR3: slant the cross section of the piled bills to make isolation easy.</p>
+<p>FR4: pull out the isolate bill</p>
+<p>FR5: adjust the friction force.</p>
+<p>FR6: decrease the forward force after one bill is gone</p>
+<p>In AD theory, these six FRs are the minimum set of independent requirements
+that completely characterize the design objectives for the specific needs of the
+paper handling mechanism. Six DPs in the physical domain are selected as follows
+and the mechanism is illustrated in figure 6A.</p>
+<p>DP1: upper rollers</p>
+<p>DP2: lower roller</p>
+<p>DP3: wedge-shaped floor guide</p>
+<p>DP4: carriage pinch rollers</p>
+<p>DP5: press plate</p>
+<p>DP6: cam</p>
+<p>However, from TRIZ standpoint, FR1 and FR6 can be viewed as a functional
+contradiction because FR1 requires a forward force and FR6 requires a backward
+force. In order to satisfy FR1 and FR6, the friction between upper roller and
+the first bill should be large and small. Two factors control the friction force
+between the upper roller and the first bill: pressure and friction coefficient,
+which means either the pressure, or the friction coefficient should be large and
+small. Separation of opposite properties in time, one of TRIZ separation
+principles, can be utilized because the FR1 and FR6 are not required at the same
+time.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>One design solution, making the pressure large and small, is given in figure
+6A. Another design alternative is illustrated in figure 6B. In this design
+solution, a partial rubber roller is used to satisfy the requirements, because
+its friction coefficient is large at one time and small in another time. So,
+only five physical components are needed to realize the six functional
+requirements because the partial rubber roller can satisfy FR1 and FR6
+independently. Compared with two design alternatives, it is clearly that the
+design expressed in figure 6B is better one because of its simple structure.
+Simple structure means less information is needed to produce the product (see
+the next part).</p>
+<b><font FACE="Arial">
+<p>&nbsp;</p>
+</font>
+<p>INFORMATION AXIOM IN AD AND PATTERNS OF TECHNOLOGICAL</p>
+<p>SYSTEM EVOLUTION IN TRIZ</p>
+</b>
+<p>Axiomatic Design theory proposes two design axioms that provide the mechanism
+for assessing alternatives at each design. The first axiom is the independence
+axiom and the second is the information axiom. The axiom 1 requires that the
+functional requirements should be independent. However, the functional coupling
+should not be confused with physical coupling, which is often desirable as a
+consequence of Axiom 2. Integration of more than one function in a single
+physical part, as long as the functions remain independent, should reduce the
+information content, i.e., the design complex.</p>
+<p>Professor Suh uses Bottle/Can opener design to illustrate the physical
+integration without comprising functional independence [1]. The functional
+requirements of the Bottle/Can Opener are:</p>
+<p>FR1 = open beverage bottles</p>
+<p>FR2 = open beverage cans</p>
+<font FACE="Times New Roman" SIZE="2">
+<p><img SRC="Image23.gif" width="353" height="155"></p>
+</font>
+<p>By definition, the two FRs are independent. We sometimes wish to open a
+bottle or a can, but not both simultaneously.</p>
+<p>In the very simple design, the means for achieving the two FRs independently
+are embodied in the same physical device rather than in two separate components.
+Therefore minimal information content is required to manufacture device.</p>
+<p>&nbsp;</p>
+<p>The design does not couple the FRs because the act of opening cans does not
+interfere with or compromise the requirement of opening bottles. The FRs would
+be coupled only if only there were a FR to open bottles and cans simultaneously,
+which is not the case here. So the design solution is that two separate
+functions are fulfilled by one physical piece without functional coupling. So,
+physical integration without functional coupling is advantageous, since the
+complexity of the product is reduced.</p>
+<p>It is interesting that the same design solution could be obtained if we
+applied TRIZ methodology. More importantly and generally, TRIZ offers eight
+patterns of evolution of technological systems which allow one to identify the
+most effective direction for the system’s development.</p>
+<p>In Bottle/Can opener example, at least two patterns might be used to predict
+or explain why two functions should be integrated into one physical device
+without coupling.</p>
+<p>The first pattern is the Evolution toward Increase Ideality, which states
+that evolution of all the technological system proceeds in the direction of
+increasing degree of ideality. This means that in the process of evolution
+either the system of performing a certain functions gets less complicated/cost,
+or the system becomes capable of performing its function better or perform more
+functions than for which it was original designed. The ideality may be expressed
+as the equation as:</p>
+<blockquote>
+  <blockquote>
+    <font FACE="Times New Roman" SIZE="2">
+    <p><img SRC="Image24.gif" width="12" height="22"><img SRC="Image25.gif" WIDTH="311" HEIGHT="41"></p>
+    </font>
+  </blockquote>
+</blockquote>
+<p>Based on this equation, it is clearly that the degree of ideality of
+Bottle/Can opener is bigger than that of two single openers (Bottle and Can).
+The reason is that functions of bottle/can opener are the same as that of two
+individual openers, but manufacturing cost is reduced. In terms of AD theory,
+the information content of one bottle/can is less than that of two individual
+openers. So, the conclusion is that the ideality in terms of TRIZ and the
+information axiom of AD theory are the compatible parameters in assessment of
+technological system and design solution. The pattern “Evolution toward
+Increase Ideality” in TRIZ is compatible with the Information Axiom in AD.</p>
+<p>The second applicable pattern is “Increased Complexity Followed by
+Simplification”. This pattern consists of several evolution lines and “Line
+Mono-Bi-Poly” fits very well in predicting and interpreting this Bottle/Can
+Opener design solution. From TRIZ standpoint, bottle opener and can opener are
+two simple mono function systems. “Line Mono-Bi-Poly” states: if the
+technological system is a mono-system, it evolves by changing it to a bi-system.
+If it is a bi-system, it evolves to a poly-system. A single-barreled hunting
+rifle evolves to a two-barreled hunting rifle and its mono-functional
+performance is doubled. However, wristwatch calculator is a bi-function device
+by integrating two functions, measuring time and doing calculation, into a
+physical device. It is clearly that this pattern also satisfies the Axiom 2
+because the new system enhances functions of the previous system in the limit
+cost. We should note that the evolution of technological system along the line
+of “Mono-Bi-Poly” does not violate the Independence Axiom.</p>
+<b>
+<p>&nbsp;</p>
+<p>KNOWLEDGE BASE TOOLS IN TRIZ AND ANALYTICAL METHODS IN AD</p>
+</b>
+<p>Many case studies in applying AD theory, related to manufacturing process,
+material process, product design, software development, have been published in
+recent years. These applications illustrate how Axiom 1 and Axiom 2 can be used
+in solving real problems. By examination of these case studies, we find that
+many decisions can be made qualitatively if we understand the basic engineering
+principles, physical and chemical effects. To proceed with the design task,
+engineers need a database and computers. The database should contain sufficient
+knowledge to make the computer to communicate with the designer and to give the
+designer information about plausible design solution [12].</p>
+<p>AD offers two design axioms and several theorems and corollaries, but it has
+not developed such a knowledge base yet to support these design rules. Therefor,
+in AD theory framework the engineering problem solving mainly depends on the
+engineer’s personal background and knowledge. A study shows that an average
+engineer knows usually 50-100 physical effects and phenomena, while there are
+more than 6,000 physical effects described in scientific literature [5]. Each
+effect may be a key to solving a large group of problems. Since engineering
+students are not usually taught how to apply these effects to practical
+situation, they often have problems with utilization of such well-know effects
+as thermal expansion or frequency resonance, let alone with less recognized
+effects. So, when applying AD to the product or manufacturing process design, an
+average engineer likely encounters problems such as what effects should be used
+and how to apply them.</p>
+<p>Motivated by the need to help engineers to apply some physical and chemical
+effects in the engineering problem solving, TRIZ effect knowledge base has been
+developed in the past decades. This knowledge base is built on a functional
+principle: it contains a list of functions (applications) that commonly
+encountered in practice, and a corresponding list effects and application
+examples that serve as the guidelines to realize these functions. By integrating
+this TRIZ knowledge base into AD theory, the effectiveness of problem solving
+can be enhanced tremendously.</p>
+<p>Here is the case study from the book [1]. We use this example to demonstrate
+how this TRIZ knowledge base can aid to solve real problems.</p>
+<p>&nbsp;</p>
+<i>
+<p>Method and Apparatus for Mixture Solid Particles Case Study</p>
+</i>
+<p>The dry mixing of fine powder is a very difficulty process, as they tend to
+segregation as a function of particle size; to agglomerate, forming clumps, and
+to compact into a cake. However, a “perfect” mixture is desired in many
+applications. A perfect mixture is defined as one in each component is evenly
+distributed throughout the mixture, so that with reference to the smallest
+sample, of interest, the ratio of particle components in every such sample is
+the same as the ratio of components in the entire mixture.</p>
+<p>In order to realize a perfect mixture of two components, Professor Suh
+proposed a method and designed an apparatus [1]. Two different powder A and B,
+are stored in separate containers, through which air flows. The air stream
+carries the particles and conveys them to channels that direct the flow of
+particles past corona discharge devices. The corona devices have high voltage
+corona point electrodes and ground electrodes. One of the electrodes is supplied
+with a positive voltage with respect to ground, and other electrode is supplied
+with a negative voltage with respect to ground. The corona discharge across the
+electrode ionizes the air particles. The ionized air particles combined with the
+particle A and B as they pass between the electrodes, so as to impart a positive
+and negative charge on the particles, respectively.</p>
+<font SIZE="2">
+<p>&nbsp;</p>
+</font><font FACE="Times New Roman" SIZE="2">
+<p><img SRC="Image26.gif" WIDTH="307" HEIGHT="325"></p>
+</font>
+<p>Since the particles in each stream are charged with the same charge, the
+stream spreads as each stream leaves the region of each corona discharge device.
+As they enter a mixing chamber, the streams of oppositely charged particle
+attract each other, so particles of one charge tend to pair up with particles of
+the other charge as both streams are conveyed down through the mixing chamber
+(see figure 8).</p>
+<p>Professor Suh and his associates considered all plausible solutions in
+physical domain, then they came to the conclusion that corona effects should be
+used. In the book Suh analyzed how the design solution satisfy Axiom 1 in
+detail, but how they came up with the idea of utilizing corona effect remained
+as somewhat nebulous and protracted.</p>
+<p>At this point, applying TRIZ knowledge base may help us to generate the
+possible solution. In this case, the highest level functional requirement (FR)
+is to combine particle A with particle B. It is clearly that the problem is to
+realize the required function and TRIZ physical, chemical and geometric effect
+knowledge base can help to come up with design concept.</p>
+<p>&nbsp;</p>
+<p>Effect Knowledge base in TRIZ does not offer “function of mixture of
+particles” but it does have the inverse function, “separation of substance”.
+In order to realize the function of “separating particles of substances”,
+the knowledge base offers us the following effects [10]:</p>
+<font SIZE="3">
+</p><ul>
+  <li>Adsorption</li>
+  <li>Archimdes’ principle</li>
+  <li>Corona discharge</li>
+  <li>Coulomb’s law</li>
+  <li>Crystallization</li>
+  <li>Electrolysis</li>
+  <li>Ferromagnetism</li>
+  <li>Forced oscillations</li>
+  <li>Lamina flow</li>
+  <li>Neutron action</li>
+  <li>Oxidation by oxygen</li>
+  <li>Oxidation by ozone</li>
+  <li>Ranque effect</li>
+  <li>Silent discharge</li>
+  <li>Turbulent flow</li>
+  <li>Vibration</li>
+  <li>Wetting</li>
+</ul>
+</font>
+<p>The Effect Knowledge base suggests that these physical and chemical effects
+should be considered when you want to separate particles of substances. By
+careful examination of these effects and analysis of examples, it is not
+difficult for us to come to the conclusion that corona effect and Coulomb’s
+Law could be applied to both separate and mix particles of substance.</p>
+<p>If particle A and B have same electrostatic charges, they are exclusive.
+However, opposite electrostatic charges provide internal forces among particles.
+So, a perfect mixture might be realized if component A takes positive charge and
+B negative charge. In order to make particles A and B have the opposite charges,
+they should combine with the ionized air particles as they pass between the
+electrodes, so as to impart a positive and negative charge on the particles,
+respectively.</p>
+<p>The task of TRIZ is finished at this functional level once the design idea of
+mixing two powders by means of electric field is derived. The further design
+process, how the idea is realized by physical structure, depends on the proper
+application of AD analytical analysis method. Actually AD decomposes the highest
+functional requirements into several low-level requirements through zigzagging
+process. For each functional requirement at the low level, TRIZ may find its new
+applications. In this way, AD approach may be viewed as analytical tool and TRIZ
+as synthesis tool. They are complementary very well in the real problem solving.</p>
+<p>&nbsp;</p>
+<b>
+<p>ADVANTAGES AND LIMITATIONS</p>
+</b>
+<p>Several examples given above have demonstrated that TRIZ fits very well into
+the “ideation and create” element of axiomatic design process. In these
+examples, TRIZ knowledge base tools make the nebulous searching process for an
+acceptable design solution clear if the design problem could be traced into a
+particular area of design hierarchy.</p>
+<p>However, as the systematic design methodology, axiomatic design does have
+several advantages in creating and evaluating a system structure.</p>
+<font SIZE="2"></font>
+</p><ol>
+  <li>In AD theory, the design process is defined as the development and
+    selection of a means to satisfy objects, subject to constraints. It is
+    series steps, or activities, by which inputs are transformed to an output.
+    This transformation occurs by means of the designer assistant by design
+    tools/methods and knowledge base. The design object may be a physical
+    object, a manufacturing process, a software or an organization, whatever the
+    customer is willing to accept. However, TRIZ confines its application to
+    technological systems since its methods, tools and knowledge base are from
+    patent database. There are very few case studies in the fields of software
+    development and organization structure design.<br>
+    &nbsp;</li>
+  <li>AD places careful emphasis on the importance of recognizing the
+    hierarchical nature of design, and particularly to ensuring that the process
+    of iteration between FRs in functional domain and DPs in physical domain is
+    carried out in a systematic manner. In general, a system, especially a
+    complex one, cannot be designed without zigzagging and decomposing to create
+    FR and DP hierarchy. This systemization occurs through an essentially
+    top-down approach. Definition of system level FRs permits derivation and
+    iteration of system level DPs, and then most importantly-definition of the
+    system level DPs is necessary before FRs at the next level down in the
+    hierarchy may occur; and so on right through each level of the hierarchy.
+    The designer follows this zigzagging approach, checking the correctness of
+    the design at each level using two axioms, until he has decomposed the
+    problem to a point where the solution to the remaining sub-problem is known.
+    In effect, AD suggests that the final solution of top level FRs can only
+    really be achieved after each layer of the problem hierarchy has been given
+    due consideration and iterated accordingly. TRIZ methodology models a design
+    problem either as a technical contradiction that might be overcome by the
+    contradiction table, or as the substance-field model that 76 Standard
+    Solutions may aid to find the design solutions. These two models do not pay
+    much attention to the hierarchical nature of the product system, so they
+    only work well in the individual design level.<br>
+    &nbsp;</li>
+  <li>In AD, two design axioms provide a rational means for evaluating the
+    quality of proposed designs so that design decision may be made on a
+    rational basis, support by easily understood math models and analytical
+    results. The simple math models guide designers to consider alternatives at
+    all levels of detail and makes choices between these alternatives more
+    explicit. On the other hand, TRIZ use very abstract terms to express its
+    theory and method, and it lacks math models and quantitative methodology to
+    support its applications. For a new practitioner, it is very hard to follow
+    its principles and others techniques.<br>
+    &nbsp;</li>
+</ol>
+<b>
+<p>CONCLUSIONS</p>
+</b>
+</p><ol>
+  <li>Axiomatic design perspectives on functional, physical and process
+    hierarchies in the design of a system offer a powerful analytical tool to
+    design problem. Two axioms and several corollaries and theorems serve as
+    guidelines for problem solving, and easy understanding math models provide
+    quantitative criteria to evaluate design alternatives. However, Axiomatic
+    design lacks the vast knowledge base to support the application of its
+    theory, so the creative process of conceptualizing and devising a solution
+    is not very clear.<br>
+    &nbsp;</li>
+  <li>TRIZ models a practical problem to be either a contradiction, or a
+    substance-field model, or a simple function requirement, which serve the
+    first step to problem solving. The second step is to apply its knowledge
+    base tools to search for possible ideas, which guide designer to the
+    suitable design solution. Since TRIZ concentrates its study on the
+    individual part of a technical system, it is very useful in dealing with one
+    functional requirement situation, but in multi-objective situation or
+    multi-level system structure its limitations are obvious. TRIZ consists of
+    both analytical and knowledge base tools, however, its knowledge base tools
+    are used much more frequently in practical design world.<br>
+    &nbsp;</li>
+  <li>The basic foundations of TRIZ and Axiomatic Design methodology are
+    compatible. Several case studies in this paper show that in the framework of
+    axiomatic design, integration of TRIZ knowledge base tools with axiomatic
+    design analytical methods aids to come up with design concepts and make the
+    design process clear. On the base of TRIZ methodology, hierarchical idea for
+    a design process in axiomatic design enhances TRIZ problem solving
+    abilities, especially in the complicated system situation.<br>
+    &nbsp;</li>
+</ol>
+<b>
+<p>REFERENCES</p>
+</b>
+</p><ol>
+  <li>Suh, N.P., “The Principles of Design”, Oxford University Press, 1990</li>
+  <li>G.S. Altshuller, “Creativity as an Exact Science”. Gordon and Breach
+    Science Publishers, 1984</li>
+  <li>Leonard D.A and Suh N.P “Axiomatic Design and Concurrent Engineering”.
+    Computer-Aided Design, Vol. 26, N 7 July 1994</li>
+  <li>G.S Altshuller, “And Suddenly the Inventor Appeared”. Technical
+    Innovation Center, Inc. 1996</li>
+  <li>Victor R. Fey and Eugene I. Rivin, “The Science of Innovation-A
+    Managerial Overview of the TRIZ Methodology”, TRIZ Group,1997.</li>
+  <li>Mann, D.L., “Axiomatic Design and TRIZ: Compatibility and Contradictions”
+    ,TRIZ Journal, June and July 1999</li>
+  <li>Boris Zlotin and Alla Zusman, “Mapping Innovation Knowledge” April
+    1999, Triz-Journal.</li>
+  <li>Alla Zusman and John Terninko, “TRIZ/Ideation Methodology for Customer
+    Driven Innovation”, Ideation International Inc. 1996.</li>
+  <li>“Tools of Classical TRIZ”. Ideation International Inc. 1999.</li>
+  <li>Invention Machine Lab 2.12.</li>
+  <li>Shinya.S and Kawassaki.U, “A Study of Creative Design Based on the
+    Axiomatic Design Theory”, DE-Vol.68, Design Theory and Methodology-DTM’94
+    ASTM 1994</li>
+  <li>Nam P. Suh and Shinya Sekimoto “Design of Design Thinking Machine”
+    Ann.CIRP Vol 39 No 1 (1990) pp 145-148</li>
+</ol>
+<blockquote>
+  <font FACE="Times New Roman" SIZE="2">
+  <p>&nbsp;</p>
+  </blockquote>
+</font>
+

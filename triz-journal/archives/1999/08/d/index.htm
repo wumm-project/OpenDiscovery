@@ -1,0 +1,921 @@
+<h1>Using TRIZ in Computer Science - Concurrency</h1>
+
+<blockquote>
+  <blockquote>
+    <p><b>Kevin C. Rea, Principle Consultant<br>
+    REA Consulting<br>
+    E-mail: <a href="mailto:kcronline@gmail.com">kcronline@gmail.com</a><br>
+	Web site: <a href="http://kevincrea.com/">http://kevincrea.com/</a></b></p>
+  </blockquote>
+</blockquote>
+<p class="ChapterSubtitle" style="text-indent: 0; margin-left: 0; margin-right: 0"><b>Introduction</b></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0">TRIZ
+offers a wide-ranging series of tools and methods to help designers and
+inventors to solve problems in creative and powerful ways. These methods have
+centered around traditional sciences and engineering disciplines such as
+Physics, Mechanical, Electrical, Chemical Engineering; however, TRIZ in Computer
+Science is new.</p>
+<p class="MsoListNumber" style="text-indent: 0; mso-list: none; margin-left: 0; margin-right: 0">In
+this article, I attempt to break some &quot;Psychological Inertia&quot; in the
+area of Computer Science.<span style="mso-spacerun: yes">&nbsp; </span>The
+problem presented is a concurrency programming problem known as the &quot;Roller
+Coaster Problem.&quot;<span style="mso-spacerun: yes">&nbsp; </span>In this
+problem, we will use TRIZ to create an algorithm used to simulate the actions of
+our roller coaster.<span style="mso-spacerun: yes">&nbsp;</span></p>
+<p class="ChapterSubtitle" style="text-indent: 0; margin-left: 0; margin-right: 0"><b>Concurrency</b></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0">Concurrent
+programming is the activity of constructing a program containing multiple
+processes that execute in parallel.<span style="mso-spacerun: yes">&nbsp; </span>These
+processes compete for access to critical resources and cooperate in performing
+some task. In our example, we will be simulating the operations of a Roller
+Coaster in which a single roller coaster car with a capacity of N will represent
+one process and passengers will represent &quot;n&quot; processes.<span style="mso-spacerun:
+yes">&nbsp; </span>These passengers simply get in line for a ride on our roller
+coaster, board when the time is right, take a ride, disembark and wander around
+the amusement park until they ready for another ride. <span style="mso-spacerun: yes">&nbsp;</span>This
+process continues for as long as we want our simulation to run.<span style="mso-spacerun: yes">&nbsp;
+</span>Queuing, loading, riding and unloading of passengers are analogous to
+several issues facing concurrency today, such as shared memory access,
+distribution of data, mutually exclusive access to a shared file</p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0">Pretty
+simple uh?<span style="mso-spacerun: yes">&nbsp; </span>Not really, as human
+beings it is not natural for us to think in terms of parallel execution while we
+are writing software programs. Software engineers typically stick to sequential
+programming, progressing from step A to step B in the spirit of achieving some
+goal.<span style="mso-spacerun: yes">&nbsp; </span>Given this pattern and the
+fact that we are starting to depend on software to run our critical systems,
+could we be facing a software crisis in the near future?<span style="mso-spacerun:
+yes">&nbsp; </span>Are our programs dependable and fault tolerant as they
+&quot;could&quot; be?<span style="mso-spacerun: yes">&nbsp; </span>Universities
+spend much time developing formal techniques based on solid mathematical
+foundations in the Computer Science field; yet without a systematic way of
+applying formal techniques to real practice (in a way that it is understandable
+to the average hacker, oops I mean programmer), we cannot maximize the quality
+of our software systems.</p>
+<p class="ChapterSubtitle" style="text-indent: 0; margin-left: 0; margin-right: 0"><b>The
+Problem</b></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0">Here
+is the problem definition of our synchronization problem:</p>
+</p><ul>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l26 level1 lfo23; tab-stops: list .75in; margin-left: 0; margin-right: 0"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span>Suppose
+    there are n passenger threads and one car thread. The passengers repeatedly
+    wait to take rides in the car, which holds C passengers. The car can go
+    around the track only when it is full. The car takes T seconds to go around
+    the track; this time is fixed. After getting a ride, each passenger gets off
+    the coaster and wanders around the amusement park for W seconds before
+    returning to the roller coaster for another ride; W is random for each
+    passenger.</li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l26 level1 lfo23; tab-stops: list .75in; margin-left: 0; margin-right: 0">A
+    passenger cannot get on the coaster while there are still passengers to get
+    off.</li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l26 level1 lfo23; tab-stops: list .75in; margin-left: 0; margin-right: 0">Passengers
+    load and unload &quot;ON THE SAME SIDE&quot; of the coaster.</li>
+</ul>
+<p class="MsoNormal" style="text-indent: 0; mso-list: l26 level1 lfo23; tab-stops: list .75in; margin-left: 0; margin-right: 0">&nbsp;</p>
+</p><ul>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l13 level1 lfo27; tab-stops: list .25in; margin-left: 0; margin-right: 0"><i style="mso-bidi-font-style:normal">State
+    the Purpose(s) of our System,</i>
+    </p><ul>
+      <li>
+        <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l28 level1 lfo28; tab-stops: list .5in; margin-left: 0; margin-right: 0">To
+        give passenger(s ) repeated rides on the roller coaster,</li>
+    </ul>
+  </li>
+  <li>
+    <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l28 level1 lfo28; tab-stops: list .25in; margin-left: 0; margin-right: 0"><i style="mso-bidi-font-style:normal">State
+    the Objective(s) of our System,</i>
+    </p><ul>
+      <li>
+        <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l28 level1 lfo28; tab-stops: list .5in; margin-left: 0; margin-right: 0">Ensure
+        safety throughout the system,</li>
+      <li>
+        <p class="MsoNormal" style="text-align: justify; text-indent: 0; mso-list: l28 level1 lfo28; tab-stops: list .5in; margin-left: 0; margin-right: 0">Avoid
+        having passengers waiting in line more than is necessary.</li>
+    </ul>
+  </li>
+</ul>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">Below
+is a snapshot of our system at one point during the simulation<span style="font-size:8.0pt;mso-bidi-font-size:10.0pt" class="MsoCommentReference"><a style="mso-comment-reference:KCREA_1"></a><a class="msocomanchor" id="_anchor_1" onmouseover="msoCommentShow('_anchor_1','_com_1')" onmouseout="msoCommentHide('_com_1')" href="#_msocom_1" language="JavaScript" name="_msoanchor_1">[KCREA1]</a><span style="mso-special-character: comment; display: none; mso-hide: all">&nbsp;</span></span>.<span style="mso-spacerun: yes">&nbsp;
+</span>A car, full of passengers has just arrived; the passengers are about
+ready to disembark from the ride</p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">.<span style="mso-ignore:vglayout;position:
+ relative;z-index:0;left:-5px;top:0px;width:576px;height:192px"><img src="99aug_87.gif" v:shapes="_x0000_s1027" border="0" width="421" height="163"></span><br style="mso-ignore:vglayout" clear="ALL">
+</p>
+<p class="MsoCaption" style="text-align: justify; text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
+</span></span>Table <span style="mso-field-code:&quot;SEQ Table \\* ARABIC&quot;">1</span>
+S-Field Action Legend<a style="mso-endnote-id:edn1" href="#_edn1" name="_ednref1" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[i]</span></a></p>
+<p class="MsoCaption" style="text-align: justify; text-indent: 0; margin-left: 0; margin-right: 0"><img border="0" src="Sprite_13.gif" width="496" height="507"></p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">Our
+S-Field Models using S-Field Analysis Designation<a style="mso-endnote-id:edn2" href="#_edn2" name="_ednref2" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[ii]</span></a>:</p>
+</p><ol>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l40 level1 lfo29; tab-stops: list 1.0in; margin-left: 0; margin-right: 0"><span style="mso-text-raise:-4.0pt"><img border="0" src="99aug_88.gif" v:shapes="_x0000_i1047" width="121" height="37"></span>
+    Passengers get on car at time 1,</li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l40 level1 lfo29; tab-stops: list 1.0in; margin-left: 0; margin-right: 0"><span style="mso-text-raise:-4.0pt"><img border="0" src="99aug_89.gif" v:shapes="_x0000_i1028" width="132" height="37"></span>
+    Passengers get off car at time 1,</li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l40 level1 lfo29; tab-stops: list 1.0in; margin-left: 0; margin-right: 0"><span style="mso-text-raise:-5.0pt"><img border="0" src="99aug_90.gif" v:shapes="_x0000_i1029" width="131" height="41"></span>
+    The track-motor moves the car at time 1,</li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l40 level1 lfo29; tab-stops: list 1.0in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">Conflict
+    1: </b><span style="mso-text-raise:-18.0pt"><img border="0" src="99aug_91.gif" v:shapes="_x0000_i1030" width="121" height="87"></span>
+    We have a requirement to load and unload but we have to wait until
+    &quot;ALL&quot; the passengers are off before we can load the waiting
+    passengers.<span style="mso-spacerun: yes">&nbsp; </span>Is this efficient?<b style="mso-bidi-font-weight:
+normal"></b></li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l40 level1 lfo29; tab-stops: list 1.0in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">Conflict
+    2: </b><span style="mso-text-raise:-19.0pt"><img border="0" src="99aug_92.gif" v:shapes="_x0000_i1031" width="97" height="63"></span><span style="mso-tab-count: 1">
+    </span>In order to execute the ride, we need the car full and nothing less.<span style="mso-spacerun: yes">&nbsp;
+    </span>What happens if we need one more passenger and nobody shows up for a
+    long time - do we penalize our loaded passengers by unfairly waiting?</li>
+</ol>
+<table border="0" width="100%" bgcolor="#000000" cellpadding="3">
+  <tr>
+    <td width="100%">
+      <h1 style="text-indent: 0; margin-left: 0; margin-right: 0"><b><font color="#DDDDDD">Analyze
+      the Conflict.</font></b></h1>
+    </td>
+  </tr>
+</table>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">Describe the
+Mini-problem.</h2>
+</p><ul>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l42 level1 lfo31; tab-stops: list .75in; margin-left: 0; margin-right: 0">The
+    system for <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">giving
+    passengers a ride</i></b> includes a <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">car</i></b>
+    on a track and waiting <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">passengers</i></b>
+    in loading station.</li>
+</ul>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">State the Opposite
+Versions of the Conflict.</h2>
+</p><ul>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l23 level1 lfo32; tab-stops: list .75in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">Conflict
+    1</i></b> - An attempt to eliminate or weaken the harmful action by altering
+    its tool would degrade the useful action.</li>
+</ul>
+<blockquote>
+  <blockquote>
+    <p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">If
+    <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">we load waiting passengers
+    immediately after arrival of the car </i></b><a style="mso-endnote-id:edn3" href="#_edn3" name="_ednref3" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[iii]</span></a><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">(R1)
+    </i></b>in order to <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:
+normal">minimize the time between rides</i></b><a style="mso-endnote-id:edn4" href="#_edn4" name="_ednref4" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[iv]</span></a><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">
+    (positive effect 1+)</i></b>, <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">the
+    safety of the passengers will be deteriorated<a style="mso-endnote-id:edn5" href="#_edn5" name="_ednref5" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[v]</span></a>
+    (negative effect 1-).</i></b></p>
+  </blockquote>
+</blockquote>
+</p><ul>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l12 level1 lfo33; tab-stops: list .75in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">Conflict
+    2</i></b> - An attempt to improve the useful action (or avoid its
+    deterioration) by the opposite altering of the same tool would keep or
+    worsen the harmful action.</li>
+</ul>
+<blockquote>
+  <blockquote>
+    <p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">If
+    <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">we do not load passengers
+    immediately after arrival of the car<a style="mso-endnote-id:edn6" href="#_edn6" name="_ednref6" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[vi]</span></a></i></b>
+    in order to <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:
+normal">improve the safety of the passengers<a style="mso-endnote-id:edn7" href="#_edn7" name="_ednref7" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[vii]</span></a></i></b>,
+    <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">the
+    ride efficiency would be deteriorated<a style="mso-endnote-id:edn8" href="#_edn8" name="_ednref8" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[viii]</span></a>.</i></b></p>
+  </blockquote>
+</blockquote>
+</p><ul>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l31 level1 lfo34; tab-stops: list .75in; margin-left: 0; margin-right: 0">A
+    minimum alteration of the system has to provide <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">minimizing
+    the time between rides<a style="mso-endnote-id:edn9" href="#_edn9" name="_ednref9" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[ix]</span></a></i></b>,
+    <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">without
+    deteriorating the safety of the passengers</i></b> and without any
+    complication or deterioration of the system or anything else.</li>
+</ul>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">Increase the Degree
+of the Conflict.</h2>
+<h3 style="text-indent: 0; margin-left: 0; margin-right: 0">Extreme Conflict 1.</h3>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">State
+extreme requirements ER1 so that the imaginary positive effect 1++ would be the
+best, but the imaginary negative effect 1 - - would be the worst:</p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0">If
+(describe the extreme requirement <b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">ER1</span></b>)
+<b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">there
+are no people waiting in line</i></b>, (State the best positive effect 1++) <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">the
+ride efficiency </i></b>would<b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">
+be 100%, </i></b>but (State the worst negative effect 1--) <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">the
+ride would stop since there are no new passengers.</i></b></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0">Draw
+a model of the Extreme Conflict 1.<span style="mso-spacerun: yes">&nbsp; </span>Indicate
+the extreme requirement ER1, positive and negative effects.</p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><img border="0" src="Sprite_45.gif" width="547" height="101">
+<p style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Arial Black&quot;;letter-spacing:-.5pt;
+mso-font-kerning:14.0pt">Extreme Conflict 2.</span>
+<p class="BodyTextKeep" style="text-indent: 0; margin-left: 0; margin-right: 0">State
+extreme requirement ER2 so that the imaginary positive effect 2++ would be the
+best, but the imaginary, negative effect 2- - would be the worst:</p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0">If
+(describe the extreme requirement <b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">ER2</span></b>)
+<b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">there
+are many people waiting in line</i></b>, (State the best positive effect 2++) <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">the
+ride never stops ($$$), </i></b>but (State the worst negative effect 2--) <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">passengers
+might try to get on or off at the same time.</i></b></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0">Draw
+a model of the Extreme Conflict 2.<span style="mso-spacerun: yes">&nbsp; </span>Indicate
+the extreme requirement ER2, positive and negative effects.</p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><img border="0" src="Sprite_51.gif" width="536" height="142"></p>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">Select the Version
+of the Conflict.</h2>
+<blockquote>
+  <p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">Extreme
+  Conflict 2 is better for <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">giving
+  passengers repeated rides on the roller coaster</i></b>.</p>
+</blockquote>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">Describe the Model
+of the Mini-problem.</h2>
+</p><ul>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l27 level1 lfo38; tab-stops: list .75in; margin-left: 0; margin-right: 0">Draw
+    the model of the selected conflict (please see ER2 above).</li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l27 level1 lfo38; tab-stops: list .75in; margin-left: 0; margin-right: 0">Describe
+    the model of the selected conflict.</li>
+</ul>
+<blockquote>
+  <blockquote>
+    <p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0"><i style="mso-bidi-font-style:
+normal">The many people in line keep the ride going, but people getting on and
+    off the car at the same time compromise safety.</i></p>
+  </blockquote>
+</blockquote>
+</p><ul>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l38 level1 lfo39; tab-stops: list .75in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">It
+    is necessary to identify an X-resource:</b></li>
+</ul>
+<ol type="A">
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l37 level1 lfo40; tab-stops: list 1.0in; margin-left: 0; margin-right: 0">X-resource
+    has to eliminate <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">hazards of the ride</i></b>.</li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l37 level1 lfo40; tab-stops: list 1.0in; margin-left: 0; margin-right: 0">X-resource
+    must not deteriorate <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">the ride efficiency</i></b>.</li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l37 level1 lfo40; tab-stops: list 1.0in; margin-left: 0; margin-right: 0">X-resource
+    must not complicate the system.</li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l37 level1 lfo40; tab-stops: list 1.0in; margin-left: 0; margin-right: 0">X-resource
+    must not cause any new harmful action.</li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l37 level1 lfo40; tab-stops: list 1.0in; margin-left: 0; margin-right: 0">Show
+    X-resource on the model of the selected conflict.</li>
+</ol>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0"><img border="0" src="Sprite_57.gif" width="163" height="74"></p>
+<table border="0" width="100%" cellpadding="3" bgcolor="#000000">
+  <tr>
+    <td width="100%">
+      <h1 style="text-indent: 0; margin-left: 0; margin-right: 0"><b><font color="#DDDDDD">Analyze
+      the Resources.</font></b></h1>
+    </td>
+  </tr>
+</table>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">Study the Operating
+Zones of the Conflicting Actions.</h2>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">Lets
+analyze the zones of interaction to identify possible conflicts; below depicts
+several possible zones of the scenario. Zone one deals with the queuing or
+ordering of passengers that want to ride the coaster.<span style="mso-spacerun: yes">&nbsp;
+</span>Zone two focuses on the barrier between the waiting passengers one a car
+AND the passengers getting off the ride.<span style="mso-spacerun: yes">&nbsp; </span>Continuing
+on, we have Zone three, which is the car itself; Zone four and Zone five deal
+with the car arriving and leaving the loading station.</p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0"><img border="1" src="99aug_93.gif" width="576" height="240"></p>
+<blockquote>
+  <p class="MsoBodyText" align="left" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Zone One: has
+  to have at least one passenger in the line.</span></b></p>
+  <p class="MsoBodyText" align="left" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Zone Two:
+  departing passengers get OFF and ON.</span></b></p>
+</blockquote>
+<p class="MsoBodyText" align="left" style="text-indent: 0; margin-left: 0; margin-right: 0">&nbsp;</p>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">Study the Operating
+Time of the Conflicting Actions.</h2>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0"><i style="mso-bidi-font-style:
+normal">&quot;npass&quot; is the number of passengers that have boarded.</i></p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0" align="center"><span style="mso-ignore:vglayout"><img src="99aug_94.gif" v:shapes="_x0000_s1026 _x0000_s1055 _x0000_s1056 _x0000_s1057 _x0000_s1059" width="579" height="137"><br>
+</span>Passengers are trying to get ON/OFF.</p>
+</p><ul>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l11 level1 lfo42; tab-stops: list 1.0in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">From analyzing the zones and operating periods, zone two needs to be
+    free while passengers are getting OFF,</span></i></b></li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l11 level1 lfo42; tab-stops: list 1.0in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt">AND zone two needs to be free while passengers are getting ON.</span></i></b></li>
+</ul>
+<table border="0" width="100%" bgcolor="#000000" cellpadding="3">
+  <tr>
+    <td width="100%">
+      <h1 style="text-indent: 0; margin-left: 0; margin-right: 0"><font color="#DDDDDD">Define
+      the Ideal Final Result (IFR).</font></h1>
+    </td>
+  </tr>
+</table>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">State IFR-1:</h2>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">X-resource
+eliminates <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">the
+passengers getting off and on at the same time</i></b> during the operating time
+and within the operating zone and without any complication of the system while
+keeping the <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:
+normal">ride</i></b> capable of <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">giving
+passengers repeated rides on the roller coaster.<a style="mso-endnote-id:edn10" href="#_edn10" name="_ednref10" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[x]</span></a></i></b></p>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">State IFR-1 for
+other resources.</h2>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">The
+<b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">car</span></b>
+itself eliminates <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:
+normal">the passengers getting off and on at the same time</i></b> during the
+operating time and within the operating zone and without any complication of the
+system while keeping the <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">ride</i></b>
+capable of <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">giving passengers repeated rides
+on the roller coaster.</i></b></p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">The
+<b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">loading station</span></b>
+itself eliminates <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">the
+passengers getting off and on at the same time</i></b> during the operating time
+and within the operating zone and without any complication of the system while
+keeping the <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">ride</i></b> capable of <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">giving
+passengers repeated rides on the roller coaster.</i></b></p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">The
+<b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">passenger</span></b>
+eliminates <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:
+normal">the passengers getting off and on at the same time</i></b> during the
+operating time and within the operating zone and without any complication of the
+system while keeping the <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">ride</i></b>
+capable of <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">giving passengers repeated rides
+on the roller coaster.</i></b></p>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0">Define Macro Level
+Physical Contradiction.</h2>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">During
+the operating time, the operating zone (zone two) has to be <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">free
+for passengers loading and later free for passengers unloading</i></b> the car
+in order to <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">ensure ride efficiency and safety</i></b>.</p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">&nbsp;
+<img border="0" src="99aug_95.gif" v:shapes="_x0000_i1037" width="560" height="105"></p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">From
+the above diagram, we see where the time conflict occurs; this is where we need
+to <b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal">Apply Rules for Physical
+Contradiction Separation.</i></b></p>
+</p><ol>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l22 level1 lfo43; tab-stops: list .75in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">Separation
+    in Space: </b>If the roller coaster was setup to unload passengers on one
+    side and load on the other, we could apply this rule however <i style="mso-bidi-font-style:normal">the
+    coaster is not setup like this</i>.<b style="mso-bidi-font-weight:normal"></b></li>
+  <li>
+    <p class="MsoBodyText" style="text-indent: 0; mso-list: l22 level1 lfo43; tab-stops: list .75in; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">Separation
+    in Time:</b> We CAN however introduce our X-resource to manage access to the
+    roller coaster car during loading and unloading thus performing mutual
+    exclusion to the car.<b style="mso-bidi-font-weight:normal"></b></li>
+</ol>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Solution</span>:<span style="mso-spacerun: yes">&nbsp;
+</span></b>Introduce an object that synchronizes access to the car.<span style="mso-spacerun: yes">&nbsp;
+</span>In real-life this would be the ride attendant, the one who takes your
+ticket and directs you when it is your time to get on the ride.<span style="mso-spacerun: yes">&nbsp;
+</span>However, we need to simulate these actions using software; one solution
+applies <b style="mso-bidi-font-weight:normal">TRIZ Principle #24 -- Mediator<a style="mso-endnote-id:edn11" href="#_edn11" name="_ednref11" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[xi]</span></a></b>,
+in Computer Science we have a similar abstraction called a &quot;<b style="mso-bidi-font-weight:normal">Monitor</b>.&quot;<span style="mso-spacerun: yes">&nbsp;
+</span>The Monitor manages access to a shared resource, such as entry into a
+critical section<a style="mso-endnote-id:edn12" href="#_edn12" name="_ednref12" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[xii]</span></a>
+of code. This solution also supports the idea of <b style="mso-bidi-font-weight:
+normal">TRIZ Principle 7 - Matreshka - &quot;Nested Doll&quot;</b>, where an
+object is inside another. In this case, we would put a Monitor object inside the
+&quot;Person&quot; object that would point to a common, shared resource that all
+the person objects would use.<span style="mso-spacerun: yes">&nbsp; </span>Each
+passenger would have a monitor in their pocket that would beep when they can get
+on the coaster and beep when it is time to get off. Remember we are
+&quot;simulating&quot; using software and we are assuming that our passengers
+are like the Scarecrow from the Wizard of Oz - they have no brains!</p>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt">Software
+Solution Outline: </span></b>The following appendix focuses on a coarse-grained
+solution and translation to a fine-grained synchronization using a Monitor; my
+implementation is in Java and is available on a Web site listed later. I have
+also provided some hyperlinks related to synchronization.</p>
+<table border="0" width="100%" bgcolor="#000000" cellpadding="3">
+  <tr>
+    <td width="100%">
+      <h1 style="text-indent: 0; margin-left: 0; margin-right: 0"><font color="#DDDDDD">Conclusion:</font></h1>
+    </td>
+  </tr>
+</table>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">Applying
+TRIZ to this problem was challenging since the S-Field analysis did not
+&quot;feel&quot; right.<span style="mso-spacerun: yes">&nbsp; </span>The
+abstraction of &quot;force&quot; does not seem to fit in this context but, this
+is okay - we are exploring new frontiers for TRIZ.<span style="mso-spacerun: yes">&nbsp;
+</span>As we discover more ways to bridge-the-gap between TRIZ and Computer
+Science, more solutions will become evident. Since computer science has been
+around for a very short period, it is a baby compared to physics and mechanical
+engineering.<span style="mso-spacerun: yes">&nbsp; </span>However, we need CS to
+grow up quickly since software is becoming increasingly critical to our everyday
+lives.<span style="mso-spacerun: yes">&nbsp; </span>Major breakthroughs are
+needed to avoid a software crisis; the Year 2000 problem is trivial compared to
+other &quot;unknown&quot; software failures - and TRIZ is perfect for
+discovering &quot;unknown&quot; future conflicts.<span style="mso-spacerun: yes">&nbsp;
+</span>At least with Y2K, we are aware of the problem; if we construct a
+building that is sagging in the roof, we can see this since it is a physical
+entity and take appropriate action. Software is not that easy to see.<span style="mso-spacerun: yes">&nbsp;
+</span>I hope others will join me in using TRIZ to solve existing software
+problems and ones we do not even know about yet.</p>
+<table border="0" width="100%" bgcolor="#000000" cellpadding="3">
+  <tr>
+    <td width="100%">
+      <h1 style="text-indent: 0; margin-left: 0; margin-right: 0"><font color="#DDDDDD">Appendix
+      A: Coarse/fine-grained solution<a style="mso-endnote-id:edn13" href="#_edn13" name="_ednref13" title><span style="mso-special-character:footnote" class="MsoEndnoteReference">[xiii]</span></a>.</font></h1>
+    </td>
+  </tr>
+</table>
+<p class="MsoBodyText" style="text-indent: 0; margin-left: 0; margin-right: 0">The
+code below outlines a coarse-grained solution for the Roller Coaster problem.<span style="mso-spacerun: yes">&nbsp;
+</span>The Monitor coordinates the access to the car; while the passengers and
+car threads perform as indicated below. <b style="mso-bidi-font-weight:normal">Warning
+- CS jargons.</b></p>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="layout-grid-mode:line">Some
+Preliminary Information:</span></h2>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">Global
+Invariant (GI): This property needs to hold true during every critical assertion
+of the program. The Global Invariant implies the safety property; the safety
+property asserts that the program never enters a bad state. The so-called
+coarse-grained solution uses the following two synchronization constructs:</span></p>
+</p><ul>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l21 level1 lfo47; tab-stops: list .75in; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;layout-grid-mode:line">&lt;<b style="mso-bidi-font-weight:
+normal">await</b> <i style="mso-bidi-font-style:normal">B<sub>i</sub></i> </span><span style="mso-char-type: symbol; mso-symbol-font-family: Wingdings; font-family: Wingdings; mso-ascii-font-family: Courier New; mso-hansi-font-family: Courier New; layout-grid-mode: line">à</span><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line"> <i style="mso-bidi-font-style:normal">S<sub>i</sub></i>&gt;
+    and</span></li>
+  <li>
+    <p class="MsoNormal" style="text-indent: 0; mso-list: l21 level1 lfo47; tab-stops: list .75in; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;layout-grid-mode:line">&lt;<i style="mso-bidi-font-style:
+normal">S<sub>j</sub></i>&gt;</span></li>
+</ul>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">Using
+Programming Logic, the global invariant is formally verified in the
+coarse-grained solution.<span style="mso-spacerun: yes">&nbsp; </span>Finally,
+the coarse-grained solution is mechanically translated to a fine-grained
+semaphore or monitor program that maintains the global invariant. This approach
+has many advantages.<span style="mso-spacerun: yes">&nbsp; </span>First, this
+formal approach enables verification of programs being developed.<span style="mso-spacerun:
+yes">&nbsp; </span>Second, the most important activity in the programming
+process lies at a high level; namely, specifying global invariants. Once an
+appropriate global invariant is specified, much of the rest of the process is
+mechanical.<span style="mso-spacerun: yes">&nbsp; </span>Since TRIZ can help
+determine properties of a system, it can be used to determine global invariants.<span style="mso-spacerun: yes">&nbsp;</span></span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">The Java
+programming language encourages the use of multiple threads, which we will use
+in our implementation to simulate the coaster and the passengers. Java provides
+monitor-like synchronization primitives. However, these primitives have
+limitations and thus we will apply our TRIZ exercise to create our own monitor
+system based on our coarse-gained solution.<span style="mso-spacerun: yes">&nbsp;
+</span>This approach also makes our code platform independent.</span></p>
+<h2 style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="layout-grid-mode:line">Our
+TRIZ-driven Coarse-Grained Solution:</span></h2>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">Using
+the synchronization constructs above for each appearance of such constructs in a
+coarse-grained solution, we define an independent method in a Java class.</span></p>
+<p class="MsoNormal" style="text-indent: 0; mso-list: l16 level1 lfo49; tab-stops: list .25in; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">(1)</span><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">For each &lt;<b style="mso-bidi-font-weight:normal">await</b>
+<i style="mso-bidi-font-style:normal">B<sub>i</sub></i> </span><span style="mso-char-type: symbol; mso-symbol-font-family: Wingdings; font-family: Wingdings; mso-ascii-font-family: Courier New; mso-hansi-font-family: Courier New; layout-grid-mode: line">à</span><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line"> <i style="mso-bidi-font-style:normal">S<sub>i</sub></i>&gt;,
+define one public (non-<b style="mso-bidi-font-weight:normal">synchronized</b>)
+method and one private <b style="mso-bidi-font-weight:normal">synchronized</b>
+method, and declare one private specific notification lock (instance variable)
+of class <i style="mso-bidi-font-style:normal">Object</i>. Let <i style="mso-bidi-font-style:normal">method<sub>i</sub>,checkBS<sub>i</sub>,and
+o<sub>i</sub> </i>be the public method, the private synchronized method, and the
+specific notification lock, respectively. We have the following declaration for <i style="mso-bidi-font-style:normal">o<sub>i</sub>:</i></span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;layout-grid-mode:line">Private Object <i style="mso-bidi-font-style:
+normal">o<sub>i</sub> </i>= new Object();</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Public method <i style="mso-bidi-font-style:
+normal">method<sub>i</sub></i> is defined as:</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b style="mso-bidi-font-weight:normal">public void</b> <i style="mso-bidi-font-style:normal">method<sub>I</sub>()
+</i>{</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b style="mso-bidi-font-weight:normal">synchronized</b> (<i style="mso-bidi-font-style:normal">o<sub>i)
+</sub></i>{</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b style="mso-bidi-font-weight:
+normal">While</b> (!<i style="mso-bidi-font-style:normal">checkBS<sub>i</sub>())</i></span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><i style="mso-bidi-font-style:normal"><span style="mso-tab-count: 4; font-family: Courier New; mso-bidi-font-family: Times New Roman; layout-grid-mode: line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></i><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">try</span></b><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line"> {</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i style="mso-bidi-font-style:normal">o<sub>i</sub>.</i><b style="mso-bidi-font-weight:
+normal">wait();</b></span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>} <b style="mso-bidi-font-weight:
+normal">catch</b> (InterruptedException <i style="mso-bidi-font-style:normal">e</i>)
+{}</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>}</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>}</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>}</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Private <b style="mso-bidi-font-weight:
+normal">synchronized</b> method <i style="mso-bidi-font-style:normal">checkBS<sub>I</sub>
+</i>is defined as:</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">private
+synchronized</span></b><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;layout-grid-mode:line"> <b style="mso-bidi-font-weight:normal">Boolean</b>
+<i style="mso-bidi-font-style:normal">checkBS<sub>i</sub> () </i>{</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b style="mso-bidi-font-weight:normal">if</b> (<i style="mso-bidi-font-style:normal">B<sub>i</sub></i>)
+{</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i style="mso-bidi-font-style:
+normal">S<sub>i</sub></i>; <b style="mso-bidi-font-weight:normal">return</b>
+true;</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>} <b style="mso-bidi-font-weight:
+normal">else return</b> false;</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>}</span></p>
+<p class="MsoNormal" style="text-indent: 0; mso-list: l16 level1 lfo49; tab-stops: list .25in; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">(2)</span><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">For each &lt;<i style="mso-bidi-font-style:normal">S<sub>j</sub></i>&gt;,
+define a public method (non-<b style="mso-bidi-font-weight:normal">synchronized</b>)
+method, say <i style="mso-bidi-font-style:normal">method<sub>j</sub></i>, as
+follows:</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">public void</span></b><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"> <i style="mso-bidi-font-style:normal">method<sub>j</sub></i>
+() {</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b style="mso-bidi-font-weight:normal">synchronized</b>(this) {</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i style="mso-bidi-font-style:normal">S<sub>j</sub></i>;</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>}</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">}</span></p>
+<p class="MsoNormal" style="text-indent: 0; mso-list: l16 level1 lfo49; tab-stops: list .25in; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">(3)</span><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">In each public method <i style="mso-bidi-font-style:
+normal">method<sub>i</sub></i> and <i style="mso-bidi-font-style:normal">method<sub>j</sub>,</i>
+if execution of any statement may potentially change some guard <i style="mso-bidi-font-style:normal">B</i></span><i style="mso-bidi-font-style:
+normal"><sub><span style="font-family:&quot;\0027&quot;;layout-grid-mode:line">k</span></sub></i><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line"> from <i style="mso-bidi-font-style:normal">false</i> to <i style="mso-bidi-font-style:normal">true</i>,
+add either of the following two statements at the end of the method (outside any
+<b style="mso-bidi-font-weight:
+normal">synchronized</b> block).</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">Synchronized</span></b><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">(<i style="mso-bidi-font-style:normal">O<sub>k</sub></i>)
+{<i style="mso-bidi-font-style:
+normal">Ok</i>.<b style="mso-bidi-font-weight:normal">notifyAll</b>();}</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">Synchronized</span></b><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">(<i style="mso-bidi-font-style:normal">O<sub>k</sub></i>)
+{<i style="mso-bidi-font-style:
+normal">Ok</i>.<b style="mso-bidi-font-weight:normal">notify</b>();}</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:
+normal"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">&nbsp;</span></b></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">Where <i style="mso-bidi-font-style:normal">O<sub>k</sub>
+</i>is a specific notification lock is associated with &lt;<b style="mso-bidi-font-weight:normal">await</b>
+<i style="mso-bidi-font-style:normal">B<sub>i</sub></i> </span><span style="mso-char-type: symbol; mso-symbol-font-family: Wingdings; font-family: Wingdings; mso-ascii-font-family: Courier New; mso-hansi-font-family: Courier New; layout-grid-mode: line">à</span><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line"> <i style="mso-bidi-font-style:normal">S<sub>i</sub></i>&gt;.
+If more than one thread may leave the construct &lt;<b style="mso-bidi-font-weight:
+normal">await</b> <i style="mso-bidi-font-style:normal">B<sub>i</sub></i> </span><span style="mso-char-type: symbol; mso-symbol-font-family: Wingdings; font-family: Wingdings; mso-ascii-font-family: Courier New; mso-hansi-font-family: Courier New; layout-grid-mode: line">à</span><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line"> <i style="mso-bidi-font-style:normal">S<sub>i</sub></i>&gt;
+when <i style="mso-bidi-font-style:normal">B<sub>k</sub></i> becomes true, <b style="mso-bidi-font-weight:normal">notifyAll
+</b>should be issued; otherwise, <b style="mso-bidi-font-weight:normal">notify</b>
+should be issued.</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">&quot;npass&quot;
+is the number of passengers that have boarded the car.<span style="mso-spacerun: yes">&nbsp;
+</span>&quot;boarding&quot; and &quot;done&quot; are counters used by the
+processes to track different stages of the simulation. &quot;C&quot; is the
+capacity of the car. &quot;//&quot; is a comment. The variables (npass, done,
+boarding) are flags indicating some time or step in our algorithm.</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">GI::<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>{npass
+&gt;= 0}</span></b></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">Passenger::</span></b></p>
+<div align="left">
+  <table border="0">
+    <tr>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">&lt;npass = npass +1&gt;<span style="mso-tab-count: 3">&nbsp;</span></span></p>
+      </td>
+      <td valign="middle"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">// Starting out assume that a seat is</span></td>
+    </tr>
+    <tr>
+      <td valign="middle"></td>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">// available on a waiting car,</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle"></td>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">// therefore, we increment the npass</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle"></td>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">// counter and get on the ride.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">&lt;await boarding &gt; 0 </span><span style="mso-char-type: symbol; mso-symbol-font-family: Wingdings; font-family: Wingdings; mso-ascii-font-family: Courier New; mso-hansi-font-family: Courier New; layout-grid-mode: line">è</span><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line"> boarding--&gt;</span></p>
+      </td>
+      <td valign="middle"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">// Wait until &quot;boarding&quot; is greater</span></td>
+    </tr>
+    <tr>
+      <td valign="middle"></td>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">// than zero then decrement</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">TAKE A RIDE…</span></p>
+      </td>
+      <td valign="middle"></td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">&lt;done++&gt;</span></p>
+      </td>
+      <td valign="middle"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">// When
+        the ride is over, increment</span></td>
+    </tr>
+    <tr>
+      <td valign="middle"></td>
+      <td valign="middle">
+        <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+layout-grid-mode:line">// done indicating my ride is over</span></p>
+      </td>
+    </tr>
+  </table>
+</div>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">Car::<span style="mso-spacerun: yes">&nbsp;</span></span></b></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">&lt;await
+npass &gt;= C -&gt; npass := npass - C&gt;</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">&lt;boarding
+:= boarding + C&gt;</span></p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">&lt;await
+done = C -&gt; done := 0&gt;</span></p>
+<table border="0" width="100%" bgcolor="#000000" cellpadding="3">
+  <tr>
+    <td width="100%">
+      <h1 style="text-indent: 0; margin-left: 0; margin-right: 0"><font color="#DDDDDD">Appendix
+      B: <span style="layout-grid-mode:line">Java Implementation Source Code</span></font></h1>
+    </td>
+  </tr>
+</table>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="font-family:&quot;Courier New&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;layout-grid-mode:line">Please <a href="1999-08d.htm" target="_blank">click
+here to see the Java implementation code</a>.<br>
+</span>(Opens in a new browser window)</p>
+<p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><span style="mso-tab-count:2"></p>
+<table border="1" width="100%" cellspacing="0" cellpadding="3">
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn1" href="#_ednref1" name="_edn1" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[i]</span></a> TRIZ Consulting Technology
+      Course, Zinovy Royzen, TRIZ Consulting Inc., 1996.</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <table border="0" width="100%" cellspacing="0" cellpadding="3">
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn2" href="#_ednref2" name="_edn2" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[ii]</span></a> <b style="mso-bidi-font-weight:normal">S<sub>1</sub>,
+            S<sub>2</sub>, S<sub>3</sub>, or A, B, C, or S<sub>(name)</sub></b></p>
+            </span></td>
+          <td valign="top"><span style="mso-tab-count:2">Objects, components,
+            parts, substances</span></td>
+        </tr>
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">S<sub>1.1</sub>,
+            S<sub>1.2</sub>, or A<sub>1</sub>, B<sub>2</sub></b></p>
+            </span></td>
+          <td valign="top"><span style="mso-tab-count:2">Subsystems, components,
+            parts, substances of S1 or A</span></td>
+        </tr>
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2"><b style="mso-bidi-font-weight:normal">S'<sub>1</sub>
+            or A'</b></span></td>
+          <td valign="top"><span style="mso-tab-count:2">Modified S1 or A</span></td>
+        </tr>
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">S<sub>X</sub>,
+            S<sub>Y</sub></b></p>
+            </span></td>
+          <td valign="top"><span style="mso-tab-count:2">Unidentified objects,
+            components, parts, substances</span></td>
+        </tr>
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">S<sub>1</sub>S<sub>y</sub></b></p>
+            </span></td>
+          <td valign="top"><span style="mso-tab-count:2">A complex object,
+            component, part, substance</span></td>
+        </tr>
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">(S<sub>1</sub>S<sub>y</sub>)</b></p>
+            </span></td>
+          <td valign="top"><span style="mso-tab-count:2">Sy is introduced inside
+            S1</span></td>
+        </tr>
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">(S<sub>1</sub>)S<sub>y</sub></b></p>
+            </span></td>
+          <td valign="top"><span style="mso-tab-count:2">Sy is introduced
+            outside S1</span></td>
+        </tr>
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">F(Field)</b></p>
+            </span></td>
+          <td valign="top"><span style="mso-tab-count:2">Energy, a force, or
+            description of the action</span></td>
+        </tr>
+        <tr>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><b style="mso-bidi-font-weight:normal">F<sub>X</sub>,
+            F<sub>Y</sub></b></p>
+            </span></td>
+          <td valign="top"><span style="mso-tab-count:2">
+            <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0">Unidentified
+            energy, a force, or nature if the action</p>
+            </span></td>
+        </tr>
+      </table>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2"><a style="mso-endnote-id:edn3" href="#_ednref3" name="_edn3" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[iii]</span></a> State the requirement (or
+      condition) R1, which has to be met by the tool of the harmful action.</span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2"><a style="mso-endnote-id:edn4" href="#_ednref4" name="_edn4" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[iv]</span></a> State what is desired
+      (positive effect 1+).</span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn5" href="#_ednref5" name="_edn5" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[v]</span></a> State what would be
+      deteriorated (negative effect 1-).</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn6" href="#_ednref6" name="_edn6" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[vi]</span></a> State the opposite
+      requirement (or condition) R2= -R1, which has to be met by the same tool.</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn7" href="#_ednref7" name="_edn7" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[vii]</span></a> State what is desired
+      (positive effect 2++).</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn8" href="#_ednref8" name="_edn8" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[viii]</span></a> State what would be
+      deteriorated (negative effect 2-).</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn9" href="#_ednref9" name="_edn9" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[ix]</span></a> State the desired result
+      (1+ and 2+).</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn10" href="#_ednref10" name="_edn10" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[x]</span></a><span style="mso-spacerun: yes">&nbsp;
+      </span>These paragraphs are intended to be long, run-on sentences.</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoNormal" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn11" href="#_ednref11" name="_edn11" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[xi]</span></a> Proceedings of the 2nd
+      Total Product Development Symposium, Nov., 1996., Ellen Domb and Walter
+      Lamia</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn12" href="#_ednref12" name="_edn12" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[xii]</span></a> A sequence of statements
+      that must be executed with mutual exclusion with respect to critical
+      sections in other processes that reference the same shared variables.</p>
+      </span></td>
+  </tr>
+  <tr>
+    <td width="100%"><span style="mso-tab-count:2">
+      <p class="MsoEndnoteText" style="text-indent: 0; margin-left: 0; margin-right: 0"><a style="mso-endnote-id:edn13" href="#_ednref13" name="_edn13" title><span style="mso-special-character:
+footnote" class="MsoEndnoteReference">[xiii]</span></a> M. Mizuno, A Structured
+      Approach for Developing Concurrent Programs in Java, Information
+      Processing Letters 69 (1999) 233-238.</p>
+      </span></td>
+  </tr>
+</table>
+<p>&nbsp;</p>

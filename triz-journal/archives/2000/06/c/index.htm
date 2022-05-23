@@ -1,0 +1,478 @@
+<h1>The experience of the Anticipatory Failure Determination (AFD) method applied to an Engine Concern</h1>
+
+<p class="MsoNormal" align="center" style="text-align:center;"><font color="#008080"><b>First
+presented at the Altshuller Institute TRIZCON2000, May 1, 2000</b></font></p>
+<p class="MsoNormal" style="text-autospace:none" align="center"><span style="font-size:16.0pt;">Vladimir
+Proseanic (Ideation Int.)<br>
+Dmitry Tananko (Ford Motor Co.)<br>
+Svetlana Visnepolschi (Ideation Int.)<br>
+</span><a href="mailto:dtananko@ford.com">dtananko@ford.com</a></p>
+<h2 style="margin-right:-.25in;text-align:justify"><a name="_Toc472489528"><span lang="RU" style="font-size:12.0pt;">Abstract</span></a></h2>
+<p class="MsoBodyText" style="text-align:justify"><span style="font-size:12.0pt;">The
+paper discusses the results of the AFD application to solving a Hitching/Ringing
+concern on an Engine. The AFD approach has been used by a joint Task Force team
+to identify the root cause of this Hitching/Ringing phenomena.</span></p>
+<p class="MsoBodyText" style="text-align:justify"><span style="font-size:12.0pt;">Using
+the AFD, the team was able to identify nearly all possible hypotheses of the
+Hitching/Ringing problem mechanisms and prioritize their verification process.
+Employing the AFD methodology allowed the team to greatly reduce the
+brainstorming time, and increase the efficiency of the team in subsequent
+testing and verification process.</span></p>
+<p class="MsoBodyText" style="text-align:justify"><span style="font-size:12.0pt;">In
+addition, the AFD method helped to improve the team’s understanding of the
+software and calibration and also their interaction with mechanical part of the
+Engine. It is also explained why the problems of this kind are so difficult to
+solve by means of other methods (FMEA, in particular) and demonstrated how
+specific steps of the AFD overcome these obstacles.</span></p>
+<h2 style="margin-right:-.25in;text-align:justify"><a name="_Toc472489529"><span style="font-size:12.0pt;">Problem
+description and why it was necessary to use the AFD</span></a></h2>
+<p class="MsoNormal" style="margin-right:-4.5pt;text-align:justify"><span style="font-size:12.0pt;">The
+problem is related to slow oscillation of the whole powertrain of the vehicle
+under steady pedal position (Ringing) or cruise control condition (Hitching).
+The subjective feeling is as if the vehicle towing a trailer which performs
+unexpected movements (change of the load), that is where the name of the
+phenomenon – Hitching, come from. The similar effect, which is usually
+observed during idle, has called Ringing. These problems sometime occur in the
+development of different types of cars.</span></p>
+<p class="MsoNormal" style="margin-right:-.25in;text-align:justify"><span style="font-size:12.0pt;">According
+to the AFD theory, spending sufficient time and money is typical for problems
+related to failure with unclear mechanisms - Failure Analysis (FA). It is
+connected to the evident weakness of the traditional approaches in FA problem
+solving.</span></p>
+<p class="MsoNormal" style="margin-right:-.25in;text-align:justify"><span style="font-size:12.0pt;">There
+are two points usually recommended for revealing the root causes of a negative
+event:</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:-.25in;margin-bottom:
+0in;margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;">application of personal
+professional experience;</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:-.25in;margin-bottom:
+0in;margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;">utilization of the worldwide
+knowledge, related to a similar problem.</span></p>
+<p class="MsoNormal" style="margin-right:-.25in;text-align:justify"><span style="font-size:12.0pt;">Utilization
+of the personal experience is limited by similar problems one had experience
+with in the past. We should live in a really conservative environment to
+dispense this information.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">When
+we try to utilize professional knowledge of other people, related to the solving
+FA problems, we meet a real obstacle, also known as Denial Phenomenon [1]. The
+human beings are subject to a psychological phenomenon called &quot;denial&quot;
+due to which we resist to the thinking about unpleasant things.&nbsp; We say:
+&quot;it can't happen here,&quot; &quot;it will come out all right,&quot;
+&quot;it's never happened before,&quot; etc.</span></p>
+<p class="MsoBodyText3" style="text-align:justify"><span style="font-family:&quot;Times New Roman&quot;">In
+response to the question&nbsp; &quot;What can go wrong?&quot; in respect to the
+functioning system or operational process, we would like to look worldwide for
+the records of the problems that have occurred during the past history of
+similar systems and processes. Unfortunately, the recorded databases are
+relatively meager – nobody is happy to share this information with anybody.
+People are not always anxious to document or publicize issues.</span></p>
+<p class="MsoNormal" style="text-align:justify"><img src="01.gif" width="462" height="298"></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">Therefore:</span></p>
+<p class="MsoBodyText2" style="text-align:justify"><i>Using traditional methods
+to reveal the causes of an issue, we always deal with deficiency of the
+information, and that, sequentially, hinders the solution.</i></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">The
+AFD method is capable of overcoming the Denial Phenomenon and, therefore, it
+could provide required information of the possible root causes for the
+Hitching/Ringing issues.</span></p>
+<p class="MsoNormal" style="text-align:justify"><b><span style="font-size:12.0pt;">Brief
+information on roots of the AFD methodology:</span></b></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">The
+AFD method may be considered as TRIZ application on the Failure Analysis (FA)
+and the Failure Prediction (FP) [2]. The authors of the AFD method are B. Zlotin
+and A. Zusman.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">The
+early 1980’s, the AFD method has been developed and improved through
+meticulous analysis of the results of the various consulting projects. In the 90’s,
+AFD software was developed by Ideation International Inc. based on the AFD
+method.</span></p>
+<h2 style="text-align:justify"><a name="_Toc472489530"><span style="font-size:
+12.0pt;">Application of the AFD key steps to the Ringing/Hitching problems</span></a></h2>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">In
+addition to the direct analysis of the conditions related to Hitching/Ringing
+phenomena, the following key steps of the AFD FA mode were applied:</span></p>
+<p class="MsoNormal" style="text-align:justify"><b><span style="font-size:12.0pt;">Step
+1 – Invert the Problem</span></b></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">Instead
+of guessing about the possible causes of the issue - <i>slow oscillation of the
+whole powertrain related to the idle motion of the vehicle</i> - we invert the
+problem and formulated it in a pro-active way:</span></p>
+<p class="MsoNormal" style="margin-left:13.5pt;text-align:justify"><b><span style="font-size:12.0pt;">It
+is necessary to produce the </span></b><span style="font-size:12.0pt;">slow
+oscillation of the whole powertrain <b>under the conditions that initiate and/or
+accompany </b>the oscillation<b>.</b></span></p>
+<p class="MsoNormal" style="text-align:justify"><b><span style="font-size:12.0pt;"><img src="02.gif" width="501" height="312"></span></b></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">By
+rephrasing the question in this way, we change the attitude to the issue. The
+inverted question is very useful in counteracting the denial machinery
+[1].&nbsp; Instead of asking ourselves the inverted question &quot;How can I
+provide slow oscillation of the whole powertrain?&quot; we put our attention on
+the offensive side of the game.&nbsp; Thus, we engage our creative faculties
+actively.</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><b><span style="font-size:12.0pt;">Step
+2 – Find the method(s) of producing the phenomenon</span></b></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">After
+the problem is inverted, our attention is automatically diverted from <i>&quot;things
+that can happen</i>&quot; to <i>&quot;things that can be produced&quot;</i>.&nbsp;&nbsp;
+Therefore, the next logical step is:</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><b><i><span style="font-size:12.0pt;">Identify
+the areas of science, engineering, or even everyday life, where the same
+phenomenon of oscillation is intentionally created.&nbsp;</span></i></b></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">We
+are directed to a different field, namely <i>method of production</i>.&nbsp;
+This is important, because this field is:</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;"><span style="font-size:12.0pt;font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;">widely explored;</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;"><span style="font-size:12.0pt;font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;">always different from the area
+where the problem occurs.</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;"><a href="03.gif"><img src="03_small.gif" border="1" width="100" height="61"></a></span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">Having
+formulated the inverted problem, we can search the Internet and the patent
+library, or interview subject matter expert in the corresponding
+technology.&nbsp; By utilizing these new possibilities, we can usually get an
+exhaustive set of &quot;standard&quot; ways of producing the desired phenomenon
+(oscillation, in particular).&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><a href="04.gif"><img src="04_small.gif" border="1" width="100" height="64"></a><span style="font-size:12.0pt;">The
+inverted formulation of the problem becomes an inventive problem (“How can I
+do [something]?” or “How can I cause [something] to occur?”).&nbsp; This
+conversion allows us to employ the inventive apparatus of TRIZ, as well as
+knowledge base and analytical methods.</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><a name="_Toc468783271"><b><span style="font-size:12.0pt;">Step
+3 - Utilize Resources</span></b></a></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">The
+utilization of TRIZ resources in the AFD process is based on the following
+postulate:</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><b><i><span style="font-size:12.0pt;">For
+any issue or drawback, all the necessary components of the issue mechanism must
+be present within the system or its immediate environment as available
+resources.</span></i></b></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">Therefore,
+in order to solve the problem of a slow oscillation of the whole powertrain it
+is sufficient to:</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;"><span style="font-size:12.0pt;">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>invert the initial problem;</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;"><span style="font-size:12.0pt;">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>identify all standard ways of creating the slow oscillation;</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;"><span style="font-size:12.0pt;">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>verify that all resources required to produce the concern are present in
+the corresponding vehicle.&nbsp;&nbsp;</span></p>
+<p class="MsoBodyText3" style="margin-bottom:3.0pt;text-align:justify"><span style="font-family:&quot;Times New Roman&quot;">Utilization
+of resources directs us to determine if all necessary components are present in
+our system as available Resources.&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">Upon
+listing all available resources in the system, the most like hypothesis can be
+carried out. In majority, if all resources within the system or its environment
+support the considered hypothesis, the problem is solved.&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><a href="05.gif"><img src="05_small.gif" border="1" width="100" height="70"></a></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">In
+case when the considered method <i>has almost all resources within the system
+except one or two</i>, we can try to employ them. Keeping in mind the
+requirement that mechanism must be spontaneous, we cannot use any objects from
+outside of the system. So, the simple rule has to be followed:</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><b><i><span style="font-size:12.0pt;">The
+new resource should be produced from those that are already available in the
+system or its environment.</span></i></b></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">In
+spite of the complexity of generating the hypothesis, this method completely
+reflects the main idea of resources utilization, and it gives us a way to
+successfully <i>identify the most tricky and subtle root cause.</i></span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">The
+case of slow oscillation in idle mode of the vehicle (Ringing phenomenon) is a
+unique problem. We came up with the following list of methods for providing
+oscillation, Hypotheses:</span></p>
+<table border="1" cellspacing="0" cellpadding="0" style="margin-left:58.05pt;
+ border-collapse:collapse;border:none;">
+  <tr>
+    <td valign="top" style="width:36.9pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">H1</span></p>
+    </td>
+    <td valign="top" style="width:171.1pt;border:solid windowtext .5pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">Implementation
+      of positive feedback&nbsp; (oscillation generators)</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:36.9pt;border:solid windowtext .5pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">H2</span></p>
+    </td>
+    <td valign="top" style="width:171.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">Providing
+      instability in controlling system</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:36.9pt;border:solid windowtext .5pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">H3</span></p>
+    </td>
+    <td valign="top" style="width:171.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">Unstable
+      &quot;on-off&quot; system</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:36.9pt;border:solid windowtext .5pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">H4</span></p>
+    </td>
+    <td valign="top" style="width:171.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">Creating
+      resonance system through utilization of natural frequency of the equipment</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:36.9pt;border:solid windowtext .5pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">H5</span></p>
+    </td>
+    <td valign="top" style="width:171.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">Impact
+      of the outside oscillations or impulses</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:36.9pt;border:solid windowtext .5pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">H6</span></p>
+    </td>
+    <td valign="top" style="width:171.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">Beating
+      generated by combining two or more close-coupled frequencies</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:36.9pt;border:solid windowtext .5pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">H7</span></p>
+    </td>
+    <td valign="top" style="width:171.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      <p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-size:12.0pt;">Using
+      nonlinear processes for oscillation generation (aerodynamic or
+      hydrodynamic action)</span></p>
+    </td>
+  </tr>
+</table>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">After
+identifying the components required for each Hypothesis realization and
+comparing them with system resources, we came up with the following conclusion:</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><i><span style="font-size:12.0pt;">For
+almost all methods of creation slow oscillation related to idle motion of the
+vehicle, all resources existed within the system.</span></i></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">It
+means that all available hypothetical mechanisms were likely to contribute to
+the issue.</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">It
+is not reasonable, however, to try to eliminate all the revealed mechanisms,
+because:</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;"><span style="font-size:12.0pt;font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;">some of them might be quite weak
+and their elimination could not solve the problem;</span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.25in;text-align:justify;text-indent:-.25in;"><span style="font-size:12.0pt;font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;">all of them are closely connected
+with the key elements of the vehicle, changing which might create even worse
+problems.</span></p>
+<p class="MsoNormal" style="margin-bottom:3.0pt;text-align:justify"><span style="font-size:12.0pt;">In
+order to select the Hypothesis for further elimination, we have to identify
+which particular Hypothesis could provide critical contribution into the
+issue.&nbsp;</span></p>
+<h2 style="text-align:justify"><a name="_Toc472489531"><span style="font-size:
+12.0pt;">How the intermediate steps of the FA process increase the advantages of
+the method</span></a><span style="font-size:12.0pt;">.</span></h2>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">We
+have shown above how the key steps of the AFD FA had been applied to the
+Hitching/Ringing problem. It could be used, if:</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;">a quick answer is needed (in
+emergency situation or for preliminary estimation of possible solutions);</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:12.0pt;">the problem is not complicated.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">Problems
+that are as difficult as ours require the complete FA procedure including
+several intermediate steps. We would further focus on these steps that had
+played the main part in selecting the right Hypothesis.</span></p>
+<p class="MsoBodyText2" style="text-align:justify">Completing the FA
+Questionnaire and building cause-effect diagrams</p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">&nbsp;Before
+the automatic formulation of the inverted problem, we have to answer several
+questions in order to get the complete picture of the problem, in particular:</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span style="font-size:12.0pt;">What set of closely connected
+elements, within which the issue takes place, can be referred to as a system.</span></u><span style="font-size:12.0pt;">
+In our case it was an Engine that included:</span></p>
+<p class="MsoBodyTextIndent2" style="margin-left:.5in;text-align:justify">1.Cylinders
+system;</p>
+<p class="MsoBodyTextIndent2" style="margin-left:.5in;text-align:justify">2.Injectors;</p>
+<p class="MsoBodyTextIndent2" style="margin-left:.5in;text-align:justify">3.PCM
+(Powertrain Control Module);</p>
+<p class="MsoBodyTextIndent2" style="margin-left:.5in;text-align:justify">4.High
+Pressure Oil Pump;</p>
+<p class="MsoBodyTextIndent2" style="margin-left:.5in;text-align:justify">5.IPR
+(Injector Pressure Regulator);</p>
+<p class="MsoBodyTextIndent2" style="margin-left:.5in;text-align:justify">6.ICP
+(Injector Control Pressure);</p>
+<p class="MsoBodyTextIndent2" style="margin-left:.5in;text-align:justify">7.
+Camp-sensor (RPM sensor)</p>
+<p class="MsoBodyTextIndent2" style="margin-left:0in;text-align:justify">e
+needed to know these elements as they usually provide resources for the problem
+mechanism.</p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span style="font-size:12.0pt;">How to describe the system
+functioning.</span></u><span style="font-size:12.0pt;"> For this purpose, we
+have built diagrams that represent existing useful functions of the Engine,
+cause/effect relations between them and their side effects.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;"><a href="06.gif"><img src="06_small.gif" border="1" width="100" height="53"></a></span></p>
+<p class="MsoNormal" style="margin-right:6.0pt;text-align:justify"><span style="font-size:12.0pt;">The
+combined verbal and graphic analysis of the engine system gave us the
+possibility to indicate “main participants” of the problem and their real
+(not formal) relations.</span></p>
+<p class="MsoNormal" style="margin-right:6.0pt;text-align:justify"><span style="font-size:12.0pt;">The
+diagrams also served as a base for further automatic problem formulation.</span></p>
+<p class="MsoNormal" style="text-align:justify"><b><span style="font-size:12.0pt;">Localizing
+the Issue</span></b></p>
+<p class="MsoBodyText3" style="text-align:justify"><span style="font-family:&quot;Times New Roman&quot;">At
+this point, we tried to identify and focus on particular time and place where
+the issue (low oscillation related to idle) happened.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">For
+this purpose, we had to go through the following milestone:</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Identify the Last Event (i.e., the system function or operation during or
+immediately after which the issue</span> <span style="font-size:12.0pt;">appears);</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Describe the conditions that initiate or accompany the issue (i.e., the
+specific parameters of the system or its nearby environment which correlate with
+the appearance of the issue.)</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">We
+understood that Ringing/Hitching possibly happens after turning to idle/cruise
+control. We also realized that in both Ringing and Hitching problems the issue
+takes place upon one indispensable condition - absence of manual control.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">When
+the localizing step was carefully fulfilled the inverted formulation for the
+Ringing problem looked as follows:</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">1.
+Find a way to provide [the] (Oscillation of RPM) with the help of [the] (Turning
+to idle), (Absence of manual control), and any other function, which happens
+before the Last Event.</span></p>
+<p class="MsoNormal" style="text-align:justify"><b><span style="font-size:12.0pt;">Verifying
+the Hypothesis</span></b></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">The
+information obtained from the previous step became helpful for verifying the
+Hypothesis.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">There
+was only one Hypothesis that could satisfy both verification criteria:</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Define all the components necessary for this mechanism to be utilized in
+the system as present available resources;</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Provide the complete solution to the Inverted Problem.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">It
+was the H2: “Providing instability in controlling system.”</span></p>
+<p class="MsoBodyTextIndent" style="margin-left:9.0pt;text-align:justify"><span style="font-family:&quot;Times New Roman&quot;">The
+calibration system (control system) that is designed to compensate any undesired
+signal deviation, fails to do that. Instead, it amplifies the initial
+oscillation with inadequate time delay of the controlling signal thus causing
+Ringing or Hitching. (Both phenomena show themselves when the system of engine
+control works without human participation in idle mode or cruise control.)</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;"><a href="07.gif"><img src="07_small.gif" border="1" width="100" height="67"></a></span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">The
+tests of feedback and control signals in idle (Ringing) or cruise control
+(Hitching) modes had verified the mechanism of the H2 as possible root cause of
+the slow oscillation of the whole powertrain.</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:11.0pt;
+font-family:Arial"><a href="08.gif"><img src="08_small.gif" border="1" width="100" height="67"></a></span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">This
+plot shows three main signals of the control system: actual RPM, filtered RPM,
+and a command signal. As one can see, the command signal is completely out of
+phase with filtered RPM due to efforts of keeping constant speed in cruise
+control mode. Actual RPM is delayed from the command signal due to the mass
+inertia. Moreover, filtered RPM is delayed from actual RPM due to filtering
+calculation. The specific combination of these delays, or, in other words,
+combination of unified control system with individual characteristics of the
+particular engine, produces Hitching phenomenon. From the control system point
+of view, this is a classical instability problem due to the delay in the system
+feedback loop.</span></p>
+<h2 style="text-align:justify"><span style="font-size:12.0pt;">Discussion</span></h2>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">All
+the possible Hypotheses for the Hitching/Ringing mechanisms were identified
+through existing “standard” ways of producing these phenomena. That provided
+the complete accuracy of the Failure Analysis (no possible mechanism could be
+missed).</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">The
+provided AFD FA gave us the possibility to verify the following mechanism of the
+Ringing/Hitching phenomena (Verified Hypothesis):</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The mechanical system of the engine includes many elements that can
+provide non-stability, however, none of revealed factors can be estimated as
+sufficient to be considered as a “trigger” of oscillation. Therefore,
+improvement of the system’s specific elements cannot solve the problem in
+general.</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The calibration system (control system) that is designed to compensate
+any undesired signal deviation fails to do that, instead it amplifies the
+initial oscillation with inadequate time delay of the control signal thus
+providing Ringing or Hitching. (Both phenomena show themselves when the system
+of engine control works without human participation in idle or cruise control
+mode.)</span></p>
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:12.0pt;">The
+Task Force team greatly reduced the brainstorming time and increased the
+efficiency of the team in the following testing and verification process. The
+whole procedure took one month.</span></p>
+<p class="MsoBodyText3" style="text-align:justify"><span style="font-family:&quot;Times New Roman&quot;">AFD
+method helped to improve team’s understanding of the truck software and
+calibration, and also their interaction with mechanical part of the Engine.</span></p>
+<h2 style="text-align:justify">&nbsp;</h2>
+<h2 style="text-align:justify"><span style="font-size:12.0pt;">REFERENCES</span></h2>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Kaplan, S., Visnepolschi, S., Zlotin, B., Zusman, A. 1999. <i>New Tools
+for Failure and Risk Analysis. </i>Southfield MI: Ideation International Inc.</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Altshuller, G.S. 1984. <i>Creativity as an Exact Science</i>. Translated
+by Williams, S. NY: Gordon and Breach Science Publishers.</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ternenco, J., Zusman, A., Zlotin, B. 1998. <i>Systematic Innovation: An
+Introduction to TRIZ (Theory of Inventive Problem Solving).</i> Boca Raton: SRC
+Press.</span></p>
+<p class="MsoNormal" style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;"><span style="font-size:12.0pt;">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ideation Int. Inc., Final Report on the project “Revealing root causes
+of Ringing/Hitching phenomena on the truck engine”, 1999.</span></p>
+

@@ -1,0 +1,1058 @@
+<h1>TRIZ for Perl-Programming</h1>
+
+<p align="left"><font color="#008080">First presented at TRIZCON2001, The
+Altshuller Institute, March, 2001.</font></p>
+
+<p align="left"><font face="Times New Roman">Michael Schlueter<br>
+Philips Semiconductors<br>
+</font><font face="Times New Roman">Stresemannallee 101, D-22529 Hamburg GERMANY<br>
+Phone: +49 40 5613 3423; Fax: +49 40 5613 3392<br>
+Email: <a href="mailto:Michael.Schlueter@philips.com">Michael.Schlueter@philips.com</a></font></p>
+<b>
+<p>Abstract</p>
+</b>
+<p><font face="Times New Roman">When implementing a program a potential risk is
+revealed from discussions. The chance is taken to apply TRIZ to a software
+problem. The specific mechanism and the required resources to create the
+identified disaster by the prototype are worked out. TRIZ’ standard solutions
+are utilized to derive strong alternative implementations, which will eliminate
+the disaster completely. As a by-product a preliminary list of Perl-fields is
+derived in analogy to the lists of physical and chemical TRIZ-fields.</font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font><b>
+<p>Part I</p>
+<p>Initial Situation</p>
+</b>
+<p><font face="Times New Roman">Members from the development department can pass
+problems to a support crew and ask for a solution. In the past this process was
+organized by a human-based help-desk facility. In an attempt to replace a human
+as the source of energy and control a program is developed, called CRC2000,
+which allows to submit a problem statement to the support crew via the available
+computer network. CRC2000 provides required functionality, which is not
+available from the current email system.</font></p>
+<b>
+<p><font face="Times New Roman">Figure 1 Screenshot of the final CRC2000 program</font></p>
+</b>
+<p align="left"><font face="Times New Roman"><a href="Image195.gif" target="_blank"><img src="Image195_small.gif" border="1" width="100" height="61"></a></font></p>
+<p><font face="Times New Roman">From a users perspective the description of the
+problem, the severity and the allowable time-period has to be entered into a
+dialog-form. When clicking with the mouse on the “OK” button (Figure 1) the
+required processes are started. A user could click on “Cancel” by intention
+to abort the program. From discussion it became evident that there is a severe
+risk:</font></p>
+</p><ul>
+  <li><font face="Times New Roman">A user could enter all required information</font></li>
+  <li><font face="Times New Roman">Instead of clicking “OK” one could click
+    on the “Cancel” button <b>unintentionally</b></font></li>
+  <li><font face="Times New Roman">From a user’s perspective the information
+    seems to be passed to the support crew</font></li>
+  <li><font face="Times New Roman">In reality all information is lost</font></li>
+</ul>
+<p><font face="Times New Roman">The program is implemented in Perl (language;
+cf. appendix) and Perl/Tk (graphical user interface). The author is fluently in
+Perl, whereas Perl/Tk is relatively new to him. It is required to prevent the
+“Cancel”-disaster and to identify suitable ways of implementation in Perl
+and Perl/Tk.</font></p>
+<b>
+<p>TOP-Analysis</p>
+</b>
+<p><font face="Times New Roman">There are two basic tasks involved in this
+problem:</font></p>
+</p><ol>
+  <li><font face="Times New Roman">Understand the mechanisms.</font></li>
+  <li><font face="Times New Roman">Reveal involved and required resources within
+    the system.</font></li>
+</ol>
+<p><font face="Times New Roman">The author decided to use Zinovy Royzen’s
+TOP-approach, which is a resource-based way to model functions [1]. Compared to
+SuF-models Royzen includes also the result of an action explicitly, which he
+calls “product” or “modified object”. A comparison of these two models
+can be found in [6].</font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font><b>
+<p>Understanding the “Cancel”-Mechanism</p>
+</b>
+<p><font face="Times New Roman">At first glance clicking the “Cancel”-button
+may appear to be a conflict. However, the intended and the unintended use of
+this button are completely separated in time (Figure 2).</font></p>
+<p align="left"><font face="Times New Roman"><b>Figure 2 Analyzing the
+&quot;Cancel&quot;-event in time<br>
+</b><img src="Image196.gif" border="1" width="550" height="188"></font></p>
+<p align="left"><b>Figure 3 Simplified Perl/Tk code, showing the problem<br>
+</b><img border="1" src="Image200.gif" width="259" height="248"></p>
+<p><font face="Times New Roman">There is no way to hit this button <i>with
+intention AND without intention</i> during the same period of time. When the
+button is clicked, a special button-event signal is created and passed to the
+messaging system from Perl/Tk. Control is immediately passed to other parts of
+the program. In the CRC2000-program the exit() subroutine is associated with the
+“Cancel”-event. Even, if subsequent “Cancel”-events should be stored in
+the message-queue they will be lost, because the program terminates. The only
+way to create a new “Cancel”-event is to restart the program and to click
+the Cancel button again. Figure 3 shows the important part within the Perl/Tk
+code, which is explained in more detail in the appendix.</font></p>
+<p><font face="Times New Roman">For further analysis one can regard the
+unintended “Cancel”-event as a harmful function:</font></p>
+<u>
+<p><font face="Times New Roman">Model:</font></u><font face="Times New Roman">
+Cancel //&gt; Information =&gt; Information_lost</font></p>
+<u>
+<p><font face="Times New Roman">Read:</font></u><font face="Times New Roman">
+“Cancel acts harmfully on the Information. As a harmful result, information is
+lost.”</font></p>
+<p><font face="Times New Roman">&nbsp;</font></p>
+<b>
+<p>Inventing Disaster</p>
+</b>
+<p><font face="Times New Roman">To reveal the relevant mechanisms of losing
+information, which are possible within the CRC2000-program, the opposite problem
+is solved next. This effective approach has been proposed to predict problems
+many times before [e.g.: 1, 2, 3]. For the moment it is required to invert the
+problem and to regard the harmful cancel-action as a desired useful action:</font></p>
+<u>
+<p><font face="Times New Roman">Model:</font></u><font face="Times New Roman">
+Cancel </font><font face="Wingdings">à</font><font face="Times New Roman">
+Information =&gt; Information_lost</font></p>
+<u>
+<p><font face="Times New Roman">Read:</font></u><font face="Times New Roman">
+“Cancel acts usefully on Information. As a useful result, Information is lost.”</font></p>
+<u>
+<p><font face="Times New Roman">Inventive Task:</font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+      </u>
+      <p><font face="Times New Roman">“Find ways to loose information by the
+      Cancel-event. Utilize only available resources and fields. Guarantee loss.
+      Make it an inevitable loss-field.”</font></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+</blockquote>
+<p><font face="Times New Roman">As a boundary condition the programmer must have
+ensured that a “Cancel”-button is available, visible to and usable by a
+user. The task is to reveal problems created by a working program.</font></p>
+<b>
+<p>Available Resources</p>
+</b>
+<p><font face="Times New Roman">The only available resource, which can establish
+disaster on a user activity, is the “Cancel”-button itself. From all options
+of the Button-widget only the command-option has the ability to create the
+desired disaster:</font></p>
+<p><b><font face="Times New Roman">-command =&gt; <i>callback</i></font></p>
+</b>
+<p><font face="Times New Roman">When a Button is created in the Perl-program the
+command-option is one of its parameters. <i>callback</i> specifies a subroutine
+which has to be executed when this Button is used.</font></p>
+<blockquote>
+  <blockquote>
+    <p><font face="Times New Roman">1) A Button can be created without using
+    this option:</font></p>
+    <blockquote>
+      <blockquote>
+        <p><font face="Times New Roman">$mw-&gt;Button(</font></p>
+        <p><font face="Times New Roman">-text=&gt;”Cancel”</font></p>
+        <blockquote>
+          <blockquote>
+            <p><font face="Times New Roman">)-&gt;pack;</font></p>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+    <p><font face="Times New Roman">2) As a standard programmers assign the exit
+    routine to a “Cancel”-button:</font></p>
+    <blockquote>
+      <blockquote>
+        <p><font face="Times New Roman">$mw-&gt;Button(</font></p>
+        <p><font face="Times New Roman">-text=&gt;”Cancel”,</font></p>
+        <p><font face="Times New Roman">-command=&gt;sub {exit};</font></p>
+        <blockquote>
+          <blockquote>
+            <p><font face="Times New Roman">)-&gt;pack;</font></p>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+    <p><font face="Times New Roman">3) Programmers can perform other actions
+    before actually calling the exit-routine:</font></p>
+    <blockquote>
+      <blockquote>
+        <p><font face="Times New Roman">$mw-&gt;Button(</font></p>
+        <p><font face="Times New Roman">-text=&gt;”Cancel” ”,</font></p>
+        <p><font face="Times New Roman">-command=&gt;sub {some_other_function_first();
+        exit};</font></p>
+        <blockquote>
+          <blockquote>
+            <p><font face="Times New Roman">)-&gt;pack;</font></p>
+          </blockquote>
+        </blockquote>
+        <p><font face="Times New Roman">sub some_other_function_first {</font></p>
+        <p><font face="Times New Roman"># some code to execute</font></p>
+        <p><font face="Times New Roman">}</font></p>
+      </blockquote>
+    </blockquote>
+    <p><font face="Times New Roman">4) Programmers can call any other function
+    instead:</font></p>
+    <blockquote>
+      <blockquote>
+        <p><font face="Times New Roman">$mw-&gt;Button(</font></p>
+        <p><font face="Times New Roman">-text=&gt;”Cancel” ”,</font></p>
+        <p><font face="Times New Roman">-command=&gt;sub {some_other_function_first();}</font></p>
+        <blockquote>
+          <blockquote>
+            <p><font face="Times New Roman">)-&gt;pack;</font></p>
+          </blockquote>
+        </blockquote>
+        <p><font face="Times New Roman">sub some_other_function_first {</font></p>
+        <p><font face="Times New Roman"># some code to execute</font></p>
+        <p><font face="Times New Roman">exit();</font></p>
+        <p><font face="Times New Roman">}</font></p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><font face="Times New Roman">If the exit-routine is omitted, the program can
+not terminate. To satisfy the boundary conditions of a working program, only
+variants, which use the exit-routine, need to be considered (i.e. variant 2-4).
+As a result, the disaster must be created by the <i>callback</i> routine(s)
+before calling the exit-routine.</font></p>
+<b>
+<p>How to lose information effectively by the <i>callback</i> function?</p>
+</b>
+<p><font face="Times New Roman">The information stored in the internal data
+structures of the Tk-widgets is lost, when:</font></p>
+</p><ul>
+  <li><font face="Times New Roman">Information is not stored permanently</font></li>
+  <li><font face="Times New Roman">Information is overwritten</font></li>
+</ul>
+<p><font face="Times New Roman">The second possibility is not implemented in the
+prototype. There are no plans to do it, so this option is not considered.</font></p>
+<p><font face="Times New Roman">Task 1: Find ways to store the information
+temporarily (not long enough).</font></p>
+<p><font face="Times New Roman">Requirement1: Store information, but not long
+enough.</font></p>
+<u>
+<p><font face="Times New Roman">Where?</font></p>
+</u><b>
+<p align="left"><font face="Times New Roman">Figure 4 Operating zones of
+desired disaster<br>
+</font></b><font face="Times New Roman"><img src="Image197b.gif" border="1" width="550" height="256"></font></p>
+<p><font face="Times New Roman">Figure 4 indicates the operating zones, where
+the desired disaster must be guaranteed.</font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font>
+<p><font face="Times New Roman">There is one trivial solution:</font></p>
+</p><ul>
+  <li><font face="Times New Roman">Do not store any information on the disk.</font></li>
+</ul>
+<p><font face="Times New Roman">Storing information in a file on a harddisk is
+the only way to store information permanently on a computer, once a program is
+terminated or the whole system is turned off. This solution is already
+implemented in the prototype (no storing mechanism is available for this event)
+and we want to look for more ways to accomplish Task 1.</font></p>
+<p><font face="Times New Roman">The information has to be lost:</font></p>
+</p><ul>
+  <li><font face="Times New Roman">Within the variable</font></li>
+  <li><font face="Times New Roman">Within the callback routine</font></li>
+  <li><font face="Times New Roman">On the network</font></li>
+  <li><font face="Times New Roman">On the disk</font></li>
+</ul>
+<p><font face="Times New Roman">The relevant zones of desired disaster are
+indicated in the figure.</font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font><u>
+<p><font face="Times New Roman">When?</font></p>
+</u>
+<p><font face="Times New Roman">As discussed above the information must be lost
+between invoking the callback function and before calling the exit-routine.
+Figure 5 shows the required operating times of the desired disaster.</font></p>
+<b>
+<p align="left"><font face="Times New Roman">Figure 5 Operating time of
+desired disaster<br>
+</font></b><font face="Times New Roman"><img src="Image198b.gif" border="1" width="375" height="174"></font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font>
+<p><font face="Times New Roman">Capability of the mentioned Resources:</font></p>
+</p><ol>
+  <li><font face="Times New Roman">lose information within the variable of the
+    widget:<br>
+    The information is lost within the widget-variable when the widget is
+    destroyed. This happens far later than the call to the exit routine. So this
+    resource does not have the required property in time.</font></li>
+  <li><font face="Times New Roman">lose information within the callback routine:<br>
+    The timely requirement is fulfilled. This resource can be utilized.</font></li>
+  <li><font face="Times New Roman">lose information on the network:<br>
+    There is no way to lose information in a controlled way on the network.
+    Network errors are beyond the scope of this investigation. So this resource
+    can not be used to create the desired disaster.</font></li>
+  <li><font face="Times New Roman">lose information on the disk:<br>
+    When the information is not stored on disk, there is no way to retrieve it
+    after the CRC2000-program has been terminated. This resource can be
+    utilized.</font></li>
+</ol>
+<blockquote>
+  <font face="Times New Roman" size="2">
+  <p>&nbsp;</p>
+  </blockquote>
+</font>
+<p><font face="Times New Roman">As a summary, the disaster can be created by the
+trivial event:</font></p>
+</p><ul>
+  <li><font face="Times New Roman">Do not store any information from any widget
+    on disk when performing the Cancel-callback function and before calling the
+    exit() routine.</font></li>
+</ul>
+<p><font face="Times New Roman">This way the loss of information is guaranteed
+when the user hits the Cancel button unintended.</font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font><b>
+<p>Preventing Disaster</p>
+</b>
+<p><font face="Times New Roman">In this case there is only one trivial mechanism
+available to lose information when hitting the Cancel-button under the boundary
+conditions mentioned. The next step is to identify ways and available Perl-resources
+to prevent this disaster. We now return to the original model of the harmful
+action, which has to be solved within the operating zones and operating times
+indicated by Figures 4 and 5:</font></p>
+<u>
+<p><font face="Times New Roman">Model:</font></u><font face="Times New Roman">
+Cancel //&gt; Information =&gt; Information_lost</font></p>
+<u>
+<p><font face="Times New Roman">From Analysis:</font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+      </u>
+      <p><font face="Times New Roman">Information is lost between starting the
+      callback routine and before staring the exit-routine by not saving any
+      information from any widget to disk.</font></p>
+      <font face="Times New Roman" size="2">
+      <p>&nbsp;</p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+</font><b>
+<p>Direct Elimination of Harmful Action</p>
+</b>
+<p><font face="Times New Roman">According to Royzen there are 6 proposals, how
+to eliminate harmful action directly [1]:</font></p>
+</p><ol>
+  <li><font face="Times New Roman">Use an insulator between „Cancel“ and „Information“</font></li>
+  <li><font face="Times New Roman">Apply a compensating field (algorithm etc.)</font></li>
+  <li><font face="Times New Roman">Protect the Information from the Cancel
+    button</font></li>
+  <li><font face="Times New Roman">Modify „cancel“ in such a way, that the
+    harmful action disappears</font></li>
+  <li><font face="Times New Roman">Modify the „Information“ in such a way,
+    that it becomes insensitive against „Cancel“</font></li>
+  <li><font face="Times New Roman">Alter zone (point of action) or duration or
+    both of „Cancel“ to reduce or eliminate the harmful action.</font></li>
+</ol>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <font face="Times New Roman" size="2">
+      <p>&nbsp;</p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</font><b>
+<p>Example: Using an Insulator</p>
+<p>Abstract Proposal</p>
+<blockquote>
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><font face="Times New Roman">Cancel /\/|</font></td>
+      <td></td>
+      <td><font face="Times New Roman">Information =&gt; <strike>Information_lost</strike></font></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><font face="Times New Roman">Sx</font></td>
+      <td></td>
+    </tr>
+  </table>
+</blockquote>
+</b>
+<p><font face="Times New Roman">Insert a (yet unknown) insulator Sx, which will
+insulate „Information“ from „Cancel“ and yields „Information_available“.</font></p>
+<b>
+<p>Becoming more specific</p>
+</b>
+<ol type="A">
+  <li><font face="Times New Roman">Requirements for Sx:<br>
+    </font><font face="Times New Roman">„Cancel“ must stop the program. „Cancel“
+    must not loose information entered so far.</font></li>
+  <li><font face="Times New Roman">WHERE should Sx insulate „Information“?<br>
+    The Perl-variable, that keeps the information, must be insulated from
+    cleaning up the variable.</font></li>
+  <li><font face="Times New Roman">WHEN must Sx insulate „Information“ ?</font></li>
+</ol>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font>
+<p><font face="Courier New" size="2">No info entered | info entered | Cancel |
+exit()<br>
+----------------------------------------X-----------&gt; time</font></p>
+<p><font face="Times New Roman">Sx must insulate „Information“ after „Cancel“
+has been pressed and before program exits.</font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font><b>
+<p>Identifying Sx amongst the existing, available resources</p>
+</b>
+<p><font face="Times New Roman">According to Royzen there are 10 possible ways
+(A-J) to introduce an insulating property.</font></p>
+<p>Proposal A:</p>
+<p><font face="Times New Roman">Insulate „Information“ by using a substance
+that is used for this purpose.</font></p>
+<blockquote>
+  <p><font face="Times New Roman">END{} - block from Perl could be used. Perhaps
+  also the BEGIN{} block when information is eventually restored. Information
+  could be stored on disk via the END-block and re-read via the BEGIN-block, on
+  resume.</font></p>
+</blockquote>
+<p><font face="Times New Roman">The END{} - black is executed as late as
+possible by Perl. From a test program it has been verified, that the widgets
+still exist when the END-block is executed. So the information contained in the
+widgets could be retrieved and stored to disk for later use.</font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font>
+<p>Proposal B:</p>
+<p><font face="Times New Roman">Insulate „Information“ by inserting another
+additional „Information“, which is exactly the same „Information“</font></p>
+</p><ul>
+  <li><font face="Times New Roman">use an extra directory for the information,
+    treat it and mark it as „preliminary“ ; save information continuously
+    on-disc. (in the current concept „Information“ would have been stored
+    finally on disk. The suggestion is to use a copy of the original object „Information“)</font></li>
+</ul>
+<p>Proposal C:</p>
+<p><font face="Times New Roman">Insulate „Information“ by using another „Cancel“
+- object, which is exactly the same.</font></p>
+</p><ul>
+  <li><font face="Times New Roman">In Perl/Tk there is a callback function
+    associated with a Cancel-Button. Deviating from this proposal, this
+    suggestion guides the author to consider the callback function of the
+    original „Cancel“-Button, like setting the buttons options to
+    -command=&gt;&amp;restore (look for details in Perl/Tk; there will be a
+    restore() function defined somewhere else to perform the insulation
+    function.)</font></li>
+</ul>
+<p><font face="Times New Roman">And so on until proposal J [1]. Then there are
+more proposals on using modified resources. There are a similar amount of
+proposals for the other 5 direct elimination methods, mentioned above.</font></p>
+<font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font><b>
+<p>Part II</p>
+<p>A By-Product of this Process</p>
+</b>
+<p><font face="Times New Roman">During this analysis it is necessary to create
+sufficient SuF-models many times. A common procedure is to go through lists of
+TRIZ-fields and to check, whether or not a specific field might provide the
+required action. The author had access to lists of mechanical-, chemical-,
+electric-, magnetic-, thermal- and nuclear-fields.</font></p>
+<p><font face="Times New Roman">Using these lists was very inspiring for solving
+software problems. However, software engineering has become a mature business,
+with very powerful creation processes, providing new TRIZ-fields and new
+TRIZ-resources. These should be revealed to better utilize state-of-the-art
+knowledge from software industries.</font></p>
+<p><font face="Times New Roman">A preliminary compilation of Perl-fields is
+given in the appendix, which should allow to use Perl more effectively. For
+example during analysis it becomes necessary to introduce an access-field into a
+program. How could this be done in Perl?</font></p>
+<p><font face="Times New Roman">One could use specific substances, like S<sub>File,
+</sub></font>S<font face="Times New Roman"><sub>List, </sub></font>or S<font face="Times New Roman"><sub>Hash</sub></font>
+(cf. appendix). One could introduce S<font face="Times New Roman"><sub>use</sub></font>
+or S<font face="Times New Roman"><sub>require</sub></font>, which are Perl-specific
+functions to include other program code. The programmer now can choose the most
+suitable solution. In this particular case proposals 1) and 2) or 1) and 3) will
+be combined in practice, when persistent storage of data is required. Proposals
+2) or 3) may be used individually when data only need to be accessed during run
+time of the program.</p>
+<p>Initial (insufficient UA): <img border="0" src="Image202.gif" width="138" height="25"></p>
+<p>Proposals (sufficient UA):</p>
+<blockquote>
+  <p><img border="0" src="Image201.gif" width="352" height="129"></p>
+</blockquote>
+<p>Code-Examples:</p>
+<table border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td valign="top">Ad 1)</td>
+    <td valign="top">&nbsp;open F, “file.dat”;</td>
+    <td valign="top"># access the data-file</td>
+  </tr>
+  <tr>
+    <td valign="top">Ad 2)</td>
+    <td valign="top">@data=&lt;F&gt;;<br>
+      $wanted = $data[10];</td>
+    <td valign="top"># read in its contents into the list @data<br>
+      # access the 11th data element of list @data</td>
+  </tr>
+  <tr>
+    <td valign="top">Ad 3)</td>
+    <td valign="top">$wanted = $hash{‘id’};</td>
+    <td valign="top"># access the data for the key-word ‘id’ of hash %hash</td>
+  </tr>
+  <tr>
+    <td valign="top">Ad 4)</td>
+    <td colspan="2" valign="top">not applicable; ‘use’ simply includes
+      source code when the Perl script is compiled</td>
+  </tr>
+  <tr>
+    <td valign="top">Ad 5)</td>
+    <td colspan="2" valign="top">not applicable; ‘require’ simply includes
+      source code when the Perl script is run</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<b>
+<p>Experiences</p>
+</b>
+<p><font face="Times New Roman">Experienced programmers will analyze the
+situation in almost the same way as it is shown in this case study. To the
+authors personal experience there can be an important difference. From practice
+the author knows about certain traps and certain problematic situations. With
+this kind of background many problems can be identified either analytically by
+following the logic of the program, by gut feeling or by sixth sense.
+Unfortunately many times problems are only identified by complaints.</font></p>
+<p><font face="Times New Roman">When implementing specific solutions there may
+be some uncertainty or even unawareness left to the programmer. Applying TRIZ
+analysis, and especially the sabotage-technique, creates a systematic, firm
+understanding of the situation. For example in this case study trivial and more
+interesting loss-fields could be identified. From enforcing precision of
+thinking hardly any uncertainty is left. All potential problems and all relevant
+resources can be revealed.</font></p>
+<p><font face="Times New Roman">While a gifted programmer may achieve the same
+amount of precision in analysis, the author was struck by the enormous amount of
+strong alternatives derived by TRIZ’ standard solutions. Most of them could
+have been implemented and many where unexpected and surprising.</font></p>
+<b>
+<p>Summary</p>
+</b>
+<p><font face="Times New Roman">TRIZ is applied successfully to a problem from
+software implementation. TRIZ helps to reveal systematically a specific disaster
+mechanism when using the discussed software. Once revealed, many strong
+countermeasures are identified, which can be implemented in Perl and will
+eliminate the specified disaster completely.</font></p>
+<p><font face="Times New Roman">Surprisingly, the discussed problem turns out to
+be a quite trivial one from a programmer’s point of view. However, the
+disciplined TRIZ-analysis provides the necessary input to propose a variety of
+countermeasures.</font></p>
+<p><font face="Times New Roman">Perl offers an overwhelming amount of
+possibilities and alternatives to accomplish a task. The TRIZ-process helps to
+exactly identify the required Perl-resources to eliminate the discussed problem.
+TRIZ makes the author a more effective programmer, saving valuable development
+time.</font></p>
+<p><font face="Times New Roman">As a by-product a preliminary list of Perl-fields
+is derived, which can be used to identify harmful and useful resources or to
+derive concrete solutions for implementation. This work should be continued and
+extended to other programming languages.</font></p>
+<p><font face="Times New Roman">Generic TRIZ-tools should be applied during the
+specification and concept phase of software development. This would allow coming
+up with more innovative and more capable software concepts right from the start.</font></p>
+<p><font face="Times New Roman">The different resources, effects and fields,
+found in software systems, should be incorporated into the TRIZ knowledge base.
+This would allow improving software implementations by TRIZ.</font></p>
+<sup><sub><font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font></sub></sup><b>
+<p>Biography</p>
+</b>
+<p><font face="Times New Roman">Michael Schlueter graduated in low-energy
+solid-state physics in 1987 at the Christian-Albrechts-Universitaet, Kiel. He
+visited CERN in 1984 as a summer student and other high energy physics
+facilities to witness front-end research. He started at Philips Semiconductors,
+Hamburg in 1986 and held various support-related positions for IC-development.
+Very early he started evaluating methods for quality improvement. He began with
+TRIZ in 1996, after following a presentation of Zinovy Royzen at the Taguchi
+Symposium in Los Angeles. He tried many contemporary approaches to TRIZ and is
+an active promoter of TRIZ within Philips.</font></p>
+<b>
+<p>References</p>
+</b>
+</p><ol>
+  <li><font face="Times New Roman">TRIZ Workshop, Zinovy Royzen, Philips
+    Semiconductors Hamburg, 1999</font></li>
+  <li><font face="Times New Roman">“Sabotage-Technique”, Alla Zusman,
+    private communication Oct. 2000</font></li>
+  <li><font face="Times New Roman">“Anticipatory Failure Determination”,
+    Dana Clarke, private communication Dec. 2000</font></li>
+  <li><font face="Times New Roman">“Programming Perl”, Larry Wall, Tom
+    Christiansen &amp; Randal L. Schwartz, O’Reilly, 2nd Ed. Sept. 1996.</font></li>
+  <li><font face="Times New Roman">Comprehensive Perl Archive Network, CPAN, </font><u><font face="Times New Roman">http://search.cpan.org</font></li>
+  </u>
+  <li><font face="Times New Roman">“Tool, Object, Product (TOP) Function
+    Analysis”, Zinovy Royzen,<br>
+    http://www.triz-journal.com/archives/1999/09/d/index.htm</font></li>
+  <li><font face="Times New Roman">“Learning Perl”, Randal L.
+    Schwartz&amp;Tom Christiansen, O’Reilly</font></li>
+</ol>
+<b>
+<p>Appendix</p>
+<p>Some Perl Glossary</p>
+<i>
+<p><font face="Times New Roman">Perl</font></i></b><font face="Times New Roman">
+stands for a “Practical Extraction and Report Language”. It was developed by
+Larry Wall to simplify routine tasks of computer management. Perl has matured to
+a robust, powerful scripting language, which combines the advantages of many
+well proven programming languages, like C, C++ or FORTRAN, and Unix tools, like
+awk or sed.</font></p>
+<b><i>
+<p><font face="Times New Roman">Perl/Tk</font></i></b><font face="Times New Roman">
+is a special package, which ports Tcl/Tk to Perl. Tcl is a scripting language
+while Tk is a toolkit. Both together allow Unix programmers to create graphical
+user interfaces (GUI’s) for the X window server. Perl/Tk provides a subset of
+Tcl/Tk to Perl programmers.</font></p>
+<b><i>
+<p><font face="Times New Roman">Widgets</font></i></b><font face="Times New Roman">
+are discrete objects of small size. In Perl/Tk they denote elementary graphical
+units, like a Button, a Listbox or a Canvas. Widgets can be displayed on a X
+window server. The user can graphically interact with a widget, like entering
+text or selecting an entry. Several widgets allow binding events, which enables
+programmers to introduce a variety of interaction between the user and the
+program.</font></p>
+<b><i>
+<p><font face="Times New Roman">Scalars</font></i></b><font face="Times New Roman">
+are the most simple data type in Perl. They are marked by a “$” character
+and can take any information, like $x=3; $y=-4.78e-24; $string=”hello world”;</font></p>
+<b><i>
+<p><font face="Times New Roman">Lists or Arrays</font></i></b><font face="Times New Roman">
+are collections of scalars. The are marked by a “@” character. Examples are
+@list=(1, 2, 3, 4); @names=(“charly brown”, “snoopy”); @joined=( “hello
+world”, @list, @names); Lists are accessed via their integer index.</font></p>
+<b><i>
+<p><font face="Times New Roman">Hashes</font></i></b><font face="Times New Roman">
+are lists of key/value pairs. In contrast to Arrays they are accessed via
+arbitrary keywords, like a mini-database. Hashes are marked by the “%”
+character, like %names=( “fred”=&gt;”flintstone”, “charly”=&gt;”brown”
+);</font></p>
+<sub><sup><font face="Times New Roman" size="2">
+<p>&nbsp;</p>
+</font></sup></sub><b>
+<p>Explainations for the Perl/Tk-Example</p>
+</b>
+<p><font face="Times New Roman">The given example creates a new Window on the
+screen, which contains only one Button. The Button is named “Cancel”. Once
+it is hit, the program will terminate and the Window will disappear.</font></p>
+<p><font face="Times New Roman"><img src="Image199.gif" width="90" height="65"></font></p>
+<table border="1" align="right" cellspacing="0" cellpadding="3">
+  <tr>
+    <td width="100%"><font size="2">1 #!/usr/bin/perl -w;<br>
+      2 use Tk;<br>
+      3<br>
+      4 # to create parent main window<br>
+      5 $mw=MainWindow-&gt;new;<br>
+      6<br>
+      7<br>
+      8 # to create the Cancel-button<br>
+      <b>9 $mw-&gt;Button(<br>
+      10 -text=&gt;”Cancel”,<br>
+      11 -command=&gt;sub {exit}<br>
+      12 )-&gt;pack;<br>
+      </b>13<br>
+      14 MainLoop;</font></td>
+  </tr>
+</table>
+<p><font face="Times New Roman">#1 When executing this file the command shell
+looks for the shebang-operator “#!” in the first line to find out, which
+other program should be started to interpret this file. In this case it is “Perl”,
+which can be found in the directory “/usr/bin” on the specified system. The
+flag “-w” notifies Perl to issue warnings.</font></p>
+<p><font face="Times New Roman">#2. Notify Perl to include the “Tk”-module
+to create a GUI.</font></p>
+<p><font face="Times New Roman">#4. A comment line.</font></p>
+<p><font face="Times New Roman">#5 “MainWindow” is a Perl/Tk-widget. A new
+instance of this widget is created and its memory address is assigned to the “$mw”
+variable.</font></p>
+<p><font face="Times New Roman">#9 A “Button”-widget is created. It is
+linked to the $mw-variable. As a result this Button will appear only in the
+window indicated by $mw.</font></p>
+<p><font face="Times New Roman">#10 Assigning a specific text to the Button.</font></p>
+<p><font face="Times New Roman">#11 Assigning a command to the Button. When this
+Button is hit, the specified program is called. In this example the subroutine
+is so short that it is included here. Simply, the Perl/Tk specific exit()
+routine is called.</font></p>
+<p><font face="Times New Roman">#12 Pack() determines where the widget will
+occur in the MainWindow later on. When creating several widgets they will be
+displayed in their order from the source code.</font></p>
+<p><font face="Times New Roman">#14 Now all visual properties and events of the
+Window are defined. Perl/Tk enters an endless loop to allow event handling. Once
+the MainLoop has been entered the Window and its widgets will become visible on
+the screen.</font></p>
+<p>&nbsp;</p>
+<p><b>A preliminary Compilation of Perl-Fields</p>
+</b>
+<p><font face="Times New Roman">Perl provides a very high degree of
+functionality for data processing. Reference [4] is scanned incompletely for a
+first set of Perl-fields. Where necessary the page is specified below. The idea
+of this list is to guide a Perl specialist to the required or available
+resources, when solving inventive problems in a Perl program with TRIZ. A Perl-novice
+may want to have a look at reference [7] first, where most of the resources
+listed below can be found as well.</font></p>
+<p><font face="Times New Roman">Similar Field/Resource lists can be derived for
+other computer languages, like C, Pascal, Fortran, Basic, C++ or Smalltalk. The
+overwhelming amount of available fields, resources and effects from other Perl-modules
+are not included [5].</font></p>
+<table border="1" cellspacing="0" cellpadding="3">
+  <tr>
+    <td><b>
+      <p>Field/Operation</b></td>
+    <td><b>
+      <p>Resources</b></td>
+    <td><b>
+      <p>Page</b></td>
+    <td><b>
+      <p>Examples</b></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Abbreviation</font></td>
+    <td>
+      <p><font face="Times New Roman">Filehandle F Internal variables, like $_,
+      $!, etc. Special variables, like @ARGV Special codes, like</font></td>
+    <td>
+      <p><font face="Times New Roman">138ff 65</font></td>
+    <td>
+      <p><font face="Times New Roman">open F, “in.txt”; @x= <b>&lt;</b>F<b>&gt;
+      </b>; foreach (@x) { print $_; }; # loop if($ARGV[1] eq “in.txt”) {…}
+      # decision $text=~m/ +/;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Access</font></td>
+    <td>
+      <p><font face="Times New Roman">Files: open Lists: $a[$index] Hashes: $h{$index}
+      Use: (include at compile time) Require: (include at run time)</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">open F, “&gt;out.txt”; # access via
+      filehandle $x=$a[1]; # access by integer $h{‘michael’}=’blonde’; #
+      access by keyword use Tk; require ‘file.pm’</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Assignment</font></td>
+    <td>
+      <p><font face="Times New Roman">Operators</font></td>
+    <td>
+      <p><font face="Times New Roman">92</font></td>
+    <td>
+      <p><font face="Times New Roman">= **= += .= ||= etc. $a[1]=100;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Auto-increment/decrement</font></td>
+    <td>
+      <p><font face="Times New Roman">Scalar variables</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">$a++ ++$a --$a $a--</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Break</font></td>
+    <td>
+      <p><font face="Times New Roman">Loop Check for a condition</font></td>
+    <td>
+      <p><font face="Times New Roman">190</font></td>
+    <td>
+      <p><font face="Times New Roman">Next LABLE Last LABLE Die</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Call</font></td>
+    <td>
+      <p><font face="Times New Roman">Code, Memory</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">Subroutine &amp;sub</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Comparison</font></td>
+    <td>
+      <p><font face="Times New Roman">Operators</font></td>
+    <td>
+      <p><font face="Times New Roman">87 87 81</font></td>
+    <td>
+      <p><font face="Times New Roman">Numeric: = = !&lt; &lt; &gt; &lt;=
+      &lt;=&gt; String: eq ne lt gt le cmp Patterns: =~ !~</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Condition</font></td>
+    <td>
+      <p><font face="Times New Roman">Expression</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">Any argument of if, while etc. TEST_EXPR ?
+      IF_TRUE : IF_FALSE ($a&lt;3) ? print „too small“ : print „big“</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Copy</font></td>
+    <td>
+      <p><font face="Times New Roman">Scalar variable Operator</font></td>
+    <td>
+      <p><font face="Times New Roman">82</font></td>
+    <td>
+      <p><font face="Times New Roman">$a = $b; x</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Control</font></td>
+    <td>
+      <p><font face="Times New Roman">Code</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">If Unless Redo Continue</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Distinguish</font></td>
+    <td>
+      <p><font face="Times New Roman">Code</font></td>
+    <td>
+      <p><font face="Times New Roman">104</font></td>
+    <td>
+      <p><font face="Times New Roman">SWITCH, CASE, if, while …</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Equality</font></td>
+    <td>
+      <p><font face="Times New Roman">Expression</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">Numeric: = = != &lt;=&gt; String: eq ne
+      cmp</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Extraction</font></td>
+    <td>
+      <p><font face="Times New Roman">Slice from a List Pattern matching</font></td>
+    <td>
+      <p><font face="Times New Roman">261 57ff</font></td>
+    <td>
+      <p><font face="Times New Roman">@new=@old[7 .. 12]; # just 6 elements
+      print $1 if $s=~/(hallo)/; # match string in $s</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Format</font></td>
+    <td>
+      <p><font face="Times New Roman">Format string Formats</font></td>
+    <td>
+      <p><font face="Times New Roman">222 123</font></td>
+    <td>
+      <p><font face="Times New Roman">Printf( “%d ”, $integer_variable);
+      @&lt;&lt;&lt;&lt; @||| @&gt;&gt;&gt;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Grouping</font></td>
+    <td>
+      <p><font face="Times New Roman">Key/value pairs in hashes</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">%map{ red=&gt;0x00f, green=&gt;0x0f0 };</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Hint</font></td>
+    <td>
+      <p><font face="Times New Roman">Code</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">use strict; no integer;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Individualization</font></td>
+    <td>
+      <p><font face="Times New Roman">Scalars</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">($x, $y)=@long_list; # ignore further
+      elements</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Index</font></td>
+    <td>
+      <p><font face="Times New Roman">List Hash</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">$array[1] $hash{string}</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Input</font></td>
+    <td>
+      <p><font face="Times New Roman">Angle operators</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">&lt;STDIN&gt; &lt;&gt; &lt;FILE&gt;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Interpolation</font></td>
+    <td>
+      <p><font face="Times New Roman">String</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">“hello $name” # yields e.g. “hello
+      world”</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Iteration</font></td>
+    <td>
+      <p><font face="Times New Roman">Loops</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">While Until For Foreach Do</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Joining</font></td>
+    <td>
+      <p><font face="Times New Roman">Strings Lists, Arrays, Scalars Typeglobal
+      (entire symbol table)</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">$all = $s1 . $s2; # merge two strings
+      @array = (@a, @b, $c); # becomes 1 list $fh = *STDOUT;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Logical</font></td>
+    <td>
+      <p><font face="Times New Roman">Expression</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">&amp;&amp; || ! and or not &amp; | ^</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Pattern Matching</font></td>
+    <td>
+      <p><font face="Times New Roman">Regular Expressions</font></td>
+    <td>
+      <p><font face="Times New Roman">57ff</font></td>
+    <td>
+      <p><font face="Times New Roman">$s=~m/pattern/;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Reference</font></td>
+    <td>
+      <p><font face="Times New Roman">Code and Memory address</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">$a or @a # like pointers</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Relation</font></td>
+    <td>
+      <p><font face="Times New Roman">Expression</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">Numeric: &gt; &gt;= &lt; &lt;= String: gt
+      ge lt le</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Remove</font></td>
+    <td>
+      <p><font face="Times New Roman">Code Scalar variables Hash</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">Comment # Characters chomp chop Delete
+      $hash{$key};</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Persistence</font></td>
+    <td>
+      <p><font face="Times New Roman">Perls garbage collection Data stored in
+      files</font></td>
+    <td>
+      <p><font face="Times New Roman">253</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Scope</font></td>
+    <td>
+      <p><font face="Times New Roman">Namespaces Code</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">Global: global declaration a Local: my $x;
+      # limited scope Local: local $y; # restoring previous content Package
+      my_own_prog; Subroutines: sub name {} Control- and Iteration structures</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Segmentation</font></td>
+    <td>
+      <p><font face="Times New Roman">Special Perl-blocks Subroutines Lists
+      Hashes Packages Files Tokens Scope Objects (special Perl-modules)</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">BEGIN {} END{} Sub my_prog {} @list %hash
+      package just_another_part; __END__ __DATA__ my local {}-blocks use object;
+      # includes: object.pm</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Shift</font></td>
+    <td>
+      <p><font face="Times New Roman">Operator</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">&gt;&gt; &lt;&lt;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Store</font></td>
+    <td>
+      <p><font face="Times New Roman">Files</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">open F, „&gt;data.txt“; print F „hello
+      world“;</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Substitution</font></td>
+    <td>
+      <p><font face="Times New Roman">Regular Expressions</font></td>
+    <td>&nbsp;</td>
+    <td>
+      <p><font face="Times New Roman">S///</font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Times New Roman">Universality</font></td>
+    <td>
+      <p><font face="Times New Roman">Objects Global declarations</font></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+

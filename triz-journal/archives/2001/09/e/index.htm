@@ -1,0 +1,521 @@
+<h1>TRIZ and Software - 40 Principle Analogies, Part 1</h1>
+
+  <blockquote>
+    <p><b>Kevin C. Rea, Principle Consultant<br>
+    REA Consulting<br>
+    E-mail: <a href="mailto:kcronline@gmail.com">kcronline@gmail.com</a><br>
+	Web site: <a href="http://kevincrea.com/">http://kevincrea.com/</a></b></p>
+  </blockquote>
+<p>Over the last few years, I have contemplated many ways that TRIZ could be
+used in Computer Science &amp; Information Technology
+<a href="http://www.triz-journal.com/archives/1999/08/d/index.htm">http://www.triz-journal.com/archives/1999/08/d/index.htm</a> .
+Since then I have successfully used TRIZ concepts to solve interesting problems
+and have generated 13 patent submissions. Applying TRIZ to software problems
+still has a way to go, however, I hope to accelerate the application of this
+powerful methodology to information technology and other “software-related”
+problems through a series of articles for the TRIZ Journal.</p>
+<p>In this paper, I present 20 of the 40 inventive principle analogies of TRIZ
+<i>in the context of software</i> and computing from my perspective; in other
+words, these analogies are works in progress and may be updated or appended at a
+later date (the remaining 20 will be published in a later issue of the
+TRIZ-Journal). </p>
+
+<font FACE="Arial" size="2"><b>
+<p>Background:</p>
+</b></font>
+<p>Genrich Altshuller developed the 40 Principles more than 20 years ago. He and
+his team of associates reviewed thousands of worldwide patents selected
+specifically from leading industries for the inventive nature of their solutions
+to technical contradictions. In particular, Altshuller was interested in
+investigating contradictions that were resolved <i>without</i> compromise.</p>
+<p>Altshuller found that utilizing principles previously used to solve similar
+problems in other inventive solutions could solve technical problems. For
+example: a “wearing problem” in the manufacturing of an abrasive product, and a
+“wearing problem” with the cutting edge of a back-hoe bucket, were both solved
+utilizing the principle of <b>“Segmentation.” </b>After discovering this
+correlation, Altshuller was able to identify 40 such principles from his
+analysis of successful inventions.</p>
+
+<font FACE="Arial" size="2">
+<b>
+<p>Altshuller’s Inventive Principles
+        </b>
+    </font>
+    <sup>1 2</sup><b><font FACE="Arial" size="2">:</p>
+    </font>
+<dir>
+  <dir>
+    <p>1. Segmentation</p>
+        </b>
+    <dir>
+      <dir>
+        <p>a. Dividing an object into independent parts.</p>
+        <b>
+      </dir>
+    </dir>
+
+    <p>Software Analogy</b>: <i>Divide a system into autonomous components.</p>
+
+    <dir>
+      <dir>
+        </i><b>
+        <p>Software Example</b>: Intelligent Agents. Intelligent agents can
+        operate independently of each other, achieving a common goal. </p>
+        <p>b. Make an object modular.</p>
+        <b>
+        <p>Software Analogy</b>: <i>Separate similar functions and properties
+        into self-contained program elements (modules).</p>
+        </i><b>
+        <p>Software Example</b>: C++ templates. C++ templates provide a means to
+        containerize code so as to make the runtime execution of this code -
+        modular.</p>
+        <p>c. Increase the degree of fragmentation or segmentation.</p>
+        <b>
+        <p>Software Analogy</b><i>: Increase the level of granularity until a
+        known atomic threshold is reached (The atomic threshold is the smallest
+        structural unit of an object or component; e.g., bits can be thought of
+        as atomic in the context of an encoding scheme).</p>
+        </i><b>
+        <p>Software Example</b>: Fragmentation of Confidential Objects<i>. </i>
+        This idea, based on object fragmentation at design time, is to reduce
+        processing in confidential objects; the more non-confidential objects
+        that can be produced at design time, the more application objects can be
+        processed on un-trusted shared computers. The atomic threshold is where
+        the confidential object is segmented to the point where it no longer
+        valid, <i>as a confidential object</i>.</p>
+      </dir>
+    </dir>
+    <b>
+    <p>2. Extraction</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Separate (extract) an interfering part or property from a
+        technical system, or single out the only necessary part (or property).
+        <br>
+        </p>
+        <b>
+        <p>Software Analogy</b>: <i>Given a language, define a representation
+        for its grammar along with an interpreter that uses the representation
+        to extract/interpret sentences in the language.</p>
+        </i><b>
+        <p>Software Example1</b>: Extraction of Text in Images. A text
+        segmentation technique that is useful in locating and extracting text
+        blocks in images. The algorithm works without prior knowledge of the
+        text orientation, size or font. It is designed to eliminate background
+        image information and to highlight or identify the regions of the image
+        that contain text.</p>
+        <b>
+        <p>Software Example2</b>: Parser. Parsing data refers to the process by
+        which programming data input is broken into smaller, more distinct
+        chunks of information that can be more easily interpreted and acted
+        upon.</p>
+      </dir>
+    </dir>
+    <b>
+    <p>3. Local Quality</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Change a technical system’s structure from uniform (homogenous) to
+        non-uniform; change an external environment (or external influence) from
+        uniform to non-uniform.</p>
+        <b>
+        <p>Software Analogy</b>: <i>Change an object’s classification in a
+        technical system from a homogenous hierarchy to a heterogeneous
+        hierarchy</i>.</p>
+        <b>
+        <p>Software Example1</b>: A non-uniform sampling method for character
+        recognition<i>.</i> The method determines feature extraction as sampling
+        features one-dimensionally in a direction perpendicular to a given line
+        orientation. It samples features at non-uniform intervals so as to avoid
+        misidentifying two lines in close proximity as a single line.</p>
+        <b>
+        <p>Software Example2</b>: Non-uniform access algorithms. In a wireless
+        environment, information is broadcast on communication channels to
+        clients using powerful, battery-operated palmtops. To conserve the usage
+        of energy, the information to be broadcast must be organized so that the
+        client can selectively tune in at the desirable portion of the
+        broadcast. Most of the existing work focuses on uniform broadcast.
+        However, very often, a small amount of information is more frequently
+        accessed by large number of clients while the remainder is less in
+        demand. Using the local quality principal, non-uniform algorithms can be
+        developed that predict the suitable access behavior for a particular
+        operation.</p>
+        <p>b. Make each part of a technical system fulfill a different and
+        useful function.</p>
+        <b>
+        <p>Software Analogy</b>: <i>Same as above.</p>
+        </i><b>
+        <p>Software Example</b>: Promote a data object to higher levels in a
+        single index tree. For this example, I choose the context of spatial
+        data in processing technology and data management. Non-uniformity in
+        data extents is a general characteristic of spatial data. Indexing such
+        non-uniform data using conventional spatial index structures such as
+        R-trees is inefficient for two reasons: (1) the non-uniformity increases
+        the likelihood of overlapping index entries, and, (2) clustering of
+        non-uniform data is likely to index more dead space than clustering of
+        uniform data. Using the TRIZ-way, we must look in our existing
+        environment for fulfillment of useful functionality. To make the impact
+        of these anomalies more “useful”, we invent a new scheme that promotes
+        data objects to higher levels in tree-based index structures; these
+        object then fulfill different functions based on the positional context
+        in the index tree.</p>
+
+
+      </dir>
+    </dir>
+    <b>
+    <p>4. Asymmetry</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Change the shape of a technical system from symmetrical to
+        asymmetrical<i>.</p>
+        </i><b>
+        <p>Software Analogy: </b><i>Change the asymmetry of a technical system
+        in order to non-uniformly affect a desired result of a computation.</p>
+        </i><b>
+        <p>Software Example</b>: Suppose we have balls and bins processes
+        related to randomized load balancing, dynamic resource allocation, or
+        hashing. Suppose n balls have to be assigned to n bins, where each ball
+        has to be placed without knowledge about the distribution of previous
+        places balls. The goal of the algorithm is to achieve an allocation that
+        is as even as possible so that no bin gets much more balls that the
+        average.</p>
+      </dir>
+    </dir>
+    <b>
+    <p>5. Consolidation</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Make operations contiguous or parallel; bring them together in
+        time.</p>
+        <b>
+        <p>Software Analogy: </b><i>Make processes run in parallel.</p>
+        </i><b>
+        <p>Software Example</b>: Synchronize threads of execution in time. The
+        synchronized primitive, the monitor, “consolidates” threads of different
+        priority into a master arbitrator that determined which thread gets the
+        processor and when. </p>
+      </dir>
+    </dir>
+    <b>
+    <p>6. Universality</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Make a part or object perform multiple functions; eliminate the
+        need for other parts.</p>
+        <b>
+        <p>Software Analogy</b>: <i>Make a technical system support multiple and
+        dynamic classifications based on context. </p>
+        </i><b>
+        <p>Software Example</b>: Based on a user’s login preferences a context
+        exists as the result of a need to make behavior specific. Depending on
+        the situation or context, the technical system will show a
+        characteristic identity, with contextual properties (or in general,
+        contextual behavior).</p>
+        <i>
+      </dir>
+    </dir>
+    </i><b>
+    <p>7. Nesting (Matrioshka)</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Place one object into another; place each object, in turn, inside
+        the other.</p>
+        <b>
+        <p>Software Analogy</b>: <i>Inherit functionality of other objects by
+        “nesting” their respective classes inside a base class.</i> </p>
+        <b>
+        <p>Software Example</b>: Nested objects in object-oriented system.
+        Objects reside inside other objects to enhance services and
+        functionality; this takes place by “nesting” classes inside other
+        classes at design time.</p>
+        <b>
+      </dir>
+    </dir>
+    <p>8. Counterweight</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. To counter the weight of a system, merge it with other objects
+        that provide lift.</p>
+        <b>
+        <p>Software Analogy:</b> <i>Use sharing to support large numbers of
+        fine-grained objects efficiently to counter dynamic loads on a technical
+        system.</p>
+        </i><b>
+        <p>Software Example</b>: A shared object that can be used in multiple
+        contexts simultaneously; it acts as an independent object in each
+        context - it’s indistinguishable from an instance of the object that’s
+        not shared.</p>
+        <b>
+      </dir>
+    </dir>
+    <p>9. Prior counteraction</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Preload counter tension to an object to compensate excessive and
+        undesirable stress.</p>
+        <b>
+        <p>Software Analogy: </b><i>Perform preliminary processor actions in
+        system that will improve a later computation.</p>
+        </i><b>
+        <p>Software Example</b>: Reverse lines of text before matching
+        line-breaks to increase match pattern efficiency<b>.</p>
+      </dir>
+      </b>
+      <p></p>
+    </dir>
+    <b>
+    <p>10. Prior action</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Perform, before necessary, a required change of an object (either
+        fully or partially). Carry out all or part of the required action in
+        advance.</p>
+        <b>
+      </dir>
+      <p>Software Analogy: </b><i>Same as above.</p>
+
+      <dir>
+        </i><b>
+        <p>Software Example</b>: The Java Virtual Machine prepares textual
+        “code” into an intermediate form before executing it and/or compiling it
+        to a machine-specific binary. </p>
+        <b>
+      </dir>
+    </dir>
+    <p>11. Cushion in advance</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Prepare emergency means beforehand to compensate the relatively
+        low reliability of an object.</p>
+        <b>
+        <p>Software Analogy:</b> <i>Use an algorithm that handles worst-case
+        harmful effects and maintains global invariance. </p>
+      </dir>
+      </i><b>
+      <p>Software Example</b>: Fair scheduling in wireless packet networks. </p>
+      <b>
+    </dir>
+    <p>12. Equipotentiality</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. In a potential field, limit position changes.</p>
+        <b>
+        <p>Software Analogy:</b><i> Change the operational conditions of an
+        algorithm so as to control the flow of data into and out of a process.</p>
+        </i><b>
+        <p>Software Example</b>: <i>A transparent persistent object store</i>
+        (Voltage is potential energy; data is potential information).</p>
+        <b>
+      </dir>
+    </dir>
+    <p>13. Do it in reverse</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Invert the actions used to solve a problem (e.g., instead of
+        cooling an object, heat it).</p>
+        <b>
+      </dir>
+      <p>Software Analogy:</b> <i>Store transactions in reverse order for
+      backing out.</p>
+      </i><b>
+      <p>Software Example</b>: Recovery and backtracking systems (database). </p>
+      <b>
+    </dir>
+    <p>14. Spheroidality</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Replace linear parts with curved parts, flat surfaces with
+        spherical surfaces, and cube shapes with ball shapes.</p>
+        <b>
+        <p>Software Analogy: </b><i>Replace linear data types with circular
+        abstract data types.</p>
+        </i><b>
+        <p>Software Example</b>: <i>Bounded buffer</i>. The bounded buffer data
+        structure provides an unlimited storage mechanism for storing digital
+        information such as program variables. This circular structure is
+        similar to Altshuller’s circular runway analogy (except that his planes
+        will get off the runway or get ran over, likewise the programmer needs
+        to ensure that valid data are used before the processor completes a
+        write to the same location in the bounded buffer).</p>
+        <b>
+      </dir>
+    </dir>
+    <p>15. Dynamicity</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Allow or design the characteristics of an object, external
+        environment, or process to change to be optimal or to find an optimal
+        operating condition.</p>
+        <b>
+      </dir>
+      <p>Software Analogy: </b><i>Same as above.</p>
+      </i><b>
+      <p>Software Example</b>: Dynamic Linked Libraries (DLLs).</p>
+      <b>
+    </dir>
+    <p>16. Partial or excessive action</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. If 100 percent of a system is hard to achieve using a given
+        solution method, the problem may be considerably easier to solve by
+        using “slightly less” or “slightly more” of the same method.</p>
+        <b>
+        <p>Software Analogy: </b><i>Increasing the performance of measurable and
+        deterministic computations by perturbation analysis.</p>
+        </i><b>
+        <p>Software Example</b>: When performance measurements are made of
+        program operations, actual execution behavior can be perturbed. For
+        example, in synchronization, the measurement and subsequent analysis of
+        synchronization operations (e.g., barrier, semaphore, and advance/await
+        synchronization) can produce accurate approximations to actual
+        performance behavior. Therefore, by using perturbation analysis, we can
+        do slightly more or less to affect the performance output of our
+        computation.</p>
+        <b>
+      </dir>
+    </dir>
+    <p>17. Transition into new dimension</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Difficulties involved in moving or relocating an object along a
+        line are removed if the object acquires the ability to move in two
+        dimensions (along a plane). Accordingly, problems connected with
+        movement or relocation of an object on one plane is removed by switching
+        to a three-dimensional space.</p>
+        <b>
+        <p>Software Analogy:</b> <i>Use a multi-layered assembly of class
+        objects instead of a single layer.</p>
+        </i><b>
+        <p>Software Example</b>: Aggregation of inherited objects towards a new
+        arrangement of functionality.</p>
+        <b>
+      </dir>
+    </dir>
+    <p>18. Mechanical Vibration</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Utilize oscillation.</p>
+        <b>
+        <p>Software Analogy:</b> <i>Change the rate of an algorithm execution in
+        the context of time until the desired outcome is achieved.</p>
+        </i><b>
+        <p>Software Example</b>: This requires a visual analogy of periodically
+        changing the rate of an algorithm on an object that in turn resonates
+        the overall system to an ideal state.</p>
+        <b>
+      </dir>
+    </dir>
+    <p>19. Periodic Action</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Instead of continuous action, use periodic or pulsating actions.</p>
+        <b>
+        <p>Software Analogy:</b> <i>Instead of performing a task continually,
+        determine the time boundaries and perform that task periodically.</p>
+        </i><b>
+        <p>Software Example</b>: Scheduling algorithms (e.g., alert mechanisms,
+        cron-jobs, replication events).</p>
+        <b>
+      </dir>
+    </dir>
+    <p>20. Continuity of useful action</p>
+
+    <dir>
+      <dir>
+        </b>
+        <p>a. Continue on actions; make all parts of an object perform UF and/or
+        NF at full load, all the time (Flywheel stores energy when a vehicle
+        stops, so the motor can keep running at optimum power).</p>
+        <b>
+        <p>Software Analogy:</b> <i>Develop a fine-grained solution that
+        utilizes the processor at full load.</p>
+        </i><b>
+        <p>Software Example</b>: Near video-on-demand (NVoD) scheduling of
+        movies of different popularities for maximum throughput and the lowest
+        average phase offset. Continuity of video based using buffering (e.g.,
+        Real Player or Windows Media Player).</p>
+        <p>b. Eliminate all idle or intermittent actions.</p>
+        <b>
+        <p>Software Analogy: </b><i>Develop a fine-grained concurrent solution
+        that eliminates all blocking processes and/or threads of execution<sup>
+        3</sup>.</p>
+        </i><b>
+        <p>Software Example</b>: Barrier synchronization solutions; read and
+        write database transaction algorithms.</p>
+        <b>
+
+      </dir>
+    </dir>
+  </dir>
+</dir>
+<font FACE="Arial" size="2">
+<p>Conclusion</p>
+</font></b>
+<p>I believe that we are only scratching the surface of what TRIZ can do for
+software problems. Along these lines, I have committed to start a multi-part
+series on applying TRIZ to software problems - this will begin in the November
+issue of the TRIZ Journal. Each series will address a particular problem area -
+starting first with information security and looking at the recent Code Red Worm &lt;<a target="_blank" href="http://www.cert.org/advisories/CA-2001-19.html">http://www.cert.org/advisories/CA-2001-19.html</a>&gt;
+that wreaked havoc on the Internet and how TRIZ can be used to prepare for the
+next inevitable worm.</p>
+<p>About the author: Kevin C. Rea is the principal consultant with Global Platforms &lt;<a target="_blank" href="http://globalplatforms.com/">http://globalplatforms.com/</a>&gt;
+Corporation, a company providing training and specialized IT/computing problem
+solving using TRIZ. He is also an 8-year veteran of -Lucent
+Technologies Bell Labs &lt;<a target="_blank" href="http://www.bell-labs.com/">http://www.bell-labs.com/</a>&gt; where he is a computer
+scientist for third generation wireless product development (UMTS). He holds a
+B.S. in Electronic Engineering, a M.S. in Computer Science and is in pursuit of
+a PhD in Computer Science - applying TRIZ to advanced computing problems.</p>
+<p>Part One of Two: <i>TRIZ and Software - 40 Principle Analogies.</p>
+</i><b>
+
+<p>Endnotes:</p>
+
+    </b>
+</p><ol>
+  <li>The Innovation Algorithm. Dr. Genrich Altshuller, Technical Innovation
+    Center, Inc. July 2000.</li>
+  <li>Engineering of Creativity: Introduction to TRIZ Methodology of
+    Inventive Problem Solving. Semyon D. Savransky,
+  <a href="mailto:TRIZ_SDS@hotmail.com">TRIZ_SDS@hotmail.com</a>.
+    CRC Press LLC 2000, ISBN: 0-8493-2255-3.</li>
+  <li>Using TRIZ in Computer Science Concurrency &lt;<a href="http://www.triz-journal.com/archives/1999/08/d/">http://www.triz-journal.com/archives/1999/08/d/</a>&gt;.
+    Kevin C. Rea, The TRIZ Journal - August 1999.</li>
+</ol>
+

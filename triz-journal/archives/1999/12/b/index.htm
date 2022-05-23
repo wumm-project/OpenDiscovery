@@ -1,0 +1,778 @@
+<h1>Case Studies In TRIZ: A Novel Heat Exchanger (Use of Function Analysis Modelling to Find and Eliminate Contradictions)</h1>
+<p align="left">A version of this paper was first prepared for the First
+International Conference on Advanced Engineering Design, held in Prague during
+June 1999. A different version was also presented at the 3<sup>rd </sup>European
+Invention Machine User Group Conference in Munich, October 1999.</font></p>
+<b><sup><font size="2">
+<p align="CENTER"><b>Bohuslav BUSOV¹, Darrell MANN², Pavel JIRMAN³<br>
+</b><font size="2">¹ Faculty of Electrical Engineering and Computer Science,
+Technical University of Brno, Czech Republic<br>
+² Department of Mechanical Engineering, University of Bath, UK.<br>
+³ Department of Glass and Ceramics Machinery, Technical University of Liberec,
+Czech Republic.</p>
+</font><b></b></sup><b><font size="2">
+<p align="JUSTIFY">INTRODUCTION</p>
+</font></b><font size="2">
+<p align="JUSTIFY">The Russian initiated Theory of Inventive Problem Solving
+(TRIZ) (1, 2) and those aspects of the Theory implemented in software (3) have
+begun to penetrate deeply into the development departments of leading,
+innovative organisations and educational establishments.</p>
+<p align="JUSTIFY">Both method and software may be exploited by engineers and
+scientists during the formulation and solution of technically innovative
+problems across a truly generic spectrum of technical products, systems and
+processes.</p>
+<p align="JUSTIFY">Problem formulation - often thought to be the most difficult
+aspect of the innovation process - may be considerably eased through
+exploitation of the analytical parts of TRIZ; in particular those methods
+associated with the Russian algorithm for inventive problem solving (ARIZ). In
+TRIZ-based software, this has been implemented as Function Analysis modules.</p>
+<p align="JUSTIFY">Problem solution is greatly assisted through the synthesising
+parts of TRIZ and its implementation in the software as, scientific effects
+knowledge-base, Contradictions and Trends of Evolution modules.</p>
+<p align="JUSTIFY">The paper discusses the power of both analytical - problem
+formulation - and synthesising - problem solving - aspects of TRIZ and Computer
+Aided Innovation tools through use of a case study example from the field of
+heat exchanger design. In particular, the paper demonstrates how TRIZ was used
+successfully to break out of existing heat exchanger conceptual paradigms to
+produce a novel design solution which is now the subject of patent CZ 280 320 B6
+(4).</p>
+<p align="JUSTIFY">The work on heat exchangers has also raised a number of
+points regarding how the method may best be taught and used within the education
+system. A final section in the paper discusses such points in the context of
+emerging education process paradigms for the next century.</p>
+<p align="JUSTIFY">&nbsp;</p>
+<b>
+<p align="JUSTIFY">HEAT EXCHANGER COMPONENT ANALYSIS</p>
+</b>
+<p align="JUSTIFY">The paper will concentrate on application of some of the key
+TRIZ and TRIZ-based software tools and techniques to a real life heat exchanger
+design example. The heat exchanger is illustrated schematically in Figure 1.</p>
+<p align="JUSTIFY">The basic heat exchanger under consideration consists of a
+mantle, pipes, pipewall supporting pipes, a pipewall movement compensator
+(necessary in order to take into account pipe dilation effects), and two
+internal hangers to provide appropriate support to the pipes. The heat exchanger
+is of the transverse-flow type such that, as shown in the figure, the heating
+medium enters the mantle at M1 and departs at m1. The heated medium enters the
+system of pipes at m2 and flows out at M2.</p>
+</font><font face="CG Times"></font><font face="Times New Roman" size="2"></font><font size="2"><b>
+<p align="CENTER"><img border="1" src="99dec_4.gif" width="557" height="300"><br>
+Figure 1: Heat Exchanger Arrangement</p>
+</b>
+<p align="JUSTIFY">In order to identify possible improvements to this basic
+system, the analytical steps of TRIZ begin with the definition of a functional
+model of the heat exchanger. In the case of the Invention Machine®
+TechOptimizer implementation, the method combines the S-Field and Standard
+Inventive Solutions of TRIZ (1, 2) with the pioneering value engineering
+thinking of Miles (5).</p>
+<p align="JUSTIFY">In both cases, the analysis is based on qualitative
+descriptions of the relationships between the individual components of the
+overall system. It collects information about the positive and negative aspects
+of these inter-component relationships in the form:-</p>
+<p align="CENTER">SUBJECT </font><font face="Monotype Sorts" size="2">Ù</font><font size="2">
+ACTION </font><font face="Monotype Sorts" size="2">Ù</font><font size="2">
+OBJECT</p>
+<p align="JUSTIFY">In each relationship, it is necessary to classify the action
+in terms of helpful or harmful, insufficient-satisfactory or excessive,
+directional (one-way, both ways), and time based (continuous, periodic, etc)
+function. Of primary importance are Function Type and Function Rank
+descriptions.</p>
+<p align="JUSTIFY">In TRIZ terms, Function Types are categorised as either
+Basic, Additional, Auxiliary or Harmful. Likewise, Function Ranks can be
+Insufficient, Satisfactory or Excessive.</p>
+<p align="JUSTIFY">For the heat exchanger, for example, looking at the mantle
+and the heating medium M1, we might observe that the functional connection
+between subject and object is ‘conducts’. I.e.</p>
+<p align="CENTER">MANTLE </font><font face="Monotype Sorts" size="2">Ù</font><font size="2">
+CONDUCTS </font><font face="Monotype Sorts" size="2">Ù</font><font size="2"> M1</p>
+<p align="JUSTIFY">In terms of Function Type, we might chose to classify this
+relationship as ‘Auxiliary’ as the transmission of the heating medium of the
+heating medium through the mantle is subordinate to the basic purpose of the
+exchanger - which is to transfer heat to ‘m2’.</p>
+<p align="JUSTIFY">Regarding Function Rank, in this case we will chose to
+classify the mantle-M1 relationship as ‘Satisfactory’. In other cases - for
+example - if the heat exchanger was suffering from excessive pressure loss of
+the M1 fluid as it passes through the mantle, we might have chosen to classify
+the interaction as ‘Insufficient’ or ‘Excessive’.</p>
+<p align="JUSTIFY">So, for this particular relationship we have established that
+the mantle conducts M1 satisfactorily, and that the relationship is auxiliary to
+the main function of the overall system.</p>
+<p align="JUSTIFY">The task of defining these relationships is a vital aspect of
+the problem formulation process. It is also perhaps the most difficult part.
+Newcomers to the method may even find it quite un-natural. This is particularly
+so with respect to the appropriate definition of the ACTION part of the
+relationship because there are often distinct differences between the language
+of everyday use and the language of function analysis.</p>
+<p align="JUSTIFY">An important rule to help establish whether the action is
+appropriately defined is to ensure that it <b>changes or preserves something
+about the object</b>.</p>
+<p align="JUSTIFY">For example, ‘M1 - heats - pipes’ is an appropriate
+function definition because the action ‘heats’ does change the object ‘pipes’
+- i.e. ‘temperature’ changes.</p>
+<p align="JUSTIFY">On the other hand, a relationship like ‘compensator
+protects pipewall’ is not a valid one because the action ‘protects’ does
+not change any parameter concerning the pipewall. ‘Protects’ is very much
+the language of everyday use. In functional analysis language, the relationship
+between compensator and pipewall is far better described as ‘compensator
+releases pipewall’ for now the action does change a parameter relating to the
+pipewall.</p>
+<p align="JUSTIFY">There are many actions like ‘protects’ - such as ‘improves’,
+or ‘seals’, or ‘lubricates’ - which we have to re-think quite
+considerably when we are performing function analyses.</p>
+<p align="JUSTIFY">Similarly, there can also be problems adequately defining
+subjects and objects adequately: ‘heat exchanger heats m2’ for example is
+valid from the perspective of an action which changes something about the
+object, but from the perspective of wishing to improve the design of a heat
+exchanger, is of very little value. Altshuller often talked about super-systems
+and sub-systems and the importance of establishing the right balance between the
+different levels within a function model. Others (6, 7) often define a problem
+in terms of a highly layered problem hierarchy. Pitching the function analysis
+model at the ‘right’ level - i.e. the level which will allow the problem at
+hand to be solved - remains a difficult aspect of TRIZ and software
+implementations. Meanwhile, Table 1 shows each of the key functional
+relationships defined for the heat exchanger case study.</p>
+</font><font face="Times New Roman" size="2"></font><font size="2"><b>
+<p align="CENTER"><img border="0" src="99dec_5.gif" width="606" height="300"><br>
+Table 1: Key Functional Relationships For Heat Exchanger</p>
+</b>
+<p align="JUSTIFY">Adequate definition of the Table is a challenging and
+time-consuming process. Construction of a supporting component relationship
+model (Figure 2) can often provide an important aid and ensure that all relevant
+inter-component relationships are systematically considered.</p>
+<p align="JUSTIFY">The Table highlights the function ‘pipes heat m2’ as the
+basic function of the heat exchanger. I.e. the main purpose of the device is to
+transfer heat to the m2 medium. ‘m2’ in its heated form is the ‘product’
+of the exchanger. Note also that the function has been ranked as ‘insufficient’
+in this example.</p>
+<p align="JUSTIFY">Each of the functional definitions where there is one of
+these ‘insufficient’ or ‘excessive’ or ‘harmful’ actions represents
+the formulation of a distinct problem to be solved. <b>Effective identification
+of all such ‘negative’ functional relationships within a system is essential
+to the successful deployment of TRIZ Function Analysis methods.</p>
+</b></font><font face="CG Times"></font><font face="Times New Roman" size="2"></font><font size="2"><b>
+<p align="CENTER"><img border="0" src="99dec_6.gif" width="320" height="237"><br>
+Figure 2: Heat Exchanger Relational Model</p>
+</b>
+<p align="JUSTIFY">For the case study heat exchanger, the functional model and
+Table have together provided a number of important problem definitions:-</p>
+<b>
+</p><ul>
+  <li>
+    <p align="JUSTIFY">Increasing the Basic Function Rank: </b>how might the
+    action ‘heat m2’ be intensified? (NB includes both heat transfer from
+    M1-to-pipes and pipes-to-m2)</li>
+<b>
+<li>
+  <p align="JUSTIFY">Elimination of Undesirable Effects:</li>
+</ul>
+<blockquote>
+</b>
+</p><ol>
+  <li>
+    <p align="JUSTIFY">how to prevent (or how to avoid the consequences) of the
+    pipe elongation when temperatures change?</li>
+  <li>
+    <p align="JUSTIFY">how to prevent the pipewall motion inside the mantle as
+    temperatures in the exchanger vary? (NB: the consequence is currently
+    eliminated by the compensator)</li>
+  <li>
+    <p align="JUSTIFY">how to prevent pipe vibration? (NB vibration currently
+    eliminated by the hangers)</li>
+</ol>
+</blockquote>
+<p align="JUSTIFY">Recognising that consumers are, generally speaking, more
+interested in product function than the product itself, it follows that if it is
+possible to achieve a given function without a corresponding component, the
+overall system will benefit. This benefit usually takes the form of a lower cost
+of production.</p>
+<p align="JUSTIFY">This idea of improving the system by preserving the function
+while removing components was one of the product evolution trends observed by
+Altshuller’s team (1) and as such may be found in both the trend known as ‘Trimming’
+and in his thinking relating to long term product development strategy and the
+Ideal Final Result concept - where it is very common to envision the IFR of a
+product to be precisely that it does perform the product function without the
+presence of the product.</p>
+<p align="JUSTIFY">The idea of maintaining (or indeed increasing) functionality
+while reducing part count (and hence usually cost) is also very much at the
+foundation of the work on value engineering pioneered by Miles (5).</p>
+<b></b>
+<p align="JUSTIFY">Central to the value engineering model is the ‘value’ or
+‘ideality’ parameter, defined as:-</p>
+<b>
+<blockquote>
+  <p align="JUSTIFY">Value = Benefits/ (Penalties + Costs)</p>
+</blockquote>
+</b>
+<p align="JUSTIFY">The model states that there is an evolutionary trend towards
+increasing 'value’. Each of the trends observed by Altshuller and his team -
+including the ‘Trimming’ trend - may be seen to be consistent with this
+over-riding, global value trend.</p>
+<p align="JUSTIFY">The Product and Process Analysis sections of the
+TechOptimizer code are in effect an amalgamation of Miles’ value engineering
+approach and TRIZ’s systematic analysis approach. Figure 3 illustrates the
+product analysis model created using the software for the heat exchanger case
+study.</p>
+<p align="JUSTIFY">Consistent with Miles’ inclusion of a ‘cost’ parameter
+within the ‘value’ definition, the TechOptimizer implementation also allows
+the user to specify component cost data. When suggesting ways to improve the
+system, the software uses this data to help rank and prioritise the individual
+problems in terms of their net individual effect on the overall system.</p>
+<b>
+<p align="CENTER"><img border="0" src="99dec_7.gif" width="579" height="254"><img border="0" src="99dec_8.gif" width="297" height="118"><br>
+Figure 3: TechOptimizer Model of Exchanger</p>
+</b>
+<p align="JUSTIFY">In this particular case, the overall ‘value’ calculations
+indicated that trimming of first the compensator and second the hangers would be
+most beneficial to the overall exchanger design. In other words, looking back to
+the previously formulated problems, we should look first at how we might how to
+prevent the pipewall motion inside the mantle if the compensator is eliminated,
+and second, we should look at how we might prevent pipe vibration if the hangers
+are eliminated.</p>
+<p align="JUSTIFY">With the function analysis model, we have thus been able to
+analyse, formulate and prioritise the problems that require solving. We are now
+in a position to move forward and look at using some of TRIZ’s synthesising
+techniques to generate inventive problem solutions.</p>
+<b>
+<p align="JUSTIFY">ALGORITHM FOR INVENTIVE PROBLEM SOLVING (ARIZ)</p>
+</b>
+<p align="JUSTIFY">TRIZ is a working procedure for the systematic formulation
+and solution of inventive problems. The primary synthesising tool of TRIZ, ARIZ,
+is a tactical chain of thinking tools, which together form a clear, identifiable
+process through problem solutions will emerge. We have previously seen stages 1,
+2 and 3 of ARIZ during the problem formulation, creation of a function analysis
+model and analysis of the model. We will concentrate here on the subsequent
+problem solving aspects of TRIZ. In these parts of TRIZ, the designer is guided
+through the solution process from Technical and Physical Contradictions, through
+to construction and use of Altshuller and team’s Standard Principles of
+Solution.</p>
+<p align="JUSTIFY">All of these methods can be seen described in Altshuller’s
+key text (1), numerous examples to be found in TRIZ Journal and elsewhere
+(7-11), and in the text by Salamatov (2). We will concentrate instead on the
+application of the ARIZ tools to the heat exchanger problem.</p>
+<b>
+<p align="JUSTIFY">Technical Contradictions</p>
+</b>
+<p align="JUSTIFY">Here we are searching for instances where as we try to
+improve some feature of the design, another aspect becomes worse. An example may
+be found in the Figure 3 function model if we look at the M1-vibrates-Pipes part
+of the model. The vibration is a harmful action adversely affecting the
+stability of the pipes. Typically, we fit hangers to try and control this
+stability problem. But, as can be seen from the Function Model segment
+illustrated in Figure 4, as we introduce the hangers to cure one problem, we
+have then introduced the problem of hangers impeding the flow of M1.</p>
+<p align="JUSTIFY">This is clearly a technical contradiction. Attempts to
+improve device <b>stability</b> result in a worsened <b>energy loss</b>. The
+specifics of this problem correlate directly to the generic contradiction
+parameters defined by Altshuller in his Contradiction Matrix. It is thus
+possible to directly look-up in the Matrix how other problem solvers have
+inventively eliminated similar stability - energy loss conflicts.</p>
+<b></b></font><font face="Times New Roman" size="2"></font><b><font size="2">
+<p align="CENTER"><img border="0" src="99dec_9.gif" width="280" height="135"><br>
+Figure 4: Hanger-Pipe-M1 Interaction Model</p>
+</font></b><font size="2">
+<p align="JUSTIFY">The Matrix suggests the following Inventive Principles:-</p>
+<i>
+</p><ul>
+  <li>
+    <p align="JUSTIFY">Curvature Increase - </i>e.g. transformation from 2D
+    surface to 3D space, from lines to curves. This Principle suggests the
+    hangers might take a different cross-sectional form in order to reduce M1
+    flow resistance.</li>
+<i>
+<li>
+  <p align="JUSTIFY">Separation</i> - interpreted, for example, to mean
+  separating the positive effect of the hangers from their negative effect -
+  e.g. to find another carrier that is able to strengthen the pipes.</li>
+<i>
+<li>
+  <p align="JUSTIFY">Multi</i>-<i>Functionality</i>/<i>Universality</i> -
+  interpreted in this case to mean increasing the functionality of the pipes
+  such that they take on the function of the hangers.</li>
+</ul>
+</font><font face="Times New Roman" size="2"></font><font size="2">
+<p align="left">A second technical contradiction exists regarding the desire to
+increase the heat transfer from M1 to the pipes and from the pipes to m2 -
+Figure 5.</p>
+<b>
+<p align="CENTER"><img border="0" src="99dec_10.gif" width="278" height="58"><br>
+Figure 5: M1-Pipe-m2 Interaction Model</p>
+</b>
+<p align="JUSTIFY">The technical contradiction here is perhaps less easy to see
+from the Function Model, but one exists nevertheless. In attempting to improve
+heat transfer from either M1 or to m2, the usual method of achieving the
+improvement is to increase the <b>area</b> of the heat exchange surface. In
+other words, we achieve the improvement in heat transfer at the expense of
+increased physical size.</p>
+<p align="JUSTIFY">Translating this specific contradiction to the generic
+elements of the Contradiction Matrix, we see that the Contradiction exists
+between <b>area</b> and a<b> linear dimension</b>. The Matrix then suggests the
+Inventive Principles:-</p>
+<i>
+</p><ul>
+  <li>
+    <p align="JUSTIFY">Copying - </i>interpreted as exploring possibilities
+    relating to use of multiple (smaller) exchangers, and/or a greater number of
+    smaller pipes.</li>
+<i>
+<li>
+  <p align="JUSTIFY">Nested Doll - </i>interpreted as the well known heat
+  exchanger design principle of locating pipes within pipes in the mantle.</li>
+<i>
+<li>
+  <p align="JUSTIFY">Preliminary Counter-action - </i>interpreted as introducing
+  moves to perform an action against the undesirable effect - e.g. the pipes
+  should be ‘shortened’ to reduce constructional length, while still aiming
+  to increase surface area.</li>
+</ul>
+<p align="JUSTIFY">Note: Use of a Function Analysis model - as in Figure 3 - to
+help identify contradictions is an often powerful problem identification method,
+albeit one which is currently not immediately apparent from the software
+implementation.</p>
+<p align="JUSTIFY">&nbsp;</p>
+<b>
+<p align="JUSTIFY">Physical Contradictions</p>
+</b>
+<p align="JUSTIFY">Physical Contradictions are present when we have
+contradictory requirements of a single design parameter within the same
+component or system.</p>
+<p align="JUSTIFY">For example, in the heat exchanger, there is a first physical
+contradiction associated with the pipes -where we require them to be both <b>connected</b>
+in order to prevent vibration, <b>and</b> to be <b>disconnected</b> in order to
+reduce resistance of the M1 flow.</p>
+<p align="JUSTIFY">A second physical contradiction relating to the pipes also
+exists, in that we require them to be both <b>long </b>in order to have large
+heat exchange area, <b>and</b> to be <b>short</b> in order to reduce the overall
+dimensions of the heat exchanger.</p>
+<p align="JUSTIFY">Physical Contradictions are often the most difficult to solve
+- which may help to explain why many designers prefer to use ‘traditional’
+design trade-off techniques rather than attempt to eliminate the contradiction.</p>
+<p align="JUSTIFY">Altshuller’s team, however, did identify a number of means
+of systematically solving Physical Contradictions:-</p>
+</p><ol>
+  <li>
+    <p align="JUSTIFY">separation of the contradictory requirements in <b>time </b>(e.g.
+    pipes connected when flow conditions are close to resonance, and
+    disconnected when flow conditions are normal - assuming, of course, that
+    both conditions don’t occur at the same time)</li>
+  <li>
+    <p align="JUSTIFY">separation of the contradictory requirements in <b>space</b>
+    (e.g. pipes are connected in some places and free in others)</li>
+  <li>
+    <p align="JUSTIFY">alterations to the system structure (e.g. the pipes may
+    be ‘connected’ by M1 to prevent vibration, but also sufficiently
+    disconnected to allow resistance-free flow of M1, or, the pipes may be made
+    ‘long’ and ‘short’ by making them non-linear).</li>
+</ol>
+<blockquote>
+  <b>
+  <p align="JUSTIFY">&nbsp;</p>
+  </blockquote>
+  <p align="JUSTIFY">Standard Inventive Solutions</p>
+</b></font><font size="2" color="#000000">
+<p align="JUSTIFY">Altshuller and his team have conducted much work on what he
+called S-Fields (1, 2). S-Fields are an attempt to generate a systematic and
+universal language for the definition and solution of problems.</p>
+</font><font size="2">
+<p align="JUSTIFY">In effect, the S-Field method represents a way of classifying
+different problem types in terms of both the number of interacting components
+(Substances) and the actions (Fields) which act upon them. TRIZ researchers have
+classified the different combinations of Substances and Fields possible and
+subsequently identified Standard Inventive Solutions which may be applied to
+solve any given Substance-Field combination. In all, 76 such Standard Inventive
+Solutions have been determined; any three or four of which are most likely to be
+relevant to a given combination type.</p>
+<p align="JUSTIFY">The best way to begin to understand the workings of S-Field
+analysis is to look at an example. Let us look at the ‘M1 heats Pipes’
+relationship which was earlier identified as an ‘insufficient action’ in the
+heat exchanger system. In S-Field terms, this relationship may be drawn as:</p>
+</font><font face="CG Times"></font><font face="Times New Roman" size="2">
+<p align="center"><img border="0" src="99dec_11.gif" width="191" height="128"></p>
+</font><font size="2">
+<p align="JUSTIFY">Where S1 and S2 represent the two substances ‘M1’ and ‘Pipes’,
+F represents a thermal field, and the dashed line signifies that the interaction
+between the two substances is insufficient.</p>
+<p align="JUSTIFY">Standard Inventive Solutions recommended for this S-Field
+class then include:-</p>
+<ol type="a">
+  <li>
+    <p align="JUSTIFY">Modification of S1 - e.g. use of working fluid with
+    improved specific heat and/or viscosity characteristics</li>
+</font><font face="Times New Roman" size="2"></font><font size="2">
+<li>
+  <p align="JUSTIFY">Modification of S2 - e.g. use of different pipe materials,
+  different pipe shape, different surface finish (e.g. introduction of local
+  turbulence-generating geometry features).</li>
+<li>
+  <p align="left">Introduction of an additional Field - e.g. introduction of a
+  mechanical field - alter the M1 flow conditions by introducing a swirling
+  flow, increase flow rate to ensure turbulent rather than laminar flow,
+  introduce a heat transfer enhancing vibration force.<br>
+  <img border="0" src="99dec_12.gif" width="317" height="92"></li>
+<li>
+  <p align="JUSTIFY">Introduction of a Modified Substance - e.g. add a substance
+  to the fluid M1 in order to increase Field effects</li>
+</ol>
+</font><font face="CG Times"></font><font face="Times New Roman" size="2">
+<blockquote>
+  <p><img border="0" src="99dec_13.gif" width="333" height="92"></p>
+</blockquote>
+</font><font size="2">
+<p align="JUSTIFY">The first three Solutions are commonly employed in a variety
+of forms in many heat exchanger designs - including the design derived in this
+paper. The fourth solution family is perhaps less immediately obvious, but, by
+way of illustration, the TechOptimizer Effects module includes the description
+of a (patented) heat exchanger concept which sees the introduction of magnetic
+particles into the working fluid - which are then caused to move relative to the
+fluid through use of a moving magnetic field. The particulate motion causes a
+localised increase in working fluid turbulence level and thus creates an
+increase in heat transfer.</p>
+<p align="JUSTIFY">&nbsp;</p>
+<b>
+<p align="JUSTIFY">Effects</p>
+</b>
+<p align="JUSTIFY">Altshuller placed strong emphasis on the collation and
+categorisation of physical, chemical and mathematical effects in mankind’s sum
+knowledge base. By categorising such effects in terms of their function, he
+generated the idea for a very powerful database. The database has perhaps been
+most potently implemented in the TechOptimizer software - which now contains
+close to 6000 known effects and examples, and continues to grow.</p>
+<p align="JUSTIFY">Classification by function means that if we have a problem
+like the one in the heat exchanger where we wish to improve the insufficient
+action ‘pipes heat m2’, we are able to do so quickly by examining functions
+related to the action ‘heat’. For example looking up the function ‘improve
+thermal conductivity’ in the Effects database, we are able to very quickly
+establish which effects may be relevant to the specific problem at hand.</p>
+<p align="JUSTIFY">Chances are that a good heat exchanger designer may know
+around a handful of thermal conductivity or heat transfer enhancing effects, and
+may be willing or able to use only two or three. The TechOptimizer software is
+able to direct the designer to many more (Table 2):-</p>
+<div align="center">
+  <center>
+  <table border="1" cellspacing="5" cellpadding="3">
+    <tr>
+      <td width="50%" valign="top" bgcolor="#C0C0C0">
+        </p><ul>
+          <font size="2">
+          <li>
+            <p align="JUSTIFY">Turbulization</li>
+          <li>
+            <p align="JUSTIFY">Finned Surfaces</li>
+          <li>
+            <p align="JUSTIFY">Bulk flow Direction Change</li>
+          <li>
+            <p align="JUSTIFY">Fluid Vibration - Mechanical</li>
+          <li>
+            <p align="JUSTIFY">Fluid Vibration - Ultrasonic</li>
+          <li>
+            <p align="JUSTIFY">Acoustic Vibration</li>
+          <li>
+            <p align="JUSTIFY">Magnetic Control</li>
+          <li>
+            <p align="JUSTIFY">‘Wavy’ Walls</li>
+          <li>
+            <p align="JUSTIFY">Use of Spiral Geometry Features</li>
+          <li>
+            <p align="JUSTIFY">Flow Swirling</li>
+          <li>
+            <p align="JUSTIFY">Gravity Assistance</li>
+          <li>
+            <p align="JUSTIFY">Porous Metal Construction Method</li>
+          </font>
+        </ul>
+      </td>
+      <td width="50%" valign="top" bgcolor="#C0C0C0">
+        </p><ul>
+          <font size="2">
+          <li>
+            <p align="JUSTIFY">Transpiration Cooling</li>
+          <li>
+            <p align="JUSTIFY">Resonance Effects</li>
+          <li>
+            <p align="JUSTIFY">Regenerative Systems</li>
+          <li>
+            <p align="JUSTIFY">Ranque Effect</li>
+          <li>
+            <p align="JUSTIFY">Ejection Effect</li>
+          <li>
+            <p align="JUSTIFY">Magneto-Active Bubbling</li>
+          <li>
+            <p align="JUSTIFY">Droplet Magnetic-Deformation Effect</li>
+          <li>
+            <p align="JUSTIFY">Drop-wise Condensation</li>
+          <li>
+            <p align="JUSTIFY">Use of Elliptic Paraboloid Geometry</li>
+          <li>
+            <p align="JUSTIFY">Capillary Grooves</li>
+          <li>
+            <p align="JUSTIFY">Dufour Effect</li>
+          <li>
+            <p align="JUSTIFY">Gregorig Effect</li>
+          </font>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+</p><ul>
+</ul>
+<b>
+<p align="CENTER">Table 2: Example Heat Transfer Enhancing Effects From
+TechOptimizer Database</p>
+</b>
+<p align="JUSTIFY">The Effects module thus presents engineers with an
+unparalleled number of design options and means of breaking out of existing and
+limited-focus design paradigms.</p>
+</font><b><font size="2">
+<p align="JUSTIFY">&nbsp;</p>
+<p align="JUSTIFY">PATENTED HEAT EXCHANGER</p>
+</font></b><font size="2">
+<p align="JUSTIFY">What follows is a brief description of the heat exchanger
+improvements resulting from the above analyses, now patented in Czech patent CZ
+280 320 B6 by inventor Msc D Sykora (3).</p>
+<p align="JUSTIFY">A schematic illustration of the new heat exchanger is given
+in Figure 6</p>
+<p align="JUSTIFY">In simple terms, the analyses have permitted the elimination
+of two significant components of the exchanger - the compensator and the hangers
+- by transfer of the useful functions they performed to other components within
+the system. In addition, the basic function of the exchanger has been improved,
+two auxiliary functions have been improved, and four undesirable effects have
+been reduced or eliminated.</p>
+<b>
+<p align="CENTER"><img border="1" src="99dec_14.gif" width="275" height="421"><br>
+Figure 6: CZ 280 320 B6 Heat Exchanger</p>
+</b>
+<p align="JUSTIFY">A prototype of the novel heat exchanger has now been
+constructed and successfully tested in the power net system at Brno. Table 3
+summarises the overall performance improvements achieved by the invention
+compared to the previous heat exchanger design.</p>
+<table border="0" cellspacing="0" cellpadding="0" align="right" bgcolor="#FFFFFF">
+  <tr>
+    <td><font face="Times New Roman" size="2">
+      <p align="center"><img border="0" src="99dec_15.gif" width="289" height="538"><br>
+      </font><b><font size="2">Table 3: Comparison of Old and New Heat Exchanger
+      Designs</font></b></td>
+  </tr>
+</table>
+<p align="JUSTIFY">The following points relating to the heat exchanger design
+are also worth noting:-</p>
+</p><ol>
+  <li>
+    <p align="JUSTIFY">The hangers have been eliminated by making the heating
+    surfaces of the exchanger self-supporting. Elimination of the hangers has
+    also meant a reduction in (non-useful) resistance to the flow of the heating
+    medium. The internal velocity and temperature fields are homogenous.</li>
+  <li>
+    <p align="JUSTIFY">Overall strength is ensured through multi-point, mutual
+    contact of the helical pipes. Vibration is decreased and expected exchanger
+    life is consequently increased.</li>
+  <li>
+    <p align="JUSTIFY">Increased local flow turbulence in and around the helical
+    pipes has created a substantial increase in heat transfer coefficient - thus
+    permitting either a 2x improvement in heat exchanger effectiveness, a 2x
+    reduction in heating surface required, or a combination of the two benefits.</li>
+  <li>
+    <p align="JUSTIFY">The new homogenous heating surface of the helical pipes
+    is self-compensating in terms of handling relative growth and shrinkage
+    between the pipe nest and the mantle.</li>
+  <li>
+    <p align="JUSTIFY">The increased turbulence of the heating medium decreases
+    the localised blocking of the heating surface by impurities and
+    contaminants.</li>
+  <li>
+    <p align="JUSTIFY">The pipe nest forms a highly compact design and so the
+    overall heat exchanger volume may be significantly reduced.</li>
+  <li>
+    <p align="JUSTIFY">The combined effects of 3) and 6) mean opportunities for
+    a decrease in the volume of the surrounding facilities.</li>
+  <li>
+    <p align="JUSTIFY">When vertically oriented, steam condensation occurring in
+    inter-pipe spaces further intensifies the heat transfer effect.</li>
+  <li>
+    <p align="JUSTIFY">The new, shorter, more compact vertical exchanger with
+    the steam condensation mentioned above is more flexible and more responsive
+    to changes in heat output demand.</li>
+</ol>
+</font><b><font size="2">
+<p align="JUSTIFY">&nbsp;</p>
+<p align="JUSTIFY">TRIZ AND ENGINEERING EDUCATION</p>
+</font></b><font size="2">
+<p align="JUSTIFY">Courses in the theory and application of TRIZ are beginning
+to emerge in a number of University syllabi across the world.</p>
+<p align="JUSTIFY">When he was teaching and writing about TRIZ, Altshuller
+placed special emphasis on the need for students to spend as much time as
+possible actively involved in the use of the TRIZ methods. All taught material
+needs to be backed up with the provision of extensive case study and tutorial
+materials. A typical basic final year engineering course may typically comprise
+40 to 50 hours of lecture material coupled to at least as much time again for
+students to practice using TRIZ on case study exercises and problems. More
+advanced courses will typically then need to place even greater emphasis on
+practical application of the various tools and techniques.</p>
+<p align="JUSTIFY">It is perhaps too early to generalise on the most appropriate
+means to teach TRIZ due to a variety of cultural and technological differences
+between nations. A number of important common themes, however, are probably
+worth noting:-</p>
+<b></b>
+</p><ul>
+  <li>
+    <p align="JUSTIFY">TRIZ is complementary to a number of innovative tools and
+    strategies developed outside of Russia. A well-balanced course should take
+    due account of these methods. The world is still some considerable way away
+    from a coherent cradle-to-grave systematic innovation approach. The
+    following tools and strategies, however, have already been seen to offer a
+    high degree of potential for integration with TRIZ:-<br>
+    <br>
+    <b>Edward de Bono - </b>the father of lateral thinking has published widely
+    on the subject. Offering students an appreciation of some of de Bono’s
+    work is a commonly used way of introducing the general ideas and mind-sets
+    required for effective creativity.<br>
+    <br>
+    <b>Quality Function Deployment (QFD)</b> - much potential for working up
+    front of, or in conjunction with TRIZ in terms of problem definition - in
+    particular establishing customer requirements.<br>
+    <br>
+    <b>Robust Design -</b> Taguchi based methods most usefully applied in the
+    area between TRIZ and downstream detail design methods. Some investigators
+    (12) have suggested that QFD plus TRIZ plus Robust Design together form an
+    extremely potent whole.<br>
+    <br>
+    <b>Design For Manufacture/Design For Assembly -</b> methodology first
+    proposed by Boothroyd (13) to help designers to better understand the
+    economic implications of the design decisions they make. The methodology is
+    highly complementary to the TRIZ ‘Trimming’ evolutionary trend.<br>
+    <br>
+    <b>Multi Criteria Decision Analysis (MCDA) -</b> technique for allowing
+    users to make legitimate ‘apples and oranges’ comparisons between
+    different parameters affecting a particular design. Potentially significant
+    common ground between TRIZ and MCDA with respect to conducting trade-offs
+    between alternative TRIZ solutions.<br>
+    <br>
+    <b>Axiomatic Design -</b> based around the work conducted by Suh (14).
+    Axiomatic design is a technique by which users are able to assess the
+    overall merit of TRIZ-generated conceptual solutions. This work is at a
+    relatively immature stage, but institutions already teaching axiomatic
+    design methods may well find that some integration with TRIZ offers
+    significant benefits.<br>
+    <br>
+    <b>Failure Modes and Effects Analysis (FMEA) -</b> a powerful method for
+    assisting in the desire to achieve design of reliable products. See also the
+    complementary bottom-up inductive failure analysis methods (15), and the
+    TRIZ-related Anticipated Failure Determination methodology (16).</li>
+  <li>
+    <p align="JUSTIFY">Psychological Inertia is a phenomenon which is highly
+    disruptive to the creative process. Making students aware of both the
+    phenomenon and how TRIZ is able to offer systematic means for helping to
+    remove it is an important step before practical exercises are instigated
+    (17).</li>
+  <li>
+    <p align="JUSTIFY">As may be seen in the heat exchanger example, there are
+    often several non-instinctive aspects to the language and use of Function
+    Analysis and other aspects of TRIZ. Practice with as many case studies as is
+    practicable is the only reliable means of exposing students to special case
+    uses of the methods. Broad ranging exposure to case study examples is also
+    important from an ‘analogies’ perspective. ‘Analogies’ are a
+    commonly used strategy for enabling students to convert TRIZ generic
+    solutions into the specifics of cases related to their own circumstances.</li>
+  <li>
+    <p align="JUSTIFY">TRIZ software can provide the basis for a potent
+    educational tool. Experience has found that TRIZ teaching is generally more
+    effective if students understand the manual processes of TRIZ before they
+    become exposed to the software: ‘<b>effective use demands effective users’</b>.
+    This is particularly the case in relation to the Principles and Predictions
+    aspects of, for example, the Invention Machine software. Some courses
+    currently make no use of software, while others are beginning to use it
+    progressively more as an integral part of formal lecture material. There is
+    as yet insufficient experiential evidence to propose firm guidelines at this
+    stage, although it is perhaps worth making specific mention of the Effects
+    database contained within the TechOptimizer software; for this is an
+    undoubtedly powerful knowledge source for all students.</li>
+</ul>
+<blockquote>
+  <b>
+  <p align="JUSTIFY">&nbsp;</p>
+  </blockquote>
+  <p align="JUSTIFY">CONCLUSIONS</p>
+</b>
+</p><ol>
+  <li>
+    <p align="JUSTIFY">TRIZ is an extremely potent systematic innovation tool.</li>
+  <li>
+    <p align="JUSTIFY">The overall methodology contains many useful tools and
+    techniques which may be applied to any number of engineering and
+    non-engineering problems.</li>
+  <li>
+    <p align="JUSTIFY">The paper has demonstrated how those tools and techniques
+    have been used to create a patentable solution to a real-life heat exchanger
+    design case.</li>
+  <li>
+    <p align="JUSTIFY">Effective use of TRIZ tools demands constant exposure and
+    continuous use of the methods to achieve the greatest effect; the methods
+    are distinctly different to most traditional problem solving tools and
+    strategies.</li>
+  <li>
+    <p align="JUSTIFY">The power of TRIZ may be considerably enhanced when used
+    in conjunction with other innovation strategies, methods and tools.</li>
+  <li>
+    <p align="JUSTIFY">Software implementations of TRIZ and other methods as may
+    be found in the TechOptimizer software provide a powerful and user-friendly
+    platform from which to conduct problem solving activities.</li>
+</ol>
+<blockquote>
+  <p align="JUSTIFY">&nbsp;</p>
+</blockquote>
+<b>
+<p align="JUSTIFY">REFERENCES</p>
+</b>
+</p><ol>
+  <li>Altshuller, G., <u>'Creativity As An Exact Science</u>', (New York, Gordon
+    And Breach, 1988.)</li>
+  <li>Salamatov, Y., ‘<u>TRIZ: The Right Solution At The Right Time</u>’,
+    Insytec BV, The Netherlands, 1999.</li>
+  <li>
+    <p align="JUSTIFY">Invention Machine Corporation. ‘TechOptimizer
+    Professional Edition V3.01’, www.invention-machine.com</li>
+  <li>Sykora, D., Patent CZ 280 320 B6</li>
+  <li>
+    <p align="JUSTIFY">Miles, L. D. (1961). <u>Techniques of Value Analysis and
+    Engineering</u>, McGraw-Hill Book Company, New York NY (Latest printing
+    1989. Published by Eleanor Miles-Walker. Sold through SAVE International, 60
+    Revere Drive, Suite 500, Northbrook, IL 60006).</li>
+  <li>
+    <p align="JUSTIFY">Mann, D.L., ‘Case Studies in TRIZ: A Helicopter
+    Particle Separator’, TRIZ Journal, www.triz-journal.com, February 1999.</li>
+  <li>
+    <p align="JUSTIFY">Busov, B., Jirman, P., Dostal, V., ‘TRIZ and VEA’,
+    study text in Czech, INDUS TRIZ, Brno, 1996.</li>
+  <li>
+    <p align="JUSTIFY">Devojno, I., ‘Improvement of the Technical System Using
+    the TRIZ Methodology’ (translation from Russian to Czech), teaching text,
+    INDUS TRIZ, Brno, 1997.</li>
+  <li>
+    <p align="JUSTIFY">Kowalick, J., ‘Triads: Their Relationship To TRIZ’,
+    TRIZ Journal, June1998.</li>
+  <li>
+    <p align="JUSTIFY">Domb, E., ‘40 Inventive Principles With Examples’,
+    TRIZ Journal, July 1997.</li>
+  <li>
+    <p align="JUSTIFY">Zlotin, B., Zusman, A., ‘ARIZ on the Move’, TRIZ
+    Journal, March 1999.</li>
+  <li>
+    <p align="JUSTIFY">Terninko, J., ‘The QFD, TRIZ and Taguchi Connection:
+    Customer-Driven Robust Innovation’, TRIZ Journal, January 1998.</li>
+  <li>
+    <p align="JUSTIFY">Boothroyd, G., Dewhurst, P., Knight, W., ‘<u>Product
+    Design for Manufacture and Assembly</u>’, (Dekker, 1994)</li>
+  <li>
+    <p align="JUSTIFY">Suh, N.P., ‘<u>The Principles of Design’</u>, (Oxford
+    University Press, 1990)</li>
+  <li>
+    <p align="JUSTIFY">http://www-osma.lerc.nasa.gov/dfr/dfr.htm</li>
+  <li>
+    <p align="JUSTIFY">Kaplan, S., ‘Anticipatory Failure Determination (AFD):
+    The Application of TRIZ to Risk Analysis’, paper presented at 10<sup>th
+    QFD Institute Symposium, 1997.</li>
+    <li>
+      <p align="JUSTIFY">Mann, D.L., ‘Digging Your Way Out of the
+      Psychological Inertia Hole’, TRIZ Journal, August 1998.</li>
+  </ol>
+</sup></font>
+<p>&nbsp;</p>

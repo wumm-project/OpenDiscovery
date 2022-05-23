@@ -1,0 +1,424 @@
+<h1>I Wish The Work To Be Completed By Itself, Without My Involvement: The Method Of The Ideal Result In Engineering Problem Solving.</h1>
+<p align="CENTER">Iouri Belski<br>
+</b>Department of Communication and Electronic Engineering,<br>
+Royal Melbourne Institute of Technology, Melbourne, Victoria, Australia.<br>
+Fax: +61 3 9662 1060; E-mail: <a href="mailto:iouri.belski@rmit.edu.au">iouri.belski@rmit.edu.au</a></p>
+<b>
+<p>Keywords:</b> TRIZ, QFD, problem solving, invention, ideal result.</p>
+<b>
+<p>Abstract</p>
+</b>
+<p>Anyone who has ever tried to solve a technical or scientific task, has had to
+make decisions on which directions to take. This paper introduces the <b>Method
+of the Ideal Result (MIR).</b> This method is based on the Russian TRIZ concept
+of the Ideal Final Result. MIR can be effectively used in finding the best
+direction to the solution. It also evaluates the level of the proposed and
+existing solutions. A success story of the development of a new measuring
+technique with MIR is presented. Implementation of the technique made a profit
+for Russian industry of more than 1.5 million roubles ( US$2.2 million).</p>
+<p>&nbsp;</p>
+<i>
+<blockquote>
+  <p>The function of the imagination is not to make strange things settled, so
+  much as to make settled things strange.</p>
+</i>
+<p>G.K. Chesterton</p>
+</blockquote>
+<p>&nbsp;</p>
+<b>
+<p>If necessity is the mother of invention, who is the father?</p>
+</b>
+<p>It happened in Russia in mid eighties. Mr Shokin, Russian Minister for the
+Electronics Industry had just announced at the Communist Party Forum that
+Russian electronics had already overtaken the US counterpart. Being “ahead of
+the US again”, industry started trial production of TV sets with Surface
+Acoustic Wave (SAW) filters instead of the traditional ones. SAW filters were
+designed by the research institute PHONON, where I worked then as a research
+scientist. During the trial period PHONON produced filters in small numbers, but
+as soon as the industry made the final decision in favour of SAW filters, two
+big factories took over production. Their first results were dramatic, with the
+good to bad ratio being close to zero. PHONON was in trouble.</p>
+<p>A simple SAW filter consists of two similar transducers (for input and
+output) deposited on the surface of a piezoelectric material (substrate) (Figure
+1a).</p>
+<p align="center"><img border="0" src="1.gif" width="466" height="215"></p>
+<p>Each transducer looks like two combs inserted into one another to establish
+pairs of overlapping electrodes (fingers) of opposite polarity (see Figure 1b).
+The electrical input signal, when applied to the input transducer, generates a
+surface acoustic wave in the substrate. The wave propagates along the surface to
+the output transducer, which converts the acoustical signal back to an
+electrical one. Using different geometries of transducers, sophisticated signal
+processing can be achieved. The central frequency of a SAW device, <i>f</i><sub>0
+depends mainly on the SAW speed in the substrate <i>Vphase</i> and the period <i>d</i>
+of the interdigital transducers (see Figure 1b) and is given by:</p>
+<p>&nbsp;</p>
+<p align="CENTER"><img src="Image77.gif" width="74" height="44"> </sub>( 1 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>The frequency response characteristic of an ordinary SAW filter is shown on
+Figure 2.</p>
+<sub>
+<p align="center"><img border="0" src="2.gif" width="490" height="268"></p>
+</sub><sub></sub>
+<p>The width of the main lobe of the filter characteristic, 2D<i>f,</i> is
+inversely proportional to the number of pairs of fingers <i>N</i> in the
+interdigital transducer:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image79.gif" width="60" height="41"> ( 2 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>About 30 SAW filters for TV sets were fabricated on one wafer of LiNbO3 50.8
+mm in diameter by depositing a thin aluminium film using masking lithography.
+The production factories utilized PHONON’s mask and the same substrate
+material as the research institute. Nevertheless, the difference in the central
+frequency <i>f</i>0<b><i> </i></b>among filters was much higher than the maximum
+allowed variation (1% rather than 0.1%). The reason was quickly ascertained. The
+problem was due to a variation of the wave speed from one wafer to another. To
+increase the SAW filter yield it was decided to produce six masks, each with
+slightly different transducer finger periods <i>d</i>, assigning every wafer to
+a particular mask according to the SAW velocity in the wafer.</p>
+<sub></sub>
+<p>The SAW velocity had to be measured in the wafer before the lithography. An
+appropriate non-destructive technique for velocity measurement was needed.
+Surface acoustic wave could be generated into the piezoelectric substrate by a
+transducer located not exactly on the surface of the substrate, but at a short
+distance from the surface. So, to measure the velocity non-destructively, a
+testing structure consisted of three transducers deposited on the thick piece of
+glass (non-piezoelectric) was designed. The operator put the wafer on the
+structure, SAW was generated in it and the wave propagation time from the input
+transducer to two output transducers was measured. The SAW speed was then
+calculated by substituting the measured propagation time into the appropriate
+formula.</p>
+<sub></sub>
+<p>The unit for the velocity measurement was implemented quickly. The yield was
+increased to about 60%. This was a vast improvement, but still far from ideal.
+At that time my research was related to measurements of characteristics of new
+materials for SAW devices. This was probably the reason why I had been chosen to
+continue the work on the good to bad ratio. My task was to implement a
+non-destructive unit for more accurate velocity measurements having in mind <i>“at
+least 90% yield, if you ever want to come back to your research.”</i>
+Necessity was definitely the mother.</p>
+<sub>
+<p>&nbsp;</p>
+</sub><b>
+<p>A journey of thousand miles begins with a single step.</p>
+<sub></sub></b>
+<p>My first thought was to implement the unit as soon as possible using the most
+expensive equipment and the most precise technique for velocity measurements
+which were suitable for production conditions with success assured, I could then
+return back to my research. I started a survey of available measuring
+techniques. The existing unit measured the group velocity [1]. The central
+frequency depended on the phase velocity. It was assumed that SAW velocity in
+LiNbO3 is independent of frequency, but even slight dispersion (velocity
+dependence on a frequency) could “help” me to stay out of my research for a
+long time. The first decision was made - unit must measure the phase velocity.
+An analysis of available methods of phase velocity of the SAW revealed that a
+method with the required accuracy did not exist. My research prospects were
+disappearing on the horizon.</p>
+<sub></sub>
+<p>A few months earlier, I came across the book about the Theory of Inventive
+Problem Solving (TRIZ). It was entitled “The Algorithm of the Invention”
+[2]. I read the book with a great interest and was waiting for a real task to
+which TRIZ could be applied. At that time I was not familiar with all principles
+and levels of TRIZ. The system for making inventions looked unrealistic, but a
+few TRIZ ideas and concepts were very impressive. One of them was the concept of
+the Ideal Final Result (IFR).</p>
+<sub></sub>
+<p>Anyone who has ever tried to solve any technical or scientific task, has had
+to make a decision on which direction to take. Which way to go to solve the
+problem faster and more effectively? Analysis of the solution often gives
+unexpected results. Most of the time is spent on wrong approaches. Trial and
+error prevails in 99% of cases. If the direction to the right solution is known,
+any task can be solved faster and on a higher technical level. The IFR concept
+helps one to find the best direction. The road towards a good solution opens up
+by formulating the Ideal (unreachable in most cases) Final Result. When the
+Ideal Final Result is formulated in the correct way, the desired result appears
+to happen by itself, without the user’s involvement and effort. <b>The ideal
+system performs a required function without actually existing</b>. The Russian <i>“I
+wish”</i> is very useful when formulating the IFR. A possible structure of the
+IFR looks as follows:</p>
+<sub></sub>
+<p align="CENTER">I wish : <b>(<i> the result to be achieved</i> )</b> <b>happens</b>
+<b>by itself</b>, <b>without my involvement</b>.</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>IFR can sound strange at the very beginning, nevertheless, it shows the right
+way to go.</p>
+<p>TRIZ used the IFR as a helping concept in the Algorithm of Inventive Problem
+Solving (ARIZ). At that time I was not ready to use ARIZ. The algorithm
+contained too many steps and seemed to be very time-consuming. However the
+concept of the Ideal Final Result impressed me. To save time I decided to start
+with it.</p>
+<sub></sub>
+<p>The IFR for my case was formulated as: “I wish:<b> a wafer shows its phase
+SAW velocity by itself, without my involvement.</b>” Many questions arose
+immediately. How close the solution can be to the IFR? How could a wafer show
+the velocity? Sudden magical digits on its surface? It did not sound realistic,
+but the idea of IFR was interesting.</p>
+<sub></sub>
+<p>I tried to use a realistic approach. The actual situation and all available
+resources were decided to be taken into consideration and IFR to be reformulated
+into a practical <b>target-task</b>. The solution can then be found by solving
+this target-task. (Later it became clear that by adding to the IFR concept a
+flavour of a reality, the independent method of solution was created. I named it
+the Method of the Ideal Result (MIR). <i>MIR</i> in Russian means <i>Peace</i>)<i>.</i>
+IFR had to appear when using the measurement unit. Taking into account the
+situation, IFR was reformulated into the target-task: “<b>When an operator
+puts a wafer on a testing structure of the measuring unit, the velocity of
+interest is revealed.</b>” The existing unit measured the difference in time
+delays of SAW signals with different propagating lengths. To find the velocity,
+it was necessary to substitute the measured time difference into the appropriate
+formula. Was it possible to know the velocity without extra mathematical
+calculations? What <b>extra resources</b> were available? Could any <b>available</b>
+device be used to reveal the velocity numerically?</p>
+<sub></sub>
+<p>The only device which could show numerical results was a frequency counter.
+My target-task was reformulated again: “<b>When an operator puts a wafer on a
+testing structure of the measuring unit, the frequency counter shows the
+velocity of interest.</b>” It meant that every wafer must have a particular
+frequency associated with it, numerically the same as the phase velocity, and
+the measurement technique must be based on the frequency measurements. Frequency
+was a good choice, as it could be measured with very high accuracy. The
+available methods were analysed again. The most convenient was the interference
+method [3]. This method uses a SAW structure consisting of three transducers:
+one input and two output transducers, located at a different distances from the
+input transducer. When two signals of the same frequency and different lengths
+of propagation are added together, interference occurs. In the frequency domain
+it appears as a number of peaks and hollows on the frequency response
+characteristic of the SAW device, as shown on the Figure 3.</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img border="0" src="3.gif" width="558" height="278"></p>
+<sub></sub>
+<p>An expression for the frequency <i>fn</i> of the minimum <i>n<b> </b></i>is
+as follows:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image81.gif" width="116" height="45"> ( 3 )</p>
+<sub>
+<p align="CENTER">&nbsp;</p>
+</sub>
+<p>where <i>Vphase</i> is the phase velocity, <i>DL</i> is the difference in
+length of propagation, <i>n</i> is the number of the selected interference
+minimum.</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>The existing method included measurements of the frequencies <i>fn</i> and <i>fn+</i>1<b><i>
+</i></b>of two adjacent minima<b><i>,</i></b> and finding the velocity by
+formula:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image82.gif" width="116" height="41"> ( 4 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>This method was not precise enough to be implemented in the measurement unit
+because of the low accuracy of the measurement of frequency difference (<i>fn+</i>1<i>
+- fn</i>). It was ten times worse than needed. A single frequency, but not the
+frequency difference had to be used to satisfy the necessary precision. Was it
+possible? Closer analysis of the formula (3) showed that it could be rewritten
+as follows:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image83.gif" width="92" height="45"> ( 5 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>Only the number of the selected minimum was needed to find the velocity with
+very high accuracy. I felt I was very close to the solution. Once the distance
+between two adjacent minima (<i>fn+</i>1 - <i>fn</i>) could be measured, the
+number of a particular minimum could be found by evaluating:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image84.gif" width="116" height="45"> ( 6 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>and rounding the result for <i>n </i>to the nearest integer.</p>
+<sub></sub>
+<p>I was unable to find the number of the minimum using this idea, as the minima
+were not equidistant. The distance between adjacent minima changed with
+frequency due to a slight dispersion (velocity dependence on a frequency). MIR
+and the IFR concept seemed to be failing. A wafer cannot reveal the velocity by
+itself! It was not possible to associate a minimum with its number. One
+frequency could not “show” the velocity. I began to lose faith with TRIZ.</p>
+<sub></sub>
+<p>A few days passed. To solve the task, it was necessary to find the number of
+the particular interference minimum. What ways of finding of the number were
+available?. What methods could be utilised? Suddenly I understood that the MIR
+could be applied again. The IFR was formulated for finding the number of the
+minimum in the following way: “I wish: <b>The minimum revels its number
+automatically, by itself</b>”. In other words the number of the minimum is
+known when it is seen. Could this be implemented? I started to analyse the real
+situation and resources. What is the obstacle to discrimination between
+different minima and their numbers? There are <b>too many</b> minima. <b>If
+there were only one minimum inside the main lobe of a filter characteristic and
+its number were known it would be easy to do so.</b> I imagined the main lobe of
+a filter frequency response characteristic which contained only one minimum
+(Figure 4).</p>
+<sub></sub>
+<p align="CENTER"><img border="0" src="4.gif" width="458" height="233"></p>
+<sub></sub>
+<p>Was it possible to know the number of this minimum? Yes, indeed! The solution
+was direct: <b>There is only one minimum inside the main lobe of the
+characteristic and its number is known and is the same for every wafer.</b></p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>The implementation was straightforward. The SAW test structure has to be
+organised to:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>make the distance between interference minimums greater than the width of the
+main lobe (2D<i>f</i>) (to allow only one minimum to appear inside the main lobe
+at any time):</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image86.gif" width="117" height="21"><b><i> </i></b>( 7 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>“force” the minimum with the known number to be inside the main lobe:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image87.gif" width="156" height="21"> ( 8 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>A short mathematical exercise with above formulae gave the final conditions
+for the length difference <i>DL</i> which was “required for the minimum to
+reveal its number by itself”:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image88.gif" width="253" height="44"> ( 9 )</p>
+<p>and</p>
+<p align="CENTER"><img src="Image89.gif" width="76" height="16"> ( 10 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>where the integer<b><i> </i></b><i>m</i> represents the number of the minimum
+inside the main lobe, <i>d</i> is the period of the transducer, and <i>N</i> is
+the number of pairs of fingers of the transducer.</p>
+<p>The main part of the task was solved with only the frequency counter being
+made to show the phase velocity remained. It was easy to accomplish by rewriting
+the formula (5) for the velocity as follows:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image90.gif" width="94" height="45"> ( 11 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>with <i>DL</i> equal to (<i>m</i>+1/2)<i>d</p>
+</i><sub>
+<p>&nbsp;</p>
+</sub>
+<p align="CENTER"><img src="Image91.gif" width="81" height="24"> ( 12 )</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<p>Provided <i>d</i> = 10, 100, 1000,... the phase velocity will contain the
+same numbers as the frequency of the minimum. The IDT’s period of <i>d</i> =
+100 mm was chosen to measure the velocity at the frequency, close to the central
+of the TV SAW filter (about 40 MHz for the Russian standard) and to reduce an
+influence of the dispersion on the yield.</p>
+<sub></sub>
+<p>A few more days were needed to implement the new method and a bit more time
+to prepare an application for the Russian Patent [4]. I was back to my research.
+PHONON was out of the trouble.</p>
+<sub><b>
+<p>&nbsp;</p>
+</b></sub><b>
+<p>You never know what you can do until you try.</p>
+<sub></sub></b>
+<p>My first experience with TRIZ was more than simply positive. I invented a new
+measuring method, helped my employer “smile again”, provided a profit for
+factories of more than 1.5 million roubles (US$2.2 million) and became wealthier
+due to the royalty payments. The outcome has found wide application, because of
+the measuring method’s high accuracy, as other Russian scientists use it in
+their research.</p>
+<sub></sub>
+<p>On the top of it a new method of solution, MIR, was created and applied
+successfully. It had been actually utilised twice in the solution process: first
+for the main task itself (a substrate reveals the velocity of SAW in it by
+itself) and then for the task inside the main (the interference minimum
+discloses its number by itself) and seemed to be very effective and quick. The
+target-task: “<b>When an operator puts a wafer on a testing structure of the
+measuring unit, the frequency counter shows the velocity of interest</b>” was
+fully accomplished, with the readings of the frequency counter representing the
+SAW velocity in the wafer (<i>Vphase</i> =3978m/s for the frequency of the
+minimum of 39.78MHz).</p>
+<sub></sub>
+<p>Since then I studied TRIZ more carefully and deeply. I became familiar with
+other effective ideas and concepts, and applied them often enough to receive
+about thirty patents. I still use TRIZ because of its power, but more often I
+employ MIR. It is simple and powerful enough to provide an excellent solution
+for the time and effort invested. My Method of the Ideal Result was modified
+over the years. It is really helpful not only for the problem solving. MIR also
+enables one to quickly evaluate the level of the proposed solution, as well as
+to judge how good existing solutions are.</p>
+<sub></sub>
+<p>The application of the Method of the Ideal Result to problem solving was
+presented in this paper. To use MIR for the assessment of the level of the
+proposed or existing solution it is necessary to:</p>
+<sub>
+<p>&nbsp;</p>
+</sub>
+<blockquote>
+  <p>formulate the IFR in as general way as possible,<br>
+  write down the list of all available resources,<br>
+  formulate a target-task, utilising as many available resources as possible,<br>
+  and then analyse how far the solution of interest is from the target-task.</p>
+  <sub>
+  <p>&nbsp;</p>
+  </blockquote>
+</sub>
+<p>The distance between the target-task and the solution of interest will be the
+measure of the level of the solution; the closer they are, the better the
+solution is.</p>
+<sub></sub>
+<p>Years in research and industry taught me that in most of cases the simplest
+solution is the best solution. Method of the Ideal Result always leads to a
+simple solution.</p>
+<sub>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</sub><b>
+<p>Acknowledgment</p>
+</b>
+<p>The author wishes to thank Dr C. Gray and Mr. R. Lord for their interest and
+useful discussions.</p>
+<b>
+<p>&nbsp;</p>
+<p>References</p>
+</b>
+<p>[1] McSkimin, H. J. (1961). Pulse superposition method for measuring
+ultrasonic wave velocity in solids. <i>The Journal of the Acoustic Society of
+America, </i>vol. 33, No. 1, pp12 - 16.</p>
+<sub></sub>
+<p>[2] Altshuller, G. S. (1973). <i>The Algorithm of the Invention</i>. Moscow:
+Moscow Worker, (in Russian).</p>
+<sub></sub>
+<p>[3] Temmyo, J., Kotaka, J., &amp; Inamura, T. (1980). Precise measurement of
+SAW propagation velocity in LiNbO3. <i>IEEE Transactions on Sonics and
+Ultrasonics,</i> vol. SU-27, No. 4, pp218 - 219.</p>
+<sub></sub>
+<p>[4] Belski, I., &amp; Sorokin, V. (1987). A method of SAW-velocity
+measurement. <i>USSR Patent</i> No. 1298549 (in Russian).</p>
+<p>&nbsp;</p>
+

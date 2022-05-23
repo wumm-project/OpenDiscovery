@@ -1,0 +1,411 @@
+<h1>Computer Semantic Search of Inventive Solutions</h1>
+
+<p align="left">Igor Boyko Ph.D<br>
+HPLab, Palo Alto, CA<br>
+<a href="mailto:igor_boyko@hpl.hp.com">igor_boyko@hpl.hp.com</a></p>
+<p align="JUSTIFY">&nbsp;</p>
+<b>
+<p align="left">ABSTRACT</p>
+</b>
+<p>The article covers problems of the Knowledge Base development and search
+automation of the inventive solutions by intellectual computer systems.</p>
+<p>The following problems of the intellectual computer systems for inventive
+solution search are presented in the article:</p>
+</p><ul>
+  <li>correct inventive problem stating;</li>
+  <li>scope expanding of possible domain on an abstract level for solutions
+    search by analogy;</li>
+  <li>inventive solutions computation.</li>
+</ul>
+<p>The article presents design method of the inventive solutions semantic search
+on the basis of Universal semantic code (USC).</p>
+<p>The article evolves of G.Altshuller's problem stating method in Algorithm of
+inventive problem solving and shows new possibilities of search of inventive
+solutions by the semantic tools.</p>
+<p>&nbsp;</p>
+<b>
+<p>1. INTRODUCTION</p>
+</b>
+<p>The problems solved by means of heuristic methods are considered invention.</p>
+<p>For solving of such problems are developed the expert systems (ES). The
+Knowledge Base (KB) of any ES contains the facts and rules of their processing.</p>
+<p>Inventive ES must help user to pass whole cycle through of creating the
+invention starting with the state of problem and finishing it’s solving. The
+knowledge in ES must be represented by determined way.</p>
+<p>Practically, expert system is an intellectual system (IS), in which KB
+developing depends on chosen knowledge representation model.</p>
+<p>Knowledge representation (KR) is oriented on supporting the possibility of
+computer solving of intellectual problems [2]. The choice of the KR model allows
+avoiding the complications at development of intellectual systems. However
+modern KR models cannot satisfy of the developer demands for KB of intellectual
+systems and particularly for inventive systems since they are built disregarding
+of natural language semantics [4].</p>
+<p>About real intellectuality of the computer system possible to speak only if
+and when it’s KB is built on semantic basis. But semantic building of KB is
+unenforceable without using corresponding tools. One of possible tools is the
+Universal semantic code (USC) [6].</p>
+<p>&nbsp;</p>
+<b>
+<p>2. SEQUENCES OF ENGINEERNG OPERATIONS</p>
+</b>
+<p>The solution of inventive problem is arranged in the manner of patent for
+method, device or substance.</p>
+<p>Where:</p>
+</p><ul>
+  <li>method is collection of engineering operations (EO) connected in united
+    technological process for achievement determined purposes;</li>
+  <li>device is collection of elements connected in united design for
+    realization of determined method.</li>
+</ul>
+<p>After analysis of patents for methods it was developed the order of verbs
+location in structures like this [7]:</p>
+<p>'... <font face="Wingdings">à</font> verb 1 <font face="Wingdings">à</font>
+verb 2 <font face="Wingdings">à</font> verb 3 <font face="Wingdings">à</font>...',
+which is equal in structures of type:</p>
+<p>'... <font face="Wingdings">à</font> EO1 <font face="Wingdings">à</font>
+EO2 <font face="Wingdings">à</font> EO3 <font face="Wingdings">à</font>...'.</p>
+<p>It is used and more complex structure of type:</p>
+<p>'... <font face="Wingdings">à</font> verb 1 <font face="Wingdings">à</font>
+verb 2 <b>and</b> verb 3 <font face="Wingdings">à</font> verb 4 <font face="Wingdings">à</font>...',
+which is equal in structure of type:</p>
+<p>'... <font face="Wingdings">à</font> EO 1 <font face="Wingdings">à</font>
+EO 2 <b>and</b> EO 3 <font face="Wingdings">à</font> EO 4 <font face="Wingdings">à</font>...'.</p>
+<p>Obviously each EO is located before or after some EO, i.e. all of EO can be
+simultaneously of two types:</p>
+</p><ol>
+  <li>Previous;</li>
+  <li>Subsequent.</li>
+</ol>
+<p>The type of some EO depends on point of view it is considered.</p>
+<p>&nbsp;</p>
+<b>
+<p>3. PATENT ANALYSIS</p>
+</b>
+<p>Each invention has its problem of achievement of certain purposes. The
+problem state represents reached target situation in the manner of one or
+several EO.</p>
+<p>Example. United States Patent 4 711 854.<br>
+Method of measuring moisture in a burnable absorber.<br>
+Goal of the invention -- measuring moisture in a burnable absorber.</p>
+<i>
+<p>DESCRIPTION OF THE INVENTION</p>
+</i>
+<p>Source of an inert carrier gas is provided that sends an inert carrier gas
+through line into enclosed chamber 1, which contains graphite crucible. A sample
+is placed within graphite crucible and crucible is heated through electrodes by
+means of an impulse electric current. Vapours from enclosed chamber 1 pass
+through conduit to enclosed chamber 2. Chamber 2 also contains a graphite
+crucible that is heated by impulse electricity through electrodes. Vapours leave
+chamber 2 through conduit and pass into hydrogen analyser.</p>
+<p>In the first enclosed chamber, which contains the sample, means are provided
+to dissociate the water in the sample into hydrogen and oxygen. This is
+conventionally done by heating the sample in the presence of a dissociation
+catalyst such as graphite or platinum. The preferred dissociation catalyst is
+graphite because it can be formed into the shape of a crucible that can also be
+used to hold the sample, it is inexpensive, and a graphite crucible is
+conductive and therefore can be electrically heated by impulse heating.</p>
+<p>While other means of heating the sample can also be used, electrical impulse
+heating is preferred because it heats the sample very rapidly so that any water
+in the sample is heated to its dissociation temperature while it is still in
+contact with the graphite.</p>
+<p>We have found that a second enclosed chamber for dissociating water is
+necessary to achieve an accurate measurement of the hydrogen content of a
+sample. While the second enclosed chamber need not be the same as the first
+enclosed chamber, it is preferably identical for ease of construction and
+maintenance. The other portions of the apparatus, the source of inert carrier
+gas (e.g., argon, nitrogen, etc.), and the apparatus for analysing hydrogen
+content are conventional and are well known in the art.</p>
+<p>&gt;From given text the EO sequence of achievement of purposes 'measure'
+looks as the following sequence of verbs:</p>
+<i>
+<p>'send through <font face="Wingdings">à</font> heat <font face="Wingdings">à</font>
+dissociate <font face="Wingdings">à</font> pass through <font face="Wingdings">à</font>
+heat <font face="Wingdings">à</font> dissociate <font face="Wingdings">à</font>
+pass into <font face="Wingdings">à</font> measure'</i>.</p>
+<p>&nbsp;</p>
+<b>
+<p>4. SHORT INTRODUCTION IN THE USC THEORY</p>
+</b>
+<p>The Universal Semantic Code is a semantic theory of Knowledge Representation
+[6]. With its help we can conduct semantic analysis of the target action and
+re-define it if necessary. The USC was developed as a semantic language of
+Knowledge representation and conversion. It has own algebra that uses the given
+set of variables.</p>
+<p>The type of the USC algebra of formulas representation and conversion has
+been determined:</p>
+<p align="left">A = &lt; <b>M</b> , <b>*</b> , <b>-</b> &gt;</p>
+<p>Where:</p>
+</p><ul>
+  <li><b>M</b> -- is a set of elements;</li>
+  <li><b>* </b>-- is a binary operation on the given set (the operation of
+    coincidence);</li>
+  <li><b>-</b> -- is an unary operation on the given set the (operation of
+    junction).</li>
+</ul>
+<p>Principal unit of Knowledge representation of the USC is a complex formula
+that represents of variable interaction. Semantic relations in complex formulas
+are represented in the following way:</p>
+<p align="left">((X*Y)*Z)*(Z*(Y*Z)) - X by means of Y acts on Z and as a
+result Z keeps Y in itself<br>
+(in Z).</p>
+<p>We would like to draw attention to the fact that the left part in this type
+of formulas causes potential action in right part. Thus complex formula reflects
+the following situation:</p>
+<p align="left">Stimulus <font face="Wingdings">à</font> Reaction.</p>
+<p>Each complex USC formula has one and only one meaning and each conversion of
+USC formula into another one has one and only one meaning conversion. The rules
+according to which meaning conversion is done are contained in the USC algebra
+axioms.</p>
+<p>USC formulas represent actions that are met with in any field of engineering.
+The USC allows structuring engineering actions database, turning it into
+Knowledge Base and enclosing semantics in representation formalisms.</p>
+<p>The USC-classifier contains engineering actions list and USC formulas
+classified in a certain way. In the USC-classifier all engineering actions are
+analogues. Each main engineering action has own USC formula that determines this
+engineering action and verbal interpretation demonstrating the action at issue.
+Each action-analogue has own main action.</p>
+<p>Fig. 1.1 shows the USC- classifier structure.</p>
+<p align="left"><img border="0" src="01.gif" width="622" height="290"><br>
+Fig.1.1</p>
+<p>Practically, within the limits of the given classifier the non-traditional
+system of engineering actions-analogues is built according to the <b>function
+they perform but not according to their achievement technology.</p>
+</b>
+<p>In computer intellectual systems for description of problem conditions
+necessary to use strictly structured of KR units.</p>
+<p>USC formulas have single sense, strictly given length and limited set
+variables filled by specific dates. Involuntary sequences of USC formulas define
+the problem solving variants.</p>
+<p>In the USC verbs classifier are presented meeting in technology verbs and are
+has given own interpretations in the USC formulas manner. Since each verb
+expresses the relation appearing between subject and object of action in the USC
+classifier is presented structures of proposed relations in evident type. Such
+structures are knowledge representation units.</p>
+<p>In USC classifier all verbs are main or inherit. Every USC formula
+corresponds to main verb and each USC formula has own verbal interpretation.
+Each inherit verb corresponds to the main verb. Practically main verb is the
+most abstract presentation for a certain EO.</p>
+<p>For example, the verb 'heat' is the main and is presented by USC formula:</p>
+<p align="left">heat <font face="Wingdings">à</font> ((X*Y)*Z)*((Z*Z)*Y) -- 'X'
+by means of 'Y' heat 'Z'.</p>
+<p>The verb 'measure out' is related with the verb 'measure' that is the main
+and is presented by USC formula:</p>
+<p align="left">measure <font face="Wingdings">à</font> ((X*Y)*X)*((X*Y)*Z) --
+'X' by means of 'Y' measure 'Z'.</p>
+<p>Practically, within the framework of given verbs classifier is built
+off-center actions-analogues classifier or in other words EO classifier.</p>
+<p align="JUSTIFY">&nbsp;</p>
+<b>
+<p align="JUSTIFY">5. USC THEORY APPLICATION</p>
+<p align="JUSTIFY">&nbsp;</p>
+</b>
+<p align="JUSTIFY">Given classifier was applied for analyzing of patents.</p>
+<p align="JUSTIFY">Let’s we will find into the USC classifier all verbs that
+were got in EO sequence of the patent.<br>
+The verb 'send through’ is related with the verb 'orient' that is the main.
+The verb 'heat' is the main.<br>
+The verb 'dissociate' is related with the verb 'decompose' that is the main.<br>
+The verb 'pass through' is related with the verb 'conduct' that is the main.<br>
+The verb 'pass into' is related with the verb 'embed' that is the main.<br>
+The verb 'measure' is the main.</p>
+<p align="JUSTIFY">The final sequence of abstract EO for considered patent is
+following:</p>
+<i>
+<p align="JUSTIFY">‘orient <font face="Wingdings">à</font> heat <font face="Wingdings">à</font>
+decompose <font face="Wingdings">à</font> conduct <font face="Wingdings">à</font>
+heat <font face="Wingdings">à</font> decompose <font face="Wingdings">à</font>
+embed <font face="Wingdings">à</font> measure'.</p>
+</i>
+<p>Each EO has own USC formula and verbal interpretation. Now we will fill of
+formula variables for considered patent.</p>
+<p align="JUSTIFY">'orient' <font face="Wingdings">à</font> ((X*Y)*Z)*
+((Z*Z)*Z) <font face="Wingdings">à</font> ' X by means of Y orient Z'<br>
+X = source;<br>
+Y = line;<br>
+Z = inert gas.</p>
+<p align="JUSTIFY">'heat' <font face="Wingdings">à</font> ((X*Y)*Z)* ((Z*Z)*Y) <font face="Wingdings">à</font>
+'X by means of Y heat Z'<br>
+X = electrodes;<br>
+Y = impulse electric current;<br>
+Z = sample.</p>
+<p align="JUSTIFY">'decompose' <font face="Wingdings">à</font> ((X*Y)*Z)*
+((Z*Y)*Z) <font face="Wingdings">à</font> 'X by means of Y decompose Z'<br>
+X = graphite crucible;<br>
+Y = impulse electric current;<br>
+Z = sample.</p>
+<p align="JUSTIFY">'conduct' <font face="Wingdings">à</font> ((X*Y)*Z)*
+((Z*X)*Y) <font face="Wingdings">à</font> 'X by means of Y conduct Z'<br>
+X = conduit 1;<br>
+Y = internal surface;<br>
+Z = vapours.</p>
+<p align="JUSTIFY">'heat' <font face="Wingdings">à</font> ((X*Y)*Z)* ((Z*Z)*Y))
+<font face="Wingdings">à</font> 'X by means of Y heat Z'<br>
+X = electrodes;<br>
+Y = impulse electric current;<br>
+Z = vapours.</p>
+<p align="JUSTIFY">'decompose' <font face="Wingdings">à</font> ((X*Y)*Z)*
+((Z*Y)*Z) <font face="Wingdings">à</font> 'X by means of Y decompose Z'<br>
+X = graphite crucible;<br>
+Y = impulse electric current;<br>
+Z = vapours.</p>
+<p align="JUSTIFY">'embed' <font face="Wingdings">à</font> ((X*Y)*Z)* ((Z*(W*Z)
+<font face="Wingdings">à</font> 'X by means of Y embed Z into W'<br>
+X = conduit 2;<br>
+Y = internal surface;<br>
+Z = vapors;<br>
+W = analyzer.</p>
+<p align="JUSTIFY">'measure' <font face="Wingdings">à</font> ((X*Y)*X)*
+((X*Y)*Z) <font face="Wingdings">à</font> 'X by means of Y measure Z'<br>
+X = user;<br>
+Y = analyzer;<br>
+Z = hydrogen.</p>
+<p>The representation of the whole process by means of filled by specific dates
+USC formulas allow to specify the subjects, instruments and objects for each EO.</p>
+<p align="JUSTIFY">&nbsp;</p>
+<b>
+<p align="JUSTIFY">6. CONSECUTIONS OF ENGINEERING OPERATIONS</p>
+</b>
+<p>Let’s consider how reach the target situation that is determined by the
+verb 'measure’ by means of EO sequences. For example, from the developed base
+of EO sequences the some part of the previous verbs tree for EO 'measure’ is
+following:</p>
+<p><img border="0" src="02.gif" width="215" height="96"></p>
+<p>There is the previous verb 'embed’.<br>
+Now on the left of verb 'embed’ we will add previous him verbs. As a result we
+get the following verbs tree:</p>
+<p><img border="0" src="03.gif" width="406" height="170"></p>
+<p>The following step, add the new verbs at the left part of the tree to verb
+'decompose’.</p>
+<p align="JUSTIFY"><img border="0" src="04.gif" width="551" height="243"></p>
+<p align="JUSTIFY">Further we form the tree with the left side to verb 'heat’.</p>
+<p align="JUSTIFY"><img border="0" src="05.gif" width="598" height="276"></p>
+<p align="JUSTIFY">We continue to build the tree to verb 'conduct’.</p>
+<p align="JUSTIFY"><img border="0" src="06.gif" width="629" height="349"></p>
+<p>To each verb from extreme left part possible to add previous verbs list.</p>
+<p>Obviously that for performing the operation is presented by verb 'measure’
+possible to use the many ways each of which presents own verbs sequence, i.e.
+the sequence of EO.</p>
+<p>Now instead of specific verbs we will substitute corresponding USC formulas.
+As a result we get the following USC formulas tree:</p>
+<p><img border="0" src="07.gif" width="480" height="519"></p>
+<p>The sequences defining the order of using USC formulas (or EO) we will name
+the semantic unit’s sequences (SUS) since each USC formula is an elementary KR
+semantic unit.</p>
+<p>Practically, got USC formulas tree we can consider as a graph of which top
+are presented by USC formulas.</p>
+<p>The target top is assigned the target verb.</p>
+<p>The full sequence USC formulas for considered patent is following:</p>
+<p>((Z*Z)*Z) <font face="Wingdings">à</font> ((Z*Z)*Y) <font face="Wingdings">à</font>
+((Z*Y)*Z) <font face="Wingdings">à</font> ((Z*X)*Y) <font face="Wingdings">à</font>
+((Z*Z)*Y) <font face="Wingdings">à</font> ((Z*Y)*Z) <font face="Wingdings">à</font>
+((Z*(W*Z) <font face="Wingdings">à<br>
+à</font> ((X*Y)*Z)</p>
+<p>You can see that if we have rules of conversion one USC formulas in others in
+the manner of USC algebra [6] we can calculate the ways of inventive problems
+solving. Then substituting instead of USC formulas some specific dates in the
+manner of verbs it is possible to examine the variants of solving of stated
+problem.</p>
+<p align="JUSTIFY">&nbsp;</p>
+<b>
+<p align="JUSTIFY">7. INTELLECTUAL PROBLEMS TYPES</p>
+</b>
+<p>At present solved by person intellectual problems possible to divide into two
+main types:</p>
+</p><ol>
+  <li>Integrated-dispatching problems</li>
+  <li>Inventive problems</li>
+</ol>
+<p>Integrated-dispatching problems are problems on planning the displacement,
+keeping, creation and deleting the different types of resources both physical
+and information.</p>
+<p>The inventive problems (IP) appear when inventor develops of principal new or
+improves already available products and technologies. As a rule IP solving is
+reached at permit of different contradictions types [1].</p>
+<p>Inventor begins solving of IP after stating initial and target situations (IS
+and TS). I.e. transition algorithm (TA) from IS to TS is a way of IP solving.
+Both IS and TS for the correct keeping of formulations must be presented by
+single verbs.</p>
+<p>Imagine you have KB of transition algorithms in the computer system and the
+KB is built on the base of USC formula conversions. Comparing each of formulated
+verbs with available KB of transition algorithms possible get several
+alternative TA from IS to TS. I.e. inventive problem is reduced to
+integrated-dispatching.</p>
+<p>Since TA already exists it need only consecutively to pass through its steps
+for specifying of objects instead of variable.</p>
+<p>For inventive problem solving it is necessary to present only TS. Moving from
+TS to previous EO inventor solves on what previous step he will stop, i.e.
+defining this step as preferred IS. Besides, in process of retrospective motion
+possible to solve some contradiction that defines the appearance of inventive
+problem.</p>
+<p>Practically, set of SUS presents the graph with limited by set of elements
+(the verbs) strictly bound between itself and describing inventive problems
+world, as well as integrated-dispatching problems. So amount of both types of
+problems is limited by the amount (though and enough extensive) of the SUS.
+Appearance of new substances and materials does not enlarge this amount but will
+only initiate of using of SUS not used earlier.</p>
+<p align="JUSTIFY">&nbsp;</p>
+<b>
+<p align="JUSTIFY">8. CONCLUSIONS</p>
+</b>
+</p><ol>
+  <li>Using the more abstract verbs by means of USC classifier of EO allows
+    reducing the psychological inertia obtruded by specific terms of some
+    application domain.</li>
+  <li>Distraction from specific descriptions by means of abstract descriptions
+    of processes allows finding of inventive problem solutions by analogy.
+    Well-known inventive problems solving by means of analogies practically is a
+    main tool of searching for formulated purpose [1; 5].</li>
+  <li>Filling of USC formulas by variables specifies the subjects and objects
+    considered EO and can force the inventor to move to physical micro-level.
+    This initiates deeper understanding of considered situations.</li>
+</ol>
+<b>
+<p align="JUSTIFY">9. REFERENCES</p>
+</b>
+</p><ol>
+  <li>Altshuller G.S. Creativity as an Exact Science. Gordon and Breach Science
+    Publisher, 1984.</li>
+  <li>Ueno H., Koyama T., Matsuby M. Knowledge Representation and Using.
+    Isidzuka. Omsya. Tokyo, 1987.</li>
+  <li>Martynov V.V, Boyko I.M., Gyminski A.P. Semantic Coding and Invention
+    Problem Solving. // TIPS journal. Obninsk, 1991, N2.1. (in Russian)</li>
+  <li>Martynov V.V, Boyko I.M., Gyminski A.P. Knowledge Bases Construction of
+    Systems for Solving Intellectual Problems. // Controlling Systems and
+    Machines. // Kiev, 1992, N5/6.</li>
+  <li>Altov H. And Suddenly the Inventor Appeared. Published by Technical
+    Innovation Center. MA, USA, 1994.</li>
+  <li>Martynov V.V. Universal Semantic Code: USC -5. MSLU Pre-print N4. Minsk,
+    1995.</li>
+  <li>Boyko I.M. Semantic Search on the Stage of the Structure Designing in the
+    CAD. PhD thesis. Institute of Technical Cybernetics of Academy of Science of
+    Belarus. Minsk, 1995. (in Russian).</li>
+</ol>
+<p>&nbsp;</p>
+<p><b><img border="1" src="BoykoPicture.jpg" align="right" width="180" height="225">About the Author</b></p>
+<b>
+<p>Igor M. Boyko<br>
+</b>Date of birth: 22 may 1960</p>
+<p>1981-82 He learned TRIZ in Belarussian State University of Informatics and
+Radioelectronics (former Minsk Radio-engineering Institute).</p>
+<p>1982 He finished the University and worked as a computer adjuster for a long
+time.</p>
+<p>1987 In Academy of Science of Belarus he began the development of computer
+application of natural language semantics in TRIZ. His main field was the
+Knowledge Representation in Artificial Intelligence.</p>
+<p>1988 It was the personal acquaintance with Altshuller G.S. in Leningrad
+before the TRIZ conference in Petrozavodsk.</p>
+<p>From 1988 Igor Boyko actively teaches in Belarus TRIZ schools. He develops
+own semantic methods for application in TRIZ and tests the methods with pupils.</p>
+<p>Igor Boyko took part in Altshuller’s TRIZ seminars and conferences that
+took place in former USSR. He kept the correspondence with Altshuller G.S. about
+TRIZ questions.</p>
+<p>1995 He defends the PhD thesis “Semantic Search on the Stage of the
+Structure Designing in the CAD” where he analysis semantics as tool of
+inventive problem solving in the CAD. He compares traditional invention methods,
+tools of TRIZ and his new approach of semantic application for inventive problem
+solving.</p>
+<p>1995-2000 He took part in development of different directions of Invention
+Machine project and continued development of computer semantics methods for
+inventors.</p>
+<p>At the time Igor Boyko works in HP Laboratory where develops new approaches
+of natural language processing and understanding for computer users.</p>

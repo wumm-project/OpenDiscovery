@@ -1,0 +1,623 @@
+<h1>The Anticipatory Failure Determination Fact Sheet</h1>
+<span style="mso-bidi-font-size: 10.0pt">Steve Ungvari, SPI, Inc.<br>
+</span>810-220-8440<br>
+<span style="mso-bidi-font-size: 10.0pt"><a href="mailto:sufield@aol.com">sufield@aol.com</a>
+</span></p>
+<p>&nbsp;</p>
+<p><b style="mso-bidi-font-weight:normal"><span style="font-weight: bold">Introduction</span></b></p>
+<p style="text-align:justify">While product failures have always been a problem,
+it seems that with the complexity of today's engineered systems, the number and
+the severity of these incidences both in terms of human suffering and damage to
+the corporation is increasing at an exponential rate.<span style="mso-spacerun: yes">&nbsp;
+</span>The question as to the root cause of this phenomenon and more
+importantly, the &quot;fix&quot; is an appropriate one.<span style="mso-spacerun: yes">&nbsp;
+</span>Why have traditional methods failed at preventing product failures? To be
+sure, some of the fault lies with engineers &quot;going through the
+motions&quot; of using the failure prevention tool.<span style="mso-spacerun: yes">&nbsp;
+</span>That fact notwithstanding, the conventional tools themselves are not
+&quot;foolproof.&quot;<span style="mso-spacerun: yes">&nbsp; </span>The
+Ideation/TRIZ methodology has a unique component called Anticipatory Failure
+Determination<i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>(AFD<i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>)
+which, used with conventional methods, greatly enhances the process of failure
+prediction and failure prevention.<span style="mso-spacerun: yes">&nbsp; </span>The
+Fact Sheet below provides a basis for comparing AFD<i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>
+and conventional methods such as Failure Mode &amp; Effects Analysis(FMEA) and
+Hazard Operability Analysis (HAZOP).</p>
+<p style="text-align:justify">&nbsp;</p>
+<p style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><span style="font-weight: bold">What is Anticipatory Failure
+Determination </span></b><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><b style="mso-bidi-font-weight:normal">
+(AFD</b><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><b style="mso-bidi-font-weight:normal">).<span style="mso-spacerun: yes">&nbsp;</span></b></p>
+<p style="text-align:justify">Anticipatory Failure Determination™ is based on
+the concepts that were called “subversion analysis” in earlier TRIZ work by
+Zlotin, Zusman, Altshuller, and Filatov (ref.1, 2) and Kaplan (ref.3).<span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>Software is now available to make the method easier to apply (ref.4)<span style="mso-spacerun:
+yes">&nbsp; </span>The term “subversion analysis” refers to the basic
+technique, described below, of using TRIZ in reverse; that is, TRIZ is used to
+find ways to cause the design to fail, or to subvert the basic purpose of the
+design.<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>With the knowledge of
+how to subvert the design, the developer knows how to make the design better, so
+that the failures cannot occur.<span style="mso-spacerun: yes">&nbsp;&nbsp;</span></p>
+<p style="text-align:justify">AFD<i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><span style="mso-spacerun: yes">&nbsp;
+</span>is<span style="mso-spacerun: yes">&nbsp; </span>a TRIZ method that is a
+disciplined, rigorous process by which the user can:</p>
+</p><ul>
+  <li>
+    <p style="margin-left:.75in;text-align:justify;text-indent:
+-.25in;mso-list:l0 level1 lfo1;tab-stops:.25in"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-weight:bold;font-style:
+italic">thoroughly analyze given failure mechanisms</span></i></b></li>
+  <li>
+    <p style="margin-left:.75in;text-align:justify;text-indent:
+-.25in;mso-list:l0 level1 lfo1;tab-stops:.25in"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-weight:bold;font-style:
+italic">obtain an exhaustive set of potential failure &quot;scenarios&quot;</span></i></b></li>
+  <li>
+    <p style="margin-left:.75in;text-align:justify;text-indent:
+-.25in;mso-list:l0 level1 lfo1;tab-stops:.25in"><span style="font-weight:bold;font-style:
+italic"><i style="mso-bidi-font-style:normal"><b style="mso-bidi-font-weight:normal">develop
+    &quot;inventive&quot; solutions to prevent, counteract, or minimize the
+    impact of the failure scenarios</b></i></span></li>
+</ul>
+<p style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><span style="font-weight: bold">What is the difference between<i style="mso-bidi-font-style:
+normal"><span style="font-style:italic"> AFD</span></i></span></b><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><b style="mso-bidi-font-weight:normal">
+and other conventional failure prevention techniques?</b></p>
+<p style="text-align:justify">The principle difference between <i style="mso-bidi-font-style:normal"><span style="font-style:italic">AFD</span></i><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>
+and conventional techniques such as Failure Mode and Effects Analysis and Hazard
+and Operability Analysis is the perspective from which potential failures are
+determined.<span style="mso-spacerun: yes">&nbsp; </span>In the conventional
+techniques, the process of failure prediction proceeds linearly from an
+articulation of the system's function(s) to what may occur if there is a failure
+(absence) in deliverance of these functions.<span style="mso-spacerun: yes">&nbsp;
+</span>In other words, the analytical line of logic follows design intent.<span style="mso-spacerun: yes">&nbsp;
+</span>Given a potential failure, the effect of the failure, probability of its
+occurrence, and the ability to detect the failure is determined.<span style="mso-spacerun:
+yes">&nbsp; </span>Once these parameters are quantified, often times very
+subjectively, a calculation of risk is made.<span style="mso-spacerun: yes">&nbsp;
+</span>If the risk is determined to be unacceptably high, changes in design, or
+detection capability can be suggested.<span style="mso-spacerun: yes">&nbsp;</span></p>
+<p style="text-align:justify">On the surface the process sounds logical.<span style="mso-spacerun: yes">&nbsp;
+</span>There are, however, serious structural weaknesses with these traditional
+approaches.<span style="mso-spacerun: yes">&nbsp;</span></p>
+<p style="text-align:justify;text-indent:.5in">1.<span style="mso-spacerun: yes">&nbsp;
+</span>The first weakness stems from the process used to determine failures.<span style="mso-spacerun: yes">&nbsp;
+</span>The process of failure determination is essentially a brainstorming
+exercise initiated by probing what failures &quot;might&quot; occur.<span style="mso-spacerun: yes">&nbsp;
+</span>This process suffers from the same syndrome that the original product
+design process is subject to - Psychological Inertia (PI).<span style="mso-spacerun: yes">&nbsp;
+</span>Also, because the analysis of potential failures is accomplished within
+the same mental context that created the design in the first place, there is a
+serious question of objectivity to be raised with this approach.<span style="mso-spacerun: yes">&nbsp;
+</span>Engineers do not like to admit that their designs are failure prone.</p>
+<p style="text-align:justify;text-indent:.5in">2.<span style="mso-spacerun: yes">&nbsp;
+</span>A second shortcoming of traditional approaches is that he analysis of
+failures is deemed to result from the absence of an intended or designed
+function.<span style="mso-spacerun: yes">&nbsp; </span>The issue of
+&quot;prohibited&quot; functions is not considered.<span style="mso-spacerun: yes">&nbsp;
+</span>For example, the function of a handgun is to shoot a bullet.<span style="mso-spacerun: yes">&nbsp;
+</span>All of the failure analysis proceeds along the lines of the original
+design intent.<span style="mso-spacerun: yes">&nbsp; </span>The original
+designers of the weapon system, for example, did not design it to be used by
+children to shoot other children in schools.<span style="mso-spacerun: yes">&nbsp;
+</span>This prohibited function is not a part of conventional failure prevention
+techniques.<span style="mso-spacerun: yes">&nbsp; </span>Additionally, to be
+more complete, functions also need to be analyzed not only from the absence of
+intent but also from the perspective of the function being performed
+insufficiently or in an excessive way.</p>
+<p style="text-align:justify;text-indent:.5in">3.<span style="mso-spacerun: yes">&nbsp;
+</span>The most serious drawback of traditional approaches, however, is the
+absence of an integrated problem solving mechanism to pinpoint design
+deficiencies accurately as a series of &quot;inventive&quot; problems.<span style="mso-spacerun: yes">&nbsp;
+</span>An inventive problem is one characterized by an inherent conflict.
+Traditional techniques do not make provisions for solving difficult
+technological problems in an inventive way.<span style="mso-spacerun: yes">&nbsp;
+</span>An inventive approach recognizes system conflicts and attacks them
+head-on.<span style="mso-spacerun: yes">&nbsp; </span>In traditional approaches,
+if the design is deemed to be too risky, correction of the problem is
+accomplished through a number of design and redesign iterations or, as a
+stopgap, - redesign of the detection systems.<span style="mso-spacerun: yes">&nbsp;
+</span>When the system deficiency is not defined as an inventive problem, the
+results are often costly over designs, or the addition of auxiliary compensating
+systems making the original design more complex.<span style="mso-spacerun: yes">&nbsp;</span></p>
+<p style="text-align:justify">&nbsp;</p>
+<p style="text-align:justify"><b style="mso-bidi-font-weight:
+normal"><span style="font-weight: bold">What is different about <i style="mso-bidi-font-style:normal"><span style="font-style:italic">The
+AFD</span></i></span></b><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal">
+System?</i></b></p>
+<p style="text-align:justify">&nbsp;All of the structural deficiencies noted
+above have been designed out of <i style="mso-bidi-font-style:
+normal"><span style="font-style:italic">AFD</span></i><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><i style="mso-bidi-font-style:normal">.
+</i>First of all, the approach to determining potential failures is the reverse
+of the one used in conventional approaches.<span style="mso-spacerun: yes">&nbsp;
+</span>In AFD, the power of the technique comes from the process of deliberately
+&quot;inventing&quot; failures.<span style="mso-spacerun: yes">&nbsp; </span>The
+engineer has to transform him or herself into a subversive.<span style="mso-spacerun: yes">&nbsp;
+</span>The idea is to invent, cause and create failures. In the case of past
+failures, the analytical process challenges one to invent a past failure.<span style="mso-spacerun: yes">&nbsp;
+</span>In future failure prevention, the logic proceeds along the lines of
+inventing, creating or devising the most catastrophic failures conceivable.</p>
+<p style="text-align:justify">In both instances, the engineer inverts the
+problem.<span style="mso-spacerun: yes">&nbsp; </span>The advantage to this
+approach is analogous to a defense attorney becoming a prosecutor.<span style="mso-spacerun: yes">&nbsp;
+</span>The system's potential flaws are viewed from a perspective that allows
+for full exploitation of a system's weaknesses.<span style="mso-spacerun: yes">&nbsp;
+</span>It is obvious, when all system deficiencies are made explicit, the team
+or individual can take more effective countermeasures.<span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>Failure prevention is transformed from a defensive to an offensive
+&quot;inventive&quot; exercise creating a seamless process for failure
+determination and prevention.</p>
+<p style="text-align:justify">The process is so effective that users will
+sometimes become disenchanted with their system as having so many drawbacks that
+it is a wonder it will work at all.<span style="mso-spacerun: yes">&nbsp; </span>This
+is normal as these are potential failures.<span style="mso-spacerun: yes">&nbsp;
+</span>It is incumbent on the technical analyst to prevent these from ever
+occurring.</p>
+<table border="1" cellspacing="0" cellpadding="3" style="border-collapse:collapse;
+ mso-table-layout-alt:fixed;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt">
+  <tr>
+    <td valign="top" style="width:2.35in;border:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify"><b style="mso-bidi-font-weight:
+  normal"><span style="text-shadow: auto; font-weight: bold">Comparative
+      Criteria</span></b></p>
+    </td>
+    <td valign="top" style="width:176.85pt;border:solid windowtext .75pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+      <p align="center" style="margin-top:6.0pt;margin-right:0in;
+  margin-bottom:6.0pt;margin-left:0in;text-align:center"><b style="mso-bidi-font-weight:
+  normal"><span style="text-shadow: auto; font-weight: bold">Traditional (FMEA)</span></b></p>
+    </td>
+    <td valign="top" style="width:176.85pt;border:solid windowtext .75pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+      <p align="center" style="margin-top:6.0pt;margin-right:0in;
+  margin-bottom:6.0pt;margin-left:0in;text-align:center"><b style="mso-bidi-font-weight:
+  normal"><span style="text-shadow: auto; font-weight: bold">AFD</span></b><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:2.35in;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+      <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in">Purpose of the technique</p>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Identify potential failure modes and to rate the severity of
+          their effects</li>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Identify Critical and Significant Characteristics</li>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Rank order potential design and process deficiencies</li>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Help focus on elimination of product and process
+          deficiencies.</p>
+        </li>
+      </ul>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Analyze previous failures and be able to understand how to
+          &quot;invent&quot; such failures</li>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Identify an exhaustive list of potential failure scenarios as
+          well as any negative, harmful or undesired effects or phenomenon</li>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Transform the process of problem analysis from asking why a
+          failure occurred to how can a failure be produced</li>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">To incorporate the full complement of TRIZ operators to
+          develop innovative solutions</p>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:2.35in;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+      <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in">Scope of applicability</p>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">System design, product design, process design</p>
+        </li>
+      </ul>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">System design, product design, process design</p>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:2.35in;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+      <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in">Analytical tools</p>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Previous FMEAs, subject matter expertise, internal
+          engineering and warranty data, logic of the FMEA process</p>
+        </li>
+      </ul>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Same as FMEA plus rigorous problem formulation and inventive
+          analogs utilizing: Inventive Principles, Standard Solutions,
+          incorporation of System and Environmental Resources</p>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:2.35in;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+      <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in">Process for completion</p>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Generally linear following design intent</p>
+        </li>
+      </ul>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Iterative and &quot;inverted&quot; or subversive by probing
+          how failures can be deliberately created.</p>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:2.35in;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+      <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in">Thoroughness of the analysis</p>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Fair to good, depending on the rigor of application and the
+          knowledge level of the team/individual</p>
+        </li>
+      </ul>
+    </td>
+    <td valign="top" style="width:176.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+      </p><ul>
+        <li>
+          <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Good to excellent because of the access to the AFD<i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>
+          Knowledgebase, the TRIZ Inventive Principles, Problem Formulation and
+          analysis of all resources</p>
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<p style="text-align:justify"><span style="mso-bidi-font-size: 10.0pt">AFD</span><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><span style="mso-bidi-font-size: 10.0pt">
+can be used as a stand-alone failure prediction/prevention technique or as an
+enhancement to traditional methodologies. For example, the synthesis of AFD</span><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><span style="mso-bidi-font-size: 10.0pt">
+into the FMEA process can be accomplished as follows:<span style="mso-spacerun: yes">&nbsp;</span></span></p>
+<div align="left">
+  <table border="1" cellspacing="0" cellpadding="3" style="border-collapse:collapse;
+ mso-table-layout-alt:fixed;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt" width="100%">
+    <tr>
+      <td valign="top" style="width:253.8pt;border:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify"><b style="mso-bidi-font-weight:
+  normal"><span style="text-shadow: auto; font-weight: bold">FMEA Step</span></b></p>
+      </td>
+      <td valign="top" style="width:253.8pt;border:solid windowtext .75pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify"><b style="mso-bidi-font-weight:
+  normal"><span style="text-shadow: auto; font-weight: bold">AFD Integral</span></b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" style="width:253.8pt;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify">Potential Failure Mode</p>
+      </td>
+      <td valign="top" style="width:253.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify"><b style="mso-bidi-font-weight:
+  normal"><span style="font-weight: bold">Failure Prediction</span></b> mode of
+        AFD<i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>:</p>
+        </p><ul>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Cause – effect diagrams for the system (sub-system,
+            component)</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Automatic Inverted Problem formulation</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Automatic access to AFD knowledge base (Checklists and
+            Operators)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" style="width:253.8pt;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify">Potential Effects of Failure</p>
+      </td>
+      <td valign="top" style="width:253.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt"><span style="mso-bidi-font-size: 10.0pt">Access
+        to <b style="mso-bidi-font-weight:normal"><span style="font-weight:bold">AFD</span></b></span><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i><b style="mso-bidi-font-weight:normal"><span style="font-weight: bold">
+        knowledge base</span></b>, in particular the checklists:
+        </p><ul>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Destroying the system's resistance to a specific effect</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Making the system vulnerable</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Intensifying the failure</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Masking the failure</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" style="width:253.8pt;border:solid windowtext .75pt;
+  border-top:none;mso-border-top-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify">Potential Causes/Mechanisms of
+        Failure</p>
+      </td>
+      <td valign="top" style="width:253.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify">Application of <b style="mso-bidi-font-weight:normal"><span style="font-weight:bold">Failure
+        Analysis</span></b> mode of AFD<i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>,
+        in particular:</p>
+        </p><ul>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Cause – effect diagrams for the system (sub-system,
+            component)</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Localizing the failure</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Automatic Inverted Problem formulation</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Identifying general methods of providing the failure</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Identifying components necessary for providing the failure</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Revealing components of the failure among the system
+            resources</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Automatic access to AFD<i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>
+            knowledge base, in particular the checklists:</li>
+        </ul>
+        <blockquote>
+          </p><ul>
+            <li>
+              <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Typical sources of
+              high danger</span></li>
+            <li>
+              <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Transforming a
+              harmless object into a source of danger</span></li>
+            <li>
+              <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Intensifying an
+              available harmful effect</span></li>
+            <li>
+              <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in">Destroying the system's resistance to a specific effect</li>
+          </ul>
+        </blockquote>
+      </td>
+    </tr>
+  </table>
+</div>
+<p>&nbsp;</p>
+<div align="left">
+  <table border="1" cellspacing="0" cellpadding="3" style="border-collapse:collapse;
+ mso-table-layout-alt:fixed;border:none;mso-border-alt:solid windowtext .75pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt" width="100%">
+    <tr>
+      <td valign="top" style="width:253.8pt;border:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify">Recommended Actions</p>
+      </td>
+      <td valign="top" style="width:253.8pt;border:solid windowtext .75pt;
+  border-left:none;mso-border-left-alt:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt">
+        <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in"><span style="mso-bidi-font-size: 10.0pt">Application of <b style="mso-bidi-font-weight:normal"><span style="font-weight:bold">Prevention
+        and/or Elimination of the Failure</span></b> mode of the AFD</span><i style="mso-bidi-font-style: normal; mso-char-type: symbol; mso-symbol-font-family: Symbol; mso-bidi-font-size: 10.0pt; mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman; font-style: italic">™</i>,
+        in particular:</p>
+        </p><ul>
+          <li>
+            <p style="margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  .25in;text-indent:-.25in;mso-list:l0 level1 lfo1;tab-stops:.25in">Automatic
+            Problem formulation</li>
+          <li>
+            <p style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+  tab-stops:.25in">Automatic access to AFD knowledge base, in particular the
+            Operators:</li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Eliminating the
+            causes of the failure</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Removing the source
+            of harm or change its properties</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Modifying the harmful
+            effect</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Counteracting the
+            harmful effect</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Isolating the system
+            from the harmful effect</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Increasing the
+            system's resistance to the harmful effect</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Modifying or
+            substituting the object effected by harm</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Localizing the
+            harmful effect</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Reducing the harmful
+            effect</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">'Blending in' defects</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in"><span style="mso-bidi-font-size: 10.0pt">Transient using of a
+            harmful effect</span></li>
+          <li>
+            <p style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+  tab-stops:.5in">Facilitating detection</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+<p style="text-align:justify"><span style="mso-bidi-font-size: 10.0pt">The
+intent of this Fact Sheet is not to denigrate traditional approaches such as
+FMEA and HAZOP. They have been used to good purpose in the past and will
+undoubtedly continue to be used to good purpose in the future.<span style="mso-spacerun: yes">&nbsp;
+</span>The intent is to point out that some of the deficiencies inherent with
+these approaches can be minimized if not eliminated altogether. The general
+method of “subversion analysis” can be applied by anyone who is
+knowledgeable in TRIZ.<span style="mso-spacerun: yes">&nbsp; </span>With the
+assistance of the AFD™ software, they have access to automated problem
+generation and extensive problem solution databases.</span></p>
+<p style="text-align:justify">&nbsp;</p>
+<p style="text-align:justify"><b><span style="mso-bidi-font-size: 10.0pt">References:</span></b></p>
+<p style="text-align:justify"><span style="mso-bidi-font-size: 10.0pt">1. <span style="font-style: normal; font-variant: normal; font-weight: normal">&nbsp;&nbsp;&nbsp;
+</span>Genrich Altshuller, Boris Zlotin, Alla Zusman, Vitalii Filatov.<span style="mso-spacerun: yes">&nbsp;
+</span>“Searching for New Ideas.”<span style="mso-spacerun: yes">&nbsp; </span>Kishniev:<span style="mso-spacerun: yes">&nbsp;
+</span>Kartya Moldovenyaska Publishing House, 1989.<span style="mso-spacerun: yes">&nbsp;&nbsp;</span></span></p>
+<p style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo3"><span style="mso-bidi-font-size: 10.0pt">2. <span style="font-style: normal; font-variant: normal; font-weight: normal">&nbsp;&nbsp;&nbsp;
+</span>Boris Zlotin, Alla Zusman,<span style="mso-spacerun:
+yes">&nbsp; </span>“Solving All Scientific Problems” Kishniev:<span style="mso-spacerun: yes">&nbsp;
+</span>Kartya Moldovenyaska Publishing House, 1989.</span></p>
+<p style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo3"><span style="mso-bidi-font-size: 10.0pt">3. <span style="font-style: normal; font-variant: normal; font-weight: normal">&nbsp;&nbsp;&nbsp;
+</span>Stan Kaplan, “Finding Failures before They Find Us:<span style="mso-spacerun: yes">&nbsp;
+</span>An Introduction to The Theory of Scenario Structuring and the Method of
+Anticipatory Failure Determination.”<span style="mso-spacerun: yes">&nbsp; </span>Proceedings
+of the 9<sup>th</sup> Symposium on Quality Function Deployment, June, l997.<span style="mso-spacerun:
+yes">&nbsp; </span>http://www.qfdi.org</span></p>
+<p style="margin-left:.25in;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo3"><span style="mso-bidi-font-size: 10.0pt">4. <span style="font-style: normal; font-variant: normal; font-weight: normal">&nbsp;&nbsp;&nbsp;
+</span>Ideation International AFD™ Software, 1999.<span style="mso-spacerun: yes">&nbsp;
+</span>http://www.ideationtriz.com</span></p>
+<p>&nbsp;</p>
