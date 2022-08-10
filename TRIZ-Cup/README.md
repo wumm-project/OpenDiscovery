@@ -26,7 +26,10 @@ place, since it changes only in small parts over the years.
 ## The annual competitions
 
 The materials of the annual competitions are provided in the respective
-subdirectories.  We moved most of the material from a Word base to LaTeX since
+subdirectories.
+
+For 2019/20 and 2020/21 most of the material was recompiled from a Word base
+to LaTeX since
 
 (1) several tasks are the same for different age categories
 (2) there are repeating text blocks
@@ -39,4 +42,11 @@ The authoritative version of the material is in any case the Russian one,
 translations are provided "as is" and do not provide material authorized by
 the organisators of the contest.
 
-Hans-Gert Gräbe, 16.11.2020
+- 2020/21: <https://triz-summit.ru/contest/cup_2020_2021/>
+  - Also an authoritative English version was supplied
+  - Additional material for reading (in Russian) at 
+    <https://triz-summit.ru/contest/cup_2020_2021/materials/>
+
+- 2021/22: <https://triz-summit.ru/contest/cup_2021_2022/>
+
+Hans-Gert Gräbe, August 10, 2022
